@@ -1,17 +1,17 @@
-- Course: POL 554 International Security Studies
-  Program: School of Public and International Affairs  
-  School: Harvard
-  id: POL554
+- Course: Statistical Foundations and Machine Learning 
+  Program: Institute of Mathematics and Statistics (IME)
+  School: USP
+  id: MAE5911
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  link: https://example.com
+  link: https://academic-codex.github.io/MAE5911-Estatistica-e-Machine-Learning
 
-- Course: POL 585 International Political Economy
-  Program: School of Public and International Affairs
-  School: Harvard
-  id: POL585
+- Course: Quantum Mechanics
+  Program: Institute of Physics (IF)
+  School: USP
+  id: PGF5001
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  link: https://example.com
+  link: https://academic-codex.github.io/PGF5001-Mecanica-Quantica-I
