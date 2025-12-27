@@ -1,19 +1,19 @@
 
 - name: Quantum Computing
-  id: project3
+  id: project1
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
   date: true
   link: https://quantum-computing-research.github.io
-  image:  assets/img/projetos/project1.jpeg
+  image:  assets/img/projetos/projeto1.jpeg
   tech: 
     - Java
     - Maven
     - Jenkins
 
 - name: Quantum Material Simulation
-  id: project1
+  id: project2
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -24,7 +24,7 @@
     - python
 
 - name: High Energy Physics 
-  id: project2
+  id: project3
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
