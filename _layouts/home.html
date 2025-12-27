@@ -47,6 +47,8 @@ layout: default
           <p>
             {% if site.home_option == "education" %}
             {% include education.html %}
+            {% else site.home_option == "timeline" %}
+            {% include timeline.html %}
             {% endif %}
         </div>
       </div>
