@@ -117,3 +117,251 @@
   area: Statistics
   School: USP
   link: https://academic-codex.github.io/MCKZ-Metodos-Quantitativos
+
+  - Course: Calculus I
+  id: SMA0301
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SMA0301-Calculo-I
+
+- Course: Calculus II
+  id: SMA0332
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SMA0332-Calculo-II
+
+- Course: Calculus III
+  id: SMA0302
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SMA0302-Calculo-III
+
+- Course: Complex Variable Functions
+  id: SMA0111
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SMA0111-Funcoes-Complexas
+
+- Course: Numerical Calculus I
+  id: SME0600
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SME0600-Calculo-Numerico-I
+
+- Course: Numerical Calculus II
+  id: SME0601
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SME0601-Calculo-Numerico-II
+
+- Course: Mathematical Programming
+  id: SME0610
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SME0610-Programacao-Matematica
+
+  - Course: Physics I
+  id: IF4302111
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302111-Fisica-I
+
+- Course: Physics II
+  id: IF4302112
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302112-Fisica-II
+
+- Course: Physics III
+  id: IF4302211
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302211-Fisica-III
+
+- Course: Physics IV
+  id: IF4302212
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302212-Fisica-IV
+
+- Course: Mathematical Physics I
+  id: IF4302112
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302112-Fisica-Matematica-I
+
+- Course: Mathematical Physics II
+  id: IF4302307
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302307-Fisica-Matematica-II
+
+- Course: Classical Mechanics I
+  id: IF4302305
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302305-Mecanica-Classica-I
+
+- Course: Classical Mechanics II
+  id: IF4302306
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302306-Mecanica-Classica-II
+
+- Course: Quantum Mechanics I
+  id: IF4302403
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302403-Mecanica-Quantica-I
+
+- Course: Quantum Mechanics II
+  id: IF4302404
+  Program: Undergraduate Program
+  level: undergrad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/IF4302404-Mecanica-Quantica-II
+
+  - Course: Introduction to Computer Science I
+  id: SCE0601
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SCE0601-Introducao-Ciencia-Computacao-I
+
+- Course: Introduction to Computer Science II
+  id: SCE0602
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SCE0602-Introducao-Ciencia-Computacao-II
+
+- Course: Algorithms and Data Structures I
+  id: SCE0603
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SCE0603-Algoritmos-Estruturas-Dados-I
+
+- Course: Algorithms and Data Structures II
+  id: SCE0606
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SCE0606-Algoritmos-Estruturas-Dados-II
+
+- Course: Advanced Algorithms
+  id: SCE0245
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SCE0245-Algoritmos-Avancados
+
+- Course: Artificial Intelligence
+  id: SCE0614
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SCE0614-Inteligencia-Artificial
+
+  - Course: Object-Oriented Programming
+  id: SCE0610
+  Program: Undergraduate Program
+  level: undergrad
+  area: Software Engineering
+  School: USP
+  link: https://academic-codex.github.io/SCE0610-Programacao-Orientada-Objetos
+
+- Course: Software Engineering
+  id: SCE0611
+  Program: Undergraduate Program
+  level: undergrad
+  area: Software Engineering
+  School: USP
+  link: https://academic-codex.github.io/SCE0611-Engenharia-Software
+
+- Course: Databases
+  id: SCE0615
+  Program: Undergraduate Program
+  level: undergrad
+  area: Software Engineering
+  School: USP
+  link: https://academic-codex.github.io/SCE0615-Banco-Dados
+
+- Course: Distributed Systems
+  id: SCE0616
+  Program: Undergraduate Program
+  level: undergrad
+  area: Software Engineer
+  School: USP
+  link: https://academic-codex.github.io/SCE0616-Sistemas-Distribuidos
+
+  - Course: Digital Signal Processing
+  id: SEL0615
+  Program: Undergraduate Program
+  level: undergrad
+  area: Communication
+  School: USP
+  link: https://academic-codex.github.io/SEL0615-Processamento-Digital-Sinais
+
+- Course: Digital Communications
+  id: SEL0619
+  Program: Undergraduate Program
+  level: undergrad
+  area: Communication
+  School: USP
+  link: https://academic-codex.github.io/SEL0619-Comunicacao-Digital
+
+- Course: Microprocessors
+  id: SEL0614
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0614-Microprocessadores
+
+- Course: Electronic Circuits II
+  id: SEL0615
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
