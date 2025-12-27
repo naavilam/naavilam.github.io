@@ -244,26 +244,38 @@ layout: default
 -->
 
   <script>
-    (function () {
-      var select = document.getElementById('courseAreaFilter');
-      var list = document.getElementById('courseList');
-      if (!select || !list) return;
+    document.addEventListener('DOMContentLoaded', function () {
 
-      function norm(s) { return (s || '').toString().trim().toLowerCase(); }
+      function applyCourseFilters() {
+        const levelInput = document.querySelector('input[name="courseLevel"]:checked');
+        const level = levelInput ? levelInput.value : 'all';
 
-      select.addEventListener('change', function () {
-        var chosen = select.value;
-        var items = list.querySelectorAll('[data-area]');
+        const areaSel = document.getElementById('courseAreaFilter');
+        const area = areaSel ? areaSel.value : 'all';
 
-        items.forEach(function (el) {
-          var area = el.getAttribute('data-area') || '';
-          var show = (chosen === 'all') || (norm(area) === norm(chosen));
-          el.style.display = show ? '' : 'none';
+        document.querySelectorAll('.course-item').forEach(el => {
+          const elLevel = (el.dataset.level || 'undergrad').toLowerCase();
+          const elArea = (el.dataset.area || '').toLowerCase();
+
+          const okLevel = (level === 'all') || (elLevel === level);
+          const okArea = (area === 'all') || (elArea === area.toLowerCase());
+
+          el.style.display = (okLevel && okArea) ? '' : 'none';
         });
-      });
-    })();
-  </script>
+      }
 
+      document.querySelectorAll('input[name="courseLevel"]').forEach(radio => {
+        radio.addEventListener('change', applyCourseFilters);
+      });
+
+      const areaSel = document.getElementById('courseAreaFilter');
+      if (areaSel) {
+        areaSel.addEventListener('change', applyCourseFilters);
+      }
+
+      applyCourseFilters();
+    });
+  </script>
 
   <!--JS FUNCTION FOR RECENT WORK SECTION -->
   <script>
