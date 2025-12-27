@@ -6,7 +6,7 @@
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
   date: true
   link: https://quantum-computing-research.github.io
-  image:  assets/img/project1.jpeg
+  image:  assets/img/projetos/project1.jpeg
   tech: 
     - Java
     - Maven
@@ -19,7 +19,7 @@
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
   date: true
   link: https://quantum-materials-simulation-research.github.io
-  image:  http://placehold.it/100x100
+  image:  assets/img/projetos/projeto2.jpeg
   tech: 
     - python
 
@@ -30,6 +30,6 @@
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
   date: true
   link: https://high-energy-physics-research.github.io
-  image: http://placehold.it/100x100
+  image:  assets/img/projetos/projeto3.png
   tech: 
     - c++
