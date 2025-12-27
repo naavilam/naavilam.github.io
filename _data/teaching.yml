@@ -30,7 +30,7 @@
   id: POL-380-Human-Rights
   data-id: data-princ1   
   heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
-  Date: 11/08/2022
+  Date: 24/08/2022
   # EndDate: 08/30/2020
   first: false
   Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
