@@ -8,9 +8,9 @@
 # -----------BASE SETTINGS---------------#
 #========================================#
 
-title: Dumbarton 
-email: 
-description: a minimalistic jekyll theme for academics
+title: Nara Avila 
+email: nara.moraes@usp.br
+# description: a minimalistic jekyll theme for academics
 baseurl:                                       # the subpath of your site, e.g. /blog
 url: "https://naavilam.github.io/"          # the base hostname & protocol for your site, e.g. http://example.com
 image: /assets/img/dumbarton.png               # used to generate site link preview
@@ -30,7 +30,7 @@ stackoverflow: '12935605'
 website: https://tbutler.org
 codepen: 
 medium: 
-email: developer.tbutler@gmail.com
+email: nara.moraes@usp.br
 keybase: tbutler320
 pgp: 
 ctftime: 
