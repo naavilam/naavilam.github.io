@@ -1070,3 +1070,11 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
   max-width: 60px;
   object-fit: contain;
 }
+
+/* Thumbs from Talks session*/
+.talk-thumb {
+  width: 240px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
