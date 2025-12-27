@@ -1,0 +1,38 @@
+<svg data-build="2025-12-27T00:00:00Z" width="1200" height="260" viewBox="0 0 1200 260"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card -->
+  <rect width="1200" height="260" rx="18" fill="url(#g)" />
+
+  <!-- Title -->
+  <text x="50%" y="105" text-anchor="middle"
+    font-size="44" fill="#e5e7eb"
+    font-family="Inter, Arial, sans-serif" font-weight="650">
+    Nara Avila — Profile
+  </text>
+
+  <!-- Description -->
+  <text x="50%" y="145" text-anchor="middle"
+    font-size="18" fill="#9ca3af"
+    font-family="Inter, Arial, sans-serif">
+    Computer Engineer • Applied Physics • M.Sc. Candidate (Heavy-Ion Collisions at the LHC)
+  </text>
+
+  <!-- CTA -->
+  <text x="50%" y="185" text-anchor="middle"
+    font-size="18" fill="#93c5fd"
+    font-family="Inter, Arial, sans-serif" font-weight="550">
+    → View the live profile
+  </text>
+
+  <!-- Link (works in many renderers; safest is to wrap SVG in <a> in HTML) -->
+  <a href="https://YOUR-LIVE-URL-HERE" target="_blank">
+    <rect x="0" y="0" width="1200" height="260" rx="18" fill="transparent" />
+  </a>
+</svg>
