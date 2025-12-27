@@ -1,21 +1,119 @@
-- Course: Statistical Foundations and Machine Learning 
-  Program: Institute of Mathematics and Statistics (IME)
-  School: USP
-  id: MAE5911
-  area: Artificial Inteligence 
+- Course: Quantum Mechanics I
+  id: PGF5001
+  Program: Master's Program
   level: grad
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/PGF5001-Mecanica-Quantica-I
+
+- Course: Quantum Mechanics II
+  id: PGF5002
+  Program: Master's Program
+  level: grad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/PGF5002-Mecanica-Quantica-II
+
+- Course: Electrodynamics
+  id: PGF5003
+  Program: Master's Program
+  level: grad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/PGF5003-Eletrodinamica
+
+- Course: Classical Mechanics
+  id: PGF5005
+  Program: Master's Program
+  level: grad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/PGF5005-Mecanica-Classica
+
+- Course: Statistical Mechanics
+  id: PGF5006
+  Program: Master's Program
+  level: grad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/PGF5006-Mecanica-Estatistica
+
+- Course: Introduction to Quantum Field Theory I
+  id: PGF5107
+  Program: Master's Program
+  level: grad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I
+
+- Course: Applied Group Theory
+  id: PGF5261
+  Program: Master's Program
+  level: grad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/PGF5261-Teoria-de-Grupos-Aplicada
+
+- Course: Many-Body Theory and Condensed Matter
+  id: PGF5295
+  Program: Master's Program
+  level: grad
+  area: Physics
+  School: USP
+  link: https://academic-codex.github.io/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada
+
+- Course: Scientist-Entrepreneur Training I
+  id: DPG5011
+  Program: Master's Program
+  level: grad
+  area: Entrepreneurship
+  School: USP
+  link: https://academic-codex.github.io/DPG5011-Formacao-Do-Cientista-Empreendedor
+
+- Course: Scientist-Entrepreneur Training II
+  id: EAP5054
+  Program: Master's Program
+  level: grad
+  area: Entrepreneurship
+  School: USP
+  link: https://academic-codex.github.io/EAP5054-Formacao-Cientista-Empreendedor-II
+
+- Course: Computational Complexity
+  id: MAC5722
+  Program: Master's Program
+  level: grad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/MAC5722-Complexidade-Computacional
+
+- Course: Deep Learning
+  id: MAC5921
+  Program: Master's Program
+  level: grad
+  area: Artificial Intelligence
+  School: USP
+  link: https://academic-codex.github.io/MAC5921-Deep-Learning
+
+- Course: Statistical Foundations and Machine Learning
+  id: MAE5911
+  Program: Master's Program
+  level: grad
+  area: Artificial Intelligence
+  School: USP
   link: https://academic-codex.github.io/MAE5911-Estatistica-e-Machine-Learning
 
-- Course: Quantum Mechanics
-  Program: Institute of Physics (IF)
-  School: USP
-  id: PGF5001
-  area: Physics
+- Course: Linear Algebra
+  id: MAT5730
+  Program: Master's Program
   level: grad
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
-  link: https://academic-codex.github.io/PGF5001-Mecanica-Quantica-I
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/MAT5730-Algebra-Linear
+
+- Course: Quantitative Methods
+  id: MCKZ
+  Program: Master's Program
+  level: grad
+  area: Statistics
+  School: USP
+  link: https://academic-codex.github.io/MCKZ-Metodos-Quantitativos
