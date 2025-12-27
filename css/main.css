@@ -1063,7 +1063,7 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
 
 /* Thumbs from Talks session*/
 .talk-thumb {
-  width: 240px;
+  width: 240px !important;
   height: auto;
   object-fit: contain;
   border-radius: 6px;
