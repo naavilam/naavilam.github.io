@@ -171,6 +171,27 @@ layout: default
         <div class="tab-pane overflow-auto" id="{{ section.id }}" role="tabpanel"
           aria-labelledby="{{ section.id }}-tab">
 
+          <div class="d-flex flex-wrap align-items-center mb-3">
+
+            <span class="mr-3" style="font-weight:600; opacity:.85;">Level:</span>
+
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="levelAll" name="courseLevel" class="custom-control-input" value="all" checked>
+              <label class="custom-control-label" for="levelAll">All</label>
+            </div>
+
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="levelUndergrad" name="courseLevel" class="custom-control-input" value="undergrad">
+              <label class="custom-control-label" for="levelUndergrad">Undergraduate</label>
+            </div>
+
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="levelGrad" name="courseLevel" class="custom-control-input" value="grad">
+              <label class="custom-control-label" for="levelGrad">Graduate</label>
+            </div>
+
+          </div>
+
           <!-- FILTER: só existe em Coursework -->
           {% assign areas = site.data.courses | map: "area" | compact | uniq | sort %}
 
