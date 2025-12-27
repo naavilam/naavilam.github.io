@@ -1063,7 +1063,7 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
 
 
 /*Limita o icone em education*/
-.media img {
+education-list .media img {
   width: 60px;
   /* ajuste como quiser */
   height: auto;
