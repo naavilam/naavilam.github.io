@@ -18,7 +18,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
   date: true
-  link: https://academic-codex/quantum-materials-simulation-research
+  link: https://quantum-materials-simulation-research.github.io
   image:  http://placehold.it/100x100
   tech: 
     - python
@@ -29,7 +29,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
   date: true
-  link: https://academic-codex/high-energy-physics-research
+  link: https://high-energy-physics-research.github.io
   image: http://placehold.it/100x100
   tech: 
     - c++
