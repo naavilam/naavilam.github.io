@@ -8,9 +8,9 @@
   link: https://quantum-computing-research.github.io
   image:  assets/img/projetos/projeto1.jpeg
   tech: 
-    - Java
-    - Maven
-    - Jenkins
+    - Python
+    - AWS Braket
+    - Qiskit
 
 - name: Quantum Material Simulation
   id: project2
@@ -21,7 +21,8 @@
   link: https://quantum-materials-simulation-research.github.io
   image:  assets/img/projetos/projeto2.png
   tech: 
-    - python
+    - Quiskit Nature
+    - Pennylane
 
 - name: High Energy Physics 
   id: project3
@@ -33,3 +34,6 @@
   image:  assets/img/projetos/projeto3.png
   tech: 
     - c++
+    - Python
+    - TRENTo
+    - Music
