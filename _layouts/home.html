@@ -212,6 +212,27 @@ layout: default
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
 -->
 
+  <script>
+    (function () {
+      var select = document.getElementById('courseAreaFilter');
+      var list = document.getElementById('courseList');
+      if (!select || !list) return;
+
+      function norm(s) { return (s || '').toString().trim().toLowerCase(); }
+
+      select.addEventListener('change', function () {
+        var chosen = select.value;
+        var items = list.querySelectorAll('[data-area]');
+
+        items.forEach(function (el) {
+          var area = el.getAttribute('data-area') || '';
+          var show = (chosen === 'all') || (norm(area) === norm(chosen));
+          el.style.display = show ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+
 
   <!--JS FUNCTION FOR RECENT WORK SECTION -->
   <script>
