@@ -1061,20 +1061,18 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
   margin: 5% 0 0 15%;
 }
 
-
-/*Limita o icone em education*/
-education-list .media img {
-  width: 60px;
-  /* ajuste como quiser */
-  height: auto;
-  max-width: 60px;
-  object-fit: contain;
-}
-
 /* Thumbs from Talks session*/
 .talk-thumb {
   width: 240px;
   height: auto;
   object-fit: contain;
   border-radius: 6px;
+}
+
+/*Limita o icone em education*/
+.media img:not(.talk-thumb) {
+  width: 60px;
+  max-width: 60px;
+  height: auto;
+  object-fit: contain;
 }
