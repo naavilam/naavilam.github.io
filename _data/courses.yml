@@ -365,3 +365,245 @@
   area: Electronics
   School: USP
   link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
+
+  - Course: Antennas
+  id: SEL0344
+  Program: Undergraduate Program
+  level: undergrad
+  area: Communication
+  School: USP
+  link: https://academic-codex.github.io/SEL0344-Antenas
+
+- Course: Optical Communications
+  id: SEL0366
+  Program: Undergraduate Program
+  level: undergrad
+  area: Communication
+  School: USP
+  link: https://academic-codex.github.io/SEL0366-Comunicacoes-Opticas
+
+- Course: Digital Systems Laboratory
+  id: SEL0606
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0606-Laboratorio-Sistemas-Digitais
+
+- Course: Semiconductor Fundamentals
+  id: SEL0607
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0607-Fundamentos-De-Semicondutores
+
+- Course: Computer Organization
+  id: SEL0607
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SEL0607-Organizacao-De-Computadores
+
+- Course: Microprocessors
+  id: SEL0614
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0614-Microprocessadores
+
+- Course: Electronic Circuits II
+  id: SEL0615
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
+
+- Course: Digital Signal Processing
+  id: SEL0615
+  Program: Undergraduate Program
+  level: undergrad
+  area: Communication
+  School: USP
+  link: https://academic-codex.github.io/SEL0615-Processamento-Digital-Sinais
+
+- Course: Principles of Communication
+  id: SEL0616
+  Program: Undergraduate Program
+  level: undergrad
+  area: Communication
+  School: USP
+  link: https://academic-codex.github.io/SEL0616-Principios-De-Comunicacao
+
+- Course: Microelectronics Fundamentals
+  id: SEL0617
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0617-Fundamentos-Microeletronica
+
+- Course: Integrated Circuit Design I
+  id: SEL0618
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0618-Projeto-Circuito-Integrado-I
+
+- Course: Digital Communications
+  id: SEL0619
+  Program: Undergraduate Program
+  level: undergrad
+  area: Communication
+  School: USP
+  link: https://academic-codex.github.io/SEL0619-Comunicacao-Digital
+
+- Course: Digital Control
+  id: SEL0620
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0620-Controle-Digital
+
+- Course: Integrated Circuit Design II
+  id: SEL0622
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0622-Projeto-Circuito-Integrado-II
+
+
+- Course: Entrepreneurship in Informatics
+  id: SEP0527
+  Program: Undergraduate Program
+  level: undergrad
+  area: Entrepreneurship
+  School: USP
+  link: https://academic-codex.github.io/SEP0527-Empreendedores-Em-Informatica
+
+- Course: Environmental Management
+  id: SEP0527
+  Program: Undergraduate Program
+  level: undergrad
+  area: Entrepreneurship
+  School: USP
+  link: https://academic-codex.github.io/SEP0527-Gestao-Ambiental
+
+- Course: Management and Organization
+  id: SEP0527
+  Program: Undergraduate Program
+  level: undergrad
+  area: Entrepreneurship
+  School: USP
+  link: https://academic-codex.github.io/SEP0527-Gestao-e-Organizacao
+
+- Course: Principles of Economics
+  id: SEP0587
+  Program: Undergraduate Program
+  level: undergrad
+  area: Entrepreneurship
+  School: USP
+  link: https://academic-codex.github.io/SEP0587-Principios-de-Economia
+
+
+# ====== MATHEMATICS (SMA/SME) ======
+
+- Course: Complex Variable Functions
+  id: SMA0111
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SMA0111-Funcoes-De-Variaveis-Complexas
+
+- Course: Calculus I
+  id: SMA0301
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SMA0301-Calculo-I
+
+- Course: Calculus III
+  id: SMA0302
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SMA0302-Calculo-III
+
+- Course: Calculus II
+  id: SMA0332
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SMA0332-Calculo-II
+
+- Course: Numerical Calculus I
+  id: SME0600
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SME0600-Calculo-Numerico-I
+
+- Course: Numerical Calculus II
+  id: SME0601
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SME0601-Calculo-Numerico-II
+
+- Course: Mathematical Programming
+  id: SME0610
+  Program: Undergraduate Program
+  level: undergrad
+  area: Mathematics
+  School: USP
+  link: https://academic-codex.github.io/SME0610-Programacao-Matematica
+
+
+# ====== CHEMISTRY (SQM) ======
+
+- Course: General Chemistry Laboratory
+  id: SQM0405
+  Program: Undergraduate Program
+  level: undergrad
+  area: Chemistry
+  School: USP
+  link: https://academic-codex.github.io/SQM0405-Quimica-Geral-Experimental
+
+
+# ====== NETWORKS / SYSTEMS (SSC) ======
+
+- Course: High-Performance Networks
+  id: SSC0144
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SSC0144-Redes-De-Alto-Desempenho
+
+- Course: Performance Evaluation
+  id: SSC0643
+  Program: Undergraduate Program
+  level: undergrad
+  area: Computer Science
+  School: USP
+  link: https://academic-codex.github.io/SSC0643-Avaliacao-Desempenho
+
+- Course: Mobile Networks
+  id: SSC0748
+  Program: Undergraduate Program
+  level: undergrad
+  area: Communication
+  School: USP
+  link: https://academic-codex.github.io/SSC0748-Redes-Moveis
