@@ -167,6 +167,21 @@ layout: default
         </div>
 
         {% elsif section.name == "Coursework" %}
+        {% assign areas = site.data.courses | map: "area" | compact | uniq | sort %}
+
+        <div class="d-flex align-items-center mb-3">
+          <label for="courseAreaFilter" class="mb-0 mr-2" style="font-weight:600; opacity:.85;">
+            Filter:
+          </label>
+
+          <select id="courseAreaFilter" class="custom-select" style="max-width: 320px;">
+            <option value="all" selected>All areas</option>
+            {% for a in areas %}
+            <option value="{{ a | escape }}">{{ a }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
         <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
           <p><i>{{section.description}}</i></p>
           <div class="list-group">
