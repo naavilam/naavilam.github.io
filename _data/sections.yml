@@ -11,10 +11,10 @@
   first: false
 
 - name: Talks
-  id: teaching
+  id: teachings
   description: Invited and contributed talks presented at seminars, conferences, and academic meetings.
   content: 
-  url: teaching.html
+  url: teachings.html
   first: false
 
 - name: Projects
