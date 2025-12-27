@@ -6,7 +6,7 @@
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
   date: true
   link: https://quantum-computing-research.github.io
-  image:  http://placehold.it/100x100
+  image:  assets/img/project1.jpeg
   tech: 
     - Java
     - Maven
