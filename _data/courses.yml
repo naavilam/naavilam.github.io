@@ -2,7 +2,8 @@
   Program: Institute of Mathematics and Statistics (IME)
   School: USP
   id: MAE5911
-  area: 2 
+  area: Artificial Inteligence 
+  level: grad
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -12,7 +13,8 @@
   Program: Institute of Physics (IF)
   School: USP
   id: PGF5001
-  area: 1
+  area: Physics
+  level: grad
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
