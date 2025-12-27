@@ -215,7 +215,9 @@ layout: default
           <div class="list-group">
             {% for courses in site.data.courses %}
             <a href="{{ courses.link }}" target="_blank" rel="noopener"
-              class="list-group-item list-group-item-action text-left" data-area="{{ courses.area | escape }}">
+              class="list-group-item list-group-item-action text-left course-item"
+              data-area="{{ courses.area | escape }}"
+              data-level="{{ courses.level | default: 'undergrad' | downcase | strip }}">
               {{ courses.id }} {{ courses.Course }}
             </a>
             {% endfor %}
