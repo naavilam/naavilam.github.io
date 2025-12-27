@@ -125,23 +125,45 @@ layout: default
             {% endfor %}
           </div>
         </div>
+
         {% elsif section.name == "Talks" %}
         <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
           <p><i>{{section.description}}</i></p>
-          {% for courses in site.data.teaching %}
-          <div class="list-group">
-            <div class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">{{ courses.Schoool }}</h5>
-                <p>{{ courses.School}} - {{ courses.Program }}</p>
-                <small>{{ courses.Date }}</small>
-              </div>
-              <p class="mb-1">{{ courses.description }}</p>
-              <small>{{ courses.Department }}</small>
+
+          {% for talk in site.data.teaching %}
+          <div class="media mt-3">
+
+            {% if talk.Thumb %}
+            <a href="{{ talk.Link }}" target="_blank" rel="noopener">
+              <img src="{{ talk.Thumb }}" class="mr-3 img-thumbnail border-0"
+                style="width: 80px; height: auto; object-fit: contain;" alt="{{ talk.Program }}">
+            </a>
+            {% endif %}
+
+            <div class="media-body">
+              <h5 class="mt-0">
+                {% if talk.Link %}
+                <a href="{{ talk.Link }}" target="_blank" rel="noopener" class="highlighted">
+                  {{ talk.Program }}
+                </a>
+                {% else %}
+                {{ talk.Program }}
+                {% endif %}
+              </h5>
+
+              <p class="mb-1">
+                <strong>{{ talk.School }}</strong>
+                {% if talk.Degree %} — {{ talk.Degree }}{% endif %}
+              </p>
+
+              <small class="text-muted">{{ talk.Date }}</small>
+
+              <p class="mt-2">{{ talk.description }}</p>
             </div>
           </div>
           {% endfor %}
         </div>
+
         {% elsif section.name == "Coursework" %}
         <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
           <p><i>{{section.description}}</i></p>
