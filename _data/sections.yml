@@ -6,7 +6,7 @@
   
 - name: Coursework
   id: courses
-  description: Academic attendings
+  description: Selected coursework from my undergraduate and graduate studies, reflecting formal training in physics, mathematics, engineering, entrepreneurship, statistics, and machine learning.
   content: 
   first: false
 
