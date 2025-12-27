@@ -1071,8 +1071,8 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
 
 /*Limita o icone em education*/
 .media img:not(.talk-thumb) {
-  width: 60px;
-  max-width: 60px;
+  width: 40px;
+  max-width: 40px;
   height: auto;
   object-fit: contain;
 }
