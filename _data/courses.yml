@@ -332,7 +332,7 @@
   level: undergrad
   area: Software Engineering
   School: USP
-  link: https://academic-codex.github.io/SCE0616-Sistemas-Distribuidos
+  link: https://academic-codex.github.io/SCE0616-Sistemas-Computacionais-Distribuidos
 
 - Course: Antennas
   id: SEL0344
@@ -389,6 +389,14 @@
   area: Electronics
   School: USP
   link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
+
+- Course: Electronic Circuits I
+  id: SEL0609
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0609-Circuitos-Eletronicos-I
 
 - Course: Digital Signal Processing
   id: SEL0615
