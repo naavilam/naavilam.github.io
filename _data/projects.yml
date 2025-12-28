@@ -9,13 +9,16 @@
   tech: 
     - Python
     - AWS Braket
-    - Qiskit
-    - Grover
-    - Deutsch
+    - IBM Qiskit
+    - Google Cirq
+    - CERN Qibo
+    - Grover's Search Algorithm
+    - Deutsch's Algorithm
     - Quantum gates
-    - Neural atom
+    - Neural Atom
     - Superconducting
     - Photonic
+    - Ions Trapped
 
 - name: Quantum Material Simulation
   id: project2
