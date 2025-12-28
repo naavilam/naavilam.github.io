@@ -2,7 +2,7 @@
 - name: Quantum Computing
   id: project1
   description: >
-    My work in quantum computing spans the main conceptual and practical pillars of the field, including quantum information encoding, the construction of gate-based quantum circuits, and their implementation using Cirq, Amazon Braket, and Qiskit. I have analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time and hardware-specific characteristics. This work includes the study and implementation of foundational quantum algorithms, such as the Deutsch algorithm and quantum search, as well as introductory approaches to quantum machine learning, including quantum support vector machines (QSVM).
+    My work in quantum computing focuses on gate-based quantum algorithms and circuit implementation using Cirq, Amazon Braket, and Qiskit. It includes quantum information encoding through amplitude and phase, foundational algorithms such as the Deutsch algorithm and quantum search, and introductory studies in quantum machine learning, including quantum support vector machines (QSVM). I also analyzed the execution of quantum operations across superconducting, trapped-ion, photonic, and neutral-atom hardware platforms, comparing execution time and hardware-specific characteristics. To address hardware noise, I studied quantum error-mitigation techniques, including Clifford regression and zero-noise extrapolation (ZNE).
   date: true
   link: https://quantum-computing-research.github.io
   image:  assets/img/projetos/projeto1.jpeg
@@ -14,11 +14,15 @@
     - CERN Qibo
     - Grover's Search Algorithm
     - Deutsch's Algorithm
+    - Quantum Support Vector Machines (QSVM)
     - Quantum gates
     - Neural Atom
     - Superconducting
     - Photonic
     - Ions Trapped
+    - Clifford Data Regression (CDR)
+    - Zero Noise Extrapolation (ZNE)
+
 
 - name: Quantum Material Simulation
   id: project2
