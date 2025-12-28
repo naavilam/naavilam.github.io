@@ -6,7 +6,7 @@
   School: USP
   link: https://academic-codex.github.io/PGF5001-Mecanica-Quantica-I
 
-- Course: Quantum Mechanics II
+- Course: Quantum Mechanics II *
   id: PGF5002
   Program: Master's Program
   level: grad
@@ -38,7 +38,7 @@
   School: USP
   link: https://academic-codex.github.io/PGF5006-Mecanica-Estatistica
 
-- Course: Introduction to Quantum Field Theory I
+- Course: Introduction to Quantum Field Theory I *
   id: PGF5107
   Program: Master's Program
   level: grad
@@ -54,7 +54,7 @@
   School: USP
   link: https://academic-codex.github.io/PGF5261-Teoria-de-Grupos-Aplicada
 
-- Course: Many-Body Theory and Condensed Matter
+- Course: Many-Body Theory and Condensed Matter *
   id: PGF5295
   Program: Master's Program
   level: grad
