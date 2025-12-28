@@ -8,7 +8,7 @@
   
 - name: Coursework
   id: courses
-  description: Selected coursework from my undergraduate and graduate studies, reflecting my formal training in physics, mathematics, engineering, entrepreneurship, statistics, and machine learning. Each course links to lecture notes, references, and related materials. Courses marked with an asterisk (*) are planned or currently in progress.
+  description: Coursework from my undergraduate and graduate studies, reflecting my formal training in physics, mathematics, engineering, entrepreneurship, statistics, and machine learning. Each course links to lecture notes, references, and related materials. Courses marked with an asterisk (*) are planned or currently in progress.
   content: 
   first: false
 
