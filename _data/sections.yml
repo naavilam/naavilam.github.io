@@ -19,7 +19,7 @@
 
 - name: Projects
   id: projects
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: This section presents the academic research projects I have developed to date. These projects were carried out within an academic context, combining theoretical analysis, computational methods, and practical implementation.
   content: 
   url: projects.html
   first: false
