@@ -174,7 +174,7 @@
   School: USP
   link: https://academic-codex.github.io/SME0610-Programacao-Matematica
 
-  - Course: Physics I
+- Course: Physics I
   id: IF4302111
   Program: Undergraduate Program
   level: undergrad
@@ -254,7 +254,7 @@
   School: USP
   link: https://academic-codex.github.io/IF4302404-Mecanica-Quantica-II
 
-  - Course: Introduction to Computer Science I
+- Course: Introduction to Computer Science I
   id: SCE0601
   Program: Undergraduate Program
   level: undergrad
@@ -302,7 +302,7 @@
   School: USP
   link: https://academic-codex.github.io/SCE0614-Inteligencia-Artificial
 
-  - Course: Object-Oriented Programming
+- Course: Object-Oriented Programming
   id: SCE0610
   Program: Undergraduate Program
   level: undergrad
@@ -334,7 +334,7 @@
   School: USP
   link: https://academic-codex.github.io/SCE0616-Sistemas-Distribuidos
 
-  - Course: Digital Signal Processing
+- Course: Digital Signal Processing
   id: SEL0615
   Program: Undergraduate Program
   level: undergrad
@@ -366,7 +366,7 @@
   School: USP
   link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
 
-  - Course: Antennas
+- Course: Antennas
   id: SEL0344
   Program: Undergraduate Program
   level: undergrad
@@ -477,7 +477,6 @@
   area: Electronics
   School: USP
   link: https://academic-codex.github.io/SEL0622-Projeto-Circuito-Integrado-II
-
 
 - Course: Entrepreneurship in Informatics
   id: SEP0527
