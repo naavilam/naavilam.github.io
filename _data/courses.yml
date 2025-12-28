@@ -350,14 +350,6 @@
   School: USP
   link: https://academic-codex.github.io/SEL0619-Comunicacao-Digital
 
-- Course: Microprocessors
-  id: SEL0614
-  Program: Undergraduate Program
-  level: undergrad
-  area: Electronics
-  School: USP
-  link: https://academic-codex.github.io/SEL0614-Microprocessadores
-
 - Course: Antennas
   id: SEL0344
   Program: Undergraduate Program
