@@ -2,7 +2,7 @@
 - name: Quantum Computing
   id: project1
   description: >
-    In this work, I studied quantum information encoding mechanisms, the construction of gate-based quantum circuits, and their implementation using Cirq, Amazon Braket, and Qiskit. I analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time, noise, and decoherence parameters. I implemented algorithms such as the Deutsch algorithm and Grover’s quantum search, and carried out introductory studies in quantum machine learning using quantum support vector machines (QSVM). To address noise in NISQ devices, I explored quantum error mitigation techniques, including zero-noise extrapolation (ZNE) and Clifford-based regression methods.
+    In this work, I studied quantum information encoding mechanisms, the construction of gate-based quantum circuits, and their implementation using Google Cirq, Amazon Braket, IBM Qiskit and CERN Qibo SDKs. I analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time, noise, and decoherence parameters. I implemented algorithms such as the Deutsch algorithm and Grover’s quantum search, and carried out introductory studies in quantum machine learning using quantum support vector machines (QSVM). To address noise in NISQ devices, I explored quantum error mitigation techniques, including zero-noise extrapolation (ZNE) and Clifford-based regression methods.
   date: true
   link: https://quantum-computing-research.github.io
   image:  assets/img/projetos/projeto1.jpeg
