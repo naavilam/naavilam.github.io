@@ -46,7 +46,7 @@
 - name: Heavy Ion Collision
   id: project3
   description: >
-   This project investigates relativistic heavy-ion collisions at the Large Hadron Collider using a model–to-data comparison framework. The work focuses on training statistical emulators to reproduce the output of computationally intensive theoretical models, avoiding the need to run full dynamical simulations. These emulators are then used to study correlations between experimental observables and physical parameters—such as shear and bulk viscosity, rapidity, transverse momentum spectra, among others—allowing an assessment of how different observables constrain the underlying collision dynamics.
+   This project aims to investigate relativistic heavy-ion collisions at the Large Hadron Collider using a model–to-data comparison framework. The work focuses on training statistical emulators to reproduce the output of computationally intensive theoretical models, avoiding the need to run full dynamical simulations. These emulators are then used to study correlations between experimental observables and physical parameters—such as shear and bulk viscosity, rapidity, transverse momentum spectra, among others—allowing an assessment of how different observables constrain the underlying collision dynamics.
   date: true
   link: https://high-energy-physics-research.github.io
   image:  assets/img/projetos/projeto3.png
