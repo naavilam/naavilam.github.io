@@ -17,7 +17,7 @@
   url: teachings.html
   first: false
 
-- name: Projects
+- name: Research Projects
   id: projects
   description: This section presents the academic research projects I have developed to date. These projects were carried out within an academic context, combining theoretical analysis, computational methods, and practical implementation.
   content: 

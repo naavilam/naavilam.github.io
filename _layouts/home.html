@@ -105,7 +105,7 @@ layout: default
             <p><i>{{section.description}}</i></p>
             <p class="card-text">{% bibliography -f presentations %}</p>
           </div>
-          {% elsif section.name == "Projects" %}
+          {% elsif section.name == "Research Projects" %}
           <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>
             {% for projects in site.data.projects %}
