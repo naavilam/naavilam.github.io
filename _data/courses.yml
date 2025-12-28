@@ -358,14 +358,6 @@
   School: USP
   link: https://academic-codex.github.io/SEL0614-Microprocessadores
 
-- Course: Electronic Circuits II
-  id: SEL0615
-  Program: Undergraduate Program
-  level: undergrad
-  area: Electronics
-  School: USP
-  link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
-
 - Course: Antennas
   id: SEL0344
   Program: Undergraduate Program
