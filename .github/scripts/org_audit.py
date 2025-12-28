@@ -4,7 +4,7 @@ import json
 import time
 import requests
 from datetime import datetime
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 # Agora aceitamos ORGS="org1,org2,org3"
 ORGS_RAW = os.environ.get("ORGS", "").strip()
@@ -65,12 +65,30 @@ def list_org_repos(org: str) -> List[Dict[str, Any]]:
     return repos
 
 
+def list_branches(owner: str, repo: str) -> List[str]:
+    """Lista todas as branches existentes no repo (sem suposições)."""
+    branches: List[str] = []
+    page = 1
+    while True:
+        r = gh_get(f"{API}/repos/{owner}/{repo}/branches", params={
+            "per_page": 100,
+            "page": page,
+        })
+        batch = r.json()
+        if not batch:
+            break
+        branches.extend(b.get("name") for b in batch if b.get("name"))
+        page += 1
+    return branches
+
+
 def get_branch_head_sha(owner: str, repo: str, branch: str) -> Optional[str]:
     url = f"{API}/repos/{owner}/{repo}/git/ref/heads/{branch}"
     try:
         r = gh_get(url)
         return r.json().get("object", {}).get("sha")
     except requests.HTTPError as e:
+        # Pode ser repo vazio, branch deletada no meio da execução, etc.
         print(f"[warn] ref not found {owner}/{repo}@{branch}: {e}")
         return None
 
@@ -111,6 +129,67 @@ def analyze_tree(tree: List[Dict[str, Any]]) -> Dict[str, Any]:
     }
 
 
+def empty_stats() -> Dict[str, Any]:
+    return {
+        "has_gitignore": False,
+        "has_readme": False,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 0,
+    }
+
+
+def aggregate_repo_stats(branch_reports: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Agrega métricas por repo a partir das branches.
+    Sem deduplicar arquivos (pode contar duas vezes entre branches),
+    mas é OK para auditoria estrutural.
+    """
+    if not branch_reports:
+        return empty_stats()
+
+    agg = empty_stats()
+    agg["has_gitignore"] = any(b.get("has_gitignore") for b in branch_reports)
+    agg["has_readme"] = any(b.get("has_readme") for b in branch_reports)
+
+    agg["notebooks_ipynb"] = sum(int(b.get("notebooks_ipynb", 0)) for b in branch_reports)
+    agg["files_py"] = sum(int(b.get("files_py", 0)) for b in branch_reports)
+    agg["files_tex"] = sum(int(b.get("files_tex", 0)) for b in branch_reports)
+    agg["files_md"] = sum(int(b.get("files_md", 0)) for b in branch_reports)
+    agg["files_yml"] = sum(int(b.get("files_yml", 0)) for b in branch_reports)
+    agg["total_files"] = sum(int(b.get("total_files", 0)) for b in branch_reports)
+    return agg
+
+
+def audit_one_repo(owner: str, repo_name: str) -> Tuple[List[Dict[str, Any]], List[str]]:
+    """
+    Retorna:
+      - branch_reports: lista de dicts por branch com stats
+      - branches: lista de nomes das branches
+    """
+    branches = list_branches(owner, repo_name)
+
+    branch_reports: List[Dict[str, Any]] = []
+    for br in branches:
+        sha = get_branch_head_sha(owner, repo_name, br)
+        if not sha:
+            stats = empty_stats()
+        else:
+            tree = get_tree(owner, repo_name, sha) or []
+            stats = analyze_tree(tree)
+
+        branch_reports.append({
+            "branch": br,
+            "head_sha": sha,
+            **stats,
+        })
+
+    return branch_reports, branches
+
+
 def audit_one_org(org: str) -> List[Dict[str, Any]]:
     print(f"[audit] org={org}")
     repos = list_org_repos(org)
@@ -123,26 +202,18 @@ def audit_one_org(org: str) -> List[Dict[str, Any]]:
         archived = repo.get("archived", False)
         fork = repo.get("fork", False)
         private = repo.get("private", False)
-        default_branch = repo.get("default_branch") or "main"
+        default_branch = repo.get("default_branch") or ""
         pushed_at = repo.get("pushed_at") or ""
 
         owner = repo["owner"]["login"]
 
-        sha = get_branch_head_sha(owner, name, default_branch)
-        if not sha:
-            stats = {
-                "has_gitignore": False,
-                "has_readme": False,
-                "notebooks_ipynb": 0,
-                "files_py": 0,
-                "files_tex": 0,
-                "files_md": 0,
-                "files_yml": 0,
-                "total_files": 0,
-            }
-        else:
-            tree = get_tree(owner, name, sha) or []
-            stats = analyze_tree(tree)
+        try:
+            branch_reports, branch_names = audit_one_repo(owner, name)
+        except Exception as e:
+            print(f"[warn] failed branches for {owner}/{name}: {e}")
+            branch_reports, branch_names = [], []
+
+        repo_stats = aggregate_repo_stats(branch_reports)
 
         rows.append({
             "org": org,
@@ -154,7 +225,13 @@ def audit_one_org(org: str) -> List[Dict[str, Any]]:
             "fork": fork,
             "default_branch": default_branch,
             "pushed_at": pushed_at,
-            **stats,
+
+            # resumo (para CSV/MD e view atual não quebrar totalmente)
+            **repo_stats,
+
+            # detalhe branch-aware (para view futura)
+            "branches_count": len(branch_names),
+            "branches": branch_reports,
         })
 
     return rows
@@ -169,15 +246,22 @@ def write_reports_for_org(org: str, rows: List[Dict[str, Any]]) -> None:
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(rows, f, ensure_ascii=False, indent=2)
 
-    # CSV
+    # CSV: não colocamos o objeto "branches" (aninhado) aqui
+    # -> geramos uma versão "flat"
+    csv_rows = []
+    for r in rows:
+        rr = dict(r)
+        rr.pop("branches", None)
+        csv_rows.append(rr)
+
     csv_path = os.path.join(org_dir, "org-audit.csv")
-    fieldnames = list(rows[0].keys()) if rows else []
+    fieldnames = list(csv_rows[0].keys()) if csv_rows else []
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
-        w.writerows(rows)
+        w.writerows(csv_rows)
 
-    # Markdown summary
+    # Markdown summary (usa o agregado por repo)
     md_path = os.path.join(org_dir, "org-audit.md")
     now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     total = len(rows)
@@ -188,16 +272,17 @@ def write_reports_for_org(org: str, rows: List[Dict[str, Any]]) -> None:
     lines = []
     lines.append(f"# Org Audit Report: {org}\n\nGenerated: **{now}**\n\n")
     lines.append(f"- Repositories: **{total}**\n")
-    lines.append(f"- With README: **{with_readme}/{total}**\n")
-    lines.append(f"- With .gitignore: **{with_gitignore}/{total}**\n")
-    lines.append(f"- Total notebooks (.ipynb): **{total_ipynb}**\n\n")
+    lines.append(f"- With README (any branch): **{with_readme}/{total}**\n")
+    lines.append(f"- With .gitignore (any branch): **{with_gitignore}/{total}**\n")
+    lines.append(f"- Total notebooks (.ipynb) (sum over branches): **{total_ipynb}**\n\n")
 
     lines.append("## Table (top 50)\n\n")
-    lines.append("| Repo | README | .gitignore | ipynb | py | tex | files | updated |\n")
-    lines.append("|---|---:|---:|---:|---:|---:|---:|---|\n")
+    lines.append("| Repo | branches | README | .gitignore | ipynb | py | tex | files | updated |\n")
+    lines.append("|---|---:|---:|---:|---:|---:|---:|---:|---|\n")
     for r in rows[:50]:
         lines.append(
             f"| [{r['name']}]({r['url']}) | "
+            f"{r.get('branches_count', 0)} | "
             f"{'✅' if r['has_readme'] else '—'} | "
             f"{'✅' if r['has_gitignore'] else '—'} | "
             f"{r['notebooks_ipynb']} | {r['files_py']} | {r['files_tex']} | "
@@ -223,20 +308,28 @@ def main():
             # não derruba tudo se uma org falhar
             print(f"[error] org={org}: {e}")
 
-    # opcional: um índice geral (útil pro audit.html ter dropdown depois)
+    # índice geral (útil pro audit.html ter dropdown depois)
     index_path = os.path.join(REPORT_DIR, "index.json")
     with open(index_path, "w", encoding="utf-8") as f:
         json.dump({"orgs": ORGS, "generated_at": datetime.utcnow().isoformat() + "Z"}, f, indent=2)
     print(f"[ok] wrote {index_path}")
 
-    # opcional: CSV geral consolidado
+    # CSV geral consolidado (flat)
     if all_rows:
         csv_all_path = os.path.join(REPORT_DIR, "org-audit.ALL.csv")
-        fieldnames = list(all_rows[0].keys())
+
+        csv_all_rows = []
+        for r in all_rows:
+            rr = dict(r)
+            rr.pop("branches", None)
+            csv_all_rows.append(rr)
+
+        fieldnames = list(csv_all_rows[0].keys())
         with open(csv_all_path, "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=fieldnames)
             w.writeheader()
-            w.writerows(all_rows)
+            w.writerows(csv_all_rows)
+
         print(f"[ok] wrote {csv_all_path}")
 
 
