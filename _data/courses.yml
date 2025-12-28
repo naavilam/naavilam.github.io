@@ -470,13 +470,13 @@
   School: USP
   link: https://academic-codex.github.io/SEP0527-Empreendedores-Em-Informatica
 
-- Course: Environmental Management
-  id: SEP0527
+- Course: Environmental Management System
+  id: SHS0416
   Program: Undergraduate Program
   level: undergrad
   area: Entrepreneurship
   School: USP
-  link: https://academic-codex.github.io/SEP0527-Gestao-Ambiental
+  link: https://academic-codex.github.io/SHS0416-Sistema-de-Gestao-Ambiental
 
 - Course: Management and Organization
   id: SEP0527
