@@ -1,0 +1,172 @@
+[
+  {
+    "org": "quantum-materials-simulation-research",
+    "name": "quantum-chemistry",
+    "full_name": "Quantum-Materials-Simulation-Research/quantum-chemistry",
+    "url": "https://github.com/Quantum-Materials-Simulation-Research/quantum-chemistry",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2025-12-18T21:15:54Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 11,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 0,
+    "total_files": 13,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "9514a864bf8e9fc77088dc9c042bdc897fa98727",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 11,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 0,
+        "total_files": 13
+      }
+    ]
+  },
+  {
+    "org": "quantum-materials-simulation-research",
+    "name": "quantum-materials-simulation-research.github.io",
+    "full_name": "Quantum-Materials-Simulation-Research/quantum-materials-simulation-research.github.io",
+    "url": "https://github.com/Quantum-Materials-Simulation-Research/quantum-materials-simulation-research.github.io",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2025-12-28T00:58:35Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 0,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 2,
+    "files_yml": 1,
+    "total_files": 113,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "c3cb3e08666f35d56220a3c12e8eff1f2f8b6b62",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 2,
+        "files_yml": 1,
+        "total_files": 113
+      }
+    ]
+  },
+  {
+    "org": "quantum-materials-simulation-research",
+    "name": "quantum-monte-carlo",
+    "full_name": "Quantum-Materials-Simulation-Research/quantum-monte-carlo",
+    "url": "https://github.com/Quantum-Materials-Simulation-Research/quantum-monte-carlo",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2025-12-18T21:12:01Z",
+    "has_gitignore": false,
+    "has_readme": false,
+    "notebooks_ipynb": 17,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 0,
+    "files_yml": 0,
+    "total_files": 20,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "3be3456c1a4c287581c7f559a75bbd11888aa9f5",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 17,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 20
+      }
+    ]
+  },
+  {
+    "org": "quantum-materials-simulation-research",
+    "name": "quantum-neural-state",
+    "full_name": "Quantum-Materials-Simulation-Research/quantum-neural-state",
+    "url": "https://github.com/Quantum-Materials-Simulation-Research/quantum-neural-state",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2025-12-17T13:19:24Z",
+    "has_gitignore": false,
+    "has_readme": false,
+    "notebooks_ipynb": 1,
+    "files_py": 45,
+    "files_tex": 0,
+    "files_md": 0,
+    "files_yml": 0,
+    "total_files": 53,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "316efbc12e30ffa8ccfe3a25bdf97f82200c09c3",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 1,
+        "files_py": 45,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 53
+      }
+    ]
+  },
+  {
+    "org": "quantum-materials-simulation-research",
+    "name": "variational-approximation",
+    "full_name": "Quantum-Materials-Simulation-Research/variational-approximation",
+    "url": "https://github.com/Quantum-Materials-Simulation-Research/variational-approximation",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2025-12-28T13:10:02Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 0,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 0,
+    "total_files": 1,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "e0987e86b9a584406577d655d98aeb28b816565d",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 0,
+        "total_files": 1
+      }
+    ]
+  }
+]
