@@ -430,14 +430,6 @@
   School: USP
   link: https://academic-codex.github.io/SEL0617-Fundamentos-Microeletronica
 
-- Course: Integrated Circuit Design I
-  id: SEL0618
-  Program: Undergraduate Program
-  level: undergrad
-  area: Electronics
-  School: USP
-  link: https://academic-codex.github.io/SEL0618-Projeto-Circuito-Integrado-I
-
 - Course: Digital Communications
   id: SEL0619
   Program: Undergraduate Program
@@ -453,6 +445,14 @@
   area: Electronics
   School: USP
   link: https://academic-codex.github.io/SEL0620-Controle-Digital
+
+- Course: Integrated Circuit Design I
+  id: SEL0618
+  Program: Undergraduate Program
+  level: undergrad
+  area: Electronics
+  School: USP
+  link: https://academic-codex.github.io/SEL0618-Projeto-Circuito-Integrado-I
 
 - Course: Integrated Circuit Design II
   id: SEL0622

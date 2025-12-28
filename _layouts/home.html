@@ -244,6 +244,39 @@ layout: default
 -->
 
   <script>
+    function sortCourseItems() {
+      const container = document.querySelector('.list-group');
+      if (!container) return;
+
+      const items = Array.from(container.querySelectorAll('.course-item'));
+
+      items.sort((a, b) => {
+        const ta = a.textContent.trim();
+        const tb = b.textContent.trim();
+
+        // Extrai código tipo SEL0614
+        const ma = ta.match(/^([A-Z]+)(\d+)/);
+        const mb = tb.match(/^([A-Z]+)(\d+)/);
+
+        if (ma && mb) {
+          // 1) prefixo (SEL, SMA, etc)
+          if (ma[1] !== mb[1]) {
+            return ma[1].localeCompare(mb[1]);
+          }
+          // 2) número
+          return parseInt(ma[2]) - parseInt(mb[2]);
+        }
+
+        // fallback: ordem alfabética completa
+        return ta.localeCompare(tb);
+      });
+
+      // reaplica no DOM
+      items.forEach(el => container.appendChild(el));
+    }
+  </script>
+
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
 
       function applyCourseFilters() {
@@ -273,6 +306,7 @@ layout: default
         areaSel.addEventListener('change', applyCourseFilters);
       }
 
+      sortCourseItems();
       applyCourseFilters();
     });
   </script>
