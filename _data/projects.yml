@@ -51,11 +51,11 @@
   link: https://high-energy-physics-research.github.io
   image:  assets/img/projetos/projeto3.png
   tech: 
-    - c++
+    - C++
     - Python
     - TRENTo
-    - Music
-    - Quantum observables's correlations
+    - MUSIC
+    - Quantum observable correlations
     - Large Hadron Collider (LHC)
-    - Heavy Ions Collider
-    - Gaussian Process
+    - Heavy-ion collisions
+    - Gaussian Processes
