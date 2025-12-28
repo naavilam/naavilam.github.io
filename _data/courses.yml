@@ -334,22 +334,6 @@
   School: USP
   link: https://academic-codex.github.io/SCE0616-Sistemas-Distribuidos
 
-- Course: Digital Signal Processing
-  id: SEL0615
-  Program: Undergraduate Program
-  level: undergrad
-  area: Communication
-  School: USP
-  link: https://academic-codex.github.io/SEL0615-Processamento-Digital-Sinais
-
-- Course: Digital Communications
-  id: SEL0619
-  Program: Undergraduate Program
-  level: undergrad
-  area: Communication
-  School: USP
-  link: https://academic-codex.github.io/SEL0619-Comunicacao-Digital
-
 - Course: Antennas
   id: SEL0344
   Program: Undergraduate Program
