@@ -12,6 +12,13 @@
   content: 
   first: false
 
+- name: Research Projects
+  id: projects
+  description: This section presents the academic research projects I have developed to date. These projects were carried out within an academic context, combining theoretical analysis, computational methods, and practical implementation.
+  content: 
+  url: projects.html
+  first: false
+
 - name: Talks
   id: teachings
   description: Invited and contributed talks presented at seminars, conferences, and academic meetings.
@@ -19,10 +26,4 @@
   url: teachings.html
   first: false
 
-- name: Research Projects
-  id: projects
-  description: This section presents the academic research projects I have developed to date. These projects were carried out within an academic context, combining theoretical analysis, computational methods, and practical implementation.
-  content: 
-  url: projects.html
-  first: false
 
