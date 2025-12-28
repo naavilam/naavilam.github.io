@@ -1,0 +1,175 @@
+---
+layout: page
+permalink: /audit.html
+title: Audit
+description: Internal repository report (intentionally minimal)
+---
+
+<style>
+    /* intencionalmente feio/mono, mas sem quebrar o layout do site */
+    .audit-wrap {
+        font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+
+    .audit-row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px 0 14px;
+    }
+
+    .audit-row input {
+        width: 320px;
+        max-width: 100%;
+        padding: 6px;
+        border: 1px solid #000;
+    }
+
+    .audit-muted {
+        color: #444;
+        font-size: 12px;
+    }
+
+    .audit-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .audit-table th,
+    .audit-table td {
+        border: 1px solid #000;
+        padding: 6px 8px;
+        font-size: 12px;
+        vertical-align: top;
+    }
+
+    .audit-table th {
+        background: #f2f2f2;
+    }
+
+    .audit-ok {
+        background: #eaffea;
+    }
+
+    .audit-no {
+        background: #ffecec;
+    }
+</style>
+
+<div class="audit-wrap">
+    <div class="audit-muted">internal report (minimal by design)</div>
+
+    <div class="audit-row">
+        <label class="audit-muted">filter:</label>
+        <input id="q" placeholder="type repo name..." />
+        <span id="stats" class="audit-muted"></span>
+    </div>
+
+    <table class="audit-table">
+        <thead>
+            <tr>
+                <th>Repo</th>
+                <th>README</th>
+                <th>.gitignore</th>
+                <th>ipynb</th>
+                <th>py</th>
+                <th>tex</th>
+                <th>files</th>
+                <th>updated</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td colspan="8">loading…</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Se seu workflow salva em reports/org-audit.json, isso funciona.
+    // Se você colocar em outra pasta, só ajustar aqui.
+    const DATA_URL = "{{ '/reports/org-audit.json' | relative_url }}";
+
+    const tbody = document.getElementById("tbody");
+    const q = document.getElementById("q");
+    const stats = document.getElementById("stats");
+
+    let rows = [];
+
+    function td(text, cls = "") {
+        const el = document.createElement("td");
+        el.textContent = text;
+        if (cls) el.className = cls;
+        return el;
+    }
+
+    function render() {
+        const needle = (q.value || "").trim().toLowerCase();
+        const filtered = needle
+            ? rows.filter(r =>
+                (r.name || "").toLowerCase().includes(needle) ||
+                (r.full_name || "").toLowerCase().includes(needle)
+            )
+            : rows;
+
+        const total = rows.length;
+        const shown = filtered.length;
+        const withReadme = filtered.filter(r => r.has_readme).length;
+        const withGitignore = filtered.filter(r => r.has_gitignore).length;
+        const ipynb = filtered.reduce((s, r) => s + (r.notebooks_ipynb || 0), 0);
+
+        stats.textContent = `showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb}`;
+
+        tbody.innerHTML = "";
+
+        if (!filtered.length) {
+            const tr = document.createElement("tr");
+            tr.appendChild(td("no repos found"));
+            for (let i = 0; i < 7; i++) tr.appendChild(td(""));
+            tbody.appendChild(tr);
+            return;
+        }
+
+        for (const r of filtered) {
+            const tr = document.createElement("tr");
+
+            const repoCell = document.createElement("td");
+            const a = document.createElement("a");
+            a.href = r.url;
+            a.textContent = r.name;
+            a.target = "_blank";
+            a.rel = "noreferrer";
+            repoCell.appendChild(a);
+            tr.appendChild(repoCell);
+
+            tr.appendChild(td(r.has_readme ? "yes" : "no", r.has_readme ? "audit-ok" : "audit-no"));
+            tr.appendChild(td(r.has_gitignore ? "yes" : "no", r.has_gitignore ? "audit-ok" : "audit-no"));
+            tr.appendChild(td(String(r.notebooks_ipynb || 0)));
+            tr.appendChild(td(String(r.files_py || 0)));
+            tr.appendChild(td(String(r.files_tex || 0)));
+            tr.appendChild(td(String(r.total_files || 0)));
+            tr.appendChild(td((r.pushed_at || "").slice(0, 10)));
+
+            tbody.appendChild(tr);
+        }
+    }
+
+    q.addEventListener("input", render);
+
+    fetch(DATA_URL, { cache: "no-store" })
+        .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+        .then(data => {
+            rows = data || [];
+            // Ordena: primeiro os que “faltam” coisas
+            rows.sort((a, b) => {
+                const score = x => (x.has_readme ? 0 : 2) + (x.has_gitignore ? 0 : 1);
+                return score(b) - score(a) || (a.name || "").localeCompare(b.name || "");
+            });
+            render();
+        })
+        .catch(err => {
+            tbody.innerHTML = `<tr><td colspan="8">failed to load ${DATA_URL}: ${String(err)}</td></tr>`;
+        });
+</script>
