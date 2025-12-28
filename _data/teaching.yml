@@ -16,8 +16,8 @@
   Degree: 
   Program: Tech Day
   # id: POL-240/SPI-312-International-Relations
-  data-id: data-harv1
-  heading-id: head-harv1
+  # data-id: data-harv1
+  # heading-id: head-harv1
   Date: 08/12/2022
   # EndDate: 08/30/2020
   first: true   # one must be true to properly display
@@ -29,9 +29,9 @@
 - School: The Developer Conference
   Degree: 
   Program: TDC Business
-  id: POL-380-Human-Rights
-  data-id: data-princ1   
-  heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
+  # id: POL-380-Human-Rights
+  # data-id: data-princ1   
+  # heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
   Date: 24/08/2022
   # EndDate: 08/30/2020
   first: false
@@ -44,9 +44,9 @@
 - School: Rio Innovation Week
   Degree: 
   Program: IA e Meta Mundo
-  id: POL-380-Human-Rights
-  data-id: data-princ1   
-  heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
+  # id: POL-380-Human-Rights
+  # data-id: data-princ1   
+  # heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
   Date: 13/08/2024
   # EndDate: 08/30/2020
   first: false
