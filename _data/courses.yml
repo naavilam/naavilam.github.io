@@ -135,12 +135,12 @@
   link: https://academic-codex.github.io/SMA0332-Calculo-II
 
 - Course: Calculus III
-  id: SMA0302
+  id: SMA0333
   Program: Undergraduate Program
   level: undergrad
   area: Mathematics
   School: USP
-  link: https://academic-codex.github.io/SMA0302-Calculo-III
+  link: https://academic-codex.github.io/SMA0333-Calculo-III
 
 - Course: Complex Variable Functions
   id: SMA0111
