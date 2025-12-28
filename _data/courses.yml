@@ -98,6 +98,14 @@
   id: MAE5911
   Program: Master's Program
   level: grad
+  area: Statistics
+  School: USP
+  link: https://academic-codex.github.io/MAE5911-Estatistica-e-Machine-Learning
+
+- Course: Statistical Foundations and Machine Learning
+  id: MAE5911
+  Program: Master's Program
+  level: grad
   area: Artificial Intelligence
   School: USP
   link: https://academic-codex.github.io/MAE5911-Estatistica-e-Machine-Learning
