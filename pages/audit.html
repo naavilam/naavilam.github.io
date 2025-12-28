@@ -19,11 +19,22 @@ description: Internal repository report
         margin: 10px 0 14px;
     }
 
-    .audit-row input {
-        width: 320px;
+    .audit-row input,
+    .audit-row select {
         max-width: 100%;
         padding: 6px;
         border: 1px solid #000;
+        background: #fff;
+        font-family: inherit;
+        font-size: 12px;
+    }
+
+    .audit-row input {
+        width: 320px;
+    }
+
+    .audit-row select {
+        width: 360px;
     }
 
     .audit-muted {
@@ -61,8 +72,14 @@ description: Internal repository report
     <div class="audit-muted">internal report (minimal by design)</div>
 
     <div class="audit-row">
+        <label class="audit-muted">org:</label>
+        <select id="orgSelect">
+            <option>loading…</option>
+        </select>
+
         <label class="audit-muted">filter:</label>
         <input id="q" placeholder="type repo name..." />
+
         <span id="stats" class="audit-muted"></span>
     </div>
 
@@ -72,6 +89,7 @@ description: Internal repository report
                 <th>Repo</th>
                 <th>README</th>
                 <th>.gitignore</th>
+                <th>branches</th>
                 <th>ipynb</th>
                 <th>py</th>
                 <th>tex</th>
@@ -81,28 +99,33 @@ description: Internal repository report
         </thead>
         <tbody id="tbody">
             <tr>
-                <td colspan="8">loading…</td>
+                <td colspan="9">loading…</td>
             </tr>
         </tbody>
     </table>
 </div>
 
 <script>
-    // Se seu workflow salva em reports/org-audit.json, isso funciona.
-    // Se você colocar em outra pasta, só ajustar aqui.
-    const DATA_URL = "{{ '/reports/org-audit.json' | relative_url }}";
+    const INDEX_URL = "{{ '/reports/index.json' | relative_url }}";
 
     const tbody = document.getElementById("tbody");
     const q = document.getElementById("q");
     const stats = document.getElementById("stats");
+    const orgSelect = document.getElementById("orgSelect");
 
     let rows = [];
+    let currentOrg = null;
 
     function td(text, cls = "") {
         const el = document.createElement("td");
         el.textContent = text;
         if (cls) el.className = cls;
         return el;
+    }
+
+    function scoreRow(x) {
+        // Primeiro os que “faltam” coisas
+        return (x.has_readme ? 0 : 2) + (x.has_gitignore ? 0 : 1);
     }
 
     function render() {
@@ -120,14 +143,15 @@ description: Internal repository report
         const withGitignore = filtered.filter(r => r.has_gitignore).length;
         const ipynb = filtered.reduce((s, r) => s + (r.notebooks_ipynb || 0), 0);
 
-        stats.textContent = `showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb}`;
+        stats.textContent =
+            `org=${currentOrg || "—"} | showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb}`;
 
         tbody.innerHTML = "";
 
         if (!filtered.length) {
             const tr = document.createElement("tr");
             tr.appendChild(td("no repos found"));
-            for (let i = 0; i < 7; i++) tr.appendChild(td(""));
+            for (let i = 0; i < 8; i++) tr.appendChild(td(""));
             tbody.appendChild(tr);
             return;
         }
@@ -146,6 +170,7 @@ description: Internal repository report
 
             tr.appendChild(td(r.has_readme ? "yes" : "no", r.has_readme ? "audit-ok" : "audit-no"));
             tr.appendChild(td(r.has_gitignore ? "yes" : "no", r.has_gitignore ? "audit-ok" : "audit-no"));
+            tr.appendChild(td(String(r.branches_count || 0)));
             tr.appendChild(td(String(r.notebooks_ipynb || 0)));
             tr.appendChild(td(String(r.files_py || 0)));
             tr.appendChild(td(String(r.files_tex || 0)));
@@ -156,20 +181,59 @@ description: Internal repository report
         }
     }
 
+    function loadOrg(org) {
+        currentOrg = org;
+        const DATA_URL = `{{ '/reports/' | relative_url }}${org}/org-audit.json`;
+
+        tbody.innerHTML = `<tr><td colspan="9">loading ${org}…</td></tr>`;
+        q.value = "";
+
+        fetch(DATA_URL, { cache: "no-store" })
+            .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+            .then(data => {
+                rows = data || [];
+                rows.sort((a, b) => scoreRow(b) - scoreRow(a) || (a.name || "").localeCompare(b.name || ""));
+                render();
+                // salva escolha
+                try { localStorage.setItem("audit_org", org); } catch (_) { }
+            })
+            .catch(err => {
+                tbody.innerHTML = `<tr><td colspan="9">failed to load ${DATA_URL}: ${String(err)}</td></tr>`;
+            });
+    }
+
     q.addEventListener("input", render);
 
-    fetch(DATA_URL, { cache: "no-store" })
+    fetch(INDEX_URL, { cache: "no-store" })
         .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-        .then(data => {
-            rows = data || [];
-            // Ordena: primeiro os que “faltam” coisas
-            rows.sort((a, b) => {
-                const score = x => (x.has_readme ? 0 : 2) + (x.has_gitignore ? 0 : 1);
-                return score(b) - score(a) || (a.name || "").localeCompare(b.name || "");
-            });
-            render();
+        .then(idx => {
+            const orgs = (idx && idx.orgs) ? idx.orgs : [];
+            orgSelect.innerHTML = "";
+
+            if (!orgs.length) {
+                orgSelect.innerHTML = `<option>(no orgs in index.json)</option>`;
+                tbody.innerHTML = `<tr><td colspan="9">reports/index.json has no orgs</td></tr>`;
+                return;
+            }
+
+            for (const org of orgs) {
+                const opt = document.createElement("option");
+                opt.value = org;
+                opt.textContent = org;
+                orgSelect.appendChild(opt);
+            }
+
+            // escolhe org (localStorage -> primeira)
+            let preferred = null;
+            try { preferred = localStorage.getItem("audit_org"); } catch (_) { }
+            const initial = (preferred && orgs.includes(preferred)) ? preferred : orgs[0];
+
+            orgSelect.value = initial;
+            loadOrg(initial);
         })
         .catch(err => {
-            tbody.innerHTML = `<tr><td colspan="8">failed to load ${DATA_URL}: ${String(err)}</td></tr>`;
+            tbody.innerHTML = `<tr><td colspan="9">failed to load ${INDEX_URL}: ${String(err)}</td></tr>`;
         });
+
+    orgSelect.addEventListener("change", () => loadOrg(orgSelect.value));
 </script>
