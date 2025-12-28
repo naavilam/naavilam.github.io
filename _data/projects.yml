@@ -2,7 +2,7 @@
 - name: Quantum Computing
   id: project1
   description: >
-    My work in quantum computing spans the main conceptual and practical pillars of the field, including quantum information encoding through amplitude and phase, the construction of gate-based quantum circuits, and their implementation using Cirq, Amazon Braket, and Qiskit. I have analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time and hardware-specific characteristics. This work includes the study and implementation of foundational quantum algorithms, such as the Deutsch algorithm and quantum search, as well as introductory approaches to quantum machine learning, including quantum support vector machines (QSVM).
+    My work in quantum computing spans the main conceptual and practical pillars of the field, including quantum information encoding, the construction of gate-based quantum circuits, and their implementation using Cirq, Amazon Braket, and Qiskit. I have analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time and hardware-specific characteristics. This work includes the study and implementation of foundational quantum algorithms, such as the Deutsch algorithm and quantum search, as well as introductory approaches to quantum machine learning, including quantum support vector machines (QSVM).
   date: true
   link: https://quantum-computing-research.github.io
   image:  assets/img/projetos/projeto1.jpeg
@@ -10,6 +10,12 @@
     - Python
     - AWS Braket
     - Qiskit
+    - Grover
+    - Deutsch
+    - Quantum gates
+    - Neural atom
+    - Superconducting
+    - Photonic
 
 - name: Quantum Material Simulation
   id: project2
@@ -21,6 +27,14 @@
   tech: 
     - Quiskit Nature
     - Pennylane
+    - Born–Oppenheimer approximation
+    - Fermionic Hamiltonians
+    - Jordan–Wigner transformation
+    - UCCSD ansatz
+    - Restricted Boltzmann Machine ansatz
+    - Variational Methods
+    - Ground state energy
+
 
 - name: Heavy Ion Collision
   id: project3
