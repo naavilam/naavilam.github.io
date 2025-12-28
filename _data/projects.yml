@@ -23,7 +23,6 @@
     - Clifford Data Regression (CDR)
     - Zero-Noise Extrapolation (ZNE)
 
-
 - name: Quantum Material Simulation
   id: project2
   description: >
@@ -41,7 +40,6 @@
     - Restricted Boltzmann Machine ansatz
     - Variational Methods
     - Ground state energy
-
 
 - name: Heavy Ion Collision
   id: project3
