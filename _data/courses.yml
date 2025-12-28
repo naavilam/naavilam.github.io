@@ -497,30 +497,6 @@
 
 # ====== MATHEMATICS (SMA/SME) ======
 
-- Course: Complex Variable Functions
-  id: SMA0111
-  Program: Undergraduate Program
-  level: undergrad
-  area: Mathematics
-  School: USP
-  link: https://academic-codex.github.io/SMA0111-Funcoes-De-Variaveis-Complexas
-
-- Course: Calculus I
-  id: SMA0301
-  Program: Undergraduate Program
-  level: undergrad
-  area: Mathematics
-  School: USP
-  link: https://academic-codex.github.io/SMA0301-Calculo-I
-
-- Course: Calculus III
-  id: SMA0302
-  Program: Undergraduate Program
-  level: undergrad
-  area: Mathematics
-  School: USP
-  link: https://academic-codex.github.io/SMA0302-Calculo-III
-
 - Course: Calculus II
   id: SMA0332
   Program: Undergraduate Program
@@ -528,30 +504,6 @@
   area: Mathematics
   School: USP
   link: https://academic-codex.github.io/SMA0332-Calculo-II
-
-- Course: Numerical Calculus I
-  id: SME0600
-  Program: Undergraduate Program
-  level: undergrad
-  area: Mathematics
-  School: USP
-  link: https://academic-codex.github.io/SME0600-Calculo-Numerico-I
-
-- Course: Numerical Calculus II
-  id: SME0601
-  Program: Undergraduate Program
-  level: undergrad
-  area: Mathematics
-  School: USP
-  link: https://academic-codex.github.io/SME0601-Calculo-Numerico-II
-
-- Course: Mathematical Programming
-  id: SME0610
-  Program: Undergraduate Program
-  level: undergrad
-  area: Mathematics
-  School: USP
-  link: https://academic-codex.github.io/SME0610-Programacao-Matematica
 
 
 # ====== CHEMISTRY (SQM) ======
