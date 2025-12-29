@@ -66,6 +66,20 @@ description: Internal repository report
     .audit-no {
         background: #ffecec;
     }
+
+    .audit-row button {
+        padding: 6px 10px;
+        border: 1px solid #000;
+        background: #fff;
+        font-family: inherit;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    .audit-row button:disabled {
+        opacity: .5;
+        cursor: not-allowed;
+    }
 </style>
 
 <div class="audit-wrap">
@@ -81,6 +95,9 @@ description: Internal repository report
         <input id="q" placeholder="type repo name..." />
 
         <span id="stats" class="audit-muted"></span>
+        <button id="btnRunAudit" type="button">run org audit</button>
+        <button id="btnInitRepos" type="button">init repos (selected org)</button>
+        <span id="actionMsg" class="audit-muted"></span>
     </div>
 
     <table class="audit-table">
@@ -107,6 +124,7 @@ description: Internal repository report
 
 <script>
     const INDEX_URL = "{{ '/reports/index.json' | relative_url }}";
+    const DISPATCH_API = "{{ '/api/github/dispatch' | relative_url }}";
 
     const tbody = document.getElementById("tbody");
     const q = document.getElementById("q");
@@ -236,4 +254,78 @@ description: Internal repository report
         });
 
     orgSelect.addEventListener("change", () => loadOrg(orgSelect.value));
+
+    const btnRunAudit = document.getElementById("btnRunAudit");
+    const btnInitRepos = document.getElementById("btnInitRepos");
+    const actionMsg = document.getElementById("actionMsg");
+
+    function setBusy(busy, msg = "") {
+        btnRunAudit.disabled = busy;
+        btnInitRepos.disabled = busy;
+        actionMsg.textContent = msg || "";
+    }
+
+    async function postJSON(url, payload) {
+        const r = await fetch(url, {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(payload),
+        });
+        const text = await r.text();
+        let data = null;
+        try { data = text ? JSON.parse(text) : null; } catch (_) { }
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ${text || r.statusText}`);
+        return data;
+    }
+
+    // 1) Dispara auditoria (ex: workflow org-audit no repo central "hub" ou ".github")
+    btnRunAudit?.addEventListener("click", async () => {
+        try {
+            setBusy(true, "dispatching org audit…");
+
+            // Ajuste para o seu repo central que contém o workflow org-audit.yml
+            // Ex: org=naavilam, repo=hub, workflow=org-audit.yml
+            const payload = {
+                action: "workflow_dispatch",
+                org: "naavilam",          // <-- ajuste se necessário
+                repo: "hub",              // <-- ajuste se necessário
+                workflow: "org-audit.yml",
+                ref: "main",
+                inputs: {}                // se tiver inputs, coloque aqui
+            };
+
+            const out = await postJSON(DISPATCH_API, payload);
+            setBusy(false, out?.message || "ok: audit dispatched");
+        } catch (e) {
+            setBusy(false, `failed: ${String(e)}`);
+        }
+    });
+
+    // 2) Dispara inicializa-repos.yml no .github da org selecionada
+    btnInitRepos?.addEventListener("click", async () => {
+        try {
+            const org = orgSelect.value;
+            if (!org) return;
+
+            setBusy(true, `dispatching inicializa-repos for ${org}…`);
+
+            const payload = {
+                action: "workflow_dispatch",
+                org,                // org selecionada na UI
+                repo: ".github",    // workflow está em org/.github
+                workflow: "inicializa-repos.yml",
+                ref: "main",
+                inputs: {
+                    mode: "all",
+                    org: org,
+                    repo: ""          // porque seu workflow aceita repo quando mode=one
+                }
+            };
+
+            const out = await postJSON(DISPATCH_API, payload);
+            setBusy(false, out?.message || `ok: inicializa-repos dispatched for ${org}`);
+        } catch (e) {
+            setBusy(false, `failed: ${String(e)}`);
+        }
+    });
 </script>
