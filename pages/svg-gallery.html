@@ -66,8 +66,14 @@ description: Menu de SVGs
 
 <script>
     (async () => {
-        const res = await fetch('/assets/svg/index.json', { cache: 'no-store' });
-        if (!res.ok) throw new Error('Não achei /assets/svg/index.json (o workflow gerou?)');
+        const BASE = "{{ site.baseurl }}"; // importante no Pages dentro de repo
+        const indexUrl = `${BASE}/assets/svg/index.json`;
+
+        const res = await fetch(indexUrl, { cache: 'no-store' });
+        if (!res.ok) {
+            console.error("Falha ao carregar:", indexUrl, res.status);
+            return;
+        }
         const data = await res.json();
 
         const grid = document.getElementById('grid');
@@ -80,12 +86,13 @@ description: Menu de SVGs
             (data.files || [])
                 .filter(name => !f || name.toLowerCase().includes(f))
                 .forEach(name => {
-                    const url = `/assets/svg/${name}`;
+                    const url = `${BASE}/assets/svg/${name}`;
+
                     const card = document.createElement('div');
                     card.className = 'svg-card';
                     card.innerHTML = `
           <a href="${url}" target="_blank" rel="noopener">
-            <div class="svg-preview" data-url="${url}">carregando…</div>
+            <div class="svg-preview">carregando…</div>
             <div class="svg-name">${name}</div>
           </a>
         `;
@@ -94,7 +101,7 @@ description: Menu de SVGs
                     fetch(url, { cache: 'no-store' })
                         .then(r => r.text())
                         .then(svg => { card.querySelector('.svg-preview').innerHTML = svg; })
-                        .catch(() => { card.querySelector('.svg-preview').textContent = 'falhou'; });
+                        .catch(e => { card.querySelector('.svg-preview').textContent = 'falhou'; console.error(e); });
                 });
         }
 
