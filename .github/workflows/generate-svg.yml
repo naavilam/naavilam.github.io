@@ -22,7 +22,7 @@ jobs:
           node-version: "20"
 
       - name: Generate index.json
-        run: node scripts/gen-svg-index.mjs
+        run: node .github/scripts/gen-svg-index.mjs
 
       - name: Commit changes (if any)
         run: |
