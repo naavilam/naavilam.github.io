@@ -1069,7 +1069,6 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
   border-radius: 6px;
 }
 
-/*Limita o icone em education*/
 .media img:not(.talk-thumb) {
   width: 80px;
   max-width: 80px;
