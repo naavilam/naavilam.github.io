@@ -1,0 +1,104 @@
+---
+layout: page
+permalink: /svg-gallery.html
+title: SVG Gallery
+description: Menu de SVGs
+---
+
+<style>
+    .svg-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 14px;
+    }
+
+    .svg-card {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 12px;
+        background: #fff;
+    }
+
+    .svg-card a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .svg-name {
+        font-family: ui-monospace, Menlo, Consolas, monospace;
+        font-size: 12px;
+        margin: 8px 0 0;
+        word-break: break-all;
+    }
+
+    .svg-preview {
+        width: 100%;
+        height: 160px;
+        border: 1px dashed #ccc;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: #fafafa;
+    }
+
+    .toolbar {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0 16px;
+        flex-wrap: wrap;
+    }
+
+    .toolbar input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        min-width: 240px;
+    }
+</style>
+
+<div class="toolbar">
+    <input id="q" placeholder="filtrar por nome…">
+</div>
+
+<div id="grid" class="svg-grid"></div>
+
+<script>
+    (async () => {
+        const res = await fetch('/assets/svg/index.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('Não achei /assets/svg/index.json (o workflow gerou?)');
+        const data = await res.json();
+
+        const grid = document.getElementById('grid');
+        const q = document.getElementById('q');
+
+        function render(filter = '') {
+            grid.innerHTML = '';
+            const f = filter.toLowerCase().trim();
+
+            (data.files || [])
+                .filter(name => !f || name.toLowerCase().includes(f))
+                .forEach(name => {
+                    const url = `/assets/svg/${name}`;
+                    const card = document.createElement('div');
+                    card.className = 'svg-card';
+                    card.innerHTML = `
+          <a href="${url}" target="_blank" rel="noopener">
+            <div class="svg-preview" data-url="${url}">carregando…</div>
+            <div class="svg-name">${name}</div>
+          </a>
+        `;
+                    grid.appendChild(card);
+
+                    fetch(url, { cache: 'no-store' })
+                        .then(r => r.text())
+                        .then(svg => { card.querySelector('.svg-preview').innerHTML = svg; })
+                        .catch(() => { card.querySelector('.svg-preview').textContent = 'falhou'; });
+                });
+        }
+
+        q.addEventListener('input', () => render(q.value));
+        render();
+    })();
+</script>

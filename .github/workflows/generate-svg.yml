@@ -1,0 +1,37 @@
+name: Generate SVG index
+
+on:
+  push:
+    paths:
+      - "assets/svg/**"
+      - "scripts/gen-svg-index.mjs"
+      - ".github/workflows/generate-svg.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate index.json
+        run: node scripts/gen-svg-index.mjs
+
+      - name: Commit changes (if any)
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/svg/index.json
+          git commit -m "chore: update svg index"
+          git push
