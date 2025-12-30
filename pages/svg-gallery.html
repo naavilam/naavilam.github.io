@@ -2,110 +2,267 @@
 layout: page
 permalink: /svg-gallery.html
 title: SVG Gallery
-description: Menu de SVGs
+description: SVGs com preview e edição no draw.io
 ---
 
 <style>
-    .svg-grid {
+    .svg-app {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 14px;
+        grid-template-columns: 280px 1fr;
+        gap: 16px;
+        min-height: 65vh;
+        align-items: stretch;
     }
 
-    .svg-card {
-        border: 1px solid #ddd;
-        border-radius: 12px;
+    .svg-sidebar {
+        border: 1px solid #e5e5e5;
+        border-radius: 14px;
         padding: 12px;
         background: #fff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
-    .svg-card a {
-        text-decoration: none;
-        color: inherit;
+    .svg-sidebar .search {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #d6d6d6;
+        border-radius: 12px;
+        outline: none;
+        margin-bottom: 10px;
     }
 
-    .svg-name {
+    .svg-list {
+        overflow: auto;
+        padding-right: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .svg-item {
+        border: 1px solid transparent;
+        border-radius: 12px;
+        padding: 10px 10px;
+        cursor: pointer;
+        user-select: none;
         font-family: ui-monospace, Menlo, Consolas, monospace;
         font-size: 12px;
-        margin: 8px 0 0;
+        line-height: 1.2;
         word-break: break-all;
     }
 
-    .svg-preview {
-        width: 100%;
-        height: 160px;
-        border: 1px dashed #ccc;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .svg-item:hover {
+        background: #fafafa;
+        border-color: #eee;
+    }
+
+    .svg-item.active {
+        background: #f3f6ff;
+        border-color: #cdd8ff;
+    }
+
+    .svg-main {
+        border: 1px solid #e5e5e5;
+        border-radius: 14px;
+        background: #fff;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .svg-toolbar {
+        padding: 10px 12px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .svg-title {
+        font-family: ui-monospace, Menlo, Consolas, monospace;
+        font-size: 12px;
+        word-break: break-all;
+        opacity: 0.9;
+    }
+
+    .svg-actions {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn {
+        border: 1px solid #d6d6d6;
+        background: #fff;
+        border-radius: 12px;
+        padding: 8px 10px;
+        font-size: 12px;
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+        white-space: nowrap;
+    }
+
+    .btn:hover {
         background: #fafafa;
     }
 
-    .toolbar {
-        display: flex;
-        gap: 10px;
-        margin: 10px 0 16px;
-        flex-wrap: wrap;
+    /* Área de visualização (o botão fica fora dela, na toolbar acima) */
+    .svg-view {
+        flex: 1;
+        min-height: 450px;
+        background: #fafafa;
+        position: relative;
+        overflow: auto;
+        padding: 18px;
     }
 
-    .toolbar input {
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        min-width: 240px;
+    .svg-canvas {
+        border: 1px dashed #d0d0d0;
+        border-radius: 14px;
+        background: #fff;
+        padding: 14px;
+        min-height: 100%;
+    }
+
+    /* Faz o SVG caber bem */
+    .svg-canvas svg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hint {
+        opacity: 0.7;
+        font-size: 13px;
+        padding: 8px 0 0;
+    }
+
+    @media (max-width: 900px) {
+        .svg-app {
+            grid-template-columns: 1fr;
+        }
+
+        .svg-view {
+            min-height: 360px;
+        }
     }
 </style>
 
-<div class="toolbar">
-    <input id="q" placeholder="filtrar por nome…">
-</div>
+<div class="svg-app">
+    <aside class="svg-sidebar">
+        <input id="q" class="search" placeholder="filtrar por nome…" />
+        <div id="list" class="svg-list"></div>
+    </aside>
 
-<div id="grid" class="svg-grid"></div>
+    <section class="svg-main">
+        <div class="svg-toolbar">
+            <div class="svg-title" id="title">Selecione um SVG à esquerda</div>
+
+            <div class="svg-actions">
+                <a id="openRaw" class="btn" href="#" target="_blank" rel="noopener" style="display:none;">Abrir SVG</a>
+                <a id="editDrawio" class="btn" href="#" target="_blank" rel="noopener" style="display:none;">Editar no
+                    draw.io</a>
+            </div>
+        </div>
+
+        <div class="svg-view">
+            <div id="canvas" class="svg-canvas">
+                <div class="hint">Clique em um arquivo na lista para visualizar aqui.</div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <script>
     (async () => {
-        const BASE = "{{ site.baseurl }}"; // importante no Pages dentro de repo
-        const indexUrl = `${BASE}/assets/svg/index.json`;
+        const BASE = "{{ site.baseurl }}";
+        const listEl = document.getElementById('list');
+        const qEl = document.getElementById('q');
+        const titleEl = document.getElementById('title');
+        const canvasEl = document.getElementById('canvas');
+        const openRawEl = document.getElementById('openRaw');
+        const editEl = document.getElementById('editDrawio');
 
+        // cache-buster pra evitar Pages/CDN te devolver index velho
+        const indexUrl = `${BASE}/assets/svg/index.json?v=${Date.now()}`;
         const res = await fetch(indexUrl, { cache: 'no-store' });
         if (!res.ok) {
-            console.error("Falha ao carregar:", indexUrl, res.status);
+            canvasEl.innerHTML = `<div class="hint">Não consegui carregar ${indexUrl} (status ${res.status}).</div>`;
             return;
         }
         const data = await res.json();
+        const all = (data.files || []).slice();
 
-        const grid = document.getElementById('grid');
-        const q = document.getElementById('q');
+        let currentName = null;
 
-        function render(filter = '') {
-            grid.innerHTML = '';
-            const f = filter.toLowerCase().trim();
-
-            (data.files || [])
-                .filter(name => !f || name.toLowerCase().includes(f))
-                .forEach(name => {
-                    const url = `${BASE}/assets/svg/${name}`;
-
-                    const card = document.createElement('div');
-                    card.className = 'svg-card';
-                    card.innerHTML = `
-          <a href="${url}" target="_blank" rel="noopener">
-            <div class="svg-preview">carregando…</div>
-            <div class="svg-name">${name}</div>
-          </a>
-        `;
-                    grid.appendChild(card);
-
-                    fetch(url, { cache: 'no-store' })
-                        .then(r => r.text())
-                        .then(svg => { card.querySelector('.svg-preview').innerHTML = svg; })
-                        .catch(e => { card.querySelector('.svg-preview').textContent = 'falhou'; console.error(e); });
-                });
+        function svgUrl(name) {
+            // cache-buster ajuda quando você adiciona arquivos novos
+            return `${BASE}/assets/svg/${name}?v=${Date.now()}`;
         }
 
-        q.addEventListener('input', () => render(q.value));
-        render();
+        function drawioUrl(rawUrlNoCachebuster) {
+            // draw.io pega por URL; melhor passar sem ?v=... pra não confundir downloads repetidos
+            return `https://app.diagrams.net/?url=${encodeURIComponent(rawUrlNoCachebuster)}&embed=1&ui=min`;
+        }
+
+        function renderList(filter = '') {
+            const f = filter.toLowerCase().trim();
+            listEl.innerHTML = '';
+
+            const items = all.filter(n => !f || n.toLowerCase().includes(f));
+            if (!items.length) {
+                const empty = document.createElement('div');
+                empty.className = 'hint';
+                empty.textContent = 'Nenhum arquivo encontrado.';
+                listEl.appendChild(empty);
+                return;
+            }
+
+            items.forEach(name => {
+                const row = document.createElement('div');
+                row.className = 'svg-item' + (name === currentName ? ' active' : '');
+                row.textContent = name;
+                row.addEventListener('click', () => load(name));
+                listEl.appendChild(row);
+            });
+        }
+
+        async function load(name) {
+            currentName = name;
+            renderList(qEl.value);
+
+            titleEl.textContent = name;
+
+            const rawNoCache = `${BASE}/assets/svg/${name}`; // para links/botões
+            const raw = svgUrl(name); // para fetch/preview
+
+            openRawEl.style.display = '';
+            openRawEl.href = rawNoCache;
+
+            editEl.style.display = '';
+            editEl.href = drawioUrl(location.origin + rawNoCache); // URL absoluta pro draw.io
+
+            canvasEl.innerHTML = `<div class="hint">carregando…</div>`;
+
+            try {
+                const r = await fetch(raw, { cache: 'no-store' });
+                const svg = await r.text();
+                canvasEl.innerHTML = svg;
+            } catch (e) {
+                canvasEl.innerHTML = `<div class="hint">falhou ao carregar o SVG.</div>`;
+                console.error(e);
+            }
+        }
+
+        qEl.addEventListener('input', () => renderList(qEl.value));
+
+        renderList('');
+        // auto-abrir o primeiro (opcional)
+        if (all.length) load(all[0]);
     })();
 </script>
