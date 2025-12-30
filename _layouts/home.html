@@ -59,34 +59,34 @@ layout: default
 
   <!-- HOME HIGHLIGHTS SECTION -->
   {% if site.animate %}
-  <div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border"
-    style="max-width: 100%;">
-    {% else %}
-    <div class="card mx-auto mb-1 border-0" style="max-width: 100%;">
-      {% endif %}
-      <div class="card-header" style="background-color:{{ theme.home-highlight-background }};">
-        <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
-          {% for section in site.data.sections %}
-          {% if section.first %}
-          <li class="nav-item">
-            <a class="nav-link shadow-none" id="{{ section.jsid }}" href="#{{section.id}}" role="tab"
-              aria-controls="{{section.id}}" aria-selected="true"
-              style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
-              {{section.name}}</a>
-          </li>
-          {% else %}
-          <li class="nav-item">
-            <a class="nav-link" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}"
-              aria-selected="true"
-              style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
-              {{section.name}}</a>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="card-body">
-        <div id="tabs-top">
+  <div id="tabs-top">
+    <div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border"
+      style="max-width: 100%;">
+      {% else %}
+      <div class="card mx-auto mb-1 border-0" style="max-width: 100%;">
+        {% endif %}
+        <div class="card-header" style="background-color:{{ theme.home-highlight-background }};">
+          <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
+            {% for section in site.data.sections %}
+            {% if section.first %}
+            <li class="nav-item">
+              <a class="nav-link shadow-none" id="{{ section.jsid }}" href="#{{section.id}}" role="tab"
+                aria-controls="{{section.id}}" aria-selected="true"
+                style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
+                {{section.name}}</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link" id="{{ section.jsid }}" href="#{{section.id}}" role="tab"
+                aria-controls="{{section.id}}" aria-selected="true"
+                style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
+                {{section.name}}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="card-body">
           <div class="tab-content mt-3">
             {% for section in site.data.sections %}
             {% if section.first %}
@@ -240,116 +240,117 @@ layout: default
       </div>
     </div>
   </div>
+</div>
 
 
 
-  <!-- ANIMATE.JS ANIMATE LIBRARY
+<!-- ANIMATE.JS ANIMATE LIBRARY
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
 -->
 
-  <script>
-    document.querySelectorAll('a[data-toggle="tab"]').forEach(tab => {
-      tab.addEventListener('shown.bs.tab', () => {
-        const top = document.getElementById('tabs-top');
-        if (top) {
-          top.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
+<script>
+  document.querySelectorAll('a[data-toggle="tab"]').forEach(tab => {
+    tab.addEventListener('shown.bs.tab', () => {
+      const top = document.getElementById('tabs-top');
+      if (top) {
+        top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
-  </script>
+  });
+</script>
 
-  <script>
-    function sortCourseItems() {
-      const container = document.querySelector('.list-group');
-      if (!container) return;
+<script>
+  function sortCourseItems() {
+    const container = document.querySelector('.list-group');
+    if (!container) return;
 
-      const items = Array.from(container.querySelectorAll('.course-item'));
+    const items = Array.from(container.querySelectorAll('.course-item'));
 
-      items.sort((a, b) => {
-        const ta = a.textContent.trim();
-        const tb = b.textContent.trim();
+    items.sort((a, b) => {
+      const ta = a.textContent.trim();
+      const tb = b.textContent.trim();
 
-        // Extrai código tipo SEL0614
-        const ma = ta.match(/^([A-Z]+)(\d+)/);
-        const mb = tb.match(/^([A-Z]+)(\d+)/);
+      // Extrai código tipo SEL0614
+      const ma = ta.match(/^([A-Z]+)(\d+)/);
+      const mb = tb.match(/^([A-Z]+)(\d+)/);
 
-        if (ma && mb) {
-          // 1) prefixo (SEL, SMA, etc)
-          if (ma[1] !== mb[1]) {
-            return ma[1].localeCompare(mb[1]);
-          }
-          // 2) número
-          return parseInt(ma[2]) - parseInt(mb[2]);
+      if (ma && mb) {
+        // 1) prefixo (SEL, SMA, etc)
+        if (ma[1] !== mb[1]) {
+          return ma[1].localeCompare(mb[1]);
         }
-
-        // fallback: ordem alfabética completa
-        return ta.localeCompare(tb);
-      });
-
-      // reaplica no DOM
-      items.forEach(el => container.appendChild(el));
-    }
-  </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-
-      function applyCourseFilters() {
-        const levelInput = document.querySelector('input[name="courseLevel"]:checked');
-        const level = levelInput ? levelInput.value : 'all';
-
-        const areaSel = document.getElementById('courseAreaFilter');
-        const area = areaSel ? areaSel.value : 'all';
-
-        document.querySelectorAll('.course-item').forEach(el => {
-          const elLevel = (el.dataset.level || 'undergrad').toLowerCase();
-          const elArea = (el.dataset.area || '').toLowerCase();
-
-          const okLevel = (level === 'all') || (elLevel === level);
-          const okArea = (area === 'all') || (elArea === area.toLowerCase());
-
-          el.style.display = (okLevel && okArea) ? '' : 'none';
-        });
+        // 2) número
+        return parseInt(ma[2]) - parseInt(mb[2]);
       }
 
-      document.querySelectorAll('input[name="courseLevel"]').forEach(radio => {
-        radio.addEventListener('change', applyCourseFilters);
-      });
+      // fallback: ordem alfabética completa
+      return ta.localeCompare(tb);
+    });
+
+    // reaplica no DOM
+    items.forEach(el => container.appendChild(el));
+  }
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    function applyCourseFilters() {
+      const levelInput = document.querySelector('input[name="courseLevel"]:checked');
+      const level = levelInput ? levelInput.value : 'all';
 
       const areaSel = document.getElementById('courseAreaFilter');
-      if (areaSel) {
-        areaSel.addEventListener('change', applyCourseFilters);
-      }
+      const area = areaSel ? areaSel.value : 'all';
 
-      sortCourseItems();
-      applyCourseFilters();
+      document.querySelectorAll('.course-item').forEach(el => {
+        const elLevel = (el.dataset.level || 'undergrad').toLowerCase();
+        const elArea = (el.dataset.area || '').toLowerCase();
+
+        const okLevel = (level === 'all') || (elLevel === level);
+        const okArea = (area === 'all') || (elArea === area.toLowerCase());
+
+        el.style.display = (okLevel && okArea) ? '' : 'none';
+      });
+    }
+
+    document.querySelectorAll('input[name="courseLevel"]').forEach(radio => {
+      radio.addEventListener('change', applyCourseFilters);
     });
-  </script>
 
-  <!--JS FUNCTION FOR RECENT WORK SECTION -->
-  <script>
-    $('#test-list a').on('click', function (e) {
-      e.preventDefault()
-      $(this).tab('show')
-    })
-  </script>
+    const areaSel = document.getElementById('courseAreaFilter');
+    if (areaSel) {
+      areaSel.addEventListener('change', applyCourseFilters);
+    }
 
-  <!-- OPTIONAL TOAST JS FUNCTION-->
-  <script>
-    $(document).ready(function () {
-      $(".toast").toast("show");
-    });
-  </script>
+    sortCourseItems();
+    applyCourseFilters();
+  });
+</script>
+
+<!--JS FUNCTION FOR RECENT WORK SECTION -->
+<script>
+  $('#test-list a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+</script>
+
+<!-- OPTIONAL TOAST JS FUNCTION-->
+<script>
+  $(document).ready(function () {
+    $(".toast").toast("show");
+  });
+</script>
 
 
-  <script>
-    $('body').scrollspy({ target: '#list-example' })
-  </script>
+<script>
+  $('body').scrollspy({ target: '#list-example' })
+</script>
 
-  <script>
-    $('.collapse').collapse()
-  </script>
+<script>
+  $('.collapse').collapse()
+</script>
 
-  <script>
-    $('.show').show()
-  </script>
+<script>
+  $('.show').show()
+</script>
