@@ -245,11 +245,14 @@ description: SVGs com preview e edição no draw.io
             openRawEl.href = rawNoCache;
 
             editEl.style.display = '';
-            const owner = location.hostname.split('.')[0];
+            const owner = "naavilam";
+            const repo = "naavilam.github.io";
+
+            // const owner = location.hostname.split('.')[0];
 
             // tenta inferir repo quando é ...github.io/REPO/...
             const pathParts = location.pathname.split('/').filter(Boolean);
-            const repo = (location.hostname.endsWith('github.io') && pathParts.length) ? pathParts[0] : null;
+            // const repo = (location.hostname.endsWith('github.io') && pathParts.length) ? pathParts[0] : null;
 
             const branch = "main";
             const cdn = repo ? `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}` : null;
