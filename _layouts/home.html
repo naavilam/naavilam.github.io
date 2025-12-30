@@ -86,152 +86,157 @@ layout: default
         </ul>
       </div>
       <div class="card-body">
-        <div class="tab-content mt-3">
-          {% for section in site.data.sections %}
-          {% if section.first %}
-          {% if section.name == "Publications" %}
-          <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-            <p><i>{{section.description}}</i></p>
-            <p class="card-text">{% bibliography -f papers %}</p>
+        <div id="tabs-top">
+          <div class="tab-content mt-3">
+            {% for section in site.data.sections %}
+            {% if section.first %}
+            {% if section.name == "Publications" %}
+            <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
+              <p><i>{{section.description}}</i></p>
+              <p class="card-text">{% bibliography -f papers %}</p>
+            </div>
+            {% else %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
+              <p class="card-text">{{section.description}}</p>
+            </div>
+            {% endif %}
+            {% else %}
+            {% if section.name == "Presentations" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel"
+              aria-labelledby="{{section.id}}-tab">
+              <p><i>{{section.description}}</i></p>
+              <p class="card-text">{% bibliography -f presentations %}</p>
+            </div>
+            {% elsif section.name == "Research Projects" %}
+            <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel"
+              aria-labelledby="{{section.id}}-tab">
+              <p><i>{{section.description}}</i></p>
+              {% for projects in site.data.projects %}
+              <div class="media mt-2">
+                <a href="{{ projects.link }}"><img src="{{ projects.image }}" class="mr-3 mb-2 talk-thumb border-0"
+                    alt="..."></a>
+                <div class="media-body">
+                  <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
+                  {{ projects.description }}
+                  {% if projects.tech %}
+                  <h6><mark><u>Keywords</u></mark></h6>
+                  {% for tech in projects.tech %}
+                  <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech
+                    }}</span>
+                  {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+              {% endfor %}
+            </div>
           </div>
-          {% else %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
-            <p class="card-text">{{section.description}}</p>
-          </div>
-          {% endif %}
-          {% else %}
-          {% if section.name == "Presentations" %}
+
+          {% elsif section.name == "Talks" %}
           <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
             <p><i>{{section.description}}</i></p>
-            <p class="card-text">{% bibliography -f presentations %}</p>
-          </div>
-          {% elsif section.name == "Research Projects" %}
-          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-            <p><i>{{section.description}}</i></p>
-            {% for projects in site.data.projects %}
-            <div class="media mt-2">
-              <a href="{{ projects.link }}"><img src="{{ projects.image }}" class="mr-3 mb-2 talk-thumb border-0"
-                  alt="..."></a>
+
+            {% for talk in site.data.teaching %}
+            <div class="media mt-3">
+
+              {% if talk.Thumb %}
+              <a href="{{ talk.Link }}" target="_blank" rel="noopener">
+                <img src="{{ talk.Thumb }}" class="mr-3 mb-2 talk-thumb border-0" alt="{{ talk.Program }}">
+              </a>
+              {% endif %}
+
               <div class="media-body">
-                <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
-                {{ projects.description }}
-                {% if projects.tech %}
-                <h6><mark><u>Keywords</u></mark></h6>
-                {% for tech in projects.tech %}
-                <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech
-                  }}</span>
-                {% endfor %}
-                {% endif %}
+                <h5 class="mt-0">
+                  {% if talk.Link %}
+                  <a href="{{ talk.Link }}" target="_blank" rel="noopener" class="highlighted">
+                    {{ talk.Program }}
+                  </a>
+                  {% else %}
+                  {{ talk.Program }}
+                  {% endif %}
+                </h5>
+
+                <p class="mb-1">
+                  <strong>{{ talk.School }}</strong>
+                  {% if talk.Degree %} — {{ talk.Degree }}{% endif %}
+                </p>
+
+                <small class="text-muted">{{ talk.Date }}</small>
+
+                <p class="mt-2">{{ talk.description }}</p>
               </div>
             </div>
             {% endfor %}
           </div>
-        </div>
 
-        {% elsif section.name == "Talks" %}
-        <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-          <p><i>{{section.description}}</i></p>
+          {% elsif section.name == "Coursework" %}
 
-          {% for talk in site.data.teaching %}
-          <div class="media mt-3">
+          <div class="tab-pane overflow-auto" id="{{ section.id }}" role="tabpanel"
+            aria-labelledby="{{ section.id }}-tab">
 
-            {% if talk.Thumb %}
-            <a href="{{ talk.Link }}" target="_blank" rel="noopener">
-              <img src="{{ talk.Thumb }}" class="mr-3 mb-2 talk-thumb border-0" alt="{{ talk.Program }}">
-            </a>
-            {% endif %}
+            <div class="d-flex flex-wrap align-items-center mb-3">
 
-            <div class="media-body">
-              <h5 class="mt-0">
-                {% if talk.Link %}
-                <a href="{{ talk.Link }}" target="_blank" rel="noopener" class="highlighted">
-                  {{ talk.Program }}
-                </a>
-                {% else %}
-                {{ talk.Program }}
-                {% endif %}
-              </h5>
+              <span class="mr-3" style="font-weight:600; opacity:.85;">Level:</span>
 
-              <p class="mb-1">
-                <strong>{{ talk.School }}</strong>
-                {% if talk.Degree %} — {{ talk.Degree }}{% endif %}
-              </p>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="levelAll" name="courseLevel" class="custom-control-input" value="all" checked>
+                <label class="custom-control-label" for="levelAll">All</label>
+              </div>
 
-              <small class="text-muted">{{ talk.Date }}</small>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="levelUndergrad" name="courseLevel" class="custom-control-input"
+                  value="undergrad">
+                <label class="custom-control-label" for="levelUndergrad">Undergraduate</label>
+              </div>
 
-              <p class="mt-2">{{ talk.description }}</p>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="levelGrad" name="courseLevel" class="custom-control-input" value="grad">
+                <label class="custom-control-label" for="levelGrad">Graduate</label>
+              </div>
+
+            </div>
+
+            <!-- FILTER: só existe em Coursework -->
+            {% assign areas = site.data.courses | map: "area" | compact | uniq | sort %}
+
+            <div class="d-flex align-items-center mb-3">
+              <label for="courseAreaFilter" class="mb-0 mr-2" style="font-weight:600; opacity:.85;">
+                Filter:
+              </label>
+
+              <select id="courseAreaFilter" class="custom-select" style="max-width:320px;">
+                <option value="all" selected>All areas</option>
+                {% for a in areas %}
+                <option value="{{ a | escape }}">{{ a }}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <p><i>{{ section.description }}</i></p>
+
+            <!-- COURSE LIST -->
+            <div class="list-group">
+              {% for courses in site.data.courses %}
+              <a href="{{ courses.link }}" target="_blank" rel="noopener"
+                class="list-group-item list-group-item-action text-left course-item"
+                data-area="{{ courses.area | escape }}"
+                data-level="{{ courses.level | default: 'undergrad' | downcase | strip }}">
+                {{ courses.id }} {{ courses.Course }}
+              </a>
+              {% endfor %}
             </div>
           </div>
+
+          {% else %}
+          <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+            <h5 class="card-title text-center"><a href="/{{ section.url }}"
+                class="highlighted">{{section.description}}</a></h5>
+            <p class="card-text">{{ section.content }} </p>
+          </div>
+          {% endif %}
+          {% endif %}
           {% endfor %}
         </div>
-
-        {% elsif section.name == "Coursework" %}
-
-        <div class="tab-pane overflow-auto" id="{{ section.id }}" role="tabpanel"
-          aria-labelledby="{{ section.id }}-tab">
-
-          <div class="d-flex flex-wrap align-items-center mb-3">
-
-            <span class="mr-3" style="font-weight:600; opacity:.85;">Level:</span>
-
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="levelAll" name="courseLevel" class="custom-control-input" value="all" checked>
-              <label class="custom-control-label" for="levelAll">All</label>
-            </div>
-
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="levelUndergrad" name="courseLevel" class="custom-control-input" value="undergrad">
-              <label class="custom-control-label" for="levelUndergrad">Undergraduate</label>
-            </div>
-
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="levelGrad" name="courseLevel" class="custom-control-input" value="grad">
-              <label class="custom-control-label" for="levelGrad">Graduate</label>
-            </div>
-
-          </div>
-
-          <!-- FILTER: só existe em Coursework -->
-          {% assign areas = site.data.courses | map: "area" | compact | uniq | sort %}
-
-          <div class="d-flex align-items-center mb-3">
-            <label for="courseAreaFilter" class="mb-0 mr-2" style="font-weight:600; opacity:.85;">
-              Filter:
-            </label>
-
-            <select id="courseAreaFilter" class="custom-select" style="max-width:320px;">
-              <option value="all" selected>All areas</option>
-              {% for a in areas %}
-              <option value="{{ a | escape }}">{{ a }}</option>
-              {% endfor %}
-            </select>
-          </div>
-
-          <!-- DESCRIPTION -->
-          <p><i>{{ section.description }}</i></p>
-
-          <!-- COURSE LIST -->
-          <div class="list-group">
-            {% for courses in site.data.courses %}
-            <a href="{{ courses.link }}" target="_blank" rel="noopener"
-              class="list-group-item list-group-item-action text-left course-item"
-              data-area="{{ courses.area | escape }}"
-              data-level="{{ courses.level | default: 'undergrad' | downcase | strip }}">
-              {{ courses.id }} {{ courses.Course }}
-            </a>
-            {% endfor %}
-          </div>
-        </div>
-
-        {% else %}
-        <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
-          <h5 class="card-title text-center"><a href="/{{ section.url }}"
-              class="highlighted">{{section.description}}</a></h5>
-          <p class="card-text">{{ section.content }} </p>
-        </div>
-        {% endif %}
-        {% endif %}
-        {% endfor %}
       </div>
     </div>
   </div>
@@ -241,6 +246,17 @@ layout: default
   <!-- ANIMATE.JS ANIMATE LIBRARY
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
 -->
+
+  <script>
+    document.querySelectorAll('a[data-toggle="tab"]').forEach(tab => {
+      tab.addEventListener('shown.bs.tab', () => {
+        const top = document.getElementById('tabs-top');
+        if (top) {
+          top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
 
   <script>
     function sortCourseItems() {
