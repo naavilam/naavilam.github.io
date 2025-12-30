@@ -342,8 +342,11 @@ description: Internal repository report
                 return;
             }
             const out = await postJSON(DISPATCH_API, payload);
+            window.resetOperatorPin?.();
+
             setBusy(false, out?.message || "ok: audit dispatched");
         } catch (e) {
+            window.resetOperatorPin?.();
             setBusy(false, `failed: ${String(e)}`);
         }
     });
@@ -370,8 +373,10 @@ description: Internal repository report
             };
 
             const out = await postJSON(DISPATCH_API, payload);
+            window.resetOperatorPin?.();
             setBusy(false, out?.message || `ok: inicializa-repos dispatched for ${org}`);
         } catch (e) {
+            window.resetOperatorPin?.();
             setBusy(false, `failed: ${String(e)}`);
         }
     });
@@ -411,5 +416,11 @@ description: Internal repository report
         });
 
         window.getOperatorPin = () => input.value;
+
+        window.resetOperatorPin = () => {
+            input.value = "";
+            dots.forEach(d => d.classList.remove("filled"));
+            input.blur();
+        };
     })();
 </script>
