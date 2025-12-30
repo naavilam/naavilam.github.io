@@ -97,6 +97,7 @@ description: Internal repository report
         <span id="stats" class="audit-muted"></span>
         <button id="btnRunAudit" type="button">run org audit</button>
         <button id="btnInitRepos" type="button">init repos (selected org)</button>
+        <button id="btnLoadDiagrams" type="button">Diagrams</button>
         <span id="actionMsg" class="audit-muted"></span>
     </div>
 
@@ -257,6 +258,7 @@ description: Internal repository report
 
     const btnRunAudit = document.getElementById("btnRunAudit");
     const btnInitRepos = document.getElementById("btnInitRepos");
+    const btnLoadDiagrams = document.getElementById("btnLoadDiagrams");
     const actionMsg = document.getElementById("actionMsg");
 
     function setBusy(busy, msg = "") {
@@ -327,5 +329,9 @@ description: Internal repository report
         } catch (e) {
             setBusy(false, `failed: ${String(e)}`);
         }
+    });
+
+    btnLoadDiagrams?.addEventListener("click", async () => {
+        window.location.href = "./svg-gallery.html";
     });
 </script>
