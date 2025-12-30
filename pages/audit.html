@@ -251,7 +251,6 @@ description: Internal repository report
 
     function loadOrg(org) {
         window.resetOperatorPin?.();
-        actionMsg.textContent = "";
         currentOrg = org;
         const DATA_URL = `{{ '/reports/' | relative_url }}${org}/org-audit.json`;
 
@@ -409,7 +408,6 @@ description: Internal repository report
 
     btnLoadDiagrams?.addEventListener("click", async () => {
         window.resetOperatorPin?.();
-        actionMsg.textContent = "";
         window.location.href = "./svg-gallery.html";
     });
 
@@ -443,6 +441,7 @@ description: Internal repository report
             dots.forEach(d => d.classList.remove("filled"));
             input.blur();
             wrap.classList.remove("is-open"); // some da tela
+            actionMsg.textContent = "";
         }
 
         wrap.addEventListener("click", () => openPin());
