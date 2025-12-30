@@ -408,6 +408,8 @@ description: Internal repository report
     });
 
     btnLoadDiagrams?.addEventListener("click", async () => {
+        window.resetOperatorPin?.();
+        actionMsg.textContent = "";
         window.location.href = "./svg-gallery.html";
     });
 
