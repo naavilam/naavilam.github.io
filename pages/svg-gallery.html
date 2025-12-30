@@ -245,7 +245,19 @@ description: SVGs com preview e edição no draw.io
             openRawEl.href = rawNoCache;
 
             editEl.style.display = '';
-            editEl.href = drawioUrl(location.origin + rawNoCache); // URL absoluta pro draw.io
+            const owner = location.hostname.split('.')[0];
+
+            // tenta inferir repo quando é ...github.io/REPO/...
+            const pathParts = location.pathname.split('/').filter(Boolean);
+            const repo = (location.hostname.endsWith('github.io') && pathParts.length) ? pathParts[0] : null;
+
+            const branch = "main";
+            const cdn = repo ? `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}` : null;
+
+            // URL que o draw.io vai baixar (preferir CDN)
+            const drawSource = cdn ? `${cdn}/assets/svg/${name}` : (location.origin + rawNoCache);
+
+            editEl.href = `https://app.diagrams.net/?url=${encodeURIComponent(drawSource)}&embed=1&ui=min`;
 
             canvasEl.innerHTML = `<div class="hint">carregando…</div>`;
 
