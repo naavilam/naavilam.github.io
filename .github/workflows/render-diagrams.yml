@@ -31,6 +31,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
 
+      - name: Debug workspace
+        run: |
+          pwd
+          ls -la
+          ls -la .github || true
+          ls -la .github/scripts || true
+
       - name: Render SVGs
         run: |
           bash .github/scripts/render_all.sh
