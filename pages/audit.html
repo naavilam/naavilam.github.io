@@ -686,9 +686,9 @@ description: Internal repository report
         const t = (value - min) / (max - min); // 0..1
 
         // aquarela: vermelho claro → amarelo → verde água
-        const r = Math.round(255  * t);   // 255 → 200
-        const g = Math.round(240 * t);   // 240 → 250
-        const b = Math.round(240 * t);   // 240 → 150
+        const r = Math.round(255 - 55 * t);   // 255 → 200
+        const g = Math.round(240 + 10 * t);   // 240 → 250
+        const b = Math.round(240 - 90 * t);   // 240 → 150
 
         return `rgb(${r}, ${g}, ${b})`;
     }
