@@ -143,7 +143,7 @@ def main():
             sessions = as_int(row.metric_values[1].value)
             users = as_int(row.metric_values[2].value)
             engagement_rate = as_float(row.metric_values[3].value)  # 0..1
-            avg_eng_time = as_float(row.metric_values[4].value)     # segundos
+            # avg_eng_time = as_float(row.metric_values[4].value)     # segundos
 
             metrics_by_path[path] = {
                 "views": views,
@@ -151,7 +151,7 @@ def main():
                 "users": users,
                 "clicks": 0,  # preenche depois
                 "engagement_rate": engagement_rate,
-                "avg_engagement_time_sec": avg_eng_time,
+                # "avg_engagement_time_sec": avg_eng_time,
                 "countries": {},
                 "sources": {},
             }
