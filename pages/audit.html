@@ -428,8 +428,6 @@ description: Internal repository report
         const gaClicksMin = Math.min(...gaClicksVals);
         const gaClicksMax = Math.max(...gaClicksVals);
 
-        mode = getAuditMode();
-
         if (mode === "ga_only") {
             const v = filtered.reduce((s, r) => s + (r.ga_views_30d || 0), 0);
             const se = filtered.reduce((s, r) => s + (r.ga_sessions_30d || 0), 0);
