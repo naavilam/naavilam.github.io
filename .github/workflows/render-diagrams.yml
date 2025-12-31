@@ -1,0 +1,55 @@
+name: Render workflow sequence diagrams (SVG)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Render SVGs
+        run: |
+          bash tools/workflow-seq/render_all.sh
+
+      - name: Commit & push generated SVGs (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # garante que a pasta exista (não falha se já existir)
+          mkdir -p assets/svg
+
+          git add assets/svg || true
+          git add assets/svg/workflows || true
+
+          if git diff --cached --quiet; then
+            echo "No diagram changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(diagrams): update workflow sequence SVGs"
+          git push
