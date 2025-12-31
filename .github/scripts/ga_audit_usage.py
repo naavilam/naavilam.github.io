@@ -3,9 +3,14 @@ from pathlib import Path
 
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import (
-    RunReportRequest, DateRange, Dimension, Metric,
-    FilterExpression, Filter, StringFilter
+    RunReportRequest,
+    DateRange,
+    Dimension,
+    Metric,
+    FilterExpression,
+    Filter,
 )
+
 
 ROOT = Path(".")
 REPORTS = ROOT / "reports"
@@ -34,10 +39,10 @@ def run_report(client, property_id: str, event_name: str, days: int = 30, limit:
         dimension_filter=FilterExpression(
             filter=Filter(
                 field_name="eventName",
-                string_filter=StringFilter(
-                    value=event_name,
-                    match_type=StringFilter.MatchType.EXACT
-                ),
+                string_filter={
+                    "value": event_name,
+                    "match_type": "EXACT"
+                }
             )
         ),
         limit=limit,
