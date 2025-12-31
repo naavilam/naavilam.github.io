@@ -207,16 +207,6 @@ description: Internal repository report
             </div>
 
             <div class="audit-row">
-                <label class="audit-muted">org:</label>
-                <select id="orgSelect">
-                    <option>loading…</option>
-                </select>
-
-                <label class="audit-muted">filter:</label>
-                <input id="q" placeholder="type repo name..." />
-
-                <span id="stats" class="audit-muted"></span>
-
                 <button id="btnRunAudit" type="button">run audit</button>
                 <button id="btnInitRepos" type="button">init repos</button>
                 <button id="btnLoadDiagrams" type="button">diagrams</button>
@@ -230,6 +220,18 @@ description: Internal repository report
                 </div>
 
                 <span id="actionMsg" class="audit-muted"></span>
+            </div>
+            <div class="audit-row">
+                <label class="audit-muted">org:</label>
+                <select id="orgSelect">
+                    <option>loading…</option>
+                </select>
+
+                <label class="audit-muted">filter:</label>
+                <input id="q" placeholder="type repo name..." />
+
+                <span id="stats" class="audit-muted"></span>
+
             </div>
         </div>
 
