@@ -353,9 +353,15 @@ description: Internal repository report
         const gaViews = filtered.reduce((s, r) => s + (r.ga_pageviews_30d || 0), 0);
         const gaClicks = filtered.reduce((s, r) => s + (r.ga_clicks_30d || 0), 0);
 
-        stats.textContent =
-            `org=${currentOrg || "—"} | showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb} | GA views ${gaViews} | GA clicks ${gaClicks}`;
+        const mode = getAuditMode();
 
+        if (mode === "ga_only") {
+            stats.textContent =
+                `org=${currentOrg || "—"} | showing ${shown}/${total} | GA views ${gaViews} | GA clicks ${gaClicks}`;
+        } else {
+            stats.textContent =
+                `org=${currentOrg || "—"} | showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb}`;
+        }
         // sort
         const sortCol = cols.find(c => c.key === sortKey) || cols[0];
         filtered.sort((A, B) => cmp(A[sortCol.key], B[sortCol.key], sortCol.type));
@@ -453,7 +459,6 @@ description: Internal repository report
 
     // radio: muda view (infra+GA vs GA only) sem recarregar
     document.getElementById("auditMode")?.addEventListener("change", () => {
-        // garante sortKey válido pro novo modo
         const cols = getColumns();
         if (!cols.some(c => c.key === sortKey)) sortKey = "name";
         render();
