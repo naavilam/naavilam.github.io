@@ -47,3 +47,11 @@ for mmd in "$PY_TMP"/*.mmd; do
     --puppeteerConfigFile "$ROOT/.github/scripts/puppeteer-no-sandbox.json"
   echo "OK: $PY_OUT/${base}.svg"
 done
+
+mkdir -p "$ROOT/assets/mmd"
+
+# workflows
+cp "$TMP_DIR"/*.mmd "$ROOT/assets/mmd/" 2>/dev/null || true
+
+# scripts
+cp "$PY_TMP"/*.mmd "$ROOT/assets/mmd/" 2>/dev/null || true
