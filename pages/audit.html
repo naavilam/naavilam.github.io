@@ -154,6 +154,12 @@ description: Internal repository report
         content: " ↓";
         opacity: 0.6;
     }
+
+    .audit-ga {
+        font-weight: 500;
+        text-align: right;
+        border-radius: 4px;
+    }
 </style>
 
 <div class="audit-wrap">
@@ -422,14 +428,18 @@ description: Internal repository report
                     const cell = td(String(value), "audit-ga");
 
                     if (value === 0) {
-                        cell.style.color = "#b00020"; // zero = alerta forte
+                        cell.style.backgroundColor = "#fdecec"; // rosa aquarela
+                        cell.style.color = "#8b1d1d";
                     } else {
-                        cell.style.color = gaColor(value, min, max);
+                        cell.style.backgroundColor = gaBgColor(value, min, max);
+                        cell.style.color = "#111"; // texto sempre legível
                     }
 
                     tr.appendChild(cell);
                     return;
                 }
+
+                tr.appendChild(td(String(r[c.key] ?? 0)));
             });
 
             tbody.appendChild(tr);
@@ -669,15 +679,15 @@ description: Internal repository report
         window.resetOperatorPin = () => closePin();
     })();
 
-    function gaColor(value, min, max) {
-        if (max <= min) return ""; // evita divisão por zero
+    function gaBgColor(value, min, max) {
+        if (max <= min) return "#ffffff";
 
         const t = (value - min) / (max - min); // 0..1
 
-        // gradiente: vermelho -> amarelo -> verde
-        const r = Math.round(180 * (1 - t));
-        const g = Math.round(180 * t);
-        const b = 0;
+        // aquarela: vermelho claro → amarelo → verde água
+        const r = Math.round(255 - 55 * t);   // 255 → 200
+        const g = Math.round(240 + 10 * t);   // 240 → 250
+        const b = Math.round(240 - 90 * t);   // 240 → 150
 
         return `rgb(${r}, ${g}, ${b})`;
     }
