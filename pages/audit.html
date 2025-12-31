@@ -444,6 +444,67 @@ description: Internal repository report
             const countryAgg = {};
             const sourceAgg = {};
 
+            // ranges por coluna p/ heatmap
+            const cols = getColumns();
+
+            const heatRanges = {};
+            for (const c of cols) {
+                if (!c.heat) continue;
+
+                const vals = filtered.map(r => {
+                    // Engagement
+                    if (c.type === "eng") {
+                        const cell = td(fmtEng(r), "audit-ga");
+                        const range = heatRanges[c.key] || { min: 0, max: 0 };
+                        const vheat = engNumericForHeat(r);
+
+                        cell.style.background = heatBg(vheat, range.min, range.max);
+
+                        // Option B (ainda 1 linha): pequeno, abaixo do valor
+                        const extra = originLine(r);
+                        if (extra) {
+                            const small = document.createElement("div");
+                            small.textContent = extra;
+                            small.style.fontSize = "11px";
+                            small.style.opacity = "0.65";
+                            small.style.marginTop = "2px";
+                            small.style.whiteSpace = "nowrap";
+                            small.style.overflow = "hidden";
+                            small.style.textOverflow = "ellipsis";
+                            cell.appendChild(small);
+
+                            // tooltip com texto completo
+                            cell.title = extra;
+                        }
+
+                        tr.appendChild(cell);
+                        return;
+                    }
+
+                    // Num (com heat opcional)
+                    if (c.type === "num") {
+                        const value = Number(r[c.key] ?? 0);
+                        const cell = td(String(value), "audit-ga");
+
+                        if (c.heat) {
+                            const range = heatRanges[c.key] || { min: 0, max: 0 };
+                            cell.style.background = heatBg(value, range.min, range.max);
+                        }
+
+                        // zero: deixa “só” um alerta discreto no texto
+                        if (value === 0) cell.style.color = "#b00020";
+
+                        tr.appendChild(cell);
+                        return;
+                    }
+                });
+
+                heatRanges[c.key] = {
+                    min: Math.min(...vals),
+                    max: Math.max(...vals),
+                };
+            }
+
             for (const r of filtered) {
                 const countries = r.ga_countries || {}; // { "BR": 12, "US": 3, ... }
                 const sources = r.ga_sources || {}; // { "google": 10, "direct": 5, ... }
@@ -504,20 +565,30 @@ description: Internal repository report
                     return;
                 }
 
-                if (c.key === "ga_pageviews_30d" || c.key === "ga_clicks_30d") {
-                    const value = Number(r[c.key] ?? 0);
+                // GA heatmap genérico (num / eng)
+                if (mode === "ga_only" && c.heat) {
+                    const key = c.key;
 
-                    const min = (c.key === "ga_pageviews_30d") ? gaViewsMin : gaClicksMin;
-                    const max = (c.key === "ga_pageviews_30d") ? gaViewsMax : gaClicksMax;
+                    // valor numérico para heatmap
+                    const raw = r[key];
+                    const value = (c.type === "eng")
+                        ? Number(raw ?? 0) // (rate 0..1 ou time em segundos; você decide a unidade no backend)
+                        : Number(raw ?? 0);
 
-                    const cell = td(String(value), "audit-ga");
+                    const cell = td(
+                        c.type === "eng" ? formatEng(r) : String(value),
+                        "audit-ga"
+                    );
+
+                    const min = mins[key] ?? 0;
+                    const max = maxs[key] ?? 0;
 
                     if (value === 0) {
-                        cell.style.backgroundColor = "#fdecec"; // rosa aquarela
+                        cell.style.backgroundColor = "#fdecec"; // zero = rosa aquarela
                         cell.style.color = "#8b1d1d";
                     } else {
                         cell.style.backgroundColor = gaBgColor(value, min, max);
-                        cell.style.color = "#111"; // texto sempre legível
+                        cell.style.color = "#111";
                     }
 
                     tr.appendChild(cell);
@@ -836,5 +907,62 @@ description: Internal repository report
         const top = entries[0][0];
         const pct = total ? Math.round(100 * (Number(entries[0][1]) || 0) / total) : 0;
         return { top, pct };
+    }
+
+    function clamp01(x) { return Math.max(0, Math.min(1, x)); }
+
+    function heatBg(value, min, max) {
+        if (max <= min) return "transparent";
+        const t = clamp01((value - min) / (max - min));
+
+        // aquarela clarinha (fundo), sem mexer na cor do texto
+        // 0 -> vermelho suave, 0.5 -> amarelo suave, 1 -> verde suave
+        const r = Math.round(255 - (55 * t));
+        const g = Math.round(235 + (20 * t));
+        const b = Math.round(235 - (80 * t));
+
+        return `rgba(${r}, ${g}, ${b}, 0.55)`;
+    }
+
+    function topPct(obj) {
+        // obj tipo {"BR":62}
+        const entries = Object.entries(obj || {});
+        if (!entries.length) return null;
+        entries.sort((a, b) => (b[1] || 0) - (a[1] || 0));
+        return { key: entries[0][0], pct: entries[0][1] };
+    }
+
+    function fmtEng(r) {
+        if (r.ga_eng_kind === "rate") {
+            const p = Math.round((r.ga_engagement_30d || 0) * 100);
+            return `${p}%`;
+        }
+        const s = Math.round(r.ga_engagement_30d || 0);
+        return `${s}s`;
+    }
+
+    function engNumericForHeat(r) {
+        // pra heatmap: se rate, usa percentual (0..100); se time, usa segundos
+        if (r.ga_eng_kind === "rate") return (r.ga_engagement_30d || 0) * 100;
+        return Number(r.ga_engagement_30d || 0);
+    }
+
+    function originLine(r) {
+        const c = topPct(r.ga_countries);
+        const s = topPct(r.ga_sources);
+        const parts = [];
+        if (c) parts.push(`country ${c.key} ${c.pct}%`);
+        if (s) parts.push(`source ${s.key} ${s.pct}%`);
+        return parts.join(" | ");
+    }
+
+    function formatEng(r) {
+        // se você estiver usando ga_eng_kind ("rate"|"time")
+        if (r.ga_eng_kind === "rate") {
+            const p = Math.round((Number(r.ga_engagement_30d ?? 0)) * 100);
+            return `${p}%`;
+        }
+        const s = Math.round(Number(r.ga_engagement_30d ?? 0));
+        return `${s}s`;
     }
 </script>
