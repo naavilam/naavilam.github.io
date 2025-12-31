@@ -280,22 +280,40 @@ description: Internal repository report
     function loadOrg(org) {
         window.resetOperatorPin?.();
         currentOrg = org;
-        const DATA_URL = `{{ '/reports/' | relative_url }}${org}/org-audit.json`;
+
+        const INFRA_URL = `{{ '/reports/' | relative_url }}${org}/org-audit.json`;
+        const GA_URL = `{{ '/reports/' | relative_url }}${org}/ga-usage.json`;
 
         tbody.innerHTML = `<tr><td colspan="9">loading ${org}…</td></tr>`;
         q.value = "";
 
-        fetch(DATA_URL, { cache: "no-store" })
-            .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-            .then(data => {
-                rows = data || [];
+        Promise.all([
+            fetch(INFRA_URL, { cache: "no-store" }).then(r => (r.ok ? r.json() : null)),
+            fetch(GA_URL, { cache: "no-store" }).then(r => (r.ok ? r.json() : null)),
+        ])
+            .then(([infra, ga]) => {
+                rows = infra || [];
+
+                const pv = (ga && ga.pageviews_by_path) ? ga.pageviews_by_path : {};
+                const ck = (ga && ga.clicks_by_path) ? ga.clicks_by_path : {};
+
+                // anexa GA por repo (heurística simples):
+                // repo page no GitHub Pages costuma ser "/<repo>/" ou "/<repo>"
+                for (const r of rows) {
+                    const slug = r.name || "";
+                    const k1 = `/${slug}/`;
+                    const k2 = `/${slug}`;
+                    r.ga_pageviews_30d = pv[k1] ?? pv[k2] ?? 0;
+                    r.ga_clicks_30d = ck[k1] ?? ck[k2] ?? 0;
+                }
+
                 rows.sort((a, b) => scoreRow(b) - scoreRow(a) || (a.name || "").localeCompare(b.name || ""));
                 render();
-                // salva escolha
+
                 try { localStorage.setItem("audit_org", org); } catch (_) { }
             })
             .catch(err => {
-                tbody.innerHTML = `<tr><td colspan="9">failed to load ${DATA_URL}: ${String(err)}</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="9">failed to load ${org}: ${String(err)}</td></tr>`;
             });
     }
 
@@ -374,6 +392,7 @@ description: Internal repository report
             // regra:
             // - with_infra => run_infra=true, run_ga=true (ou false se você quiser)
             // - ga_only    => run_infra=false, run_ga=true
+            const mode = getAuditMode();
             const run_infra = (mode === "with_infra");
             const run_ga = true; // aqui você decide: sempre GA quando clicar "run org audit"
 
