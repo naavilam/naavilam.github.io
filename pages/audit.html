@@ -139,6 +139,21 @@ description: Internal repository report
     .audit-radio input[type="radio"] {
         transform: translateY(1px);
     }
+
+    .audit-table th {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .audit-table th.sort-asc::after {
+        content: " ↑";
+        opacity: 0.6;
+    }
+
+    .audit-table th.sort-desc::after {
+        content: " ↓";
+        opacity: 0.6;
+    }
 </style>
 
 <div class="audit-wrap">
@@ -212,6 +227,47 @@ description: Internal repository report
     let rows = [];
     let currentOrg = null;
 
+    // === sort state ===
+    let sortKey = null;
+    let sortDir = 1; // 1 asc, -1 desc
+
+    function setSortIndicator() {
+        const ths = document.querySelectorAll(".audit-table thead th");
+        ths.forEach(th => th.classList.remove("sort-asc", "sort-desc"));
+
+        if (!sortKey) return;
+
+        const th = document.querySelector(`.audit-table thead th[data-key="${sortKey}"]`);
+        if (th) th.classList.add(sortDir === 1 ? "sort-asc" : "sort-desc");
+    }
+
+    function getSortValue(r, key) {
+        const v = r[key];
+
+        // bool -> 0/1
+        if (typeof v === "boolean") return v ? 1 : 0;
+
+        // numbers
+        if (typeof v === "number") return v;
+
+        // dates
+        if (key === "pushed_at") return v ? new Date(v).getTime() : 0;
+
+        // strings
+        return (v ?? "").toString().toLowerCase();
+    }
+
+    function sortArray(arr) {
+        if (!sortKey) return arr; // sem sort => deixa como está (default scoreRow já aplicado em rows)
+        return arr.slice().sort((a, b) => {
+            const va = getSortValue(a, sortKey);
+            const vb = getSortValue(b, sortKey);
+            if (va < vb) return -1 * sortDir;
+            if (va > vb) return 1 * sortDir;
+            return 0;
+        });
+    }
+
     function td(text, cls = "") {
         const el = document.createElement("td");
         el.textContent = text;
@@ -226,12 +282,14 @@ description: Internal repository report
 
     function render() {
         const needle = (q.value || "").trim().toLowerCase();
-        const filtered = needle
+        const base = needle
             ? rows.filter(r =>
                 (r.name || "").toLowerCase().includes(needle) ||
                 (r.full_name || "").toLowerCase().includes(needle)
             )
             : rows;
+
+        const filtered = sortArray(base);
 
         const total = rows.length;
         const shown = filtered.length;
@@ -275,6 +333,7 @@ description: Internal repository report
 
             tbody.appendChild(tr);
         }
+        setSortIndicator();
     }
 
     function loadOrg(org) {
@@ -538,4 +597,34 @@ description: Internal repository report
         const el = document.querySelector('input[name="audit_mode"]:checked');
         return el ? el.value : "with_infra";
     }
+
+    // === make headers sortable ===
+    (() => {
+        const map = [
+            ["Repo", "name"],
+            ["README", "has_readme"],
+            [".gitignore", "has_gitignore"],
+            ["branches", "branches_count"],
+            ["ipynb", "notebooks_ipynb"],
+            ["py", "files_py"],
+            ["tex", "files_tex"],
+            ["files", "total_files"],
+            ["updated", "pushed_at"],
+        ];
+
+        const ths = document.querySelectorAll(".audit-table thead th");
+        ths.forEach((th, i) => {
+            const key = map[i]?.[1];
+            if (!key) return;
+            th.dataset.key = key;
+
+            th.addEventListener("click", () => {
+                if (sortKey === key) sortDir = -sortDir;
+                else { sortKey = key; sortDir = 1; }
+
+                setSortIndicator();
+                render();
+            });
+        });
+    })();
 </script>
