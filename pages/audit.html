@@ -447,56 +447,16 @@ description: Internal repository report
             // ranges por coluna p/ heatmap
             const cols = getColumns();
 
+            // ranges por coluna p/ heatmap (só calcula min/max; NÃO usa "tr" aqui)
+            const colsNow = getColumns();
             const heatRanges = {};
-            for (const c of cols) {
+
+            for (const c of colsNow) {
                 if (!c.heat) continue;
 
                 const vals = filtered.map(r => {
-                    // Engagement
-                    if (c.type === "eng") {
-                        const cell = td(fmtEng(r), "audit-ga");
-                        const range = heatRanges[c.key] || { min: 0, max: 0 };
-                        const vheat = engNumericForHeat(r);
-
-                        cell.style.background = heatBg(vheat, range.min, range.max);
-
-                        // Option B (ainda 1 linha): pequeno, abaixo do valor
-                        const extra = originLine(r);
-                        if (extra) {
-                            const small = document.createElement("div");
-                            small.textContent = extra;
-                            small.style.fontSize = "11px";
-                            small.style.opacity = "0.65";
-                            small.style.marginTop = "2px";
-                            small.style.whiteSpace = "nowrap";
-                            small.style.overflow = "hidden";
-                            small.style.textOverflow = "ellipsis";
-                            cell.appendChild(small);
-
-                            // tooltip com texto completo
-                            cell.title = extra;
-                        }
-
-                        tr.appendChild(cell);
-                        return;
-                    }
-
-                    // Num (com heat opcional)
-                    if (c.type === "num") {
-                        const value = Number(r[c.key] ?? 0);
-                        const cell = td(String(value), "audit-ga");
-
-                        if (c.heat) {
-                            const range = heatRanges[c.key] || { min: 0, max: 0 };
-                            cell.style.background = heatBg(value, range.min, range.max);
-                        }
-
-                        // zero: deixa “só” um alerta discreto no texto
-                        if (value === 0) cell.style.color = "#b00020";
-
-                        tr.appendChild(cell);
-                        return;
-                    }
+                    if (c.type === "eng") return engNumericForHeat(r); // rate->0..100 ou time->seg
+                    return Number(r[c.key] ?? 0);
                 });
 
                 heatRanges[c.key] = {
@@ -932,15 +892,6 @@ description: Internal repository report
         return { key: entries[0][0], pct: entries[0][1] };
     }
 
-    function fmtEng(r) {
-        if (r.ga_eng_kind === "rate") {
-            const p = Math.round((r.ga_engagement_30d || 0) * 100);
-            return `${p}%`;
-        }
-        const s = Math.round(r.ga_engagement_30d || 0);
-        return `${s}s`;
-    }
-
     function engNumericForHeat(r) {
         // pra heatmap: se rate, usa percentual (0..100); se time, usa segundos
         if (r.ga_eng_kind === "rate") return (r.ga_engagement_30d || 0) * 100;
@@ -965,4 +916,5 @@ description: Internal repository report
         const s = Math.round(Number(r.ga_engagement_30d ?? 0));
         return `${s}s`;
     }
+
 </script>
