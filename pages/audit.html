@@ -858,19 +858,19 @@ description: Internal repository report
         return `${Math.round(s)}s`;
     }
 
+    function lerp(a, b, t) { return Math.round(a + (b - a) * t); }
+
     function gaBgColor(value, min, max) {
         if (max <= min) return "#ffffff";
+        const t = clamp01((value - min) / (max - min));
 
-        const t = (value - min) / (max - min); // 0..1
-
-        // aquarela: vermelho claro → amarelo → verde água
-        const r = Math.round(255 - 55 * t);   // 255 → 200
-        const g = Math.round(240 + 10 * t);   // 240 → 250
-        const b = Math.round(240 - 90 * t);   // 240 → 150
+        // from #ffecec to #eaffea
+        const r = lerp(255, 234, t);
+        const g = lerp(236, 255, t);
+        const b = lerp(236, 234, t);
 
         return `rgb(${r}, ${g}, ${b})`;
     }
-
     const brandIcon = document.querySelector(".audit-brand i");
 
     function updateBrandIcon() {
