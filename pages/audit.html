@@ -163,17 +163,18 @@ description: Internal repository report
 </style>
 
 <div class="audit-wrap">
-    <div class="audit-muted">internal report (minimal by design)</div>
-    <span class="audit-radio" id="auditMode">
-        <label class="audit-muted">
-            <input type="radio" name="audit_mode" value="with_infra" checked />
-            infra
-        </label>
-        <label class="audit-muted">
-            <input type="radio" name="audit_mode" value="ga_only" />
-            analytics
-        </label>
-    </span>
+    <div class="audit-muted">internal report (minimal by design)
+        <span class="audit-radio" id="auditMode">
+            <label class="audit-muted">
+                <input type="radio" name="audit_mode" value="with_infra" checked />
+                infra
+            </label>
+            <label class="audit-muted">
+                <input type="radio" name="audit_mode" value="ga_only" />
+                analytics
+            </label>
+        </span>
+    </div>
     <div class="audit-row">
         <label class="audit-muted">org:</label>
         <select id="orgSelect">
