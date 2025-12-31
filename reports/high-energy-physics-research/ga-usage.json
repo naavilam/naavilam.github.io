@@ -10,10 +10,15 @@
       "clicks": 0,
       "engagement_rate": 0.14285714285714285,
       "countries": {
-        "US": 43
+        "US": 6,
+        "BR": 3,
+        "(not set)": 2,
+        "EE": 1,
+        "NL": 1,
+        "PT": 1
       },
       "sources": {
-        "(direct)": 100
+        "(direct)": 14
       }
     }
   }
