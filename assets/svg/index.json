@@ -1,5 +1,9 @@
 {
   "files": [
-    "arquitetura_deploy.svg"
+    "arquitetura_deploy.svg",
+    "generate-svg.svg",
+    "org-audit.svg",
+    "pages.svg",
+    "render-diagrams.svg"
   ]
 }
