@@ -163,7 +163,7 @@ description: Internal repository report
 
     .audit-bar {
         display: grid;
-        grid-template-columns: 1fr 180px;
+        /* grid-template-columns: 1fr 180px; */
         gap: 12px;
         align-items: center;
         margin: 10px 0 14px;
@@ -184,35 +184,6 @@ description: Internal repository report
     .audit-brand i {
         font-size: 120px;
         opacity: .08;
-    }
-
-    .audit-headline {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /* título à esquerda, radios à direita */
-        gap: 16px;
-        margin-bottom: 6px;
-        white-space: nowrap;
-    }
-
-    .audit-headline .audit-radio {
-        margin-left: 0;
-        /* remove o empurrão antigo */
-        gap: 12px;
-    }
-
-    .audit-headline .audit-radio label {
-        font-size: 12px;
-        gap: 6px;
-    }
-
-    .audit-headline .audit-radio input[type="radio"] {
-        transform: none;
-        /* tira o shift que às vezes “aumenta” visualmente */
-        width: 12px;
-        height: 12px;
-        margin: 0;
     }
 </style>
 
@@ -263,29 +234,29 @@ description: Internal repository report
     <div class="audit-brand" aria-hidden="true">
         <i class="fa-brands fa-github"></i>
     </div>
-</div>
-</div>
 
-<table class="audit-table">
-    <thead id="thead">
-        <tr>
-            <th>Repo</th>
-            <th>README</th>
-            <th>.gitignore</th>
-            <th>branches</th>
-            <th>ipynb</th>
-            <th>py</th>
-            <th>tex</th>
-            <th>files</th>
-            <th>updated</th>
-        </tr>
-    </thead>
-    <tbody id="tbody">
-        <tr>
-            <td colspan="9">loading…</td>
-        </tr>
-    </tbody>
-</table>
+
+
+    <table class="audit-table">
+        <thead id="thead">
+            <tr>
+                <th>Repo</th>
+                <th>README</th>
+                <th>.gitignore</th>
+                <th>branches</th>
+                <th>ipynb</th>
+                <th>py</th>
+                <th>tex</th>
+                <th>files</th>
+                <th>updated</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td colspan="9">loading…</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 
 <script>
