@@ -64,7 +64,6 @@ jobs:
     if: ${{ github.event_name == 'schedule' || inputs.run_ga }}
     runs-on: ubuntu-latest
     # opcional: se você quiser garantir que infra rode antes quando ambos selecionados
-    needs: [audit_infra]
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
