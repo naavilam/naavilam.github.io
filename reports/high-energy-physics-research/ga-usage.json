@@ -2,8 +2,19 @@
   "org": "high-energy-physics-research",
   "property_id": "517723350",
   "range_days": 30,
-  "pageviews_by_path": {
-    "/": 14
-  },
-  "clicks_by_path": {}
+  "metrics_by_path": {
+    "/": {
+      "views": 14,
+      "sessions": 14,
+      "users": 13,
+      "clicks": 0,
+      "engagement_rate": 0.14285714285714285,
+      "countries": {
+        "US": 43
+      },
+      "sources": {
+        "(direct)": 100
+      }
+    }
+  }
 }
