@@ -2,6 +2,7 @@ name: Generate SVG index
 
 on:
   push:
+    branches: ["main"]
     paths:
       - "assets/svg/**"
       - "scripts/gen-svg-index.mjs"
