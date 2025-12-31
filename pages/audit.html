@@ -194,7 +194,7 @@ description: Internal repository report
     </div>
 
     <table class="audit-table">
-        <thead>
+        <thead id="thead">
             <tr>
                 <th>Repo</th>
                 <th>README</th>
@@ -279,33 +279,112 @@ description: Internal repository report
         // Primeiro os que “faltam” coisas
         return (x.has_readme ? 0 : 2) + (x.has_gitignore ? 0 : 1);
     }
+    const thead = document.getElementById("thead");
+
+    function getViewMode() {
+        const el = document.querySelector('input[name="audit_mode"]:checked');
+        return el ? el.value : "with_infra";
+    }
+
+    function getColumns() {
+        const mode = getViewMode();
+
+        // define as colunas e como renderizar cada célula
+        const COLS_INFRA = [
+            { label: "Repo", key: "name", type: "text" },
+            { label: "README", key: "has_readme", type: "bool" },
+            { label: ".gitignore", key: "has_gitignore", type: "bool" },
+            { label: "branches", key: "branches_count", type: "num" },
+            { label: "ipynb", key: "notebooks_ipynb", type: "num" },
+            { label: "py", key: "files_py", type: "num" },
+            { label: "tex", key: "files_tex", type: "num" },
+            { label: "files", key: "total_files", type: "num" },
+            { label: "updated", key: "pushed_at", type: "date" },
+        ];
+
+        const COLS_GA = [
+            { label: "GA views (30d)", key: "ga_pageviews_30d", type: "num" },
+            { label: "GA clicks (30d)", key: "ga_clicks_30d", type: "num" },
+        ];
+
+        if (mode === "ga_only") {
+            return [
+                { label: "Repo", key: "name", type: "text" },
+                ...COLS_GA,
+                { label: "updated", key: "pushed_at", type: "date" },
+            ];
+        }
+
+        // with_infra: mostra infra + GA
+        return [
+            ...COLS_INFRA.slice(0, 1),
+            ...COLS_GA,
+            ...COLS_INFRA.slice(1),
+        ];
+    }
+
+    let sortKey = "name";
+    let sortDir = "asc"; // asc/desc
+
+    function renderHeader(cols) {
+        const tr = document.createElement("tr");
+
+        cols.forEach(c => {
+            const th = document.createElement("th");
+            th.textContent = c.label;
+
+            // colunas ordenáveis
+            th.style.cursor = "pointer";
+            th.title = "click to sort";
+
+            th.addEventListener("click", () => {
+                if (sortKey === c.key) sortDir = (sortDir === "asc" ? "desc" : "asc");
+                else { sortKey = c.key; sortDir = "asc"; }
+                render(); // reusa o mesmo render
+            });
+
+            tr.appendChild(th);
+        });
+
+        thead.innerHTML = "";
+        thead.appendChild(tr);
+    }
+
+    function cmp(a, b, type) {
+        const dir = (sortDir === "asc") ? 1 : -1;
+
+        const va = a ?? (type === "text" ? "" : 0);
+        const vb = b ?? (type === "text" ? "" : 0);
+
+        if (type === "text") return dir * String(va).localeCompare(String(vb));
+        if (type === "bool") return dir * ((va === vb) ? 0 : (va ? -1 : 1)); // true primeiro
+        if (type === "date") return dir * (String(va).localeCompare(String(vb)));
+        // num
+        return dir * ((Number(va) || 0) - (Number(vb) || 0));
+    }
 
     function render() {
+        const cols = getColumns();
+        renderHeader(cols);
+
         const needle = (q.value || "").trim().toLowerCase();
-        const base = needle
+        const filtered = needle
             ? rows.filter(r =>
                 (r.name || "").toLowerCase().includes(needle) ||
                 (r.full_name || "").toLowerCase().includes(needle)
             )
             : rows;
 
-        const filtered = sortArray(base);
-
-        const total = rows.length;
-        const shown = filtered.length;
-        const withReadme = filtered.filter(r => r.has_readme).length;
-        const withGitignore = filtered.filter(r => r.has_gitignore).length;
-        const ipynb = filtered.reduce((s, r) => s + (r.notebooks_ipynb || 0), 0);
-
-        stats.textContent =
-            `org=${currentOrg || "—"} | showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb}`;
+        // ordena
+        const sortCol = cols.find(c => c.key === sortKey) || cols[0];
+        filtered.sort((A, B) => cmp(A[sortCol.key], B[sortCol.key], sortCol.type));
 
         tbody.innerHTML = "";
 
         if (!filtered.length) {
             const tr = document.createElement("tr");
             tr.appendChild(td("no repos found"));
-            for (let i = 0; i < 8; i++) tr.appendChild(td(""));
+            for (let i = 0; i < cols.length - 1; i++) tr.appendChild(td(""));
             tbody.appendChild(tr);
             return;
         }
@@ -313,27 +392,35 @@ description: Internal repository report
         for (const r of filtered) {
             const tr = document.createElement("tr");
 
-            const repoCell = document.createElement("td");
-            const a = document.createElement("a");
-            a.href = r.url;
-            a.textContent = r.name;
-            a.target = "_blank";
-            a.rel = "noreferrer";
-            repoCell.appendChild(a);
-            tr.appendChild(repoCell);
+            cols.forEach(c => {
+                if (c.key === "name") {
+                    const repoCell = document.createElement("td");
+                    const a = document.createElement("a");
+                    a.href = r.url;
+                    a.textContent = r.name;
+                    a.target = "_blank";
+                    a.rel = "noreferrer";
+                    repoCell.appendChild(a);
+                    tr.appendChild(repoCell);
+                    return;
+                }
 
-            tr.appendChild(td(r.has_readme ? "yes" : "no", r.has_readme ? "audit-ok" : "audit-no"));
-            tr.appendChild(td(r.has_gitignore ? "yes" : "no", r.has_gitignore ? "audit-ok" : "audit-no"));
-            tr.appendChild(td(String(r.branches_count || 0)));
-            tr.appendChild(td(String(r.notebooks_ipynb || 0)));
-            tr.appendChild(td(String(r.files_py || 0)));
-            tr.appendChild(td(String(r.files_tex || 0)));
-            tr.appendChild(td(String(r.total_files || 0)));
-            tr.appendChild(td((r.pushed_at || "").slice(0, 10)));
+                if (c.type === "bool") {
+                    const v = !!r[c.key];
+                    tr.appendChild(td(v ? "yes" : "no", v ? "audit-ok" : "audit-no"));
+                    return;
+                }
+
+                if (c.type === "date") {
+                    tr.appendChild(td((r[c.key] || "").slice(0, 10)));
+                    return;
+                }
+
+                tr.appendChild(td(String(r[c.key] ?? 0)));
+            });
 
             tbody.appendChild(tr);
         }
-        setSortIndicator();
     }
 
     function loadOrg(org) {
@@ -597,6 +684,8 @@ description: Internal repository report
         const el = document.querySelector('input[name="audit_mode"]:checked');
         return el ? el.value : "with_infra";
     }
+
+    document.getElementById("auditMode")?.addEventListener("change", () => render());
 
     // === make headers sortable ===
     (() => {
