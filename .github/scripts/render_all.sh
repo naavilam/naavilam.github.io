@@ -30,3 +30,20 @@ for mmd in "$TMP_DIR"/*.mmd; do
   "$ROOT/node_modules/.bin/mmdc" -i "$mmd" -o "$OUT_DIR/${base}.svg" -b transparent --puppeteerConfigFile "$ROOT/.github/scripts/puppeteer-no-sandbox.json"
   echo "OK: $OUT_DIR/${base}.svg"
 done
+
+# --- scripts (.py) -> mermaid -> svg ---
+PY_DIR="$ROOT/.github/scripts"
+PY_TMP="$ROOT/.tmp/scripts"
+PY_OUT="$ROOT/assets/svg/scripts"
+
+mkdir -p "$PY_TMP" "$PY_OUT"
+
+python3 "$ROOT/.github/scripts/py_to_mermaid.py" "$PY_DIR" "$PY_TMP"
+
+for mmd in "$PY_TMP"/*.mmd; do
+  [ -f "$mmd" ] || continue
+  base="$(basename "$mmd" .mmd)"
+  "$ROOT/node_modules/.bin/mmdc" -i "$mmd" -o "$PY_OUT/${base}.svg" -b transparent \
+    --puppeteerConfigFile "$ROOT/.github/scripts/puppeteer-no-sandbox.json"
+  echo "OK: $PY_OUT/${base}.svg"
+done

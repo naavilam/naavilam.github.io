@@ -51,7 +51,7 @@ jobs:
           mkdir -p assets/svg
 
           git add assets/svg || true
-          git add assets/svg/workflows || true
+          git add assets/svg/workflows assets/svg/scripts || true
 
           if git diff --cached --quiet; then
             echo "No diagram changes to commit."
