@@ -884,12 +884,24 @@ description: Internal repository report
         return `rgba(${r}, ${g}, ${b}, 0.55)`;
     }
 
+
     function topPct(obj) {
-        // obj tipo {"BR":62}
         const entries = Object.entries(obj || {});
         if (!entries.length) return null;
-        entries.sort((a, b) => (b[1] || 0) - (a[1] || 0));
-        return { key: entries[0][0], pct: entries[0][1] };
+
+        let total = 0;
+        let bestK = null;
+        let bestV = -1;
+
+        for (const [k, v] of entries) {
+            const n = Number(v || 0);
+            total += n;
+            if (n > bestV) { bestV = n; bestK = k; }
+        }
+        if (total <= 0 || bestK == null) return null;
+
+        const pct = Math.round(100 * bestV / total);
+        return { key: bestK, pct };
     }
 
     function engNumericForHeat(r) {
@@ -899,8 +911,9 @@ description: Internal repository report
     }
 
     function originLine(r) {
-        const c = topPct(r.ga_countries);
-        const s = topPct(r.ga_sources);
+        const c = topPctFromCounts(r.ga_countries);
+        const s = topPctFromCounts(r.ga_sources);
+
         const parts = [];
         if (c) parts.push(`country ${c.key} ${c.pct}%`);
         if (s) parts.push(`source ${s.key} ${s.pct}%`);
