@@ -292,6 +292,16 @@ description: Internal repository report
     let sortKey = "ga_views_30d";
     let sortDir = "desc";
 
+    const infraActions = document.getElementById("infraActions");
+
+    function updateModeUI() {
+        const mode = getAuditMode();
+        if (infraActions) infraActions.style.display = (mode === "ga_only") ? "none" : "flex";
+        updateBrandIcon();
+    }
+
+    document.getElementById("auditMode")?.addEventListener("change", updateModeUI);
+
     function td(text, cls = "") {
         const el = document.createElement("td");
         el.textContent = text;
@@ -636,6 +646,7 @@ description: Internal repository report
 
                 render();
             });
+        updateModeUI();
     }
 
     q.addEventListener("input", render);
