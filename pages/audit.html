@@ -120,11 +120,39 @@ description: Internal repository report
     .pin-wrap.is-open {
         display: inline-flex;
     }
+
+    .audit-radio {
+        display: inline-flex;
+        gap: 10px;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .audit-radio label {
+        display: inline-flex;
+        gap: 6px;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .audit-radio input[type="radio"] {
+        transform: translateY(1px);
+    }
 </style>
 
 <div class="audit-wrap">
     <div class="audit-muted">internal report (minimal by design)</div>
-
+    <span class="audit-radio" id="auditMode">
+        <label class="audit-muted">
+            <input type="radio" name="audit_mode" value="with_infra" checked />
+            infra + GA
+        </label>
+        <label class="audit-muted">
+            <input type="radio" name="audit_mode" value="ga_only" />
+            GA only
+        </label>
+    </span>
     <div class="audit-row">
         <label class="audit-muted">org:</label>
         <select id="orgSelect">
@@ -343,14 +371,23 @@ description: Internal repository report
 
             // Ajuste para o seu repo central que contém o workflow org-audit.yml
             // Ex: org=naavilam, repo=hub, workflow=org-audit.yml
+            // regra:
+            // - with_infra => run_infra=true, run_ga=true (ou false se você quiser)
+            // - ga_only    => run_infra=false, run_ga=true
+            const run_infra = (mode === "with_infra");
+            const run_ga = true; // aqui você decide: sempre GA quando clicar "run org audit"
+
             const payload = {
                 action: "workflow_dispatch",
-                org: "naavilam",
+                org: "naavilam",     // repo central que contém o workflow
                 repo: "hub",
-                workflow: "org-audit.yml",
+                workflow: "audit.yml",
                 ref: "main",
-                inputs: {},
-                pin: pin
+                inputs: {
+                    run_infra,
+                    run_ga,
+                    orgs: orgSelect.value // roda só a org selecionada
+                }
             };
 
             if ((window.getOperatorPin() || "").length !== 4) {
@@ -477,4 +514,9 @@ description: Internal repository report
         window.openOperatorPin = (btn) => openPin(btn);
         window.resetOperatorPin = () => closePin();
     })();
+
+    function getAuditMode() {
+        const el = document.querySelector('input[name="audit_mode"]:checked');
+        return el ? el.value : "with_infra";
+    }
 </script>
