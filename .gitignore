@@ -7,6 +7,4 @@ Gemfile.lock
 
 # Demo Site 
 /Demo
-*.sh 
-*.xml
 .DS_Store
