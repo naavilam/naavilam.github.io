@@ -32,9 +32,10 @@ for mmd in "$TMP_DIR"/*.mmd; do
 done
 
 # --- scripts (.py) -> mermaid -> svg ---
+# --- scripts (.py) -> mermaid -> svg (na raiz assets/svg) ---
 PY_DIR="$ROOT/.github/scripts"
 PY_TMP="$ROOT/.tmp/scripts"
-PY_OUT="$ROOT/assets/svg/scripts"
+PY_OUT="$ROOT/assets/svg"
 
 mkdir -p "$PY_TMP" "$PY_OUT"
 
@@ -43,15 +44,24 @@ python3 "$ROOT/.github/scripts/py_to_mermaid.py" "$PY_DIR" "$PY_TMP"
 for mmd in "$PY_TMP"/*.mmd; do
   [ -f "$mmd" ] || continue
   base="$(basename "$mmd" .mmd)"
-  "$ROOT/node_modules/.bin/mmdc" -i "$mmd" -o "$PY_OUT/${base}.svg" -b transparent \
+  "$ROOT/node_modules/.bin/mmdc" -i "$mmd" -o "$PY_OUT/script-${base}.svg" -b transparent \
     --puppeteerConfigFile "$ROOT/.github/scripts/puppeteer-no-sandbox.json"
-  echo "OK: $PY_OUT/${base}.svg"
+  echo "OK: $PY_OUT/script-${base}.svg"
 done
 
+# --- publicar fontes Mermaid para edição ---
 mkdir -p "$ROOT/assets/mmd"
 
-# workflows
-cp "$TMP_DIR"/*.mmd "$ROOT/assets/mmd/" 2>/dev/null || true
+# workflows -> assets/mmd/workflow-*.mmd
+for f in "$TMP_DIR"/*.mmd; do
+  [ -f "$f" ] || continue
+  base="$(basename "$f")"
+  cp "$f" "$ROOT/assets/mmd/workflow-$base"
+done
 
-# scripts
-cp "$PY_TMP"/*.mmd "$ROOT/assets/mmd/" 2>/dev/null || true
+# scripts -> assets/mmd/script-*.mmd
+for f in "$PY_TMP"/*.mmd; do
+  [ -f "$f" ] || continue
+  base="$(basename "$f")"
+  cp "$f" "$ROOT/assets/mmd/script-$base"
+done
