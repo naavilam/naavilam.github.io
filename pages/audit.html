@@ -270,8 +270,8 @@ description: Internal repository report
 
         const COLS_GA = [
             { label: "Repo", key: "name", type: "text" },
-            { label: "GA views (30d)", key: "ga_pageviews_30d", type: "num" },
-            { label: "GA clicks (30d)", key: "ga_clicks_30d", type: "num" },
+            { label: "views (30d)", key: "ga_pageviews_30d", type: "num" },
+            { label: "clicks (30d)", key: "ga_clicks_30d", type: "num" },
             { label: "updated", key: "pushed_at", type: "date" },
         ];
 
@@ -377,6 +377,15 @@ description: Internal repository report
             return;
         }
 
+        const gaViewsVals = filtered.map(r => r.ga_pageviews_30d || 0);
+        const gaClicksVals = filtered.map(r => r.ga_clicks_30d || 0);
+
+        const gaViewsMin = Math.min(...gaViewsVals);
+        const gaViewsMax = Math.max(...gaViewsVals);
+
+        const gaClicksMin = Math.min(...gaClicksVals);
+        const gaClicksMax = Math.max(...gaClicksVals);
+
         for (const r of filtered) {
             const tr = document.createElement("tr");
 
@@ -404,7 +413,23 @@ description: Internal repository report
                     return;
                 }
 
-                tr.appendChild(td(String(r[c.key] ?? 0)));
+                if (c.key === "ga_pageviews_30d" || c.key === "ga_clicks_30d") {
+                    const value = Number(r[c.key] ?? 0);
+
+                    const min = (c.key === "ga_pageviews_30d") ? gaViewsMin : gaClicksMin;
+                    const max = (c.key === "ga_pageviews_30d") ? gaViewsMax : gaClicksMax;
+
+                    const cell = td(String(value), "audit-ga");
+
+                    if (value === 0) {
+                        cell.style.color = "#b00020"; // zero = alerta forte
+                    } else {
+                        cell.style.color = gaColor(value, min, max);
+                    }
+
+                    tr.appendChild(cell);
+                    return;
+                }
             });
 
             tbody.appendChild(tr);
@@ -643,4 +668,17 @@ description: Internal repository report
         window.openOperatorPin = (btn) => openPin(btn);
         window.resetOperatorPin = () => closePin();
     })();
+
+    function gaColor(value, min, max) {
+        if (max <= min) return ""; // evita divisão por zero
+
+        const t = (value - min) / (max - min); // 0..1
+
+        // gradiente: vermelho -> amarelo -> verde
+        const r = Math.round(180 * (1 - t));
+        const g = Math.round(180 * t);
+        const b = 0;
+
+        return `rgb(${r}, ${g}, ${b})`;
+    }
 </script>
