@@ -188,45 +188,49 @@ description: Internal repository report
 </style>
 
 <div class="audit-wrap">
-    <div class="audit-muted">internal report (minimal by design)
-        <span class="audit-radio" id="auditMode">
-            <label class="audit-muted">
-                <input type="radio" name="audit_mode" value="with_infra" checked />
-                infra
-            </label>
-            <label class="audit-muted">
-                <input type="radio" name="audit_mode" value="ga_only" />
-                analytics
-            </label>
-        </span>
-    </div>
-    <div class="audit-row">
-        <label class="audit-muted">org:</label>
-        <select id="orgSelect">
-            <option>loading…</option>
-        </select>
 
-        <label class="audit-muted">filter:</label>
-        <input id="q" placeholder="type repo name..." />
-
-        <span id="stats" class="audit-muted"></span>
-        <button id="btnRunAudit" type="button">run org audit</button>
-        <button id="btnInitRepos" type="button">init repos</button>
-        <button id="btnLoadDiagrams" type="button">diagrams</button>
-        <div id="pin-wrap" class="pin-wrap" tabindex="0" title="operator pin">
-            <div class="pin-dots">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+    <div class="audit-bar">
+        <div class="audit-row">
+            <div class="audit-muted">internal report (minimal by design)
+                <span class="audit-radio" id="auditMode">
+                    <label class="audit-muted">
+                        <input type="radio" name="audit_mode" value="with_infra" checked />
+                        infra
+                    </label>
+                    <label class="audit-muted">
+                        <input type="radio" name="audit_mode" value="ga_only" />
+                        analytics
+                    </label>
+                </span>
             </div>
-            <input id="pin-hidden" type="password" inputmode="numeric" autocomplete="off">
-        </div>
-        <span id="actionMsg" class="audit-muted"></span>
-    </div>
+            <div class="audit-row">
+                <label class="audit-muted">org:</label>
+                <select id="orgSelect">
+                    <option>loading…</option>
+                </select>
 
-    <div class="audit-brand" aria-hidden="true">
-        <i class="fa-brands fa-github"></i>
+                <label class="audit-muted">filter:</label>
+                <input id="q" placeholder="type repo name..." />
+
+                <span id="stats" class="audit-muted"></span>
+                <button id="btnRunAudit" type="button">run org audit</button>
+                <button id="btnInitRepos" type="button">init repos</button>
+                <button id="btnLoadDiagrams" type="button">diagrams</button>
+                <div id="pin-wrap" class="pin-wrap" tabindex="0" title="operator pin">
+                    <div class="pin-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <input id="pin-hidden" type="password" inputmode="numeric" autocomplete="off">
+                </div>
+                <span id="actionMsg" class="audit-muted"></span>
+            </div>
+        </div>
+        <div class="audit-brand" aria-hidden="true">
+            <i class="fa-brands fa-github"></i>
+        </div>
     </div>
 </div>
 
