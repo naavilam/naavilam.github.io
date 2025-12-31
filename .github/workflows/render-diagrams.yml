@@ -33,7 +33,7 @@ jobs:
 
       - name: Render SVGs
         run: |
-          bash .github/workflows/render_all.sh
+          bash .github/scripts/render_all.sh
 
       - name: Commit & push generated SVGs (if changed)
         run: |
