@@ -441,7 +441,28 @@ description: Internal repository report
             const u = filtered.reduce((s, r) => s + (r.ga_users_30d || 0), 0);
             const c = filtered.reduce((s, r) => s + (r.ga_clicks_30d || 0), 0);
 
-            stats.textContent = `org=${currentOrg || "—"} | showing ${shown}/${total} | views ${v} | sessions ${se} | users ${u} | clicks ${c}`;
+            const countryAgg = {};
+            const sourceAgg = {};
+
+            for (const r of filtered) {
+                const countries = r.ga_countries || {}; // { "BR": 12, "US": 3, ... }
+                const sources = r.ga_sources || {}; // { "google": 10, "direct": 5, ... }
+
+                for (const [k, val] of Object.entries(countries)) {
+                    countryAgg[k] = (countryAgg[k] || 0) + (Number(val) || 0);
+                }
+                for (const [k, val] of Object.entries(sources)) {
+                    sourceAgg[k] = (sourceAgg[k] || 0) + (Number(val) || 0);
+                }
+            }
+
+            const tc = topKeyAndShare(countryAgg);
+            const ts = topKeyAndShare(sourceAgg);
+
+            stats.textContent =
+                `org=${currentOrg || "—"} | showing ${shown}/${total} | views ${v} | sessions ${se} | users ${u} | clicks ${c}` +
+                ` | country ${tc.top} ${tc.pct}% | source ${ts.top} ${ts.pct}%`;
+
         } else {
             stats.textContent = `org=${currentOrg || "—"} | showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb}`;
         }
@@ -534,30 +555,40 @@ description: Internal repository report
                     const k1 = `/${slug}/`;
                     const k2 = `/${slug}`;
 
-                    const m = byPath[k1] || byPath[k2] || null;
+                    const m = byPath[k1] ?? byPath[k2] ?? null;
 
+                    // Métricas básicas (30d)
                     r.ga_views_30d = m?.views ?? 0;
                     r.ga_sessions_30d = m?.sessions ?? 0;
                     r.ga_users_30d = m?.users ?? 0;
                     r.ga_clicks_30d = m?.clicks ?? 0;
 
-                    // Engagement: prefere rate, senão time
+                    // Engagement (mantém sua lógica)
                     if (typeof m?.engagement_rate === "number") {
                         r.ga_engagement_30d = m.engagement_rate; // 0..1
                         r.ga_eng_kind = "rate";
                     } else {
-                        r.ga_engagement_30d = m?.avg_engagement_time_sec ?? 0; // segundos
+                        r.ga_engagement_30d = m?.avg_engagement_time_sec ?? 0;
                         r.ga_eng_kind = "time";
                     }
+
+                    // >>> NOVO: distribuições <<<
+                    r.ga_countries = m?.countries ?? {}; // { BR: 62, US: 18, ... }
+                    r.ga_sources = m?.sources ?? {}; // { google: 48, direct: 30, ... }
                 }
 
-                rows.sort((a, b) => scoreRow(b) - scoreRow(a) || (a.name || "").localeCompare(b.name || ""));
+                // ordenação default
+                rows.sort(
+                    (a, b) =>
+                        scoreRow(b) - scoreRow(a) ||
+                        (a.name || "").localeCompare(b.name || "")
+                );
 
                 const cols = getColumns();
                 if (!cols.some(c => c.key === sortKey)) sortKey = "name";
 
                 render();
-            })
+            });
     }
 
     q.addEventListener("input", render);
@@ -794,4 +825,16 @@ description: Internal repository report
 
     document.getElementById("auditMode")
         ?.addEventListener("change", updateBrandIcon);
+
+    function topKeyAndShare(obj) {
+        const entries = Object.entries(obj || {});
+        if (!entries.length) return { top: "—", pct: 0 };
+
+        const total = entries.reduce((s, [, v]) => s + (Number(v) || 0), 0);
+        entries.sort((a, b) => (Number(b[1]) || 0) - (Number(a[1]) || 0));
+
+        const top = entries[0][0];
+        const pct = total ? Math.round(100 * (Number(entries[0][1]) || 0) / total) : 0;
+        return { top, pct };
+    }
 </script>
