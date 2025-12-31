@@ -259,12 +259,16 @@ description: SVGs com preview e edição no draw.io
 
             // --- NOVO: editar via Mermaid (.mmd), não SVG ---
             const mmdName = name.replace(/\.svg$/i, ".mmd");
-            const mmdUrl = `${BASE}/assets/mmd/${mmdName}`;
+
+            // fonte do mmd: preferir CDN (bem mais compatível com draw.io)
+            const mmdSource = cdn
+                ? `${cdn}/assets/mmd/${mmdName}`
+                : (location.origin + `${BASE}/assets/mmd/${mmdName}`);
 
             editEl.href =
                 `https://app.diagrams.net/?` +
                 `mode=mermaid` +
-                `&url=${encodeURIComponent(location.origin + mmdUrl)}` +
+                `&url=${encodeURIComponent(mmdSource)}` +
                 `&embed=1&ui=min`;
 
             canvasEl.innerHTML = `<div class="hint">carregando…</div>`;
