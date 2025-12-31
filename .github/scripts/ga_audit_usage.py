@@ -214,15 +214,18 @@ def main():
             if cnt > 0:
                 sources_counts[path][source] += cnt
 
-        # aplica “Opção B”: top com porcentagem (ainda 1 linha no front)
-        for path in set(list(metrics_by_path.keys()) + list(countries_counts.keys()) + list(sources_counts.keys())):
+        # guarda TUDO (contagens), a UI mostra só o top
+        all_paths = set(metrics_by_path.keys()) | set(countries_counts.keys()) | set(sources_counts.keys())
+
+        for path in all_paths:
             metrics_by_path.setdefault(path, {
                 "views": 0, "sessions": 0, "users": 0, "clicks": 0,
-                "engagement_rate": 0.0, "avg_engagement_time_sec": 0.0,
+                "engagement_rate": 0.0,
                 "countries": {}, "sources": {}
             })
-            metrics_by_path[path]["countries"] = top_percent_dict(dict(countries_counts[path]), top_k=1)
-            metrics_by_path[path]["sources"] = top_percent_dict(dict(sources_counts[path]), top_k=1)
+
+            metrics_by_path[path]["countries"] = dict(countries_counts[path])  # ex: {"US": 7, "BR": 4, ...}
+            metrics_by_path[path]["sources"]   = dict(sources_counts[path])    # ex: {"(direct)": 9, "google": 1, ...}
 
         payload = {
             "org": org,
