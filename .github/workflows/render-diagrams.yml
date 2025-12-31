@@ -49,16 +49,12 @@ jobs:
 
           mkdir -p assets/svg assets/mmd
 
-          # adiciona SVGs + fontes Mermaid
           git add assets/svg assets/mmd || true
-
-          echo "== staged =="
-          git diff --cached --name-only || true
 
           if git diff --cached --quiet; then
             echo "No diagram changes to commit."
             exit 0
           fi
 
-          git commit -m "chore(diagrams): update sequence diagrams"
+          git commit -m "chore(diagrams): update diagrams"
           git push
