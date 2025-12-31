@@ -250,7 +250,7 @@ description: Internal repository report
 
     function getAuditMode() {
         const el = document.querySelector('input[name="audit_mode"]:checked');
-        return el ? el.value : "infra";
+        return el ? el.value : "with_infra";
     }
 
     function getColumns() {
@@ -275,7 +275,7 @@ description: Internal repository report
             { label: "updated", key: "pushed_at", type: "date" },
         ];
 
-        return (mode === "ga") ? COLS_GA : COLS_INFRA;
+        return (mode === "ga_only") ? COLS_GA : COLS_INFRA;
     }
 
     function renderHeader(cols) {
@@ -517,7 +517,7 @@ description: Internal repository report
             setBusy(true, "dispatching org audit…");
 
             const mode = getAuditMode();
-            const run_infra = (mode === "infra");
+            const run_infra = (mode === "with_infra");
             const run_ga = true;
 
             const payload = {
