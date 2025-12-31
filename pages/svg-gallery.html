@@ -258,98 +258,110 @@ description: SVGs com preview e edição no draw.io
                 listEl.appendChild(row);
             });
         }
-
         async function load(name) {
             currentName = name;
             renderList(qEl.value);
 
             titleEl.textContent = name;
 
-            const rawNoCache = `${BASE}/assets/svg/${name}`; // para links/botões
-            const raw = svgUrl(name); // para fetch/preview (com cache-buster)
+            const rawNoCache = `${BASE}/assets/svg/${name}`;
+            const raw = svgUrl(name);
 
             openRawEl.style.display = '';
             openRawEl.href = rawNoCache;
 
-            editEl.style.display = '';
-            const owner = "naavilam";
-            const repo = "naavilam.github.io";
-
-            // tenta inferir repo quando é ...github.io/REPO/...
-            const pathParts = location.pathname.split('/').filter(Boolean);
-
-            const branch = "main";
-            const cdn = repo ? `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}` : null;
-
-            // URL que o draw.io vai baixar (preferir CDN)
-            const drawSource = cdn ? `${cdn}/assets/svg/${name}` : (location.origin + rawNoCache);
-
-            // esconder botão se não existir .mmd
-            // --- editar via Mermaid Live (.mmd) ---
+            // --- mmd correspondente ---
             const mmdName = name.replace(/\.svg$/i, ".mmd");
             const mmdUrl = `${BASE}/assets/mmd/${mmdName}`;
 
-            // testa se existe
-            let mmdExists = false;
+            // reset do botão (importante ao trocar de item)
+            editEl.onclick = null;
+            editEl.removeAttribute("href");
+
+            // verifica se o .mmd existe; se não, esconde o botão
             try {
-                const head = await fetch(`${mmdUrl}?v=${Date.now()}`, {
-                    method: "HEAD",
-                    cache: "no-store"
-                });
-                mmdExists = head.ok;
-            } catch { }
-
-            if (!mmdExists) {
+                const head = await fetch(`${mmdUrl}?v=${Date.now()}`, { method: "HEAD", cache: "no-store" });
+                if (!head.ok) {
+                    editEl.style.display = "none";
+                } else {
+                    editEl.style.display = "";
+                }
+            } catch {
                 editEl.style.display = "none";
-                editEl.onclick = null;
-                editEl.href = "#";
-            } else {
-                editEl.style.display = "";
-                editEl.href = "#";
+            }
 
-                editEl.onclick = async (ev) => {
+            // se existir, configura clique para abrir Mermaid Live
+            if (editEl.style.display !== "none") {
+                editEl.href = "#";
+                editEl.onclick = (ev) => {
                     ev.preventDefault();
 
-                    try {
-                        const r = await fetch(`${mmdUrl}?v=${Date.now()}`, {
-                            cache: "no-store"
-                        });
-                        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-
-                        const code = await r.text();
-                        const url = mermaidLiveEditUrl(code);
-
-                        // IMPORTANTÍSSIMO para Safari
-                        const popup = window.open("about:blank", "_blank", "noopener");
-                        popup.location.href = url;
-
-                    } catch (e) {
-                        console.error(e);
-                        alert("Não consegui abrir no Mermaid Live. Veja o console.");
+                    // 1) abre popup IMEDIATAMENTE (pra não ser bloqueado)
+                    const popup = window.open("about:blank", "_blank", "noopener");
+                    if (!popup) {
+                        alert("Popup bloqueado. Permita popups para este site e tente novamente.");
+                        return;
                     }
+                    popup.document.write("<p>Carregando Mermaid Live…</p>");
+
+                    // 2) agora pode async sem perder o 'user gesture'
+                    (async () => {
+                        try {
+                            const r = await fetch(`${mmdUrl}?v=${Date.now()}`, { cache: "no-store" });
+                            if (!r.ok) throw new Error(`HTTP ${r.status} ao buscar ${mmdUrl}`);
+                            const code = await r.text();
+
+                            if (!window.pako) throw new Error("pako não carregou.");
+
+                            const state = {
+                                code,
+                                mermaid: { theme: "default" },
+                                autoSync: true,
+                                updateDiagram: true,
+                                editorMode: "code",
+                                panZoom: true,
+                                zoom: 1
+                            };
+
+                            const json = JSON.stringify(state);
+                            const compressed = window.pako.deflate(json); // Uint8Array
+
+                            // base64url
+                            let s = "";
+                            const chunk = 0x8000;
+                            for (let i = 0; i < compressed.length; i += chunk) {
+                                s += String.fromCharCode.apply(null, compressed.subarray(i, i + chunk));
+                            }
+                            const b64url = btoa(s).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+
+                            const url = `https://mermaid.live/edit#pako:${b64url}`;
+
+                            // 3) navega o popup
+                            popup.location.href = url;
+                        } catch (e) {
+                            console.error(e);
+                            popup.close();
+                            alert("Não consegui abrir no Mermaid Live. Veja o console.");
+                        }
+                    })();
                 };
             }
 
+            // --- preview do SVG ---
             canvasEl.innerHTML = `<div class="hint">carregando…</div>`;
-
             try {
-                const r = await fetch(raw, { cache: 'no-store' });
+                const r = await fetch(raw, { cache: "no-store" });
                 if (!r.ok) throw new Error(`HTTP ${r.status} ao buscar ${raw}`);
 
                 const svgText = await r.text();
-
-                // Parse como SVG/XML (evita bugs do innerHTML com SVG grande/complexo)
                 const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
                 const svgEl = doc.documentElement;
 
-                // Detecta erro de parse (às vezes vem <parsererror>)
                 if (!svgEl || svgEl.tagName.toLowerCase() !== "svg") {
                     const pe = doc.querySelector("parsererror");
-                    const msg = pe ? pe.textContent : "conteúdo não é um <svg> válido";
-                    throw new Error(`SVG inválido: ${msg}`);
+                    throw new Error(`SVG inválido: ${(pe && pe.textContent) || "conteúdo não é <svg>"}`);
                 }
 
-                // Render: limpa e injeta o nó SVG já parseado
                 canvasEl.innerHTML = "";
                 canvasEl.appendChild(document.importNode(svgEl, true));
             } catch (e) {
