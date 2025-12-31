@@ -285,61 +285,50 @@ description: SVGs com preview e edição no draw.io
             const drawSource = cdn ? `${cdn}/assets/svg/${name}` : (location.origin + rawNoCache);
 
             // esconder botão se não existir .mmd
-            try {
-                const head = await fetch(`${mmdUrl}?v=${Date.now()}`, { method: "HEAD", cache: "no-store" });
-                if (!head.ok) {
-                    editEl.style.display = 'none';
-                    editEl.onclick = null;
-                    editEl.href = '#';
-                    return; // ou apenas não retorna e segue
-                }
-            } catch {
-                editEl.style.display = 'none';
-            }
-
-            // --- NOVO: editar via Mermaid (.mmd), não SVG ---
             // --- editar via Mermaid Live (.mmd) ---
             const mmdName = name.replace(/\.svg$/i, ".mmd");
             const mmdUrl = `${BASE}/assets/mmd/${mmdName}`;
 
-            // mostra o botão, mas ele só vai abrir quando clicar
-            editEl.style.display = '';
-            editEl.href = '#'; // vamos abrir via JS
-            editEl.onclick = async (ev) => {
-                ev.preventDefault();
+            // testa se existe
+            let mmdExists = false;
+            try {
+                const head = await fetch(`${mmdUrl}?v=${Date.now()}`, {
+                    method: "HEAD",
+                    cache: "no-store"
+                });
+                mmdExists = head.ok;
+            } catch { }
 
-                try {
-                    const r = await fetch(`${mmdUrl}?v=${Date.now()}`, { cache: 'no-store' });
-                    if (!r.ok) throw new Error(`HTTP ${r.status} ao buscar ${mmdUrl}`);
+            if (!mmdExists) {
+                editEl.style.display = "none";
+                editEl.onclick = null;
+                editEl.href = "#";
+            } else {
+                editEl.style.display = "";
+                editEl.href = "#";
 
-                    const code = await r.text();
+                editEl.onclick = async (ev) => {
+                    ev.preventDefault();
 
-                    // Mermaid Live espera um "state" compactado no hash (pako)
-                    const state = {
-                        code,
-                        mermaid: { theme: "default" },
-                        autoSync: true,
-                        updateDiagram: true
-                    };
+                    try {
+                        const r = await fetch(`${mmdUrl}?v=${Date.now()}`, {
+                            cache: "no-store"
+                        });
+                        if (!r.ok) throw new Error(`HTTP ${r.status}`);
 
-                    if (!window.pako) throw new Error("pako não carregou (script do unpkg).");
+                        const code = await r.text();
+                        const url = mermaidLiveEditUrl(code);
 
-                    const json = JSON.stringify(state);
-                    const compressed = window.pako.deflate(json, { to: "string" });
+                        // IMPORTANTÍSSIMO para Safari
+                        const popup = window.open("about:blank", "_blank", "noopener");
+                        popup.location.href = url;
 
-                    // base64url
-                    const b64 = btoa(compressed)
-                        .replace(/\+/g, "-")
-                        .replace(/\//g, "_")
-                        .replace(/=+$/g, "");
-
-                    const url = `https://mermaid.live/edit#pako:${b64}`;
-                    window.open(url, "_blank", "noopener");
-                } catch (e) {
-                    console.error(e);
-                    alert("Não consegui abrir no Mermaid Live. Veja o console para detalhes.");
-                }
-            };
+                    } catch (e) {
+                        console.error(e);
+                        alert("Não consegui abrir no Mermaid Live. Veja o console.");
+                    }
+                };
+            }
 
             canvasEl.innerHTML = `<div class="hint">carregando…</div>`;
 
