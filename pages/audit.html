@@ -279,9 +279,13 @@ description: Internal repository report
     let rows = [];
     let currentOrg = null;
 
-    // sort state (UMA SÓ VEZ)
-    let sortKey = "name";
-    let sortDir = "asc"; // "asc" | "desc"
+    // sort state para infra default (UMA SÓ VEZ)
+    // let sortKey = "name";
+    // let sortDir = "asc"; // "asc" | "desc"
+
+    // sort state para analytics default
+    let sortKey = "ga_views_30d";
+    let sortDir = "desc";
 
     function td(text, cls = "") {
         const el = document.createElement("td");
