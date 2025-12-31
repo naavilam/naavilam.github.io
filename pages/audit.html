@@ -297,11 +297,9 @@ description: Internal repository report
 
     function updateModeUI() {
         const mode = getAuditMode();
-        if (infraActions) infraActions.style.display = (mode === "ga_only") ? "none" : "flex";
+        if (infraActions) infraActions.style.display = (mode === "ga_only") ? "none" : "inline";
         updateBrandIcon();
     }
-
-    document.getElementById("auditMode")?.addEventListener("change", updateModeUI);
 
     function td(text, cls = "") {
         const el = document.createElement("td");
@@ -656,6 +654,7 @@ description: Internal repository report
     document.getElementById("auditMode")?.addEventListener("change", () => {
         const cols = getColumns();
         if (!cols.some(c => c.key === sortKey)) sortKey = "name";
+        updateModeUI()
         render();
     });
 
