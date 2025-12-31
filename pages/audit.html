@@ -277,8 +277,11 @@ description: Internal repository report
 
         const COLS_GA = [
             { label: "Repo", key: "name", type: "text" },
-            { label: "views (30d)", key: "ga_pageviews_30d", type: "num" },
-            { label: "clicks (30d)", key: "ga_clicks_30d", type: "num" },
+            { label: "Views (30d)", key: "ga_views_30d", type: "num", heat: true },
+            { label: "Sessions (30d)", key: "ga_sessions_30d", type: "num", heat: true },
+            { label: "Users (30d)", key: "ga_users_30d", type: "num", heat: true },
+            { label: "Clicks (30d)", key: "ga_clicks_30d", type: "num", heat: true },
+            { label: "Engagement", key: "ga_engagement_30d", type: "eng", heat: true },
             { label: "updated", key: "pushed_at", type: "date" },
         ];
 
@@ -393,6 +396,29 @@ description: Internal repository report
         const gaClicksMin = Math.min(...gaClicksVals);
         const gaClicksMax = Math.max(...gaClicksVals);
 
+        mode = getAuditMode();
+
+        if (mode === "ga_only") {
+            const v = filtered.reduce((s, r) => s + (r.ga_views_30d || 0), 0);
+            const se = filtered.reduce((s, r) => s + (r.ga_sessions_30d || 0), 0);
+            const u = filtered.reduce((s, r) => s + (r.ga_users_30d || 0), 0);
+            const c = filtered.reduce((s, r) => s + (r.ga_clicks_30d || 0), 0);
+
+            stats.textContent = `org=${currentOrg || "—"} | showing ${shown}/${total} | views ${v} | sessions ${se} | users ${u} | clicks ${c}`;
+        } else {
+            stats.textContent = `org=${currentOrg || "—"} | showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb}`;
+        }
+
+        let mins = {}, maxs = {};
+        if (mode === "ga_only") {
+            const keys = ["ga_views_30d", "ga_sessions_30d", "ga_users_30d", "ga_clicks_30d", "ga_engagement_30d"];
+            for (const k of keys) {
+                const vals = filtered.map(r => Number(r[k] || 0));
+                mins[k] = Math.min(...vals);
+                maxs[k] = Math.max(...vals);
+            }
+        }
+
         for (const r of filtered) {
             const tr = document.createElement("tr");
 
@@ -464,31 +490,37 @@ description: Internal repository report
             .then(([infra, ga]) => {
                 rows = (infra || []).slice();
 
-                const pv = (ga && ga.pageviews_by_path) ? ga.pageviews_by_path : {};
-                const ck = (ga && ga.clicks_by_path) ? ga.clicks_by_path : {};
+                const byPath = (ga && ga.metrics_by_path) ? ga.metrics_by_path : {};
 
                 for (const r of rows) {
                     const slug = r.name || "";
                     const k1 = `/${slug}/`;
                     const k2 = `/${slug}`;
-                    r.ga_pageviews_30d = pv[k1] ?? pv[k2] ?? 0;
-                    r.ga_clicks_30d = ck[k1] ?? ck[k2] ?? 0;
+
+                    const m = byPath[k1] || byPath[k2] || null;
+
+                    r.ga_views_30d = m?.views ?? 0;
+                    r.ga_sessions_30d = m?.sessions ?? 0;
+                    r.ga_users_30d = m?.users ?? 0;
+                    r.ga_clicks_30d = m?.clicks ?? 0;
+
+                    // Engagement: prefere rate, senão time
+                    if (typeof m?.engagement_rate === "number") {
+                        r.ga_engagement_30d = m.engagement_rate; // 0..1
+                        r.ga_eng_kind = "rate";
+                    } else {
+                        r.ga_engagement_30d = m?.avg_engagement_time_sec ?? 0; // segundos
+                        r.ga_eng_kind = "time";
+                    }
                 }
 
-                // ordenação “default” (antes do sort por header)
                 rows.sort((a, b) => scoreRow(b) - scoreRow(a) || (a.name || "").localeCompare(b.name || ""));
 
-                // se o sort atual não existe nas colunas do modo atual, volta pro name
                 const cols = getColumns();
                 if (!cols.some(c => c.key === sortKey)) sortKey = "name";
 
                 render();
-
-                try { localStorage.setItem("audit_org", org); } catch (_) { }
             })
-            .catch(err => {
-                tbody.innerHTML = `<tr><td colspan="9">failed to load ${org}: ${String(err)}</td></tr>`;
-            });
     }
 
     q.addEventListener("input", render);
@@ -679,6 +711,26 @@ description: Internal repository report
         window.openOperatorPin = (btn) => openPin(btn);
         window.resetOperatorPin = () => closePin();
     })();
+
+    function clamp01(x) { return Math.max(0, Math.min(1, x)); }
+
+    function heatBg(value, min, max) {
+        if (max <= min) return "transparent";
+        const t = clamp01((value - min) / (max - min));
+        // aquarela clarinha (amarelo/verde suave) no fundo
+        const a = 0.06 + 0.22 * t;           // transparência cresce com valor
+        return `rgba(120, 180, 120, ${a})`;  // verde suave
+    }
+
+    function engText(r) {
+        if (r.ga_eng_kind === "rate") {
+            const p = Math.round((Number(r.ga_engagement_30d || 0) * 100));
+            return `${p}%`;
+        }
+        // time
+        const s = Number(r.ga_engagement_30d || 0);
+        return `${Math.round(s)}s`;
+    }
 
     function gaBgColor(value, min, max) {
         if (max <= min) return "#ffffff";
