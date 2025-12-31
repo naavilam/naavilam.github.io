@@ -42,21 +42,23 @@ jobs:
         run: |
           bash .github/scripts/render_all.sh
 
-      - name: Commit & push generated SVGs (if changed)
+      - name: Commit & push generated diagrams (if changed)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # garante que a pasta exista (não falha se já existir)
-          mkdir -p assets/svg
+          mkdir -p assets/svg assets/mmd
 
-          git add assets/svg || true
-          git add assets/svg/workflows assets/svg/scripts assets/mmd || true
+          # adiciona SVGs + fontes Mermaid
+          git add assets/svg assets/mmd || true
+
+          echo "== staged =="
+          git diff --cached --name-only || true
 
           if git diff --cached --quiet; then
             echo "No diagram changes to commit."
             exit 0
           fi
 
-          git commit -m "chore(diagrams): update workflow sequence SVGs"
+          git commit -m "chore(diagrams): update sequence diagrams"
           git push
