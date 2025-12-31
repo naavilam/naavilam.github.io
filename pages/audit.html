@@ -220,53 +220,22 @@ description: Internal repository report
     const DISPATCH_API = "{{ '/api/github/dispatch' | relative_url }}";
 
     const tbody = document.getElementById("tbody");
+    const thead = document.getElementById("thead");
     const q = document.getElementById("q");
     const stats = document.getElementById("stats");
     const orgSelect = document.getElementById("orgSelect");
 
+    const btnRunAudit = document.getElementById("btnRunAudit");
+    const btnInitRepos = document.getElementById("btnInitRepos");
+    const btnLoadDiagrams = document.getElementById("btnLoadDiagrams");
+    const actionMsg = document.getElementById("actionMsg");
+
     let rows = [];
     let currentOrg = null;
 
-    // === sort state ===
-    let sortKey = null;
-    let sortDir = 1; // 1 asc, -1 desc
-
-    function setSortIndicator() {
-        const ths = document.querySelectorAll(".audit-table thead th");
-        ths.forEach(th => th.classList.remove("sort-asc", "sort-desc"));
-
-        if (!sortKey) return;
-
-        const th = document.querySelector(`.audit-table thead th[data-key="${sortKey}"]`);
-        if (th) th.classList.add(sortDir === 1 ? "sort-asc" : "sort-desc");
-    }
-
-    function getSortValue(r, key) {
-        const v = r[key];
-
-        // bool -> 0/1
-        if (typeof v === "boolean") return v ? 1 : 0;
-
-        // numbers
-        if (typeof v === "number") return v;
-
-        // dates
-        if (key === "pushed_at") return v ? new Date(v).getTime() : 0;
-
-        // strings
-        return (v ?? "").toString().toLowerCase();
-    }
-
-    function sortArray(arr) {
-        if (!sortKey) return arr; // sem sort => deixa como está (default scoreRow já aplicado em rows)
-        return arr.slice().sort((a, b) => {
-            const va = getSortValue(a, sortKey);
-            const vb = getSortValue(b, sortKey);
-            if (va < vb) return -1 * sortDir;
-            if (va > vb) return 1 * sortDir;
-            return 0;
-        });
-    }
+    // sort state (UMA SÓ VEZ)
+    let sortKey = "name";
+    let sortDir = "asc"; // "asc" | "desc"
 
     function td(text, cls = "") {
         const el = document.createElement("td");
@@ -276,20 +245,17 @@ description: Internal repository report
     }
 
     function scoreRow(x) {
-        // Primeiro os que “faltam” coisas
         return (x.has_readme ? 0 : 2) + (x.has_gitignore ? 0 : 1);
     }
-    const thead = document.getElementById("thead");
 
-    function getViewMode() {
+    function getAuditMode() {
         const el = document.querySelector('input[name="audit_mode"]:checked');
         return el ? el.value : "with_infra";
     }
 
     function getColumns() {
-        const mode = getViewMode();
+        const mode = getAuditMode();
 
-        // define as colunas e como renderizar cada célula
         const COLS_INFRA = [
             { label: "Repo", key: "name", type: "text" },
             { label: "README", key: "has_readme", type: "bool" },
@@ -315,16 +281,13 @@ description: Internal repository report
             ];
         }
 
-        // with_infra: mostra infra + GA
+        // infra + GA
         return [
-            ...COLS_INFRA.slice(0, 1),
+            COLS_INFRA[0],
             ...COLS_GA,
             ...COLS_INFRA.slice(1),
         ];
     }
-
-    let sortKey = "name";
-    let sortDir = "asc"; // asc/desc
 
     function renderHeader(cols) {
         const tr = document.createElement("tr");
@@ -332,15 +295,18 @@ description: Internal repository report
         cols.forEach(c => {
             const th = document.createElement("th");
             th.textContent = c.label;
-
-            // colunas ordenáveis
+            th.dataset.key = c.key;
             th.style.cursor = "pointer";
             th.title = "click to sort";
+
+            // setinhas
+            th.classList.remove("sort-asc", "sort-desc");
+            if (c.key === sortKey) th.classList.add(sortDir === "asc" ? "sort-asc" : "sort-desc");
 
             th.addEventListener("click", () => {
                 if (sortKey === c.key) sortDir = (sortDir === "asc" ? "desc" : "asc");
                 else { sortKey = c.key; sortDir = "asc"; }
-                render(); // reusa o mesmo render
+                render();
             });
 
             tr.appendChild(th);
@@ -353,14 +319,28 @@ description: Internal repository report
     function cmp(a, b, type) {
         const dir = (sortDir === "asc") ? 1 : -1;
 
-        const va = a ?? (type === "text" ? "" : 0);
-        const vb = b ?? (type === "text" ? "" : 0);
-
-        if (type === "text") return dir * String(va).localeCompare(String(vb));
-        if (type === "bool") return dir * ((va === vb) ? 0 : (va ? -1 : 1)); // true primeiro
-        if (type === "date") return dir * (String(va).localeCompare(String(vb)));
+        if (type === "text") {
+            return dir * String(a ?? "").localeCompare(String(b ?? ""));
+        }
+        if (type === "bool") {
+            const va = !!a, vb = !!b;
+            // true primeiro no asc (fica mais útil)
+            if (va === vb) return 0;
+            return dir * (va ? -1 : 1);
+        }
+        if (type === "date") {
+            const ta = a ? new Date(a).getTime() : 0;
+            const tb = b ? new Date(b).getTime() : 0;
+            return dir * (ta - tb);
+        }
         // num
-        return dir * ((Number(va) || 0) - (Number(vb) || 0));
+        return dir * ((Number(a) || 0) - (Number(b) || 0));
+    }
+
+    function setBusy(busy, msg = "") {
+        btnRunAudit.disabled = busy;
+        btnInitRepos.disabled = busy;
+        actionMsg.textContent = msg || "";
     }
 
     function render() {
@@ -373,12 +353,25 @@ description: Internal repository report
                 (r.name || "").toLowerCase().includes(needle) ||
                 (r.full_name || "").toLowerCase().includes(needle)
             )
-            : rows;
+            : rows.slice();
 
-        // ordena
+        // stats
+        const total = rows.length;
+        const shown = filtered.length;
+        const withReadme = filtered.filter(r => r.has_readme).length;
+        const withGitignore = filtered.filter(r => r.has_gitignore).length;
+        const ipynb = filtered.reduce((s, r) => s + (r.notebooks_ipynb || 0), 0);
+        const gaViews = filtered.reduce((s, r) => s + (r.ga_pageviews_30d || 0), 0);
+        const gaClicks = filtered.reduce((s, r) => s + (r.ga_clicks_30d || 0), 0);
+
+        stats.textContent =
+            `org=${currentOrg || "—"} | showing ${shown}/${total} | README ${withReadme} | gitignore ${withGitignore} | ipynb ${ipynb} | GA views ${gaViews} | GA clicks ${gaClicks}`;
+
+        // sort
         const sortCol = cols.find(c => c.key === sortKey) || cols[0];
         filtered.sort((A, B) => cmp(A[sortCol.key], B[sortCol.key], sortCol.type));
 
+        // body
         tbody.innerHTML = "";
 
         if (!filtered.length) {
@@ -434,17 +427,15 @@ description: Internal repository report
         q.value = "";
 
         Promise.all([
-            fetch(INFRA_URL, { cache: "no-store" }).then(r => (r.ok ? r.json() : null)),
+            fetch(INFRA_URL, { cache: "no-store" }).then(r => (r.ok ? r.json() : [])),
             fetch(GA_URL, { cache: "no-store" }).then(r => (r.ok ? r.json() : null)),
         ])
             .then(([infra, ga]) => {
-                rows = infra || [];
+                rows = (infra || []).slice();
 
                 const pv = (ga && ga.pageviews_by_path) ? ga.pageviews_by_path : {};
                 const ck = (ga && ga.clicks_by_path) ? ga.clicks_by_path : {};
 
-                // anexa GA por repo (heurística simples):
-                // repo page no GitHub Pages costuma ser "/<repo>/" ou "/<repo>"
                 for (const r of rows) {
                     const slug = r.name || "";
                     const k1 = `/${slug}/`;
@@ -453,7 +444,13 @@ description: Internal repository report
                     r.ga_clicks_30d = ck[k1] ?? ck[k2] ?? 0;
                 }
 
+                // ordenação “default” (antes do sort por header)
                 rows.sort((a, b) => scoreRow(b) - scoreRow(a) || (a.name || "").localeCompare(b.name || ""));
+
+                // se o sort atual não existe nas colunas do modo atual, volta pro name
+                const cols = getColumns();
+                if (!cols.some(c => c.key === sortKey)) sortKey = "name";
+
                 render();
 
                 try { localStorage.setItem("audit_org", org); } catch (_) { }
@@ -465,6 +462,15 @@ description: Internal repository report
 
     q.addEventListener("input", render);
 
+    // radio: muda view (infra+GA vs GA only) sem recarregar
+    document.getElementById("auditMode")?.addEventListener("change", () => {
+        // garante sortKey válido pro novo modo
+        const cols = getColumns();
+        if (!cols.some(c => c.key === sortKey)) sortKey = "name";
+        render();
+    });
+
+    // carregar lista de orgs
     fetch(INDEX_URL, { cache: "no-store" })
         .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
         .then(idx => {
@@ -484,7 +490,6 @@ description: Internal repository report
                 orgSelect.appendChild(opt);
             }
 
-            // escolhe org (localStorage -> primeira)
             let preferred = null;
             try { preferred = localStorage.getItem("audit_org"); } catch (_) { }
             const initial = (preferred && orgs.includes(preferred)) ? preferred : orgs[0];
@@ -497,17 +502,6 @@ description: Internal repository report
         });
 
     orgSelect.addEventListener("change", () => loadOrg(orgSelect.value));
-
-    const btnRunAudit = document.getElementById("btnRunAudit");
-    const btnInitRepos = document.getElementById("btnInitRepos");
-    const btnLoadDiagrams = document.getElementById("btnLoadDiagrams");
-    const actionMsg = document.getElementById("actionMsg");
-
-    function setBusy(busy, msg = "") {
-        btnRunAudit.disabled = busy;
-        btnInitRepos.disabled = busy;
-        actionMsg.textContent = msg || "";
-    }
 
     async function postJSON(url, payload) {
         const r = await fetch(url, {
@@ -522,46 +516,36 @@ description: Internal repository report
         return data;
     }
 
-    // 1) Dispara auditoria (ex: workflow org-audit no repo central "hub" ou ".github")
     btnRunAudit?.addEventListener("click", async () => {
         try {
             const pin = window.getOperatorPin?.() || "";
             if (pin.length !== 4) {
-                window.openOperatorPin?.(btnRunAudit);  // foco + arma esse botão
+                window.openOperatorPin?.(btnRunAudit);
                 setBusy(false, "enter 4-digit pin");
                 return;
             }
+
             setBusy(true, "dispatching org audit…");
 
-            // Ajuste para o seu repo central que contém o workflow org-audit.yml
-            // Ex: org=naavilam, repo=hub, workflow=org-audit.yml
-            // regra:
-            // - with_infra => run_infra=true, run_ga=true (ou false se você quiser)
-            // - ga_only    => run_infra=false, run_ga=true
             const mode = getAuditMode();
             const run_infra = (mode === "with_infra");
-            const run_ga = true; // aqui você decide: sempre GA quando clicar "run org audit"
+            const run_ga = true;
 
             const payload = {
                 action: "workflow_dispatch",
-                org: "naavilam",     // repo central que contém o workflow
+                org: "naavilam",
                 repo: "hub",
                 workflow: "audit.yml",
                 ref: "main",
                 inputs: {
                     run_infra,
                     run_ga,
-                    orgs: orgSelect.value // roda só a org selecionada
+                    orgs: orgSelect.value
                 }
             };
 
-            if ((window.getOperatorPin() || "").length !== 4) {
-                setBusy(false, "enter 4-digit pin");
-                return;
-            }
             const out = await postJSON(DISPATCH_API, payload);
             window.resetOperatorPin?.();
-
             setBusy(false, out?.message || "ok: audit dispatched");
         } catch (e) {
             window.resetOperatorPin?.();
@@ -569,13 +553,11 @@ description: Internal repository report
         }
     });
 
-    // 2) Dispara inicializa-repos.yml no .github da org selecionada
     btnInitRepos?.addEventListener("click", async () => {
         try {
-
             const pin = window.getOperatorPin?.() || "";
             if (pin.length !== 4) {
-                window.openOperatorPin?.(btnInitRepos);  // foco + arma esse botão
+                window.openOperatorPin?.(btnInitRepos);
                 setBusy(false, "enter 4-digit pin");
                 return;
             }
@@ -587,16 +569,12 @@ description: Internal repository report
 
             const payload = {
                 action: "workflow_dispatch",
-                org,                // org selecionada na UI
-                repo: ".github",    // workflow está em org/.github
+                org,
+                repo: ".github",
                 workflow: "inicializa-repos.yml",
                 ref: "main",
-                inputs: {
-                    mode: "all",
-                    org: org,
-                    repo: ""          // porque seu workflow aceita repo quando mode=one
-                },
-                pin: pin
+                inputs: { mode: "all", org, repo: "" },
+                pin
             };
 
             const out = await postJSON(DISPATCH_API, payload);
@@ -613,7 +591,7 @@ description: Internal repository report
         window.location.href = "./svg-gallery.html";
     });
 
-    // === PIN fancy logic (isolado) ===
+    // === PIN fancy logic (igual ao seu) ===
     (() => {
         const wrap = document.getElementById("pin-wrap");
         const input = document.getElementById("pin-hidden");
@@ -622,18 +600,15 @@ description: Internal repository report
         const dots = [...wrap.querySelectorAll(".dot")];
         const MAX = dots.length;
 
-        let armedButton = null; // guarda qual botão pediu o PIN
+        let armedButton = null;
 
         function renderPin() {
-            dots.forEach((d, i) =>
-                d.classList.toggle("filled", i < input.value.length)
-            );
+            dots.forEach((d, i) => d.classList.toggle("filled", i < input.value.length));
         }
 
         function openPin(btn = null) {
             armedButton = btn || armedButton;
             wrap.classList.add("is-open");
-            // micro delay pra garantir foco mesmo após click
             setTimeout(() => input.focus(), 0);
         }
 
@@ -642,7 +617,7 @@ description: Internal repository report
             input.value = "";
             dots.forEach(d => d.classList.remove("filled"));
             input.blur();
-            wrap.classList.remove("is-open"); // some da tela
+            wrap.classList.remove("is-open");
             actionMsg.textContent = "";
         }
 
@@ -660,15 +635,10 @@ description: Internal repository report
                 e.preventDefault();
                 return;
             }
-
             if (e.key === "Enter") {
-                // se completou o PIN, dispara o botão que armou
-                if (input.value.length === MAX && armedButton) {
-                    armedButton.click();
-                }
+                if (input.value.length === MAX && armedButton) armedButton.click();
                 e.preventDefault();
             }
-
             if (e.key === "Escape") {
                 closePin();
                 e.preventDefault();
@@ -678,42 +648,5 @@ description: Internal repository report
         window.getOperatorPin = () => input.value;
         window.openOperatorPin = (btn) => openPin(btn);
         window.resetOperatorPin = () => closePin();
-    })();
-
-    function getAuditMode() {
-        const el = document.querySelector('input[name="audit_mode"]:checked');
-        return el ? el.value : "with_infra";
-    }
-
-    document.getElementById("auditMode")?.addEventListener("change", () => render());
-
-    // === make headers sortable ===
-    (() => {
-        const map = [
-            ["Repo", "name"],
-            ["README", "has_readme"],
-            [".gitignore", "has_gitignore"],
-            ["branches", "branches_count"],
-            ["ipynb", "notebooks_ipynb"],
-            ["py", "files_py"],
-            ["tex", "files_tex"],
-            ["files", "total_files"],
-            ["updated", "pushed_at"],
-        ];
-
-        const ths = document.querySelectorAll(".audit-table thead th");
-        ths.forEach((th, i) => {
-            const key = map[i]?.[1];
-            if (!key) return;
-            th.dataset.key = key;
-
-            th.addEventListener("click", () => {
-                if (sortKey === key) sortDir = -sortDir;
-                else { sortKey = key; sortDir = 1; }
-
-                setSortIndicator();
-                render();
-            });
-        });
     })();
 </script>
