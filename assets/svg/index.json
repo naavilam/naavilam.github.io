@@ -8,6 +8,10 @@
     "pages.svg",
     "py_to_mermaid.svg",
     "render-diagrams.svg",
+    "script-ga_audit_usage.svg",
+    "script-org_audit.svg",
+    "script-py_to_mermaid.svg",
+    "script-workflow_to_mermaid.svg",
     "workflow_to_mermaid.svg"
   ]
 }
