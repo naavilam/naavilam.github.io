@@ -27,6 +27,6 @@ python3 "$ROOT/.github/scripts/workflow_to_mermaid.py" "$WF_DIR" "$TMP_DIR"
 for mmd in "$TMP_DIR"/*.mmd; do
   [ -f "$mmd" ] || continue
   base="$(basename "$mmd" .mmd)"
-  "$ROOT/node_modules/.bin/mmdc" -i "$mmd" -o "$OUT_DIR/${base}.svg" -b transparent
+  "$ROOT/node_modules/.bin/mmdc" -i "$mmd" -o "$OUT_DIR/${base}.svg" -b transparent --puppeteerConfigFile "$ROOT/.github/scripts/puppeteer-no-sandbox.json"
   echo "OK: $OUT_DIR/${base}.svg"
 done
