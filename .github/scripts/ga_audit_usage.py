@@ -131,7 +131,7 @@ def main():
             property_id,
             days=DAYS,
             dimensions=["pagePath"],
-            metrics=["screenPageViews", "sessions", "totalUsers", "engagementRate", "averageEngagementTime"],
+            metrics=["screenPageViews", "sessions", "totalUsers", "engagementRate"],
         )
 
         metrics_by_path: dict[str, dict] = {}
