@@ -68,21 +68,14 @@ layout: default
         <div class="card-header" style="background-color:{{ theme.home-highlight-background }};">
           <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
             {% for section in site.data.sections %}
-            {% if section.first %}
             <li class="nav-item">
-              <a class="nav-link shadow-none" id="{{ section.jsid }}" href="#{{section.id}}" role="tab"
-                aria-controls="{{section.id}}" aria-selected="true"
-                style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
-                {{section.name}}</a>
+              <a class="nav-link shadow-none{% if section.first %} active{% endif %}" id="{{ section.jsid }}"
+                href="#{{ section.id }}" data-toggle="tab" role="tab" aria-controls="{{ section.id }}"
+                aria-selected="{% if section.first %}true{% else %}false{% endif %}"
+                style="font-family:{{ theme.font }};color:{{ theme.home-highlight-header-text }};">
+                {{ section.emoji }} {{ section.name }}
+              </a>
             </li>
-            {% else %}
-            <li class="nav-item">
-              <a class="nav-link" id="{{ section.jsid }}" href="#{{section.id}}" role="tab"
-                aria-controls="{{section.id}}" aria-selected="true"
-                style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}}
-                {{section.name}}</a>
-            </li>
-            {% endif %}
             {% endfor %}
           </ul>
         </div>
