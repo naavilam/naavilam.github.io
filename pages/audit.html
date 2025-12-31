@@ -160,6 +160,34 @@ description: Internal repository report
         text-align: right;
         border-radius: 4px;
     }
+
+    .audit-row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px 0 14px;
+    }
+
+    /* empurra o logo pra direita */
+    .audit-brand {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 160px;
+        /* reserva espaço pro logo */
+    }
+
+    /* logo “marca d’água” */
+    .audit-brand i {
+        font-size: 150px;
+        color: #000;
+        opacity: 0.08;
+        line-height: 1;
+        user-select: none;
+        pointer-events: none;
+    }
 </style>
 
 <div class="audit-wrap">
@@ -174,6 +202,10 @@ description: Internal repository report
                 analytics
             </label>
         </span>
+
+        <div class="audit-brand" aria-hidden="true">
+            <i class="fa-brands fa-github"></i>
+        </div>
     </div>
     <div class="audit-row">
         <label class="audit-muted">org:</label>
