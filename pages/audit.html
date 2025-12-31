@@ -161,32 +161,29 @@ description: Internal repository report
         border-radius: 4px;
     }
 
-    .audit-row {
-        display: flex;
+    .audit-bar {
+        display: grid;
+        grid-template-columns: 1fr 180px;
         gap: 12px;
-        flex-wrap: wrap;
         align-items: center;
         margin: 10px 0 14px;
     }
 
-    /* empurra o logo pra direita */
-    .audit-brand {
-        margin-left: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 160px;
-        /* reserva espaço pro logo */
+    .audit-row {
+        margin: 0;
+        /* tira o margin antigo */
+        flex-wrap: wrap;
     }
 
-    /* logo “marca d’água” */
+    .audit-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .audit-brand i {
         font-size: 150px;
-        color: #000;
-        opacity: 0.08;
-        line-height: 1;
-        user-select: none;
-        pointer-events: none;
+        opacity: .08;
     }
 </style>
 
@@ -232,26 +229,31 @@ description: Internal repository report
         <span id="actionMsg" class="audit-muted"></span>
     </div>
 
-    <table class="audit-table">
-        <thead id="thead">
-            <tr>
-                <th>Repo</th>
-                <th>README</th>
-                <th>.gitignore</th>
-                <th>branches</th>
-                <th>ipynb</th>
-                <th>py</th>
-                <th>tex</th>
-                <th>files</th>
-                <th>updated</th>
-            </tr>
-        </thead>
-        <tbody id="tbody">
-            <tr>
-                <td colspan="9">loading…</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="audit-brand" aria-hidden="true">
+        <i class="fa-brands fa-github"></i>
+    </div>
+</div>
+
+<table class="audit-table">
+    <thead id="thead">
+        <tr>
+            <th>Repo</th>
+            <th>README</th>
+            <th>.gitignore</th>
+            <th>branches</th>
+            <th>ipynb</th>
+            <th>py</th>
+            <th>tex</th>
+            <th>files</th>
+            <th>updated</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+        <tr>
+            <td colspan="9">loading…</td>
+        </tr>
+    </tbody>
+</table>
 </div>
 
 <script>
