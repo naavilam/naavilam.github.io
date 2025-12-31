@@ -185,6 +185,12 @@ description: Internal repository report
         font-size: 120px;
         opacity: .08;
     }
+
+    .audit-actions.is-ga #btnRunAudit,
+    .audit-actions.is-ga #btnInitRepos,
+    .audit-actions.is-ga #btnLoadDiagrams {
+        display: none;
+    }
 </style>
 
 <div class="audit-wrap">
@@ -193,7 +199,6 @@ description: Internal repository report
         <div class="audit-left">
             <div class="audit-header">
                 <span class="audit-muted">internal report (minimal by design)</span>
-
                 <span class="audit-radio" id="auditMode">
                     <label class="audit-muted">
                         <input type="radio" name="audit_mode" value="ga_only" checked />
@@ -214,7 +219,7 @@ description: Internal repository report
                 <label class="audit-muted">filter:</label>
                 <input id="q" placeholder="type repo name..." />
             </div>
-            <div class="audit-row">
+            <div class="audit-row audit-actions">
                 <button id="btnRunAudit" type="button">run audit</button>
                 <button id="btnInitRepos" type="button">init repos</button>
                 <button id="btnLoadDiagrams" type="button">diagrams</button>
@@ -558,6 +563,11 @@ description: Internal repository report
                     }
 
                     tr.appendChild(cell);
+                    return;
+                }
+
+                if (c.type === "origin") {
+                    tr.appendChild(td(originCellText(r[c.key])));
                     return;
                 }
 
@@ -936,4 +946,9 @@ description: Internal repository report
         return `${s}s`;
     }
 
+    function originCellText(obj) {
+        const t = topPct(obj); // usa o helper que você já tem
+        if (!t) return "—";
+        return `${t.key} ${t.pct}%`;
+    }
 </script>
