@@ -299,18 +299,12 @@ description: SVGs com preview e edição no draw.io
                 // return;
             } catch (e) {
                 // 2) se não tem mmd, tenta Draw.io (.drawio)
-                try {
-                    const rD = await fetch(`${drawioFileUrl}?v=${Date.now()}`, { cache: "no-store" });
-                    if (!rD.ok) throw new Error(`HTTP ${rD.status}`);
+                // NÃO faz fetch — só monta a URL
+                const drawioPublicUrl = `${location.origin}${drawioFileUrl}`;
 
-                    const url = `https://app.diagrams.net/?url=${encodeURIComponent(location.origin + drawioFileUrl)}&embed=1&ui=min`;
-                    editEl.href = url;
-                    editEl.textContent = "Editar no draw.io";
-                    editEl.style.display = "";
-                } catch (e2) {
-                    // sem editor disponível -> botão fica escondido
-                    // console.debug("sem mmd/drawio para", baseName);
-                }
+                editEl.href = `https://app.diagrams.net/?url=${encodeURIComponent(drawioPublicUrl)}&embed=1&ui=min`;
+                editEl.textContent = "Editar no draw.io";
+                editEl.style.display = "";
             }
 
             // ====== preview do SVG ======
