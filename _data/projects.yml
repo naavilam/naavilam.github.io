@@ -21,6 +21,7 @@
 - name: Quantum Material Simulation
   id: project2
   date: 2024-2025
+  group: SAMPA USP
   description: >
     My research evolved through quantum simulations of molecular systems. I modeled electronic Hamiltonians within the Born–Oppenheimer approximation and expressed these Hamiltonians through second quantization, mapping them to qubit representations using the Jordan–Wigner transformation. I performed variational ground-state energy estimations in hybrid quantum–classical architectures, implementing the UCCSD ansatz with Qiskit Nature and conducting comparative experiments with PennyLane on simple molecular systems. Building on this variational framework, I explored neural-network quantum states—specifically restricted Boltzmann machines (RBMs)—as expressive ansätze for representing molecular ground states.
   date: SAMPA-USP
@@ -40,7 +41,7 @@
 - name: Quantum Computing
   id: project3
   date: 2023-2024
-  group: SAMPA-USP
+  group: SAMPA USP
   description: >
     In this work, I studied quantum information encoding mechanisms, the construction of gate-based quantum circuits, and their implementation using Google Cirq, Amazon Braket, IBM Qiskit and CERN Qibo SDKs. I analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time, noise, and decoherence parameters. I implemented algorithms such as the Deutsch algorithm and Grover’s quantum search, and carried out introductory studies in quantum machine learning using quantum support vector machines (QSVM). To address noise in NISQ devices, I explored quantum error mitigation techniques, including zero-noise extrapolation (ZNE) and Clifford-based regression methods.
   date: true
