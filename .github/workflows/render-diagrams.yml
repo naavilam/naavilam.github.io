@@ -45,36 +45,44 @@ jobs:
           ls -la assets || true
           ls -la assets/drawio || true
 
-      - name: Export Draw.io (.drawio) -> SVG
+      - name: Export Draw.io (.drawio) -> SVG (to temp)
         uses: rlespinasse/drawio-export-action@v2
         with:
           path: assets/drawio
           format: svg
-          output: assets/svg
+          output: .tmp/drawio-export
           remove-page-suffix: true
           embed-svg-fonts: true
           svg-theme: light
 
-      - name: Move exported SVGs to assets/svg (keep folders)
+      - name: Move Draw.io SVGs to assets/svg (keep folders)
         shell: bash
         run: |
           set -euo pipefail
           shopt -s globstar nullglob
 
-          mkdir -p assets/svg
+          # apaga só a árvore "arquitetura" etc, preservando scripts/workflows
+          # (se você quiser sempre regenerar)
+          # rm -rf assets/svg/arquitetura assets/svg/rpc assets/svg/whatever || true
 
-          # pega: assets/drawio/**/export/*.svg
-          for f in assets/drawio/**/export/*.svg; do
-            rel="${f#assets/drawio/}"          # ex: arquitetura/export/draw1.svg
-            dir="$(dirname "$rel")"            # ex: arquitetura/export
-            dir="${dir%/export}"               # ex: arquitetura
-            base="$(basename "$f")"            # ex: draw1.svg
+          for d in assets/drawio/**/*.drawio; do
+            src_dir="$(dirname "$d")"                 # assets/drawio/arquitetura
+            rel_dir="${src_dir#assets/drawio/}"       # arquitetura
+            base="$(basename "$d" .drawio)"           # draw1
 
-            mkdir -p "assets/svg/$dir"
-            mv "$f" "assets/svg/$dir/$base"
+            src_svg=".tmp/drawio-export/$rel_dir/$base.svg"
+            dst_dir="assets/svg/$rel_dir"
+            dst_svg="$dst_dir/$base.svg"
+
+            mkdir -p "$dst_dir"
+
+            if [ -f "$src_svg" ]; then
+              mv "$src_svg" "$dst_svg"
+              echo "OK: $dst_svg"
+            else
+              echo "WARN: missing export for $d (expected $src_svg)"
+            fi
           done
-
-          find assets/drawio -type d -name export -empty -delete || true
 
       # - name: Debug workspace
       #   run: |
@@ -88,7 +96,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add assets/svg assets/mmd assets/drawio || true
+          git add assets/svg assets/mmd || true
 
           if git diff --cached --quiet; then
             echo "No diagram changes to commit."
