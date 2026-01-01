@@ -66,25 +66,3 @@ for mmd in "$TMP_PY"/*.mmd; do
 
   echo "OK: $OUT_SVG/${base}.svg"
 done
-
-# ==========================================================
-# draw.io (.drawio) -> SVG  (via drawio-exporter)
-# ==========================================================
-
-DRAWIO_IN="$ROOT/assets/drawio"
-DRAWIO_OUT="$ROOT/assets/svg"
-
-if compgen -G "$DRAWIO_IN/*.drawio" > /dev/null; then
-  echo "Renderizando arquivos .drawio → svg"
-
-  docker run --rm \
-    -v "$DRAWIO_IN:/data" \
-    -v "$DRAWIO_OUT:/out" \
-    rlespinasse/drawio-export \
-    drawio-exporter \
-      --input "/data/*.drawio" \
-      --output /out \
-      --format svg
-else
-  echo "Nenhum .drawio encontrado"
-fi

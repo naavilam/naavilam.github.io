@@ -40,10 +40,20 @@ jobs:
 
       - name: Docker version
         run: docker --version
-        
+
       - name: Render SVGs
         run: |
           bash .github/scripts/render_all.sh
+
+      - name: Export Draw.io (.drawio) -> SVG
+        uses: rlespinasse/drawio-export-action@v2
+        with:
+          path: assets/drawio
+          format: svg
+          output: ../svg
+          remove-page-suffix: true
+          embed-svg-fonts: true
+          svg-theme: light
 
       - name: Commit & push generated diagrams (if changed)
         run: |
