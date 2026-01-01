@@ -115,7 +115,7 @@ layout: default
                   <div class="project-meta mt-2 mb-2" style="font-size: 0.9rem; color: #555;">
 
                     {% if projects.group %}
-                    <span>
+                    <span class="mr-3">
                       {% if projects.group_link %}
                       <a href="{{ projects.group_link }}" target="_blank" rel="noopener" class="highlighted">
                         {{ projects.group }}
@@ -127,7 +127,7 @@ layout: default
                     {% endif %}
 
                     {% if projects.date %}
-                    <span class="mr-3">
+                    <span>
                       <strong>Period:</strong> {{ projects.date }}
                     </span>
                     {% endif %}
