@@ -151,6 +151,64 @@ description: SVGs com preview e edição no draw.io
             min-height: 360px;
         }
     }
+
+    /* Tree view */
+    .svg-list {
+        overflow: auto;
+        padding-right: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    /* linha (dir ou file) */
+    .tree-row {
+        border: 1px solid transparent;
+        border-radius: 12px;
+        padding: 8px 10px;
+        cursor: pointer;
+        user-select: none;
+        font-family: ui-monospace, Menlo, Consolas, monospace;
+        font-size: 12px;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .tree-row:hover {
+        background: #fafafa;
+        border-color: #eee;
+    }
+
+    .tree-row.active {
+        background: #f3f6ff;
+        border-color: #cdd8ff;
+    }
+
+    .tree-icon {
+        width: 16px;
+        text-align: center;
+        opacity: 0.85;
+    }
+
+    .tree-name {
+        flex: 1;
+        word-break: break-all;
+    }
+
+    /* indentação por nível */
+    .tree-indent {
+        margin-left: var(--indent, 0px);
+    }
+
+    /* container de filhos */
+    .tree-children {
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
 </style>
 
 <div class="svg-app">
@@ -178,176 +236,285 @@ description: SVGs com preview e edição no draw.io
 </div>
 <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 <script>
-    (async () => {
-        const BASE = "{{ site.baseurl }}";
-        const listEl = document.getElementById('list');
-        const qEl = document.getElementById('q');
-        const titleEl = document.getElementById('title');
-        const canvasEl = document.getElementById('canvas');
-        const openRawEl = document.getElementById('openRaw');
-        const editEl = document.getElementById('editDrawio');
+(async () => {
+  const BASE = "{{ site.baseurl }}";
 
-        // cache-buster pra evitar Pages/CDN te devolver index velho
-        const indexUrl = `${BASE}/assets/svg/index.json?v=${Date.now()}`;
-        const res = await fetch(indexUrl, { cache: 'no-store' });
-        if (!res.ok) {
-            canvasEl.innerHTML = `<div class="hint">Não consegui carregar ${indexUrl} (status ${res.status}).</div>`;
-            return;
+  const listEl   = document.getElementById("list");
+  const qEl      = document.getElementById("q");
+  const titleEl  = document.getElementById("title");
+  const canvasEl = document.getElementById("canvas");
+  const openRawEl= document.getElementById("openRaw");
+  const editEl   = document.getElementById("editDrawio");
+
+  // cache-buster pra evitar Pages/CDN te devolver index velho
+  const indexUrl = `${BASE}/assets/svg/index.json?v=${Date.now()}`;
+  const res = await fetch(indexUrl, { cache: "no-store" });
+  if (!res.ok) {
+    canvasEl.innerHTML = `<div class="hint">Não consegui carregar ${indexUrl} (status ${res.status}).</div>`;
+    return;
+  }
+
+  // >>> seu index AGORA é árvore (type/children)
+  const tree = await res.json(); // root {type:"dir", children:[...]}
+
+  // Estado da UI
+  let currentPath = null;           // ex: "workflows/pages.svg"
+  const expanded = new Set();       // paths de dirs abertos: "workflows", "scripts", etc.
+
+  // abre tudo por padrão? (opcional)
+  // tree.children?.forEach(d => { if (d.type === "dir") expanded.add(d.path); });
+
+  function u8ToB64Url(u8) {
+    let s = "";
+    const chunk = 0x8000;
+    for (let i = 0; i < u8.length; i += chunk) {
+      s += String.fromCharCode.apply(null, u8.subarray(i, i + chunk));
+    }
+    return btoa(s).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+  }
+
+  function mermaidLiveEditUrl(mmdText) {
+    const state = {
+      code: mmdText,
+      mermaid: { theme: "default" },
+      autoSync: true,
+      updateDiagram: true,
+      editorMode: "code",
+      panZoom: true,
+      zoom: 1
+    };
+
+    if (!window.pako) throw new Error("pako não carregou (cdn).");
+
+    const json = JSON.stringify(state);
+    const compressed = window.pako.deflate(json);
+    const payload = u8ToB64Url(compressed);
+    return `https://mermaid.live/edit#pako:${payload}`;
+  }
+
+  function svgFetchUrl(relPath) {
+    // relPath: "workflows/pages.svg"
+    return `${BASE}/assets/svg/${relPath}?v=${Date.now()}`;
+  }
+
+  function svgRawUrl(relPath) {
+    return `${BASE}/assets/svg/${relPath}`;
+  }
+
+  function mmdUrlFromSvg(relSvgPath) {
+    // "workflows/pages.svg" -> "workflows/pages.mmd"
+    const base = relSvgPath.replace(/\.svg$/i, "");
+    return `${BASE}/assets/mmd/${base}.mmd`;
+  }
+
+  function drawioCdnUrlFromSvg(relSvgPath) {
+    // "arquitetura/draw1.svg" -> CDN ".../assets/drawio/arquitetura/draw1.drawio"
+    const base = relSvgPath.replace(/\.svg$/i, "");
+
+    // ajuste se mudar repo/branch no futuro
+    const owner = "naavilam";
+    const repo  = "naavilam.github.io";
+    const branch= "main";
+
+    return `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}/assets/drawio/${base}.drawio`;
+  }
+
+  // -----------------------------
+  // Filter: mantém árvore relevante
+  // -----------------------------
+  function filterTree(node, qLower) {
+    if (!qLower) return node;
+
+    if (node.type === "file") {
+      const hit = (node.name || "").toLowerCase().includes(qLower) ||
+                  (node.path || "").toLowerCase().includes(qLower);
+      return hit ? node : null;
+    }
+
+    // dir
+    const kids = (node.children || [])
+      .map(ch => filterTree(ch, qLower))
+      .filter(Boolean);
+
+    // mantém dir se ele bate no nome OU se algum filho sobrou
+    const dirHit = (node.name || "").toLowerCase().includes(qLower);
+    if (dirHit || kids.length) {
+      return { ...node, children: kids };
+    }
+    return null;
+  }
+
+  // -----------------------------
+  // Render Tree
+  // -----------------------------
+  function renderTree(node, depth = 0) {
+    const container = document.createElement("div");
+    container.className = "tree-children";
+
+    for (const child of (node.children || [])) {
+      const row = document.createElement("div");
+      row.className = "tree-row tree-indent";
+      row.style.setProperty("--indent", `${depth * 14}px`);
+
+      const icon = document.createElement("div");
+      icon.className = "tree-icon";
+
+      const name = document.createElement("div");
+      name.className = "tree-name";
+      name.textContent = child.name;
+
+      if (child.type === "dir") {
+        const isOpen = expanded.has(child.path);
+        icon.textContent = isOpen ? "▾" : "▸";
+
+        row.addEventListener("click", () => {
+          if (expanded.has(child.path)) expanded.delete(child.path);
+          else expanded.add(child.path);
+          renderList(); // re-render
+        });
+
+        row.appendChild(icon);
+        row.appendChild(name);
+        container.appendChild(row);
+
+        if (isOpen) {
+          container.appendChild(renderTree(child, depth + 1));
         }
-        const data = await res.json();
-        const all = (data.files || []).slice();
+      } else {
+        icon.textContent = "•";
 
-        let currentName = null;
+        if (child.path === currentPath) row.classList.add("active");
 
-        function u8ToB64Url(u8) {
-            // evita stack overflow com arquivos maiores
-            let s = '';
-            const chunk = 0x8000;
-            for (let i = 0; i < u8.length; i += chunk) {
-                s += String.fromCharCode.apply(null, u8.subarray(i, i + chunk));
-            }
-            return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+        row.addEventListener("click", () => load(child.path));
+
+        row.appendChild(icon);
+        row.appendChild(name);
+        container.appendChild(row);
+      }
+    }
+
+    return container;
+  }
+
+  function autoExpandForMatches(filteredRoot) {
+    // abre automaticamente diretórios que têm filhos após filtro
+    function walk(n) {
+      if (n.type === "dir") {
+        if ((n.children || []).length) {
+          expanded.add(n.path || ""); // root path "" ok
+          for (const ch of n.children) walk(ch);
         }
+      }
+    }
+    expanded.clear();
+    walk(filteredRoot);
+  }
 
-        function mermaidLiveEditUrl(mmdText) {
-            const state = {
-                code: mmdText,
-                mermaid: { theme: "default" },
-                autoSync: true,
-                updateDiagram: true,
-                editorMode: "code",
-                panZoom: true,
-                zoom: 1
-            };
+  function renderList() {
+    const q = (qEl.value || "").trim().toLowerCase();
+    listEl.innerHTML = "";
 
-            if (!window.pako) throw new Error("pako não carregou (cdn).");
+    const filtered = filterTree(tree, q);
 
-            const json = JSON.stringify(state);
-            const compressed = window.pako.deflate(json); // Uint8Array
-            const payload = u8ToB64Url(compressed);
+    if (!filtered || !(filtered.children || []).length) {
+      const empty = document.createElement("div");
+      empty.className = "hint";
+      empty.textContent = "Nenhum arquivo encontrado.";
+      listEl.appendChild(empty);
+      return;
+    }
 
-            return `https://mermaid.live/edit#pako:${payload}`;
-        }
+    // se estiver filtrando, abre tudo que tiver match para ficar usável
+    if (q) autoExpandForMatches(filtered);
 
-        function svgUrl(name) {
-            // cache-buster ajuda quando você adiciona arquivos novos
-            return `${BASE}/assets/svg/${name}?v=${Date.now()}`;
-        }
+    listEl.appendChild(renderTree(filtered, 0));
+  }
 
-        function drawioUrl(rawUrlNoCachebuster) {
-            // draw.io pega por URL; melhor passar sem ?v=... pra não confundir downloads repetidos
-            return `https://app.diagrams.net/?url=${encodeURIComponent(rawUrlNoCachebuster)}&embed=1&ui=min`;
-        }
+  // -----------------------------
+  // Load SVG + set Edit button
+  // -----------------------------
+  async function load(relSvgPath) {
+    currentPath = relSvgPath;
+    renderList();
 
-        function renderList(filter = '') {
-            const f = filter.toLowerCase().trim();
-            listEl.innerHTML = '';
+    titleEl.textContent = relSvgPath;
 
-            const items = all.filter(n => !f || n.toLowerCase().includes(f));
-            if (!items.length) {
-                const empty = document.createElement('div');
-                empty.className = 'hint';
-                empty.textContent = 'Nenhum arquivo encontrado.';
-                listEl.appendChild(empty);
-                return;
-            }
+    // link "Abrir SVG"
+    openRawEl.style.display = "";
+    openRawEl.href = svgRawUrl(relSvgPath);
 
-            items.forEach(name => {
-                const row = document.createElement('div');
-                row.className = 'svg-item' + (name === currentName ? ' active' : '');
-                row.textContent = name;
-                row.addEventListener('click', () => load(name));
-                listEl.appendChild(row);
-            });
-        }
+    // reset botão Editar
+    editEl.style.display = "none";
+    editEl.href = "#";
+    editEl.target = "_blank";
+    editEl.rel = "noopener";
+    editEl.textContent = "";
 
-        async function load(name) {
-            currentName = name;
-            renderList(qEl.value);
+    // 1) Mermaid (mmd com mesmo path)
+    const mmdUrl = mmdUrlFromSvg(relSvgPath);
 
-            titleEl.textContent = name;
+    try {
+      const rMmd = await fetch(`${mmdUrl}?v=${Date.now()}`, { cache: "no-store" });
+      if (!rMmd.ok) throw new Error(`HTTP ${rMmd.status}`);
 
-            // links do SVG
-            const rawNoCache = `${BASE}/assets/svg/${name}`; // link "Abrir SVG"
-            const raw = svgUrl(name); // fetch com cache-buster
+      const code = await rMmd.text();
+      editEl.href = mermaidLiveEditUrl(code);
+      editEl.textContent = "Editar no Mermaid Live";
+      editEl.style.display = "";
+    } catch (e) {
+      // 2) Draw.io via CDN + provider GitHub (que agora funciona)
+      const drawioCdn = drawioCdnUrlFromSvg(relSvgPath);
+      editEl.href = `https://app.diagrams.net/?url=${encodeURIComponent(drawioCdn)}`;
+      editEl.textContent = "Editar no draw.io";
+      editEl.style.display = "";
+    }
 
-            openRawEl.style.display = '';
-            openRawEl.href = rawNoCache;
+    // preview do SVG
+    canvasEl.innerHTML = `<div class="hint">carregando…</div>`;
+    try {
+      const r = await fetch(svgFetchUrl(relSvgPath), { cache: "no-store" });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
 
-            // ====== botão EDITAR (reset) ======
-            editEl.style.display = "none";
-            editEl.href = "#";
-            editEl.target = "_blank";
-            editEl.rel = "noopener";
-            editEl.textContent = "";
+      const svgText = await r.text();
+      const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
+      const svgEl = doc.documentElement;
 
-            // ====== decidir editor a partir do basename ======
-            const baseName = name.replace(/\.svg$/i, "");
-            const mmdUrl = `${BASE}/assets/mmd/${baseName}.mmd`;
-            const drawioFileUrl = `${BASE}/assets/drawio/${baseName}.drawio`;
+      if (!svgEl || svgEl.tagName.toLowerCase() !== "svg") {
+        const pe = doc.querySelector("parsererror");
+        const msg = pe ? pe.textContent : "conteúdo não é um <svg> válido";
+        throw new Error(`SVG inválido: ${msg}`);
+      }
 
-            // 1) tenta Mermaid (.mmd) — prioridade máxima
-            try {
-                const rMmd = await fetch(`${mmdUrl}?v=${Date.now()}`, { cache: "no-store" });
-                if (!rMmd.ok) throw new Error(`HTTP ${rMmd.status}`);
+      canvasEl.innerHTML = "";
+      canvasEl.appendChild(document.importNode(svgEl, true));
+    } catch (e) {
+      canvasEl.innerHTML = `<div class="hint">falhou ao carregar o SVG: ${String(e)}</div>`;
+      console.error(e);
+    }
+  }
 
-                const code = await rMmd.text();
-                editEl.href = mermaidLiveEditUrl(code);
-                editEl.textContent = "Editar no Mermaid Live";
-                editEl.style.display = "";
-                // não dá return obrigatório, mas evita fetch desnecessário do drawio
-                // return;
-            } catch (e) {
-                // ---------- 2) FALLBACK: DRAW.IO (.drawio) ----------
+  // Events
+  qEl.addEventListener("input", renderList);
 
-                // ajuste se mudar repo/branch no futuro
-                const baseName = name.replace(/\.svg$/i, "");
+  // Inicializa
+  // abre pastas top-level por padrão (fica bonito)
+  for (const ch of (tree.children || [])) {
+    if (ch.type === "dir") expanded.add(ch.path);
+  }
 
-                const owner = "naavilam";
-                const repo = "naavilam.github.io";
-                const branch = "main";
+  renderList();
 
-                const drawioCdnUrl =
-                    `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}/assets/drawio/${baseName}.drawio`;
+  // auto-abrir o primeiro arquivo encontrado (DFS)
+  function firstFile(n) {
+    if (n.type === "file") return n.path;
+    for (const ch of (n.children || [])) {
+      const f = firstFile(ch);
+      if (f) return f;
+    }
+    return null;
+  }
+  const first = firstFile(tree);
+  if (first) load(first);
 
-                editEl.href =
-                    `https://app.diagrams.net/?url=${encodeURIComponent(drawioCdnUrl)}`;
-
-                editEl.textContent = "Editar no draw.io";
-                editEl.target = "_blank";
-                editEl.rel = "noopener";
-                editEl.style.display = "";
-            }
-
-            // ====== preview do SVG ======
-            canvasEl.innerHTML = `<div class="hint">carregando…</div>`;
-            try {
-                const r = await fetch(raw, { cache: "no-store" });
-                if (!r.ok) throw new Error(`HTTP ${r.status} ao buscar ${raw}`);
-
-                const svgText = await r.text();
-
-                const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
-                const svgEl = doc.documentElement;
-
-                if (!svgEl || svgEl.tagName.toLowerCase() !== "svg") {
-                    const pe = doc.querySelector("parsererror");
-                    const msg = pe ? pe.textContent : "conteúdo não é um <svg> válido";
-                    throw new Error(`SVG inválido: ${msg}`);
-                }
-
-                canvasEl.innerHTML = "";
-                canvasEl.appendChild(document.importNode(svgEl, true));
-            } catch (e) {
-                canvasEl.innerHTML = `<div class="hint">falhou ao carregar o SVG: ${String(e)}</div>`;
-                console.error(e);
-            }
-        }
-
-        qEl.addEventListener('input', () => renderList(qEl.value));
-
-        renderList('');
-        // auto-abrir o primeiro (opcional)
-        if (all.length) load(all[0]);
-    })();
+})();
 </script>
