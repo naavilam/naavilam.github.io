@@ -1,0 +1,35 @@
+sequenceDiagram
+autonumber
+participant Dev as Developer
+participant GH as GitHub Actions
+participant Runner as Runner
+participant Repo as Repo
+
+Dev->>GH: triggers "Render workflow sequence diagrams (SVG)" (workflow_dispatch)
+GH->>Runner: dispatch workflow run
+Runner->>Repo: checkout (if configured)
+
+Note over Runner: job render\nruns-on: ubuntu-latest
+Runner->>Runner: Checkout
+Runner->>Repo: git checkout
+
+Runner->>Runner: Setup Node
+
+Runner->>Runner: Setup Python
+
+Runner->>Runner: Install Python deps
+Runner->>Runner: python script
+
+Runner->>Runner: Docker version
+
+Runner->>Runner: Render SVGs
+
+Runner->>Runner: Ensure drawio folders exist
+
+Runner->>Runner: Export Draw.io (.drawio) -> SVG
+
+Runner->>Runner: Commit & push generated diagrams (if changed)
+
+Runner-->>GH: job "render" complete
+
+GH-->>Dev: workflow finished (success/fail)
