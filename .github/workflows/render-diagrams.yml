@@ -54,6 +54,33 @@ jobs:
           embed-svg-fonts: true
           svg-theme: light
 
+      - name: Debug Draw.io export output (where are the SVGs?)
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          echo "=== PWD ==="
+          pwd
+
+          echo "=== ls -la (repo root) ==="
+          ls -la
+
+          echo "=== ls -la .tmp ==="
+          ls -la .tmp || true
+
+          echo "=== ls -la .tmp/drawio-export ==="
+          ls -la .tmp/drawio-export || true
+
+          echo "=== tree-like view (.tmp/drawio-export) ==="
+          # (macete: tree nem sempre existe; então fazemos com find)
+          find .tmp/drawio-export -maxdepth 4 -print 2>/dev/null || true
+
+          echo "=== ALL SVGs generated under .tmp/drawio-export ==="
+          find .tmp/drawio-export -type f -name "*.svg" -print 2>/dev/null || true
+
+          echo "=== Count SVGs under .tmp/drawio-export ==="
+          find .tmp/drawio-export -type f -name "*.svg" 2>/dev/null | wc -l || true
+
       - name: Copy Draw.io SVGs into assets/svg (mirror drawio folders)
         shell: bash
         run: |
