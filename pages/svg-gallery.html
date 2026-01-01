@@ -298,11 +298,22 @@ description: SVGs com preview e edição no draw.io
                 // não dá return obrigatório, mas evita fetch desnecessário do drawio
                 // return;
             } catch (e) {
-                // 2) se não tem mmd, tenta Draw.io (.drawio)
-                // NÃO faz fetch — só monta a URL
-                const drawioPublicUrl = `${location.origin}${drawioFileUrl}`;
+                // ---------- 2) FALLBACK: DRAW.IO (.drawio) ----------
 
-                editEl.href = `https://app.diagrams.net/?url=${encodeURIComponent(drawioPublicUrl)}&embed=1&ui=min`;
+                // ajuste se mudar repo/branch no futuro
+                const owner = "naavilam";
+                const repo = "naavilam.github.io";
+                const branch = "main";
+
+                const drawioPath = `/assets/drawio/${baseName}.drawio`;
+
+                // URL pública (CDN) — ESSENCIAL
+                const drawioCdnUrl =
+                    `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}${drawioPath}`;
+
+                editEl.href =
+                    `https://app.diagrams.net/?url=${encodeURIComponent(drawioCdnUrl)}&embed=1&ui=min`;
+
                 editEl.textContent = "Editar no draw.io";
                 editEl.style.display = "";
             }
