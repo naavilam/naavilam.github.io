@@ -10,6 +10,10 @@
     "pages.svg",
     "py_to_mermaid.svg",
     "render-diagrams.svg",
+    "script_ga_audit_usage.svg",
+    "script_org_audit.svg",
+    "script_py_to_mermaid.svg",
+    "script_workflow_to_mermaid.svg",
     "workflow_to_mermaid.svg"
   ]
 }
