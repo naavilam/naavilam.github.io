@@ -122,7 +122,13 @@ layout: default
 
                     {% if projects.group %}
                     <span>
-                      <strong>Group:</strong> {{ projects.group }}
+                      {% if projects.group_link %}
+                      <a href="{{ projects.group_link }}" target="_blank" rel="noopener" class="highlighted">
+                        {{ projects.group }}
+                      </a>
+                      {% else %}
+                      {{ projects.group }}
+                      {% endif %}
                     </span>
                     {% endif %}
 
