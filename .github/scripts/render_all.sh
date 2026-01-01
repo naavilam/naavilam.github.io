@@ -27,9 +27,9 @@ PY
 MMDC="$ROOT/node_modules/.bin/mmdc"
 PUPPET="$ROOT/.github/scripts/puppeteer-no-sandbox.json"
 
-# -------------------------
-# WORKFLOWS (.yml) -> .mmd
-# -------------------------
+# -------------------------------
+# WORKFLOWS (.yml) -> .mmd -> svg
+# -------------------------------
 python3 "$ROOT/.github/scripts/workflow_to_mermaid.py" "$WF_DIR" "$TMP_WF"
 
 for mmd in "$TMP_WF"/*.mmd; do
@@ -45,9 +45,9 @@ for mmd in "$TMP_WF"/*.mmd; do
   echo "OK: $OUT_SVG/${base}.svg"
 done
 
-# -------------------------
-# SCRIPTS (.py) -> .mmd
-# -------------------------
+# -------------------------------
+# SCRIPTS (.py) -> .mmd -> svg
+# -------------------------------
 python3 "$ROOT/.github/scripts/py_to_mermaid.py" "$PY_DIR" "$TMP_PY"
 
 for mmd in "$TMP_PY"/*.mmd; do
@@ -65,4 +65,33 @@ for mmd in "$TMP_PY"/*.mmd; do
     --puppeteerConfigFile "$PUPPET"
 
   echo "OK: $OUT_SVG/${base}.svg"
+done
+
+
+# ==========================================================
+# draw.io (.drawio) -> SVG
+# ==========================================================
+
+DRAWIO_IN="$ROOT/assets/drawio"
+DRAWIO_OUT="$ROOT/assets/svg"
+
+mkdir -p "$DRAWIO_IN" "$DRAWIO_OUT"
+
+shopt -s nullglob
+for f in "$DRAWIO_IN"/*.drawio; do
+  base="$(basename "$f" .drawio)"
+  out="$DRAWIO_OUT/${base}.svg"
+
+  echo "Draw.io → SVG: $f -> $out"
+
+  docker run --rm \
+    -v "$DRAWIO_IN:/in" \
+    -v "$DRAWIO_OUT:/out" \
+    rlespinasse/drawio-export \
+    drawio \
+      --input "/in/${base}.drawio" \
+      --output "/out/${base}.svg" \
+      --format svg
+
+  echo "OK: $out"
 done

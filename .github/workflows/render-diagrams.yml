@@ -38,6 +38,9 @@ jobs:
           ls -la .github || true
           ls -la .github/scripts || true
 
+      - name: Docker version
+        run: docker --version
+        
       - name: Render SVGs
         run: |
           bash .github/scripts/render_all.sh
@@ -47,9 +50,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          mkdir -p assets/svg assets/mmd
-
-          git add assets/svg assets/mmd || true
+          git add assets/svg assets/mmd assets/drawio || true
 
           if git diff --cached --quiet; then
             echo "No diagram changes to commit."
