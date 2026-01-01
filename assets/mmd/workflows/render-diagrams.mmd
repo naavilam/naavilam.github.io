@@ -30,7 +30,7 @@ Runner->>Runner: Export Draw.io (.drawio) -> SVG (to temp)
 
 Runner->>Runner: Debug — prove where Draw.io SVGs were written
 
-Runner->>Runner: Copy Draw.io SVGs into assets/svg (mirror drawio folders)
+Runner->>Runner: Collect Draw.io exports into assets/svg (mirror folders) + debug
 
 Runner->>Runner: Commit & push generated diagrams (if changed)
 
