@@ -111,8 +111,24 @@ layout: default
                 <div class="media-body">
                   <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
                   {{ projects.description }}
+                  {% if projects.date or projects.group %}
+                  <div class="project-meta mt-2 mb-2" style="font-size: 0.9rem; color: #555;">
+
+                    {% if projects.date %}
+                    <span class="mr-3">
+                      <strong>Period:</strong> {{ projects.date }}
+                    </span>
+                    {% endif %}
+
+                    {% if projects.group %}
+                    <span>
+                      <strong>Group:</strong> {{ projects.group }}
+                    </span>
+                    {% endif %}
+
+                  </div>
+                  {% endif %}
                   {% if projects.tech %}
-                  <h6><mark><u>Keywords</u></mark></h6>
                   {% for tech in projects.tech %}
                   <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech
                     }}</span>
