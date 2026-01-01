@@ -55,13 +55,34 @@ jobs:
           embed-svg-fonts: true
           svg-theme: light
 
-      - name: Debug workspace
+      - name: Move exported SVGs to assets/svg (keep folders)
+        shell: bash
         run: |
-          pwd
-          ls -la
-          ls -la .github || true
-          ls -la .github/scripts || true
-          
+          set -euo pipefail
+          shopt -s globstar nullglob
+
+          mkdir -p assets/svg
+
+          # pega: assets/drawio/**/export/*.svg
+          for f in assets/drawio/**/export/*.svg; do
+            rel="${f#assets/drawio/}"          # ex: arquitetura/export/draw1.svg
+            dir="$(dirname "$rel")"            # ex: arquitetura/export
+            dir="${dir%/export}"               # ex: arquitetura
+            base="$(basename "$f")"            # ex: draw1.svg
+
+            mkdir -p "assets/svg/$dir"
+            mv "$f" "assets/svg/$dir/$base"
+          done
+
+          find assets/drawio -type d -name export -empty -delete || true
+
+      # - name: Debug workspace
+      #   run: |
+      #     pwd
+      #     ls -la
+      #     ls -la .github || true
+      #     ls -la .github/scripts || true
+
       - name: Commit & push generated diagrams (if changed)
         run: |
           git config user.name "github-actions[bot]"
