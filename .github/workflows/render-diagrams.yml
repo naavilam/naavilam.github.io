@@ -54,16 +54,31 @@ jobs:
           embed-svg-fonts: true
           svg-theme: light
 
-      - name: Copy Draw.io SVGs into assets/svg (keep folders)
+      - name: Copy Draw.io SVGs into assets/svg (mirror drawio folders)
+        shell: bash
         run: |
           set -euo pipefail
-          # copia mantendo a mesma hierarquia de pastas do export
-          rsync -a --prune-empty-dirs \
-            --include '*/' --include '*.svg' --exclude '*' \
-            .tmp/drawio-export/ assets/svg/
 
-          echo "=== exported drawio svgs ==="
-          find assets/svg -type f -name '*.svg' | sed 's#^# - #' || true
+          echo "=== tmp drawio-export contents ==="
+          ls -la .tmp/drawio-export || true
+
+          while IFS= read -r drawio; do
+            rel="${drawio#assets/drawio/}"      # arquitetura/draw1.drawio
+            dir="$(dirname "$rel")"             # arquitetura
+            base="$(basename "$rel" .drawio)"   # draw1
+
+            src=".tmp/drawio-export/${base}.svg"
+            dst="assets/svg/${dir}/${base}.svg"
+
+            mkdir -p "assets/svg/${dir}"
+
+            if [ -f "$src" ]; then
+              cp -f "$src" "$dst"
+              echo "OK: $src -> $dst"
+            else
+              echo "WARN: missing $src for $drawio"
+            fi
+          done < <(find assets/drawio -type f -name "*.drawio" | sort)
 
       # - name: Debug workspace
       #   run: |
