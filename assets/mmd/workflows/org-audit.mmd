@@ -1,0 +1,56 @@
+sequenceDiagram
+autonumber
+participant Dev as Developer
+participant GH as GitHub Actions
+participant Runner as Runner
+participant Repo as Repo
+
+Dev->>GH: triggers "Audit (infra + GA)" (workflow_dispatch, schedule)
+GH->>Runner: dispatch workflow run
+Runner->>Repo: checkout (if configured)
+
+Note over Runner: job audit_infra\nruns-on: ubuntu-latest
+Runner->>Runner: uses actions/checkout@v4
+Runner->>Repo: git checkout
+
+Runner->>Runner: uses actions/setup-python@v5
+
+Runner->>Runner: Install deps
+Runner->>Runner: python script
+
+Runner->>Runner: Run infra audit
+Runner->>Runner: python script
+
+Runner->>Runner: Upload reports artifact (infra)
+
+Runner-->>GH: job "audit_infra" complete
+
+Note over Runner: job audit_ga\nruns-on: ubuntu-latest
+Runner->>Runner: uses actions/checkout@v4
+Runner->>Repo: git checkout
+
+Runner->>Runner: uses actions/setup-python@v5
+
+Runner->>Runner: Install deps
+Runner->>Runner: python script
+
+Runner->>Runner: Run GA usage audit
+Runner->>Runner: python script
+
+Runner->>Runner: Upload reports artifact (ga)
+
+Runner-->>GH: job "audit_ga" complete
+
+Note over Runner: job commit_reports\nruns-on: ubuntu-latest
+GH-->>GH: needs audit_infra -> commit_reports
+GH-->>GH: needs audit_ga -> commit_reports
+Runner->>Runner: uses actions/checkout@v4
+Runner->>Repo: git checkout
+
+Runner->>Runner: Download reports artifact
+
+Runner->>Runner: Commit reports
+
+Runner-->>GH: job "commit_reports" complete
+
+GH-->>Dev: workflow finished (success/fail)

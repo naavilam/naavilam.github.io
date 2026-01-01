@@ -1,0 +1,29 @@
+sequenceDiagram
+autonumber
+participant Script as org_audit.py
+participant FS as Filesystem
+participant Sh as Shell
+participant HTTP as HTTP
+participant AWS as AWS
+
+Script->>HTTP: GET <url>
+HTTP-->>Script: response
+
+Script->>HTTP: GET <url>
+HTTP-->>Script: response
+
+Script->>FS: open(<file>, mode=w)
+FS-->>Script: ok
+
+Script->>FS: open(<file>, mode=w)
+FS-->>Script: ok
+
+Script->>FS: open(<file>, mode=w)
+FS-->>Script: ok
+
+Script->>FS: open(<file>, mode=w)
+FS-->>Script: ok
+
+Script->>FS: open(<file>, mode=w)
+FS-->>Script: ok
+

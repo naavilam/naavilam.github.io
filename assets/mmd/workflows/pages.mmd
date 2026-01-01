@@ -1,0 +1,30 @@
+sequenceDiagram
+autonumber
+participant Dev as Developer
+participant GH as GitHub Actions
+participant Runner as Runner
+participant Repo as Repo
+
+Dev->>GH: triggers "Build and deploy Jekyll site to Pages" (push, workflow_dispatch)
+GH->>Runner: dispatch workflow run
+Runner->>Repo: checkout (if configured)
+
+Note over Runner: job build\nruns-on: ubuntu-latest
+Runner->>Runner: uses actions/checkout@v4
+Runner->>Repo: git checkout
+
+Runner->>Runner: uses ruby/setup-ruby@v1
+
+Runner->>Runner: Build with Jekyll
+
+Runner->>Runner: uses actions/upload-pages-artifact@v3
+
+Runner-->>GH: job "build" complete
+
+Note over Runner: job deploy\nruns-on: ubuntu-latest
+GH-->>GH: needs build -> deploy
+Runner->>Runner: uses actions/deploy-pages@v4
+
+Runner-->>GH: job "deploy" complete
+
+GH-->>Dev: workflow finished (success/fail)

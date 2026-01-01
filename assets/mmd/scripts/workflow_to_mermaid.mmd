@@ -1,0 +1,14 @@
+sequenceDiagram
+autonumber
+participant Script as workflow_to_mermaid.py
+participant FS as Filesystem
+participant Sh as Shell
+participant HTTP as HTTP
+participant AWS as AWS
+
+Script->>FS: open(<file>, mode=r)
+FS-->>Script: ok
+
+Script->>FS: open(<file>, mode=w)
+FS-->>Script: ok
+
