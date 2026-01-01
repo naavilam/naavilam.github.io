@@ -1,0 +1,29 @@
+{
+  "type": "dir",
+  "name": "svg",
+  "path": "",
+  "children": [
+    {
+      "type": "dir",
+      "name": "arquitetura",
+      "path": "arquitetura",
+      "children": [
+        {
+          "type": "file",
+          "name": "draw1.svg",
+          "path": "arquitetura/draw1.svg"
+        },
+        {
+          "type": "file",
+          "name": "draw2.svg",
+          "path": "arquitetura/draw2.svg"
+        },
+        {
+          "type": "file",
+          "name": "draw3.svg",
+          "path": "arquitetura/draw3.svg"
+        }
+      ]
+    }
+  ]
+}
