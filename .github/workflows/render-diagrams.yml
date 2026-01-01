@@ -9,7 +9,6 @@ permissions:
 jobs:
   render:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,20 +30,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
 
-      - name: Docker version
-        run: docker --version
-
-      - name: Render SVGs
+      - name: Render SVGs (mermaid)
         run: |
           bash .github/scripts/render_all.sh
 
-      - name: Ensure drawio folders exist
+      - name: Ensure folders exist
         run: |
-          mkdir -p assets/drawio
-          mkdir -p .tmp/drawio-export
-          mkdir -p assets/svg
+          mkdir -p assets/drawio assets/svg
 
-      - name: Export Draw.io (.drawio) -> SVG (to temp)
+      - name: Export Draw.io (.drawio) -> SVG
         uses: rlespinasse/drawio-export-action@v2
         with:
           path: assets/drawio
@@ -54,67 +48,24 @@ jobs:
           embed-svg-fonts: true
           svg-theme: light
 
-      - name: Debug — prove where Draw.io SVGs were written
-        run: |
-          set -euo pipefail
-
-          echo "=== PWD ==="
-          pwd
-
-          echo
-          echo "=== assets/drawio (origem) ==="
-          find assets/drawio -type f | sort || true
-
-          echo
-          echo "=== assets/svg (destino esperado) ==="
-          find assets/svg -type f | sort || true
-
-          echo
-          echo "=== tree assets/svg ==="
-          tree assets/svg || ls -R assets/svg
-
-          echo
-          echo "=== count SVGs in assets/svg ==="
-          find assets/svg -name '*.svg' | wc -l
-
-      - name: Collect Draw.io exports into assets/svg (mirror folders) + debug
+      - name: Collect Draw.io SVGs into assets/svg (mirror folders)
         shell: bash
         run: |
           set -euo pipefail
 
-          echo "=== where the action wrote SVGs (inside assets/drawio) ==="
-          find assets/drawio -type f -path "*/assets/svg/*.svg" -print | sort || true
-
-          echo "=== collecting into assets/svg/<rel> ==="
-          mkdir -p assets/svg
-
-          count=0
           while IFS= read -r src; do
             # src: assets/drawio/<rel>/assets/svg/<file>.svg
-            rel="${src#assets/drawio/}"              # <rel>/assets/svg/<file>.svg
-            rel_dir="${rel%%/assets/svg/*}"          # <rel>
-            file="${src##*/}"                        # <file>.svg
+            rel="${src#assets/drawio/}"       # <rel>/assets/svg/<file>.svg
+            rel_dir="${rel%%/assets/svg/*}"   # <rel>
+            file="${src##*/}"                 # <file>.svg
 
             dst_dir="assets/svg/${rel_dir}"
             mkdir -p "$dst_dir"
             cp -f "$src" "${dst_dir}/${file}"
-            count=$((count+1))
           done < <(find assets/drawio -type f -path "*/assets/svg/*.svg" -print)
 
-          echo "=== copied svgs: $count ==="
-          echo "=== final tree assets/svg ==="
-          find assets/svg -type f -name "*.svg" -print | sort || true
-
-          # opcional: limpar a sujeira gerada dentro de assets/drawio
-          echo "=== cleanup generated assets/svg under assets/drawio ==="
-          find assets/drawio -type d -path "*/assets/svg" -print -exec rm -rf {} + || true
-
-      # - name: Debug workspace
-      #   run: |
-      #     pwd
-      #     ls -la
-      #     ls -la .github || true
-      #     ls -la .github/scripts || true
+          # limpa a sujeira gerada dentro de assets/drawio
+          find assets/drawio -type d -path "*/assets/svg" -exec rm -rf {} + || true
 
       - name: Commit & push generated diagrams (if changed)
         run: |
