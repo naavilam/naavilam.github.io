@@ -114,12 +114,6 @@ layout: default
                   {% if projects.date or projects.group %}
                   <div class="project-meta mt-2 mb-2" style="font-size: 0.9rem; color: #555;">
 
-                    {% if projects.date %}
-                    <span class="mr-3">
-                      <strong>Period:</strong> {{ projects.date }}
-                    </span>
-                    {% endif %}
-
                     {% if projects.group %}
                     <span>
                       {% if projects.group_link %}
@@ -132,6 +126,11 @@ layout: default
                     </span>
                     {% endif %}
 
+                    {% if projects.date %}
+                    <span class="mr-3">
+                      <strong>Period:</strong> {{ projects.date }}
+                    </span>
+                    {% endif %}
                   </div>
                   {% endif %}
                   {% if projects.tech %}
