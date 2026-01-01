@@ -84,11 +84,8 @@ if ls "$DRAWIO_IN"/*.drawio >/dev/null 2>&1; then
 
   docker run --rm \
     -v "$DRAWIO_IN:/data" \
-    -v "$DRAWIO_OUT:/out" \
     rlespinasse/drawio-export \
-    drawio-exporter \
-      --drawio-desktop-headless /opt/drawio \
-      /data
+    drawio-exporter /data
 
   # mover SVGs gerados para assets/svg
   for f in "$DRAWIO_IN"/*.svg; do
