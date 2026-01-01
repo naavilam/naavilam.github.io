@@ -59,26 +59,40 @@ jobs:
         run: |
           set -euo pipefail
 
-          echo "=== tmp drawio-export contents ==="
-          ls -la .tmp/drawio-export || true
+          SRC=".tmp/drawio-export"
+          DST="assets/svg"
 
-          while IFS= read -r drawio; do
-            rel="${drawio#assets/drawio/}"      # arquitetura/draw1.drawio
-            dir="$(dirname "$rel")"             # arquitetura
-            base="$(basename "$rel" .drawio)"   # draw1
+          echo "=== [drawio] ORIGEM (raiz) ==="
+          ls -la "$SRC" || true
 
-            src=".tmp/drawio-export/${base}.svg"
-            dst="assets/svg/${dir}/${base}.svg"
+          echo "=== [drawio] ORIGEM (recursivo, arquivos) ==="
+          find "$SRC" -maxdepth 6 -type f -print || true
 
-            mkdir -p "assets/svg/${dir}"
+          echo "=== [drawio] CONTAGEM (origem) ==="
+          found="$(find "$SRC" -type f -name '*.svg' | wc -l | tr -d ' ')"
+          echo "svgs encontrados em $SRC: $found"
 
-            if [ -f "$src" ]; then
-              cp -f "$src" "$dst"
-              echo "OK: $src -> $dst"
-            else
-              echo "WARN: missing $src for $drawio"
-            fi
-          done < <(find assets/drawio -type f -name "*.drawio" | sort)
+          echo "=== [drawio] COPIANDO para $DST (preservando pastas) ==="
+          mkdir -p "$DST"
+
+          copied=0
+          while IFS= read -r svg; do
+            rel="${svg#"$SRC"/}"          # ex: arquitetura/draw1.svg
+            out="$DST/$rel"              # ex: assets/svg/arquitetura/draw1.svg
+            mkdir -p "$(dirname "$out")"
+            cp -f "$svg" "$out"
+            echo "copied: $out"
+            copied=$((copied+1))
+          done < <(find "$SRC" -type f -name "*.svg" -print)
+
+          echo "=== [drawio] CONTAGEM (copiados) ==="
+          echo "svgs copiados: $copied"
+
+          echo "=== [drawio] DESTINO (raiz) ==="
+          ls -la "$DST" || true
+
+          echo "=== [drawio] DESTINO (recursivo, arquivos) ==="
+          find "$DST" -maxdepth 6 -type f -name '*.svg' -print || true
 
       # - name: Debug workspace
       #   run: |
