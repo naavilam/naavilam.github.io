@@ -28,6 +28,8 @@ Runner->>Runner: Ensure drawio folders exist
 
 Runner->>Runner: Export Draw.io (.drawio) -> SVG
 
+Runner->>Runner: Debug workspace
+
 Runner->>Runner: Commit & push generated diagrams (if changed)
 
 Runner-->>GH: job "render" complete
