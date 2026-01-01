@@ -77,45 +77,37 @@ jobs:
           echo "=== count SVGs in assets/svg ==="
           find assets/svg -name '*.svg' | wc -l
 
-      - name: Copy Draw.io SVGs into assets/svg (mirror drawio folders)
+      - name: Collect Draw.io exports into assets/svg (mirror folders) + debug
         shell: bash
         run: |
           set -euo pipefail
 
-          SRC=".tmp/drawio-export"
-          DST="assets/svg"
+          echo "=== where the action wrote SVGs (inside assets/drawio) ==="
+          find assets/drawio -type f -path "*/assets/svg/*.svg" -print | sort || true
 
-          echo "=== [drawio] ORIGEM (raiz) ==="
-          ls -la "$SRC" || true
+          echo "=== collecting into assets/svg/<rel> ==="
+          mkdir -p assets/svg
 
-          echo "=== [drawio] ORIGEM (recursivo, arquivos) ==="
-          find "$SRC" -maxdepth 6 -type f -print || true
+          count=0
+          while IFS= read -r src; do
+            # src: assets/drawio/<rel>/assets/svg/<file>.svg
+            rel="${src#assets/drawio/}"              # <rel>/assets/svg/<file>.svg
+            rel_dir="${rel%%/assets/svg/*}"          # <rel>
+            file="${src##*/}"                        # <file>.svg
 
-          echo "=== [drawio] CONTAGEM (origem) ==="
-          found="$(find "$SRC" -type f -name '*.svg' | wc -l | tr -d ' ')"
-          echo "svgs encontrados em $SRC: $found"
+            dst_dir="assets/svg/${rel_dir}"
+            mkdir -p "$dst_dir"
+            cp -f "$src" "${dst_dir}/${file}"
+            count=$((count+1))
+          done < <(find assets/drawio -type f -path "*/assets/svg/*.svg" -print)
 
-          echo "=== [drawio] COPIANDO para $DST (preservando pastas) ==="
-          mkdir -p "$DST"
+          echo "=== copied svgs: $count ==="
+          echo "=== final tree assets/svg ==="
+          find assets/svg -type f -name "*.svg" -print | sort || true
 
-          copied=0
-          while IFS= read -r svg; do
-            rel="${svg#"$SRC"/}"          # ex: arquitetura/draw1.svg
-            out="$DST/$rel"              # ex: assets/svg/arquitetura/draw1.svg
-            mkdir -p "$(dirname "$out")"
-            cp -f "$svg" "$out"
-            echo "copied: $out"
-            copied=$((copied+1))
-          done < <(find "$SRC" -type f -name "*.svg" -print)
-
-          echo "=== [drawio] CONTAGEM (copiados) ==="
-          echo "svgs copiados: $copied"
-
-          echo "=== [drawio] DESTINO (raiz) ==="
-          ls -la "$DST" || true
-
-          echo "=== [drawio] DESTINO (recursivo, arquivos) ==="
-          find "$DST" -maxdepth 6 -type f -name '*.svg' -print || true
+          # opcional: limpar a sujeira gerada dentro de assets/drawio
+          echo "=== cleanup generated assets/svg under assets/drawio ==="
+          find assets/drawio -type d -path "*/assets/svg" -print -exec rm -rf {} + || true
 
       # - name: Debug workspace
       #   run: |
