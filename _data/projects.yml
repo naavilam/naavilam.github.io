@@ -1,7 +1,7 @@
 
 - name: Heavy Ion Collision
   id: project1
-  date: 12/2025 - present
+  date: present
   group: JETSCAPE
   group_link: https://jetscape.org
   description: >
@@ -20,7 +20,7 @@
 
 - name: Quantum Material Simulation
   id: project2
-  date: 06/2024 - 10/2025
+  date: 2023 - 2025
   group: SAMPA USP
   group_link: https://portal.if.usp.br/sampa/pt-br/node/323
   description: >
@@ -40,7 +40,7 @@
 
 - name: Quantum Computing
   id: project3
-  date: 05/2023 - 05/2024
+  date: 2023 - 2025
   group: SAMPA USP
   group_link: https://portal.if.usp.br/sampa/pt-br/node/323
   description: >
