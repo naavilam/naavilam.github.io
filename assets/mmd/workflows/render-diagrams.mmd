@@ -26,9 +26,9 @@ Runner->>Runner: Render SVGs
 
 Runner->>Runner: Ensure drawio folders exist
 
-Runner->>Runner: Export Draw.io (.drawio) -> SVG
+Runner->>Runner: Export Draw.io (.drawio) -> SVG (to temp)
 
-Runner->>Runner: Move exported SVGs to assets/svg (keep folders)
+Runner->>Runner: Move Draw.io SVGs to assets/svg (keep folders)
 
 Runner->>Runner: Commit & push generated diagrams (if changed)
 
