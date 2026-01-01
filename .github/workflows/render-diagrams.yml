@@ -50,7 +50,7 @@ jobs:
         with:
           path: assets/drawio
           format: svg
-          output: ../svg
+          output: assets/svg
           remove-page-suffix: true
           embed-svg-fonts: true
           svg-theme: light
