@@ -1,3 +1,15 @@
 {
-  "files": []
+  "files": [
+    "draw1.svg",
+    "draw2.svg",
+    "draw3.svg",
+    "ga_audit_usage.svg",
+    "generate-svg-index.svg",
+    "org_audit.svg",
+    "org-audit.svg",
+    "pages.svg",
+    "py_to_mermaid.svg",
+    "render-diagrams.svg",
+    "workflow_to_mermaid.svg"
+  ]
 }
