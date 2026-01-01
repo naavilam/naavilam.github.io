@@ -1,6 +1,6 @@
 
 - name: Heavy Ion Collision
-  id: project3
+  id: project1
   date: 2025-present
   group: JETSCAPE
   description: >
@@ -38,7 +38,7 @@
     - Ground state energy
 
 - name: Quantum Computing
-  id: project1
+  id: project3
   date: 2023-2024
   group: SAMPA-USP
   description: >
