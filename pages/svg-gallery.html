@@ -162,11 +162,9 @@ description: SVGs com preview e edição no draw.io
     <section class="svg-main">
         <div class="svg-toolbar">
             <div class="svg-title" id="title">Selecione um SVG à esquerda</div>
-
             <div class="svg-actions">
                 <a id="openRaw" class="btn" href="#" target="_blank" rel="noopener" style="display:none;">Abrir SVG</a>
-                <a id="editDrawio" class="btn" href="#" target="_blank" rel="noopener" style="display:none;">Editar no
-                    Mermaid Live</a>
+                <a id="editDrawio" class="btn" href="#" target="_blank" rel="noopener" style="display:none;">Editar</a>
             </div>
         </div>
 
@@ -176,6 +174,7 @@ description: SVGs com preview e edição no draw.io
             </div>
         </div>
     </section>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
 <script>
@@ -201,7 +200,7 @@ description: SVGs com preview e edição no draw.io
         let currentName = null;
 
         function u8ToB64Url(u8) {
-            // evita stack overflow em SVG/MMD maiores
+            // evita stack overflow com arquivos maiores
             let s = '';
             const chunk = 0x8000;
             for (let i = 0; i < u8.length; i += chunk) {
@@ -221,9 +220,12 @@ description: SVGs com preview e edição no draw.io
                 zoom: 1
             };
 
+            if (!window.pako) throw new Error("pako não carregou (cdn).");
+
             const json = JSON.stringify(state);
-            const compressed = pako.deflate(json, { level: 9 });
+            const compressed = window.pako.deflate(json); // Uint8Array
             const payload = u8ToB64Url(compressed);
+
             return `https://mermaid.live/edit#pako:${payload}`;
         }
 
@@ -258,47 +260,67 @@ description: SVGs com preview e edição no draw.io
                 listEl.appendChild(row);
             });
         }
+
         async function load(name) {
             currentName = name;
             renderList(qEl.value);
 
             titleEl.textContent = name;
 
-            const rawNoCache = `${BASE}/assets/svg/${name}`;
-            const raw = svgUrl(name);
+            // links do SVG
+            const rawNoCache = `${BASE}/assets/svg/${name}`; // link "Abrir SVG"
+            const raw = svgUrl(name); // fetch com cache-buster
 
             openRawEl.style.display = '';
             openRawEl.href = rawNoCache;
 
-            // --- Mermaid Live: preparar href AQUI (sem onclick/sem window.open) ---
-            const mmdName = name.replace(/\.svg$/i, ".mmd");
-            const mmdUrl = `${BASE}/assets/mmd/${mmdName}`;
-
-            // default: esconde até provar que existe
-            editEl.style.display = 'none';
-            editEl.href = '#';
+            // ====== botão EDITAR (reset) ======
+            editEl.style.display = "none";
+            editEl.href = "#";
             editEl.target = "_blank";
             editEl.rel = "noopener";
+            editEl.textContent = "";
 
+            // ====== decidir editor a partir do basename ======
+            const baseName = name.replace(/\.svg$/i, "");
+            const mmdUrl = `${BASE}/assets/mmd/${baseName}.mmd`;
+            const drawioFileUrl = `${BASE}/assets/drawio/${baseName}.drawio`;
+
+            // 1) tenta Mermaid (.mmd) — prioridade máxima
             try {
                 const rMmd = await fetch(`${mmdUrl}?v=${Date.now()}`, { cache: "no-store" });
-                if (!rMmd.ok) throw new Error(`HTTP ${rMmd.status} ao buscar ${mmdUrl}`);
+                if (!rMmd.ok) throw new Error(`HTTP ${rMmd.status}`);
 
                 const code = await rMmd.text();
-                editEl.href = mermaidLiveEditUrl(code); // usa sua função pronta
-                editEl.style.display = '';
+                editEl.href = mermaidLiveEditUrl(code);
+                editEl.textContent = "Editar no Mermaid Live";
+                editEl.style.display = "";
+                // não dá return obrigatório, mas evita fetch desnecessário do drawio
+                // return;
             } catch (e) {
-                // sem mmd -> só não mostra o botão
-                console.warn("[mermaid-live] sem .mmd para", mmdUrl, e);
+                // 2) se não tem mmd, tenta Draw.io (.drawio)
+                try {
+                    const rD = await fetch(`${drawioFileUrl}?v=${Date.now()}`, { cache: "no-store" });
+                    if (!rD.ok) throw new Error(`HTTP ${rD.status}`);
+
+                    const url = `https://app.diagrams.net/?url=${encodeURIComponent(location.origin + drawioFileUrl)}&embed=1&ui=min`;
+                    editEl.href = url;
+                    editEl.textContent = "Editar no draw.io";
+                    editEl.style.display = "";
+                } catch (e2) {
+                    // sem editor disponível -> botão fica escondido
+                    // console.debug("sem mmd/drawio para", baseName);
+                }
             }
 
-            // --- preview do SVG (igual ao seu) ---
+            // ====== preview do SVG ======
             canvasEl.innerHTML = `<div class="hint">carregando…</div>`;
             try {
-                const r = await fetch(raw, { cache: 'no-store' });
+                const r = await fetch(raw, { cache: "no-store" });
                 if (!r.ok) throw new Error(`HTTP ${r.status} ao buscar ${raw}`);
 
                 const svgText = await r.text();
+
                 const doc = new DOMParser().parseFromString(svgText, "image/svg+xml");
                 const svgEl = doc.documentElement;
 
