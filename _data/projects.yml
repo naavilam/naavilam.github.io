@@ -3,7 +3,7 @@
   id: project1
   date: 2025 - present
   group: JETSCAPE
-  group_link:
+  group_link: https://jetscape.org
   description: >
    This project aims to investigate relativistic heavy-ion collisions at the Large Hadron Collider using a model–to-data comparison approach. The work focuses on training statistical emulators to reproduce the output of computationally intensive theoretical models, avoiding the need to run full dynamical simulations. These emulators are then used to study correlations between experimental observables and physical parameters—such as shear and bulk viscosity, rapidity, transverse momentum spectra, among others—allowing an assessment of how different observables constrain the underlying collision dynamics.
   link: https://high-energy-physics-research.github.io
@@ -22,7 +22,7 @@
   id: project2
   date: 06/2024 - 10/2025
   group: SAMPA USP
-  group_link:
+  group_link: https://portal.if.usp.br/sampa/pt-br/node/323
   description: >
     My research evolved through quantum simulations of molecular systems. I modeled electronic Hamiltonians within the Born–Oppenheimer approximation and expressed these Hamiltonians through second quantization, mapping them to qubit representations using the Jordan–Wigner transformation. I performed variational ground-state energy estimations in hybrid quantum–classical architectures, implementing the UCCSD ansatz with Qiskit Nature and conducting comparative experiments with PennyLane on simple molecular systems. Building on this variational framework, I explored neural-network quantum states—specifically restricted Boltzmann machines (RBMs)—as expressive ansätze for representing molecular ground states.
   link: https://quantum-materials-simulation-research.github.io
@@ -42,7 +42,7 @@
   id: project3
   date: 05/2023 - 05/2024
   group: SAMPA USP
-  group_link:
+  group_link: https://portal.if.usp.br/sampa/pt-br/node/323
   description: >
     In this work, I studied quantum information encoding mechanisms, the construction of gate-based quantum circuits, and their implementation using Google Cirq, Amazon Braket, IBM Qiskit and CERN Qibo SDKs. I analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time, noise, and decoherence parameters. I implemented algorithms such as the Deutsch algorithm and Grover’s quantum search, and carried out introductory studies in quantum machine learning using quantum support vector machines (QSVM). To address noise in NISQ devices, I explored quantum error mitigation techniques, including zero-noise extrapolation (ZNE) and Clifford-based regression methods.
   link: https://quantum-computing-research.github.io
