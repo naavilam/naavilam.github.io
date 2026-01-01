@@ -110,7 +110,6 @@ layout: default
                     alt="..."></a>
                 <div class="media-body">
                   <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
-                  {{ projects.description }}
                   {% if projects.date or projects.group %}
                   <div class="project-meta mt-2 mb-2" style="font-size: 0.9rem; color: #555;">
 
@@ -133,6 +132,7 @@ layout: default
                     {% endif %}
                   </div>
                   {% endif %}
+                  {{ projects.description }}
                   {% if projects.tech %}
                   {% for tech in projects.tech %}
                   <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech
