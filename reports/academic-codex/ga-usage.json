@@ -104,6 +104,28 @@
         "github.com": 2
       }
     },
+    "/IF4302112-Fisica-II/": {
+      "views": 19,
+      "sessions": 18,
+      "users": 14,
+      "clicks": 1,
+      "engagement_rate": 0.16666666666666666,
+      "countries": {
+        "BR": 6,
+        "US": 5,
+        "NL": 2,
+        "RU": 2,
+        "AT": 1,
+        "IL": 1,
+        "IR": 1,
+        "SK": 1
+      },
+      "sources": {
+        "(direct)": 13,
+        "github.com": 5,
+        "(not set)": 1
+      }
+    },
     "/IF4302211-Fisica-III/": {
       "views": 19,
       "sessions": 18,
@@ -134,27 +156,6 @@
       },
       "sources": {
         "github.com": 2
-      }
-    },
-    "/IF4302112-Fisica-II/": {
-      "views": 18,
-      "sessions": 17,
-      "users": 14,
-      "clicks": 1,
-      "engagement_rate": 0.17647058823529413,
-      "countries": {
-        "BR": 5,
-        "US": 5,
-        "NL": 2,
-        "RU": 2,
-        "AT": 1,
-        "IL": 1,
-        "IR": 1,
-        "SK": 1
-      },
-      "sources": {
-        "(direct)": 13,
-        "github.com": 4
       }
     },
     "/IF4302305-Mecanica-Classica-I/": {
@@ -284,6 +285,44 @@
         "github.com": 1
       }
     },
+    "/IF4302112-Fisica-Matematica-I/": {
+      "views": 15,
+      "sessions": 13,
+      "users": 12,
+      "clicks": 1,
+      "engagement_rate": 0.15384615384615385,
+      "countries": {
+        "US": 5,
+        "BR": 4,
+        "NL": 2,
+        "CH": 1,
+        "HU": 1,
+        "IL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 11,
+        "github.com": 2
+      }
+    },
+    "/IF4302212-Fisica-IV/": {
+      "views": 15,
+      "sessions": 14,
+      "users": 10,
+      "clicks": 1,
+      "engagement_rate": 0.35714285714285715,
+      "countries": {
+        "US": 7,
+        "BR": 5,
+        "DE": 1,
+        "NL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 9,
+        "github.com": 5
+      }
+    },
     "/MAE5911-Estatistica-e-Machine-Learning/": {
       "views": 15,
       "sessions": 6,
@@ -353,44 +392,6 @@
       "sources": {
         "(direct)": 11,
         "github.com": 2
-      }
-    },
-    "/IF4302112-Fisica-Matematica-I/": {
-      "views": 14,
-      "sessions": 12,
-      "users": 12,
-      "clicks": 1,
-      "engagement_rate": 0.16666666666666666,
-      "countries": {
-        "US": 5,
-        "BR": 3,
-        "NL": 2,
-        "CH": 1,
-        "HU": 1,
-        "IL": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct)": 11,
-        "github.com": 1
-      }
-    },
-    "/IF4302212-Fisica-IV/": {
-      "views": 14,
-      "sessions": 13,
-      "users": 10,
-      "clicks": 1,
-      "engagement_rate": 0.38461538461538464,
-      "countries": {
-        "US": 7,
-        "BR": 4,
-        "DE": 1,
-        "NL": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct)": 9,
-        "github.com": 4
       }
     },
     "/IF4302404-Mecanica-Quantica-II/": {
@@ -843,6 +844,19 @@
         "github.com": 1
       }
     },
+    "/PGF5003-Eletrodinamica/": {
+      "views": 5,
+      "sessions": 4,
+      "users": 1,
+      "clicks": 1,
+      "engagement_rate": 0.75,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com": 4
+      }
+    },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/research.html": {
       "views": 5,
       "sessions": 4,
@@ -880,19 +894,6 @@
       },
       "sources": {
         "github.com": 2
-      }
-    },
-    "/PGF5003-Eletrodinamica/": {
-      "views": 4,
-      "sessions": 3,
-      "users": 1,
-      "clicks": 1,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 4
-      },
-      "sources": {
-        "github.com": 3
       }
     },
     "/PGF5261-Teoria-de-Grupos-Aplicada/": {
