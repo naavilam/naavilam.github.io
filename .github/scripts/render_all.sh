@@ -74,25 +74,17 @@ done
 DRAWIO_IN="$ROOT/assets/drawio"
 DRAWIO_OUT="$ROOT/assets/svg"
 
-mkdir -p "$DRAWIO_IN" "$DRAWIO_OUT"
-
-# não falhar se não houver .drawio
-shopt -s nullglob
-
-if ls "$DRAWIO_IN"/*.drawio >/dev/null 2>&1; then
-  echo "Rendering Draw.io diagrams..."
+if compgen -G "$DRAWIO_IN/*.drawio" > /dev/null; then
+  echo "Renderizando arquivos .drawio → svg"
 
   docker run --rm \
     -v "$DRAWIO_IN:/data" \
+    -v "$DRAWIO_OUT:/out" \
     rlespinasse/drawio-export \
-    drawio-exporter /data
-
-  # mover SVGs gerados para assets/svg
-  for f in "$DRAWIO_IN"/*.svg; do
-    base="$(basename "$f")"
-    mv "$f" "$DRAWIO_OUT/$base"
-    echo "OK: $DRAWIO_OUT/$base"
-  done
+    drawio-exporter \
+      --input "/data/*.drawio" \
+      --output /out \
+      --format svg
 else
-  echo "No .drawio files found — skipping Draw.io render."
+  echo "Nenhum .drawio encontrado"
 fi
