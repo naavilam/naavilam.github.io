@@ -41,9 +41,8 @@ jobs:
       - name: Ensure drawio folders exist
         run: |
           mkdir -p assets/drawio
+          mkdir -p .tmp/drawio-export
           mkdir -p assets/svg
-          ls -la assets || true
-          ls -la assets/drawio || true
 
       - name: Export Draw.io (.drawio) -> SVG (to temp)
         uses: rlespinasse/drawio-export-action@v2
@@ -55,34 +54,16 @@ jobs:
           embed-svg-fonts: true
           svg-theme: light
 
-      - name: Move Draw.io SVGs to assets/svg (keep folders)
-        shell: bash
+      - name: Copy Draw.io SVGs into assets/svg (keep folders)
         run: |
           set -euo pipefail
-          shopt -s globstar nullglob
+          # copia mantendo a mesma hierarquia de pastas do export
+          rsync -a --prune-empty-dirs \
+            --include '*/' --include '*.svg' --exclude '*' \
+            .tmp/drawio-export/ assets/svg/
 
-          # apaga só a árvore "arquitetura" etc, preservando scripts/workflows
-          # (se você quiser sempre regenerar)
-          # rm -rf assets/svg/arquitetura assets/svg/rpc assets/svg/whatever || true
-
-          for d in assets/drawio/**/*.drawio; do
-            src_dir="$(dirname "$d")"                 # assets/drawio/arquitetura
-            rel_dir="${src_dir#assets/drawio/}"       # arquitetura
-            base="$(basename "$d" .drawio)"           # draw1
-
-            src_svg=".tmp/drawio-export/$rel_dir/$base.svg"
-            dst_dir="assets/svg/$rel_dir"
-            dst_svg="$dst_dir/$base.svg"
-
-            mkdir -p "$dst_dir"
-
-            if [ -f "$src_svg" ]; then
-              mv "$src_svg" "$dst_svg"
-              echo "OK: $dst_svg"
-            else
-              echo "WARN: missing export for $d (expected $src_svg)"
-            fi
-          done
+          echo "=== exported drawio svgs ==="
+          find assets/svg -type f -name '*.svg' | sed 's#^# - #' || true
 
       # - name: Debug workspace
       #   run: |
