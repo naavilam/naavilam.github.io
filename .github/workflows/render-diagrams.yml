@@ -49,37 +49,33 @@ jobs:
         with:
           path: assets/drawio
           format: svg
-          output: .tmp/drawio-export
+          output: assets/svg
           remove-page-suffix: true
           embed-svg-fonts: true
           svg-theme: light
 
-      - name: Debug Draw.io export output (where are the SVGs?)
-        shell: bash
+      - name: Debug — prove where Draw.io SVGs were written
         run: |
           set -euo pipefail
 
           echo "=== PWD ==="
           pwd
 
-          echo "=== ls -la (repo root) ==="
-          ls -la
+          echo
+          echo "=== assets/drawio (origem) ==="
+          find assets/drawio -type f | sort || true
 
-          echo "=== ls -la .tmp ==="
-          ls -la .tmp || true
+          echo
+          echo "=== assets/svg (destino esperado) ==="
+          find assets/svg -type f | sort || true
 
-          echo "=== ls -la .tmp/drawio-export ==="
-          ls -la .tmp/drawio-export || true
+          echo
+          echo "=== tree assets/svg ==="
+          tree assets/svg || ls -R assets/svg
 
-          echo "=== tree-like view (.tmp/drawio-export) ==="
-          # (macete: tree nem sempre existe; então fazemos com find)
-          find .tmp/drawio-export -maxdepth 4 -print 2>/dev/null || true
-
-          echo "=== ALL SVGs generated under .tmp/drawio-export ==="
-          find .tmp/drawio-export -type f -name "*.svg" -print 2>/dev/null || true
-
-          echo "=== Count SVGs under .tmp/drawio-export ==="
-          find .tmp/drawio-export -type f -name "*.svg" 2>/dev/null | wc -l || true
+          echo
+          echo "=== count SVGs in assets/svg ==="
+          find assets/svg -name '*.svg' | wc -l
 
       - name: Copy Draw.io SVGs into assets/svg (mirror drawio folders)
         shell: bash
