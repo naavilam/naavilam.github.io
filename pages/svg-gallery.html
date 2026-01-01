@@ -301,20 +301,21 @@ description: SVGs com preview e edição no draw.io
                 // ---------- 2) FALLBACK: DRAW.IO (.drawio) ----------
 
                 // ajuste se mudar repo/branch no futuro
+                const baseName = name.replace(/\.svg$/i, "");
+
                 const owner = "naavilam";
                 const repo = "naavilam.github.io";
                 const branch = "main";
 
-                const drawioPath = `/assets/drawio/${baseName}.drawio`;
-
-                // URL pública (CDN) — ESSENCIAL
                 const drawioCdnUrl =
-                    `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}${drawioPath}`;
+                    `https://cdn.jsdelivr.net/gh/${owner}/${repo}@${branch}/assets/drawio/${baseName}.drawio`;
 
                 editEl.href =
-                    `https://app.diagrams.net/?url=${encodeURIComponent(drawioCdnUrl)}&embed=1&ui=min`;
+                    `https://app.diagrams.net/?url=${encodeURIComponent(drawioCdnUrl)}`;
 
                 editEl.textContent = "Editar no draw.io";
+                editEl.target = "_blank";
+                editEl.rel = "noopener";
                 editEl.style.display = "";
             }
 
