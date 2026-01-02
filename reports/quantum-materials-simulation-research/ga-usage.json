@@ -4,21 +4,21 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 11,
-      "sessions": 11,
-      "users": 6,
+      "views": 12,
+      "sessions": 12,
+      "users": 7,
       "clicks": 0,
-      "engagement_rate": 0.2727272727272727,
+      "engagement_rate": 0.25,
       "countries": {
         "BR": 6,
         "(not set)": 2,
+        "AM": 1,
         "DE": 1,
         "RU": 1,
         "US": 1
       },
       "sources": {
-        "(direct)": 10,
-        "(not set)": 1
+        "(direct)": 12
       }
     }
   }

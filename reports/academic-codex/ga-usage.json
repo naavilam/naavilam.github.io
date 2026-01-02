@@ -4,13 +4,13 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 178,
-      "sessions": 57,
+      "views": 177,
+      "sessions": 56,
       "users": 30,
       "clicks": 12,
-      "engagement_rate": 0.47368421052631576,
+      "engagement_rate": 0.48214285714285715,
       "countries": {
-        "BR": 155,
+        "BR": 154,
         "US": 16,
         "NL": 2,
         "AM": 1,
@@ -20,7 +20,7 @@
         "NO": 1
       },
       "sources": {
-        "(direct)": 37,
+        "(direct)": 36,
         "github.com": 20
       }
     },
@@ -42,26 +42,25 @@
       },
       "sources": {
         "(direct)": 16,
-        "github.com": 6,
-        "(not set)": 3
+        "github.com": 6
       }
     },
     "/PGF5002-Mecanica-Quantica-II/": {
-      "views": 23,
-      "sessions": 15,
-      "users": 11,
+      "views": 24,
+      "sessions": 16,
+      "users": 12,
       "clicks": 1,
-      "engagement_rate": 0.3333333333333333,
+      "engagement_rate": 0.3125,
       "countries": {
         "BR": 13,
         "US": 4,
         "IL": 3,
+        "RU": 2,
         "DE": 1,
-        "GB": 1,
-        "RU": 1
+        "GB": 1
       },
       "sources": {
-        "(direct)": 10,
+        "(direct)": 11,
         "github.com": 5
       }
     },
@@ -82,8 +81,7 @@
       },
       "sources": {
         "(direct)": 13,
-        "github.com": 3,
-        "(not set)": 1
+        "github.com": 3
       }
     },
     "/TEST0001-Disciplina-Fantasma/": {
@@ -109,7 +107,7 @@
       "sessions": 18,
       "users": 14,
       "clicks": 1,
-      "engagement_rate": 0.16666666666666666,
+      "engagement_rate": 0.2777777777777778,
       "countries": {
         "BR": 6,
         "US": 5,
@@ -122,8 +120,7 @@
       },
       "sources": {
         "(direct)": 13,
-        "github.com": 5,
-        "(not set)": 1
+        "github.com": 5
       }
     },
     "/IF4302211-Fisica-III/": {
@@ -175,12 +172,53 @@
         "github.com": 1
       }
     },
+    "/PGF5001-Mecanica-Quantica-I/": {
+      "views": 18,
+      "sessions": 16,
+      "users": 13,
+      "clicks": 3,
+      "engagement_rate": 0.3125,
+      "countries": {
+        "BR": 5,
+        "NL": 5,
+        "US": 5,
+        "DE": 1,
+        "IL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 12,
+        "github.com": 4,
+        "(not set)": 1
+      }
+    },
+    "/SCE0602-Introducao-Ciencia-Da-Computacao-II/": {
+      "views": 18,
+      "sessions": 15,
+      "users": 15,
+      "clicks": 2,
+      "engagement_rate": 0.13333333333333333,
+      "countries": {
+        "US": 6,
+        "BR": 3,
+        "MA": 3,
+        "RU": 2,
+        "CA": 1,
+        "IL": 1,
+        "LT": 1,
+        "NL": 1
+      },
+      "sources": {
+        "(direct)": 14,
+        "github.com": 1
+      }
+    },
     "/IF4302111-Fisica-I/": {
       "views": 17,
       "sessions": 12,
       "users": 9,
       "clicks": 2,
-      "engagement_rate": 0.3333333333333333,
+      "engagement_rate": 0.4166666666666667,
       "countries": {
         "BR": 8,
         "US": 3,
@@ -191,25 +229,6 @@
       },
       "sources": {
         "(direct)": 8,
-        "github.com": 4,
-        "(not set)": 1
-      }
-    },
-    "/PGF5001-Mecanica-Quantica-I/": {
-      "views": 17,
-      "sessions": 15,
-      "users": 12,
-      "clicks": 3,
-      "engagement_rate": 0.3333333333333333,
-      "countries": {
-        "BR": 5,
-        "NL": 5,
-        "US": 5,
-        "DE": 1,
-        "IL": 1
-      },
-      "sources": {
-        "(direct)": 11,
         "github.com": 4
       }
     },
@@ -230,24 +249,27 @@
         "(direct)": 14
       }
     },
-    "/SCE0602-Introducao-Ciencia-Da-Computacao-II/": {
-      "views": 16,
-      "sessions": 13,
-      "users": 13,
-      "clicks": 2,
-      "engagement_rate": 0.15384615384615385,
+    "/SME0600-Calculo-Numerico-I/": {
+      "views": 17,
+      "sessions": 15,
+      "users": 14,
+      "clicks": 1,
+      "engagement_rate": 0.2,
       "countries": {
-        "US": 6,
+        "US": 4,
         "BR": 3,
-        "MA": 3,
-        "CA": 1,
+        "ES": 3,
+        "NL": 2,
+        "CZ": 1,
+        "DE": 1,
         "IL": 1,
-        "LT": 1,
-        "NL": 1
+        "IT": 1,
+        "RU": 1
       },
       "sources": {
-        "(direct)": 12,
-        "github.com": 1
+        "(direct)": 13,
+        "github.com": 2,
+        "(not set)": 1
       }
     },
     "/SEL0608-Eletromagnetismo/": {
@@ -290,7 +312,7 @@
       "sessions": 13,
       "users": 12,
       "clicks": 1,
-      "engagement_rate": 0.15384615384615385,
+      "engagement_rate": 0.23076923076923078,
       "countries": {
         "US": 5,
         "BR": 4,
@@ -310,7 +332,7 @@
       "sessions": 14,
       "users": 10,
       "clicks": 1,
-      "engagement_rate": 0.35714285714285715,
+      "engagement_rate": 0.42857142857142855,
       "countries": {
         "US": 7,
         "BR": 5,
@@ -321,6 +343,27 @@
       "sources": {
         "(direct)": 9,
         "github.com": 5
+      }
+    },
+    "/IF4302404-Mecanica-Quantica-II/": {
+      "views": 15,
+      "sessions": 13,
+      "users": 13,
+      "clicks": 1,
+      "engagement_rate": 0.15384615384615385,
+      "countries": {
+        "US": 6,
+        "BR": 2,
+        "IR": 2,
+        "DE": 1,
+        "IL": 1,
+        "MD": 1,
+        "NL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 12,
+        "github.com": 1
       }
     },
     "/MAE5911-Estatistica-e-Machine-Learning/": {
@@ -374,46 +417,6 @@
         "(direct)": 14
       }
     },
-    "/SME0600-Calculo-Numerico-I/": {
-      "views": 15,
-      "sessions": 13,
-      "users": 12,
-      "clicks": 1,
-      "engagement_rate": 0.23076923076923078,
-      "countries": {
-        "US": 4,
-        "BR": 3,
-        "ES": 3,
-        "NL": 2,
-        "CZ": 1,
-        "DE": 1,
-        "IT": 1
-      },
-      "sources": {
-        "(direct)": 11,
-        "github.com": 2
-      }
-    },
-    "/IF4302404-Mecanica-Quantica-II/": {
-      "views": 14,
-      "sessions": 12,
-      "users": 12,
-      "clicks": 1,
-      "engagement_rate": 0.16666666666666666,
-      "countries": {
-        "US": 6,
-        "BR": 2,
-        "IR": 2,
-        "DE": 1,
-        "IL": 1,
-        "MD": 1,
-        "NL": 1
-      },
-      "sources": {
-        "(direct)": 11,
-        "github.com": 1
-      }
-    },
     "/SCE0601-Introducao-a-Ciencia-da-Computacao-I/": {
       "views": 14,
       "sessions": 13,
@@ -428,6 +431,27 @@
       },
       "sources": {
         "(direct)": 13
+      }
+    },
+    "/SCE0617-Redes-de-Computadores/": {
+      "views": 14,
+      "sessions": 12,
+      "users": 12,
+      "clicks": 1,
+      "engagement_rate": 0.25,
+      "countries": {
+        "US": 5,
+        "CA": 3,
+        "BR": 2,
+        "AM": 1,
+        "DK": 1,
+        "NL": 1,
+        "SG": 1
+      },
+      "sources": {
+        "(direct)": 11,
+        "(not set)": 1,
+        "github.com": 1
       }
     },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Digitais-I/": {
@@ -466,6 +490,26 @@
         "github.com": 1
       }
     },
+    "/IF4302403-Mecanica-Quantica-I/": {
+      "views": 13,
+      "sessions": 12,
+      "users": 11,
+      "clicks": 1,
+      "engagement_rate": 0.16666666666666666,
+      "countries": {
+        "US": 4,
+        "BR": 2,
+        "NL": 2,
+        "RU": 2,
+        "DE": 1,
+        "IL": 1,
+        "ZA": 1
+      },
+      "sources": {
+        "(direct)": 11,
+        "github.com": 1
+      }
+    },
     "/SCE0601-Introducao-Ciencia-Da-Computacao-I/": {
       "views": 13,
       "sessions": 12,
@@ -480,25 +524,6 @@
       },
       "sources": {
         "(direct)": 12
-      }
-    },
-    "/SCE0617-Redes-de-Computadores/": {
-      "views": 13,
-      "sessions": 11,
-      "users": 11,
-      "clicks": 1,
-      "engagement_rate": 0.2727272727272727,
-      "countries": {
-        "US": 5,
-        "CA": 3,
-        "BR": 2,
-        "DK": 1,
-        "NL": 1,
-        "SG": 1
-      },
-      "sources": {
-        "(direct)": 10,
-        "github.com": 1
       }
     },
     "/SEL0617-Fundamentos-de-Microeletronica/": {
@@ -534,27 +559,6 @@
       },
       "sources": {
         "(direct)": 10
-      }
-    },
-    "/IF4302403-Mecanica-Quantica-I/": {
-      "views": 12,
-      "sessions": 11,
-      "users": 11,
-      "clicks": 1,
-      "engagement_rate": 0.18181818181818182,
-      "countries": {
-        "US": 4,
-        "BR": 2,
-        "NL": 2,
-        "DE": 1,
-        "IL": 1,
-        "RU": 1,
-        "ZA": 1
-      },
-      "sources": {
-        "(direct)": 10,
-        "(not set)": 1,
-        "github.com": 1
       }
     },
     "/SEL0614-Microprocessadores-e-Aplicacoes/": {
@@ -849,7 +853,7 @@
       "sessions": 4,
       "users": 1,
       "clicks": 1,
-      "engagement_rate": 0.75,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 5
       },
@@ -1014,6 +1018,19 @@
       "sources": {
         "(direct)": 2,
         "github.com": 1
+      }
+    },
+    "/EAP5054-Formacao-Cientista-Empreendedor-II/": {
+      "views": 3,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 1,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 3
+      },
+      "sources": {
+        "github.com": 2
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-II/": {
@@ -1226,19 +1243,6 @@
       "engagement_rate": 1.0,
       "countries": {
         "BR": 3
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/EAP5054-Formacao-Cientista-Empreendedor-II/": {
-      "views": 2,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 1,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 2
       },
       "sources": {
         "github.com": 1
