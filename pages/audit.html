@@ -778,7 +778,7 @@ description: Internal repository report
                 pin
             };
 
-            const out = await postJSON(DISPATCH_API, payload);
+            const out = await postJSON(getDispatchURL(), payload);
             window.resetOperatorPin?.();
             setBusy(false, out?.message || `ok: inicializa-repos dispatched for ${org}`);
         } catch (e) {
