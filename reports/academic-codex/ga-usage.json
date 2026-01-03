@@ -64,6 +64,25 @@
         "github.com": 5
       }
     },
+    "/IF4302305-Mecanica-Classica-I/": {
+      "views": 20,
+      "sessions": 18,
+      "users": 18,
+      "clicks": 1,
+      "engagement_rate": 0.16666666666666666,
+      "countries": {
+        "US": 10,
+        "NL": 5,
+        "BR": 2,
+        "RU": 2,
+        "IL": 1
+      },
+      "sources": {
+        "(direct)": 17,
+        "(not set)": 1,
+        "github.com": 1
+      }
+    },
     "/IF4302306-Mecanica-Classica-II/": {
       "views": 20,
       "sessions": 16,
@@ -155,23 +174,6 @@
         "github.com": 2
       }
     },
-    "/IF4302305-Mecanica-Classica-I/": {
-      "views": 18,
-      "sessions": 16,
-      "users": 16,
-      "clicks": 1,
-      "engagement_rate": 0.1875,
-      "countries": {
-        "US": 10,
-        "NL": 5,
-        "BR": 2,
-        "IL": 1
-      },
-      "sources": {
-        "(direct)": 15,
-        "github.com": 1
-      }
-    },
     "/PGF5001-Mecanica-Quantica-I/": {
       "views": 18,
       "sessions": 16,
@@ -188,8 +190,7 @@
       },
       "sources": {
         "(direct)": 12,
-        "github.com": 4,
-        "(not set)": 1
+        "github.com": 4
       }
     },
     "/SCE0602-Introducao-Ciencia-Da-Computacao-II/": {
@@ -272,6 +273,26 @@
         "(not set)": 1
       }
     },
+    "/IF4300214-Fisica-Experimental-IV/": {
+      "views": 16,
+      "sessions": 14,
+      "users": 14,
+      "clicks": 1,
+      "engagement_rate": 0.14285714285714285,
+      "countries": {
+        "US": 7,
+        "GB": 3,
+        "BR": 2,
+        "IL": 2,
+        "FR": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 13,
+        "(not set)": 1,
+        "github.com": 1
+      }
+    },
     "/SEL0608-Eletromagnetismo/": {
       "views": 16,
       "sessions": 16,
@@ -287,24 +308,6 @@
       },
       "sources": {
         "(direct)": 16
-      }
-    },
-    "/IF4300214-Fisica-Experimental-IV/": {
-      "views": 15,
-      "sessions": 13,
-      "users": 13,
-      "clicks": 1,
-      "engagement_rate": 0.15384615384615385,
-      "countries": {
-        "US": 7,
-        "GB": 3,
-        "BR": 2,
-        "IL": 2,
-        "FR": 1
-      },
-      "sources": {
-        "(direct)": 12,
-        "github.com": 1
       }
     },
     "/IF4302112-Fisica-Matematica-I/": {
@@ -450,7 +453,6 @@
       },
       "sources": {
         "(direct)": 11,
-        "(not set)": 1,
         "github.com": 1
       }
     },
@@ -543,6 +545,23 @@
         "(direct)": 12
       }
     },
+    "/SSC0570-Empreendedores-Em-Informatica/": {
+      "views": 13,
+      "sessions": 12,
+      "users": 12,
+      "clicks": 0,
+      "engagement_rate": 0.08333333333333333,
+      "countries": {
+        "US": 7,
+        "IL": 2,
+        "NL": 2,
+        "DE": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 12
+      }
+    },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
       "views": 12,
       "sessions": 10,
@@ -625,22 +644,6 @@
         "(direct)": 11
       }
     },
-    "/SSC0570-Empreendedores-Em-Informatica/": {
-      "views": 11,
-      "sessions": 10,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.1,
-      "countries": {
-        "US": 6,
-        "IL": 2,
-        "NL": 2,
-        "DE": 1
-      },
-      "sources": {
-        "(direct)": 10
-      }
-    },
     "/PGF5002-Mecanica-Quantica-II/software.html": {
       "views": 10,
       "sessions": 6,
@@ -681,6 +684,25 @@
         "(direct)": 1
       }
     },
+    "/SCE0616-Sistemas-Computacionais-Distribuidos/": {
+      "views": 10,
+      "sessions": 10,
+      "users": 10,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 4,
+        "NL": 2,
+        "DE": 1,
+        "IL": 1,
+        "RU": 1,
+        "SG": 1
+      },
+      "sources": {
+        "(direct)": 10,
+        "(not set)": 1
+      }
+    },
     "/PGF5002-Mecanica-Quantica-II/index.html": {
       "views": 9,
       "sessions": 7,
@@ -707,38 +729,38 @@
         "github.com": 5
       }
     },
-    "/SCE0616-Sistemas-Computacionais-Distribuidos/": {
+    "/SHS0416-Sistema-de-Gestao-Ambiental/": {
       "views": 9,
       "sessions": 9,
       "users": 9,
       "clicks": 0,
       "engagement_rate": 0.0,
       "countries": {
-        "US": 4,
+        "US": 3,
+        "IL": 2,
         "NL": 2,
-        "DE": 1,
-        "IL": 1,
-        "SG": 1
+        "RU": 2
       },
       "sources": {
         "(direct)": 9
       }
     },
     "/SMA0333-Calculo-III/": {
-      "views": 8,
-      "sessions": 8,
-      "users": 8,
+      "views": 9,
+      "sessions": 9,
+      "users": 9,
       "clicks": 0,
-      "engagement_rate": 0.125,
+      "engagement_rate": 0.1111111111111111,
       "countries": {
         "US": 3,
         "NL": 2,
+        "AM": 1,
         "CA": 1,
         "HU": 1,
         "IL": 1
       },
       "sources": {
-        "(direct)": 8
+        "(direct)": 9
       }
     },
     "/SSC0748-Redes-Moveis/": {
@@ -765,21 +787,6 @@
       },
       "sources": {
         "github.com": 1
-      }
-    },
-    "/SHS0416-Sistema-de-Gestao-Ambiental/": {
-      "views": 7,
-      "sessions": 7,
-      "users": 7,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 3,
-        "IL": 2,
-        "NL": 2
-      },
-      "sources": {
-        "(direct)": 7
       }
     },
     "/SSC0144-Redes-De-Alto-Desempenho/": {

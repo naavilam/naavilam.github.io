@@ -5,10 +5,10 @@
   "metrics_by_path": {
     "/": {
       "views": 14,
-      "sessions": 14,
-      "users": 13,
+      "sessions": 15,
+      "users": 14,
       "clicks": 0,
-      "engagement_rate": 0.14285714285714285,
+      "engagement_rate": 0.13333333333333333,
       "countries": {
         "US": 6,
         "BR": 3,
@@ -18,7 +18,8 @@
         "PT": 1
       },
       "sources": {
-        "(direct)": 14
+        "(direct)": 14,
+        "(not set)": 1
       }
     }
   }
