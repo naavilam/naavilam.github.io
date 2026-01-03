@@ -28,6 +28,7 @@ jobs:
   audit_infra:
     if: ${{ github.event_name == 'schedule' || inputs.run_infra }}
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -50,13 +51,15 @@ jobs:
       - name: Upload reports artifact (infra)
         uses: actions/upload-artifact@v4
         with:
-          name: reports
+          name: reports-infra
           path: reports
+          if-no-files-found: warn
 
   audit_ga:
     if: ${{ github.event_name == 'schedule' || inputs.run_ga }}
     runs-on: ubuntu-latest
     continue-on-error: true
+
     steps:
       - uses: actions/checkout@v4
 
@@ -78,28 +81,31 @@ jobs:
           GA_PROPERTY_ID_HIGH_ENERGY_PHYSICS_RESEARCH: ${{ vars.GA_PROPERTY_ID_HIGH_ENERGY_PHYSICS_RESEARCH }}
           GA_PROPERTY_ID_NAAVILAM: ${{ vars.GA_PROPERTY_ID_NAAVILAM }}
           GA_PROPERTY_ID_QUANTUM_MATERIALS_SIMULATION_RESEARCH: ${{ vars.GA_PROPERTY_ID_QUANTUM_MATERIALS_SIMULATION_RESEARCH }}
-          GA_PROPERTY_ID_QUANTUM_COMPUTING_RESEARCH: ${{ vars.GA_PROPERTY_ID_QUANTUM_MATERIALS_SIMULATION_RESEARCH }} #FIX
+          GA_PROPERTY_ID_QUANTUM_COMPUTING_RESEARCH: ${{ vars.GA_PROPERTY_ID_QUANTUM_MATERIALS_SIMULATION_RESEARCH }} # intencional no momento
         run: |
           python .github/scripts/ga_audit_usage.py
 
       - name: Upload reports artifact (ga)
         uses: actions/upload-artifact@v4
         with:
-          name: reports
+          name: reports-ga
           path: reports
+          if-no-files-found: warn
 
   commit_reports:
     if: ${{ always() && (needs.audit_infra.result != 'skipped' || needs.audit_ga.result != 'skipped') }}
     runs-on: ubuntu-latest
     needs: [audit_infra, audit_ga]
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download reports artifact
+      - name: Download all reports artifacts
         uses: actions/download-artifact@v4
         with:
-          name: reports
+          pattern: reports-*
           path: reports
+          merge-multiple: true
 
       - name: Commit reports
         run: |
