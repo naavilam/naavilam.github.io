@@ -143,3 +143,5 @@ x-dns-prefetch-control: on                        # on or off. Completely opt ou
 fbappid:                                          # Facebook OpenGraph
 google-tag: G-84QRY8MHQ0                          # Google Analytics                            
 
+include:
+  - reports
