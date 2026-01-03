@@ -1,10 +1,4 @@
 # =======================================#
-# -----------DUMBARTON THEME-------------#
-# ----------------By: Tyler Butler-------#
-#-----------------https://tbutler.org----#
-#========================================#
-
-# =======================================#
 # -----------BASE SETTINGS---------------#
 #========================================#
 
@@ -23,15 +17,15 @@ author: Nara Avila
 profile_image: /assets/img/avatar/avatar.png
 occupation: M. Sc. Candidate
 snippet:
-# twitter: tbutler0x90
+# twitter: 
 github: naavilam
 linkedin: naraavila
-# stackoverflow: '12935605'
-# website: https://naa.org
+# stackoverflow: 
+# website: 
 codepen: 
 medium: 
 email: nara.moraes@usp.br
-# keybase: tbutler320
+# keybase:
 audit: audit
 pgp: 
 ctftime: 
@@ -40,7 +34,7 @@ phonenumber:
 #========================================#
 # --------- UI THEMES -------------------#
 #========================================#
-ui_theme: abyss                                 # Create your own theme by setting options in _data/themes.yml
+ui_theme: dark                                 # Create your own theme by setting options in _data/themes.yml
 
 
 # =======================================#
