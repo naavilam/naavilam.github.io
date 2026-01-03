@@ -704,12 +704,16 @@ description: Internal repository report
 
     orgSelect.addEventListener("change", () => loadOrg(orgSelect.value));
 
-    async function postJSON(url, payload) {
+    async function postJSON(url, payload, pin) {
         const r = await fetch(url, {
             method: "POST",
-            headers: { "content-type": "application/json" },
+            headers: {
+                "content-type": "application/json",
+                "x-operator-pin": pin,
+            },
             body: JSON.stringify(payload),
         });
+
         const text = await r.text();
         let data = null;
         try { data = text ? JSON.parse(text) : null; } catch (_) { }
