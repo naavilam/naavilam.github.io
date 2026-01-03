@@ -268,8 +268,21 @@ description: Internal repository report
 </div>
 
 <script>
+
+    const DISPATCH_ENDPOINTS = {
+        "academic-codex": "https://5nawhzruh7.execute-api.us-east-2.amazonaws.com/github/dispatch/academic-codex",
+        "high-energy": "https://5nawhzruh7.execute-api.us-east-2.amazonaws.com/github/dispatch/high-energy",
+        "quantum-computing": "https://5nawhzruh7.execute-api.us-east-2.amazonaws.com/github/dispatch/quantum-computing",
+        "quantum-materials": "https://5nawhzruh7.execute-api.us-east-2.amazonaws.com/github/dispatch/quantum-materials",
+    };
+
+    function getDispatchURL() {
+        const target = orgSelect?.value; // <- seu seletor atual
+        const url = DISPATCH_ENDPOINTS[target];
+        if (!url) throw new Error(`No dispatch URL for target=${target}`);
+        return url;
+    }
     const INDEX_URL = "{{ '/reports/index.json' | relative_url }}";
-    const DISPATCH_API = "{{ '/api/github/dispatch' | relative_url }}";
 
     const tbody = document.getElementById("tbody");
     const thead = document.getElementById("thead");
