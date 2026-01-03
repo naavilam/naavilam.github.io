@@ -745,7 +745,7 @@ description: Internal repository report
                 }
             };
 
-            const out = await postJSON(DISPATCH_API, payload);
+            const out = await postJSON(getDispatchURL(), payload);
             window.resetOperatorPin?.();
             setBusy(false, out?.message || "ok: audit dispatched");
         } catch (e) {
