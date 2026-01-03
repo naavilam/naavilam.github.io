@@ -704,13 +704,13 @@ description: Internal repository report
 
     orgSelect.addEventListener("change", () => loadOrg(orgSelect.value));
 
-    async function postJSON(url, payload, pin) {
+    async function postJSON(url, payload, auditKey) {
+        const headers = { "content-type": "application/json" };
+        if (auditKey) headers["x-audit-key"] = auditKey;
+
         const r = await fetch(url, {
             method: "POST",
-            headers: {
-                "content-type": "application/json",
-                "x-operator-pin": pin,
-            },
+            headers,
             body: JSON.stringify(payload),
         });
 
@@ -749,7 +749,9 @@ description: Internal repository report
                 }
             };
 
-            const out = await postJSON(getDispatchURL(), payload);
+
+            pin = window.getOperatorPin?.() || "";
+            const out = await postJSON(getDispatchURL(), payload, pin);
             window.resetOperatorPin?.();
             setBusy(false, out?.message || "ok: audit dispatched");
         } catch (e) {
@@ -782,7 +784,8 @@ description: Internal repository report
                 pin
             };
 
-            const out = await postJSON(getDispatchURL(), payload);
+            pin = window.getOperatorPin?.() || "";
+            const out = await postJSON(getDispatchURL(), payload, pin);
             window.resetOperatorPin?.();
             setBusy(false, out?.message || `ok: inicializa-repos dispatched for ${org}`);
         } catch (e) {
