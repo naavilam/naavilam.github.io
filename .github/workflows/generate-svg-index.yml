@@ -39,5 +39,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore: update svg index"
+          git commit -m "Update files"
           git push
