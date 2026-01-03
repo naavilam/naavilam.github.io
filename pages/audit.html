@@ -750,8 +750,7 @@ description: Internal repository report
             };
 
 
-            pin = window.getOperatorPin?.() || "";
-            const out = await postJSON(getDispatchURL(), payload, pin);
+            const out = await postJSON(getDispatchURL(), payload, window.getOperatorPin?.() || "");
             window.resetOperatorPin?.();
             setBusy(false, out?.message || "ok: audit dispatched");
         } catch (e) {
@@ -784,8 +783,7 @@ description: Internal repository report
                 pin
             };
 
-            pin = window.getOperatorPin?.() || "";
-            const out = await postJSON(getDispatchURL(), payload, pin);
+            const out = await postJSON(getDispatchURL(), payload, window.getOperatorPin?.() || "");
             window.resetOperatorPin?.();
             setBusy(false, out?.message || `ok: inicializa-repos dispatched for ${org}`);
         } catch (e) {
