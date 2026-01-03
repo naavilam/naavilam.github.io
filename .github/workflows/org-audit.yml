@@ -22,14 +22,10 @@ permissions:
   contents: write
 
 env:
-  # default (usado no schedule, e no dispatch se orgs input vier vazio)
   ORGS: academic-codex,quantum-materials-simulation-research,high-energy-physics-research,quantum-computing-research
 
 jobs:
   audit_infra:
-    # roda se:
-    # - é schedule, ou
-    # - é dispatch com run_infra=true
     if: ${{ github.event_name == 'schedule' || inputs.run_infra }}
     runs-on: ubuntu-latest
     steps:
@@ -58,12 +54,8 @@ jobs:
           path: reports
 
   audit_ga:
-    # roda se:
-    # - é schedule (sempre roda GA no schedule), ou
-    # - é dispatch com run_ga=true
     if: ${{ github.event_name == 'schedule' || inputs.run_ga }}
     runs-on: ubuntu-latest
-    # opcional: se você quiser garantir que infra rode antes quando ambos selecionados
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
@@ -97,7 +89,6 @@ jobs:
           path: reports
 
   commit_reports:
-    # só faz commit quando pelo menos um job rodou
     if: ${{ always() && (needs.audit_infra.result != 'skipped' || needs.audit_ga.result != 'skipped') }}
     runs-on: ubuntu-latest
     needs: [audit_infra, audit_ga]
