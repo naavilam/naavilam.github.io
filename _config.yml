@@ -142,6 +142,3 @@ detectphone: yes                                  # yes or no. Disable automatic
 x-dns-prefetch-control: on                        # on or off. Completely opt out of DNS prefetching by setting to "off"
 fbappid:                                          # Facebook OpenGraph
 google-tag: G-84QRY8MHQ0                          # Google Analytics                            
-
-include:
-  - reports
