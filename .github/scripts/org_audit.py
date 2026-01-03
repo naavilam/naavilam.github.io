@@ -15,9 +15,7 @@ if not ORGS_RAW:
 if not TOKEN:
     raise SystemExit("Missing env GH_TOKEN")
 
-ORGS = [o.strip() for o in ORGS_RAW.split(",") if o.strip()]
-if not ORGS:
-    raise SystemExit("ORGS is empty after parsing")
+SLUGS = [o.strip() for o in ORGS_RAW.split(",") if o.strip()]
 
 API = "https://api.github.com"
 HEADERS = {
@@ -28,6 +26,13 @@ HEADERS = {
 
 REPORT_DIR = "reports"
 os.makedirs(REPORT_DIR, exist_ok=True)
+
+ORG_MAP = {
+    "academic-codex": "academic-codex",
+    "high-energy": "high-energy-physics-research",
+    "quantum-computing": "quantum-computing-research",
+    "quantum-materials": "quantum-materials-simulation-research",
+}
 
 
 def gh_get(url: str, params: Optional[dict] = None) -> requests.Response:
@@ -296,13 +301,16 @@ def write_reports_for_org(org: str, rows: List[Dict[str, Any]]) -> None:
 
 
 def main():
-    print(f"[audit] orgs={ORGS}")
+    print(f"[audit] orgs={SLUGS}")
 
     all_rows: List[Dict[str, Any]] = []
-    for org in ORGS:
+    for slug in SLUGS:
         try:
+            org = ORG_MAP.get(slug, slug)  # fallback: slug == org real
             rows = audit_one_org(org)
-            write_reports_for_org(org, rows)
+
+            # grava em reports/<slug>/... mas mantém "org real" no conteúdo
+            write_reports_for_org(slug, rows)
             all_rows.extend(rows)
         except Exception as e:
             # não derruba tudo se uma org falhar
@@ -311,7 +319,7 @@ def main():
     # índice geral (útil pro audit.html ter dropdown depois)
     index_path = os.path.join(REPORT_DIR, "index.json")
     with open(index_path, "w", encoding="utf-8") as f:
-        json.dump({"orgs": ORGS, "generated_at": datetime.utcnow().isoformat() + "Z"}, f, indent=2)
+        json.dump({"orgs": SLUGS, "generated_at": datetime.utcnow().isoformat() + "Z"}, f, indent=2)
     print(f"[ok] wrote {index_path}")
 
     # CSV geral consolidado (flat)

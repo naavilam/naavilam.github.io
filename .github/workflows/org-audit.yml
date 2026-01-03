@@ -22,7 +22,7 @@ permissions:
   contents: write
 
 env:
-  ORGS: academic-codex,quantum-materials-simulation-research,high-energy-physics-research,quantum-computing-research
+  ORGS: academic-codex,quantum-materials,high-energy,quantum-computing
 
 jobs:
   audit_infra:
