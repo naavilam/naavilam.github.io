@@ -64,6 +64,25 @@
         "github.com": 5
       }
     },
+    "/TEST0001-Disciplina-Fantasma/": {
+      "views": 21,
+      "sessions": 18,
+      "users": 17,
+      "clicks": 0,
+      "engagement_rate": 0.16666666666666666,
+      "countries": {
+        "US": 9,
+        "NL": 5,
+        "DE": 3,
+        "BR": 2,
+        "ID": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 16,
+        "github.com": 2
+      }
+    },
     "/IF4302305-Mecanica-Classica-I/": {
       "views": 20,
       "sessions": 18,
@@ -100,24 +119,6 @@
       "sources": {
         "(direct)": 13,
         "github.com": 3
-      }
-    },
-    "/TEST0001-Disciplina-Fantasma/": {
-      "views": 20,
-      "sessions": 17,
-      "users": 16,
-      "clicks": 0,
-      "engagement_rate": 0.17647058823529413,
-      "countries": {
-        "US": 9,
-        "NL": 5,
-        "DE": 3,
-        "BR": 2,
-        "ID": 1
-      },
-      "sources": {
-        "(direct)": 15,
-        "github.com": 2
       }
     },
     "/IF4302112-Fisica-II/": {
@@ -251,6 +252,24 @@
         "github.com": 4
       }
     },
+    "/SEL0608-Eletromagnetismo/": {
+      "views": 17,
+      "sessions": 17,
+      "users": 17,
+      "clicks": 0,
+      "engagement_rate": 0.11764705882352941,
+      "countries": {
+        "US": 8,
+        "NL": 4,
+        "AU": 2,
+        "AM": 1,
+        "AT": 1,
+        "IR": 1
+      },
+      "sources": {
+        "(direct)": 17
+      }
+    },
     "/SME0600-Calculo-Numerico-I/": {
       "views": 17,
       "sessions": 15,
@@ -329,23 +348,6 @@
       },
       "sources": {
         "(direct)": 15
-      }
-    },
-    "/SEL0608-Eletromagnetismo/": {
-      "views": 16,
-      "sessions": 16,
-      "users": 16,
-      "clicks": 0,
-      "engagement_rate": 0.125,
-      "countries": {
-        "US": 8,
-        "NL": 4,
-        "AU": 2,
-        "AT": 1,
-        "IR": 1
-      },
-      "sources": {
-        "(direct)": 16
       }
     },
     "/IF4302112-Fisica-Matematica-I/": {
@@ -476,6 +478,25 @@
         "github.com": 1
       }
     },
+    "/SEL0617-Fundamentos-de-Microeletronica/": {
+      "views": 14,
+      "sessions": 13,
+      "users": 13,
+      "clicks": 0,
+      "engagement_rate": 0.07692307692307693,
+      "countries": {
+        "US": 7,
+        "BR": 2,
+        "NL": 2,
+        "AT": 1,
+        "GB": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 13,
+        "(not set)": 1
+      }
+    },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
       "views": 13,
       "sessions": 11,
@@ -567,24 +588,6 @@
       },
       "sources": {
         "(direct)": 11
-      }
-    },
-    "/SEL0617-Fundamentos-de-Microeletronica/": {
-      "views": 13,
-      "sessions": 13,
-      "users": 13,
-      "clicks": 0,
-      "engagement_rate": 0.07692307692307693,
-      "countries": {
-        "US": 7,
-        "BR": 2,
-        "NL": 2,
-        "AT": 1,
-        "GB": 1
-      },
-      "sources": {
-        "(direct)": 12,
-        "(not set)": 1
       }
     },
     "/SSC0570-Empreendedores-Em-Informatica/": {
