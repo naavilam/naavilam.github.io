@@ -274,6 +274,7 @@ description: Internal repository report
         "high-energy": "https://5nawhzruh7.execute-api.us-east-2.amazonaws.com/github/dispatch/high-energy",
         "quantum-computing": "https://5nawhzruh7.execute-api.us-east-2.amazonaws.com/github/dispatch/quantum-computing",
         "quantum-materials": "https://5nawhzruh7.execute-api.us-east-2.amazonaws.com/github/dispatch/quantum-materials",
+        "naavilam": "https://5nawhzruh7.execute-api.us-east-2.amazonaws.com/github/dispatch/naavilam"
     };
 
     function getDispatchURL() {
@@ -748,7 +749,7 @@ description: Internal repository report
             };
 
 
-            const out = await postJSON(getDispatchURL(), payload, window.getOperatorPin?.() || "");
+            const out = await postJSON(DISPATCH_ENDPOINTS["naavilam"], payload, window.getOperatorPin?.() || "");
             window.resetOperatorPin?.();
             setBusy(false, out?.message || "ok: audit dispatched");
         } catch (e) {
