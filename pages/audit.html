@@ -775,8 +775,6 @@ description: Internal repository report
 
             const payload = {
                 action: "workflow_dispatch",
-                org,
-                repo: ".github",
                 workflow: "inicializa-repos.yml",
                 ref: "main",
                 inputs: { mode: "all", org, repo: "" },
