@@ -738,9 +738,7 @@ description: Internal repository report
 
             const payload = {
                 action: "workflow_dispatch",
-                org: "naavilam",
-                repo: "hub",
-                workflow: "audit.yml",
+                workflow: "org-audit.yml",
                 ref: "main",
                 inputs: {
                     run_infra,
@@ -776,9 +774,7 @@ description: Internal repository report
             const payload = {
                 action: "workflow_dispatch",
                 workflow: "inicializa-repos.yml",
-                ref: "main",
-                inputs: { mode: "all", org, repo: "" },
-                pin
+                ref: "main"
             };
 
             const out = await postJSON(getDispatchURL(), payload, window.getOperatorPin?.() || "");
