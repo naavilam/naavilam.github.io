@@ -65,21 +65,21 @@
       }
     },
     "/TEST0001-Disciplina-Fantasma/": {
-      "views": 21,
-      "sessions": 18,
-      "users": 17,
+      "views": 22,
+      "sessions": 19,
+      "users": 18,
       "clicks": 0,
-      "engagement_rate": 0.16666666666666666,
+      "engagement_rate": 0.15789473684210525,
       "countries": {
         "US": 9,
         "NL": 5,
         "DE": 3,
         "BR": 2,
-        "ID": 1,
-        "RU": 1
+        "RU": 2,
+        "ID": 1
       },
       "sources": {
-        "(direct)": 16,
+        "(direct)": 17,
         "github.com": 2
       }
     },
@@ -214,6 +214,25 @@
         "github.com": 1
       }
     },
+    "/SEL0608-Eletromagnetismo/": {
+      "views": 18,
+      "sessions": 18,
+      "users": 18,
+      "clicks": 0,
+      "engagement_rate": 0.1111111111111111,
+      "countries": {
+        "US": 8,
+        "NL": 4,
+        "AU": 2,
+        "AM": 1,
+        "AT": 1,
+        "IR": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 18
+      }
+    },
     "/SEL0622-Projeto-de-Circuitos-Integrados-Digitais-II/": {
       "views": 18,
       "sessions": 15,
@@ -229,8 +248,7 @@
         "RU": 1
       },
       "sources": {
-        "(direct)": 15,
-        "(not set)": 1
+        "(direct)": 15
       }
     },
     "/IF4302111-Fisica-I/": {
@@ -250,24 +268,6 @@
       "sources": {
         "(direct)": 8,
         "github.com": 4
-      }
-    },
-    "/SEL0608-Eletromagnetismo/": {
-      "views": 17,
-      "sessions": 17,
-      "users": 17,
-      "clicks": 0,
-      "engagement_rate": 0.11764705882352941,
-      "countries": {
-        "US": 8,
-        "NL": 4,
-        "AU": 2,
-        "AM": 1,
-        "AT": 1,
-        "IR": 1
-      },
-      "sources": {
-        "(direct)": 17
       }
     },
     "/SME0600-Calculo-Numerico-I/": {
@@ -327,8 +327,7 @@
         "SG": 1
       },
       "sources": {
-        "(direct)": 14,
-        "(not set)": 1
+        "(direct)": 14
       }
     },
     "/SEL0606-Laboratorio-de-Sistemas-Digitais/": {
@@ -493,8 +492,7 @@
         "RU": 1
       },
       "sources": {
-        "(direct)": 13,
-        "(not set)": 1
+        "(direct)": 13
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
@@ -513,8 +511,7 @@
         "RU": 1
       },
       "sources": {
-        "(direct)": 11,
-        "(not set)": 1
+        "(direct)": 11
       }
     },
     "/IF4302307-Fisica-Matematica-II/": {
@@ -622,8 +619,7 @@
         "ZA": 1
       },
       "sources": {
-        "(direct)": 12,
-        "(not set)": 1
+        "(direct)": 12
       }
     },
     "/PGF5005-Mecanica-Classica/": {
@@ -711,8 +707,7 @@
         "SG": 1
       },
       "sources": {
-        "(direct)": 10,
-        "(not set)": 1
+        "(direct)": 10
       }
     },
     "/PGF5002-Mecanica-Quantica-II/index.html": {
