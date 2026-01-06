@@ -283,7 +283,10 @@ description: Internal repository report
         if (!url) throw new Error(`No dispatch URL for target=${target}`);
         return url;
     }
-    const INDEX_URL = "{{ '/reports/index.json' | relative_url }}";
+    const REPORTS_BRANCH = "reports";
+    const REPORTS_BASE = `https://raw.githubusercontent.com/{{ site.github.repository_nwo }}/${REPORTS_BRANCH}/reports`;
+
+    const INDEX_URL = `${REPORTS_BASE}/index.json`;
 
     const tbody = document.getElementById("tbody");
     const thead = document.getElementById("thead");
@@ -607,6 +610,9 @@ description: Internal repository report
 
         const INFRA_URL = `{{ '/reports/' | relative_url }}${org}/org-audit.json`;
         const GA_URL = `{{ '/reports/' | relative_url }}${org}/ga-usage.json`;
+
+        const INFRA_URL = `${REPORTS_BASE}/${org}/org-audit.json`;
+        const GA_URL = `${REPORTS_BASE}/${org}/ga-usage.json`;
 
         tbody.innerHTML = `<tr><td colspan="9">loading ${org}…</td></tr>`;
         q.value = "";
