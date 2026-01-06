@@ -234,6 +234,7 @@ layout: default
                 data-area="{{ courses.area | escape }}"
                 data-level="{{ courses.level | default: 'undergrad' | downcase | strip }}">
                 {{ courses.id }} {{ courses.Course }}
+                {% if courses.status and courses.status != "completed" %}*{% endif %}
               </a>
               {% endfor %}
             </div>
