@@ -1,0 +1,564 @@
+- Course: Formação do Cientista Empreendedor
+  id: DPG5011
+  level: graduate
+  School: EESC/USP
+  area: Entrepreneurship
+  link: https://academic-codex.github.io/DPG5011-Formacao-do-Cientista-Empreendedor
+- Course: Formação do Cientista Empreendedor II
+  id: EAP5054
+  level: graduate
+  School: EESC/USP
+  area: Entrepreneurship
+  link: https://academic-codex.github.io/EAP5054-Formacao-do-Cientista-Empreendedor-II
+- Course: Física I
+  id: FCM0101
+  level: undergrad
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/FCM0101-Fisica-I
+- Course: Física II
+  id: FCM0102
+  level: undergrad
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/FCM0102-Fisica-II
+- Course: Laboratório de Física Geral I
+  id: FFI0180
+  level: undergrad
+  School: IFSC/USP
+  area: Physics
+  link: https://academic-codex.github.io/FFI0180-Laboratorio-de-Fisica-Geral-I
+- Course: Laboratório de Física Geral II
+  id: FFI0181
+  level: undergrad
+  School: IFSC/USP
+  area: Physics
+  link: https://academic-codex.github.io/FFI0181-Laboratorio-de-Fisica-Geral-II
+- Course: Física Experimental IV
+  id: IF4300214
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4300214-Fisica-Experimental-IV
+- Course: Física I
+  id: IF4302111
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302111-Fisica-I
+- Course: Física II
+  id: IF4302112
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302112-Fisica-II
+- Course: Física Matemática I
+  id: IF4302112-FM1
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302112-Fisica-Matematica-I
+- Course: Física III
+  id: IF4302211
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302211-Fisica-III
+- Course: Física IV
+  id: IF4302212
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302212-Fisica-IV
+- Course: Mecânica Clássica I
+  id: IF4302305
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302305-Mecanica-Classica-I
+- Course: Mecânica Clássica II
+  id: IF4302306
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302306-Mecanica-Classica-II
+- Course: Física Matemática II
+  id: IF4302307
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302307-Fisica-Matematica-II
+- Course: Mecânica Quântica I
+  id: IF4302403
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302403-Mecanica-Quantica-I
+- Course: Mecânica Quântica II
+  id: IF4302404
+  level: undergrad
+  School: IF/USP
+  area: Physics
+  link: https://academic-codex.github.io/IF4302404-Mecanica-Quantica-II
+- Course: Complexidade Computacional
+  id: MAC5722
+  level: graduate
+  School: EESC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/MAC5722-Complexidade-Computacional
+- Course: Deep Learning
+  id: MAC5921
+  level: graduate
+  School: EESC/USP
+  area: Artificial Intelligence
+  link: https://academic-codex.github.io/MAC5921-Deep-Learning
+- Course: Fundamentos de Estatística e Machine Learning
+  id: MAE5911
+  level: graduate
+  School: EESC/USP
+  area: Statistics
+  link: https://academic-codex.github.io/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning
+- Course: Álgebra Linear
+  id: MAT5730
+  level: graduate
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/MAT5730-Algebra-Linear
+- Course: Métodos Quantitativos
+  id: MCKZ
+  level: graduate
+  School: Mackenzie
+  area: Statistics
+  link: https://academic-codex.github.io/MCKZ-Metodos-Quantitativos
+- Course: Mecânica Quântica I
+  id: PGF5001
+  level: graduate
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/PGF5001-Mecanica-Quantica-I
+- Course: Mecânica Quântica II
+  id: PGF5002
+  level: graduate
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/PGF5002-Mecanica-Quantica-II
+- Course: Eletrodinâmica
+  id: PGF5003
+  level: graduate
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/PGF5003-Eletrodinamica
+- Course: Mecânica Clássica
+  id: PGF5005
+  level: graduate
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/PGF5005-Mecanica-Classica
+- Course: Mecânica Estatística
+  id: PGF5006
+  level: graduate
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/PGF5006-Mecanica-Estatistica
+- Course: Introdução à Teoria Quântica de Campos I
+  id: PGF5107
+  level: graduate
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I
+- Course: Teoria de Grupos Aplicada a Sólidos e Moléculas
+  id: PGF5261
+  level: graduate
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas
+- Course: Teoria de Muitos Corpos e Matéria Condensada
+  id: PGF5295
+  level: graduate
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada
+- Course: Humanidades e Ciências Sociais
+  id: SAP0679
+  level: undergrad
+  School: EESC/USP
+  area: Communication
+  link: https://academic-codex.github.io/SAP0679-Humanidades-e-Ciencias-Sociais
+- Course: Visão Computacional em Robótica
+  id: SCC0635
+  level: undergrad
+  School: ICMC/USP
+  area: Artificial Intelligence
+  link: https://academic-codex.github.io/SCC0635-Visao-Computacional-em-Robotica
+- Course: Computação Gráfica
+  id: SCC0650
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCC0650-Computacao-Grafica
+- Course: Hipermídia e Multimídia
+  id: SCC0661
+  level: undergrad
+  School: ICMC/USP
+  area: Communication
+  link: https://academic-codex.github.io/SCC0661-Hipermidia-e-Multimidia
+- Course: Algoritmos Avançados
+  id: SCE0245
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0245-Algoritmos-Avancados
+- Course: Laboratório de Algoritmos Avançados
+  id: SCE0294
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0294-Laboratorio-de-Algoritmos-Avancados
+- Course: Introdução à Ciência da Computação I
+  id: SCE0601
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0601-Introducao-a-Ciencia-da-Computacao-I
+- Course: Laboratório de Introdução à Ciência da Computação I
+  id: SCE0601-LAB
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I
+- Course: Introdução à Ciência da Computação II
+  id: SCE0602
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0602-Introducao-Ciencia-Da-Computacao-II
+- Course: Algoritmos e Estrutura de Dados I
+  id: SCE0603
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0603-Algoritmos-e-Estrutura-de-Dados-I
+- Course: Teoria da Computação e Compiladores
+  id: SCE0605
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0605-Teoria-da-Computacao-e-Compiladores
+- Course: Algoritmos e Estrutura de Dados II
+  id: SCE0606
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0606-Algoritmos-e-Estrutura-de-Dados-II
+- Course: Sistemas Operacionais I
+  id: SCE0609
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0609-Sistemas-Operacionais-I
+- Course: Programação Orientada a Objetos
+  id: SCE0610
+  level: undergrad
+  School: ICMC/USP
+  area: Software Engineering
+  link: https://academic-codex.github.io/SCE0610-Programacao-Orientada-a-Objetos
+- Course: Engenharia de Software
+  id: SCE0611
+  level: undergrad
+  School: ICMC/USP
+  area: Software Engineering
+  link: https://academic-codex.github.io/SCE0611-Engenharia-de-Software
+- Course: Arquitetura de Computadores
+  id: SCE0613
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0613-Arquitetura-de-Computadores
+- Course: Inteligência Artificial
+  id: SCE0614
+  level: undergrad
+  School: ICMC/USP
+  area: Artificial Intelligence
+  link: https://academic-codex.github.io/SCE0614-Inteligencia-Artificial
+- Course: Banco de Dados
+  id: SCE0615
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0615-Banco-de-Dados
+- Course: Sistemas Computacionais Distribuídos
+  id: SCE0616
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0616-Sistemas-Computacionais-Distribuidos
+- Course: Redes de Computadores
+  id: SCE0617
+  level: undergrad
+  School: ICMC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SCE0617-Redes-de-Computadores
+- Course: Análise e Projeto Orientado a Objetos
+  id: SCE0620
+  level: undergrad
+  School: ICMC/USP
+  area: Software Engineering
+  link: https://academic-codex.github.io/SCE0620-Analise-e-Projeto-Orientado-a-Objeto
+- Course: Antenas
+  id: SEL0344
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0344-Antenas
+- Course: Comunicações Ópticas
+  id: SEL0366
+  level: undergrad
+  School: EESC/USP
+  area: Communication
+  link: https://academic-codex.github.io/SEL0366-Comunicacoes-Opticas
+- Course: Materiais Elétricos
+  id: SEL0601
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0601-Materiais-Eletricos
+- Course: Circuitos Elétricos
+  id: SEL0602
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0602-Circuitos-Eletricos
+- Course: Sinais e Sistemas
+  id: SEL0604
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0604-Sinais-e-Sistemas
+- Course: Laboratório de Sistemas Digitais
+  id: SEL0606
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0606-Laboratorio-de-Sistemas-Digitais
+- Course: Fundamentos de Semicondutores
+  id: SEL0607
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0607-Fundamentos-de-Semicondutores
+- Course: Organização de Computadores Digitais I
+  id: SEL0607
+  level: undergrad
+  School: EESC/USP
+  area: Computer Engineering
+  link: https://academic-codex.github.io/SEL0607-Organizacao-de-Computadores-Digitais-I
+- Course: Eletromagnetismo
+  id: SEL0608
+  level: undergrad
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/SEL0608-Eletromagnetismo
+- Course: Circuitos Eletrônicos I
+  id: SEL0609
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0609-Circuitos-Eletronicos-I
+- Course: Laboratório de Circuitos Eletrônicos
+  id: SEL0610
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0610-Laboratorio-de-Circuitos-Eletronicos
+- Course: Fundamentos de Controle
+  id: SEL0611
+  level: undergrad
+  School: EESC/USP
+  area: Control Engineering
+  link: https://academic-codex.github.io/SEL0611-Fundamentos-de-Controle
+- Course: Ondas Eletromagnéticas
+  id: SEL0612
+  level: undergrad
+  School: EESC/USP
+  area: Physics
+  link: https://academic-codex.github.io/SEL0612-Ondas-Eletromagneticas
+- Course: Microprocessadores e Aplicações
+  id: SEL0614
+  level: undergrad
+  School: EESC/USP
+  area: Computer Engineering
+  link: https://academic-codex.github.io/SEL0614-Microprocessadores-e-Aplicacoes
+- Course: Circuitos Eletrônicos II
+  id: SEL0615
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
+- Course: Processamento Digital de Sinais
+  id: SEL0615-PDS
+  level: undergrad
+  School: EESC/USP
+  area: Signal Processing
+  link: https://academic-codex.github.io/SEL0615-Processamento-Digital-de-Sinais
+- Course: Princípios de Comunicação
+  id: SEL0616
+  level: undergrad
+  School: EESC/USP
+  area: Communications Engineering
+  link: https://academic-codex.github.io/SEL0616-Principios-de-Comunicacao
+- Course: Fundamentos de Microeletrônica
+  id: SEL0617
+  level: undergrad
+  School: EESC/USP
+  area: Microelectronics
+  link: https://academic-codex.github.io/SEL0617-Fundamentos-de-Microeletronica
+- Course: Projeto de Circuitos Integrados Analógicos
+  id: SEL0618-A
+  level: undergrad
+  School: EESC/USP
+  area: Microelectronics
+  link: https://academic-codex.github.io/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos
+- Course: Projeto de Circuitos Integrados Digitais I
+  id: SEL0618-D1
+  level: undergrad
+  School: EESC/USP
+  area: Microelectronics
+  link: https://academic-codex.github.io/SEL0618-Projeto-de-Circuitos-Integrados-Digitais-I
+- Course: Comunicação Digital
+  id: SEL0619
+  level: undergrad
+  School: EESC/USP
+  area: Communications Engineering
+  link: https://academic-codex.github.io/SEL0619-Comunicacao-Digital
+- Course: Controle Digital
+  id: SEL0620
+  level: undergrad
+  School: EESC/USP
+  area: Control Engineering
+  link: https://academic-codex.github.io/SEL0620-Controle-Digital
+- Course: Projeto de Circuitos Integrados Digitais II
+  id: SEL0622
+  level: undergrad
+  School: EESC/USP
+  area: Microelectronics
+  link: https://academic-codex.github.io/SEL0622-Projeto-de-Circuitos-Integrados-Digitais-II
+- Course: Gestão e Organização
+  id: SEP0527
+  level: undergrad
+  School: EESC/USP
+  area: Management
+  link: https://academic-codex.github.io/SEP0527-Gestao-e-Organizacao
+- Course: Princípios de Economia
+  id: SEP0587
+  level: undergrad
+  School: EESC/USP
+  area: Economics
+  link: https://academic-codex.github.io/SEP0587-Principios-de-Economia
+- Course: Mecânica dos Sólidos
+  id: SET0623
+  level: undergrad
+  School: EESC/USP
+  area: Mechanical Engineering
+  link: https://academic-codex.github.io/SET0623-Mecanica-dos-Solidos
+- Course: Sistema de Gestão Ambiental
+  id: SHS0416
+  level: undergrad
+  School: EESC/USP
+  area: Environmental Engineering
+  link: https://academic-codex.github.io/SHS0416-Sistema-de-Gestao-Ambiental
+- Course: Fenômenos de Transporte
+  id: SHS0619
+  level: undergrad
+  School: EESC/USP
+  area: Mechanical Engineering
+  link: https://academic-codex.github.io/SHS0619-Fenomenos-de-Transporte
+- Course: Funções de Variáveis Complexas
+  id: SMA0111
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SMA0111-Funcoes-de-Variaveis-Complexas
+- Course: Álgebra Linear e Equações Diferenciais
+  id: SMA0182
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SMA0182-Algebra-Linear-e-Equacoes-Diferenciais
+- Course: Geometria Analítica
+  id: SMA0300
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SMA0300-Geometria-Analitica
+- Course: Cálculo I
+  id: SMA0301
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SMA0301-Calculo-I
+- Course: Cálculo II
+  id: SMA0332
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SMA0332-Calculo-II
+- Course: Cálculo III
+  id: SMA0333
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SMA0333-Calculo-III
+- Course: Estatística I
+  id: SME0320
+  level: undergrad
+  School: ICMC/USP
+  area: Statistics
+  link: https://academic-codex.github.io/SME0320-Estatistica-I
+- Course: Cálculo Numérico I
+  id: SME0600
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SME0600-Calculo-Numerico-I
+- Course: Cálculo Numérico II
+  id: SME0601
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SME0601-Calculo-Numerico-II
+- Course: Programação Matemática
+  id: SME0610
+  level: undergrad
+  School: ICMC/USP
+  area: Mathematics
+  link: https://academic-codex.github.io/SME0610-Programacao-Matematica
+- Course: Química Geral Experimental
+  id: SQM0405
+  level: undergrad
+  School: IQ/USP
+  area: Chemistry
+  link: https://academic-codex.github.io/SQM0405-Quimica-Geral-Experimental
+- Course: Redes de Alto Desempenho
+  id: SSC0144
+  level: undergrad
+  School: EESC/USP
+  area: Computer Science
+  link: https://academic-codex.github.io/SSC0144-Redes-de-Alto-Desempenho
+- Course: Empreendedores em Informática
+  id: SSC0570
+  level: undergrad
+  School: EESC/USP
+  area: Entrepreneurship
+  link: https://academic-codex.github.io/SSC0570-Empreendedores-Em-Informatica
+- Course: Avaliação de Desempenho
+  id: SSC0643
+  level: undergrad
+  School: EESC/USP
+  area: Software Engineering
+  link: https://academic-codex.github.io/SSC0643-Avaliacao-de-Desempenho
+- Course: Redes Móveis
+  id: SSC0748
+  level: undergrad
+  School: ICMC/USP
+  area: Communication
+  link: https://academic-codex.github.io/SSC0748-Redes-Moveis
