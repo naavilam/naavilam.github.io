@@ -105,6 +105,40 @@
   },
   {
     "org": "quantum-computing-research",
+    "name": "quantum-computing-research.github.io",
+    "full_name": "Quantum-Computing-Research/quantum-computing-research.github.io",
+    "url": "https://github.com/Quantum-Computing-Research/quantum-computing-research.github.io",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2026-01-01T17:39:40Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 0,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 0,
+    "total_files": 1,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "5345736187ad95e359e256e41a6829e8b4bee7e1",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 0,
+        "total_files": 1
+      }
+    ]
+  },
+  {
+    "org": "quantum-computing-research",
     "name": "quantum-error-mitigation",
     "full_name": "Quantum-Computing-Research/quantum-error-mitigation",
     "url": "https://github.com/Quantum-Computing-Research/quantum-error-mitigation",

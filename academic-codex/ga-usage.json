@@ -495,6 +495,19 @@
         "github.com": 3
       }
     },
+    "/PGF5005-Mecanica-Classica/research.html": {
+      "views": 16,
+      "sessions": 4,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.25,
+      "countries": {
+        "BR": 16
+      },
+      "sources": {
+        "github.com": 4
+      }
+    },
     "/SCE0601-Introducao-a-Ciencia-da-Computacao-I/": {
       "views": 16,
       "sessions": 15,
@@ -593,19 +606,6 @@
       "sources": {
         "(direct)": 11,
         "github.com": 3
-      }
-    },
-    "/PGF5005-Mecanica-Classica/research.html": {
-      "views": 15,
-      "sessions": 4,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.25,
-      "countries": {
-        "BR": 15
-      },
-      "sources": {
-        "github.com": 4
       }
     },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
@@ -962,6 +962,20 @@
         "github.com": 5
       }
     },
+    "/PGF5005-Mecanica-Classica/index.html": {
+      "views": 9,
+      "sessions": 5,
+      "users": 1,
+      "clicks": 2,
+      "engagement_rate": 0.2,
+      "countries": {
+        "BR": 9
+      },
+      "sources": {
+        "github.com": 5,
+        "(not set)": 1
+      }
+    },
     "/SSC0643-Avaliacao-de-Desempenho/": {
       "views": 9,
       "sessions": 10,
@@ -1047,19 +1061,6 @@
       },
       "sources": {
         "github.com": 6
-      }
-    },
-    "/PGF5005-Mecanica-Classica/index.html": {
-      "views": 8,
-      "sessions": 5,
-      "users": 1,
-      "clicks": 1,
-      "engagement_rate": 0.2,
-      "countries": {
-        "BR": 8
-      },
-      "sources": {
-        "github.com": 5
       }
     },
     "/SAP0679-Humanidades-e-Ciencias-Sociais/": {

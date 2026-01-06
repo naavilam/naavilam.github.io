@@ -1,6 +1,6 @@
-# Org Audit Report: quantum-materials-simulation-research
+# Org Audit Report: quantum-materials
 
-Generated: **2025-12-31 01:59 UTC**
+Generated: **2026-01-06 20:13 UTC**
 
 - Repositories: **5**
 - With README (any branch): **3/5**
