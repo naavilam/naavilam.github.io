@@ -92,7 +92,7 @@ jobs:
           path: reports
           if-no-files-found: warn
 
-    commit_reports:
+  commit_reports:
     if: ${{ always() && (needs.audit_infra.result != 'skipped' || needs.audit_ga.result != 'skipped') }}
     runs-on: ubuntu-latest
     needs: [audit_infra, audit_ga]
