@@ -134,7 +134,7 @@ jobs:
             -exec rm -rf {} +
 
           # agora copia o conteúdo novo para a RAIZ
-          rsync -a --delete "_reports_in/" "./"
+          rsync -a --delete --exclude '_reports_in/' "_reports_in/" "./"
 
           echo "== tree (reports branch) =="
           find . -maxdepth 3 -type f | sort || true
