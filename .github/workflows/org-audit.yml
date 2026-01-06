@@ -109,24 +109,26 @@ jobs:
           path: _reports_in
           merge-multiple: true
 
-      - name: Switch to reports branch (create if missing)
+      - name: Checkout reports branch
         shell: bash
         run: |
           set -euo pipefail
 
           git fetch origin reports || true
 
-          if git show-ref --verify --quiet refs/remotes/origin/reports; then
-            git checkout -B reports origin/reports
+          if git ls-remote --exit-code --heads origin reports >/dev/null 2>&1; then
+            git checkout reports
+            git pull --ff-only origin reports
           else
             git checkout --orphan reports
-            git rm -rf . || true
+            git rm -rf . >/dev/null 2>&1 || true
           fi
 
       - name: Sync reports to branch root
         shell: bash
         run: |
           set -euo pipefail
+
           # limpa tudo que estava na branch (pra remover arquivos antigos também)
           find . -mindepth 1 -maxdepth 1 \
             ! -name ".git" \
@@ -143,6 +145,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -154,4 +157,4 @@ jobs:
           fi
 
           git commit -m "Update reports"
-          git push origin reports
+          git push -u origin reports  
