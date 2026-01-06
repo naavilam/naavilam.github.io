@@ -1,9 +1,9 @@
 {
   "orgs": [
     "academic-codex",
-    "quantum-materials-simulation-research",
-    "high-energy-physics-research",
-    "quantum-computing-research"
+    "quantum-materials",
+    "high-energy",
+    "quantum-computing"
   ],
   "generated_at": "2026-01-06T03:19:47.684844Z"
 }
