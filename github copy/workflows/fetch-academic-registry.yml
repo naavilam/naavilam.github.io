@@ -1,0 +1,138 @@
+name: Fetch Academic Registry
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch/ref do repo Academic-Codex/academic-codex.github.io"
+        required: false
+        default: "main"
+  schedule:
+    - cron: "23 3 * * *" # diário (UTC)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "fetch-academic-registry"
+  cancel-in-progress: true
+
+env:
+  ORG: "Academic-Codex"
+  REPO: "academic-codex.github.io"
+  REGISTRY_PATH: ".github/registry/repos.yml"
+  DEST_FILE: "_data/courses.yml"
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout naavilam.github.io
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve ref
+        id: ref
+        shell: bash
+        run: |
+          ref="${{ inputs.ref }}"
+          if [ -z "$ref" ]; then ref="main"; fi
+          echo "ref=$ref" >> "$GITHUB_OUTPUT"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Download public registry (raw)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _tmp _data
+
+          RAW_URL="https://raw.githubusercontent.com/${{ env.ORG }}/${{ env.REPO }}/${{ steps.ref.outputs.ref }}/${{ env.REGISTRY_PATH }}"
+          echo "Fetching: $RAW_URL"
+
+          curl -fsSL "$RAW_URL" -o "_tmp/repos.yml"
+          test -s "_tmp/repos.yml"
+
+      - name: Build _data/courses.yml from registry
+        shell: bash
+        run: |
+      - name: Build _data/courses.yml from registry
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import yaml, os
+
+          src = Path("_tmp/repos.yml")
+          dst = Path(os.environ["DEST_FILE"])
+
+          data = yaml.safe_load(src.read_text(encoding="utf-8")) or {}
+          repos = data.get("repos", [])
+          if not isinstance(repos, list):
+            raise SystemExit("[fatal] registry repos.yml: key 'repos' must be a list")
+
+          out = []
+          for it in repos:
+            if not isinstance(it, dict):
+              continue
+
+            title = (it.get("title") or "").strip()
+            course_id = (it.get("id") or "").strip()
+            level = (it.get("academic_level") or "").strip()
+            school = (it.get("academic_school") or "").strip()
+            area = (it.get("academic_area") or "").strip()
+            status = (it.get("status") or "").strip().lower()
+
+            org = (it.get("org") or "").strip()
+            name = (it.get("name") or "").strip()
+            if not name:
+              continue
+
+            link = f"https://{org.lower()}.github.io/{name}" if org else ""
+
+            out.append({
+              "Course": title,
+              "id": course_id,
+              "level": level,
+              "School": school,
+              "area": area,
+              "status": status,
+              "link": link,
+            })
+
+          out = sorted(out, key=lambda x: (x.get("id") or "ZZZZ", x.get("Course") or ""))
+
+          dst.parent.mkdir(parents=True, exist_ok=True)
+          dst.write_text(
+            yaml.safe_dump(out, sort_keys=False, allow_unicode=True),
+            encoding="utf-8"
+          )
+          print(f"[ok] wrote {dst} ({len(out)} items)")
+          PY
+        env:
+          DEST_FILE: ${{ env.DEST_FILE }}
+
+      - name: Commit changes (if any)
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add "${{ env.DEST_FILE }}"
+          git commit -m "chore(courses): sync from academic registry"
+          git push
