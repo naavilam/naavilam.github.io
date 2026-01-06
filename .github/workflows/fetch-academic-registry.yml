@@ -65,13 +65,16 @@ jobs:
       - name: Build _data/courses.yml from registry
         shell: bash
         run: |
+      - name: Build _data/courses.yml from registry
+        shell: bash
+        run: |
           set -euo pipefail
           python - <<'PY'
           from pathlib import Path
-          import yaml
+          import yaml, os
 
           src = Path("_tmp/repos.yml")
-          dst = Path("${DEST_FILE}")
+          dst = Path(os.environ["DEST_FILE"])
 
           data = yaml.safe_load(src.read_text(encoding="utf-8")) or {}
           repos = data.get("repos", [])
@@ -91,27 +94,21 @@ jobs:
 
             org = (it.get("org") or "").strip()
             name = (it.get("name") or "").strip()
-
             if not name:
               continue
 
-            # link runtime: https://lower{org}.github.io/{name}
-            org_lower = (org or "").lower()
-            link = f"https://{org_lower}.github.io/{name}" if org_lower else ""
+            link = f"https://{org.lower()}.github.io/{name}" if org else ""
 
             out.append({
-              "Course": title,     # title -> Course
-              "id": course_id,     # id -> id
-              "level": level,      # academic_level -> level
-              "School": school,    # academic_school -> School
-              "area": area,        # academic_area -> area
-              "link": link,        # runtime formula
+              "Course": title,
+              "id": course_id,
+              "level": level,
+              "School": school,
+              "area": area,
+              "link": link,
             })
 
-          # opcional: ordena por id (quando existir) senão por Course
-          def key(x):
-            return (x.get("id") or "ZZZZ", x.get("Course") or "")
-          out = sorted(out, key=key)
+          out = sorted(out, key=lambda x: (x.get("id") or "ZZZZ", x.get("Course") or ""))
 
           dst.parent.mkdir(parents=True, exist_ok=True)
           dst.write_text(
