@@ -781,7 +781,8 @@ description: Internal repository report
                 workflow: "inicializa-repos.yml",
                 ref: "main"
             };
-
+            console.log(getDispatchURL())
+            console.log(payload)
             const out = await postJSON(getDispatchURL(), payload, window.getOperatorPin?.() || "");
             window.resetOperatorPin?.();
             setBusy(false, out?.message || `ok: inicializa-repos dispatched for ${org}`);
