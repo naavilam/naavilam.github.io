@@ -138,6 +138,8 @@ jobs:
           # copia o conteúdo novo para a RAIZ (sem --delete pra não matar .git)
           rsync -a "_reports_in/" "./"
 
+          rm -rf _reports_in
+          
           echo "== tree (reports branch) =="
           find . -maxdepth 3 -type f | sort || true
 
