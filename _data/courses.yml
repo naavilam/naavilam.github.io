@@ -471,7 +471,7 @@
   id: SEL0616
   level: undergrad
   School: EESC/USP
-  area: Communications
+  area: Communication
   status: completed
   link: https://academic-codex.github.io/SEL0616-Principios-de-Comunicacao
 - Course: Fundamentos de Microeletrônica
@@ -499,7 +499,7 @@
   id: SEL0619
   level: undergrad
   School: EESC/USP
-  area: Communications
+  area: Communication
   status: completed
   link: https://academic-codex.github.io/SEL0619-Comunicacao-Digital
 - Course: Controle Digital
