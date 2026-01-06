@@ -283,8 +283,9 @@ description: Internal repository report
         if (!url) throw new Error(`No dispatch URL for target=${target}`);
         return url;
     }
+
     const REPORTS_BRANCH = "reports";
-    const REPORTS_BASE = `https://raw.githubusercontent.com/{{ site.github.repository_nwo }}/${REPORTS_BRANCH}`;
+    const REPORTS_BASE = `https://raw.githubusercontent.com/{{ site.github }}/{{ site.github }}.github.io/${REPORTS_BRANCH}`;
 
     const INDEX_URL = `${REPORTS_BASE}/index.json`;
 
@@ -607,7 +608,7 @@ description: Internal repository report
     function loadOrg(org) {
         window.resetOperatorPin?.();
         currentOrg = org;
-        
+
         const INFRA_URL = `${REPORTS_BASE}/${org}/org-audit.json`;
         const GA_URL = `${REPORTS_BASE}/${org}/ga-usage.json`;
 
