@@ -91,6 +91,7 @@ jobs:
             level = (it.get("academic_level") or "").strip()
             school = (it.get("academic_school") or "").strip()
             area = (it.get("academic_area") or "").strip()
+            status = (it.get("status") or "").strip().lower()
 
             org = (it.get("org") or "").strip()
             name = (it.get("name") or "").strip()
@@ -105,6 +106,7 @@ jobs:
               "level": level,
               "School": school,
               "area": area,
+              "status": status,
               "link": link,
             })
 
