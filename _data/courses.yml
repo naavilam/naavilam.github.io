@@ -13,13 +13,13 @@
 - Course: Física I
   id: FCM0101
   level: undergrad
-  School: EESC/USP
+  School: IFSC/USP
   area: Physics
   link: https://academic-codex.github.io/FCM0101-Fisica-I
 - Course: Física II
   id: FCM0102
   level: undergrad
-  School: EESC/USP
+  School: IFSC/USP
   area: Physics
   link: https://academic-codex.github.io/FCM0102-Fisica-II
 - Course: Laboratório de Física Geral I
@@ -350,7 +350,7 @@
   id: SEL0607
   level: undergrad
   School: EESC/USP
-  area: Computer Engineering
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0607-Organizacao-de-Computadores-Digitais-I
 - Course: Eletromagnetismo
   id: SEL0608
@@ -374,7 +374,7 @@
   id: SEL0611
   level: undergrad
   School: EESC/USP
-  area: Control Engineering
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0611-Fundamentos-de-Controle
 - Course: Ondas Eletromagnéticas
   id: SEL0612
@@ -386,7 +386,7 @@
   id: SEL0614
   level: undergrad
   School: EESC/USP
-  area: Computer Engineering
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0614-Microprocessadores-e-Aplicacoes
 - Course: Circuitos Eletrônicos II
   id: SEL0615
@@ -398,79 +398,79 @@
   id: SEL0615-PDS
   level: undergrad
   School: EESC/USP
-  area: Signal Processing
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0615-Processamento-Digital-de-Sinais
 - Course: Princípios de Comunicação
   id: SEL0616
   level: undergrad
   School: EESC/USP
-  area: Communications Engineering
+  area: Communications
   link: https://academic-codex.github.io/SEL0616-Principios-de-Comunicacao
 - Course: Fundamentos de Microeletrônica
   id: SEL0617
   level: undergrad
   School: EESC/USP
-  area: Microelectronics
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0617-Fundamentos-de-Microeletronica
 - Course: Projeto de Circuitos Integrados Analógicos
   id: SEL0618-A
   level: undergrad
   School: EESC/USP
-  area: Microelectronics
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos
 - Course: Projeto de Circuitos Integrados Digitais I
   id: SEL0618-D1
   level: undergrad
   School: EESC/USP
-  area: Microelectronics
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0618-Projeto-de-Circuitos-Integrados-Digitais-I
 - Course: Comunicação Digital
   id: SEL0619
   level: undergrad
   School: EESC/USP
-  area: Communications Engineering
+  area: Communications
   link: https://academic-codex.github.io/SEL0619-Comunicacao-Digital
 - Course: Controle Digital
   id: SEL0620
   level: undergrad
   School: EESC/USP
-  area: Control Engineering
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0620-Controle-Digital
 - Course: Projeto de Circuitos Integrados Digitais II
   id: SEL0622
   level: undergrad
   School: EESC/USP
-  area: Microelectronics
+  area: Eletronics
   link: https://academic-codex.github.io/SEL0622-Projeto-de-Circuitos-Integrados-Digitais-II
 - Course: Gestão e Organização
   id: SEP0527
   level: undergrad
   School: EESC/USP
-  area: Management
+  area: Entrepreneurship
   link: https://academic-codex.github.io/SEP0527-Gestao-e-Organizacao
 - Course: Princípios de Economia
   id: SEP0587
   level: undergrad
   School: EESC/USP
-  area: Economics
+  area: Entrepreneurship
   link: https://academic-codex.github.io/SEP0587-Principios-de-Economia
 - Course: Mecânica dos Sólidos
   id: SET0623
   level: undergrad
   School: EESC/USP
-  area: Mechanical Engineering
+  area: Physics
   link: https://academic-codex.github.io/SET0623-Mecanica-dos-Solidos
 - Course: Sistema de Gestão Ambiental
   id: SHS0416
   level: undergrad
   School: EESC/USP
-  area: Environmental Engineering
+  area: Entrepreneurship
   link: https://academic-codex.github.io/SHS0416-Sistema-de-Gestao-Ambiental
 - Course: Fenômenos de Transporte
   id: SHS0619
   level: undergrad
   School: EESC/USP
-  area: Mechanical Engineering
+  area: Physics
   link: https://academic-codex.github.io/SHS0619-Fenomenos-de-Transporte
 - Course: Funções de Variáveis Complexas
   id: SMA0111
