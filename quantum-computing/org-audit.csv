@@ -1,0 +1,5 @@
+org,name,full_name,url,private,archived,fork,default_branch,pushed_at,has_gitignore,has_readme,notebooks_ipynb,files_py,files_tex,files_md,files_yml,total_files,branches_count
+quantum-computing-research,Batalha-Naval-Quantica,Quantum-Computing-Research/Batalha-Naval-Quantica,https://github.com/Quantum-Computing-Research/Batalha-Naval-Quantica,False,False,False,main,2025-12-17T14:47:01Z,True,True,1,20,0,4,2,114,4
+quantum-computing-research,quantum-algorithms,Quantum-Computing-Research/quantum-algorithms,https://github.com/Quantum-Computing-Research/quantum-algorithms,False,False,False,main,2025-12-18T21:15:19Z,False,False,8,0,0,1,0,9,1
+quantum-computing-research,quantum-error-mitigation,Quantum-Computing-Research/quantum-error-mitigation,https://github.com/Quantum-Computing-Research/quantum-error-mitigation,False,False,False,main,2025-12-18T21:17:39Z,False,False,4,0,0,1,0,11,1
+quantum-computing-research,quantum-learning,Quantum-Computing-Research/quantum-learning,https://github.com/Quantum-Computing-Research/quantum-learning,False,False,False,main,2025-12-18T21:14:30Z,False,False,12,0,0,0,0,12,1
