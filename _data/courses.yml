@@ -212,7 +212,7 @@
   id: SAP0679
   level: undergrad
   School: EESC/USP
-  area: Communication
+  area: Communications
   status: completed
   link: https://academic-codex.github.io/SAP0679-Humanidades-e-Ciencias-Sociais
 - Course: Visão Computacional em Robótica
@@ -233,7 +233,7 @@
   id: SCC0661
   level: undergrad
   School: ICMC/USP
-  area: Communication
+  area: Communications
   status: completed
   link: https://academic-codex.github.io/SCC0661-Hipermidia-e-Multimidia
 - Course: Algoritmos Avançados
@@ -292,6 +292,13 @@
   area: Computer Science
   status: completed
   link: https://academic-codex.github.io/SCE0606-Algoritmos-e-Estrutura-de-Dados-II
+- Course: Organização de Computadores Digitais I
+  id: SCE0607
+  level: undergrad
+  School: EESC/USP
+  area: Eletronics
+  status: completed
+  link: https://academic-codex.github.io/SCE0607-Organizacao-de-Computadores-Digitais-I
 - Course: Sistemas Operacionais I
   id: SCE0609
   level: undergrad
@@ -366,7 +373,7 @@
   id: SEL0366
   level: undergrad
   School: EESC/USP
-  area: Communication
+  area: Communications
   status: completed
   link: https://academic-codex.github.io/SEL0366-Comunicacoes-Opticas
 - Course: Materiais Elétricos
@@ -404,13 +411,6 @@
   area: Eletronics
   status: completed
   link: https://academic-codex.github.io/SEL0607-Fundamentos-de-Semicondutores
-- Course: Organização de Computadores Digitais I
-  id: SEL0607
-  level: undergrad
-  School: EESC/USP
-  area: Eletronics
-  status: completed
-  link: https://academic-codex.github.io/SEL0607-Organizacao-de-Computadores-Digitais-I
 - Course: Eletromagnetismo
   id: SEL0608
   level: undergrad
@@ -471,7 +471,7 @@
   id: SEL0616
   level: undergrad
   School: EESC/USP
-  area: Communication
+  area: Communications
   status: completed
   link: https://academic-codex.github.io/SEL0616-Principios-de-Comunicacao
 - Course: Fundamentos de Microeletrônica
@@ -499,7 +499,7 @@
   id: SEL0619
   level: undergrad
   School: EESC/USP
-  area: Communication
+  area: Communications
   status: completed
   link: https://academic-codex.github.io/SEL0619-Comunicacao-Digital
 - Course: Controle Digital
@@ -653,6 +653,6 @@
   id: SSC0748
   level: undergrad
   School: ICMC/USP
-  area: Communication
+  area: Communications
   status: completed
   link: https://academic-codex.github.io/SSC0748-Redes-Moveis
