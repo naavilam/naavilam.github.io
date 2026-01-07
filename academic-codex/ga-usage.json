@@ -1081,6 +1081,23 @@
         "(not set)": 1
       }
     },
+    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
+      "views": 8,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 5,
+        "DE": 1,
+        "DK": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "(not set)": 3
+      }
+    },
     "/SSC0643-Avaliacao-Desempenho/": {
       "views": 8,
       "sessions": 3,
@@ -1119,23 +1136,6 @@
       },
       "sources": {
         "github.com": 4
-      }
-    },
-    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
-      "views": 7,
-      "sessions": 7,
-      "users": 7,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 4,
-        "DE": 1,
-        "DK": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 7,
-        "(not set)": 3
       }
     },
     "/SME0601-Calculo-Numerico-II/": {
@@ -1459,14 +1459,48 @@
     },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
       "views": 5,
-      "sessions": 5,
-      "users": 5,
+      "sessions": 6,
+      "users": 6,
       "clicks": 0,
       "engagement_rate": 0.0,
       "countries": {
         "SC": 2,
         "DE": 1,
         "GB": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 3
+      }
+    },
+    "/SMA0182-Algebra-Linear-e-Equacoes-Diferenciais/": {
+      "views": 5,
+      "sessions": 6,
+      "users": 6,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 3,
+        "IL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 3
+      }
+    },
+    "/SME0320-Estatistica-I/": {
+      "views": 5,
+      "sessions": 5,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "CH": 1,
+        "IR": 1,
+        "NL": 1,
+        "SC": 1,
         "US": 1
       },
       "sources": {
@@ -1727,23 +1761,6 @@
         "github.com": 3
       }
     },
-    "/SME0320-Estatistica-I/": {
-      "views": 4,
-      "sessions": 4,
-      "users": 4,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "CH": 1,
-        "IR": 1,
-        "NL": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 4,
-        "(not set)": 1
-      }
-    },
     "/SSC0748-Redes-Moveis/software.html": {
       "views": 4,
       "sessions": 2,
@@ -1810,6 +1827,35 @@
       },
       "sources": {
         "github.com": 1
+      }
+    },
+    "/FCM0101-Fisica-I/": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 3
+      },
+      "sources": {
+        "(direct)": 3,
+        "(not set)": 1
+      }
+    },
+    "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 2,
+        "DE": 1
+      },
+      "sources": {
+        "(direct)": 3,
+        "(not set)": 2
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/software.html": {
@@ -2180,22 +2226,6 @@
         "github.com": 2
       }
     },
-    "/SMA0182-Algebra-Linear-e-Equacoes-Diferenciais/": {
-      "views": 3,
-      "sessions": 5,
-      "users": 5,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "IL": 1,
-        "SC": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 3,
-        "(not set)": 2
-      }
-    },
     "/SMA0333-Calculo-III/software.html": {
       "views": 3,
       "sessions": 4,
@@ -2253,35 +2283,6 @@
       },
       "sources": {
         "github.com": 1
-      }
-    },
-    "/FCM0101-Fisica-I/": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 2
-      },
-      "sources": {
-        "(direct)": 2,
-        "(not set)": 1
-      }
-    },
-    "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "DE": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 2,
-        "(not set)": 2
       }
     },
     "/IF4300214-Fisica-Experimental-IV/research.html": {
@@ -2963,6 +2964,20 @@
       },
       "sources": {
         "github.com": 1
+      }
+    },
+    "/FCM0102-Fisica-II/": {
+      "views": 1,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1,
+        "(not set)": 1
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/index.html": {
@@ -4153,17 +4168,6 @@
       },
       "sources": {
         "(direct)": 1,
-        "(not set)": 1
-      }
-    },
-    "/FCM0102-Fisica-II/": {
-      "views": 0,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {},
-      "sources": {
         "(not set)": 1
       }
     },
