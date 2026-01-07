@@ -4,13 +4,13 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 201,
-      "sessions": 65,
+      "views": 203,
+      "sessions": 66,
       "users": 30,
       "clicks": 16,
-      "engagement_rate": 0.47692307692307695,
+      "engagement_rate": 0.4696969696969697,
       "countries": {
-        "BR": 178,
+        "BR": 180,
         "US": 16,
         "NL": 2,
         "AM": 1,
@@ -21,8 +21,8 @@
       },
       "sources": {
         "(direct)": 35,
-        "github.com": 29,
-        "(not set)": 2
+        "github.com": 30,
+        "(not set)": 3
       }
     },
     "/PGF5005-Mecanica-Classica/software.html": {
@@ -213,6 +213,26 @@
         "github.com": 4
       }
     },
+    "/PGF5001-Mecanica-Quantica-I/": {
+      "views": 21,
+      "sessions": 19,
+      "users": 13,
+      "clicks": 3,
+      "engagement_rate": 0.3157894736842105,
+      "countries": {
+        "BR": 8,
+        "NL": 5,
+        "US": 5,
+        "DE": 1,
+        "IL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 12,
+        "github.com": 6,
+        "(not set)": 1
+      }
+    },
     "/PGF5005-Mecanica-Classica/": {
       "views": 21,
       "sessions": 8,
@@ -263,25 +283,6 @@
         "(not set)": 1
       }
     },
-    "/PGF5001-Mecanica-Quantica-I/": {
-      "views": 20,
-      "sessions": 18,
-      "users": 13,
-      "clicks": 3,
-      "engagement_rate": 0.3333333333333333,
-      "countries": {
-        "BR": 7,
-        "NL": 5,
-        "US": 5,
-        "DE": 1,
-        "IL": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct)": 12,
-        "github.com": 6
-      }
-    },
     "/SEL0622-Projeto-de-Circuitos-Integrados-Digitais-II/": {
       "views": 20,
       "sessions": 17,
@@ -300,6 +301,26 @@
       "sources": {
         "(direct)": 15,
         "github.com": 2
+      }
+    },
+    "/IF4302111-Fisica-I/": {
+      "views": 19,
+      "sessions": 14,
+      "users": 9,
+      "clicks": 2,
+      "engagement_rate": 0.42857142857142855,
+      "countries": {
+        "BR": 10,
+        "US": 3,
+        "GB": 2,
+        "RU": 2,
+        "DE": 1,
+        "HU": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "github.com": 6,
+        "(not set)": 1
       }
     },
     "/SCE0602-Introducao-Ciencia-Da-Computacao-II/": {
@@ -361,25 +382,6 @@
       "sources": {
         "(direct)": 13,
         "github.com": 3
-      }
-    },
-    "/IF4302111-Fisica-I/": {
-      "views": 18,
-      "sessions": 13,
-      "users": 9,
-      "clicks": 2,
-      "engagement_rate": 0.46153846153846156,
-      "countries": {
-        "BR": 9,
-        "US": 3,
-        "GB": 2,
-        "RU": 2,
-        "DE": 1,
-        "HU": 1
-      },
-      "sources": {
-        "(direct)": 8,
-        "github.com": 5
       }
     },
     "/IF4302404-Mecanica-Quantica-II/": {
@@ -1174,6 +1176,23 @@
         "github.com": 4
       }
     },
+    "/PGF5001-Mecanica-Quantica-I/software.html": {
+      "views": 6,
+      "sessions": 7,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.5714285714285714,
+      "countries": {
+        "BR": 4,
+        "NL": 1,
+        "US": 1
+      },
+      "sources": {
+        "github.com": 4,
+        "(direct)": 2,
+        "(not set)": 2
+      }
+    },
     "/PGF5003-Eletrodinamica/software.html": {
       "views": 6,
       "sessions": 4,
@@ -1334,6 +1353,20 @@
         "github.com": 3
       }
     },
+    "/IF4302111-Fisica-I/software.html": {
+      "views": 5,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com": 3,
+        "(not set)": 1
+      }
+    },
     "/IF4302404-Mecanica-Quantica-II/software.html": {
       "views": 5,
       "sessions": 4,
@@ -1348,23 +1381,6 @@
       "sources": {
         "(direct)": 2,
         "github.com": 2
-      }
-    },
-    "/PGF5001-Mecanica-Quantica-I/software.html": {
-      "views": 5,
-      "sessions": 6,
-      "users": 3,
-      "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
-      "countries": {
-        "BR": 3,
-        "NL": 1,
-        "US": 1
-      },
-      "sources": {
-        "github.com": 3,
-        "(direct)": 2,
-        "(not set)": 1
       }
     },
     "/PGF5006-Mecanica-Estatistica/": {
@@ -1391,6 +1407,23 @@
       },
       "sources": {
         "github.com": 4
+      }
+    },
+    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
+      "views": 5,
+      "sessions": 6,
+      "users": 6,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 2,
+        "DE": 1,
+        "DK": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 3
       }
     },
     "/SEL0366-Comunicacoes-Opticas/": {
@@ -1756,19 +1789,6 @@
         "github.com": 2
       }
     },
-    "/IF4302111-Fisica-I/software.html": {
-      "views": 3,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "github.com": 2
-      }
-    },
     "/MAC5921-Deep-Learning/research.html": {
       "views": 3,
       "sessions": 1,
@@ -1853,6 +1873,22 @@
       "sources": {
         "(direct)": 3,
         "github.com": 1
+      }
+    },
+    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "CA": 1,
+        "SC": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 2,
+        "(not set)": 2
       }
     },
     "/SCE0602-Introducao-Ciencia-Da-Computacao-II/software.html": {
@@ -2167,6 +2203,21 @@
         "github.com": 1
       }
     },
+    "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "DE": 1,
+        "US": 1
+      },
+      "sources": {
+        "(not set)": 2,
+        "(direct)": 1
+      }
+    },
     "/IF4300214-Fisica-Experimental-IV/research.html": {
       "views": 2,
       "sessions": 3,
@@ -2180,6 +2231,20 @@
       "sources": {
         "(direct)": 2,
         "github.com": 1
+      }
+    },
+    "/IF4302111-Fisica-I/research.html": {
+      "views": 2,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 3,
+        "(not set)": 1
       }
     },
     "/IF4302112-Fisica-II/software.html": {
@@ -2579,6 +2644,21 @@
         "github.com": 1
       }
     },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 2,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "DE": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 2,
+        "(not set)": 1
+      }
+    },
     "/SEL0619-Comunicacao-Digital/software.html": {
       "views": 2,
       "sessions": 2,
@@ -2834,6 +2914,20 @@
         "github.com": 1
       }
     },
+    "/FCM0101-Fisica-I/": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1,
+        "(not set)": 1
+      }
+    },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/index.html": {
       "views": 1,
       "sessions": 1,
@@ -2873,17 +2967,18 @@
         "(direct)": 1
       }
     },
-    "/IF4302111-Fisica-I/research.html": {
+    "/IF4302111-Fisica-I/index.html": {
       "views": 1,
-      "sessions": 2,
+      "sessions": 1,
       "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
+      "clicks": 1,
+      "engagement_rate": 0.0,
       "countries": {
         "BR": 1
       },
       "sources": {
-        "github.com": 2
+        "(not set)": 1,
+        "github.com": 1
       }
     },
     "/IF4302112-Fisica-Matematica-I/software.html": {
@@ -3827,6 +3922,20 @@
         "(direct)": 1
       }
     },
+    "/SME0320-Estatistica-I/": {
+      "views": 1,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "IR": 1
+      },
+      "sources": {
+        "(direct)": 1,
+        "(not set)": 1
+      }
+    },
     "/SME0600-Calculo-Numerico/": {
       "views": 1,
       "sessions": 1,
@@ -3994,6 +4103,39 @@
       },
       "sources": {
         "(direct)": 1,
+        "(not set)": 1
+      }
+    },
+    "/FCM0102-Fisica-II/": {
+      "views": 0,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {},
+      "sources": {
+        "(not set)": 1
+      }
+    },
+    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/index.html": {
+      "views": 0,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {},
+      "sources": {
+        "(not set)": 1
+      }
+    },
+    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/software.html": {
+      "views": 0,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {},
+      "sources": {
         "(not set)": 1
       }
     },
