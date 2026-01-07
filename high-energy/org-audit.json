@@ -1,0 +1,82 @@
+[
+  {
+    "org": "high-energy-physics-research",
+    "name": "Academic-Research-Journal",
+    "full_name": "High-Energy-Physics-Research/Academic-Research-Journal",
+    "url": "https://github.com/High-Energy-Physics-Research/Academic-Research-Journal",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2026-01-06T17:38:50Z",
+    "has_gitignore": true,
+    "has_readme": false,
+    "notebooks_ipynb": 8,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 0,
+    "files_yml": 5,
+    "total_files": 43,
+    "branches_count": 2,
+    "branches": [
+      {
+        "branch": "gh-pages",
+        "head_sha": "0f37d47d43e35cc7046baefbaacf334d85b900ff",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 24
+      },
+      {
+        "branch": "main",
+        "head_sha": "d31c90b7e2d5c277cb917308923d5884a5a391f1",
+        "has_gitignore": true,
+        "has_readme": false,
+        "notebooks_ipynb": 8,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 5,
+        "total_files": 19
+      }
+    ]
+  },
+  {
+    "org": "high-energy-physics-research",
+    "name": "high-energy-physics-research.github.io",
+    "full_name": "High-Energy-Physics-Research/high-energy-physics-research.github.io",
+    "url": "https://github.com/High-Energy-Physics-Research/high-energy-physics-research.github.io",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2026-01-06T17:38:17Z",
+    "has_gitignore": false,
+    "has_readme": false,
+    "notebooks_ipynb": 2,
+    "files_py": 6,
+    "files_tex": 0,
+    "files_md": 2,
+    "files_yml": 24,
+    "total_files": 92,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "324b6fd9e4c39dcf2fc4d72010a47436310a1686",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 2,
+        "files_py": 6,
+        "files_tex": 0,
+        "files_md": 2,
+        "files_yml": 24,
+        "total_files": 92
+      }
+    ]
+  }
+]

@@ -1138,6 +1138,24 @@
         "github.com": 4
       }
     },
+    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
+      "views": 7,
+      "sessions": 6,
+      "users": 6,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 3,
+        "CA": 1,
+        "ID": 1,
+        "NL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 6,
+        "(not set)": 2
+      }
+    },
     "/SME0601-Calculo-Numerico-II/": {
       "views": 7,
       "sessions": 4,
@@ -1234,24 +1252,6 @@
       },
       "sources": {
         "github.com": 5
-      }
-    },
-    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
-      "views": 6,
-      "sessions": 5,
-      "users": 5,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 2,
-        "CA": 1,
-        "ID": 1,
-        "NL": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 5,
-        "(not set)": 2
       }
     },
     "/SCE0606-Algoritmos-e-Estrutura-de-dados-II/": {
@@ -2125,6 +2125,22 @@
         "github.com": 2
       }
     },
+    "/SEL0601-Materiais-Eletricos/": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "CA": 1,
+        "HU": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 3,
+        "(not set)": 1
+      }
+    },
     "/SEL0608-Eletromagnetismo/software.html": {
       "views": 3,
       "sessions": 3,
@@ -2670,6 +2686,21 @@
         "github.com": 1
       }
     },
+    "/SEL0611-Fundamentos-de-Controle/": {
+      "views": 2,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "PT": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 2,
+        "(not set)": 1
+      }
+    },
     "/SEL0614-Microprocessadores/": {
       "views": 2,
       "sessions": 1,
@@ -2802,6 +2833,19 @@
       "sources": {
         "(direct)": 1,
         "github.com": 1
+      }
+    },
+    "/SHS0619-Fenomenos-de-Transporte/": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 2
+      },
+      "sources": {
+        "(direct)": 2
       }
     },
     "/SMA0111-Funcoes-De-Variaveis-Complexas/software.html": {
@@ -3662,6 +3706,34 @@
         "github.com": 1
       }
     },
+    "/SEL0602-Circuitos-Eletricos/": {
+      "views": 1,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1,
+        "(not set)": 1
+      }
+    },
+    "/SEL0604-Sinais-e-Sistemas/": {
+      "views": 1,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1,
+        "(not set)": 1
+      }
+    },
     "/SEL0606-Laboratorio-de-Sistemas-Digitais/research.html": {
       "views": 1,
       "sessions": 2,
@@ -3752,6 +3824,33 @@
       },
       "sources": {
         "(direct)": 1
+      }
+    },
+    "/SEL0609-Circuitos-Eletronicos-I/": {
+      "views": 1,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 2
+      }
+    },
+    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
+      "views": 1,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct)": 1,
+        "(not set)": 1
       }
     },
     "/SEL0614-Microprocessadores-e-Aplicacoes/index.html": {
