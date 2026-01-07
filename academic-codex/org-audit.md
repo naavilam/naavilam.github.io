@@ -1,11 +1,11 @@
 # Org Audit Report: academic-codex
 
-Generated: **2026-01-07 03:01 UTC**
+Generated: **2026-01-07 03:15 UTC**
 
-- Repositories: **86**
-- With README (any branch): **78/86**
-- With .gitignore (any branch): **49/86**
-- Total notebooks (.ipynb) (sum over branches): **400**
+- Repositories: **95**
+- With README (any branch): **78/95**
+- With .gitignore (any branch): **58/95**
+- Total notebooks (.ipynb) (sum over branches): **409**
 
 ## Table (top 50)
 

@@ -1121,6 +1121,23 @@
         "github.com": 4
       }
     },
+    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
+      "views": 7,
+      "sessions": 7,
+      "users": 7,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 4,
+        "DE": 1,
+        "DK": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 7,
+        "(not set)": 3
+      }
+    },
     "/SME0601-Calculo-Numerico-II/": {
       "views": 7,
       "sessions": 4,
@@ -1217,6 +1234,24 @@
       },
       "sources": {
         "github.com": 5
+      }
+    },
+    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
+      "views": 6,
+      "sessions": 5,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 2,
+        "CA": 1,
+        "ID": 1,
+        "NL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 2
       }
     },
     "/SCE0606-Algoritmos-e-Estrutura-de-dados-II/": {
@@ -1409,23 +1444,6 @@
         "github.com": 4
       }
     },
-    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
-      "views": 5,
-      "sessions": 6,
-      "users": 6,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 2,
-        "DE": 1,
-        "DK": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 5,
-        "(not set)": 3
-      }
-    },
     "/SEL0366-Comunicacoes-Opticas/": {
       "views": 5,
       "sessions": 4,
@@ -1437,6 +1455,23 @@
       },
       "sources": {
         "github.com": 4
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 5,
+      "sessions": 5,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "SC": 2,
+        "DE": 1,
+        "GB": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 2
       }
     },
     "/SME0600-Calculo-Numerico-I/software.html": {
@@ -1692,6 +1727,23 @@
         "github.com": 3
       }
     },
+    "/SME0320-Estatistica-I/": {
+      "views": 4,
+      "sessions": 4,
+      "users": 4,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "CH": 1,
+        "IR": 1,
+        "NL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "(not set)": 1
+      }
+    },
     "/SSC0748-Redes-Moveis/software.html": {
       "views": 4,
       "sessions": 2,
@@ -1873,22 +1925,6 @@
       "sources": {
         "(direct)": 3,
         "github.com": 1
-      }
-    },
-    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
-      "views": 3,
-      "sessions": 3,
-      "users": 3,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "CA": 1,
-        "SC": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 2,
-        "(not set)": 2
       }
     },
     "/SCE0602-Introducao-Ciencia-Da-Computacao-II/software.html": {
@@ -2144,6 +2180,22 @@
         "github.com": 2
       }
     },
+    "/SMA0182-Algebra-Linear-e-Equacoes-Diferenciais/": {
+      "views": 3,
+      "sessions": 5,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "IL": 1,
+        "SC": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 3,
+        "(not set)": 2
+      }
+    },
     "/SMA0333-Calculo-III/software.html": {
       "views": 3,
       "sessions": 4,
@@ -2203,6 +2255,20 @@
         "github.com": 1
       }
     },
+    "/FCM0101-Fisica-I/": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 2
+      },
+      "sources": {
+        "(direct)": 2,
+        "(not set)": 1
+      }
+    },
     "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
       "views": 2,
       "sessions": 2,
@@ -2214,8 +2280,8 @@
         "US": 1
       },
       "sources": {
-        "(not set)": 2,
-        "(direct)": 1
+        "(direct)": 2,
+        "(not set)": 2
       }
     },
     "/IF4300214-Fisica-Experimental-IV/research.html": {
@@ -2644,21 +2710,6 @@
         "github.com": 1
       }
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 2,
-      "sessions": 3,
-      "users": 3,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "DE": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 2,
-        "(not set)": 1
-      }
-    },
     "/SEL0619-Comunicacao-Digital/software.html": {
       "views": 2,
       "sessions": 2,
@@ -2912,20 +2963,6 @@
       },
       "sources": {
         "github.com": 1
-      }
-    },
-    "/FCM0101-Fisica-I/": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 1,
-        "(not set)": 1
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/index.html": {
@@ -3346,6 +3383,33 @@
       },
       "sources": {
         "(direct)": 1
+      }
+    },
+    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/index.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1,
+        "(not set)": 1
+      }
+    },
+    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(not set)": 1
       }
     },
     "/SCE0602-Introducao-Ciencia-Da-Computacao-II/index.html": {
@@ -3922,20 +3986,6 @@
         "(direct)": 1
       }
     },
-    "/SME0320-Estatistica-I/": {
-      "views": 1,
-      "sessions": 2,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "IR": 1
-      },
-      "sources": {
-        "(direct)": 1,
-        "(not set)": 1
-      }
-    },
     "/SME0600-Calculo-Numerico/": {
       "views": 1,
       "sessions": 1,
@@ -4107,28 +4157,6 @@
       }
     },
     "/FCM0102-Fisica-II/": {
-      "views": 0,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {},
-      "sources": {
-        "(not set)": 1
-      }
-    },
-    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/index.html": {
-      "views": 0,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {},
-      "sources": {
-        "(not set)": 1
-      }
-    },
-    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/software.html": {
       "views": 0,
       "sessions": 1,
       "users": 1,
