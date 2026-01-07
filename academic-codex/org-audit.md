@@ -1,19 +1,22 @@
 # Org Audit Report: academic-codex
 
-Generated: **2026-01-06 20:13 UTC**
+Generated: **2026-01-07 02:00 UTC**
 
-- Repositories: **78**
-- With README (any branch): **78/78**
-- With .gitignore (any branch): **41/78**
-- Total notebooks (.ipynb) (sum over branches): **392**
+- Repositories: **94**
+- With README (any branch): **78/94**
+- With .gitignore (any branch): **57/94**
+- Total notebooks (.ipynb) (sum over branches): **408**
 
 ## Table (top 50)
 
 | Repo | branches | README | .gitignore | ipynb | py | tex | files | updated |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| [academic-codex.github.io](https://github.com/Academic-Codex/academic-codex.github.io) | 1 | ✅ | ✅ | 1 | 3 | 0 | 246 | 2026-01-06 |
+| [academic-codex.github.io](https://github.com/Academic-Codex/academic-codex.github.io) | 1 | ✅ | ✅ | 1 | 3 | 0 | 246 | 2026-01-07 |
 | [DPG5011-Formacao-do-Cientista-Empreendedor](https://github.com/Academic-Codex/DPG5011-Formacao-do-Cientista-Empreendedor) | 2 | ✅ | ✅ | 1 | 0 | 0 | 26 | 2026-01-06 |
 | [EAP5054-Formacao-do-Cientista-Empreendedor-II](https://github.com/Academic-Codex/EAP5054-Formacao-do-Cientista-Empreendedor-II) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
+| [FCM0101-Fisica-I](https://github.com/Academic-Codex/FCM0101-Fisica-I) | 2 | — | ✅ | 1 | 0 | 0 | 22 | 2026-01-07 |
+| [FCM0102-Fisica-II](https://github.com/Academic-Codex/FCM0102-Fisica-II) | 2 | — | ✅ | 1 | 0 | 0 | 22 | 2026-01-07 |
+| [FFI0180-Laboratorio-de-Fisica-Geral-I](https://github.com/Academic-Codex/FFI0180-Laboratorio-de-Fisica-Geral-I) | 2 | — | ✅ | 1 | 0 | 0 | 22 | 2026-01-07 |
 | [FFI0181-Laboratorio-de-Fisica-Geral-II](https://github.com/Academic-Codex/FFI0181-Laboratorio-de-Fisica-Geral-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 28 | 2026-01-06 |
 | [IF4300214-Fisica-Experimental-IV](https://github.com/Academic-Codex/IF4300214-Fisica-Experimental-IV) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
 | [IF4302111-Fisica-I](https://github.com/Academic-Codex/IF4302111-Fisica-I) | 2 | ✅ | — | 1 | 0 | 0 | 28 | 2026-01-06 |
@@ -44,7 +47,9 @@ Generated: **2026-01-06 20:13 UTC**
 | [SCC0650-Computacao-Grafica](https://github.com/Academic-Codex/SCC0650-Computacao-Grafica) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
 | [SCC0661-Hipermidia-e-Multimidia](https://github.com/Academic-Codex/SCC0661-Hipermidia-e-Multimidia) | 2 | ✅ | ✅ | 1 | 0 | 0 | 28 | 2026-01-06 |
 | [SCE0245-Algoritmos-Avancados](https://github.com/Academic-Codex/SCE0245-Algoritmos-Avancados) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
+| [SCE0294-Laboratorio-de-Algoritmos-Avancados](https://github.com/Academic-Codex/SCE0294-Laboratorio-de-Algoritmos-Avancados) | 2 | — | ✅ | 1 | 0 | 0 | 22 | 2026-01-07 |
 | [SCE0601-Introducao-a-Ciencia-da-Computacao-I](https://github.com/Academic-Codex/SCE0601-Introducao-a-Ciencia-da-Computacao-I) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
+| [SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I](https://github.com/Academic-Codex/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I) | 2 | — | ✅ | 1 | 0 | 0 | 22 | 2026-01-07 |
 | [SCE0602-Introducao-Ciencia-Da-Computacao-II](https://github.com/Academic-Codex/SCE0602-Introducao-Ciencia-Da-Computacao-II) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
 | [SCE0603-Algoritmos-e-Estrutura-de-Dados-I](https://github.com/Academic-Codex/SCE0603-Algoritmos-e-Estrutura-de-Dados-I) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
 | [SCE0605-Teoria-da-Computacao-e-Compiladores](https://github.com/Academic-Codex/SCE0605-Teoria-da-Computacao-e-Compiladores) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
@@ -56,8 +61,3 @@ Generated: **2026-01-06 20:13 UTC**
 | [SCE0613-Arquitetura-de-Computadores](https://github.com/Academic-Codex/SCE0613-Arquitetura-de-Computadores) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
 | [SCE0614-Inteligencia-Artificial](https://github.com/Academic-Codex/SCE0614-Inteligencia-Artificial) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
 | [SCE0615-Banco-de-Dados](https://github.com/Academic-Codex/SCE0615-Banco-de-Dados) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
-| [SCE0616-Sistemas-Computacionais-Distribuidos](https://github.com/Academic-Codex/SCE0616-Sistemas-Computacionais-Distribuidos) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
-| [SCE0617-Redes-de-Computadores](https://github.com/Academic-Codex/SCE0617-Redes-de-Computadores) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
-| [SCE0620-Analise-e-Projeto-Orientado-a-Objeto](https://github.com/Academic-Codex/SCE0620-Analise-e-Projeto-Orientado-a-Objeto) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
-| [SEL0344-Antenas](https://github.com/Academic-Codex/SEL0344-Antenas) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |
-| [SEL0366-Comunicacoes-Opticas](https://github.com/Academic-Codex/SEL0366-Comunicacoes-Opticas) | 2 | ✅ | — | 1 | 0 | 0 | 26 | 2026-01-06 |

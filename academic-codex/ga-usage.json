@@ -5,10 +5,10 @@
   "metrics_by_path": {
     "/": {
       "views": 201,
-      "sessions": 64,
+      "sessions": 65,
       "users": 30,
       "clicks": 16,
-      "engagement_rate": 0.484375,
+      "engagement_rate": 0.47692307692307695,
       "countries": {
         "BR": 178,
         "US": 16,
@@ -21,8 +21,22 @@
       },
       "sources": {
         "(direct)": 35,
-        "github.com": 28,
+        "github.com": 29,
         "(not set)": 2
+      }
+    },
+    "/PGF5005-Mecanica-Classica/software.html": {
+      "views": 37,
+      "sessions": 7,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.42857142857142855,
+      "countries": {
+        "BR": 37
+      },
+      "sources": {
+        "github.com": 7,
+        "(not set)": 1
       }
     },
     "/Academic-Research-Journal/software.html": {
@@ -40,19 +54,6 @@
         "github.com": 5,
         "(direct)": 2,
         "(not set)": 1
-      }
-    },
-    "/PGF5005-Mecanica-Classica/software.html": {
-      "views": 30,
-      "sessions": 6,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.5,
-      "countries": {
-        "BR": 30
-      },
-      "sources": {
-        "github.com": 6
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
@@ -212,6 +213,20 @@
         "github.com": 4
       }
     },
+    "/PGF5005-Mecanica-Classica/": {
+      "views": 21,
+      "sessions": 8,
+      "users": 1,
+      "clicks": 2,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 21
+      },
+      "sources": {
+        "github.com": 7,
+        "(not set)": 1
+      }
+    },
     "/SEL0619-Comunicacao-Digital/": {
       "views": 21,
       "sessions": 4,
@@ -265,19 +280,6 @@
       "sources": {
         "(direct)": 12,
         "github.com": 6
-      }
-    },
-    "/PGF5005-Mecanica-Classica/": {
-      "views": 20,
-      "sessions": 7,
-      "users": 1,
-      "clicks": 2,
-      "engagement_rate": 0.5714285714285714,
-      "countries": {
-        "BR": 20
-      },
-      "sources": {
-        "github.com": 7
       }
     },
     "/SEL0622-Projeto-de-Circuitos-Integrados-Digitais-II/": {
@@ -1211,6 +1213,21 @@
         "github.com": 1
       }
     },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/": {
+      "views": 6,
+      "sessions": 6,
+      "users": 6,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "DE": 3,
+        "US": 3
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 4
+      }
+    },
     "/SEP0527-Gestao-e-Organizacao/": {
       "views": 6,
       "sessions": 4,
@@ -1374,21 +1391,6 @@
       },
       "sources": {
         "github.com": 4
-      }
-    },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/": {
-      "views": 5,
-      "sessions": 5,
-      "users": 5,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "DE": 3,
-        "US": 2
-      },
-      "sources": {
-        "(direct)": 4,
-        "(not set)": 3
       }
     },
     "/SEL0366-Comunicacoes-Opticas/": {
@@ -2426,6 +2428,21 @@
         "github.com": 1
       }
     },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/software.html": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "DE": 1,
+        "US": 1
+      },
+      "sources": {
+        "(not set)": 2,
+        "(direct)": 1
+      }
+    },
     "/SCE0610-Programacao-Orientada-a-Objetos/software.html": {
       "views": 2,
       "sessions": 1,
@@ -3338,19 +3355,6 @@
       },
       "sources": {
         "(direct)": 1,
-        "(not set)": 1
-      }
-    },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/software.html": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "DE": 1
-      },
-      "sources": {
         "(not set)": 1
       }
     },
