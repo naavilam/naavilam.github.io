@@ -62,7 +62,7 @@
   status: completed
   link: https://academic-codex.github.io/IF4302112-Fisica-II
 - Course: Física Matemática I
-  id: IF4302112-FM1
+  id: IF4302112
   level: undergrad
   School: IF/USP
   area: Physics
@@ -258,7 +258,7 @@
   status: completed
   link: https://academic-codex.github.io/SCE0601-Introducao-a-Ciencia-da-Computacao-I
 - Course: Laboratório de Introdução à Ciência da Computação I
-  id: SCE0601-LAB
+  id: SCE0601
   level: undergrad
   School: ICMC/USP
   area: Computer Science
@@ -461,7 +461,7 @@
   status: completed
   link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
 - Course: Processamento Digital de Sinais
-  id: SEL0615-PDS
+  id: SEL0615
   level: undergrad
   School: EESC/USP
   area: Eletronics
@@ -482,14 +482,14 @@
   status: completed
   link: https://academic-codex.github.io/SEL0617-Fundamentos-de-Microeletronica
 - Course: Projeto de Circuitos Integrados Analógicos
-  id: SEL0618-A
+  id: SEL0618
   level: undergrad
   School: EESC/USP
   area: Eletronics
   status: completed
   link: https://academic-codex.github.io/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos
 - Course: Projeto de Circuitos Integrados Digitais I
-  id: SEL0618-D1
+  id: SEL0618
   level: undergrad
   School: EESC/USP
   area: Eletronics
