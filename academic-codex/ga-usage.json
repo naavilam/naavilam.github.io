@@ -75,6 +75,22 @@
         "github.com": 10
       }
     },
+    "/SEL0609-Circuitos-Eletronicos-I/": {
+      "views": 28,
+      "sessions": 27,
+      "users": 27,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "JP": 18,
+        "US": 9,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 27,
+        "(not set)": 8
+      }
+    },
     "/PGF5002-Mecanica-Quantica-II/": {
       "views": 25,
       "sessions": 17,
@@ -105,6 +121,26 @@
       },
       "sources": {
         "github.com": 4
+      }
+    },
+    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
+      "views": 24,
+      "sessions": 24,
+      "users": 24,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "JP": 14,
+        "US": 4,
+        "RS": 2,
+        "DE": 1,
+        "NL": 1,
+        "SC": 1,
+        "SG": 1
+      },
+      "sources": {
+        "(direct)": 23,
+        "(not set)": 7
       }
     },
     "/IF4302305-Mecanica-Classica-I/": {
@@ -175,22 +211,6 @@
       },
       "sources": {
         "github.com": 8
-      }
-    },
-    "/SEL0609-Circuitos-Eletronicos-I/": {
-      "views": 22,
-      "sessions": 21,
-      "users": 21,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "JP": 12,
-        "US": 9,
-        "RU": 1
-      },
-      "sources": {
-        "(direct)": 21,
-        "(not set)": 7
       }
     },
     "/TEST0001-Disciplina-Fantasma/": {
@@ -323,26 +343,6 @@
       "sources": {
         "(direct)": 8,
         "github.com": 7
-      }
-    },
-    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
-      "views": 20,
-      "sessions": 20,
-      "users": 20,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "JP": 10,
-        "US": 4,
-        "RS": 2,
-        "DE": 1,
-        "NL": 1,
-        "SC": 1,
-        "SG": 1
-      },
-      "sources": {
-        "(direct)": 19,
-        "(not set)": 7
       }
     },
     "/SEL0622-Projeto-de-Circuitos-Integrados-Digitais-II/": {
@@ -1223,8 +1223,8 @@
     },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
       "views": 9,
-      "sessions": 10,
-      "users": 10,
+      "sessions": 11,
+      "users": 11,
       "clicks": 0,
       "engagement_rate": 0.0,
       "countries": {
@@ -1235,7 +1235,7 @@
       },
       "sources": {
         "(direct)": 9,
-        "(not set)": 2
+        "(not set)": 3
       }
     },
     "/SMA0182-Algebra-Linear-e-Equacoes-Diferenciais/": {
@@ -3153,6 +3153,19 @@
         "github.com": 2
       }
     },
+    "/SSC0144-Redes-de-Alto-Desempenho/": {
+      "views": 2,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 2
+      }
+    },
     "/SSC0144-Redes-de-Alto-Desempenho/index.html": {
       "views": 2,
       "sessions": 1,
@@ -4560,19 +4573,6 @@
       }
     },
     "/SSC0144-Redes-De-Alto-Desempenho/research.html": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/": {
       "views": 1,
       "sessions": 1,
       "users": 1,
