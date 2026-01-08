@@ -4,13 +4,13 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 207,
-      "sessions": 68,
-      "users": 30,
+      "views": 206,
+      "sessions": 67,
+      "users": 29,
       "clicks": 17,
-      "engagement_rate": 0.5588235294117647,
+      "engagement_rate": 0.5522388059701493,
       "countries": {
-        "BR": 184,
+        "BR": 183,
         "US": 16,
         "NL": 2,
         "AM": 1,
@@ -20,7 +20,7 @@
         "NO": 1
       },
       "sources": {
-        "(direct)": 35,
+        "(direct)": 34,
         "github.com": 32,
         "(not set)": 1
       }
@@ -1254,6 +1254,24 @@
         "(not set)": 3
       }
     },
+    "/quantum-learning/": {
+      "views": 9,
+      "sessions": 8,
+      "users": 7,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 4,
+        "US": 3,
+        "??": 1,
+        "MX": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 3,
+        "github.com": 2
+      }
+    },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/": {
       "views": 8,
       "sessions": 6,
@@ -1353,6 +1371,20 @@
         "github.com": 3
       }
     },
+    "/quantum-learning/index.html": {
+      "views": 8,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 8
+      },
+      "sources": {
+        "github.com": 2,
+        "(not set)": 1
+      }
+    },
     "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
       "views": 7,
       "sessions": 7,
@@ -1428,6 +1460,26 @@
       },
       "sources": {
         "github.com": 4
+      }
+    },
+    "/quantum-algorithms/": {
+      "views": 7,
+      "sessions": 8,
+      "users": 7,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 2,
+        "DE": 1,
+        "IL": 1,
+        "IR": 1,
+        "NL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 4,
+        "github.com": 2
       }
     },
     "/Academic-Research-Journal/research.html": {
@@ -1606,6 +1658,24 @@
       },
       "sources": {
         "github.com": 4
+      }
+    },
+    "/Batalha-Naval-Quantica/": {
+      "views": 5,
+      "sessions": 6,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "FR": 2,
+        "BR": 1,
+        "IN": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "(not set)": 2,
+        "github.com": 2
       }
     },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/": {
@@ -2007,6 +2077,24 @@
       "sources": {
         "(direct)": 2,
         "github.com": 1
+      }
+    },
+    "/quantum-error-mitigation/": {
+      "views": 4,
+      "sessions": 6,
+      "users": 5,
+      "clicks": 2,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1,
+        "FI": 1,
+        "IN": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 3,
+        "github.com": 2,
+        "(not set)": 1
       }
     },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/software.html": {
@@ -4650,6 +4738,19 @@
         "(direct)": 1
       }
     },
+    "/quantum-learning/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(not set)": 1
+      }
+    },
     "/FCM0102-Fisica-II/software.html": {
       "views": 0,
       "sessions": 1,
@@ -4662,6 +4763,17 @@
       }
     },
     "/SCE0294-Laboratorio-de-Algoritmos-Avancados/software.html": {
+      "views": 0,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {},
+      "sources": {
+        "(not set)": 1
+      }
+    },
+    "/quantum-learning/research.html": {
       "views": 0,
       "sessions": 1,
       "users": 1,
