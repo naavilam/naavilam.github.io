@@ -8,7 +8,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-01-07T23:32:11Z",
+    "pushed_at": "2026-01-08T17:49:52Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 8,
@@ -16,12 +16,12 @@
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 5,
-    "total_files": 45,
+    "total_files": 41,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "dd45057224579421cce9a462730448246577607c",
+        "head_sha": "3335e78e489d9ca1959847cf6163ecc5c44bb3dd",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -29,11 +29,11 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 24
+        "total_files": 20
       },
       {
         "branch": "main",
-        "head_sha": "94ae6afa1b0cdd7b1975eea6b07b49624c0ec7b7",
+        "head_sha": "3f3d8c5918051eb7741034010d1c5a0aeacfa5cd",
         "has_gitignore": true,
         "has_readme": true,
         "notebooks_ipynb": 8,
@@ -47,6 +47,52 @@
   },
   {
     "org": "high-energy-physics-research",
+    "name": "Gaussian-Process-Regression-Research",
+    "full_name": "High-Energy-Physics-Research/Gaussian-Process-Regression-Research",
+    "url": "https://github.com/High-Energy-Physics-Research/Gaussian-Process-Regression-Research",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2026-01-08T17:51:42Z",
+    "has_gitignore": true,
+    "has_readme": true,
+    "notebooks_ipynb": 1,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 3,
+    "total_files": 29,
+    "branches_count": 2,
+    "branches": [
+      {
+        "branch": "gh-pages",
+        "head_sha": "262eb41c00f8551fcad4328a668e26e0dfa9359f",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 22
+      },
+      {
+        "branch": "main",
+        "head_sha": "8564072171dc96d3130cc08d26715177e6b948d9",
+        "has_gitignore": true,
+        "has_readme": true,
+        "notebooks_ipynb": 1,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 3,
+        "total_files": 7
+      }
+    ]
+  },
+  {
+    "org": "high-energy-physics-research",
     "name": "high-energy-physics-research.github.io",
     "full_name": "High-Energy-Physics-Research/high-energy-physics-research.github.io",
     "url": "https://github.com/High-Energy-Physics-Research/high-energy-physics-research.github.io",
@@ -54,28 +100,28 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-01-07T23:37:38Z",
+    "pushed_at": "2026-01-08T17:34:07Z",
     "has_gitignore": false,
     "has_readme": false,
     "notebooks_ipynb": 1,
     "files_py": 3,
     "files_tex": 0,
     "files_md": 1,
-    "files_yml": 9,
-    "total_files": 46,
+    "files_yml": 10,
+    "total_files": 48,
     "branches_count": 1,
     "branches": [
       {
         "branch": "main",
-        "head_sha": "7c0bd25e2cb54bca5aded25838d30aa9974def41",
+        "head_sha": "43cf2071c44a5afdc2d9f4d56a5d8e5a9dfc9d98",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 1,
         "files_py": 3,
         "files_tex": 0,
         "files_md": 1,
-        "files_yml": 9,
-        "total_files": 46
+        "files_yml": 10,
+        "total_files": 48
       }
     ]
   }

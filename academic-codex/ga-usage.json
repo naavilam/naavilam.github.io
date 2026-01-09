@@ -4,13 +4,13 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 206,
-      "sessions": 67,
-      "users": 29,
+      "views": 215,
+      "sessions": 72,
+      "users": 30,
       "clicks": 17,
-      "engagement_rate": 0.5522388059701493,
+      "engagement_rate": 0.5277777777777778,
       "countries": {
-        "BR": 183,
+        "BR": 192,
         "US": 16,
         "NL": 2,
         "AM": 1,
@@ -20,22 +20,24 @@
         "NO": 1
       },
       "sources": {
-        "(direct)": 34,
-        "github.com": 32,
-        "(not set)": 1
+        "(direct)": 36,
+        "github.com": 36,
+        "(not set)": 3
       }
     },
     "/PGF5005-Mecanica-Classica/software.html": {
-      "views": 47,
-      "sessions": 8,
-      "users": 1,
+      "views": 49,
+      "sessions": 10,
+      "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.875,
+      "engagement_rate": 0.7,
       "countries": {
-        "BR": 47
+        "BR": 49
       },
       "sources": {
-        "github.com": 8
+        "github.com": 9,
+        "(direct)": 1,
+        "(not set)": 1
       }
     },
     "/Academic-Research-Journal/software.html": {
@@ -43,7 +45,7 @@
       "sessions": 9,
       "users": 4,
       "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 0.7777777777777778,
       "countries": {
         "BR": 36,
         "(not set)": 1,
@@ -54,14 +56,44 @@
         "(direct)": 3
       }
     },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
-      "views": 30,
-      "sessions": 26,
-      "users": 17,
-      "clicks": 3,
-      "engagement_rate": 0.4230769230769231,
+    "/SEL0609-Circuitos-Eletronicos-I/": {
+      "views": 34,
+      "sessions": 34,
+      "users": 34,
+      "clicks": 0,
+      "engagement_rate": 0.058823529411764705,
       "countries": {
-        "BR": 15,
+        "JP": 24,
+        "US": 9,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 33,
+        "(not set)": 2
+      }
+    },
+    "/Gaussian-Process-Research/software.html": {
+      "views": 32,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 32
+      },
+      "sources": {
+        "(not set)": 2,
+        "github.com": 2
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
+      "views": 31,
+      "sessions": 27,
+      "users": 18,
+      "clicks": 3,
+      "engagement_rate": 0.4074074074074074,
+      "countries": {
+        "BR": 16,
         "US": 5,
         "NL": 3,
         "IL": 2,
@@ -71,24 +103,29 @@
         "MM": 1
       },
       "sources": {
-        "(direct)": 16,
-        "github.com": 10
+        "(direct)": 17,
+        "github.com": 10,
+        "(not set)": 1
       }
     },
-    "/SEL0609-Circuitos-Eletronicos-I/": {
-      "views": 28,
-      "sessions": 27,
-      "users": 27,
+    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
+      "views": 29,
+      "sessions": 28,
+      "users": 28,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.03571428571428571,
       "countries": {
-        "JP": 18,
-        "US": 9,
-        "RU": 1
+        "JP": 19,
+        "US": 4,
+        "RS": 2,
+        "DE": 1,
+        "NL": 1,
+        "SC": 1,
+        "SG": 1
       },
       "sources": {
-        "(direct)": 27,
-        "(not set)": 8
+        "(direct)": 28,
+        "(not set)": 1
       }
     },
     "/PGF5002-Mecanica-Quantica-II/": {
@@ -123,24 +160,57 @@
         "github.com": 4
       }
     },
-    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
+    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/": {
       "views": 24,
-      "sessions": 24,
-      "users": 24,
-      "clicks": 0,
-      "engagement_rate": 0.0,
+      "sessions": 20,
+      "users": 14,
+      "clicks": 1,
+      "engagement_rate": 0.35,
       "countries": {
-        "JP": 14,
-        "US": 4,
-        "RS": 2,
-        "DE": 1,
-        "NL": 1,
-        "SC": 1,
-        "SG": 1
+        "BR": 10,
+        "US": 6,
+        "BE": 3,
+        "IL": 2,
+        "NL": 2,
+        "DE": 1
       },
       "sources": {
-        "(direct)": 23,
-        "(not set)": 7
+        "(direct)": 13,
+        "github.com": 7
+      }
+    },
+    "/PGF5001-Mecanica-Quantica-I/": {
+      "views": 23,
+      "sessions": 21,
+      "users": 14,
+      "clicks": 4,
+      "engagement_rate": 0.42857142857142855,
+      "countries": {
+        "BR": 10,
+        "NL": 5,
+        "US": 5,
+        "DE": 1,
+        "IL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 13,
+        "github.com": 8,
+        "(not set)": 1
+      }
+    },
+    "/PGF5005-Mecanica-Classica/": {
+      "views": 23,
+      "sessions": 10,
+      "users": 3,
+      "clicks": 2,
+      "engagement_rate": 0.8,
+      "countries": {
+        "BR": 23
+      },
+      "sources": {
+        "github.com": 8,
+        "(direct)": 2
       }
     },
     "/IF4302305-Mecanica-Classica-I/": {
@@ -179,38 +249,6 @@
       "sources": {
         "(direct)": 13,
         "github.com": 5
-      }
-    },
-    "/PGF5001-Mecanica-Quantica-I/": {
-      "views": 22,
-      "sessions": 20,
-      "users": 13,
-      "clicks": 3,
-      "engagement_rate": 0.45,
-      "countries": {
-        "BR": 9,
-        "NL": 5,
-        "US": 5,
-        "DE": 1,
-        "IL": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct)": 12,
-        "github.com": 8
-      }
-    },
-    "/PGF5005-Mecanica-Classica/": {
-      "views": 22,
-      "sessions": 8,
-      "users": 1,
-      "clicks": 2,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 22
-      },
-      "sources": {
-        "github.com": 8
       }
     },
     "/TEST0001-Disciplina-Fantasma/": {
@@ -270,25 +308,6 @@
       "sources": {
         "(direct)": 16,
         "github.com": 4
-      }
-    },
-    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/": {
-      "views": 21,
-      "sessions": 18,
-      "users": 14,
-      "clicks": 1,
-      "engagement_rate": 0.3888888888888889,
-      "countries": {
-        "BR": 7,
-        "US": 6,
-        "BE": 3,
-        "IL": 2,
-        "NL": 2,
-        "DE": 1
-      },
-      "sources": {
-        "(direct)": 13,
-        "github.com": 5
       }
     },
     "/SEL0619-Comunicacao-Digital/": {
@@ -363,6 +382,25 @@
       "sources": {
         "(direct)": 15,
         "github.com": 2
+      }
+    },
+    "/Gaussian-Process-Research/": {
+      "views": 19,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 1,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 12,
+        "US": 3,
+        "NL": 2,
+        "SC": 1,
+        "ZA": 1
+      },
+      "sources": {
+        "(direct)": 7,
+        "(not set)": 2,
+        "github.com": 1
       }
     },
     "/IF4300214-Fisica-Experimental-IV/": {
@@ -599,6 +637,26 @@
         "github.com": 1
       }
     },
+    "/quantum-learning/": {
+      "views": 16,
+      "sessions": 14,
+      "users": 12,
+      "clicks": 0,
+      "engagement_rate": 0.14285714285714285,
+      "countries": {
+        "BR": 6,
+        "US": 4,
+        "IL": 3,
+        "(not set)": 1,
+        "MX": 1,
+        "NL": 1
+      },
+      "sources": {
+        "(direct)": 11,
+        "(not set)": 4,
+        "github.com": 2
+      }
+    },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
       "views": 15,
       "sessions": 13,
@@ -706,7 +764,7 @@
       "sessions": 10,
       "users": 8,
       "clicks": 0,
-      "engagement_rate": 0.2,
+      "engagement_rate": 0.3,
       "countries": {
         "BR": 7,
         "US": 6,
@@ -754,6 +812,20 @@
         "github.com": 4
       }
     },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/software.html": {
+      "views": 14,
+      "sessions": 8,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.875,
+      "countries": {
+        "BR": 14
+      },
+      "sources": {
+        "github.com": 6,
+        "(direct)": 2
+      }
+    },
     "/SEL0615-Processamento-Digital-de-Sinais/": {
       "views": 14,
       "sessions": 14,
@@ -793,20 +865,6 @@
         "github.com": 1
       }
     },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/software.html": {
-      "views": 13,
-      "sessions": 7,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 13
-      },
-      "sources": {
-        "github.com": 6,
-        "(direct)": 1
-      }
-    },
     "/SCE0601-Introducao-Ciencia-Da-Computacao-I/": {
       "views": 13,
       "sessions": 12,
@@ -828,7 +886,7 @@
       "sessions": 12,
       "users": 12,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.16666666666666666,
       "countries": {
         "NL": 5,
         "US": 5,
@@ -836,8 +894,7 @@
         "IL": 1
       },
       "sources": {
-        "(direct)": 12,
-        "(not set)": 5
+        "(direct)": 12
       }
     },
     "/SEL0611-Fundamentos-de-Controle/": {
@@ -845,7 +902,7 @@
       "sessions": 12,
       "users": 12,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.08333333333333333,
       "countries": {
         "US": 10,
         "IT": 1,
@@ -853,8 +910,7 @@
         "PT": 1
       },
       "sources": {
-        "(direct)": 12,
-        "(not set)": 3
+        "(direct)": 12
       }
     },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/": {
@@ -875,6 +931,20 @@
         "github.com": 1
       }
     },
+    "/Gaussian-Process-Research/index.html": {
+      "views": 12,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 4,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 12
+      },
+      "sources": {
+        "(not set)": 2,
+        "github.com": 2
+      }
+    },
     "/PGF5005-Mecanica-Classica/index.html": {
       "views": 12,
       "sessions": 5,
@@ -886,6 +956,41 @@
       },
       "sources": {
         "github.com": 5
+      }
+    },
+    "/SET0623-Mecanica-dos-Solidos/": {
+      "views": 12,
+      "sessions": 11,
+      "users": 11,
+      "clicks": 0,
+      "engagement_rate": 0.18181818181818182,
+      "countries": {
+        "US": 6,
+        "ES": 2,
+        "DE": 1,
+        "ID": 1,
+        "IL": 1,
+        "SK": 1
+      },
+      "sources": {
+        "(direct)": 11
+      }
+    },
+    "/SHS0619-Fenomenos-de-Transporte/": {
+      "views": 12,
+      "sessions": 11,
+      "users": 11,
+      "clicks": 0,
+      "engagement_rate": 0.09090909090909091,
+      "countries": {
+        "US": 6,
+        "ES": 3,
+        "FR": 1,
+        "IL": 1,
+        "IN": 1
+      },
+      "sources": {
+        "(direct)": 11
       }
     },
     "/SMA0333-Calculo-III/": {
@@ -908,17 +1013,72 @@
         "github.com": 3
       }
     },
+    "/quantum-learning/index.html": {
+      "views": 12,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 1,
+      "engagement_rate": 0.3333333333333333,
+      "countries": {
+        "BR": 12
+      },
+      "sources": {
+        "github.com": 2,
+        "(not set)": 1
+      }
+    },
+    "/quantum-neural-state/": {
+      "views": 12,
+      "sessions": 11,
+      "users": 11,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 6,
+        "AT": 1,
+        "BR": 1,
+        "ES": 1,
+        "IL": 1,
+        "PL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 11,
+        "(not set)": 5
+      }
+    },
     "/Academic-Research-Journal/index.html": {
       "views": 11,
       "sessions": 5,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.8,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 11
       },
       "sources": {
         "github.com": 5
+      }
+    },
+    "/Gaussian-Process-Regression-Research/": {
+      "views": 11,
+      "sessions": 11,
+      "users": 11,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 4,
+        "CZ": 2,
+        "BR": 1,
+        "IL": 1,
+        "NL": 1,
+        "NO": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 9,
+        "(not set)": 3,
+        "github.com": 1
       }
     },
     "/PGF5002-Mecanica-Quantica-II/software.html": {
@@ -954,23 +1114,38 @@
         "github.com": 1
       }
     },
-    "/SET0623-Mecanica-dos-Solidos/": {
+    "/SEL0604-Sinais-e-Sistemas/": {
+      "views": 11,
+      "sessions": 10,
+      "users": 10,
+      "clicks": 0,
+      "engagement_rate": 0.1,
+      "countries": {
+        "US": 5,
+        "DE": 4,
+        "CZ": 1,
+        "IL": 1
+      },
+      "sources": {
+        "(direct)": 10
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
       "views": 11,
       "sessions": 11,
       "users": 11,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.18181818181818182,
       "countries": {
-        "US": 5,
-        "ES": 2,
+        "US": 6,
+        "SC": 2,
+        "BR": 1,
         "DE": 1,
-        "ID": 1,
-        "IL": 1,
-        "SK": 1
+        "GB": 1
       },
       "sources": {
         "(direct)": 10,
-        "(not set)": 5
+        "github.com": 1
       }
     },
     "/SHS0416-Sistema-de-Gestao-Ambiental/": {
@@ -991,22 +1166,20 @@
         "github.com": 2
       }
     },
-    "/SHS0619-Fenomenos-de-Transporte/": {
+    "/SMA0300-Geometria-Analitica/": {
       "views": 11,
-      "sessions": 11,
-      "users": 11,
+      "sessions": 10,
+      "users": 10,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.1,
       "countries": {
         "US": 6,
-        "ES": 2,
-        "FR": 1,
-        "IL": 1,
-        "IN": 1
+        "IL": 2,
+        "NL": 2,
+        "SC": 1
       },
       "sources": {
-        "(direct)": 10,
-        "(not set)": 8
+        "(direct)": 10
       }
     },
     "/SSC0643-Avaliacao-de-Desempenho/": {
@@ -1020,6 +1193,59 @@
         "AU": 2,
         "NL": 2,
         "DE": 1
+      },
+      "sources": {
+        "(direct)": 10
+      }
+    },
+    "/quantum-algorithms/": {
+      "views": 11,
+      "sessions": 10,
+      "users": 9,
+      "clicks": 2,
+      "engagement_rate": 0.1,
+      "countries": {
+        "BR": 5,
+        "DE": 1,
+        "IL": 1,
+        "IR": 1,
+        "NL": 1,
+        "SC": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 6,
+        "(not set)": 4,
+        "github.com": 2
+      }
+    },
+    "/variational-approximation/": {
+      "views": 11,
+      "sessions": 10,
+      "users": 10,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 6,
+        "IL": 3,
+        "CZ": 2
+      },
+      "sources": {
+        "(direct)": 10,
+        "(not set)": 4
+      }
+    },
+    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
+      "views": 10,
+      "sessions": 10,
+      "users": 10,
+      "clicks": 0,
+      "engagement_rate": 0.1,
+      "countries": {
+        "US": 7,
+        "DE": 1,
+        "DK": 1,
+        "SC": 1
       },
       "sources": {
         "(direct)": 10
@@ -1040,8 +1266,7 @@
         "SC": 1
       },
       "sources": {
-        "(direct)": 9,
-        "(not set)": 3
+        "(direct)": 9
       }
     },
     "/SEL0601-Materiais-Eletricos/": {
@@ -1049,7 +1274,7 @@
       "sessions": 9,
       "users": 9,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.1111111111111111,
       "countries": {
         "US": 3,
         "AU": 2,
@@ -1059,25 +1284,7 @@
         "IL": 1
       },
       "sources": {
-        "(direct)": 9,
-        "(not set)": 5
-      }
-    },
-    "/SMA0300-Geometria-Analitica/": {
-      "views": 10,
-      "sessions": 10,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 6,
-        "NL": 2,
-        "IL": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 9,
-        "(not set)": 5
+        "(direct)": 9
       }
     },
     "/SSC0144-Redes-De-Alto-Desempenho/": {
@@ -1173,23 +1380,6 @@
         "github.com": 7
       }
     },
-    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
-      "views": 9,
-      "sessions": 10,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.1,
-      "countries": {
-        "US": 6,
-        "DE": 1,
-        "DK": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 9,
-        "(not set)": 2
-      }
-    },
     "/SCE0607-Organizacao-de-Computadores-Digitais-I/": {
       "views": 9,
       "sessions": 8,
@@ -1201,41 +1391,7 @@
         "DE": 3
       },
       "sources": {
-        "(direct)": 8,
-        "(not set)": 1
-      }
-    },
-    "/SEL0604-Sinais-e-Sistemas/": {
-      "views": 9,
-      "sessions": 10,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "DE": 4,
-        "US": 4,
-        "IL": 1
-      },
-      "sources": {
-        "(direct)": 8,
-        "(not set)": 5
-      }
-    },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 9,
-      "sessions": 11,
-      "users": 11,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 5,
-        "SC": 2,
-        "DE": 1,
-        "GB": 1
-      },
-      "sources": {
-        "(direct)": 9,
-        "(not set)": 3
+        "(direct)": 8
       }
     },
     "/SMA0182-Algebra-Linear-e-Equacoes-Diferenciais/": {
@@ -1243,33 +1399,14 @@
       "sessions": 9,
       "users": 9,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.1111111111111111,
       "countries": {
         "US": 6,
         "SC": 2,
         "IL": 1
       },
       "sources": {
-        "(direct)": 9,
-        "(not set)": 3
-      }
-    },
-    "/quantum-learning/": {
-      "views": 9,
-      "sessions": 8,
-      "users": 7,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "BR": 4,
-        "US": 3,
-        "??": 1,
-        "MX": 1
-      },
-      "sources": {
-        "(direct)": 5,
-        "(not set)": 3,
-        "github.com": 2
+        "(direct)": 9
       }
     },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/": {
@@ -1354,8 +1491,7 @@
         "SC": 1
       },
       "sources": {
-        "(direct)": 8,
-        "(not set)": 2
+        "(direct)": 8
       }
     },
     "/SSC0643-Avaliacao-Desempenho/": {
@@ -1371,18 +1507,53 @@
         "github.com": 3
       }
     },
-    "/quantum-learning/index.html": {
+    "/quantum-chemistry/": {
       "views": 8,
-      "sessions": 2,
-      "users": 1,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 1,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 3,
+        "BR": 2,
+        "IL": 2,
+        "DE": 1
+      },
+      "sources": {
+        "(direct)": 7,
+        "(not set)": 7
+      }
+    },
+    "/Batalha-Naval-Quantica/": {
+      "views": 7,
+      "sessions": 10,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.1,
+      "countries": {
+        "FR": 2,
+        "US": 2,
+        "BR": 1,
+        "IL": 1,
+        "IN": 1
+      },
+      "sources": {
+        "(direct)": 6,
+        "(not set)": 3,
+        "github.com": 2
+      }
+    },
+    "/FCM0101-Fisica-I/": {
+      "views": 7,
+      "sessions": 7,
+      "users": 7,
       "clicks": 0,
       "engagement_rate": 0.0,
       "countries": {
-        "BR": 8
+        "US": 7
       },
       "sources": {
-        "github.com": 2,
-        "(not set)": 1
+        "(direct)": 7
       }
     },
     "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
@@ -1390,7 +1561,7 @@
       "sessions": 7,
       "users": 7,
       "clicks": 0,
-      "engagement_rate": 0.14285714285714285,
+      "engagement_rate": 0.2857142857142857,
       "countries": {
         "US": 3,
         "IL": 2,
@@ -1399,7 +1570,6 @@
       },
       "sources": {
         "(direct)": 6,
-        "(not set)": 1,
         "github.com": 1
       }
     },
@@ -1416,12 +1586,29 @@
         "github.com": 6
       }
     },
+    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/software.html": {
+      "views": 7,
+      "sessions": 7,
+      "users": 4,
+      "clicks": 0,
+      "engagement_rate": 0.2857142857142857,
+      "countries": {
+        "BR": 5,
+        "BE": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "github.com": 3,
+        "(not set)": 2
+      }
+    },
     "/PGF5001-Mecanica-Quantica-I/software.html": {
       "views": 7,
       "sessions": 8,
       "users": 3,
       "clicks": 0,
-      "engagement_rate": 0.875,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 5,
         "NL": 1,
@@ -1432,12 +1619,27 @@
         "(direct)": 2
       }
     },
+    "/PGF5006-Mecanica-Estatistica/": {
+      "views": 7,
+      "sessions": 6,
+      "users": 3,
+      "clicks": 1,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 7
+      },
+      "sources": {
+        "github.com": 4,
+        "(not set)": 2,
+        "(direct)": 1
+      }
+    },
     "/SME0600-Calculo-Numerico-I/software.html": {
       "views": 7,
       "sessions": 6,
       "users": 3,
       "clicks": 0,
-      "engagement_rate": 0.8333333333333334,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 5,
         "ES": 1,
@@ -1445,8 +1647,7 @@
       },
       "sources": {
         "github.com": 4,
-        "(direct)": 2,
-        "(not set)": 1
+        "(direct)": 2
       }
     },
     "/SME0601-Calculo-Numerico-II/": {
@@ -1462,24 +1663,40 @@
         "github.com": 4
       }
     },
-    "/quantum-algorithms/": {
+    "/quantum-error-mitigation/": {
       "views": 7,
-      "sessions": 8,
+      "sessions": 9,
       "users": 7,
-      "clicks": 0,
-      "engagement_rate": 0.0,
+      "clicks": 2,
+      "engagement_rate": 0.1111111111111111,
       "countries": {
         "BR": 2,
-        "DE": 1,
+        "US": 2,
+        "FI": 1,
         "IL": 1,
-        "IR": 1,
-        "NL": 1,
-        "SC": 1
+        "IN": 1
       },
       "sources": {
         "(direct)": 5,
-        "(not set)": 4,
-        "github.com": 2
+        "github.com": 3,
+        "(not set)": 1
+      }
+    },
+    "/quantum-monte-carlo/": {
+      "views": 7,
+      "sessions": 9,
+      "users": 9,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 3,
+        "IL": 2,
+        "GB": 1,
+        "IT": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "(not set)": 5
       }
     },
     "/Academic-Research-Journal/research.html": {
@@ -1487,15 +1704,14 @@
       "sessions": 5,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.6,
+      "engagement_rate": 0.8,
       "countries": {
         "BR": 5,
         "US": 1
       },
       "sources": {
         "github.com": 4,
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/research.html": {
@@ -1513,34 +1729,33 @@
         "github.com": 1
       }
     },
-    "/FCM0101-Fisica-I/": {
-      "views": 6,
-      "sessions": 7,
-      "users": 7,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 6
-      },
-      "sources": {
-        "(direct)": 6,
-        "(not set)": 4
-      }
-    },
     "/FCM0102-Fisica-II/": {
       "views": 6,
       "sessions": 6,
       "users": 6,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.16666666666666666,
       "countries": {
         "US": 4,
         "AT": 1,
         "MD": 1
       },
       "sources": {
-        "(direct)": 6,
-        "(not set)": 3
+        "(direct)": 6
+      }
+    },
+    "/Gaussian-Process-Research/research.html": {
+      "views": 6,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 6
+      },
+      "sources": {
+        "(not set)": 2,
+        "github.com": 1
       }
     },
     "/MAC5921-Deep-Learning/index.html": {
@@ -1660,24 +1875,6 @@
         "github.com": 4
       }
     },
-    "/Batalha-Naval-Quantica/": {
-      "views": 5,
-      "sessions": 6,
-      "users": 5,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "FR": 2,
-        "BR": 1,
-        "IN": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 4,
-        "(not set)": 2,
-        "github.com": 2
-      }
-    },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/": {
       "views": 5,
       "sessions": 2,
@@ -1744,19 +1941,6 @@
       "sources": {
         "(direct)": 2,
         "github.com": 2
-      }
-    },
-    "/PGF5006-Mecanica-Estatistica/": {
-      "views": 5,
-      "sessions": 4,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 5
-      },
-      "sources": {
-        "github.com": 4
       }
     },
     "/PGF5261-Teoria-de-Grupos-Aplicada/": {
@@ -2023,15 +2207,14 @@
       "sessions": 4,
       "users": 2,
       "clicks": 1,
-      "engagement_rate": 0.75,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 3,
         "ES": 1
       },
       "sources": {
-        "github.com": 2,
-        "(direct)": 1,
-        "(not set)": 1
+        "github.com": 3,
+        "(direct)": 1
       }
     },
     "/SME0600-Calculo-Numerico-I/research.html": {
@@ -2039,15 +2222,14 @@
       "sessions": 3,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 3,
         "US": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1,
-        "github.com": 1
+        "github.com": 2,
+        "(direct)": 1
       }
     },
     "/SSC0748-Redes-Moveis/software.html": {
@@ -2079,22 +2261,20 @@
         "github.com": 1
       }
     },
-    "/quantum-error-mitigation/": {
+    "/quantum-learning/software.html": {
       "views": 4,
-      "sessions": 6,
-      "users": 5,
-      "clicks": 2,
-      "engagement_rate": 0.0,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.3333333333333333,
       "countries": {
-        "BR": 1,
-        "FI": 1,
-        "IN": 1,
+        "BR": 3,
         "US": 1
       },
       "sources": {
-        "(direct)": 3,
+        "(not set)": 2,
         "github.com": 2,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/software.html": {
@@ -2178,19 +2358,34 @@
         "github.com": 1
       }
     },
-    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/software.html": {
+    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/index.html": {
+      "views": 3,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 1,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 2,
+        "BE": 1
+      },
+      "sources": {
+        "github.com": 2,
+        "(direct)": 1
+      }
+    },
+    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/research.html": {
       "views": 3,
       "sessions": 3,
       "users": 3,
       "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 0.0,
       "countries": {
-        "BE": 1,
-        "BR": 1,
+        "BR": 2,
         "US": 1
       },
       "sources": {
         "(direct)": 2,
+        "(not set)": 1,
         "github.com": 1
       }
     },
@@ -2205,6 +2400,21 @@
       },
       "sources": {
         "github.com": 2
+      }
+    },
+    "/PGF5006-Mecanica-Estatistica/software.html": {
+      "views": 3,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 3
+      },
+      "sources": {
+        "github.com": 2,
+        "(direct)": 1,
+        "(not set)": 1
       }
     },
     "/SAP0679-Humanidades-e-Ciencias-Sociais/software.html": {
@@ -2517,6 +2727,21 @@
         "github.com": 2
       }
     },
+    "/quantum-chemistry/software.html": {
+      "views": 3,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 2,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 2,
+        "(not set)": 2
+      }
+    },
     "/EAP5054-Formacao-Cientista-Empreendedor-II/software.html": {
       "views": 2,
       "sessions": 1,
@@ -2535,14 +2760,14 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "BR": 1,
         "US": 1
       },
       "sources": {
-        "(not set)": 2,
-        "(direct)": 1
+        "(direct)": 1,
+        "github.com": 1
       }
     },
     "/IF4300214-Fisica-Experimental-IV/research.html": {
@@ -2655,21 +2880,6 @@
         "github.com": 1
       }
     },
-    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/index.html": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "clicks": 1,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BE": 1,
-        "BR": 1
-      },
-      "sources": {
-        "(direct)": 1,
-        "github.com": 1
-      }
-    },
     "/PGF5001-Mecanica-Quantica-I/index.html": {
       "views": 2,
       "sessions": 2,
@@ -2722,19 +2932,6 @@
       },
       "sources": {
         "github.com": 1
-      }
-    },
-    "/PGF5006-Mecanica-Estatistica/software.html": {
-      "views": 2,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com": 2
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/software.html": {
@@ -2889,14 +3086,13 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "AU": 1,
         "US": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 2
       }
     },
     "/SEL0602-Circuitos-Eletricos/software.html": {
@@ -2904,14 +3100,13 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "NL": 1,
         "US": 1
       },
       "sources": {
-        "(not set)": 2,
-        "(direct)": 1
+        "(direct)": 2
       }
     },
     "/SEL0604-Sinais-e-Sistemas/software.html": {
@@ -2919,14 +3114,13 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "DE": 1,
         "US": 1
       },
       "sources": {
-        "(direct)": 2,
-        "(not set)": 1
+        "(direct)": 2
       }
     },
     "/SEL0606-Laboratorio-Sistemas-Digitais/": {
@@ -2988,13 +3182,12 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "US": 2
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 2
       }
     },
     "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/software.html": {
@@ -3002,14 +3195,26 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "RS": 1,
         "US": 1
       },
       "sources": {
-        "(direct)": 2,
-        "(not set)": 2
+        "(direct)": 2
+      }
+    },
+    "/SEL0611-Fundamentos-de-Controle/software.html": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "US": 2
+      },
+      "sources": {
+        "(direct)": 2
       }
     },
     "/SEL0614-Microprocessadores/": {
@@ -3136,7 +3341,7 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "ES": 1,
         "US": 1
@@ -3165,14 +3370,13 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "ES": 1,
         "US": 1
       },
       "sources": {
-        "(not set)": 2,
-        "(direct)": 1
+        "(direct)": 2
       }
     },
     "/SMA0111-Funcoes-De-Variaveis-Complexas/software.html": {
@@ -3206,13 +3410,12 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.5,
       "countries": {
         "US": 2
       },
       "sources": {
-        "(direct)": 2,
-        "(not set)": 2
+        "(direct)": 2
       }
     },
     "/SME0601-Calculo-Numerico-II/software.html": {
@@ -3365,6 +3568,60 @@
         "github.com": 1
       }
     },
+    "/quantum-algorithms/software.html": {
+      "views": 2,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 2
+      }
+    },
+    "/quantum-learning/research.html": {
+      "views": 2,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "(not set)": 1,
+        "github.com": 1
+      }
+    },
+    "/variational-approximation/software.html": {
+      "views": 2,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 2
+      },
+      "sources": {
+        "(direct)": 2,
+        "(not set)": 1
+      }
+    },
+    "/Batalha-Naval-Quantica/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1
+      }
+    },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/research.html": {
       "views": 1,
       "sessions": 1,
@@ -3388,8 +3645,20 @@
         "US": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
+      }
+    },
+    "/FCM0102-Fisica-II/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1
       }
     },
     "/FFI0180-Laboratorio-de-Fisica-Geral-I/index.html": {
@@ -3397,12 +3666,12 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 1
       },
       "sources": {
-        "(not set)": 1
+        "github.com": 1
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/index.html": {
@@ -3429,6 +3698,33 @@
       },
       "sources": {
         "(direct)": 2
+      }
+    },
+    "/Gaussian-Process-Regression-Research/research.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/Gaussian-Process-Regression-Research/software.html": {
+      "views": 1,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(not set)": 1,
+        "github.com": 1
       }
     },
     "/IF4300214-Fisica-Experimental-IV/index.html": {
@@ -3574,19 +3870,6 @@
         "github.com": 1
       }
     },
-    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/research.html": {
-      "views": 1,
-      "sessions": 2,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 2
-      }
-    },
     "/MAT5730-Algebra-Linear/software.html": {
       "views": 1,
       "sessions": 1,
@@ -3650,6 +3933,19 @@
       },
       "sources": {
         "github.com": 1
+      }
+    },
+    "/PGF5006-Mecanica-Estatistica/research.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(not set)": 1
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/index.html": {
@@ -3754,6 +4050,19 @@
       },
       "sources": {
         "github.com": 1
+      }
+    },
+    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1
       }
     },
     "/SCE0601-Introducao-Ciencia-Da-Computacao-I/research.html": {
@@ -4073,13 +4382,12 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "AU": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/SEL0602-Circuitos-Eletricos/index.html": {
@@ -4087,13 +4395,12 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "NL": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/SEL0604-Sinais-e-Sistemas/index.html": {
@@ -4101,7 +4408,7 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "DE": 1
       },
@@ -4206,13 +4513,12 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "US": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/index.html": {
@@ -4220,7 +4526,7 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "RS": 1
       },
@@ -4233,25 +4539,11 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "US": 1
       },
       "sources": {
-        "(direct)": 1
-      }
-    },
-    "/SEL0611-Fundamentos-de-Controle/software.html": {
-      "views": 1,
-      "sessions": 2,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(not set)": 2,
         "(direct)": 1
       }
     },
@@ -4455,7 +4747,7 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "ES": 1
       },
@@ -4481,7 +4773,7 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "ES": 1
       },
@@ -4512,8 +4804,7 @@
         "US": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/SMA0300-Geometria-Analitica/index.html": {
@@ -4521,12 +4812,12 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "US": 1
       },
       "sources": {
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/SMA0301-Calculo-I/software.html": {
@@ -4578,8 +4869,7 @@
         "US": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/SME0600-Calculo-Numerico/": {
@@ -4738,7 +5028,33 @@
         "(direct)": 1
       }
     },
-    "/quantum-learning/software.html": {
+    "/quantum-algorithms/index.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 1,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/quantum-algorithms/research.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/quantum-chemistry/index.html": {
       "views": 1,
       "sessions": 1,
       "users": 1,
@@ -4751,29 +5067,47 @@
         "(not set)": 1
       }
     },
-    "/FCM0102-Fisica-II/software.html": {
-      "views": 0,
+    "/quantum-error-mitigation/software.html": {
+      "views": 1,
       "sessions": 1,
       "users": 1,
       "clicks": 0,
       "engagement_rate": 0.0,
-      "countries": {},
+      "countries": {
+        "US": 1
+      },
       "sources": {
+        "(direct)": 1,
         "(not set)": 1
       }
     },
-    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/software.html": {
-      "views": 0,
+    "/quantum-monte-carlo/software.html": {
+      "views": 1,
       "sessions": 1,
       "users": 1,
       "clicks": 0,
       "engagement_rate": 0.0,
-      "countries": {},
+      "countries": {
+        "US": 1
+      },
       "sources": {
-        "(not set)": 1
+        "(direct)": 1
       }
     },
-    "/quantum-learning/research.html": {
+    "/variational-approximation/research.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1
+      }
+    },
+    "/quantum-neural-state/software.html": {
       "views": 0,
       "sessions": 1,
       "users": 1,
