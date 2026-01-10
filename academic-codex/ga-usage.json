@@ -4,13 +4,13 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 215,
-      "sessions": 72,
+      "views": 217,
+      "sessions": 73,
       "users": 30,
       "clicks": 17,
-      "engagement_rate": 0.5277777777777778,
+      "engagement_rate": 0.5616438356164384,
       "countries": {
-        "BR": 192,
+        "BR": 194,
         "US": 16,
         "NL": 2,
         "AM": 1,
@@ -20,9 +20,25 @@
         "NO": 1
       },
       "sources": {
-        "(direct)": 36,
-        "github.com": 36,
-        "(not set)": 3
+        "github.com": 37,
+        "(direct)": 36
+      }
+    },
+    "/Academic-Research-Journal/software.html": {
+      "views": 66,
+      "sessions": 11,
+      "users": 4,
+      "clicks": 0,
+      "engagement_rate": 0.7272727272727273,
+      "countries": {
+        "BR": 64,
+        "(not set)": 1,
+        "US": 1
+      },
+      "sources": {
+        "github.com": 8,
+        "(direct)": 3,
+        "(not set)": 2
       }
     },
     "/PGF5005-Mecanica-Classica/software.html": {
@@ -30,60 +46,77 @@
       "sessions": 10,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.7,
+      "engagement_rate": 0.9,
       "countries": {
         "BR": 49
       },
       "sources": {
         "github.com": 9,
-        "(direct)": 1,
-        "(not set)": 1
-      }
-    },
-    "/Academic-Research-Journal/software.html": {
-      "views": 38,
-      "sessions": 9,
-      "users": 4,
-      "clicks": 0,
-      "engagement_rate": 0.7777777777777778,
-      "countries": {
-        "BR": 36,
-        "(not set)": 1,
-        "US": 1
-      },
-      "sources": {
-        "github.com": 6,
-        "(direct)": 3
+        "(direct)": 1
       }
     },
     "/SEL0609-Circuitos-Eletronicos-I/": {
-      "views": 34,
+      "views": 35,
       "sessions": 34,
       "users": 34,
       "clicks": 0,
       "engagement_rate": 0.058823529411764705,
       "countries": {
-        "JP": 24,
+        "JP": 25,
         "US": 9,
         "RU": 1
       },
       "sources": {
-        "(direct)": 33,
-        "(not set)": 2
+        "(direct)": 34
       }
     },
     "/Gaussian-Process-Research/software.html": {
-      "views": 32,
+      "views": 33,
       "sessions": 2,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
-        "BR": 32
+        "BR": 33
       },
       "sources": {
-        "(not set)": 2,
         "github.com": 2
+      }
+    },
+    "/Gaussian-Process-Regression-Research/software.html": {
+      "views": 32,
+      "sessions": 7,
+      "users": 4,
+      "clicks": 1,
+      "engagement_rate": 0.14285714285714285,
+      "countries": {
+        "BR": 31,
+        "US": 1
+      },
+      "sources": {
+        "(not set)": 5,
+        "(direct)": 4,
+        "github.com": 3
+      }
+    },
+    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
+      "views": 32,
+      "sessions": 32,
+      "users": 32,
+      "clicks": 0,
+      "engagement_rate": 0.03125,
+      "countries": {
+        "JP": 22,
+        "US": 4,
+        "RS": 2,
+        "DE": 1,
+        "NL": 1,
+        "SC": 1,
+        "SG": 1
+      },
+      "sources": {
+        "(direct)": 31,
+        "(not set)": 1
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
@@ -91,7 +124,7 @@
       "sessions": 27,
       "users": 18,
       "clicks": 3,
-      "engagement_rate": 0.4074074074074074,
+      "engagement_rate": 0.4444444444444444,
       "countries": {
         "BR": 16,
         "US": 5,
@@ -104,28 +137,7 @@
       },
       "sources": {
         "(direct)": 17,
-        "github.com": 10,
-        "(not set)": 1
-      }
-    },
-    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
-      "views": 29,
-      "sessions": 28,
-      "users": 28,
-      "clicks": 0,
-      "engagement_rate": 0.03571428571428571,
-      "countries": {
-        "JP": 19,
-        "US": 4,
-        "RS": 2,
-        "DE": 1,
-        "NL": 1,
-        "SC": 1,
-        "SG": 1
-      },
-      "sources": {
-        "(direct)": 28,
-        "(not set)": 1
+        "github.com": 10
       }
     },
     "/PGF5002-Mecanica-Quantica-II/": {
@@ -165,7 +177,7 @@
       "sessions": 20,
       "users": 14,
       "clicks": 1,
-      "engagement_rate": 0.35,
+      "engagement_rate": 0.45,
       "countries": {
         "BR": 10,
         "US": 6,
@@ -179,12 +191,26 @@
         "github.com": 7
       }
     },
+    "/PGF5005-Mecanica-Classica/": {
+      "views": 24,
+      "sessions": 11,
+      "users": 3,
+      "clicks": 2,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 24
+      },
+      "sources": {
+        "github.com": 9,
+        "(direct)": 2
+      }
+    },
     "/PGF5001-Mecanica-Quantica-I/": {
       "views": 23,
       "sessions": 21,
       "users": 14,
       "clicks": 4,
-      "engagement_rate": 0.42857142857142855,
+      "engagement_rate": 0.47619047619047616,
       "countries": {
         "BR": 10,
         "NL": 5,
@@ -195,22 +221,7 @@
       },
       "sources": {
         "(direct)": 13,
-        "github.com": 8,
-        "(not set)": 1
-      }
-    },
-    "/PGF5005-Mecanica-Classica/": {
-      "views": 23,
-      "sessions": 10,
-      "users": 3,
-      "clicks": 2,
-      "engagement_rate": 0.8,
-      "countries": {
-        "BR": 23
-      },
-      "sources": {
-        "github.com": 8,
-        "(direct)": 2
+        "github.com": 8
       }
     },
     "/IF4302305-Mecanica-Classica-I/": {
@@ -386,20 +397,19 @@
     },
     "/Gaussian-Process-Research/": {
       "views": 19,
-      "sessions": 8,
-      "users": 8,
+      "sessions": 9,
+      "users": 9,
       "clicks": 1,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.1111111111111111,
       "countries": {
-        "BR": 12,
-        "US": 3,
+        "BR": 11,
+        "US": 4,
         "NL": 2,
         "SC": 1,
         "ZA": 1
       },
       "sources": {
-        "(direct)": 7,
-        "(not set)": 2,
+        "(direct)": 8,
         "github.com": 1
       }
     },
@@ -642,7 +652,7 @@
       "sessions": 14,
       "users": 12,
       "clicks": 0,
-      "engagement_rate": 0.14285714285714285,
+      "engagement_rate": 0.2857142857142857,
       "countries": {
         "BR": 6,
         "US": 4,
@@ -653,8 +663,7 @@
       },
       "sources": {
         "(direct)": 11,
-        "(not set)": 4,
-        "github.com": 2
+        "github.com": 3
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
@@ -817,7 +826,7 @@
       "sessions": 8,
       "users": 3,
       "clicks": 0,
-      "engagement_rate": 0.875,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 14
       },
@@ -863,6 +872,20 @@
       "sources": {
         "(direct)": 12,
         "github.com": 1
+      }
+    },
+    "/Academic-Research-Journal/index.html": {
+      "views": 13,
+      "sessions": 7,
+      "users": 1,
+      "clicks": 1,
+      "engagement_rate": 0.7142857142857143,
+      "countries": {
+        "BR": 13
+      },
+      "sources": {
+        "github.com": 7,
+        "(not set)": 1
       }
     },
     "/SCE0601-Introducao-Ciencia-Da-Computacao-I/": {
@@ -913,6 +936,26 @@
         "(direct)": 12
       }
     },
+    "/quantum-algorithms/": {
+      "views": 13,
+      "sessions": 10,
+      "users": 9,
+      "clicks": 2,
+      "engagement_rate": 0.2,
+      "countries": {
+        "BR": 5,
+        "US": 3,
+        "DE": 1,
+        "IL": 1,
+        "IR": 1,
+        "NL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "github.com": 2
+      }
+    },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/": {
       "views": 12,
       "sessions": 9,
@@ -931,17 +974,37 @@
         "github.com": 1
       }
     },
+    "/Gaussian-Process-Regression-Research/": {
+      "views": 12,
+      "sessions": 12,
+      "users": 12,
+      "clicks": 0,
+      "engagement_rate": 0.16666666666666666,
+      "countries": {
+        "US": 5,
+        "CZ": 2,
+        "BR": 1,
+        "IL": 1,
+        "NL": 1,
+        "NO": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 10,
+        "(not set)": 2,
+        "github.com": 1
+      }
+    },
     "/Gaussian-Process-Research/index.html": {
       "views": 12,
       "sessions": 2,
       "users": 1,
       "clicks": 4,
-      "engagement_rate": 0.5,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 12
       },
       "sources": {
-        "(not set)": 2,
         "github.com": 2
       }
     },
@@ -1018,13 +1081,12 @@
       "sessions": 3,
       "users": 1,
       "clicks": 1,
-      "engagement_rate": 0.3333333333333333,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 12
       },
       "sources": {
-        "github.com": 2,
-        "(not set)": 1
+        "github.com": 3
       }
     },
     "/quantum-neural-state/": {
@@ -1032,7 +1094,7 @@
       "sessions": 11,
       "users": 11,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.18181818181818182,
       "countries": {
         "US": 6,
         "AT": 1,
@@ -1043,42 +1105,22 @@
         "RU": 1
       },
       "sources": {
-        "(direct)": 11,
-        "(not set)": 5
+        "(direct)": 11
       }
     },
-    "/Academic-Research-Journal/index.html": {
-      "views": 11,
-      "sessions": 5,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 11
-      },
-      "sources": {
-        "github.com": 5
-      }
-    },
-    "/Gaussian-Process-Regression-Research/": {
-      "views": 11,
+    "/variational-approximation/": {
+      "views": 12,
       "sessions": 11,
       "users": 11,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.09090909090909091,
       "countries": {
-        "US": 4,
-        "CZ": 2,
-        "BR": 1,
-        "IL": 1,
-        "NL": 1,
-        "NO": 1,
-        "SC": 1
+        "US": 7,
+        "IL": 3,
+        "CZ": 2
       },
       "sources": {
-        "(direct)": 9,
-        "(not set)": 3,
-        "github.com": 1
+        "(direct)": 11
       }
     },
     "/PGF5002-Mecanica-Quantica-II/software.html": {
@@ -1198,43 +1240,6 @@
         "(direct)": 10
       }
     },
-    "/quantum-algorithms/": {
-      "views": 11,
-      "sessions": 10,
-      "users": 9,
-      "clicks": 2,
-      "engagement_rate": 0.1,
-      "countries": {
-        "BR": 5,
-        "DE": 1,
-        "IL": 1,
-        "IR": 1,
-        "NL": 1,
-        "SC": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 6,
-        "(not set)": 4,
-        "github.com": 2
-      }
-    },
-    "/variational-approximation/": {
-      "views": 11,
-      "sessions": 10,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 6,
-        "IL": 3,
-        "CZ": 2
-      },
-      "sources": {
-        "(direct)": 10,
-        "(not set)": 4
-      }
-    },
     "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
       "views": 10,
       "sessions": 10,
@@ -1310,6 +1315,24 @@
         "BR": 10
       },
       "sources": {
+        "github.com": 3
+      }
+    },
+    "/Batalha-Naval-Quantica/": {
+      "views": 9,
+      "sessions": 10,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.3,
+      "countries": {
+        "US": 3,
+        "BR": 2,
+        "FR": 2,
+        "IL": 1,
+        "IN": 1
+      },
+      "sources": {
+        "(direct)": 7,
         "github.com": 3
       }
     },
@@ -1407,6 +1430,40 @@
       },
       "sources": {
         "(direct)": 9
+      }
+    },
+    "/quantum-chemistry/": {
+      "views": 9,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 1,
+      "engagement_rate": 0.125,
+      "countries": {
+        "IL": 3,
+        "US": 3,
+        "BR": 2,
+        "DE": 1
+      },
+      "sources": {
+        "(direct)": 8
+      }
+    },
+    "/quantum-error-mitigation/": {
+      "views": 9,
+      "sessions": 10,
+      "users": 8,
+      "clicks": 2,
+      "engagement_rate": 0.3,
+      "countries": {
+        "US": 4,
+        "BR": 2,
+        "FI": 1,
+        "IL": 1,
+        "IN": 1
+      },
+      "sources": {
+        "(direct)": 7,
+        "github.com": 3
       }
     },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/": {
@@ -1507,40 +1564,35 @@
         "github.com": 3
       }
     },
-    "/quantum-chemistry/": {
+    "/quantum-monte-carlo/": {
       "views": 8,
-      "sessions": 8,
-      "users": 8,
-      "clicks": 1,
-      "engagement_rate": 0.0,
+      "sessions": 9,
+      "users": 9,
+      "clicks": 0,
+      "engagement_rate": 0.1111111111111111,
       "countries": {
+        "IL": 3,
         "US": 3,
-        "BR": 2,
-        "IL": 2,
-        "DE": 1
+        "GB": 1,
+        "IT": 1
       },
       "sources": {
-        "(direct)": 7,
-        "(not set)": 7
+        "(direct)": 9
       }
     },
-    "/Batalha-Naval-Quantica/": {
+    "/Academic-Research-Journal/research.html": {
       "views": 7,
-      "sessions": 10,
-      "users": 8,
+      "sessions": 6,
+      "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.1,
+      "engagement_rate": 0.6666666666666666,
       "countries": {
-        "FR": 2,
-        "US": 2,
-        "BR": 1,
-        "IL": 1,
-        "IN": 1
+        "BR": 6,
+        "US": 1
       },
       "sources": {
-        "(direct)": 6,
-        "(not set)": 3,
-        "github.com": 2
+        "github.com": 5,
+        "(direct)": 1
       }
     },
     "/FCM0101-Fisica-I/": {
@@ -1573,6 +1625,19 @@
         "github.com": 1
       }
     },
+    "/Gaussian-Process-Research/research.html": {
+      "views": 7,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 7
+      },
+      "sources": {
+        "github.com": 2
+      }
+    },
     "/MAC5722-Complexidade-Computacional/": {
       "views": 7,
       "sessions": 6,
@@ -1588,10 +1653,10 @@
     },
     "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/software.html": {
       "views": 7,
-      "sessions": 7,
+      "sessions": 8,
       "users": 4,
       "clicks": 0,
-      "engagement_rate": 0.2857142857142857,
+      "engagement_rate": 0.625,
       "countries": {
         "BR": 5,
         "BE": 1,
@@ -1599,8 +1664,7 @@
       },
       "sources": {
         "(direct)": 4,
-        "github.com": 3,
-        "(not set)": 2
+        "github.com": 4
       }
     },
     "/PGF5001-Mecanica-Quantica-I/software.html": {
@@ -1624,14 +1688,13 @@
       "sessions": 6,
       "users": 3,
       "clicks": 1,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 7
       },
       "sources": {
         "github.com": 4,
-        "(not set)": 2,
-        "(direct)": 1
+        "(direct)": 2
       }
     },
     "/SME0600-Calculo-Numerico-I/software.html": {
@@ -1663,57 +1726,6 @@
         "github.com": 4
       }
     },
-    "/quantum-error-mitigation/": {
-      "views": 7,
-      "sessions": 9,
-      "users": 7,
-      "clicks": 2,
-      "engagement_rate": 0.1111111111111111,
-      "countries": {
-        "BR": 2,
-        "US": 2,
-        "FI": 1,
-        "IL": 1,
-        "IN": 1
-      },
-      "sources": {
-        "(direct)": 5,
-        "github.com": 3,
-        "(not set)": 1
-      }
-    },
-    "/quantum-monte-carlo/": {
-      "views": 7,
-      "sessions": 9,
-      "users": 9,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 3,
-        "IL": 2,
-        "GB": 1,
-        "IT": 1
-      },
-      "sources": {
-        "(direct)": 8,
-        "(not set)": 5
-      }
-    },
-    "/Academic-Research-Journal/research.html": {
-      "views": 6,
-      "sessions": 5,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.8,
-      "countries": {
-        "BR": 5,
-        "US": 1
-      },
-      "sources": {
-        "github.com": 4,
-        "(direct)": 1
-      }
-    },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/research.html": {
       "views": 6,
       "sessions": 2,
@@ -1742,20 +1754,6 @@
       },
       "sources": {
         "(direct)": 6
-      }
-    },
-    "/Gaussian-Process-Research/research.html": {
-      "views": 6,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.5,
-      "countries": {
-        "BR": 6
-      },
-      "sources": {
-        "(not set)": 2,
-        "github.com": 1
       }
     },
     "/MAC5921-Deep-Learning/index.html": {
@@ -2266,13 +2264,12 @@
       "sessions": 3,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.3333333333333333,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 3,
         "US": 1
       },
       "sources": {
-        "(not set)": 2,
         "github.com": 2,
         "(direct)": 1
       }
@@ -2362,8 +2359,8 @@
       "views": 3,
       "sessions": 3,
       "users": 2,
-      "clicks": 1,
-      "engagement_rate": 0.6666666666666666,
+      "clicks": 2,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 2,
         "BE": 1
@@ -2378,14 +2375,13 @@
       "sessions": 3,
       "users": 3,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.3333333333333333,
       "countries": {
         "BR": 2,
         "US": 1
       },
       "sources": {
         "(direct)": 2,
-        "(not set)": 1,
         "github.com": 1
       }
     },
@@ -2407,14 +2403,13 @@
       "sessions": 3,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 3
       },
       "sources": {
         "github.com": 2,
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/SAP0679-Humanidades-e-Ciencias-Sociais/software.html": {
@@ -2727,19 +2722,33 @@
         "github.com": 2
       }
     },
-    "/quantum-chemistry/software.html": {
+    "/quantum-algorithms/software.html": {
       "views": 3,
-      "sessions": 2,
+      "sessions": 3,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.3333333333333333,
       "countries": {
         "BR": 2,
         "US": 1
       },
       "sources": {
-        "(direct)": 2,
-        "(not set)": 2
+        "github.com": 2,
+        "(direct)": 1
+      }
+    },
+    "/quantum-chemistry/software.html": {
+      "views": 3,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 2,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 2
       }
     },
     "/EAP5054-Formacao-Cientista-Empreendedor-II/software.html": {
@@ -2768,6 +2777,19 @@
       "sources": {
         "(direct)": 1,
         "github.com": 1
+      }
+    },
+    "/Gaussian-Process-Regression-Research/research.html": {
+      "views": 2,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 2
       }
     },
     "/IF4300214-Fisica-Experimental-IV/research.html": {
@@ -3568,12 +3590,12 @@
         "github.com": 1
       }
     },
-    "/quantum-algorithms/software.html": {
+    "/quantum-learning/research.html": {
       "views": 2,
       "sessions": 2,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 2
       },
@@ -3581,32 +3603,17 @@
         "github.com": 2
       }
     },
-    "/quantum-learning/research.html": {
-      "views": 2,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.5,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "(not set)": 1,
-        "github.com": 1
-      }
-    },
     "/variational-approximation/software.html": {
       "views": 2,
       "sessions": 3,
       "users": 3,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.3333333333333333,
       "countries": {
         "US": 2
       },
       "sources": {
-        "(direct)": 2,
-        "(not set)": 1
+        "(direct)": 3
       }
     },
     "/Batalha-Naval-Quantica/software.html": {
@@ -3700,23 +3707,10 @@
         "(direct)": 2
       }
     },
-    "/Gaussian-Process-Regression-Research/research.html": {
+    "/Gaussian-Process-Regression-Research/index.html": {
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/Gaussian-Process-Regression-Research/software.html": {
-      "views": 1,
-      "sessions": 2,
-      "users": 2,
       "clicks": 0,
       "engagement_rate": 0.0,
       "countries": {
@@ -3940,12 +3934,12 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 1
       },
       "sources": {
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/index.html": {
@@ -5046,7 +5040,7 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 1
       },
@@ -5059,12 +5053,12 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 1
       },
       "sources": {
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/quantum-error-mitigation/software.html": {
@@ -5077,11 +5071,23 @@
         "US": 1
       },
       "sources": {
-        "(direct)": 1,
-        "(not set)": 1
+        "(direct)": 1
       }
     },
     "/quantum-monte-carlo/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 1
+      }
+    },
+    "/quantum-neural-state/software.html": {
       "views": 1,
       "sessions": 1,
       "users": 1,
@@ -5099,23 +5105,12 @@
       "sessions": 1,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 1.0,
       "countries": {
         "US": 1
       },
       "sources": {
         "(direct)": 1
-      }
-    },
-    "/quantum-neural-state/software.html": {
-      "views": 0,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {},
-      "sources": {
-        "(not set)": 1
       }
     }
   }
