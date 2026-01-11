@@ -1,0 +1,41 @@
+- title: Physics
+  description: Data analysis from heavy-ion collisions at the Large Hadron Collider (LHC).
+  link: /high-energy/
+  tag: Research
+  weight: 10
+
+- title: Mathematics
+  description: Probabilistic modeling and inference for scientific data.
+  link: /ml/gp/
+  tag: Methods
+  weight: 8
+
+- title: Machine Learning
+  description: Automation, reproducibility, and tooling for research workflows.
+  link: /software/
+  tag: Engineering
+  weight: 6
+
+- title: Economics
+  description: Automation, reproducibility, and tooling for research workflows.
+  link: /software/
+  tag: Engineering
+  weight: 1
+
+- title: Business
+  description: Automation, reproducibility, and tooling for research workflows.
+  link: /software/
+  tag: Engineering
+  weight: 2
+
+- title: Investments
+  description: Automation, reproducibility, and tooling for research workflows.
+  link: /software/
+  tag: Engineering
+  weight: 1
+
+- title: Phylosophy
+  description: Automation, reproducibility, and tooling for research workflows.
+  link: /software/
+  tag: Engineering
+  weight: 1

@@ -5,10 +5,19 @@ title: Focus
 header-img:
 last-updated: 2020-10-30 5:55 PM
 ---
-{% assign theme = site.data.themes[site.ui_theme] %}
-<div class="blogcard  card-1 mb-4" style="width: 100%;">
-  <div class="card-body">
-    <h5 class="card-title text-center"
-      style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
-  </div>
+{% assign focus_items = site.data.focus %}
+<div class="card-grid focus-grid">
+    {% for item in focus_items %}
+    <a class="focus-card weight-{{ item.weight | default: 1 }}" href="{{ item.link | default: '#' }}">
+        <div class="focus-card-body">
+            {% if item.tag %}
+            <div class="focus-tag">{{ item.tag }}</div>
+            {% endif %}
+            <div class="focus-title">{{ item.title }}</div>
+            {% if item.description %}
+            <div class="focus-desc">{{ item.description }}</div>
+            {% endif %}
+        </div>
+    </a>
+    {% endfor %}
 </div>
