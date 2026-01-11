@@ -1347,32 +1347,6 @@ body {
   }
 }
 
-/* pesos: quanto maior, maior */
-.focus-card.weight-1 {
-  grid-column: span 3;
-  grid-row: span 5;
-}
-
-.focus-card.weight-2 {
-  grid-column: span 4;
-  grid-row: span 6;
-}
-
-.focus-card.weight-3 {
-  grid-column: span 6;
-  grid-row: span 7;
-}
-
-.focus-card.weight-4 {
-  grid-column: span 8;
-  grid-row: span 8;
-}
-
-.focus-card.weight-5 {
-  grid-column: span 12;
-  grid-row: span 9;
-}
-
 /******************************************/
 /**************Focus Cards*****************/
 /******************************************/
