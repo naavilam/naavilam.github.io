@@ -118,4 +118,180 @@ dark:
     social-color-footer : black
 
 
+abyss-academic-teal:
+  name: abyss-academic-teal
 
+  nav-color: "#0f2f35"
+  nav-text: "#7dd3c7"
+
+  title-font: "Noto Sans JP"
+  font: "Poppins"
+  font-color: "#1f2933"
+
+  link-color: "#1e6f7c"
+  link-font: "Poppins"
+
+  social-color: "#94a3b8"
+  footer-social-color: "#1f2933"
+  social-color-footer: "#1f2933"
+
+  button-color: "#1f6f7a"
+  default-button-color: "#1f6f7a"
+
+  home-highlight-background: "#e6f4f3"
+  home-highlight-header-text: "#0f2f35"
+
+  education-title-font: "Noto Sans JP"
+  education-title-size: "18px"
+  education-entry-font: "Noto Sans JP"
+  education-entry-size: "17px"
+  education-section-size: "15px"
+
+  certification-title-font: "Noto Sans JP"
+  certification-title-size: "18px"
+  certification-entry-font: "Noto Sans JP"
+  certification-entry-size: "17px"
+  certification-section-size: "15px"
+
+  highlights-tab-color: "#ffffff"
+  projects-color: "#1f2933"
+  border-style: "1px solid #d1d5db"
+
+  post-tag-size: "18px"
+  post-title-size: "36px"
+  post-author-size: "15px"
+  post-font-weight: "600"
+
+
+abyss-slate-intelligence:
+  name: abyss-slate-intelligence
+
+  nav-color: "#1e293b"
+  nav-text: "#60a5fa"
+
+  title-font: "Noto Sans JP"
+  font: "Poppins"
+  font-color: "#0f172a"
+
+  link-color: "#2563eb"
+  link-font: "Poppins"
+
+  social-color: "#64748b"
+  footer-social-color: "#0f172a"
+  social-color-footer: "#0f172a"
+
+  button-color: "#334155"
+  default-button-color: "#334155"
+
+  home-highlight-background: "#f1f5f9"
+  home-highlight-header-text: "#1e293b"
+
+  education-title-font: "Noto Sans JP"
+  education-title-size: "18px"
+  education-entry-font: "Noto Sans JP"
+  education-entry-size: "17px"
+  education-section-size: "15px"
+
+  certification-title-font: "Noto Sans JP"
+  certification-title-size: "18px"
+  certification-entry-font: "Noto Sans JP"
+  certification-entry-size: "17px"
+  certification-section-size: "15px"
+
+  highlights-tab-color: "#ffffff"
+  projects-color: "#0f172a"
+  border-style: "1px solid #e2e8f0"
+
+  post-tag-size: "18px"
+  post-title-size: "36px"
+  post-author-size: "15px"
+  post-font-weight: "600"
+
+
+abyss-warm-humanistic:
+  name: abyss-warm-humanistic
+
+  nav-color: "#2a2a2a"
+  nav-text: "#c9a24d"
+
+  title-font: "Noto Sans JP"
+  font: "Poppins"
+  font-color: "#1f2933"
+
+  link-color: "#4b6b82"
+  link-font: "Poppins"
+
+  social-color: "#8b8b8b"
+  footer-social-color: "#2a2a2a"
+  social-color-footer: "#2a2a2a"
+
+  button-color: "#2a2a2a"
+  default-button-color: "#2a2a2a"
+
+  home-highlight-background: "#f5f3f0"
+  home-highlight-header-text: "#2a2a2a"
+
+  education-title-font: "Noto Sans JP"
+  education-title-size: "18px"
+  education-entry-font: "Noto Sans JP"
+  education-entry-size: "17px"
+  education-section-size: "15px"
+
+  certification-title-font: "Noto Sans JP"
+  certification-title-size: "18px"
+  certification-entry-font: "Noto Sans JP"
+  certification-entry-size: "17px"
+  certification-section-size: "15px"
+
+  highlights-tab-color: "#ffffff"
+  projects-color: "#1f2933"
+  border-style: "1px solid #e5e5e5"
+
+  post-tag-size: "18px"
+  post-title-size: "36px"
+  post-author-size: "15px"
+  post-font-weight: "600"
+
+abyss-ice-modern:
+  name: abyss-ice-modern
+
+  nav-color: "#0b3a40"
+  nav-text: "#38bdf8"
+
+  title-font: "Noto Sans JP"
+  font: "Poppins"
+  font-color: "#0f172a"
+
+  link-color: "#0284c7"
+  link-font: "Poppins"
+
+  social-color: "#94a3b8"
+  footer-social-color: "#0f172a"
+  social-color-footer: "#0f172a"
+
+  button-color: "#0b3a40"
+  default-button-color: "#0b3a40"
+
+  home-highlight-background: "#cfeff3"
+  home-highlight-header-text: "#0b3a40"
+
+  education-title-font: "Noto Sans JP"
+  education-title-size: "18px"
+  education-entry-font: "Noto Sans JP"
+  education-entry-size: "17px"
+  education-section-size: "15px"
+
+  certification-title-font: "Noto Sans JP"
+  certification-title-size: "18px"
+  certification-entry-font: "Noto Sans JP"
+  certification-entry-size: "17px"
+  certification-section-size: "15px"
+
+  highlights-tab-color: "#ffffff"
+  projects-color: "#0f172a"
+  border-style: "1px solid #e2e8f0"
+
+  post-tag-size: "18px"
+  post-title-size: "36px"
+  post-author-size: "15px"
+  post-font-weight: "600"
