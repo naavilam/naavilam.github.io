@@ -1247,7 +1247,7 @@ body {
   overflow: hidden;
 }
 
-.focus-grid{
+.focus-grid {
   display: grid;
 
   /* área de expansão */
@@ -1263,7 +1263,7 @@ body {
 }
 
 /* Card base */
-.focus-card{
+.focus-card {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -1271,14 +1271,15 @@ body {
   border-radius: 18px;
   padding: 18px;
 
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(148, 163, 184, 0.35); /* cinza */
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  /* cinza */
   transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
 }
 
 /* Hover/focus (azul) */
 .focus-card:hover,
-.focus-card:focus-visible{
+.focus-card:focus-visible {
   border-color: rgba(125, 211, 252, 0.95);
   box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.18);
   transform: translateY(-2px);
@@ -1286,33 +1287,92 @@ body {
 }
 
 /* Proporções por peso (col-span + row-span) */
-.focus-card.weight-1{ grid-column: span 4;  grid-row: span 5; }  /* ~220px */
-.focus-card.weight-2{ grid-column: span 6;  grid-row: span 6; }  /* ~264px */
-.focus-card.weight-3{ grid-column: span 8;  grid-row: span 8; }  /* ~352px */
-.focus-card.weight-4{ grid-column: span 12; grid-row: span 8; }  /* hero */
+.focus-card.weight-1 {
+  grid-column: span 4;
+  grid-row: span 5;
+}
+
+/* ~220px */
+.focus-card.weight-2 {
+  grid-column: span 6;
+  grid-row: span 6;
+}
+
+/* ~264px */
+.focus-card.weight-3 {
+  grid-column: span 8;
+  grid-row: span 8;
+}
+
+/* ~352px */
+.focus-card.weight-4 {
+  grid-column: span 12;
+  grid-row: span 8;
+}
+
+/* hero */
 
 /* Responsivo: tablet */
-@media (max-width: 1000px){
-  .focus-card.weight-1{ grid-column: span 6; }
-  .focus-card.weight-2{ grid-column: span 6; }
-  .focus-card.weight-3{ grid-column: span 12; }
-  .focus-card.weight-4{ grid-column: span 12; }
+@media (max-width: 1000px) {
+  .focus-card.weight-1 {
+    grid-column: span 6;
+  }
+
+  .focus-card.weight-2 {
+    grid-column: span 6;
+  }
+
+  .focus-card.weight-3 {
+    grid-column: span 12;
+  }
+
+  .focus-card.weight-4 {
+    grid-column: span 12;
+  }
 }
 
 /* Responsivo: mobile */
-@media (max-width: 640px){
-  .focus-grid{
+@media (max-width: 640px) {
+  .focus-grid {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
   }
+
   .focus-card.weight-1,
   .focus-card.weight-2,
   .focus-card.weight-3,
-  .focus-card.weight-4{
+  .focus-card.weight-4 {
     grid-column: auto;
     grid-row: auto;
   }
 }
+
+/* pesos: quanto maior, maior */
+.focus-card.weight-1 {
+  grid-column: span 3;
+  grid-row: span 5;
+}
+
+.focus-card.weight-2 {
+  grid-column: span 4;
+  grid-row: span 6;
+}
+
+.focus-card.weight-3 {
+  grid-column: span 6;
+  grid-row: span 7;
+}
+
+.focus-card.weight-4 {
+  grid-column: span 8;
+  grid-row: span 8;
+}
+
+.focus-card.weight-5 {
+  grid-column: span 12;
+  grid-row: span 9;
+}
+
 /******************************************/
 /**************Focus Cards*****************/
 /******************************************/
