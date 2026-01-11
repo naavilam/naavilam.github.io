@@ -1157,6 +1157,47 @@ body {
   }
 }
 
+/* grid container */
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* card base */
+.focus-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 16px;
+  padding: 18px 18px;
+  background: rgba(255, 255, 255, 0.02);
+
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  /* cinza */
+  box-shadow: 0 0 0 0 rgba(125, 211, 252, 0);
+
+  transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+  color: inherit;
+}
+
+/* hover = “clicável” */
+.focus-card:hover {
+  border-color: rgba(125, 211, 252, 0.85);
+  /* azul */
+  box-shadow: 0 0 0 3px rgba(125, 211, 252, 0.15);
+  /* glow leve */
+  transform: translateY(-2px);
+}
+
+/* keyboard focus (acessível) */
+.focus-card:focus,
+.focus-card:focus-visible {
+  outline: none;
+  border-color: rgba(125, 211, 252, 0.95);
+  box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.22);
+}
+
 /******************************************/
 /**************Focus Cards*****************/
 /******************************************/
