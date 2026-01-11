@@ -1198,6 +1198,55 @@ body {
   box-shadow: 0 0 0 4px rgba(125, 211, 252, 0.22);
 }
 
+.focus-grid {
+  grid-auto-flow: dense;
+  /* <- o “encaixe” tipo tetris/quebra-cabeça */
+}
+
+/* alturas consistentes por peso (opcional, mas fica com cara de puzzle) */
+.focus-card.weight-1 {
+  grid-column: span 4;
+  min-height: 140px;
+}
+
+.focus-card.weight-2 {
+  grid-column: span 6;
+  min-height: 170px;
+}
+
+.focus-card.weight-3 {
+  grid-column: span 8;
+  min-height: 210px;
+}
+
+.focus-card.weight-4 {
+  grid-column: span 12;
+  min-height: 240px;
+}
+
+/* responsivo: no mobile vira 1 coluna */
+@media (max-width: 900px) {
+
+  .focus-card.weight-1,
+  .focus-card.weight-2,
+  .focus-card.weight-3,
+  .focus-card.weight-4 {
+    grid-column: span 12;
+    min-height: unset;
+  }
+}
+
+.focus-desc {
+  opacity: 0.9;
+  line-height: 1.4;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* limita linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /******************************************/
 /**************Focus Cards*****************/
 /******************************************/
