@@ -33,6 +33,51 @@ abyss:
     default-button-color: ""
     social-color-footer : black
 
+abyss-light:
+    name: abyss-light
+    # NAV
+    nav-color: "#0f2f35"
+    nav-text: "#7dd3c7"
+    # FONTS
+    title-font: "Noto Sans JP"
+    font: "Poppins"
+    font-color: "#1f2933"
+    # LINKS
+    link-color: "#1e6f7c"
+    link-font: "Poppins"
+    # SOCIAL
+    social-color: "#94a3b8"
+    footer-social-color: "#1f2933"
+    # BUTTONS
+    button-color: "#1f6f7a"
+    default-button-color: "#1f6f7a"
+    # HOME HIGHLIGHT
+    home-highlight-background: "#e6f4f3"
+    home-highlight-header-text: "#0f2f35"
+    # EDUCATION
+    education-title-font: "Noto Sans JP"
+    education-title-size: "18px"
+    education-entry-font: "Noto Sans JP"
+    education-entry-size: "17px"
+    education-section-size: "15px"
+    # CERTIFICATION
+    certification-title-font: "Noto Sans JP"
+    certification-title-size: "18px"
+    certification-entry-font: "Noto Sans JP"
+    certification-entry-size: "17px"
+    certification-section-size: "15px"
+    # PROJECTS / SECTIONS
+    projects-color: "#1f2933"
+    highlights-tab-color: "#ffffff"
+    border-style: "1px solid #d1d5db"
+    # POSTS
+    post-tag-size: "18px"
+    post-title-size: "36px"
+    post-author-size: "15px"
+    post-font-weight: "600"
+    # FOOTER
+    social-color-footer: "#1f2933"
+
 dark: 
     name: dark
     background-color: "#000000"
