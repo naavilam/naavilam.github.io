@@ -121,8 +121,11 @@ dark:
 abyss-academic-teal:
   name: abyss-academic-teal
 
-  nav-color: "#0f2f35"
-  nav-text: "#f8f9fa"
+#   nav-color: "#0f2f35"
+#   nav-text: "#f8f9fa"
+
+  nav-color: "#f6f7f8"        # cinza muito claro
+  nav-text: "#374151"         # cinza médio escuro (não preto)
 
   title-font: "Noto Sans JP"
   font: "Poppins"
