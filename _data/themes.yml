@@ -122,7 +122,7 @@ abyss-academic-teal:
   name: abyss-academic-teal
 
   nav-color: "#0f2f35"
-  nav-text: "#7dd3c7"
+  nav-text: "#f8f9fa"
 
   title-font: "Noto Sans JP"
   font: "Poppins"
