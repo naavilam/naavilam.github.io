@@ -1091,3 +1091,72 @@ body {
   /* desliga absolute/fixed do footer antigo */
   background-color: #f5f5f5;
 }
+
+/******************************************/
+/**************Focus Cards*****************/
+/******************************************/
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.focus-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 18px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+  color: inherit;
+}
+
+.focus-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(125, 211, 252, 0.6);
+}
+
+.focus-tag {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.focus-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.focus-desc {
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* Tamanhos por "interesse" (weight) */
+.focus-card.weight-1 {
+  grid-column: span 4;
+}
+
+.focus-card.weight-2 {
+  grid-column: span 6;
+}
+
+.focus-card.weight-3 {
+  grid-column: span 8;
+}
+
+@media (max-width: 900px) {
+
+  .focus-card.weight-1,
+  .focus-card.weight-2,
+  .focus-card.weight-3 {
+    grid-column: span 12;
+  }
+}
+
+/******************************************/
+/**************Focus Cards*****************/
+/******************************************/
