@@ -4,14 +4,15 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 217,
-      "sessions": 73,
-      "users": 30,
-      "clicks": 17,
-      "engagement_rate": 0.5616438356164384,
+      "views": 233,
+      "sessions": 83,
+      "users": 36,
+      "clicks": 19,
+      "engagement_rate": 0.5060240963855421,
       "countries": {
-        "BR": 194,
-        "US": 16,
+        "BR": 206,
+        "US": 18,
+        "??": 2,
         "NL": 2,
         "AM": 1,
         "CA": 1,
@@ -20,24 +21,25 @@
         "NO": 1
       },
       "sources": {
-        "github.com": 37,
-        "(direct)": 36
+        "github.com": 42,
+        "(direct)": 40,
+        "(not set)": 2
       }
     },
     "/Academic-Research-Journal/software.html": {
-      "views": 66,
-      "sessions": 11,
-      "users": 4,
+      "views": 90,
+      "sessions": 14,
+      "users": 5,
       "clicks": 0,
-      "engagement_rate": 0.7272727272727273,
+      "engagement_rate": 0.7142857142857143,
       "countries": {
-        "BR": 64,
+        "BR": 88,
         "(not set)": 1,
         "US": 1
       },
       "sources": {
-        "github.com": 8,
-        "(direct)": 3,
+        "github.com": 9,
+        "(direct)": 5,
         "(not set)": 2
       }
     },
@@ -56,18 +58,53 @@
       }
     },
     "/SEL0609-Circuitos-Eletronicos-I/": {
-      "views": 35,
-      "sessions": 34,
-      "users": 34,
+      "views": 38,
+      "sessions": 37,
+      "users": 37,
       "clicks": 0,
-      "engagement_rate": 0.058823529411764705,
+      "engagement_rate": 0.05405405405405406,
       "countries": {
-        "JP": 25,
+        "JP": 28,
         "US": 9,
         "RU": 1
       },
       "sources": {
-        "(direct)": 34
+        "(direct)": 37,
+        "(not set)": 1
+      }
+    },
+    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
+      "views": 37,
+      "sessions": 36,
+      "users": 36,
+      "clicks": 0,
+      "engagement_rate": 0.027777777777777776,
+      "countries": {
+        "JP": 27,
+        "US": 4,
+        "RS": 2,
+        "DE": 1,
+        "NL": 1,
+        "SC": 1,
+        "SG": 1
+      },
+      "sources": {
+        "(direct)": 36
+      }
+    },
+    "/Gaussian-Process-Regression-Research/software.html": {
+      "views": 34,
+      "sessions": 7,
+      "users": 4,
+      "clicks": 1,
+      "engagement_rate": 0.7142857142857143,
+      "countries": {
+        "BR": 33,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "github.com": 3
       }
     },
     "/Gaussian-Process-Research/software.html": {
@@ -81,42 +118,6 @@
       },
       "sources": {
         "github.com": 2
-      }
-    },
-    "/Gaussian-Process-Regression-Research/software.html": {
-      "views": 32,
-      "sessions": 7,
-      "users": 4,
-      "clicks": 1,
-      "engagement_rate": 0.14285714285714285,
-      "countries": {
-        "BR": 31,
-        "US": 1
-      },
-      "sources": {
-        "(not set)": 5,
-        "(direct)": 4,
-        "github.com": 3
-      }
-    },
-    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
-      "views": 32,
-      "sessions": 32,
-      "users": 32,
-      "clicks": 0,
-      "engagement_rate": 0.03125,
-      "countries": {
-        "JP": 22,
-        "US": 4,
-        "RS": 2,
-        "DE": 1,
-        "NL": 1,
-        "SC": 1,
-        "SG": 1
-      },
-      "sources": {
-        "(direct)": 31,
-        "(not set)": 1
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
@@ -569,6 +570,42 @@
         "github.com": 1
       }
     },
+    "/quantum-learning/": {
+      "views": 17,
+      "sessions": 15,
+      "users": 13,
+      "clicks": 0,
+      "engagement_rate": 0.26666666666666666,
+      "countries": {
+        "BR": 6,
+        "US": 4,
+        "IL": 3,
+        "(not set)": 1,
+        "DK": 1,
+        "MX": 1,
+        "NL": 1
+      },
+      "sources": {
+        "(direct)": 12,
+        "github.com": 3,
+        "(not set)": 1
+      }
+    },
+    "/Academic-Research-Journal/index.html": {
+      "views": 16,
+      "sessions": 10,
+      "users": 2,
+      "clicks": 3,
+      "engagement_rate": 0.7,
+      "countries": {
+        "BR": 16
+      },
+      "sources": {
+        "github.com": 7,
+        "(not set)": 3,
+        "(direct)": 2
+      }
+    },
     "/IF4302112-Fisica-Matematica-I/": {
       "views": 16,
       "sessions": 14,
@@ -647,23 +684,21 @@
         "github.com": 1
       }
     },
-    "/quantum-learning/": {
-      "views": 16,
-      "sessions": 14,
-      "users": 12,
+    "/Academic-Research-Journal/": {
+      "views": 15,
+      "sessions": 11,
+      "users": 9,
       "clicks": 0,
-      "engagement_rate": 0.2857142857142857,
+      "engagement_rate": 0.2727272727272727,
       "countries": {
-        "BR": 6,
-        "US": 4,
-        "IL": 3,
-        "(not set)": 1,
-        "MX": 1,
-        "NL": 1
+        "BR": 8,
+        "US": 6,
+        "DK": 1
       },
       "sources": {
-        "(direct)": 11,
-        "github.com": 3
+        "(direct)": 7,
+        "github.com": 3,
+        "(not set)": 1
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
@@ -684,6 +719,27 @@
       },
       "sources": {
         "(direct)": 11,
+        "github.com": 2
+      }
+    },
+    "/Gaussian-Process-Regression-Research/": {
+      "views": 15,
+      "sessions": 14,
+      "users": 13,
+      "clicks": 0,
+      "engagement_rate": 0.21428571428571427,
+      "countries": {
+        "US": 6,
+        "BR": 2,
+        "CZ": 2,
+        "GB": 1,
+        "IL": 1,
+        "NL": 1,
+        "NO": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 12,
         "github.com": 2
       }
     },
@@ -766,23 +822,6 @@
       "sources": {
         "(direct)": 11,
         "github.com": 2
-      }
-    },
-    "/Academic-Research-Journal/": {
-      "views": 14,
-      "sessions": 10,
-      "users": 8,
-      "clicks": 0,
-      "engagement_rate": 0.3,
-      "countries": {
-        "BR": 7,
-        "US": 6,
-        "DK": 1
-      },
-      "sources": {
-        "(direct)": 6,
-        "github.com": 3,
-        "(not set)": 1
       }
     },
     "/IF4302307-Fisica-Matematica-II/": {
@@ -874,20 +913,6 @@
         "github.com": 1
       }
     },
-    "/Academic-Research-Journal/index.html": {
-      "views": 13,
-      "sessions": 7,
-      "users": 1,
-      "clicks": 1,
-      "engagement_rate": 0.7142857142857143,
-      "countries": {
-        "BR": 13
-      },
-      "sources": {
-        "github.com": 7,
-        "(not set)": 1
-      }
-    },
     "/SCE0601-Introducao-Ciencia-Da-Computacao-I/": {
       "views": 13,
       "sessions": 12,
@@ -956,6 +981,23 @@
         "github.com": 2
       }
     },
+    "/variational-approximation/": {
+      "views": 13,
+      "sessions": 12,
+      "users": 12,
+      "clicks": 0,
+      "engagement_rate": 0.08333333333333333,
+      "countries": {
+        "US": 7,
+        "IL": 3,
+        "CZ": 2,
+        "ES": 1
+      },
+      "sources": {
+        "(direct)": 11,
+        "(not set)": 1
+      }
+    },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/": {
       "views": 12,
       "sessions": 9,
@@ -971,27 +1013,6 @@
       },
       "sources": {
         "(direct)": 8,
-        "github.com": 1
-      }
-    },
-    "/Gaussian-Process-Regression-Research/": {
-      "views": 12,
-      "sessions": 12,
-      "users": 12,
-      "clicks": 0,
-      "engagement_rate": 0.16666666666666666,
-      "countries": {
-        "US": 5,
-        "CZ": 2,
-        "BR": 1,
-        "IL": 1,
-        "NL": 1,
-        "NO": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 10,
-        "(not set)": 2,
         "github.com": 1
       }
     },
@@ -1108,21 +1129,6 @@
         "(direct)": 11
       }
     },
-    "/variational-approximation/": {
-      "views": 12,
-      "sessions": 11,
-      "users": 11,
-      "clicks": 0,
-      "engagement_rate": 0.09090909090909091,
-      "countries": {
-        "US": 7,
-        "IL": 3,
-        "CZ": 2
-      },
-      "sources": {
-        "(direct)": 11
-      }
-    },
     "/PGF5002-Mecanica-Quantica-II/software.html": {
       "views": 11,
       "sessions": 7,
@@ -1134,6 +1140,23 @@
       },
       "sources": {
         "github.com": 7
+      }
+    },
+    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
+      "views": 11,
+      "sessions": 11,
+      "users": 11,
+      "clicks": 0,
+      "engagement_rate": 0.09090909090909091,
+      "countries": {
+        "US": 7,
+        "DE": 1,
+        "DK": 1,
+        "PT": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 11
       }
     },
     "/SCE0616-Sistemas-Computacionais-Distribuidos/": {
@@ -1240,22 +1263,6 @@
         "(direct)": 10
       }
     },
-    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
-      "views": 10,
-      "sessions": 10,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.1,
-      "countries": {
-        "US": 7,
-        "DE": 1,
-        "DK": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 10
-      }
-    },
     "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
       "views": 10,
       "sessions": 9,
@@ -1316,6 +1323,24 @@
       },
       "sources": {
         "github.com": 3
+      }
+    },
+    "/quantum-chemistry/": {
+      "views": 10,
+      "sessions": 9,
+      "users": 9,
+      "clicks": 1,
+      "engagement_rate": 0.1111111111111111,
+      "countries": {
+        "IL": 3,
+        "US": 3,
+        "BR": 2,
+        "DE": 1,
+        "IR": 1
+      },
+      "sources": {
+        "(direct)": 9,
+        "(not set)": 1
       }
     },
     "/Batalha-Naval-Quantica/": {
@@ -1432,22 +1457,6 @@
         "(direct)": 9
       }
     },
-    "/quantum-chemistry/": {
-      "views": 9,
-      "sessions": 8,
-      "users": 8,
-      "clicks": 1,
-      "engagement_rate": 0.125,
-      "countries": {
-        "IL": 3,
-        "US": 3,
-        "BR": 2,
-        "DE": 1
-      },
-      "sources": {
-        "(direct)": 8
-      }
-    },
     "/quantum-error-mitigation/": {
       "views": 9,
       "sessions": 10,
@@ -1464,6 +1473,23 @@
       "sources": {
         "(direct)": 7,
         "github.com": 3
+      }
+    },
+    "/quantum-monte-carlo/": {
+      "views": 9,
+      "sessions": 10,
+      "users": 10,
+      "clicks": 0,
+      "engagement_rate": 0.1,
+      "countries": {
+        "IL": 3,
+        "US": 3,
+        "GB": 1,
+        "IT": 1,
+        "PH": 1
+      },
+      "sources": {
+        "(direct)": 10
       }
     },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/": {
@@ -1491,6 +1517,37 @@
       },
       "sources": {
         "(direct)": 1,
+        "github.com": 1
+      }
+    },
+    "/FCM0101-Fisica-I/": {
+      "views": 8,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 7,
+        "GB": 1
+      },
+      "sources": {
+        "(direct)": 8
+      }
+    },
+    "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
+      "views": 8,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.25,
+      "countries": {
+        "US": 3,
+        "DE": 2,
+        "IL": 2,
+        "BR": 1
+      },
+      "sources": {
+        "(direct)": 7,
         "github.com": 1
       }
     },
@@ -1564,28 +1621,12 @@
         "github.com": 3
       }
     },
-    "/quantum-monte-carlo/": {
-      "views": 8,
-      "sessions": 9,
-      "users": 9,
-      "clicks": 0,
-      "engagement_rate": 0.1111111111111111,
-      "countries": {
-        "IL": 3,
-        "US": 3,
-        "GB": 1,
-        "IT": 1
-      },
-      "sources": {
-        "(direct)": 9
-      }
-    },
     "/Academic-Research-Journal/research.html": {
       "views": 7,
       "sessions": 6,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 0.8333333333333334,
       "countries": {
         "BR": 6,
         "US": 1
@@ -1593,36 +1634,6 @@
       "sources": {
         "github.com": 5,
         "(direct)": 1
-      }
-    },
-    "/FCM0101-Fisica-I/": {
-      "views": 7,
-      "sessions": 7,
-      "users": 7,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 7
-      },
-      "sources": {
-        "(direct)": 7
-      }
-    },
-    "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
-      "views": 7,
-      "sessions": 7,
-      "users": 7,
-      "clicks": 0,
-      "engagement_rate": 0.2857142857142857,
-      "countries": {
-        "US": 3,
-        "IL": 2,
-        "BR": 1,
-        "DE": 1
-      },
-      "sources": {
-        "(direct)": 6,
-        "github.com": 1
       }
     },
     "/Gaussian-Process-Research/research.html": {
@@ -1656,7 +1667,7 @@
       "sessions": 8,
       "users": 4,
       "clicks": 0,
-      "engagement_rate": 0.625,
+      "engagement_rate": 0.75,
       "countries": {
         "BR": 5,
         "BE": 1,
@@ -2784,7 +2795,7 @@
       "sessions": 2,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.5,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 2
       },
@@ -3711,13 +3722,12 @@
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.0,
+      "clicks": 1,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 1
       },
       "sources": {
-        "(not set)": 1,
         "github.com": 1
       }
     },
