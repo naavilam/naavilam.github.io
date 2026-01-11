@@ -37,7 +37,7 @@ abyss-light:
     name: abyss-light
     # NAV
     nav-color: "#0f2f35"
-    nav-text: "#7dd3c7"
+    nav-text: "#000000"
     # FONTS
     title-font: "Noto Sans JP"
     font: "Poppins"
