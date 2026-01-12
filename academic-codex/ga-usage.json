@@ -4,43 +4,45 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 233,
-      "sessions": 83,
-      "users": 36,
-      "clicks": 19,
-      "engagement_rate": 0.5060240963855421,
+      "views": 274,
+      "sessions": 100,
+      "users": 43,
+      "clicks": 31,
+      "engagement_rate": 0.43,
       "countries": {
-        "BR": 206,
-        "US": 18,
-        "??": 2,
+        "BR": 238,
+        "US": 25,
+        "(not set)": 2,
         "NL": 2,
         "AM": 1,
         "CA": 1,
         "DE": 1,
         "JP": 1,
-        "NO": 1
+        "NO": 1,
+        "RU": 1,
+        "SG": 1
       },
       "sources": {
-        "github.com": 42,
-        "(direct)": 40,
-        "(not set)": 2
+        "github.com": 52,
+        "(direct)": 47,
+        "(not set)": 8
       }
     },
     "/Academic-Research-Journal/software.html": {
-      "views": 90,
-      "sessions": 14,
+      "views": 139,
+      "sessions": 16,
       "users": 5,
-      "clicks": 0,
-      "engagement_rate": 0.7142857142857143,
+      "clicks": 1,
+      "engagement_rate": 0.8125,
       "countries": {
-        "BR": 88,
+        "BR": 137,
         "(not set)": 1,
         "US": 1
       },
       "sources": {
-        "github.com": 9,
+        "github.com": 11,
         "(direct)": 5,
-        "(not set)": 2
+        "(not set)": 1
       }
     },
     "/PGF5005-Mecanica-Classica/software.html": {
@@ -58,29 +60,29 @@
       }
     },
     "/SEL0609-Circuitos-Eletronicos-I/": {
-      "views": 38,
-      "sessions": 37,
-      "users": 37,
+      "views": 41,
+      "sessions": 40,
+      "users": 40,
       "clicks": 0,
-      "engagement_rate": 0.05405405405405406,
+      "engagement_rate": 0.05,
       "countries": {
-        "JP": 28,
+        "JP": 31,
         "US": 9,
         "RU": 1
       },
       "sources": {
-        "(direct)": 37,
+        "(direct)": 40,
         "(not set)": 1
       }
     },
     "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
-      "views": 37,
-      "sessions": 36,
-      "users": 36,
+      "views": 41,
+      "sessions": 40,
+      "users": 40,
       "clicks": 0,
-      "engagement_rate": 0.027777777777777776,
+      "engagement_rate": 0.025,
       "countries": {
-        "JP": 27,
+        "JP": 31,
         "US": 4,
         "RS": 2,
         "DE": 1,
@@ -89,22 +91,23 @@
         "SG": 1
       },
       "sources": {
-        "(direct)": 36
+        "(direct)": 40,
+        "(not set)": 1
       }
     },
     "/Gaussian-Process-Regression-Research/software.html": {
-      "views": 34,
-      "sessions": 7,
+      "views": 36,
+      "sessions": 8,
       "users": 4,
       "clicks": 1,
-      "engagement_rate": 0.7142857142857143,
+      "engagement_rate": 0.625,
       "countries": {
-        "BR": 33,
+        "BR": 35,
         "US": 1
       },
       "sources": {
         "(direct)": 4,
-        "github.com": 3
+        "github.com": 4
       }
     },
     "/Gaussian-Process-Research/software.html": {
@@ -139,6 +142,22 @@
       "sources": {
         "(direct)": 17,
         "github.com": 10
+      }
+    },
+    "/MIT-8.20--Introduction-to-Special-Relativity/research.html": {
+      "views": 29,
+      "sessions": 4,
+      "users": 2,
+      "clicks": 2,
+      "engagement_rate": 0.25,
+      "countries": {
+        "BR": 28,
+        "US": 1
+      },
+      "sources": {
+        "github.com": 3,
+        "(not set)": 2,
+        "(direct)": 1
       }
     },
     "/PGF5002-Mecanica-Quantica-II/": {
@@ -192,6 +211,20 @@
         "github.com": 7
       }
     },
+    "/MIT-8.20--Introduction-to-Special-Relativity/index.html": {
+      "views": 24,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 7,
+      "engagement_rate": 0.3333333333333333,
+      "countries": {
+        "BR": 24
+      },
+      "sources": {
+        "github.com": 3,
+        "(not set)": 2
+      }
+    },
     "/PGF5005-Mecanica-Classica/": {
       "views": 24,
       "sessions": 11,
@@ -200,6 +233,20 @@
       "engagement_rate": 1.0,
       "countries": {
         "BR": 24
+      },
+      "sources": {
+        "github.com": 9,
+        "(direct)": 2
+      }
+    },
+    "/Academic-Research-Journal/index.html": {
+      "views": 23,
+      "sessions": 11,
+      "users": 2,
+      "clicks": 6,
+      "engagement_rate": 0.8181818181818182,
+      "countries": {
+        "BR": 23
       },
       "sources": {
         "github.com": 9,
@@ -376,6 +423,22 @@
         "github.com": 7
       }
     },
+    "/MIT-8.20--Introduction-to-Special-Relativity/software.html": {
+      "views": 20,
+      "sessions": 5,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 19,
+        "US": 1
+      },
+      "sources": {
+        "(not set)": 3,
+        "github.com": 3,
+        "(direct)": 1
+      }
+    },
     "/SEL0622-Projeto-de-Circuitos-Integrados-Digitais-II/": {
       "views": 20,
       "sessions": 17,
@@ -496,6 +559,24 @@
         "github.com": 3
       }
     },
+    "/MIT-8.20--Introduction-to-Special-Relativity/": {
+      "views": 18,
+      "sessions": 10,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 13,
+        "US": 3,
+        "DE": 1,
+        "NL": 1
+      },
+      "sources": {
+        "(not set)": 8,
+        "(direct)": 5,
+        "github.com": 3
+      }
+    },
     "/SEL0606-Laboratorio-de-Sistemas-Digitais/": {
       "views": 18,
       "sessions": 17,
@@ -587,23 +668,7 @@
       },
       "sources": {
         "(direct)": 12,
-        "github.com": 3,
-        "(not set)": 1
-      }
-    },
-    "/Academic-Research-Journal/index.html": {
-      "views": 16,
-      "sessions": 10,
-      "users": 2,
-      "clicks": 3,
-      "engagement_rate": 0.7,
-      "countries": {
-        "BR": 16
-      },
-      "sources": {
-        "github.com": 7,
-        "(not set)": 3,
-        "(direct)": 2
+        "github.com": 3
       }
     },
     "/IF4302112-Fisica-Matematica-I/": {
@@ -689,7 +754,7 @@
       "sessions": 11,
       "users": 9,
       "clicks": 0,
-      "engagement_rate": 0.2727272727272727,
+      "engagement_rate": 0.36363636363636365,
       "countries": {
         "BR": 8,
         "US": 6,
@@ -994,8 +1059,7 @@
         "ES": 1
       },
       "sources": {
-        "(direct)": 11,
-        "(not set)": 1
+        "(direct)": 12
       }
     },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/": {
@@ -1339,8 +1403,22 @@
         "IR": 1
       },
       "sources": {
-        "(direct)": 9,
-        "(not set)": 1
+        "(direct)": 9
+      }
+    },
+    "/Academic-Research-Journal/research.html": {
+      "views": 9,
+      "sessions": 7,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.7142857142857143,
+      "countries": {
+        "BR": 8,
+        "US": 1
+      },
+      "sources": {
+        "github.com": 6,
+        "(direct)": 1
       }
     },
     "/Batalha-Naval-Quantica/": {
@@ -1359,6 +1437,20 @@
       "sources": {
         "(direct)": 7,
         "github.com": 3
+      }
+    },
+    "/DPG5011-Formacao-do-Cientista-Empreendedor/": {
+      "views": 9,
+      "sessions": 5,
+      "users": 1,
+      "clicks": 3,
+      "engagement_rate": 0.4,
+      "countries": {
+        "BR": 9
+      },
+      "sources": {
+        "github.com": 5,
+        "(not set)": 1
       }
     },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/software.html": {
@@ -1387,6 +1479,81 @@
       },
       "sources": {
         "github.com": 4
+      }
+    },
+    "/MIT-18.100A--Real-Analysis/": {
+      "views": 9,
+      "sessions": 9,
+      "users": 9,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 5,
+        "DE": 1,
+        "GB": 1,
+        "IR": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 9,
+        "(not set)": 2
+      }
+    },
+    "/MIT-18.175--Theory-of-Probability/": {
+      "views": 9,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 3,
+        "CA": 1,
+        "DE": 1,
+        "IL": 1,
+        "IR": 1,
+        "SC": 1,
+        "ZA": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "(not set)": 4
+      }
+    },
+    "/MIT-18.712--Introduction-to-Representation-Theory/": {
+      "views": 9,
+      "sessions": 9,
+      "users": 9,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 5,
+        "ES": 1,
+        "LU": 1,
+        "NL": 1,
+        "ZA": 1
+      },
+      "sources": {
+        "(direct)": 9,
+        "(not set)": 2
+      }
+    },
+    "/MIT-18.769--Topics-in-Lie-Theory/": {
+      "views": 9,
+      "sessions": 9,
+      "users": 9,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "DE": 3,
+        "US": 3,
+        "??": 1,
+        "BR": 1,
+        "NL": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "(not set)": 4,
+        "github.com": 1
       }
     },
     "/PGF5002-Mecanica-Quantica-II/index.html": {
@@ -1578,6 +1745,79 @@
         "(direct)": 2
       }
     },
+    "/MIT-18.152--Introduction-to-Partial-Differential-Equations/": {
+      "views": 8,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 3,
+        "DK": 1,
+        "IL": 1,
+        "IR": 1,
+        "MM": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "(not set)": 5
+      }
+    },
+    "/MIT-18.745--Lie-Groups-and-Lie-Algebras-I/": {
+      "views": 8,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 4,
+        "DE": 1,
+        "FR": 1,
+        "MD": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "(not set)": 2
+      }
+    },
+    "/MIT-18.755--Introduction-to-Lie-Groups/": {
+      "views": 8,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 5,
+        "DE": 1,
+        "IL": 1,
+        "NL": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "(not set)": 5
+      }
+    },
+    "/MIT-18.757--Representations-of-Lie-Groups/": {
+      "views": 8,
+      "sessions": 8,
+      "users": 8,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 4,
+        "BR": 1,
+        "DE": 1,
+        "IL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 7,
+        "(not set)": 2,
+        "github.com": 1
+      }
+    },
     "/SAP0679-Humanidades-e-Ciencias-Sociais/": {
       "views": 8,
       "sessions": 4,
@@ -1621,21 +1861,6 @@
         "github.com": 3
       }
     },
-    "/Academic-Research-Journal/research.html": {
-      "views": 7,
-      "sessions": 6,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.8333333333333334,
-      "countries": {
-        "BR": 6,
-        "US": 1
-      },
-      "sources": {
-        "github.com": 5,
-        "(direct)": 1
-      }
-    },
     "/Gaussian-Process-Research/research.html": {
       "views": 7,
       "sessions": 2,
@@ -1676,6 +1901,25 @@
       "sources": {
         "(direct)": 4,
         "github.com": 4
+      }
+    },
+    "/MIT-18.330--Introduction-to-Numerical-Analysis/": {
+      "views": 7,
+      "sessions": 7,
+      "users": 7,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "NL": 2,
+        "AT": 1,
+        "IL": 1,
+        "LU": 1,
+        "RU": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 7,
+        "(not set)": 3
       }
     },
     "/PGF5001-Mecanica-Quantica-I/software.html": {
@@ -1793,6 +2037,61 @@
         "github.com": 4
       }
     },
+    "/MIT-18.03SC--Differential-Equations/": {
+      "views": 6,
+      "sessions": 7,
+      "users": 7,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "DK": 1,
+        "IL": 1,
+        "IR": 1,
+        "RU": 1,
+        "SC": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 6,
+        "(not set)": 3
+      }
+    },
+    "/MIT-18.100B--Analysis-I/": {
+      "views": 6,
+      "sessions": 6,
+      "users": 6,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "DE": 2,
+        "US": 2,
+        "IL": 1,
+        "NL": 1
+      },
+      "sources": {
+        "(direct)": 6,
+        "(not set)": 1
+      }
+    },
+    "/MIT-18.950--Differential-Geometry/": {
+      "views": 6,
+      "sessions": 6,
+      "users": 5,
+      "clicks": 1,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 2,
+        "FR": 1,
+        "IL": 1,
+        "SC": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "(not set)": 2,
+        "github.com": 2
+      }
+    },
     "/PGF5003-Eletrodinamica/software.html": {
       "views": 6,
       "sessions": 4,
@@ -1884,30 +2183,32 @@
         "github.com": 4
       }
     },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/": {
+    "/DPG5011-Formacao-do-Cientista-Empreendedor/index.html": {
       "views": 5,
       "sessions": 2,
       "users": 1,
-      "clicks": 3,
-      "engagement_rate": 1.0,
+      "clicks": 2,
+      "engagement_rate": 0.5,
       "countries": {
         "BR": 5
       },
       "sources": {
-        "github.com": 2
+        "github.com": 2,
+        "(not set)": 1
       }
     },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/software.html": {
       "views": 5,
-      "sessions": 1,
+      "sessions": 2,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 1.0,
+      "engagement_rate": 0.5,
       "countries": {
         "BR": 5
       },
       "sources": {
-        "github.com": 1
+        "github.com": 2,
+        "(not set)": 1
       }
     },
     "/EAP5054-Formacao-Cientista-Empreendedor-II/": {
@@ -1921,6 +2222,20 @@
       },
       "sources": {
         "github.com": 3
+      }
+    },
+    "/Gaussian-Process-Regression-Research/research.html": {
+      "views": 5,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com": 3,
+        "(not set)": 1
       }
     },
     "/IF4302111-Fisica-I/software.html": {
@@ -1952,6 +2267,41 @@
         "github.com": 2
       }
     },
+    "/MIT-18.100A--Introduction-to-Analysis/": {
+      "views": 5,
+      "sessions": 5,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 3,
+        "IL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 1
+      }
+    },
+    "/MIT-18.303--Linear-Partial-Differential-Equations/": {
+      "views": 5,
+      "sessions": 6,
+      "users": 6,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1,
+        "IL": 1,
+        "IS": 1,
+        "MM": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "(not set)": 2,
+        "github.com": 1
+      }
+    },
     "/PGF5261-Teoria-de-Grupos-Aplicada/": {
       "views": 5,
       "sessions": 4,
@@ -1978,6 +2328,19 @@
         "github.com": 4
       }
     },
+    "/DPG5011-Formacao-do-Cientista-Empreendedor/research.html": {
+      "views": 4,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 4
+      },
+      "sources": {
+        "github.com": 2
+      }
+    },
     "/IF4300214-Fisica-Experimental-IV/software.html": {
       "views": 4,
       "sessions": 3,
@@ -1992,6 +2355,69 @@
       "sources": {
         "(direct)": 2,
         "github.com": 1
+      }
+    },
+    "/MIT-18.101--Analysis-II/": {
+      "views": 4,
+      "sessions": 5,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "IL": 1,
+        "NL": 1,
+        "PL": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "(not set)": 3
+      }
+    },
+    "/MIT-18.781--Theory-of-Numbers/": {
+      "views": 4,
+      "sessions": 5,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "IL": 2,
+        "GB": 1,
+        "MM": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "(not set)": 1
+      }
+    },
+    "/MIT-18.950--Differential-Geometry/research.html": {
+      "views": 4,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 4
+      },
+      "sources": {
+        "github.com": 2,
+        "(not set)": 1
+      }
+    },
+    "/MIT-8.001--Applied-Geometric-Algebra/": {
+      "views": 4,
+      "sessions": 5,
+      "users": 5,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 2,
+        "IL": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 4,
+        "(not set)": 3
       }
     },
     "/PGF5001-Mecanica-Quantica-I/research.html": {
@@ -2298,32 +2724,6 @@
         "github.com": 2
       }
     },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/index.html": {
-      "views": 3,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 2,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/research.html": {
-      "views": 3,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/software.html": {
       "views": 3,
       "sessions": 3,
@@ -2407,6 +2807,21 @@
       },
       "sources": {
         "github.com": 2
+      }
+    },
+    "/MIT-18.034--Honors-Differential-Equations/": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "IL": 2,
+        "DE": 1
+      },
+      "sources": {
+        "(direct)": 3,
+        "(not set)": 1
       }
     },
     "/PGF5006-Mecanica-Estatistica/software.html": {
@@ -2790,19 +3205,6 @@
         "github.com": 1
       }
     },
-    "/Gaussian-Process-Regression-Research/research.html": {
-      "views": 2,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com": 2
-      }
-    },
     "/IF4300214-Fisica-Experimental-IV/research.html": {
       "views": 2,
       "sessions": 3,
@@ -2911,6 +3313,45 @@
       "sources": {
         "(direct)": 2,
         "github.com": 1
+      }
+    },
+    "/MIT-18.769--Topics-in-Lie-Theory/research.html": {
+      "views": 2,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/MIT-18.769--Topics-in-Lie-Theory/software.html": {
+      "views": 2,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/MIT-18.950--Differential-Geometry/software.html": {
+      "views": 2,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 2
       }
     },
     "/PGF5001-Mecanica-Quantica-I/index.html": {
@@ -3898,6 +4339,71 @@
       },
       "sources": {
         "github.com": 1
+      }
+    },
+    "/MIT-18.303--Linear-Partial-Differential-Equations/research.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/MIT-18.757--Representations-of-Lie-Groups/index.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 1,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/MIT-18.757--Representations-of-Lie-Groups/research.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/MIT-18.757--Representations-of-Lie-Groups/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/MIT-18.950--Differential-Geometry/index.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(not set)": 1
       }
     },
     "/PGF5001-Mecanica-Quantica/research.html": {
@@ -5121,6 +5627,17 @@
       },
       "sources": {
         "(direct)": 1
+      }
+    },
+    "/MIT-18.303--Linear-Partial-Differential-Equations/software.html": {
+      "views": 0,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {},
+      "sources": {
+        "github.com": 2
       }
     }
   }
