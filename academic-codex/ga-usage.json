@@ -44,20 +44,19 @@
       }
     },
     "/Academic-Research-Journal/software.html": {
-      "views": 192,
-      "sessions": 23,
+      "views": 194,
+      "sessions": 25,
       "users": 5,
       "clicks": 1,
-      "engagement_rate": 0.8695652173913043,
+      "engagement_rate": 0.8,
       "countries": {
-        "BR": 190,
+        "BR": 192,
         "(not set)": 1,
         "US": 1
       },
       "sources": {
-        "github.com": 18,
-        "(direct)": 5,
-        "(not set)": 1
+        "github.com": 20,
+        "(direct)": 5
       }
     },
     "/PGF5005-Mecanica-Classica/software.html": {
@@ -132,16 +131,16 @@
       }
     },
     "/Academic-Research-Journal/index.html": {
-      "views": 34,
-      "sessions": 16,
+      "views": 35,
+      "sessions": 17,
       "users": 2,
-      "clicks": 11,
-      "engagement_rate": 0.9375,
+      "clicks": 12,
+      "engagement_rate": 0.8823529411764706,
       "countries": {
-        "BR": 34
+        "BR": 35
       },
       "sources": {
-        "github.com": 14,
+        "github.com": 15,
         "(direct)": 2
       }
     },
@@ -156,6 +155,22 @@
       },
       "sources": {
         "github.com": 2
+      }
+    },
+    "/Academic-Research-Journaling/studies.html": {
+      "views": 31,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 30,
+        "US": 1
+      },
+      "sources": {
+        "(not set)": 2,
+        "github.com": 2,
+        "(direct)": 1
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
@@ -457,6 +472,24 @@
         "github.com": 4
       }
     },
+    "/Academic-Research-Journal/": {
+      "views": 20,
+      "sessions": 16,
+      "users": 10,
+      "clicks": 0,
+      "engagement_rate": 0.4375,
+      "countries": {
+        "BR": 12,
+        "US": 6,
+        "DK": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "github.com": 7,
+        "(not set)": 1
+      }
+    },
     "/Gaussian-Process-Regression-Research/index.html": {
       "views": 20,
       "sessions": 6,
@@ -507,24 +540,6 @@
       "sources": {
         "(direct)": 15,
         "github.com": 2
-      }
-    },
-    "/Academic-Research-Journal/": {
-      "views": 19,
-      "sessions": 15,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.4666666666666667,
-      "countries": {
-        "BR": 11,
-        "US": 6,
-        "DK": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct)": 8,
-        "github.com": 6,
-        "(not set)": 1
       }
     },
     "/Gaussian-Process-Research/": {
@@ -670,6 +685,27 @@
         "github.com": 2
       }
     },
+    "/quantum-learning/": {
+      "views": 18,
+      "sessions": 16,
+      "users": 14,
+      "clicks": 0,
+      "engagement_rate": 0.25,
+      "countries": {
+        "BR": 6,
+        "US": 4,
+        "IL": 3,
+        "(not set)": 1,
+        "DK": 1,
+        "MX": 1,
+        "NL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 13,
+        "github.com": 3
+      }
+    },
     "/IF4302212-Fisica-IV/": {
       "views": 17,
       "sessions": 16,
@@ -707,27 +743,6 @@
       "sources": {
         "(direct)": 14,
         "github.com": 1
-      }
-    },
-    "/quantum-learning/": {
-      "views": 17,
-      "sessions": 16,
-      "users": 14,
-      "clicks": 0,
-      "engagement_rate": 0.25,
-      "countries": {
-        "BR": 6,
-        "US": 4,
-        "IL": 3,
-        "(not set)": 1,
-        "DK": 1,
-        "MX": 1,
-        "NL": 1
-      },
-      "sources": {
-        "(direct)": 12,
-        "github.com": 3,
-        "(not set)": 1
       }
     },
     "/IF4302112-Fisica-Matematica-I/": {
@@ -902,6 +917,25 @@
         "github.com": 2
       }
     },
+    "/Academic-Research-Journaling/": {
+      "views": 14,
+      "sessions": 8,
+      "users": 7,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 8,
+        "US": 3,
+        "IL": 1,
+        "NL": 1,
+        "PT": 1
+      },
+      "sources": {
+        "(direct)": 5,
+        "(not set)": 4,
+        "github.com": 2
+      }
+    },
     "/IF4302307-Fisica-Matematica-II/": {
       "views": 14,
       "sessions": 11,
@@ -1063,8 +1097,7 @@
       },
       "sources": {
         "(direct)": 9,
-        "github.com": 2,
-        "(not set)": 1
+        "github.com": 2
       }
     },
     "/quantum-neural-state/": {
@@ -1084,8 +1117,24 @@
         "PL": 1
       },
       "sources": {
-        "(direct)": 13,
-        "(not set)": 1
+        "(direct)": 13
+      }
+    },
+    "/variational-approximation/": {
+      "views": 14,
+      "sessions": 13,
+      "users": 13,
+      "clicks": 0,
+      "engagement_rate": 0.07692307692307693,
+      "countries": {
+        "US": 7,
+        "IL": 3,
+        "CZ": 2,
+        "ES": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct)": 13
       }
     },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/": {
@@ -1233,23 +1282,6 @@
       },
       "sources": {
         "(direct)": 12
-      }
-    },
-    "/variational-approximation/": {
-      "views": 13,
-      "sessions": 13,
-      "users": 13,
-      "clicks": 0,
-      "engagement_rate": 0.07692307692307693,
-      "countries": {
-        "US": 7,
-        "IL": 3,
-        "CZ": 2,
-        "ES": 1
-      },
-      "sources": {
-        "(direct)": 12,
-        "(not set)": 1
       }
     },
     "/Gaussian-Process-Research/index.html": {
@@ -1436,16 +1468,16 @@
     },
     "/Academic-Research-Journal/research.html": {
       "views": 11,
-      "sessions": 8,
+      "sessions": 9,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.75,
+      "engagement_rate": 0.6666666666666666,
       "countries": {
         "BR": 10,
         "US": 1
       },
       "sources": {
-        "github.com": 7,
+        "github.com": 8,
         "(direct)": 1
       }
     },
@@ -1629,8 +1661,7 @@
         "IR": 1
       },
       "sources": {
-        "(direct)": 10,
-        "(not set)": 1
+        "(direct)": 10
       }
     },
     "/Batalha-Naval-Quantica/": {
@@ -1649,8 +1680,7 @@
       },
       "sources": {
         "(direct)": 8,
-        "github.com": 3,
-        "(not set)": 1
+        "github.com": 3
       }
     },
     "/MIT-18.100A--Introduction-to-Analysis/": {
@@ -1757,8 +1787,7 @@
       },
       "sources": {
         "(direct)": 8,
-        "github.com": 3,
-        "(not set)": 1
+        "github.com": 3
       }
     },
     "/quantum-monte-carlo/": {
@@ -1776,8 +1805,7 @@
         "RU": 1
       },
       "sources": {
-        "(direct)": 11,
-        "(not set)": 1
+        "(direct)": 11
       }
     },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/": {
@@ -1958,6 +1986,38 @@
       },
       "sources": {
         "(direct)": 9
+      }
+    },
+    "/Academic-Research-Journaling/index.html": {
+      "views": 8,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 5,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 8
+      },
+      "sources": {
+        "github.com": 2,
+        "(not set)": 1
+      }
+    },
+    "/Bayesian-Inference-Research/": {
+      "views": 8,
+      "sessions": 9,
+      "users": 9,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 4,
+        "IR": 1,
+        "NL": 1,
+        "PT": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "(not set)": 4
       }
     },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/": {
@@ -2327,6 +2387,19 @@
         "github.com": 4
       }
     },
+    "/Academic-Research-Journaling/software.html": {
+      "views": 5,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/index.html": {
       "views": 5,
       "sessions": 2,
@@ -2419,6 +2492,19 @@
       },
       "sources": {
         "github.com": 4
+      }
+    },
+    "/Academic-Research-Journaling/references.html": {
+      "views": 4,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 4
+      },
+      "sources": {
+        "github.com": 1
       }
     },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/research.html": {
@@ -2765,6 +2851,19 @@
       "sources": {
         "github.com": 2,
         "(direct)": 1
+      }
+    },
+    "/Academic-Research-Journaling/research.html": {
+      "views": 3,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 3
+      },
+      "sources": {
+        "github.com": 1
       }
     },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/software.html": {
@@ -5938,6 +6037,17 @@
       },
       "sources": {
         "(direct)": 1
+      }
+    },
+    "/Bayesian-Inference-Research/software.html": {
+      "views": 0,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {},
+      "sources": {
+        "(not set)": 1
       }
     }
   }
