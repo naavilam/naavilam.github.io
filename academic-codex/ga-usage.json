@@ -4,13 +4,13 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 270,
-      "sessions": 102,
-      "users": 48,
+      "views": 269,
+      "sessions": 100,
+      "users": 47,
       "clicks": 32,
-      "engagement_rate": 0.5098039215686274,
+      "engagement_rate": 0.52,
       "countries": {
-        "BR": 225,
+        "BR": 224,
         "US": 33,
         "(not set)": 2,
         "NL": 2,
@@ -24,8 +24,8 @@
       },
       "sources": {
         "github.com": 52,
-        "(direct)": 49,
-        "(not set)": 2
+        "(direct)": 47,
+        "(not set)": 1
       }
     },
     "/Gaussian-Process-Regression-Research/software.html": {
@@ -914,8 +914,7 @@
         "ZA": 1
       },
       "sources": {
-        "(direct)": 14,
-        "(not set)": 1
+        "(direct)": 14
       }
     },
     "/MIT-18.712--Introduction-to-Representation-Theory/": {
@@ -923,7 +922,7 @@
       "sessions": 15,
       "users": 15,
       "clicks": 0,
-      "engagement_rate": 0.13333333333333333,
+      "engagement_rate": 0.2,
       "countries": {
         "US": 6,
         "NL": 3,
@@ -934,8 +933,7 @@
         "ZA": 1
       },
       "sources": {
-        "(direct)": 15,
-        "(not set)": 2
+        "(direct)": 15
       }
     },
     "/MIT-18.757--Representations-of-Lie-Groups/": {
@@ -956,7 +954,6 @@
       },
       "sources": {
         "(direct)": 14,
-        "(not set)": 2,
         "github.com": 1
       }
     },
@@ -1055,7 +1052,6 @@
       },
       "sources": {
         "(direct)": 13,
-        "(not set)": 1,
         "github.com": 1
       }
     },
@@ -1264,7 +1260,7 @@
       "sessions": 13,
       "users": 13,
       "clicks": 0,
-      "engagement_rate": 0.0,
+      "engagement_rate": 0.07692307692307693,
       "countries": {
         "US": 7,
         "NL": 2,
@@ -1378,8 +1374,7 @@
         "SC": 1
       },
       "sources": {
-        "(direct)": 12,
-        "(not set)": 1
+        "(direct)": 12
       }
     },
     "/MIT-18.152--Introduction-to-Partial-Differential-Equations/": {
@@ -1417,8 +1412,7 @@
         "LU": 1
       },
       "sources": {
-        "(direct)": 12,
-        "(not set)": 1
+        "(direct)": 12
       }
     },
     "/MIT-18.781--Theory-of-Numbers/": {
@@ -1455,8 +1449,7 @@
         "NL": 1
       },
       "sources": {
-        "(direct)": 12,
-        "(not set)": 1
+        "(direct)": 12
       }
     },
     "/PGF5005-Mecanica-Classica/index.html": {
@@ -1983,8 +1976,7 @@
         "RU": 1
       },
       "sources": {
-        "(direct)": 9,
-        "(not set)": 1
+        "(direct)": 9
       }
     },
     "/PGF5002-Mecanica-Quantica-II/index.html": {
@@ -2113,8 +2105,7 @@
         "SC": 1
       },
       "sources": {
-        "(direct)": 8,
-        "(not set)": 1
+        "(direct)": 8
       }
     },
     "/MIT-18.303--Linear-Partial-Differential-Equations/": {
