@@ -59,6 +59,22 @@
         "(direct)": 5
       }
     },
+    "/Academic-Research-Journaling/studies.html": {
+      "views": 59,
+      "sessions": 6,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 58,
+        "US": 1
+      },
+      "sources": {
+        "github.com": 5,
+        "(direct)": 1,
+        "(not set)": 1
+      }
+    },
     "/PGF5005-Mecanica-Classica/software.html": {
       "views": 50,
       "sessions": 11,
@@ -106,21 +122,6 @@
       },
       "sources": {
         "(direct)": 41
-      }
-    },
-    "/Academic-Research-Journaling/studies.html": {
-      "views": 38,
-      "sessions": 4,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.75,
-      "countries": {
-        "BR": 37,
-        "US": 1
-      },
-      "sources": {
-        "github.com": 3,
-        "(direct)": 1
       }
     },
     "/Gaussian-Process-Regression-Research/": {
@@ -380,6 +381,26 @@
       "sources": {
         "(direct)": 17,
         "github.com": 2
+      }
+    },
+    "/Academic-Research-Journaling/": {
+      "views": 21,
+      "sessions": 11,
+      "users": 10,
+      "clicks": 0,
+      "engagement_rate": 0.2727272727272727,
+      "countries": {
+        "BR": 12,
+        "US": 5,
+        "IL": 1,
+        "NL": 1,
+        "PT": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "github.com": 3,
+        "(not set)": 1
       }
     },
     "/IF4302112-Fisica-II/": {
@@ -704,25 +725,6 @@
       "sources": {
         "(direct)": 13,
         "github.com": 3
-      }
-    },
-    "/Academic-Research-Journaling/": {
-      "views": 17,
-      "sessions": 10,
-      "users": 9,
-      "clicks": 0,
-      "engagement_rate": 0.3,
-      "countries": {
-        "BR": 8,
-        "US": 5,
-        "IL": 1,
-        "NL": 1,
-        "PT": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 8,
-        "github.com": 2
       }
     },
     "/IF4302212-Fisica-IV/": {
@@ -1742,6 +1744,20 @@
         "(direct)": 10
       }
     },
+    "/Academic-Research-Journaling/index.html": {
+      "views": 10,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 8,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 10
+      },
+      "sources": {
+        "github.com": 3,
+        "(not set)": 1
+      }
+    },
     "/Batalha-Naval-Quantica/": {
       "views": 10,
       "sessions": 11,
@@ -2034,19 +2050,6 @@
       },
       "sources": {
         "(direct)": 9
-      }
-    },
-    "/Academic-Research-Journaling/index.html": {
-      "views": 8,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 6,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 8
-      },
-      "sources": {
-        "github.com": 2
       }
     },
     "/DPG5011-Formacao-Do-Cientista-Empreendedor/": {
