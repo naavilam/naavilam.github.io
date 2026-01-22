@@ -4,14 +4,14 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 269,
-      "sessions": 100,
-      "users": 47,
+      "views": 270,
+      "sessions": 101,
+      "users": 48,
       "clicks": 32,
-      "engagement_rate": 0.52,
+      "engagement_rate": 0.5148514851485149,
       "countries": {
         "BR": 224,
-        "US": 33,
+        "US": 34,
         "(not set)": 2,
         "NL": 2,
         "RU": 2,
@@ -24,7 +24,7 @@
       },
       "sources": {
         "github.com": 52,
-        "(direct)": 47,
+        "(direct)": 48,
         "(not set)": 1
       }
     },
@@ -60,19 +60,19 @@
       }
     },
     "/Academic-Research-Journaling/studies.html": {
-      "views": 59,
-      "sessions": 6,
+      "views": 91,
+      "sessions": 11,
       "users": 3,
       "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 0.45454545454545453,
       "countries": {
-        "BR": 58,
+        "BR": 90,
         "US": 1
       },
       "sources": {
-        "github.com": 5,
-        "(direct)": 1,
-        "(not set)": 1
+        "github.com": 9,
+        "(not set)": 4,
+        "(direct)": 1
       }
     },
     "/PGF5005-Mecanica-Classica/software.html": {
@@ -274,6 +274,26 @@
         "github.com": 4
       }
     },
+    "/Academic-Research-Journaling/": {
+      "views": 24,
+      "sessions": 12,
+      "users": 10,
+      "clicks": 0,
+      "engagement_rate": 0.3333333333333333,
+      "countries": {
+        "BR": 15,
+        "US": 5,
+        "IL": 1,
+        "NL": 1,
+        "PT": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "github.com": 4,
+        "(not set)": 1
+      }
+    },
     "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/": {
       "views": 24,
       "sessions": 20,
@@ -381,26 +401,6 @@
       "sources": {
         "(direct)": 17,
         "github.com": 2
-      }
-    },
-    "/Academic-Research-Journaling/": {
-      "views": 21,
-      "sessions": 11,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.2727272727272727,
-      "countries": {
-        "BR": 12,
-        "US": 5,
-        "IL": 1,
-        "NL": 1,
-        "PT": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 8,
-        "github.com": 3,
-        "(not set)": 1
       }
     },
     "/IF4302112-Fisica-II/": {
@@ -842,6 +842,20 @@
       "sources": {
         "(direct)": 14,
         "github.com": 1
+      }
+    },
+    "/Academic-Research-Journaling/index.html": {
+      "views": 15,
+      "sessions": 4,
+      "users": 2,
+      "clicks": 10,
+      "engagement_rate": 0.75,
+      "countries": {
+        "BR": 15
+      },
+      "sources": {
+        "github.com": 4,
+        "(not set)": 1
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
@@ -1744,20 +1758,6 @@
         "(direct)": 10
       }
     },
-    "/Academic-Research-Journaling/index.html": {
-      "views": 10,
-      "sessions": 3,
-      "users": 2,
-      "clicks": 8,
-      "engagement_rate": 0.6666666666666666,
-      "countries": {
-        "BR": 10
-      },
-      "sources": {
-        "github.com": 3,
-        "(not set)": 1
-      }
-    },
     "/Batalha-Naval-Quantica/": {
       "views": 10,
       "sessions": 11,
@@ -2418,6 +2418,20 @@
         "github.com": 4
       }
     },
+    "/Academic-Research-Journaling/references.html": {
+      "views": 5,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com": 2,
+        "(not set)": 1
+      }
+    },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/index.html": {
       "views": 5,
       "sessions": 2,
@@ -2510,19 +2524,6 @@
       },
       "sources": {
         "github.com": 4
-      }
-    },
-    "/Academic-Research-Journaling/references.html": {
-      "views": 4,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 4
-      },
-      "sources": {
-        "github.com": 1
       }
     },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/research.html": {
