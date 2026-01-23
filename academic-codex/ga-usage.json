@@ -4,14 +4,14 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 270,
-      "sessions": 101,
-      "users": 48,
+      "views": 271,
+      "sessions": 102,
+      "users": 49,
       "clicks": 32,
-      "engagement_rate": 0.5148514851485149,
+      "engagement_rate": 0.5098039215686274,
       "countries": {
         "BR": 224,
-        "US": 34,
+        "US": 35,
         "(not set)": 2,
         "NL": 2,
         "RU": 2,
@@ -24,7 +24,7 @@
       },
       "sources": {
         "github.com": 52,
-        "(direct)": 48,
+        "(direct)": 49,
         "(not set)": 1
       }
     },
@@ -60,19 +60,19 @@
       }
     },
     "/Academic-Research-Journaling/studies.html": {
-      "views": 91,
-      "sessions": 11,
+      "views": 103,
+      "sessions": 14,
       "users": 3,
       "clicks": 0,
-      "engagement_rate": 0.45454545454545453,
+      "engagement_rate": 0.6428571428571429,
       "countries": {
-        "BR": 90,
+        "BR": 102,
         "US": 1
       },
       "sources": {
-        "github.com": 9,
-        "(not set)": 4,
-        "(direct)": 1
+        "github.com": 13,
+        "(direct)": 1,
+        "(not set)": 1
       }
     },
     "/PGF5005-Mecanica-Classica/software.html": {
@@ -222,6 +222,26 @@
         "github.com": 3
       }
     },
+    "/Academic-Research-Journaling/": {
+      "views": 25,
+      "sessions": 13,
+      "users": 11,
+      "clicks": 0,
+      "engagement_rate": 0.38461538461538464,
+      "countries": {
+        "BR": 15,
+        "US": 5,
+        "IL": 1,
+        "NL": 1,
+        "PT": 1,
+        "RU": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 9,
+        "github.com": 4
+      }
+    },
     "/MIT-8.20--Introduction-to-Special-Relativity/": {
       "views": 25,
       "sessions": 14,
@@ -272,26 +292,6 @@
       },
       "sources": {
         "github.com": 4
-      }
-    },
-    "/Academic-Research-Journaling/": {
-      "views": 24,
-      "sessions": 12,
-      "users": 10,
-      "clicks": 0,
-      "engagement_rate": 0.3333333333333333,
-      "countries": {
-        "BR": 15,
-        "US": 5,
-        "IL": 1,
-        "NL": 1,
-        "PT": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 8,
-        "github.com": 4,
-        "(not set)": 1
       }
     },
     "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/": {
@@ -524,6 +524,24 @@
         "github.com": 6
       }
     },
+    "/Gaussian-Process-Research/": {
+      "views": 20,
+      "sessions": 10,
+      "users": 10,
+      "clicks": 1,
+      "engagement_rate": 0.2,
+      "countries": {
+        "BR": 12,
+        "US": 4,
+        "NL": 2,
+        "SC": 1,
+        "ZA": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "github.com": 2
+      }
+    },
     "/IF4302111-Fisica-I/": {
       "views": 20,
       "sessions": 15,
@@ -563,22 +581,18 @@
         "github.com": 2
       }
     },
-    "/Gaussian-Process-Research/": {
+    "/Academic-Research-Journaling/index.html": {
       "views": 19,
-      "sessions": 9,
-      "users": 9,
-      "clicks": 1,
-      "engagement_rate": 0.1111111111111111,
+      "sessions": 6,
+      "users": 2,
+      "clicks": 12,
+      "engagement_rate": 0.8333333333333334,
       "countries": {
-        "BR": 11,
-        "US": 4,
-        "NL": 2,
-        "SC": 1,
-        "ZA": 1
+        "BR": 19
       },
       "sources": {
-        "(direct)": 8,
-        "github.com": 1
+        "github.com": 6,
+        "(not set)": 1
       }
     },
     "/IF4300214-Fisica-Experimental-IV/": {
@@ -842,20 +856,6 @@
       "sources": {
         "(direct)": 14,
         "github.com": 1
-      }
-    },
-    "/Academic-Research-Journaling/index.html": {
-      "views": 15,
-      "sessions": 4,
-      "users": 2,
-      "clicks": 10,
-      "engagement_rate": 0.75,
-      "countries": {
-        "BR": 15
-      },
-      "sources": {
-        "github.com": 4,
-        "(not set)": 1
       }
     },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
@@ -1344,8 +1344,8 @@
     },
     "/Bayesian-Inference-Research/": {
       "views": 12,
-      "sessions": 12,
-      "users": 12,
+      "sessions": 13,
+      "users": 13,
       "clicks": 0,
       "engagement_rate": 0.0,
       "countries": {
@@ -1357,7 +1357,8 @@
         "SC": 1
       },
       "sources": {
-        "(direct)": 12
+        "(direct)": 12,
+        "(not set)": 1
       }
     },
     "/Gaussian-Process-Research/index.html": {
@@ -2423,13 +2424,12 @@
       "sessions": 2,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.5,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 5
       },
       "sources": {
-        "github.com": 2,
-        "(not set)": 1
+        "github.com": 2
       }
     },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/index.html": {
