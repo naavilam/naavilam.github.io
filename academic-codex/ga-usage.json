@@ -4,22 +4,22 @@
   "range_days": 30,
   "metrics_by_path": {
     "/": {
-      "views": 233,
-      "sessions": 75,
-      "users": 29,
-      "clicks": 32,
-      "engagement_rate": 0.5866666666666667,
+      "views": 206,
+      "sessions": 67,
+      "users": 28,
+      "clicks": 26,
+      "engagement_rate": 0.5671641791044776,
       "countries": {
-        "BR": 205,
-        "US": 22,
+        "BR": 179,
+        "US": 21,
         "(not set)": 2,
         "RU": 2,
         "AM": 1,
         "SG": 1
       },
       "sources": {
-        "github.com": 47,
-        "(direct)": 27,
+        "github.com": 41,
+        "(direct)": 25,
         "(not set)": 1
       }
     },
@@ -55,33 +55,18 @@
       }
     },
     "/Academic-Research-Journaling/studies.html": {
-      "views": 164,
+      "views": 150,
       "sessions": 15,
       "users": 3,
       "clicks": 0,
       "engagement_rate": 0.6666666666666666,
       "countries": {
-        "BR": 163,
+        "BR": 149,
         "US": 1
       },
       "sources": {
         "github.com": 14,
-        "(direct)": 1,
-        "(not set)": 1
-      }
-    },
-    "/PGF5005-Mecanica-Classica/software.html": {
-      "views": 49,
-      "sessions": 10,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.8,
-      "countries": {
-        "BR": 49
-      },
-      "sources": {
-        "github.com": 8,
-        "(direct)": 2
+        "(direct)": 1
       }
     },
     "/SEL0609-Circuitos-Eletronicos-I/": {
@@ -117,6 +102,33 @@
       },
       "sources": {
         "(direct)": 41
+      }
+    },
+    "/Gaussian-Process-Research/software.html": {
+      "views": 40,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 40
+      },
+      "sources": {
+        "github.com": 3
+      }
+    },
+    "/PGF5005-Mecanica-Classica/software.html": {
+      "views": 40,
+      "sessions": 9,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.7777777777777778,
+      "countries": {
+        "BR": 40
+      },
+      "sources": {
+        "github.com": 7,
+        "(direct)": 2
       }
     },
     "/Gaussian-Process-Regression-Research/": {
@@ -155,19 +167,6 @@
         "(direct)": 2
       }
     },
-    "/Gaussian-Process-Research/software.html": {
-      "views": 33,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 33
-      },
-      "sources": {
-        "github.com": 2
-      }
-    },
     "/MIT-8.20--Introduction-to-Special-Relativity/research.html": {
       "views": 29,
       "sessions": 4,
@@ -188,7 +187,7 @@
       "sessions": 14,
       "users": 11,
       "clicks": 1,
-      "engagement_rate": 0.35714285714285715,
+      "engagement_rate": 0.42857142857142855,
       "countries": {
         "BR": 17,
         "US": 5,
@@ -200,8 +199,7 @@
       },
       "sources": {
         "(direct)": 9,
-        "github.com": 5,
-        "(not set)": 1
+        "github.com": 5
       }
     },
     "/MIT-8.20--Introduction-to-Special-Relativity/index.html": {
@@ -237,38 +235,6 @@
         "github.com": 3
       }
     },
-    "/PGF5002-Mecanica-Quantica-II/": {
-      "views": 25,
-      "sessions": 17,
-      "users": 12,
-      "clicks": 1,
-      "engagement_rate": 0.35294117647058826,
-      "countries": {
-        "BR": 14,
-        "US": 4,
-        "IL": 3,
-        "RU": 2,
-        "DE": 1,
-        "GB": 1
-      },
-      "sources": {
-        "(direct)": 11,
-        "github.com": 6
-      }
-    },
-    "/PGF5005-Mecanica-Classica/research.html": {
-      "views": 25,
-      "sessions": 4,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 25
-      },
-      "sources": {
-        "github.com": 4
-      }
-    },
     "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/": {
       "views": 24,
       "sessions": 20,
@@ -286,6 +252,24 @@
       "sources": {
         "(direct)": 13,
         "github.com": 7
+      }
+    },
+    "/Gaussian-Process-Research/": {
+      "views": 23,
+      "sessions": 11,
+      "users": 10,
+      "clicks": 1,
+      "engagement_rate": 0.18181818181818182,
+      "countries": {
+        "BR": 15,
+        "US": 4,
+        "NL": 2,
+        "SC": 1,
+        "ZA": 1
+      },
+      "sources": {
+        "(direct)": 8,
+        "github.com": 3
       }
     },
     "/PGF5001-Mecanica-Quantica-I/": {
@@ -311,8 +295,8 @@
       "views": 22,
       "sessions": 7,
       "users": 2,
-      "clicks": 16,
-      "engagement_rate": 0.8571428571428571,
+      "clicks": 15,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 22
       },
@@ -336,20 +320,6 @@
       "sources": {
         "(direct)": 17,
         "github.com": 3
-      }
-    },
-    "/PGF5005-Mecanica-Classica/": {
-      "views": 22,
-      "sessions": 10,
-      "users": 3,
-      "clicks": 2,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 22
-      },
-      "sources": {
-        "github.com": 8,
-        "(direct)": 2
       }
     },
     "/TEST0001-Disciplina-Fantasma/": {
@@ -437,24 +407,6 @@
       },
       "sources": {
         "github.com": 6
-      }
-    },
-    "/Gaussian-Process-Research/": {
-      "views": 20,
-      "sessions": 10,
-      "users": 10,
-      "clicks": 1,
-      "engagement_rate": 0.2,
-      "countries": {
-        "BR": 12,
-        "US": 4,
-        "NL": 2,
-        "SC": 1,
-        "ZA": 1
-      },
-      "sources": {
-        "(direct)": 8,
-        "github.com": 2
       }
     },
     "/SEL0622-Projeto-de-Circuitos-Integrados-Digitais-II/": {
@@ -559,6 +511,19 @@
         "github.com": 3
       }
     },
+    "/PGF5005-Mecanica-Classica/research.html": {
+      "views": 18,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 18
+      },
+      "sources": {
+        "github.com": 3
+      }
+    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 18,
       "sessions": 17,
@@ -644,6 +609,27 @@
         "github.com": 1
       }
     },
+    "/Bayesian-Inference-Research/": {
+      "views": 16,
+      "sessions": 14,
+      "users": 14,
+      "clicks": 1,
+      "engagement_rate": 0.0,
+      "countries": {
+        "US": 7,
+        "BR": 3,
+        "IL": 1,
+        "IR": 1,
+        "NL": 1,
+        "PT": 1,
+        "RU": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct)": 13,
+        "github.com": 1
+      }
+    },
     "/SCE0601-Introducao-a-Ciencia-da-Computacao-I/": {
       "views": 16,
       "sessions": 15,
@@ -723,26 +709,6 @@
         "github.com": 2
       }
     },
-    "/IF4302403-Mecanica-Quantica-I/": {
-      "views": 15,
-      "sessions": 14,
-      "users": 11,
-      "clicks": 1,
-      "engagement_rate": 0.2857142857142857,
-      "countries": {
-        "BR": 4,
-        "US": 4,
-        "NL": 2,
-        "RU": 2,
-        "DE": 1,
-        "IL": 1,
-        "ZA": 1
-      },
-      "sources": {
-        "(direct)": 11,
-        "github.com": 3
-      }
-    },
     "/MIT-18.175--Theory-of-Probability/": {
       "views": 15,
       "sessions": 14,
@@ -802,6 +768,20 @@
       "sources": {
         "(direct)": 14,
         "github.com": 1
+      }
+    },
+    "/PGF5005-Mecanica-Classica/": {
+      "views": 15,
+      "sessions": 9,
+      "users": 3,
+      "clicks": 1,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 15
+      },
+      "sources": {
+        "github.com": 7,
+        "(direct)": 2
       }
     },
     "/SCE0617-Redes-de-Computadores/": {
@@ -881,22 +861,6 @@
       "sources": {
         "(direct)": 13,
         "github.com": 1
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
-      "views": 14,
-      "sessions": 12,
-      "users": 5,
-      "clicks": 3,
-      "engagement_rate": 0.75,
-      "countries": {
-        "BR": 11,
-        "RU": 2,
-        "IL": 1
-      },
-      "sources": {
-        "github.com": 8,
-        "(direct)": 4
       }
     },
     "/SEL0602-Circuitos-Eletricos/": {
@@ -1030,25 +994,6 @@
         "(direct)": 13
       }
     },
-    "/Bayesian-Inference-Research/": {
-      "views": 13,
-      "sessions": 13,
-      "users": 13,
-      "clicks": 0,
-      "engagement_rate": 0.0,
-      "countries": {
-        "US": 7,
-        "IL": 1,
-        "IR": 1,
-        "NL": 1,
-        "PT": 1,
-        "RU": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct)": 13
-      }
-    },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/": {
       "views": 13,
       "sessions": 10,
@@ -1066,6 +1011,20 @@
       "sources": {
         "(direct)": 9,
         "github.com": 1
+      }
+    },
+    "/Gaussian-Process-Research/index.html": {
+      "views": 13,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 5,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 13
+      },
+      "sources": {
+        "github.com": 2,
+        "(not set)": 1
       }
     },
     "/MIT-18.745--Lie-Groups-and-Lie-Algebras-I/": {
@@ -1156,19 +1115,6 @@
       },
       "sources": {
         "(direct)": 12
-      }
-    },
-    "/Gaussian-Process-Research/index.html": {
-      "views": 12,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 4,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 12
-      },
-      "sources": {
-        "github.com": 2
       }
     },
     "/MIT-18.03SC--Differential-Equations/": {
@@ -1264,19 +1210,6 @@
       },
       "sources": {
         "(direct)": 12
-      }
-    },
-    "/PGF5005-Mecanica-Classica/index.html": {
-      "views": 12,
-      "sessions": 5,
-      "users": 1,
-      "clicks": 3,
-      "engagement_rate": 0.8,
-      "countries": {
-        "BR": 12
-      },
-      "sources": {
-        "github.com": 5
       }
     },
     "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
@@ -1449,17 +1382,20 @@
         "(direct)": 11
       }
     },
-    "/PGF5002-Mecanica-Quantica-II/software.html": {
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
       "views": 11,
-      "sessions": 7,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
+      "sessions": 9,
+      "users": 5,
+      "clicks": 2,
+      "engagement_rate": 0.6666666666666666,
       "countries": {
-        "BR": 11
+        "BR": 8,
+        "RU": 2,
+        "IL": 1
       },
       "sources": {
-        "github.com": 7
+        "github.com": 5,
+        "(direct)": 4
       }
     },
     "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
@@ -1575,6 +1511,21 @@
         "github.com": 3
       }
     },
+    "/IF4302111-Fisica-I/": {
+      "views": 10,
+      "sessions": 8,
+      "users": 3,
+      "clicks": 2,
+      "engagement_rate": 0.75,
+      "countries": {
+        "BR": 9,
+        "RU": 1
+      },
+      "sources": {
+        "github.com": 6,
+        "(direct)": 2
+      }
+    },
     "/MIT-18.950--Differential-Geometry/": {
       "views": 10,
       "sessions": 10,
@@ -1593,6 +1544,19 @@
       "sources": {
         "(direct)": 8,
         "github.com": 2
+      }
+    },
+    "/PGF5005-Mecanica-Classica/index.html": {
+      "views": 10,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 2,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 10
+      },
+      "sources": {
+        "github.com": 3
       }
     },
     "/SCE0607-Organizacao-de-Computadores-Digitais-I/": {
@@ -1624,32 +1588,6 @@
       },
       "sources": {
         "(direct)": 10
-      }
-    },
-    "/SSC0144-Redes-De-Alto-Desempenho/": {
-      "views": 10,
-      "sessions": 4,
-      "users": 1,
-      "clicks": 5,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 10
-      },
-      "sources": {
-        "github.com": 4
-      }
-    },
-    "/SSC0748-Redes-Moveis/": {
-      "views": 10,
-      "sessions": 3,
-      "users": 1,
-      "clicks": 7,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 10
-      },
-      "sources": {
-        "github.com": 3
       }
     },
     "/quantum-error-mitigation/": {
@@ -1763,19 +1701,17 @@
         "github.com": 5
       }
     },
-    "/IF4302111-Fisica-I/": {
+    "/Gaussian-Process-Research/research.html": {
       "views": 9,
-      "sessions": 7,
+      "sessions": 3,
       "users": 2,
-      "clicks": 2,
-      "engagement_rate": 0.8571428571428571,
+      "clicks": 0,
+      "engagement_rate": 0.6666666666666666,
       "countries": {
-        "BR": 8,
-        "RU": 1
+        "BR": 9
       },
       "sources": {
-        "github.com": 6,
-        "(direct)": 1
+        "github.com": 3
       }
     },
     "/IF4302112-Fisica-II/": {
@@ -1821,32 +1757,6 @@
       },
       "sources": {
         "(direct)": 9
-      }
-    },
-    "/PGF5002-Mecanica-Quantica-II/index.html": {
-      "views": 9,
-      "sessions": 7,
-      "users": 1,
-      "clicks": 4,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 9
-      },
-      "sources": {
-        "github.com": 7
-      }
-    },
-    "/PGF5002-Mecanica-Quantica-II/research.html": {
-      "views": 9,
-      "sessions": 5,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 9
-      },
-      "sources": {
-        "github.com": 5
       }
     },
     "/SME0320-Estatistica-I/": {
@@ -1895,23 +1805,6 @@
         "github.com": 1
       }
     },
-    "/IF4302112-Fisica-Matematica-I/": {
-      "views": 8,
-      "sessions": 6,
-      "users": 4,
-      "clicks": 1,
-      "engagement_rate": 0.6666666666666666,
-      "countries": {
-        "BR": 5,
-        "IL": 1,
-        "RU": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 3,
-        "github.com": 3
-      }
-    },
     "/IF4302306-Mecanica-Classica-II/": {
       "views": 8,
       "sessions": 5,
@@ -1925,23 +1818,6 @@
       "sources": {
         "github.com": 4,
         "(direct)": 1
-      }
-    },
-    "/IF4302307-Fisica-Matematica-II/": {
-      "views": 8,
-      "sessions": 5,
-      "users": 4,
-      "clicks": 2,
-      "engagement_rate": 0.4,
-      "countries": {
-        "BR": 5,
-        "IL": 1,
-        "RU": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 3,
-        "github.com": 2
       }
     },
     "/MAC5921-Deep-Learning/software.html": {
@@ -2007,19 +1883,6 @@
         "github.com": 4
       }
     },
-    "/SSC0643-Avaliacao-Desempenho/": {
-      "views": 8,
-      "sessions": 3,
-      "users": 1,
-      "clicks": 5,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 8
-      },
-      "sources": {
-        "github.com": 3
-      }
-    },
     "/FCM0102-Fisica-II/": {
       "views": 7,
       "sessions": 7,
@@ -2036,17 +1899,18 @@
         "(direct)": 7
       }
     },
-    "/Gaussian-Process-Research/research.html": {
+    "/Gaussian-Process-Research/studies.html": {
       "views": 7,
       "sessions": 2,
       "users": 1,
       "clicks": 0,
-      "engagement_rate": 1.0,
+      "engagement_rate": 0.5,
       "countries": {
         "BR": 7
       },
       "sources": {
-        "github.com": 2
+        "(not set)": 1,
+        "github.com": 1
       }
     },
     "/IF4302212-Fisica-IV/": {
@@ -2135,20 +1999,6 @@
         "github.com": 5
       }
     },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/software.html": {
-      "views": 7,
-      "sessions": 5,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 7
-      },
-      "sources": {
-        "github.com": 4,
-        "(direct)": 1
-      }
-    },
     "/SME0600-Calculo-Numerico-I/software.html": {
       "views": 7,
       "sessions": 6,
@@ -2183,13 +2033,12 @@
       "sessions": 3,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 1.0,
       "countries": {
         "BR": 6
       },
       "sources": {
-        "github.com": 3,
-        "(not set)": 1
+        "github.com": 3
       }
     },
     "/Academic-Research-Journaling/software.html": {
@@ -2220,10 +2069,55 @@
         "github.com": 1
       }
     },
+    "/IF4302112-Fisica-Matematica-I/": {
+      "views": 6,
+      "sessions": 4,
+      "users": 2,
+      "clicks": 1,
+      "engagement_rate": 0.75,
+      "countries": {
+        "BR": 5,
+        "RU": 1
+      },
+      "sources": {
+        "github.com": 3,
+        "(direct)": 1
+      }
+    },
     "/IF4302211-Fisica-III/": {
       "views": 6,
       "sessions": 5,
       "users": 3,
+      "clicks": 1,
+      "engagement_rate": 0.6,
+      "countries": {
+        "BR": 4,
+        "RU": 2
+      },
+      "sources": {
+        "github.com": 3,
+        "(direct)": 2
+      }
+    },
+    "/IF4302307-Fisica-Matematica-II/": {
+      "views": 6,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 2,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 5,
+        "RU": 1
+      },
+      "sources": {
+        "github.com": 2,
+        "(direct)": 1
+      }
+    },
+    "/IF4302403-Mecanica-Quantica-I/": {
+      "views": 6,
+      "sessions": 5,
+      "users": 2,
       "clicks": 1,
       "engagement_rate": 0.6,
       "countries": {
@@ -2342,6 +2236,19 @@
         "github.com": 4
       }
     },
+    "/SSC0144-Redes-De-Alto-Desempenho/": {
+      "views": 6,
+      "sessions": 4,
+      "users": 1,
+      "clicks": 2,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 6
+      },
+      "sources": {
+        "github.com": 4
+      }
+    },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/index.html": {
       "views": 5,
       "sessions": 2,
@@ -2423,6 +2330,32 @@
         "github.com": 4
       }
     },
+    "/SSC0643-Avaliacao-Desempenho/": {
+      "views": 5,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 2,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com": 3
+      }
+    },
+    "/SSC0748-Redes-Moveis/": {
+      "views": 5,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 4,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com": 3
+      }
+    },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/research.html": {
       "views": 4,
       "sessions": 2,
@@ -2450,6 +2383,20 @@
       "sources": {
         "(direct)": 2,
         "github.com": 1
+      }
+    },
+    "/IF4302111-Fisica-I/software.html": {
+      "views": 4,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.6666666666666666,
+      "countries": {
+        "BR": 4
+      },
+      "sources": {
+        "github.com": 2,
+        "(direct)": 1
       }
     },
     "/MAE5911-Estatistica-e-Machine-Learning/software.html": {
@@ -2504,6 +2451,20 @@
       },
       "sources": {
         "github.com": 3
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/software.html": {
+      "views": 4,
+      "sessions": 3,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 4
+      },
+      "sources": {
+        "github.com": 2,
+        "(direct)": 1
       }
     },
     "/SCC0635-Visao-Computacional-em-Robotica/": {
@@ -2738,19 +2699,6 @@
         "(direct)": 1
       }
     },
-    "/SSC0748-Redes-Moveis/software.html": {
-      "views": 4,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 4
-      },
-      "sources": {
-        "github.com": 2
-      }
-    },
     "/TEST0001-Disciplina-Fantasma/software.html": {
       "views": 4,
       "sessions": 3,
@@ -2822,19 +2770,6 @@
       "sources": {
         "(direct)": 2,
         "github.com": 1
-      }
-    },
-    "/IF4302111-Fisica-I/software.html": {
-      "views": 3,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "github.com": 2
       }
     },
     "/MAC5921-Deep-Learning/research.html": {
@@ -2938,6 +2873,21 @@
         "(direct)": 1
       }
     },
+    "/PGF5002-Mecanica-Quantica-II/": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.3333333333333333,
+      "countries": {
+        "RU": 2,
+        "BR": 1
+      },
+      "sources": {
+        "(direct)": 2,
+        "github.com": 1
+      }
+    },
     "/PGF5003-Eletrodinamica/software.html": {
       "views": 3,
       "sessions": 2,
@@ -2949,19 +2899,6 @@
       },
       "sources": {
         "github.com": 2
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/research.html": {
-      "views": 3,
-      "sessions": 3,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "github.com": 3
       }
     },
     "/SAP0679-Humanidades-e-Ciencias-Sociais/software.html": {
@@ -3303,6 +3240,19 @@
         "(direct)": 2
       }
     },
+    "/Bayesian-Inference-Research/studies.html": {
+      "views": 2,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
     "/EAP5054-Formacao-Cientista-Empreendedor-II/software.html": {
       "views": 2,
       "sessions": 1,
@@ -3356,6 +3306,20 @@
       },
       "sources": {
         "(direct)": 2,
+        "github.com": 1
+      }
+    },
+    "/IF4302111-Fisica-I/research.html": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "clicks": 0,
+      "engagement_rate": 0.5,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "(direct)": 1,
         "github.com": 1
       }
     },
@@ -3460,19 +3424,6 @@
         "github.com": 1
       }
     },
-    "/PGF5001-Mecanica-Quantica/index.html": {
-      "views": 2,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
     "/PGF5006-Mecanica-Estatistica/software.html": {
       "views": 2,
       "sessions": 2,
@@ -3512,19 +3463,6 @@
       },
       "sources": {
         "(direct)": 2
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/index.html": {
-      "views": 2,
-      "sessions": 4,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com": 4
       }
     },
     "/SCC0635-Visao-Computacional-em-Robotica/software.html": {
@@ -3984,19 +3922,6 @@
         "github.com": 2
       }
     },
-    "/SSC0144-Redes-De-Alto-Desempenho/software.html": {
-      "views": 2,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com": 2
-      }
-    },
     "/SSC0144-Redes-de-Alto-Desempenho/": {
       "views": 2,
       "sessions": 2,
@@ -4063,32 +3988,6 @@
       },
       "sources": {
         "(direct)": 2
-      }
-    },
-    "/SSC0748-Redes-Moveis/index.html": {
-      "views": 2,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/SSC0748-Redes-Moveis/research.html": {
-      "views": 2,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com": 1
       }
     },
     "/TEST0001-Disciplina-Fantasma/index.html": {
@@ -4158,6 +4057,19 @@
       },
       "sources": {
         "(direct)": 1
+      }
+    },
+    "/Bayesian-Inference-Research/references.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
       }
     },
     "/Bayesian-Inference-Research/software.html": {
@@ -4251,6 +4163,19 @@
         "(direct)": 2
       }
     },
+    "/Gaussian-Process-Research/references.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(not set)": 1
+      }
+    },
     "/IF4300214-Fisica-Experimental-IV/index.html": {
       "views": 1,
       "sessions": 1,
@@ -4269,19 +4194,6 @@
       "sessions": 1,
       "users": 1,
       "clicks": 1,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/IF4302111-Fisica-I/research.html": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
       "engagement_rate": 1.0,
       "countries": {
         "BR": 1
@@ -4745,33 +4657,7 @@
         "(direct)": 1
       }
     },
-    "/PGF5001-Mecanica-Quantica/": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/PGF5001-Mecanica-Quantica/research.html": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/PGF5001-Mecanica-Quantica/software.html": {
+    "/PGF5002-Mecanica-Quantica-II/software.html": {
       "views": 1,
       "sessions": 1,
       "users": 1,
@@ -4850,6 +4736,32 @@
       }
     },
     "/PGF5261-Teoria-de-Grupos-Aplicada/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/index.html": {
+      "views": 1,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 2
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/research.html": {
       "views": 1,
       "sessions": 1,
       "users": 1,
@@ -5786,20 +5698,7 @@
         "github.com": 1
       }
     },
-    "/SSC0144-Redes-De-Alto-Desempenho/index.html": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "clicks": 1,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com": 1
-      }
-    },
-    "/SSC0144-Redes-De-Alto-Desempenho/research.html": {
+    "/SSC0144-Redes-De-Alto-Desempenho/software.html": {
       "views": 1,
       "sessions": 1,
       "users": 1,
@@ -5875,6 +5774,19 @@
       },
       "sources": {
         "(direct)": 1
+      }
+    },
+    "/SSC0748-Redes-Moveis/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
       }
     },
     "/quantum-algorithms/index.html": {
