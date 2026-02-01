@@ -50,14 +50,14 @@
       }
     },
     "/": {
-      "views": 129,
-      "sessions": 70,
-      "users": 38,
+      "views": 130,
+      "sessions": 71,
+      "users": 39,
       "clicks": 21,
-      "engagement_rate": 0.5,
+      "engagement_rate": 0.49295774647887325,
       "countries": {
         "BR": 94,
-        "US": 28,
+        "US": 29,
         "(not set)": 2,
         "RU": 2,
         "IL": 1,
@@ -65,24 +65,23 @@
         "SG": 1
       },
       "sources": {
-        "(direct)": 37,
+        "(direct)": 38,
         "github.com": 32,
         "(not set)": 1
       }
     },
     "/Gaussian-Process-Research/studies.html": {
-      "views": 48,
+      "views": 49,
       "sessions": 7,
       "users": 2,
       "clicks": 0,
-      "engagement_rate": 0.7142857142857143,
+      "engagement_rate": 0.8571428571428571,
       "countries": {
-        "BR": 48
+        "BR": 49
       },
       "sources": {
         "github.com": 4,
-        "(direct)": 3,
-        "(not set)": 1
+        "(direct)": 3
       }
     },
     "/SEL0609-Circuitos-Eletronicos-I/": {
@@ -1487,21 +1486,6 @@
         "github.com": 1
       }
     },
-    "/PGF5001-Mecanica-Quantica-I/": {
-      "views": 6,
-      "sessions": 6,
-      "users": 3,
-      "clicks": 1,
-      "engagement_rate": 0.8333333333333334,
-      "countries": {
-        "BR": 5,
-        "RU": 1
-      },
-      "sources": {
-        "github.com": 4,
-        "(direct)": 2
-      }
-    },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
       "views": 6,
       "sessions": 5,
@@ -1556,6 +1540,20 @@
       },
       "sources": {
         "github.com": 2
+      }
+    },
+    "/PGF5001-Mecanica-Quantica-I/": {
+      "views": 5,
+      "sessions": 5,
+      "users": 2,
+      "clicks": 1,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com": 4,
+        "(direct)": 1
       }
     },
     "/SME0600-Calculo-Numerico-I/software.html": {
@@ -1640,21 +1638,6 @@
       "sources": {
         "(direct)": 2,
         "github.com": 2
-      }
-    },
-    "/IF4302404-Mecanica-Quantica-II/": {
-      "views": 4,
-      "sessions": 3,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
-      "countries": {
-        "BR": 3,
-        "RU": 1
-      },
-      "sources": {
-        "github.com": 2,
-        "(direct)": 1
       }
     },
     "/MAC5722-Complexidade-Computacional/": {
@@ -1821,19 +1804,6 @@
         "github.com": 1
       }
     },
-    "/EAP5054-Formacao-Cientista-Empreendedor-II/": {
-      "views": 3,
-      "sessions": 2,
-      "users": 1,
-      "clicks": 0,
-      "engagement_rate": 0.5,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "github.com": 2
-      }
-    },
     "/FFI0181-Laboratorio-de-Fisica-Geral-II/": {
       "views": 3,
       "sessions": 3,
@@ -1849,19 +1819,17 @@
         "(direct)": 1
       }
     },
-    "/IF4302403-Mecanica-Quantica-I/": {
+    "/IF4302404-Mecanica-Quantica-II/": {
       "views": 3,
-      "sessions": 3,
-      "users": 2,
+      "sessions": 2,
+      "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.6666666666666666,
+      "engagement_rate": 1.0,
       "countries": {
-        "BR": 2,
-        "RU": 1
+        "BR": 3
       },
       "sources": {
-        "github.com": 2,
-        "(direct)": 1
+        "github.com": 2
       }
     },
     "/MAC5921-Deep-Learning/research.html": {
@@ -2015,21 +1983,6 @@
       },
       "sources": {
         "github.com": 4
-      }
-    },
-    "/SCE0602-Introducao-Ciencia-Da-Computacao-II/": {
-      "views": 3,
-      "sessions": 3,
-      "users": 3,
-      "clicks": 0,
-      "engagement_rate": 0.3333333333333333,
-      "countries": {
-        "RU": 2,
-        "BR": 1
-      },
-      "sources": {
-        "(direct)": 2,
-        "github.com": 1
       }
     },
     "/SEL0606-Laboratorio-de-Sistemas-Digitais/": {
@@ -2302,6 +2255,19 @@
         "github.com": 1
       }
     },
+    "/EAP5054-Formacao-Cientista-Empreendedor-II/": {
+      "views": 2,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
     "/EAP5054-Formacao-Cientista-Empreendedor-II/software.html": {
       "views": 2,
       "sessions": 1,
@@ -2422,6 +2388,19 @@
         "github.com": 2
       }
     },
+    "/IF4302403-Mecanica-Quantica-I/": {
+      "views": 2,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 2
+      }
+    },
     "/IF4302404-Mecanica-Quantica-II/software.html": {
       "views": 2,
       "sessions": 1,
@@ -2514,21 +2493,6 @@
         "BR": 2
       },
       "sources": {
-        "github.com": 1
-      }
-    },
-    "/PGF5002-Mecanica-Quantica-II/": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.5,
-      "countries": {
-        "BR": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct)": 1,
         "github.com": 1
       }
     },
@@ -2691,21 +2655,6 @@
       "countries": {
         "BR": 1,
         "RU": 1
-      },
-      "sources": {
-        "(direct)": 1,
-        "github.com": 1
-      }
-    },
-    "/SCE0617-Redes-de-Computadores/": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.5,
-      "countries": {
-        "AM": 1,
-        "BR": 1
       },
       "sources": {
         "(direct)": 1,
@@ -3750,6 +3699,19 @@
         "github.com": 1
       }
     },
+    "/PGF5002-Mecanica-Quantica-II/": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
     "/PGF5002-Mecanica-Quantica-II/software.html": {
       "views": 1,
       "sessions": 1,
@@ -3984,6 +3946,19 @@
         "(direct)": 1
       }
     },
+    "/SCE0602-Introducao-Ciencia-Da-Computacao-II/": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
     "/SCE0602-Introducao-Ciencia-Da-Computacao-II/software.html": {
       "views": 1,
       "sessions": 1,
@@ -4206,6 +4181,19 @@
       }
     },
     "/SCE0616-Sistemas-Computacionais-Distribuidos/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/SCE0617-Redes-de-Computadores/": {
       "views": 1,
       "sessions": 1,
       "users": 1,
