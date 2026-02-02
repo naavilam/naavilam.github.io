@@ -558,14 +558,6 @@
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos
-- Course: Digital Integrated Circuit Design I
-  id: SEL0618
-  level: undergraduate
-  School: EESC/USP
-  area: Eletronics
-  status: completed
-  completed_on: ''
-  link: https://academic-codex.github.io/SEL0618-Projeto-de-Circuitos-Integrados-Digitais-I
 - Course: Digital Communication
   id: SEL0619
   level: undergraduate
@@ -582,6 +574,14 @@
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/SEL0620-Controle-Digital
+- Course: Digital Integrated Circuit Design I
+  id: SEL0621
+  level: undergraduate
+  School: EESC/USP
+  area: Eletronics
+  status: completed
+  completed_on: ''
+  link: https://academic-codex.github.io/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I
 - Course: Digital Integrated Circuit Design II
   id: SEL0622
   level: undergraduate
