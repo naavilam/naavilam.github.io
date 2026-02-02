@@ -46,12 +46,19 @@ layout: default
           {% endif %}
           <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}
           <p>
-            {% if site.home_option == "education" %}
-            {% include education.html %}
-            {% else site.home_option == "timeline" %}
-            {% include timeline.html %}
-            {% endif %}
-            {% include honors.html %}
+          <div class="row mt-3">
+            <div class="col-md-8">
+              {% if site.home_option == "education" %}
+              {% include education.html %}
+              {% else site.home_option == "timeline" %}
+              {% include timeline.html %}
+              {% endif %}
+            </div>
+
+            <div class="col-md-4">
+              {% include honors.html %}
+            </div>
+          </div>
         </div>
       </div>
     </div>
