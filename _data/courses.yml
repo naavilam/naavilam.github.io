@@ -74,7 +74,7 @@
   id: IF4302112
   level: undergraduate
   School: IF/USP
-  area: Physics
+  area: Mathematics
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/IF4302112-Fisica-Matematica-I
@@ -114,7 +114,7 @@
   id: IF4302307
   level: undergraduate
   School: IF/USP
-  area: Physics
+  area: Mathematics
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/IF4302307-Fisica-Matematica-II
@@ -750,4 +750,3 @@
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/SSC0748-Redes-Moveis
-
