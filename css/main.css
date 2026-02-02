@@ -1354,7 +1354,6 @@ body {
 /*******************************************/
 /**************   Honors   *****************/
 /*******************************************/
-
 .honors-title{
   font-weight: 700;
   font-size: 0.95rem;
@@ -1372,6 +1371,7 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* mantém seu grid */
 .honors-grid{
   display: grid;
   grid-template-columns: 1fr;
@@ -1385,39 +1385,64 @@ body {
   }
 }
 
+/* ✅ 1 linha por honor */
 .honor-item{
   display: flex;
-  align-items: flex-start;
+  align-items: center;        /* era flex-start; centraliza e ajuda a parecer "linha" */
   gap: 0.6rem;
+  white-space: nowrap;        /* força ficar em uma linha */
+  overflow: hidden;           /* evita estourar layout */
+  text-overflow: ellipsis;    /* corta com ... se faltar espaço */
 }
 
 .honor-icon{
-  width: 22px;
-  height: 22px;
+  width: 14px;                /* menor pra caber em uma linha */
+  height: 14px;
   object-fit: contain;
-  margin-top: 2px;
+  margin-top: 0;              /* remove micro-desalinhamento */
+  flex: 0 0 auto;
 }
 
 .honor-dot{
-  width: 10px;
-  height: 10px;
+  width: 8px;                 /* menor pra caber */
+  height: 8px;
   border-radius: 999px;
   background: currentColor;
   opacity: 0.35;
-  margin-top: 6px;
+  margin-top: 0;
+  flex: 0 0 auto;
+}
+
+/* texto "inline" */
+.honor-text{
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;               /* IMPORTANT: permite ellipsis funcionar */
 }
 
 .honor-line-1{
   line-height: 1.15;
-  font-size: 0.92rem;
+  font-size: 0.78rem;         /* menor */
+  display: inline;            /* vira inline */
+  white-space: nowrap;
 }
 
 .honor-line-2{
-  font-size: 0.86rem;
+  font-size: 0.78rem;         /* igual pra parecer uma linha única */
   opacity: 0.85;
+  display: inline;            /* vira inline */
+  white-space: nowrap;
 }
 
 .honor-year{
   font-weight: 500;
   opacity: 0.8;
+  white-space: nowrap;
+}
+
+/* separador automático entre linha 1 e 2 */
+.honor-line-2:before{
+  content: " · ";
+  opacity: 0.6;
 }

@@ -2,50 +2,34 @@
 {% if honors and honors.size > 0 %}
 
 <div class="honors-block mt-3">
-    <!-- <div class="honors-title">Honors & Awards</div> -->
 
-    <div class="honors-grid">
+    <div class="honors-list">
         {% for h in honors %}
-        <div class="honor-item">
+        <div class="honor-row">
+
             {% if h.icon %}
             <img src="{{ h.icon }}" class="honor-icon" alt="{{ h.award | default: 'Honor' }}">
-            {% else %}
-            <span class="honor-dot" aria-hidden="true"></span>
             {% endif %}
 
-            <div class="honor-text">
-                <div class="honor-line-1">
-                    {% if h.award %}
-                    <strong>{{ h.award }}</strong>
-                    {% elsif h.title %}
-                    <strong>{{ h.title }}</strong>
-                    {% else %}
-                    <strong>Honor</strong>
-                    {% endif %}
-
-                    {% if h.year %}
-                    <span class="honor-year">· {{ h.year }}</span>
-                    {% endif %}
-                </div>
-
-                {% assign parts = "" %}
-                {% if h.title %}{% assign parts = parts | append: h.title %}{% endif %}
-                {% if h.level %}
-                {% if parts != "" %}{% assign parts = parts | append: " · " %}{% endif %}
-                {% assign parts = parts | append: h.level %}
-                {% endif %}
-                {% if h.org %}
-                {% if parts != "" %}{% assign parts = parts | append: " · " %}{% endif %}
-                {% assign parts = parts | append: h.org %}
+            <span class="honor-text-inline">
+                {% if h.award %}
+                <strong>{{ h.award }}</strong>
+                {% elsif h.title %}
+                <strong>{{ h.title }}</strong>
+                {% else %}
+                <strong>Honor</strong>
                 {% endif %}
 
-                {% if parts != "" %}
-                <div class="honor-line-2">{{ parts }}</div>
-                {% endif %}
-            </div>
+                {% if h.year %} · {{ h.year }}{% endif %}
+                {% if h.title %} · {{ h.title }}{% endif %}
+                {% if h.level %} · {{ h.level }}{% endif %}
+                {% if h.org %} · {{ h.org }}{% endif %}
+            </span>
+
         </div>
         {% endfor %}
     </div>
+
 </div>
 
 {% endif %}
