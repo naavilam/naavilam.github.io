@@ -1,0 +1,17 @@
+- title: "Brazilian Physics Olympiad"
+  level: "National"
+  award: "Gold Medal"
+  year: "2010"
+  icon: "/assets/img/icons/medal-gold.svg"
+
+- title: "Brazilian Mathematics Olympiad"
+  level: "State"
+  award: "Silver Medal"
+  year: "2009"
+  icon: "/assets/img/icons/medal-silver.svg"
+
+- title: "Science Fair / Olympiad"
+  level: "Regional"
+  award: "Honorable Mention"
+  year: "2008"
+  icon: "/assets/img/icons/medal-bronze.svg"

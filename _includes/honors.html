@@ -1,0 +1,30 @@
+{% assign medals = site.data.medals %}
+{% if medals and medals.size > 0 %}
+
+<div class="medals-block mt-3">
+  <div class="medals-title">Olympiad medals</div>
+
+  <div class="medals-grid">
+    {% for m in medals %}
+    <div class="medal-item">
+      {% if m.icon %}
+        <img src="{{ m.icon }}" class="medal-icon" alt="{{ m.award }}">
+      {% else %}
+        <span class="medal-dot" aria-hidden="true"></span>
+      {% endif %}
+
+      <div class="medal-text">
+        <div class="medal-line-1">
+          <strong>{{ m.award }}</strong>
+          {% if m.year %}<span class="medal-year">· {{ m.year }}</span>{% endif %}
+        </div>
+        <div class="medal-line-2">
+          {{ m.title }}{% if m.level %} · {{ m.level }}{% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endif %}
