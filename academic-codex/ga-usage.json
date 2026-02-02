@@ -35,18 +35,19 @@
       }
     },
     "/Academic-Research-Journaling/studies.html": {
-      "views": 154,
-      "sessions": 19,
+      "views": 159,
+      "sessions": 21,
       "users": 4,
       "clicks": 0,
-      "engagement_rate": 0.6842105263157895,
+      "engagement_rate": 0.6190476190476191,
       "countries": {
-        "BR": 153,
+        "BR": 158,
         "US": 1
       },
       "sources": {
         "github.com": 17,
-        "(direct)": 2
+        "(direct)": 3,
+        "(not set)": 2
       }
     },
     "/": {
@@ -197,13 +198,13 @@
       }
     },
     "/Academic-Research-Journaling/": {
-      "views": 29,
-      "sessions": 16,
+      "views": 30,
+      "sessions": 17,
       "users": 12,
       "clicks": 1,
-      "engagement_rate": 0.5,
+      "engagement_rate": 0.47058823529411764,
       "countries": {
-        "BR": 19,
+        "BR": 20,
         "US": 5,
         "IL": 1,
         "NL": 1,
@@ -212,8 +213,9 @@
         "SC": 1
       },
       "sources": {
-        "(direct)": 11,
-        "github.com": 5
+        "(direct)": 12,
+        "github.com": 5,
+        "(not set)": 1
       }
     },
     "/MIT-8.20--Introduction-to-Special-Relativity/research.html": {
@@ -1308,6 +1310,21 @@
         "(direct)": 9
       }
     },
+    "/Academic-Research-Journaling/references.html": {
+      "views": 8,
+      "sessions": 4,
+      "users": 3,
+      "clicks": 0,
+      "engagement_rate": 0.75,
+      "countries": {
+        "BR": 8
+      },
+      "sources": {
+        "github.com": 3,
+        "(direct)": 1,
+        "(not set)": 1
+      }
+    },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/index.html": {
       "views": 8,
       "sessions": 2,
@@ -1418,19 +1435,6 @@
         "github.com": 4
       }
     },
-    "/Academic-Research-Journaling/references.html": {
-      "views": 6,
-      "sessions": 3,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 1.0,
-      "countries": {
-        "BR": 6
-      },
-      "sources": {
-        "github.com": 3
-      }
-    },
     "/Academic-Research-Journaling/software.html": {
       "views": 6,
       "sessions": 1,
@@ -1500,22 +1504,6 @@
         "(direct)": 1
       }
     },
-    "/SME0600-Calculo-Numerico-I/": {
-      "views": 6,
-      "sessions": 4,
-      "users": 3,
-      "clicks": 0,
-      "engagement_rate": 0.5,
-      "countries": {
-        "BR": 4,
-        "IL": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct)": 2,
-        "github.com": 2
-      }
-    },
     "/DPG5011-Formacao-do-Cientista-Empreendedor/index.html": {
       "views": 5,
       "sessions": 2,
@@ -1582,21 +1570,6 @@
         "github.com": 2
       }
     },
-    "/IF4300214-Fisica-Experimental-IV/": {
-      "views": 4,
-      "sessions": 4,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.75,
-      "countries": {
-        "BR": 3,
-        "RU": 1
-      },
-      "sources": {
-        "github.com": 3,
-        "(direct)": 1
-      }
-    },
     "/IF4302111-Fisica-I/": {
       "views": 4,
       "sessions": 4,
@@ -1623,21 +1596,6 @@
       "sources": {
         "github.com": 2,
         "(direct)": 1
-      }
-    },
-    "/IF4302305-Mecanica-Classica-I/": {
-      "views": 4,
-      "sessions": 4,
-      "users": 3,
-      "clicks": 0,
-      "engagement_rate": 0.5,
-      "countries": {
-        "BR": 2,
-        "RU": 2
-      },
-      "sources": {
-        "(direct)": 2,
-        "github.com": 2
       }
     },
     "/MAC5722-Complexidade-Computacional/": {
@@ -1746,34 +1704,17 @@
         "github.com": 3
       }
     },
-    "/SHS0416-Sistema-de-Gestao-Ambiental/": {
+    "/SME0600-Calculo-Numerico-I/": {
       "views": 4,
-      "sessions": 4,
-      "users": 3,
+      "sessions": 2,
+      "users": 1,
       "clicks": 0,
-      "engagement_rate": 0.5,
+      "engagement_rate": 1.0,
       "countries": {
-        "BR": 2,
-        "RU": 2
+        "BR": 4
       },
       "sources": {
-        "(direct)": 2,
         "github.com": 2
-      }
-    },
-    "/SMA0333-Calculo-III/": {
-      "views": 4,
-      "sessions": 4,
-      "users": 2,
-      "clicks": 0,
-      "engagement_rate": 0.75,
-      "countries": {
-        "BR": 3,
-        "AM": 1
-      },
-      "sources": {
-        "github.com": 3,
-        "(direct)": 1
       }
     },
     "/quantum-learning/software.html": {
@@ -1817,6 +1758,19 @@
       "sources": {
         "github.com": 2,
         "(direct)": 1
+      }
+    },
+    "/IF4300214-Fisica-Experimental-IV/": {
+      "views": 3,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 3
+      },
+      "sources": {
+        "github.com": 3
       }
     },
     "/IF4302404-Mecanica-Quantica-II/": {
@@ -2089,6 +2043,19 @@
         "github.com": 2
       }
     },
+    "/SMA0333-Calculo-III/": {
+      "views": 3,
+      "sessions": 3,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 3
+      },
+      "sources": {
+        "github.com": 3
+      }
+    },
     "/SME0600-Calculo-Numerico-I/index.html": {
       "views": 3,
       "sessions": 3,
@@ -2167,22 +2134,6 @@
       },
       "sources": {
         "(direct)": 1,
-        "github.com": 1
-      }
-    },
-    "/SSC0570-Empreendedores-Em-Informatica/": {
-      "views": 3,
-      "sessions": 3,
-      "users": 3,
-      "clicks": 0,
-      "engagement_rate": 0.3333333333333333,
-      "countries": {
-        "BR": 1,
-        "RU": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct)": 2,
         "github.com": 1
       }
     },
@@ -2363,6 +2314,19 @@
       }
     },
     "/IF4302212-Fisica-IV/": {
+      "views": 2,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 2
+      }
+    },
+    "/IF4302305-Mecanica-Classica-I/": {
       "views": 2,
       "sessions": 2,
       "users": 1,
@@ -2874,6 +2838,19 @@
       },
       "sources": {
         "(direct)": 2
+      }
+    },
+    "/SHS0416-Sistema-de-Gestao-Ambiental/": {
+      "views": 2,
+      "sessions": 2,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com": 2
       }
     },
     "/SHS0619-Fenomenos-de-Transporte/software.html": {
@@ -4727,6 +4704,19 @@
       }
     },
     "/SSC0144-Redes-De-Alto-Desempenho/software.html": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "clicks": 0,
+      "engagement_rate": 1.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com": 1
+      }
+    },
+    "/SSC0570-Empreendedores-Em-Informatica/": {
       "views": 1,
       "sessions": 1,
       "users": 1,
