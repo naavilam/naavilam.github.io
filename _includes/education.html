@@ -3,29 +3,32 @@
 <!-- <h5 class="card-title"
   style="font-family:{{ theme.education-title-font}};font-size:{{ theme.education-title-size }};color:{{theme.education-font-color}};">
   Education & Honors</h5> -->
-<ul class="list-unstyled">
-  {% for entry in site.data.education %}
-  <li class="media">
-    <img src="{{ entry.Icon }}" class="mr-3" alt="...">
-    <div class="media-body">
-      <!-- <h5 style="font-family:{{ theme.education-entry-font }};
+
+
+<div class="education-block">
+  <ul class="list-unstyled">
+    {% for entry in site.data.education %}
+    <!-- <h5 style="font-family:{{ theme.education-entry-font }};
          font-size:{{ theme.education-entry-size }};
          color:{{ theme.education-font-color }};">
         {{ entry.School }}
       </h5> -->
-
-      {% if entry.Degrees %}
-      {% for deg in entry.Degrees %}
-      <p style="font-family:{{ theme.education-entry-font }};
-             font-size:{{ theme.education-section-size }};
-             color:{{ theme.education-font-color }};">
-        <strong>{{ deg.degree }}</strong> in {{ deg.field }}<br>
-        <em>{{ deg.unit }}</em><br>
-        {{ deg.start_date }} – {{ deg.end_date }}
-      </p>
-      {% endfor %}
-      {% endif %}
-    </div>
-  </li>
-  {% endfor %}
-</ul>
+    <li class="media">
+      <img src="{{ entry.Icon }}" class="mr-3" alt="...">
+      <div class="media-body">
+        {% if entry.Degrees %}
+        {% for deg in entry.Degrees %}
+        <p style="font-family:{{ theme.education-entry-font }};
+               font-size:{{ theme.education-section-size }};
+               color:{{ theme.education-font-color }};">
+          <strong>{{ deg.degree }}</strong> in {{ deg.field }}<br>
+          <em>{{ deg.unit }}</em><br>
+          {{ deg.start_date }} – {{ deg.end_date }}
+        </p>
+        {% endfor %}
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

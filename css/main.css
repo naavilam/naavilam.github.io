@@ -1451,3 +1451,7 @@ body {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+.education-block {
+  padding-top: 0.4rem; /* fino e acadêmico */
+}
