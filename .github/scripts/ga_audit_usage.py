@@ -131,7 +131,7 @@ def main():
             property_id,
             days=DAYS,
             dimensions=["pagePath"],
-            metrics=["screenPageViews", "sessions", "totalUsers", "engagementRate"],
+            metrics=["screenPageViews", "sessions", "totalUsers", "averageSessionDuration"],
         )
 
         metrics_by_path: dict[str, dict] = {}
@@ -142,16 +142,13 @@ def main():
             views = as_int(row.metric_values[0].value)
             sessions = as_int(row.metric_values[1].value)
             users = as_int(row.metric_values[2].value)
-            engagement_rate = as_float(row.metric_values[3].value)  # 0..1
-            # avg_eng_time = as_float(row.metric_values[4].value)     # segundos
+            avg_session_duration = as_float(row.metric_values[3].value)  # segundos
 
             metrics_by_path[path] = {
                 "views": views,
                 "sessions": sessions,
                 "users": users,
-                "clicks": 0,  # preenche depois
-                "engagement_rate": engagement_rate,
-                # "avg_engagement_time_sec": avg_eng_time,
+                "avg_session_duration_sec": avg_session_duration,
                 "countries": {},
                 "sources": {},
             }
@@ -201,31 +198,31 @@ def main():
             client,
             property_id,
             days=DAYS,
-            dimensions=["pagePath", "sessionSource"],
+            dimensions=["pagePath", "sessionSourceMedium"],
             metrics=["sessions"],
             limit=100000,
         )
 
-        sources_counts = defaultdict(lambda: defaultdict(int))  # path -> source -> count
+        sources_counts = defaultdict(lambda: defaultdict(int))  # path -> sourceMedium -> sessions
         for row in sources_resp.rows:
             path = row.dimension_values[0].value
-            source = (row.dimension_values[1].value or "unknown").strip().lower()
+            sm = (row.dimension_values[1].value or "unknown").strip()
             cnt = as_int(row.metric_values[0].value)
             if cnt > 0:
-                sources_counts[path][source] += cnt
+                sources_counts[path][sm] += cnt
 
         # guarda TUDO (contagens), a UI mostra só o top
-        all_paths = set(metrics_by_path.keys()) | set(countries_counts.keys()) | set(sources_counts.keys())
+        all_paths = set(metrics_by_path.keys()) | set(sources_counts.keys())
 
         for path in all_paths:
             metrics_by_path.setdefault(path, {
-                "views": 0, "sessions": 0, "users": 0, "clicks": 0,
-                "engagement_rate": 0.0,
+                "views": 0, "sessions": 0, "users": 0,
+                "avg_session_duration_sec": 0.0,
                 "countries": {}, "sources": {}
             })
 
             metrics_by_path[path]["countries"] = dict(countries_counts[path])  # ex: {"US": 7, "BR": 4, ...}
-            metrics_by_path[path]["sources"]   = dict(sources_counts[path])    # ex: {"(direct)": 9, "google": 1, ...}
+            metrics_by_path[path]["sources"] = dict(sources_counts[path])
 
         payload = {
             "org": org,
