@@ -18,12 +18,10 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  # destino dentro do site repo (este repo)
   DEST_FILE: "_data/courses.yml"
 
-  # fonte do registry (repo público)
-  REGISTRY_OWNER: "github-infra-templates"
-  REGISTRY_REPO: "org"
+  REGISTRY_OWNER: "naavilam"
+  REGISTRY_REPO: "github-infra-templates"
   REGISTRY_REF: "main"
   REGISTRY_PATH: "org/org_registry/academic-codex-registry.yml"
 
