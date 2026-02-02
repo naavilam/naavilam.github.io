@@ -1351,6 +1351,63 @@ body {
   padding-top: 0rem !important;
 }
 
-/******************************************/
-/**************Focus Cards*****************/
-/******************************************/
+/*******************************************/
+/**************   Honors   *****************/
+/*******************************************/
+
+.honors-title{
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.honors-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+
+@media (min-width: 768px){
+  .honors-grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.0rem;
+  }
+}
+
+.honor-item{
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.honor-icon{
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  margin-top: 2px;
+}
+
+.honor-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.35;
+  margin-top: 6px;
+}
+
+.honor-line-1{
+  line-height: 1.15;
+  font-size: 0.92rem;
+}
+
+.honor-line-2{
+  font-size: 0.86rem;
+  opacity: 0.85;
+}
+
+.honor-year{
+  font-weight: 500;
+  opacity: 0.8;
+}
