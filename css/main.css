@@ -1058,8 +1058,8 @@ $font-family: Proxima, Helvetica, Arial, sans-serif;
 }
 
 .media img:not(.talk-thumb) {
-  width: 80px;
-  max-width: 80px;
+  width: 100px;
+  max-width: 100px;
   height: auto;
   object-fit: contain;
 }
