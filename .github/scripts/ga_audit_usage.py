@@ -130,7 +130,7 @@ def main():
             client,
             property_id,
             days=DAYS,
-            dimensions=["pagePath"],
+            dimensions=["hostName", "pagePath"],
             metrics=["screenPageViews", "sessions", "totalUsers", "averageSessionDuration"],
         )
 
