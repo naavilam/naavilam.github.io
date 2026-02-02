@@ -1456,3 +1456,7 @@ body {
 .education-block {
   padding-top: 0.4rem; /* fino e acadêmico */
 }
+
+.neg-margin {
+  margin-top: -0.4rem !important;
+}
