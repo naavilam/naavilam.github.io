@@ -510,6 +510,14 @@
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/SEL0612-Ondas-Eletromagneticas
+- Course: Electronic Circuits II
+  id: SEL0613
+  level: undergraduate
+  School: EESC/USP
+  area: Eletronics
+  status: completed
+  completed_on: ''
+  link: https://academic-codex.github.io/SEL0613-Circuitos-Eletronicos-II
 - Course: Microprocessors and Applications
   id: SEL0614
   level: undergraduate
@@ -526,14 +534,6 @@
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/SEL0615-Processamento-Digital-de-Sinais
-- Course: Electronic Circuits II
-  id: SEL0615
-  level: undergraduate
-  School: EESC/USP
-  area: Eletronics
-  status: completed
-  completed_on: ''
-  link: https://academic-codex.github.io/SEL0615-Circuitos-Eletronicos-II
 - Course: Principles of Communication
   id: SEL0616
   level: undergraduate
