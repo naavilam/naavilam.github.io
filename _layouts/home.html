@@ -238,7 +238,7 @@ layout: default
             <!-- COURSE LIST -->
             <div class="list-group">
               {% for courses in site.data.courses %}
-              <a href="{{ courses.link }}?utm_source=academic_profile" target="_blank" rel="noopener"
+              <a href="{{ courses.link }}?utm_source=naavilam&utm_medium=coursework" target="_blank" rel="noopener"
                 class="list-group-item list-group-item-action text-left course-item"
                 data-area="{{ courses.area | escape }}"
                 data-level="{{ courses.level | default: 'undergrad' | downcase | strip }}">
