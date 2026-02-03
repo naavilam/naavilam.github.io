@@ -1,0 +1,37 @@
+{
+  "org": "quantum-computing",
+  "property_id": "517723552",
+  "range_days": 30,
+  "metrics_by_path": {
+    "quantum-materials-simulation-research.github.io": {
+      "views": 9,
+      "sessions": 6,
+      "users": 4,
+      "avg_session_duration_sec": 299.1500653333333,
+      "countries": {},
+      "sources": {}
+    },
+    "quantum-computing-research.github.io": {
+      "views": 4,
+      "sessions": 4,
+      "users": 4,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 8,
+        "(not set)": 4,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 10
+      }
+    }
+  }
+}
