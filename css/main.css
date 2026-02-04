@@ -1518,6 +1518,7 @@ body {
 .focus-media.ratio-1-1{ aspect-ratio: 1 / 1; }
 .focus-media.ratio-3-2{ aspect-ratio: 3 / 2; }
 .focus-media.ratio-3-1{ aspect-ratio: 3 / 1; }
+.focus-media.ratio-2-3{ aspect-ratio: 2 / 3; }
 
 .focus-media img{
   width: 100%;
