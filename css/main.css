@@ -1511,9 +1511,11 @@ body {
 
 /* ratios via class: ratio-16-9 etc */
 .focus-media.ratio-16-9{ aspect-ratio: 16 / 9; }
+.focus-media.ratio-25-9{ aspect-ratio: 25 / 9; }
 .focus-media.ratio-4-3{ aspect-ratio: 4 / 3; }
 .focus-media.ratio-1-1{ aspect-ratio: 1 / 1; }
 .focus-media.ratio-3-2{ aspect-ratio: 3 / 2; }
+.focus-media.ratio-3-1{ aspect-ratio: 3 / 1; }
 
 .focus-media img{
   width: 100%;
@@ -1586,9 +1588,3 @@ body {
   .focus-title{ font-size: 18px; }
 }
 
-.focus-media img{
-  display:block;
-  width:100%;
-  height:auto;            /* <- aqui está o “ajustar à proporção real” */
-  border-radius: 24px;    /* se você quiser arredondar a imagem */
-}
