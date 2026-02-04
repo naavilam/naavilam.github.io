@@ -4,7 +4,7 @@
   link: https://high-energy-physics-research.github.io
   image: /assets/img/focus/high-energy-physics-research.png
   weight: 2
-  ratio: 16/9
+  ratio: 3/1
 
 - title: Academic Codex
   tag: Academic
@@ -28,7 +28,7 @@
   link: https://quantum-materials-simulation-research.github.io
   image: /assets/img/focus/quantum-materials-simulation-research.jpg
   weight: 2
-  ratio: 16/9
+  ratio: 3/1
 
 - title: Topics Series — Mathematics
   tag: Topics
