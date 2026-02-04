@@ -1510,6 +1510,7 @@ body {
 }
 
 /* ratios via class: ratio-16-9 etc */
+.focus-media.ratio-100-120{ aspect-ratio: 100 / 120; }
 .focus-media.ratio-16-9{ aspect-ratio: 16 / 9; }
 .focus-media.ratio-25-9{ aspect-ratio: 25 / 9; }
 .focus-media.ratio-20-10{ aspect-ratio: 20 / 10; }
