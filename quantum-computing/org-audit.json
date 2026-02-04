@@ -8,7 +8,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-01-08T11:01:01Z",
+    "pushed_at": "2026-02-04T03:09:16Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 1,
@@ -16,7 +16,7 @@
     "files_tex": 0,
     "files_md": 4,
     "files_yml": 2,
-    "total_files": 135,
+    "total_files": 136,
     "branches_count": 5,
     "branches": [
       {
@@ -57,7 +57,7 @@
       },
       {
         "branch": "gh-pages",
-        "head_sha": "29c26e23e696a22e74bb2a0db8074a926aff91b5",
+        "head_sha": "7dc8095370ead4795ca0c48e7ec5f6ef7778d807",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -65,7 +65,7 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 20
+        "total_files": 21
       },
       {
         "branch": "main",
@@ -90,7 +90,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-01-08T11:01:01Z",
+    "pushed_at": "2026-02-04T03:09:25Z",
     "has_gitignore": false,
     "has_readme": true,
     "notebooks_ipynb": 8,
@@ -98,12 +98,12 @@
     "files_tex": 0,
     "files_md": 2,
     "files_yml": 0,
-    "total_files": 31,
+    "total_files": 40,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "12454d6cb4bb4472d9ddcd20692d2c04a9f5d0f9",
+        "head_sha": "9336e132cb50deffd802b33660411237f883d0c2",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -111,7 +111,7 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 20
+        "total_files": 29
       },
       {
         "branch": "main",
@@ -136,28 +136,28 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-01-08T10:57:37Z",
-    "has_gitignore": false,
+    "pushed_at": "2026-02-04T03:15:17Z",
+    "has_gitignore": true,
     "has_readme": true,
-    "notebooks_ipynb": 1,
-    "files_py": 3,
+    "notebooks_ipynb": 0,
+    "files_py": 0,
     "files_tex": 0,
-    "files_md": 3,
-    "files_yml": 7,
-    "total_files": 142,
+    "files_md": 1,
+    "files_yml": 6,
+    "total_files": 60,
     "branches_count": 1,
     "branches": [
       {
         "branch": "main",
-        "head_sha": "cffbdab74db0557bacbc90b5775a351444d62baf",
-        "has_gitignore": false,
+        "head_sha": "86be08b8283b8fcc59e4bcc4a97a5a2c9161efea",
+        "has_gitignore": true,
         "has_readme": true,
-        "notebooks_ipynb": 1,
-        "files_py": 3,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
         "files_tex": 0,
-        "files_md": 3,
-        "files_yml": 7,
-        "total_files": 142
+        "files_md": 1,
+        "files_yml": 6,
+        "total_files": 60
       }
     ]
   },

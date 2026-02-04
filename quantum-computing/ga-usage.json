@@ -4,10 +4,10 @@
   "range_days": 30,
   "metrics_by_path": {
     "quantum-materials-simulation-research.github.io": {
-      "views": 9,
-      "sessions": 6,
-      "users": 4,
-      "avg_session_duration_sec": 299.1500653333333,
+      "views": 13,
+      "sessions": 8,
+      "users": 5,
+      "avg_session_duration_sec": 310.232414625,
       "countries": {},
       "sources": {}
     },
@@ -23,14 +23,17 @@
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "avg_session_duration_sec": 0.0,
+      "clicks": 2,
+      "engagement_rate": 0.0,
+      "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 8,
+        "BR": 12,
         "(not set)": 4,
         "US": 1
       },
       "sources": {
-        "(direct) / (none)": 10
+        "(direct) / (none)": 12,
+        "(not set)": 2
       }
     }
   }
