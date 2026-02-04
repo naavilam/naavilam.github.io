@@ -1585,3 +1585,10 @@ body {
 
   .focus-title{ font-size: 18px; }
 }
+
+.focus-media img{
+  display:block;
+  width:100%;
+  height:auto;            /* <- aqui está o “ajustar à proporção real” */
+  border-radius: 24px;    /* se você quiser arredondar a imagem */
+}
