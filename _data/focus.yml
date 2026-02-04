@@ -6,7 +6,7 @@
   weight: 4
   ratio: 25/9
 
-- title: Academic Codex
+- title: Academic Work
   tag: Academic
   description: Courses, notes, registries, publishing.
   link: https://academic-codex.github.io
@@ -43,7 +43,7 @@
   description: Physics explorations and learning tracks.
   link: https://topics-series-physics.github.io
   image: /assets/img/focus/topics-series-physics.jpg
-  weight: 1
+  weight: 2
   ratio: 2/3
 
 - title: Topics Series — Business
