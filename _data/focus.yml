@@ -1,41 +1,71 @@
-- title: Physics
-  description: Data analysis from heavy-ion collisions at the Large Hadron Collider (LHC).
-  link: /high-energy/
+- title: High Energy Physics Research
   tag: Research
-  weight: 1
-
-- title: Mathematics
-  description: Probabilistic modeling and inference for scientific data.
-  link: /ml/gp/
-  tag: Methods
+  description: Heavy-ion collisions, QGP, Bayesian inference.
+  link: https://high-energy-physics-research.github.io
+  image: /img/focus/high-energy-physics-research.png
   weight: 2
+  ratio: 16/9
 
-- title: Machine Learning
-  description: Automation, reproducibility, and tooling for research workflows.
-  link: /software/
-  tag: Engineering
-  weight: 3
+- title: Academic Codex
+  tag: Knowledge
+  description: Courses, notes, registries, publishing.
+  link: https://academic-codex.github.io
+  image: /img/focus/academic-codex.png
+  weight: 2
+  ratio: 4/3
 
-- title: Economics
-  description: Automation, reproducibility, and tooling for research workflows.
-  link: /software/
-  tag: Engineering
-  weight: 7
+- title: Quantum Computing Research
+  tag: Research
+  description: Algorithms, tooling, experiments.
+  link: https://quantum-computing-research.github.io
+  image: /img/focus/quantum-computing-research.png
+  weight: 1
+  ratio: 1/1
 
-- title: Business
-  description: Automation, reproducibility, and tooling for research workflows.
-  link: /software/
-  tag: Engineering
-  weight: 7
+- title: Quantum Materials Simulation
+  tag: Research
+  description: Materials modeling, electronic structure, ML.
+  link: https://quantum-materials-simulation-research.github.io
+  image: /img/focus/quantum-materials-simulation-research.png
+  weight: 2
+  ratio: 16/9
 
-- title: Investments
-  description: Automation, reproducibility, and tooling for research workflows.
-  link: /software/
-  tag: Engineering
-  weight: 8
+- title: Topics Series — Mathematics
+  tag: Topics
+  description: Probabilistic modeling, inference, math toolbox.
+  link: https://topics-series-mathematics.github.io
+  image: /img/focus/topics-series-mathematics.png
+  weight: 1
+  ratio: 4/3
 
-- title: Phylosophy
-  description: Automation, reproducibility, and tooling for research workflows.
-  link: /software/
-  tag: Engineering
-  weight: 9
+- title: Topics Series — Physics
+  tag: Topics
+  description: Physics explorations and learning tracks.
+  link: https://topics-series-physics.github.io
+  image: /img/focus/topics-series-physics.png
+  weight: 1
+  ratio: 4/3
+
+- title: Topics Series — Business
+  tag: Topics
+  description: Systems, strategy, ops.
+  link: https://topics-series-business.github.io
+  image: /img/focus/topics-series-business.png
+  weight: 1
+  ratio: 1/1
+
+- title: Topics Series — Investments
+  tag: Topics
+  description: Quant, long-term, decision making.
+  link: https://topics-series-investments.github.io
+  image: /img/focus/topics-series-investments.png
+  weight: 1
+  ratio: 1/1
+
+- title: Topics Series — Economics
+  tag: Topics
+  description: Macro, micro, game theory, markets.
+  link: https://topics-series-economics.github.io
+  image: /img/focus/topics-series-economics.png
+  weight: 1
+  ratio: 1/1
