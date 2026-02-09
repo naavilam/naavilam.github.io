@@ -61,9 +61,9 @@
   area: Physics
   status: completed
   completed_on: ''
-  link: https://academic-codex.github.io/IF4302111-Fisica-I
+  link: https://academic-codex.github.io/IF4302204-Fisica-I
 - Course: Mathematical Physics I
-  id: IF4302112
+  id: IF4302204
   level: undergraduate
   School: IF/USP
   area: Mathematics
