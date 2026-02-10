@@ -1,6 +1,6 @@
 # Org Audit Report: academic-codex
 
-Generated: **2026-02-09 05:16 UTC**
+Generated: **2026-02-10 05:15 UTC**
 
 - Repositories: **95**
 - With README (any branch): **95/95**
@@ -21,7 +21,7 @@ Generated: **2026-02-09 05:16 UTC**
 | [IF4300214-Fisica-Experimental-IV](https://github.com/Academic-Codex/IF4300214-Fisica-Experimental-IV) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-02-04 |
 | [IF4302111-Fisica-I](https://github.com/Academic-Codex/IF4302111-Fisica-I) | 2 | ✅ | — | 1 | 0 | 0 | 35 | 2026-02-04 |
 | [IF4302112-Fisica-II](https://github.com/Academic-Codex/IF4302112-Fisica-II) | 2 | ✅ | ✅ | 14 | 0 | 0 | 60 | 2026-02-04 |
-| [IF4302112-Fisica-Matematica-I](https://github.com/Academic-Codex/IF4302112-Fisica-Matematica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-02-04 |
+| [IF4302204-Fisica-Matematica-I](https://github.com/Academic-Codex/IF4302204-Fisica-Matematica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-02-04 |
 | [IF4302211-Fisica-III](https://github.com/Academic-Codex/IF4302211-Fisica-III) | 2 | ✅ | ✅ | 0 | 0 | 0 | 33 | 2026-02-04 |
 | [IF4302212-Fisica-IV](https://github.com/Academic-Codex/IF4302212-Fisica-IV) | 2 | ✅ | ✅ | 1 | 0 | 0 | 33 | 2026-02-04 |
 | [IF4302305-Mecanica-Classica-I](https://github.com/Academic-Codex/IF4302305-Mecanica-Classica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-02-04 |
