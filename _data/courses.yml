@@ -61,15 +61,7 @@
   area: Physics
   status: completed
   completed_on: ''
-  link: https://academic-codex.github.io/IF4302204-Fisica-I
-- Course: Mathematical Physics I
-  id: IF4302204
-  level: undergraduate
-  School: IF/USP
-  area: Mathematics
-  status: completed
-  completed_on: ''
-  link: https://academic-codex.github.io/IF4302112-Fisica-Matematica-I
+  link: https://academic-codex.github.io/IF4302111-Fisica-I
 - Course: Physics II
   id: IF4302112
   level: undergraduate
@@ -78,6 +70,14 @@
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/IF4302112-Fisica-II
+- Course: Mathematical Physics I
+  id: IF4302204
+  level: undergraduate
+  School: IF/USP
+  area: Mathematics
+  status: completed
+  completed_on: ''
+  link: https://academic-codex.github.io/IF4302204-Fisica-Matematica-I
 - Course: Physics III
   id: IF4302211
   level: undergraduate
