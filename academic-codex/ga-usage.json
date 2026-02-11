@@ -35,19 +35,19 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-physics.github.io": {
-      "views": 21,
-      "sessions": 5,
-      "users": 2,
-      "avg_session_duration_sec": 436.92523520000003,
-      "countries": {},
-      "sources": {}
-    },
     "topics-series-economics.github.io": {
       "views": 22,
       "sessions": 13,
       "users": 12,
       "avg_session_duration_sec": 40.28268184615384,
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-physics.github.io": {
+      "views": 11,
+      "sessions": 5,
+      "users": 5,
+      "avg_session_duration_sec": 16.3755628,
       "countries": {},
       "sources": {}
     },
@@ -87,29 +87,29 @@
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "clicks": 57,
+      "clicks": 44,
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 188,
-        "US": 53,
+        "BR": 156,
+        "US": 46,
         "NL": 4,
         "DE": 2,
         "GB": 2,
-        "RU": 2,
         "CY": 1,
         "IL": 1,
         "IR": 1,
-        "NO": 1
+        "NO": 1,
+        "RU": 1
       },
       "sources": {
-        "(direct) / (none)": 78,
-        "github.com / referral": 39,
-        "(not set)": 7,
-        "child_repo / navbar": 5,
+        "(direct) / (none)": 72,
+        "github.com / referral": 30,
+        "child_repo / navbar": 6,
         "naavilam / coursework": 4,
         "academic-codex / portfolio": 2,
         "quantum-computing-research / portfolio": 2,
+        "(not set)": 1,
         "academic_profile / (not set)": 1,
         "correio1.if.usp.br / referral": 1,
         "course-codex / portfolio": 1,
@@ -144,32 +144,18 @@
         "github.com / referral": 7
       }
     },
-    "/MIT-8.20--Introduction-to-Special-Relativity/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 10,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 26
-      },
-      "sources": {
-        "github.com / referral": 3
-      }
-    },
     "/Academic-Research-Journal/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "clicks": 9,
+      "clicks": 6,
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 19
+        "BR": 11
       },
       "sources": {
-        "github.com / referral": 7
+        "github.com / referral": 6
       }
     },
     "/Gaussian-Process-Research/index.html": {
@@ -203,22 +189,6 @@
         "(direct) / (none)": 1
       }
     },
-    "/MIT-8.20--Introduction-to-Special-Relativity/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 2,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 28,
-        "US": 1
-      },
-      "sources": {
-        "github.com / referral": 3,
-        "(direct) / (none)": 1
-      }
-    },
     "/cern-root-student-course/": {
       "views": 0,
       "sessions": 0,
@@ -234,20 +204,6 @@
       "sources": {
         "(direct) / (none)": 11,
         "github.com / referral": 1
-      }
-    },
-    "/Academic-Research-Journal/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 102
-      },
-      "sources": {
-        "github.com / referral": 10
       }
     },
     "/Academic-Research-Journaling/": {
@@ -301,12 +257,12 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 11
+        "BR": 7
       },
       "sources": {
-        "github.com / referral": 4,
         "academic_profile / (not set)": 3,
-        "naavilam / coursework": 2
+        "naavilam / coursework": 2,
+        "github.com / referral": 1
       }
     },
     "/IF4302112-Fisica-Matematica-I/": {
@@ -320,43 +276,7 @@
         "BR": 1
       },
       "sources": {
-        "(not set)": 1,
         "naavilam / coursework": 1
-      }
-    },
-    "/MIT-18.757--Representations-of-Lie-Groups/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-18.950--Differential-Geometry/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "US": 3,
-        "BR": 2,
-        "FR": 1,
-        "IL": 1,
-        "NL": 1,
-        "RU": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct) / (none)": 8,
-        "github.com / referral": 2
       }
     },
     "/PGF5005-Mecanica-Classica/": {
@@ -461,128 +381,7 @@
         "(direct) / (none)": 2
       }
     },
-    "/MIT-18.755--Introduction-to-Lie-Groups/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SSC0643-Avaliacao-de-Desempenho/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AM": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/Gaussian-Process-Regression-Research/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 7
-      },
-      "sources": {
-        "github.com / referral": 3
-      }
-    },
-    "/MIT-18.330--Introduction-to-Numerical-Analysis/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/Gaussian-Process-Regression-Research/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 163
-      },
-      "sources": {
-        "github.com / referral": 11
-      }
-    },
-    "/quantum-algorithms/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.034--Honors-Differential-Equations/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/Gaussian-Process-Research/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 7
-      },
-      "sources": {
-        "github.com / referral": 3,
-        "(direct) / (none)": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/software.html": {
+    "/IF4302111-Fisica-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -594,82 +393,28 @@
         "(direct) / (none)": 1
       }
     },
-    "/MIT-18.950--Differential-Geometry/research.html": {
+    "/Academic-Research-Journaling/software.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 4
-      },
-      "sources": {
-        "github.com / referral": 2
-      }
-    },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2,
-        "AM": 1
-      },
-      "sources": {
-        "github.com / referral": 2,
-        "(direct) / (none)": 1,
-        "naavilam / coursework": 1
-      }
-    },
-    "/Gaussian-Process-Research/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
+        "BR": 6
       },
       "sources": {
         "github.com / referral": 1
       }
     },
-    "/MIT-18.757--Representations-of-Lie-Groups/software.html": {
+    "/Academic-Research-Journal/software.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1,
-        "US": 1
+        "BR": 53
       },
       "sources": {
-        "(direct) / (none)": 1,
-        "github.com / referral": 1
-      }
-    },
-    "/cern-root-student-course/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 2
-      }
-    },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
+        "github.com / referral": 9
       }
     },
     "/MIT-18.712--Introduction-to-Representation-Theory/software.html": {
@@ -682,6 +427,56 @@
       },
       "sources": {
         "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.757--Representations-of-Lie-Groups/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0612-Ondas-Eletromagneticas/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/EAP5054-Formacao-do-Cientista-Empreendedor-II/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/Academic-Research-Journaling/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 159,
+        "US": 1
+      },
+      "sources": {
+        "github.com / referral": 18,
+        "(direct) / (none)": 5
       }
     },
     "/EAP5054-Formacao-do-Cientista-Empreendedor-II/": {
@@ -698,145 +493,106 @@
         "github.com / referral": 1
       }
     },
-    "/SEL0612-Ondas-Eletromagneticas/": {
+    "/MIT-18.100B--Analysis-I/software.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 4,
-        "CA": 1,
-        "GB": 1,
-        "NL": 1
-      },
-      "sources": {
-        "(direct) / (none)": 7
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
+        "US": 1
       },
       "sources": {
         "(direct) / (none)": 1
       }
     },
-    "/MIT-8.20--Introduction-to-Special-Relativity/": {
+    "/MIT-18.330--Introduction-to-Numerical-Analysis/software.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 19,
-        "US": 4,
-        "NL": 3,
-        "SC": 2,
-        "DE": 1,
-        "FR": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.03SC--Differential-Equations/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "NL": 2,
+        "US": 2,
+        "CH": 1,
         "RU": 1
       },
       "sources": {
-        "(direct) / (none)": 11,
-        "github.com / referral": 4
+        "(direct) / (none)": 6
       }
     },
-    "/MIT-18.100A--Real-Analysis/": {
+    "/MIT-18.781--Theory-of-Numbers/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 7,
         "NL": 2,
-        "DE": 1,
-        "GB": 1,
-        "IR": 1,
-        "RU": 1,
-        "SC": 1
+        "US": 2,
+        "PT": 1,
+        "RU": 1
       },
       "sources": {
-        "(direct) / (none)": 14
+        "(direct) / (none)": 6
       }
     },
-    "/EAP5054-Formacao-do-Cientista-Empreendedor-II/research.html": {
+    "/MAC5722-Complexidade-Computacional/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/MAC5722-Complexidade-Computacional/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 3
+        "BR": 2
       },
       "sources": {
         "academic-codex / portfolio": 1
       }
     },
-    "/Academic-Research-Journal/research.html": {
+    "/MIT-18.755--Introduction-to-Lie-Groups/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 4
-      },
-      "sources": {
-        "github.com / referral": 3
-      }
-    },
-    "/MIT-18.101--Analysis-II/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 4,
-        "IL": 2,
-        "RU": 2,
+        "US": 3,
+        "CA": 1,
         "NL": 1,
-        "PL": 1,
-        "SC": 1
+        "RU": 1
       },
       "sources": {
-        "(direct) / (none)": 11
+        "(direct) / (none)": 6
       }
     },
-    "/IF4302204-Fisica-Matematica-I/": {
+    "/MAC5722-Complexidade-Computacional/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 4,
-        "NL": 2,
-        "FR": 1
+        "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 7,
-        "(not set)": 3
+        "academic-codex / portfolio": 1
       }
     },
-    "/SSC0144-Redes-de-Alto-Desempenho/": {
+    "/SEL0611-Fundamentos-de-Controle/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "RU": 1
       },
       "sources": {
         "(direct) / (none)": 1
@@ -866,152 +622,100 @@
         "(direct) / (none)": 1
       }
     },
-    "/SET0623-Mecanica-dos-Solidos/": {
+    "/MIT-18.152--Introduction-to-Partial-Differential-Equations/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "AM": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/Bayesian-Inference-Research/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 8
-      },
-      "sources": {
-        "github.com / referral": 3,
-        "(direct) / (none)": 2,
-        "child_repo / navbar": 2
-      }
-    },
-    "/MIT-18.769--Topics-in-Lie-Theory/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2,
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-8.20--Introduction-to-Special-Relativity/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 20,
-        "US": 1
-      },
-      "sources": {
-        "github.com / referral": 4,
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.034--Honors-Differential-Equations/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "IL": 2,
         "US": 2,
-        "DE": 1,
-        "MD": 1,
-        "RU": 1,
+        "AM": 1,
         "SC": 1
       },
       "sources": {
-        "(direct) / (none)": 8
+        "(direct) / (none)": 4
       }
     },
-    "/quantum-neural-state/": {
+    "/MIT-8.001--Applied-Geometric-Algebra/software.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "AM": 1,
-        "BR": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MCKZ-Metodos-Quantitativos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "academic_profile / (not set)": 1
+      }
+    },
+    "/MIT-18.100B--Analysis-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 2,
         "RU": 1
       },
       "sources": {
         "(direct) / (none)": 3
       }
     },
-    "/MIT-18.303--Linear-Partial-Differential-Equations/": {
+    "/Bayesian-Inference-Research/software.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 3,
-        "BR": 1,
-        "IL": 1,
-        "IS": 1,
-        "MM": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 7,
-        "github.com / referral": 1
-      }
-    },
-    "/MAC5722-Complexidade-Computacional/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "academic-codex / portfolio": 1
-      }
-    },
-    "/IF4300214-Fisica-Experimental-IV/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/PGF5005-Mecanica-Classica/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
+        "US": 1
       },
       "sources": {
         "(direct) / (none)": 1
       }
     },
-    "/FCM0102-Fisica-II/": {
+    "/MAC5722-Complexidade-Computacional/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "AM": 1
+        "BR": 1
+      },
+      "sources": {
+        "academic-codex / portfolio": 1
+      }
+    },
+    "/MIT-18.330--Introduction-to-Numerical-Analysis/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/SHS0619-Fenomenos-de-Transporte/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
       },
       "sources": {
         "(direct) / (none)": 1
@@ -1029,7 +733,58 @@
         "(direct) / (none)": 1
       }
     },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/": {
+    "/quantum-chemistry/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AM": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.101--Analysis-II/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.769--Topics-in-Lie-Theory/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "NL": 2,
+        "IL": 1,
+        "RU": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 5
+      }
+    },
+    "/MIT-18.100A--Real-Analysis/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/IF4302204-Fisica-Matematica-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -1037,45 +792,11 @@
       "countries": {
         "US": 5,
         "NL": 2,
-        "BR": 1,
-        "PL": 1
+        "DE": 1,
+        "FR": 1
       },
       "sources": {
-        "(direct) / (none)": 8,
-        "github.com / referral": 1
-      }
-    },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-18.03SC--Differential-Equations/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 3,
-        "NL": 2,
-        "RU": 2,
-        "CH": 1,
-        "DK": 1,
-        "IL": 1,
-        "IR": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct) / (none)": 12
+        "(direct) / (none)": 9
       }
     },
     "/Academic-Research-Journaling/research.html": {
@@ -1090,99 +811,7 @@
         "github.com / referral": 1
       }
     },
-    "/MIT-18.950--Differential-Geometry/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SEL0604-Sinais-e-Sistemas/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.152--Introduction-to-Partial-Differential-Equations/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 5,
-        "SC": 2,
-        "AM": 1,
-        "DK": 1,
-        "IL": 1,
-        "IR": 1,
-        "MM": 1
-      },
-      "sources": {
-        "(direct) / (none)": 12
-      }
-    },
-    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "JP": 4,
-        "AM": 1
-      },
-      "sources": {
-        "(direct) / (none)": 5
-      }
-    },
-    "/Gaussian-Process-Research/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 50
-      },
-      "sources": {
-        "(direct) / (none)": 4,
-        "github.com / referral": 4
-      }
-    },
-    "/Bayesian-Inference-Research/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SME0320-Estatistica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.034--Honors-Differential-Equations/research.html": {
+    "/MIT-18.755--Introduction-to-Lie-Groups/research.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -1194,133 +823,13 @@
         "(direct) / (none)": 1
       }
     },
-    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0602-Circuitos-Eletricos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.755--Introduction-to-Lie-Groups/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 7,
-        "NL": 2,
-        "CA": 1,
-        "DE": 1,
-        "IL": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 13
-      }
-    },
-    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/": {
+    "/SSC0144-Redes-de-Alto-Desempenho/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
         "BR": 1
-      },
-      "sources": {
-        "academic-codex / portfolio": 1
-      }
-    },
-    "/IF4302111-Fisica-I/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.769--Topics-in-Lie-Theory/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 4,
-        "DE": 3,
-        "NL": 3,
-        "(not set)": 1,
-        "BR": 1,
-        "IL": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 13,
-        "github.com / referral": 1
-      }
-    },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SEL0613-Circuitos-Eletronicos-II/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.152--Introduction-to-Partial-Differential-Equations/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0612-Ondas-Eletromagneticas/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
       },
       "sources": {
         "(direct) / (none)": 1
@@ -1337,647 +846,6 @@
       "sources": {
         "academic-codex / portfolio": 1,
         "academic_profile / (not set)": 1
-      }
-    },
-    "/MIT-18.745--Lie-Groups-and-Lie-Algebras-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 6,
-        "NL": 2,
-        "DE": 1,
-        "FR": 1,
-        "MD": 1,
-        "RU": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct) / (none)": 13
-      }
-    },
-    "/Academic-Research-Journaling/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 6
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-18.303--Linear-Partial-Differential-Equations/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2,
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 2,
-        "github.com / referral": 2
-      }
-    },
-    "/MIT-18.950--Differential-Geometry/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2,
-        "US": 1
-      },
-      "sources": {
-        "github.com / referral": 2,
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0616-Principios-de-Comunicacao/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/MIT-18.745--Lie-Groups-and-Lie-Algebras-I/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.101--Analysis-II/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 2
-      }
-    },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-18.100B--Analysis-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 4,
-        "DE": 2,
-        "IL": 1,
-        "NL": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 9
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.757--Representations-of-Lie-Groups/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 6,
-        "RU": 2,
-        "SC": 2,
-        "BR": 1,
-        "DE": 1,
-        "GB": 1,
-        "IL": 1,
-        "NL": 1
-      },
-      "sources": {
-        "(direct) / (none)": 14,
-        "github.com / referral": 1
-      }
-    },
-    "/quantum-monte-carlo/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 2
-      }
-    },
-    "/academic-codexx.github.io/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 2,
-        "academic_profile / (not set)": 1
-      }
-    },
-    "/SEL0611-Fundamentos-de-Controle/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SHS0619-Fenomenos-de-Transporte/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/quantum-chemistry/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AM": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MAC5722-Complexidade-Computacional/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "academic-codex / portfolio": 1
-      }
-    },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AM": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/EAP5054-Formacao-do-Cientista-Empreendedor-II/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-18.330--Introduction-to-Numerical-Analysis/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 2
-      }
-    },
-    "/SEL0609-Circuitos-Eletronicos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "JP": 4,
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 5
-      }
-    },
-    "/MIT-18.757--Representations-of-Lie-Groups/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SEL0613-Circuitos-Eletronicos-II/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "JP": 28,
-        "US": 3,
-        "NL": 2,
-        "DE": 1,
-        "GB": 1,
-        "GR": 1,
-        "IL": 1
-      },
-      "sources": {
-        "(direct) / (none)": 27,
-        "google / organic": 10
-      }
-    },
-    "/MIT-18.330--Introduction-to-Numerical-Analysis/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "NL": 4,
-        "RU": 2,
-        "US": 2,
-        "AT": 1,
-        "IL": 1,
-        "KW": 1,
-        "LU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 12
-      }
-    },
-    "/MIT-18.03SC--Differential-Equations/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.175--Theory-of-Probability/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 6,
-        "NL": 2,
-        "AM": 1,
-        "CA": 1,
-        "DE": 1,
-        "IL": 1,
-        "IR": 1,
-        "SC": 1,
-        "ZA": 1
-      },
-      "sources": {
-        "(direct) / (none)": 14
-      }
-    },
-    "/MIT-8.001--Applied-Geometric-Algebra/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 6,
-        "RU": 2,
-        "SC": 2,
-        "IL": 1,
-        "NL": 1
-      },
-      "sources": {
-        "(direct) / (none)": 12
-      }
-    },
-    "/FCM0101-Fisica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "naavilam / coursework": 1
-      }
-    },
-    "/SQM0405-Quimica-Geral-Experimental/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "academic-codex / portfolio": 1,
-        "github.com / referral": 1
-      }
-    },
-    "/Academic-Research-Journaling/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 8
-      },
-      "sources": {
-        "github.com / referral": 3,
-        "(direct) / (none)": 1
-      }
-    },
-    "/Bayesian-Inference-Research/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.712--Introduction-to-Representation-Theory/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 6,
-        "NL": 3,
-        "RU": 2,
-        "ES": 1,
-        "LU": 1,
-        "SC": 1,
-        "ZA": 1
-      },
-      "sources": {
-        "(direct) / (none)": 15
-      }
-    },
-    "/cern-root-student-course/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 68,
-        "US": 2
-      },
-      "sources": {
-        "(direct) / (none)": 5,
-        "course-codex / portfolio": 1,
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-18.100A--Introduction-to-Analysis/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 7,
-        "SC": 2,
-        "AM": 1,
-        "IL": 1
-      },
-      "sources": {
-        "(direct) / (none)": 12
-      }
-    },
-    "/SEL0601-Materiais-Eletricos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AM": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.781--Theory-of-Numbers/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "NL": 3,
-        "IL": 2,
-        "US": 2,
-        "DE": 1,
-        "GB": 1,
-        "MM": 1,
-        "PT": 1,
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 12
-      }
-    },
-    "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/Gaussian-Process-Research/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 7
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-18.303--Linear-Partial-Differential-Equations/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "github.com / referral": 1
-      }
-    },
-    "/Academic-Research-Journaling/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 159,
-        "US": 1
-      },
-      "sources": {
-        "github.com / referral": 18,
-        "(direct) / (none)": 5
-      }
-    },
-    "/Gaussian-Process-Research/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-18.755--Introduction-to-Lie-Groups/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 2
-      }
-    },
-    "/MIT-18.100A--Real-Analysis/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SMA0182-Algebra-Linear-e-Equacoes-Diferenciais/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "RU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MIT-18.101--Analysis-II/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
       }
     },
     "/Academic-Research-Journal/": {
@@ -2006,67 +874,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/MIT-18.769--Topics-in-Lie-Theory/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/MIT-8.001--Applied-Geometric-Algebra/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MCKZ-Metodos-Quantitativos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "academic_profile / (not set)": 1
-      }
-    },
-    "/MIT-18.175--Theory-of-Probability/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/quantum-error-mitigation/": {
+    "/SMA0182-Algebra-Linear-e-Equacoes-Diferenciais/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -2078,55 +886,23 @@
         "(direct) / (none)": 1
       }
     },
-    "/IF4302204-Fisica-Matematica-I/studies.html": {
+    "/MIT-18.757--Representations-of-Lie-Groups/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 1
+        "RU": 2,
+        "US": 2,
+        "GB": 1,
+        "NL": 1,
+        "SC": 1
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 7
       }
     },
-    "/IF4302111-Fisica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MAC5722-Complexidade-Computacional/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "academic-codex / portfolio": 1
-      }
-    },
-    "/MIT-18.100B--Analysis-I/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/IF4302111-Fisica-I/research.html": {
+    "/SSC0144-Redes-de-Alto-Desempenho/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -2150,13 +926,270 @@
         "(direct) / (none)": 1
       }
     },
-    "/SMA0300-Geometria-Analitica/": {
+    "/MIT-18.101--Analysis-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 3,
+        "RU": 2,
+        "SC": 1
+      },
+      "sources": {
+        "(direct) / (none)": 6
+      }
+    },
+    "/SSC0144-Redes-de-Alto-Desempenho/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.950--Differential-Geometry/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/Gaussian-Process-Research/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 50
+      },
+      "sources": {
+        "(direct) / (none)": 4,
+        "github.com / referral": 4
+      }
+    },
+    "/Gaussian-Process-Research/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AM": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-8.001--Applied-Geometric-Algebra/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 4,
+        "RU": 2,
+        "SC": 1
+      },
+      "sources": {
+        "(direct) / (none)": 7
+      }
+    },
+    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 5,
+        "NL": 2,
+        "BR": 1,
+        "PL": 1
+      },
+      "sources": {
+        "(direct) / (none)": 8,
+        "github.com / referral": 1
+      }
+    },
+    "/SQM0405-Quimica-Geral-Experimental/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "academic-codex / portfolio": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/IF4302111-Fisica-I/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.712--Introduction-to-Representation-Theory/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "NL": 2,
+        "RU": 2,
+        "SC": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 6
+      }
+    },
+    "/PGF5005-Mecanica-Classica/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.034--Honors-Differential-Equations/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/Academic-Research-Journaling/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 8
+      },
+      "sources": {
+        "github.com / referral": 3,
+        "(direct) / (none)": 1
+      }
+    },
+    "/quantum-algorithms/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
         "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/Gaussian-Process-Research/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 7
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/Gaussian-Process-Regression-Research/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 4
+      },
+      "sources": {
+        "github.com / referral": 2
+      }
+    },
+    "/SEL0612-Ondas-Eletromagneticas/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 4,
+        "CA": 1,
+        "GB": 1,
+        "NL": 1
+      },
+      "sources": {
+        "(direct) / (none)": 7
+      }
+    },
+    "/IF4300214-Fisica-Experimental-IV/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
+      }
+    },
+    "/MIT-18.303--Linear-Partial-Differential-Equations/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/MIT-18.769--Topics-in-Lie-Theory/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
       },
       "sources": {
         "(direct) / (none)": 1
@@ -2174,6 +1207,427 @@
         "(direct) / (none)": 1
       }
     },
+    "/Bayesian-Inference-Research/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 8
+      },
+      "sources": {
+        "github.com / referral": 3,
+        "(direct) / (none)": 2,
+        "child_repo / navbar": 2
+      }
+    },
+    "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "academic-codex / portfolio": 1
+      }
+    },
+    "/MIT-18.175--Theory-of-Probability/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "NL": 2,
+        "AM": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 4
+      }
+    },
+    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/quantum-neural-state/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AM": 1,
+        "BR": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/IF4302111-Fisica-I/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0613-Circuitos-Eletronicos-II/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2,
+        "AM": 1
+      },
+      "sources": {
+        "github.com / referral": 2,
+        "(direct) / (none)": 1,
+        "naavilam / coursework": 1
+      }
+    },
+    "/FCM0102-Fisica-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AM": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/DPG5011-Formacao-do-Cientista-Empreendedor/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "academic_profile / (not set)": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/SEL0604-Sinais-e-Sistemas/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0602-Circuitos-Eletricos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/MIT-18.950--Differential-Geometry/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 2,
+        "NL": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 4
+      }
+    },
+    "/Gaussian-Process-Research/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 7
+      },
+      "sources": {
+        "github.com / referral": 3,
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.152--Introduction-to-Partial-Differential-Equations/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AM": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MAC5722-Complexidade-Computacional/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 3
+      },
+      "sources": {
+        "academic-codex / portfolio": 1
+      }
+    },
+    "/FFI0180-Laboratorio-de-Fisica-Geral-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/MIT-18.175--Theory-of-Probability/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/Academic-Research-Journal/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 2
+      }
+    },
+    "/quantum-error-mitigation/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0610-Laboratorio-de-Circuitos-Eletronicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AM": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.330--Introduction-to-Numerical-Analysis/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "NL": 2,
+        "KW": 1,
+        "RU": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 5
+      }
+    },
+    "/SEL0613-Circuitos-Eletronicos-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "JP": 28,
+        "US": 3,
+        "NL": 2,
+        "DE": 1,
+        "GB": 1,
+        "GR": 1,
+        "IL": 1
+      },
+      "sources": {
+        "(direct) / (none)": 27,
+        "google / organic": 10
+      }
+    },
+    "/MIT-18.034--Honors-Differential-Equations/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/FCM0101-Fisica-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1,
+        "naavilam / coursework": 1
+      }
+    },
+    "/SSC0643-Avaliacao-de-Desempenho/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0601-Materiais-Eletricos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AM": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SET0623-Mecanica-dos-Solidos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AM": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/EAP5054-Formacao-do-Cientista-Empreendedor-II/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
@@ -2184,6 +1638,339 @@
       },
       "sources": {
         "(direct) / (none)": 3
+      }
+    },
+    "/quantum-monte-carlo/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1,
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/MIT-18.303--Linear-Partial-Differential-Equations/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.03SC--Differential-Equations/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.100A--Real-Analysis/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "NL": 2,
+        "US": 2,
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 5
+      }
+    },
+    "/MIT-18.745--Lie-Groups-and-Lie-Algebras-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "NL": 2,
+        "US": 2,
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 5
+      }
+    },
+    "/Gaussian-Process-Regression-Research/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 159
+      },
+      "sources": {
+        "github.com / referral": 10
+      }
+    },
+    "/MIT-18.755--Introduction-to-Lie-Groups/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/SSC0144-Redes-de-Alto-Desempenho/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/cern-root-student-course/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 68,
+        "US": 2
+      },
+      "sources": {
+        "(direct) / (none)": 5,
+        "course-codex / portfolio": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/MIT-18.034--Honors-Differential-Equations/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 2,
+        "MD": 1,
+        "RU": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct) / (none)": 5
+      }
+    },
+    "/MIT-18.303--Linear-Partial-Differential-Equations/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/IF4302204-Fisica-Matematica-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MIT-18.101--Analysis-II/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/cern-root-student-course/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/SMA0300-Geometria-Analitica/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0616-Principios-de-Comunicacao/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
+      }
+    },
+    "/SEL0609-Circuitos-Eletronicos-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1,
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/MIT-18.745--Lie-Groups-and-Lie-Algebras-I/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/Bayesian-Inference-Research/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/MIT-18.100A--Introduction-to-Analysis/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 3,
+        "AM": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct) / (none)": 6
+      }
+    },
+    "/academic-codexx.github.io/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
+      }
+    },
+    "/Gaussian-Process-Research/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/MIT-8.20--Introduction-to-Special-Relativity/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 6,
+        "NL": 2,
+        "SC": 2,
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 4,
+        "github.com / referral": 1
+      }
+    },
+    "/SME0320-Estatistica-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "RU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
       }
     }
   }

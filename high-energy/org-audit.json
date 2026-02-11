@@ -139,6 +139,52 @@
   },
   {
     "org": "high-energy-physics-research",
+    "name": "gpytorch",
+    "full_name": "High-Energy-Physics-Research/gpytorch",
+    "url": "https://github.com/High-Energy-Physics-Research/gpytorch",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2026-02-10T13:48:41Z",
+    "has_gitignore": true,
+    "has_readme": true,
+    "notebooks_ipynb": 50,
+    "files_py": 323,
+    "files_tex": 0,
+    "files_md": 7,
+    "files_yml": 7,
+    "total_files": 515,
+    "branches_count": 2,
+    "branches": [
+      {
+        "branch": "gh-pages",
+        "head_sha": "e83dda444dc4c7297af093191aad0832ff5becb3",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 71
+      },
+      {
+        "branch": "main",
+        "head_sha": "b1bd3451199d649d63578b307d54ef3b5506905c",
+        "has_gitignore": true,
+        "has_readme": true,
+        "notebooks_ipynb": 50,
+        "files_py": 323,
+        "files_tex": 0,
+        "files_md": 7,
+        "files_yml": 7,
+        "total_files": 444
+      }
+    ]
+  },
+  {
+    "org": "high-energy-physics-research",
     "name": "high-energy-physics-research.github.io",
     "full_name": "High-Energy-Physics-Research/high-energy-physics-research.github.io",
     "url": "https://github.com/High-Energy-Physics-Research/high-energy-physics-research.github.io",
@@ -146,7 +192,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-04T21:37:55Z",
+    "pushed_at": "2026-02-10T13:40:12Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 0,
@@ -154,12 +200,12 @@
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 7,
-    "total_files": 62,
+    "total_files": 64,
     "branches_count": 1,
     "branches": [
       {
         "branch": "main",
-        "head_sha": "1e03c66c708060e663ddf854dae6ef8af1ed19b0",
+        "head_sha": "47e6144e7ac95f5d0c9ddc0995a6c0fc7fed702f",
         "has_gitignore": true,
         "has_readme": true,
         "notebooks_ipynb": 0,
@@ -167,7 +213,41 @@
         "files_tex": 0,
         "files_md": 1,
         "files_yml": 7,
-        "total_files": 62
+        "total_files": 64
+      }
+    ]
+  },
+  {
+    "org": "high-energy-physics-research",
+    "name": "ROSE_framework",
+    "full_name": "High-Energy-Physics-Research/ROSE_framework",
+    "url": "https://github.com/High-Energy-Physics-Research/ROSE_framework",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2025-02-11T19:13:43Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 5,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 0,
+    "total_files": 8,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "89f15d27e7b34a7e8fef2dd25a3b2bdbadee7cb7",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 5,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 0,
+        "total_files": 8
       }
     ]
   },
