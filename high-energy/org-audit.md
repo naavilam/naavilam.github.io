@@ -1,11 +1,11 @@
 # Org Audit Report: high-energy
 
-Generated: **2026-02-24 05:05 UTC**
+Generated: **2026-02-25 05:06 UTC**
 
-- Repositories: **8**
-- With README (any branch): **7/8**
-- With .gitignore (any branch): **5/8**
-- Total notebooks (.ipynb) (sum over branches): **105**
+- Repositories: **7**
+- With README (any branch): **6/7**
+- With .gitignore (any branch): **5/7**
+- Total notebooks (.ipynb) (sum over branches): **101**
 
 ## Table (top 50)
 
@@ -13,7 +13,6 @@ Generated: **2026-02-24 05:05 UTC**
 |---|---:|---:|---:|---:|---:|---:|---:|---|
 | [Academic-Research-Journaling](https://github.com/High-Energy-Physics-Research/Academic-Research-Journaling) | 2 | ✅ | ✅ | 20 | 0 | 30 | 146 | 2026-02-13 |
 | [Bayesian-Inference-Research](https://github.com/High-Energy-Physics-Research/Bayesian-Inference-Research) | 2 | — | ✅ | 1 | 0 | 0 | 27 | 2026-02-04 |
-| [emulator](https://github.com/High-Energy-Physics-Research/emulator) | 1 | ✅ | — | 4 | 52 | 0 | 450 | 2026-02-23 |
 | [Gaussian-Process-Research](https://github.com/High-Energy-Physics-Research/Gaussian-Process-Research) | 2 | ✅ | ✅ | 17 | 0 | 0 | 71 | 2026-02-13 |
 | [gpytorch](https://github.com/High-Energy-Physics-Research/gpytorch) | 2 | ✅ | ✅ | 50 | 323 | 0 | 515 | 2026-02-10 |
 | [high-energy-physics-research.github.io](https://github.com/High-Energy-Physics-Research/high-energy-physics-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 64 | 2026-02-10 |

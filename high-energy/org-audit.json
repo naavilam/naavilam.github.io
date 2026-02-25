@@ -93,40 +93,6 @@
   },
   {
     "org": "high-energy-physics-research",
-    "name": "emulator",
-    "full_name": "High-Energy-Physics-Research/emulator",
-    "url": "https://github.com/High-Energy-Physics-Research/emulator",
-    "private": false,
-    "archived": false,
-    "fork": false,
-    "default_branch": "main",
-    "pushed_at": "2026-02-23T22:58:26Z",
-    "has_gitignore": false,
-    "has_readme": true,
-    "notebooks_ipynb": 4,
-    "files_py": 52,
-    "files_tex": 0,
-    "files_md": 1,
-    "files_yml": 0,
-    "total_files": 450,
-    "branches_count": 1,
-    "branches": [
-      {
-        "branch": "main",
-        "head_sha": "2e0703a4812d5add2acf0643c970a95048d686be",
-        "has_gitignore": false,
-        "has_readme": true,
-        "notebooks_ipynb": 4,
-        "files_py": 52,
-        "files_tex": 0,
-        "files_md": 1,
-        "files_yml": 0,
-        "total_files": 450
-      }
-    ]
-  },
-  {
-    "org": "high-energy-physics-research",
     "name": "Gaussian-Process-Research",
     "full_name": "High-Energy-Physics-Research/Gaussian-Process-Research",
     "url": "https://github.com/High-Energy-Physics-Research/Gaussian-Process-Research",
