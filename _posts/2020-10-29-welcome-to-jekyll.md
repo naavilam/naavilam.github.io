@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-description: "A Preset Post from Jekyll"
+title:  "Molecular Symmetry"
+description: "Parse .xyz files and generate molecular symmetry reports"
 type: card-dated
 date:   2020-10-29 20:01:21 -0400
 categories: jekyll update

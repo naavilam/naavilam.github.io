@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Dumbarton Style Guide"
-description: "The Only Useful Post Here"
+title:  "Quantum Battleship"
+description: "Challenge real quantum computers into Battleship (GAME)"
 type: card-dated
 date:   2020-10-28 20:01:21 -0400
 categories: Dumabrton style
