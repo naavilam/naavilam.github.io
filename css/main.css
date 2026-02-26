@@ -1506,17 +1506,15 @@ body {
 }
 
 /* ratios via class: ratio-16-9 etc */
-.focus-media.ratio-100-120{ aspect-ratio: 100 / 121; }
-.focus-media.ratio-16-9{ aspect-ratio: 16 / 9; }
-.focus-media.ratio-25-9{ aspect-ratio: 25 / 9; }
-.focus-media.ratio-20-10{ aspect-ratio: 20 / 10; }
-.focus-media.ratio-30-15{ aspect-ratio: 90 / 46; }
-.focus-media.ratio-40-30{ aspect-ratio: 100 / 59; }
-.focus-media.ratio-4-3{ aspect-ratio: 100 / 105; }
-.focus-media.ratio-1-1{ aspect-ratio: 1 / 1; }
-.focus-media.ratio-3-2{ aspect-ratio: 3 / 2; }
-.focus-media.ratio-3-1{ aspect-ratio: 3 / 1; }
-.focus-media.ratio-2-3{ aspect-ratio: 1 / 2; }
+.focus-media.ratio-w1{ aspect-ratio: 25 / 9; }
+.focus-media.ratio-w2{ aspect-ratio: 100 / 59; }
+.focus-media.ratio-w3{ aspect-ratio: 100 / 121; }
+.focus-media.ratio-w4{ aspect-ratio: 90 / 46; }
+.focus-media.ratio-w5{ aspect-ratio: 100 / 105; }
+.focus-media.ratio-w6{ aspect-ratio: 2 / 3; }
+.focus-media.ratio-w7{ aspect-ratio: 1 / 1; }
+.focus-media.ratio-w8{ aspect-ratio: 3 / 2; }
+.focus-media.ratio-w9{ aspect-ratio: 3 / 1; }
 
 .focus-media img{
   width: 100%;
