@@ -1511,10 +1511,10 @@ body {
 .focus-media.ratio-w3{ aspect-ratio: 100 / 121; }
 .focus-media.ratio-w4{ aspect-ratio: 90 / 46; }
 .focus-media.ratio-w5{ aspect-ratio: 100 / 105; }
-.focus-media.ratio-w6{ aspect-ratio: 2 / 3; }
+.focus-media.ratio-w6{ aspect-ratio: 2 / 1; }
 .focus-media.ratio-w7{ aspect-ratio: 1 / 1; }
-.focus-media.ratio-w8{ aspect-ratio: 3 / 2; }
-.focus-media.ratio-w9{ aspect-ratio: 3 / 1; }
+.focus-media.ratio-w8{ aspect-ratio: 1 / 1; }
+.focus-media.ratio-w9{ aspect-ratio: 1 / 1; }
 
 .focus-media img{
   width: 100%;
