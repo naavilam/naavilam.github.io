@@ -1524,7 +1524,7 @@ body {
 .focus-media img{
   width: 100%;
   height: 100%;
-  object-fit: fill; /* você controla “tamanho percebido” no Canva */
+  object-fit: cover; /* você controla “tamanho percebido” no Canva */
   display: block;
   filter: saturate(1.02);
 }
@@ -1586,7 +1586,6 @@ body {
   .focus-tile.w-7{ grid-column: span 12; }  
   .focus-tile.w-8{ grid-column: span 12; }  
   .focus-tile.w-9{ grid-column: span 12; }  
-
 }
 
 @media (max-width: 640px){
