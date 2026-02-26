@@ -30,40 +30,40 @@
   weight: 4
   ratio: w4
 
-- title: Topics Series — Mathematics
-  tag: Topics
+- title: Mathematics
+  tag: Topics Series
   description: Probabilistic modeling, inference, math toolbox.
   link: https://topics-series-mathematics.github.io
   image: /assets/img/focus/topics-series-mathematics.jpg
   weight: 5
   ratio: w5
 
-- title: Topics Series — Physics
-  tag: Topics
+- title: Physics
+  tag: Topics Series
   description: Physics explorations and learning tracks.
   link: https://topics-series-physics.github.io
   image: /assets/img/focus/topics-series-physics.jpg
   weight: 6
   ratio: w6
 
-- title: Topics Series — Business
-  tag: Topics
+- title: Business
+  tag: Topics Series
   description: Systems, strategy, ops.
   link: https://topics-series-business.github.io
   image: /assets/img/focus/topics-series-business.jpg
   weight: 7
   ratio: w7
 
-- title: Topics Series — Investments
-  tag: Topics
+- title: Investments
+  tag: Topics Series
   description: Quant, long-term, decision making.
   link: https://topics-series-investments.github.io
   image: /assets/img/focus/topics-series-investments.jpg
   weight: 8
   ratio: w8
 
-- title: Topics Series — Economics
-  tag: Topics
+- title: Economics
+  tag: Topics Series
   description: Macro, micro, game theory, markets.
   link: https://topics-series-economics.github.io
   image: /assets/img/focus/topics-series-economics.jpg
