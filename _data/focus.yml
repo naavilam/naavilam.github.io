@@ -4,7 +4,7 @@
   link: https://high-energy-physics-research.github.io
   image: /assets/img/focus/high-energy-physics-research.png
   weight: 1
-  ratio: 25/9
+  ratio: w1
 
 - title: Academic Work
   tag: Academic
@@ -12,7 +12,7 @@
   link: https://academic-codex.github.io
   image: /assets/img/focus/academic-codex.jpg
   weight: 2
-  ratio: 40/30
+  ratio: w2
 
 - title: Quantum Computing Research
   tag: Research
@@ -20,7 +20,7 @@
   link: https://quantum-computing-research.github.io
   image: /assets/img/focus/quantum-computing-research.jpg
   weight: 3
-  ratio: 100/120
+  ratio: w3
 
 - title: Quantum Materials Simulation
   tag: Research
@@ -28,7 +28,7 @@
   link: https://quantum-materials-simulation-research.github.io
   image: /assets/img/focus/quantum-materials-simulation-research.jpg
   weight: 4
-  ratio: 30/15
+  ratio: w4
 
 - title: Topics Series — Mathematics
   tag: Topics
@@ -36,7 +36,7 @@
   link: https://topics-series-mathematics.github.io
   image: /assets/img/focus/topics-series-mathematics.jpg
   weight: 5
-  ratio: 4/3
+  ratio: w5
 
 - title: Topics Series — Physics
   tag: Topics
@@ -44,7 +44,7 @@
   link: https://topics-series-physics.github.io
   image: /assets/img/focus/topics-series-physics.jpg
   weight: 6
-  ratio: 2/3
+  ratio: w6
 
 - title: Topics Series — Business
   tag: Topics
@@ -52,7 +52,7 @@
   link: https://topics-series-business.github.io
   image: /assets/img/focus/topics-series-business.jpg
   weight: 7
-  ratio: 1/1
+  ratio: w7
 
 - title: Topics Series — Investments
   tag: Topics
@@ -60,7 +60,7 @@
   link: https://topics-series-investments.github.io
   image: /assets/img/focus/topics-series-investments.jpg
   weight: 8
-  ratio: 1/1
+  ratio: w8
 
 - title: Topics Series — Economics
   tag: Topics
@@ -68,4 +68,4 @@
   link: https://topics-series-economics.github.io
   image: /assets/img/focus/topics-series-economics.jpg
   weight: 9
-  ratio: 1/1
+  ratio: w9
