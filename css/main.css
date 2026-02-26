@@ -1577,9 +1577,16 @@ body {
 
 /* responsive */
 @media (max-width: 1100px){
-  .focus-tile.w-1{ grid-column: span 6; }
-  .focus-tile.w-2{ grid-column: span 12; }
-  .focus-tile.w-3{ grid-column: span 12; }
+  .focus-tile.w-1{ grid-column: span 12; }
+  .focus-tile.w-2{ grid-column: span 8; }
+  .focus-tile.w-3{ grid-column: span 4; }
+  .focus-tile.w-4{ grid-column: span 12; }  
+  .focus-tile.w-5{ grid-column: span 12; }  
+  .focus-tile.w-6{ grid-column: span 12; }  
+  .focus-tile.w-7{ grid-column: span 12; }  
+  .focus-tile.w-8{ grid-column: span 12; }  
+  .focus-tile.w-9{ grid-column: span 12; }  
+
 }
 
 @media (max-width: 640px){
