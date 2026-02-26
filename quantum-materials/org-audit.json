@@ -8,7 +8,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-04T18:55:33Z",
+    "pushed_at": "2026-02-26T03:19:53Z",
     "has_gitignore": false,
     "has_readme": true,
     "notebooks_ipynb": 11,
@@ -16,12 +16,12 @@
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 2,
-    "total_files": 36,
+    "total_files": 48,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "6035e2bacd3a7d066a5dc888c70175e8f7584e74",
+        "head_sha": "407071d879791d57c906e6f9687036103ab038f9",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -29,7 +29,7 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 20
+        "total_files": 32
       },
       {
         "branch": "main",
@@ -54,7 +54,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-10T13:40:04Z",
+    "pushed_at": "2026-02-26T03:15:57Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 0,
@@ -67,7 +67,7 @@
     "branches": [
       {
         "branch": "main",
-        "head_sha": "627be0722f762ab2c21d3be399dd7bd565e5b70c",
+        "head_sha": "29d3d72a9abd8a9940da56316cfcf1d1313a1d20",
         "has_gitignore": true,
         "has_readme": true,
         "notebooks_ipynb": 0,
@@ -88,7 +88,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-04T18:55:33Z",
+    "pushed_at": "2026-02-26T03:19:49Z",
     "has_gitignore": false,
     "has_readme": true,
     "notebooks_ipynb": 17,
@@ -96,12 +96,12 @@
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 2,
-    "total_files": 44,
+    "total_files": 62,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "7aff029d11e73827f050c877b77ccc26163d4af5",
+        "head_sha": "712dbd090bd320dbaf88b4256f8483659e34c032",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -109,7 +109,7 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 20
+        "total_files": 38
       },
       {
         "branch": "main",
@@ -134,7 +134,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-04T18:55:37Z",
+    "pushed_at": "2026-02-26T03:19:32Z",
     "has_gitignore": false,
     "has_readme": true,
     "notebooks_ipynb": 1,
@@ -142,12 +142,12 @@
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 2,
-    "total_files": 77,
+    "total_files": 79,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "dfcdc570bd3a5eba3576a23ee03c205bdaa71e33",
+        "head_sha": "8f5a19e7f2bd1bfe03909957b98797973190fb74",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -155,7 +155,7 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 20
+        "total_files": 22
       },
       {
         "branch": "main",
@@ -180,7 +180,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-04T18:55:36Z",
+    "pushed_at": "2026-02-26T03:19:28Z",
     "has_gitignore": false,
     "has_readme": true,
     "notebooks_ipynb": 0,
@@ -188,12 +188,12 @@
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 2,
-    "total_files": 24,
+    "total_files": 25,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "514db50164fbc322331ae3cfaf88dfe994abe2eb",
+        "head_sha": "c7f987c930d815f75dc1adf99f13542b4f045d94",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -201,7 +201,7 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 20
+        "total_files": 21
       },
       {
         "branch": "main",

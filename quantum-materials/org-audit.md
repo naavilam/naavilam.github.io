@@ -1,6 +1,6 @@
 # Org Audit Report: quantum-materials
 
-Generated: **2026-02-25 05:06 UTC**
+Generated: **2026-02-26 05:04 UTC**
 
 - Repositories: **5**
 - With README (any branch): **5/5**
@@ -11,8 +11,8 @@ Generated: **2026-02-25 05:06 UTC**
 
 | Repo | branches | README | .gitignore | ipynb | py | tex | files | updated |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| [quantum-chemistry](https://github.com/Quantum-Materials-Simulation-Research/quantum-chemistry) | 2 | ✅ | — | 11 | 0 | 0 | 36 | 2026-02-04 |
-| [quantum-materials-simulation-research.github.io](https://github.com/Quantum-Materials-Simulation-Research/quantum-materials-simulation-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 63 | 2026-02-10 |
-| [quantum-monte-carlo](https://github.com/Quantum-Materials-Simulation-Research/quantum-monte-carlo) | 2 | ✅ | — | 17 | 0 | 0 | 44 | 2026-02-04 |
-| [quantum-neural-state](https://github.com/Quantum-Materials-Simulation-Research/quantum-neural-state) | 2 | ✅ | — | 1 | 45 | 0 | 77 | 2026-02-04 |
-| [variational-approximation](https://github.com/Quantum-Materials-Simulation-Research/variational-approximation) | 2 | ✅ | — | 0 | 0 | 0 | 24 | 2026-02-04 |
+| [quantum-chemistry](https://github.com/Quantum-Materials-Simulation-Research/quantum-chemistry) | 2 | ✅ | — | 11 | 0 | 0 | 48 | 2026-02-26 |
+| [quantum-materials-simulation-research.github.io](https://github.com/Quantum-Materials-Simulation-Research/quantum-materials-simulation-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 63 | 2026-02-26 |
+| [quantum-monte-carlo](https://github.com/Quantum-Materials-Simulation-Research/quantum-monte-carlo) | 2 | ✅ | — | 17 | 0 | 0 | 62 | 2026-02-26 |
+| [quantum-neural-state](https://github.com/Quantum-Materials-Simulation-Research/quantum-neural-state) | 2 | ✅ | — | 1 | 45 | 0 | 79 | 2026-02-26 |
+| [variational-approximation](https://github.com/Quantum-Materials-Simulation-Research/variational-approximation) | 2 | ✅ | — | 0 | 0 | 0 | 25 | 2026-02-26 |
