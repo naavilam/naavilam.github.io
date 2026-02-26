@@ -1506,7 +1506,7 @@ body {
 }
 
 /* ratios via class: ratio-16-9 etc */
-/* .focus-media.ratio-100-120{ aspect-ratio: 100 / 120; }
+.focus-media.ratio-100-120{ aspect-ratio: 100 / 120; }
 .focus-media.ratio-16-9{ aspect-ratio: 16 / 9; }
 .focus-media.ratio-25-9{ aspect-ratio: 25 / 9; }
 .focus-media.ratio-20-10{ aspect-ratio: 20 / 10; }
@@ -1515,7 +1515,7 @@ body {
 .focus-media.ratio-1-1{ aspect-ratio: 1 / 1; }
 .focus-media.ratio-3-2{ aspect-ratio: 3 / 2; }
 .focus-media.ratio-3-1{ aspect-ratio: 3 / 1; }
-.focus-media.ratio-2-3{ aspect-ratio: 2 / 3; } */
+.focus-media.ratio-2-3{ aspect-ratio: 2 / 3; }
 
 .focus-media img{
   width: 100%;
@@ -1588,8 +1588,8 @@ body {
 .focus-tile.w-1{ grid-column: span 12; }
 .focus-tile.w-2{ grid-column: span 8; }
 .focus-tile.w-3{ grid-column: span 4; }
-.focus-tile.w-4{ grid-column: span 12; }
-.focus-tile.w-5{ grid-column: span 12; }
+.focus-tile.w-4{ grid-column: span 8; }
+.focus-tile.w-5{ grid-column: span 4; }
 .focus-tile.w-6{ grid-column: span 12; }
 .focus-tile.w-7{ grid-column: span 12; }
 .focus-tile.w-8{ grid-column: span 12; }
