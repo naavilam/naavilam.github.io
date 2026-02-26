@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Another Blog Post"
-description: "A Description"
+title:  "Zotero Mirroring Plugin"
+description: "A Zotero plugin that mirrors the hierarchical library structure onto the filesystem. Designed to work in conjunction with the ZotMoov plugin."
 date:   2020-10-26 20:01:21 -0400
 type: card-img-top
 categories: latin text
@@ -9,8 +9,8 @@ image: http://placehold.it/750X300?text=Header+Image # for local images, place i
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post ipsum
-tag: jekyll
-author: Tyler Butler
+tag: Plugin
+author: Nara Avila
 card: card-2
 ---
 
