@@ -27,7 +27,7 @@
   description: Materials modeling, electronic structure, ML.
   link: https://quantum-materials-simulation-research.github.io
   image: /assets/img/focus/quantum-materials-simulation-research.jpg
-  weight: 2
+  weight: 1
   ratio: 30/15
 
 - title: Topics Series — Mathematics
@@ -35,7 +35,7 @@
   description: Probabilistic modeling, inference, math toolbox.
   link: https://topics-series-mathematics.github.io
   image: /assets/img/focus/topics-series-mathematics.jpg
-  weight: 1
+  weight: 2
   ratio: 4/3
 
 - title: Topics Series — Physics
@@ -43,7 +43,7 @@
   description: Physics explorations and learning tracks.
   link: https://topics-series-physics.github.io
   image: /assets/img/focus/topics-series-physics.jpg
-  weight: 2
+  weight: 3
   ratio: 2/3
 
 - title: Topics Series — Business
@@ -51,7 +51,7 @@
   description: Systems, strategy, ops.
   link: https://topics-series-business.github.io
   image: /assets/img/focus/topics-series-business.jpg
-  weight: 1
+  weight: 4
   ratio: 1/1
 
 - title: Topics Series — Investments
@@ -59,7 +59,7 @@
   description: Quant, long-term, decision making.
   link: https://topics-series-investments.github.io
   image: /assets/img/focus/topics-series-investments.jpg
-  weight: 1
+  weight: 5
   ratio: 1/1
 
 - title: Topics Series — Economics
@@ -67,5 +67,5 @@
   description: Macro, micro, game theory, markets.
   link: https://topics-series-economics.github.io
   image: /assets/img/focus/topics-series-economics.jpg
-  weight: 1
+  weight: 6
   ratio: 1/1
