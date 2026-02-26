@@ -14,7 +14,7 @@
   weight: 2
   ratio: w2
 
-- title: Quantum Computing Research
+- title: Quantum Computing
   tag: Research
   description: Algorithms, tooling, experiments.
   link: https://quantum-computing-research.github.io
