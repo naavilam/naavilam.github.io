@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Molecular Symmetry"
-description: "Parse .xyz files and generate molecular symmetry reports"
+description: "Parse .xyz files and generate molecular symmetry reports."
 type: card-dated
 date:   2025-06-16 20:01:21 -0400
 categories: Application
