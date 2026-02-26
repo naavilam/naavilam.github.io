@@ -4,11 +4,14 @@ links:
 - title: About
   url: about.html
 
-- title: Focus
+- title: Research
   url: focus.html
 
 - title: Apps
   url: apps.html
+
+- title: Ventures
+  url: ventures.html
 
 - title: Vitae
   url: /assets/pdf/vitae.pdf
