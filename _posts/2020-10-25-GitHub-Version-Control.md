@@ -5,7 +5,7 @@ description: "Release & milestone workflow for GitHub repositories. Automate and
 date:   2020-10-26 20:01:21 -0400
 type: card-img-top
 categories: latin text
-image: academic-codex.jpg # for local images, place in /assets/img/posts/
+image: blog-paris2.jpg # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post ipsum
