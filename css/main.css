@@ -1592,3 +1592,51 @@ body {
   .focus-title{ font-size: 18px; }
 }
 
+
+/* ===== Focus Wall: layout hero + coluna direita ===== */
+.focus-wall{
+  /* mantém o seu grid de 12 */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--gap);
+
+  /* ✅ permite empilhar/encaixar tipo "tetris" */
+  grid-auto-flow: dense;
+
+  /* ✅ controla a altura em “unidades” (pra empilhar 3 cards à direita) */
+  grid-auto-rows: 44px;
+}
+
+/* 1) HERO (Física) — ocupa 9/12 e bastante altura */
+.focus-wall > .focus-tile:nth-child(1){
+  grid-column: 1 / span 9;
+  grid-row: span 12; /* ajuste fino: 10..14 conforme seu gosto */
+}
+
+/* 2) Coluna direita — 3 cards empilhados (3/12 cada) */
+.focus-wall > .focus-tile:nth-child(2),
+.focus-wall > .focus-tile:nth-child(3),
+.focus-wall > .focus-tile:nth-child(4){
+  grid-column: 10 / span 3;
+  grid-row: span 4;  /* 12 / 3 = 4 -> empilha 3 certinho */
+}
+
+/* (opcional) garante que o texto não "estoure" em cards pequenos */
+.focus-wall > .focus-tile:nth-child(2) .focus-desc,
+.focus-wall > .focus-tile:nth-child(3) .focus-desc,
+.focus-wall > .focus-tile:nth-child(4) .focus-desc{
+  -webkit-line-clamp: 3;
+}
+
+/* Responsivo: quando ficar estreito, volta tudo pra 1 coluna */
+@media (max-width: 1100px){
+  .focus-wall{
+    grid-auto-rows: auto;
+  }
+  .focus-wall > .focus-tile:nth-child(1),
+  .focus-wall > .focus-tile:nth-child(2),
+  .focus-wall > .focus-tile:nth-child(3),
+  .focus-wall > .focus-tile:nth-child(4){
+    grid-column: span 12;
+    grid-row: auto;
+  }
+}
