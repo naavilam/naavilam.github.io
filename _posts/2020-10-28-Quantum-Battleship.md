@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quantum Battleship"
-description: "Challenge real quantum computers into Battleship (GAME)"
+description: "Challenge real quantum computers in Battleship (GAME)"
 type: card-dated
 date:   2020-10-28 20:01:21 -0400
 categories: Dumabrton style
@@ -9,7 +9,7 @@ image: http://placehold.it/750X300?text=Header+Image # for local images, place i
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post
-tag: styleguide
+tag: Application
 author: Tyler Butler
 card: card-1
 ---

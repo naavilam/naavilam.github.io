@@ -3,14 +3,14 @@ layout: post
 title:  "Molecular Symmetry"
 description: "Parse .xyz files and generate molecular symmetry reports"
 type: card-dated
-date:   2020-10-29 20:01:21 -0400
-categories: jekyll update
+date:   2025-06-16 20:01:21 -0400
+categories: Application
 image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post
-tag: jekyll
-author: Tyler Butler
+tag: Application
+author: Nara Avila
 card: card-2
 ---
 
