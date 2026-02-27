@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Zotero Mirroring Plugin"
-description: "A Zotero plugin that mirrors the hierarchical library structure onto the filesystem. Designed to work in conjunction with the ZotMoov plugin."
+description: "A Zotero plugin that mirrors the hierarchical library structure onto the filesystem."
 date:   2020-10-26 20:01:21 -0400
 type: card-img-top
 categories: latin text
