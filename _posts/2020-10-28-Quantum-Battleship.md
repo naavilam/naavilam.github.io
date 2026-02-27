@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Quantum Battleship"
-description: "Challenge real quantum computers in Battleship (GAME)."
+description: "Challenge real quantum computers in Battleship."
 type: card-dated
 date:   2020-10-28 20:01:21 -0400
 categories: Dumabrton style
