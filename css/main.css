@@ -1618,5 +1618,5 @@ body {
 
   .focus-title{ font-size: 18px; }
 } */
-
-
+ 
+.blogcard.card-link { cursor: pointer; }
