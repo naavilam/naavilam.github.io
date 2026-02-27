@@ -926,7 +926,8 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-2 {
   background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
   background-repeat: no-repeat;
-  background-position: -80px center;
+  background-position-x: -80px;
+  background-position-y: center;
   background-size: 80px;
 }
 
