@@ -919,7 +919,8 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-1 {
   background-image: url(https://raw.githubusercontent.com/Application-Vault/simetria-molecular/frontend/android-chrome-512x512.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-x: 785px;
+  background-position-y: center;
   background-size: 220px;
   background-origin: content-box; 
 }
@@ -927,7 +928,8 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-2 {
   background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-x: 924px;
+  background-position-y: center;
   background-size: 80px;
   background-origin: content-box; 
 }
@@ -935,7 +937,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-3 {
   background-image: url(https://raw.githubusercontent.com/naavilam/github-infra-templates/main/manager/manager_assets/quantum-computing-research/img/portfolio/batalha-naval-quantica.png);
   background-repeat: no-repeat;
-  background-position-x: 750px;
+  background-position-x: 713px;
   background-position-y: center;
   background-size: 380px;
   background-origin: content-box; 
@@ -944,7 +946,8 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-4 {
   background-image: url(https://cdn-1.webcatalog.io/catalog/zotero/zotero-social-preview.png?v=1714776631443);
   background-repeat: no-repeat;
-  background-position: right -80px center !important;
+  background-position-x: 690px;
+  background-position-y: center;
   background-size: 400px;
   background-origin: content-box; 
 }
