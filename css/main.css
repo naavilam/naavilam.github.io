@@ -931,10 +931,10 @@ S - card-header Bootstrap 4CSS .heading-footer {
 }
 
 .card-3 {
-  background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+  background-image: url(https://raw.githubusercontent.com/naavilam/github-infra-templates/main/manager/manager_assets/quantum-computing-research/img/portfolio/batalha-naval-quantica.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 80px;
+  background-size: 100px;
 }
 
 @media(max-width: 990px) {
