@@ -934,7 +934,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
   background-image: url(https://raw.githubusercontent.com/naavilam/github-infra-templates/main/manager/manager_assets/quantum-computing-research/img/portfolio/batalha-naval-quantica.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 100px;
+  background-size: 220px;
 }
 
 @media(max-width: 990px) {
