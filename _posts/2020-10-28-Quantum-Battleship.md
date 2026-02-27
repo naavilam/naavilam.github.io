@@ -9,7 +9,7 @@ image: http://placehold.it/750X300?text=Header+Image # for local images, place i
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post
-tag: Application
+tag: Game
 author: Nara Avila
 card: card-3
 ---
