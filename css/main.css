@@ -937,6 +937,13 @@ S - card-header Bootstrap 4CSS .heading-footer {
   background-size: 380px;
 }
 
+.card-4 {
+  background-image: url(https://cdn-1.webcatalog.io/catalog/zotero/zotero-social-preview.png?v=1714776631443);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 220px;
+}
+
 @media(max-width: 990px) {
   .blogcard {
     margin: 20px;
