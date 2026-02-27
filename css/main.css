@@ -926,7 +926,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-2 {
   background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
   background-repeat: no-repeat;
-  background-position-x: -80px;
+  background-position-x: 750px;
   background-position-y: center;
   background-size: 80px;
 }
@@ -941,7 +941,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-4 {
   background-image: url(https://cdn-1.webcatalog.io/catalog/zotero/zotero-social-preview.png?v=1714776631443);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right -80px center;
   background-size: 400px;
 }
 
