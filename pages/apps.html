@@ -13,30 +13,27 @@ last-updated: 2020-10-30 5:55 PM
   <!-- Blog Entries Column -->
   <div class="col-md-8">
     <div class="col-md-12">
+
       {% for post in site.posts %}
       {% assign target_url = post.link | default: post.url %}
 
-      <div class="blogcard {{post.card}} mb-4 mt-4 card-link" style="width: 100%; position: relative;">
-        <h3>
-          <a href="{{ target_url }}" class="nohighlight" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
-            endif %}>
-            {{ post.title }}
-          </a>
-        </h3>
+      <a href="{{ target_url }}" class="blogcard-link" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
+        endif %}>
 
-        <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">
-          {{ post.tag }}
-        </a>
+        <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
+          <h3 class="nohighlight">{{ post.title }}</h3>
 
-        <p>{{ post.description }}</p>
-        <p><i>{{ post.lead }}</i></p>
+          <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
+            {{ post.tag }}
+          </span>
 
-        <!-- Card inteiro clicável -->
-        <a class="stretched-link" href="{{ target_url }}" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
-          endif %}></a>
-      </div>
+          <p>{{ post.description }}</p>
+          <p><i>{{ post.lead }}</i></p>
+        </div>
 
+      </a>
       {% endfor %}
+
     </div>
   </div>
 
@@ -51,30 +48,27 @@ last-updated: 2020-10-30 5:55 PM
 {% else %}
 <!-- Blog Entries Column -->
 <div class="col-md-12">
+
   {% for post in site.posts %}
   {% assign target_url = post.link | default: post.url %}
 
-  <div class="blogcard {{post.card}} mb-4 mt-4 card-link" style="width: 100%; position: relative;">
-    <h3>
-      <a href="{{ target_url }}" class="nohighlight" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
-        endif %}>
-        {{ post.title }}
-      </a>
-    </h3>
+  <a href="{{ target_url }}" class="blogcard-link" {% if post.link %}target="_blank" rel="noopener noreferrer" {% endif
+    %}>
 
-    <a href="#" class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1);color: #4e22d0;">
-      {{ post.tag }}
-    </a>
+    <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
+      <h3 class="nohighlight">{{ post.title }}</h3>
 
-    <p>{{ post.description }}</p>
-    <p><i>{{ post.lead }}</i></p>
+      <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
+        {{ post.tag }}
+      </span>
 
-    <!-- Card inteiro clicável -->
-    <a class="stretched-link" href="{{ target_url }}" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
-      endif %}></a>
-  </div>
+      <p>{{ post.description }}</p>
+      <p><i>{{ post.lead }}</i></p>
+    </div>
 
+  </a>
   {% endfor %}
+
 </div>
 </div>
 {% endif %}

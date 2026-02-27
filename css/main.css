@@ -1619,4 +1619,11 @@ body {
   .focus-title{ font-size: 18px; }
 } */
  
-.blogcard.card-link { cursor: pointer; }
+.blogcard-link {
+  display: block;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.blogcard-link:hover {
+  text-decoration: none !important;
+}
