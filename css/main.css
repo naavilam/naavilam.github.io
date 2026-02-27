@@ -896,7 +896,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
   background: #fff;
   box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
   transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-  padding: 14px 200px 18px 36px;
+  padding: 14px 80px 18px 36px;
   cursor: pointer;
 }
 
@@ -926,7 +926,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-2 {
   background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: -80px center;
   background-size: 80px;
 }
 
@@ -934,14 +934,14 @@ S - card-header Bootstrap 4CSS .heading-footer {
   background-image: url(https://raw.githubusercontent.com/naavilam/github-infra-templates/main/manager/manager_assets/quantum-computing-research/img/portfolio/batalha-naval-quantica.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 350px;
+  background-size: 380px;
 }
 
 .card-4 {
   background-image: url(https://cdn-1.webcatalog.io/catalog/zotero/zotero-social-preview.png?v=1714776631443);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 350px;
+  background-size: 400px;
 }
 
 @media(max-width: 990px) {
