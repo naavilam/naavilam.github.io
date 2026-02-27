@@ -933,14 +933,14 @@ S - card-header Bootstrap 4CSS .heading-footer {
 .card-3 {
   background-image: url(https://raw.githubusercontent.com/naavilam/github-infra-templates/main/manager/manager_assets/quantum-computing-research/img/portfolio/batalha-naval-quantica.png);
   background-repeat: no-repeat;
-  background-position: -80px center;
+  background-position: right;
   background-size: 350px;
 }
 
 .card-4 {
   background-image: url(https://cdn-1.webcatalog.io/catalog/zotero/zotero-social-preview.png?v=1714776631443);
   background-repeat: no-repeat;
-  background-position: -80px right;
+  background-position: right;
   background-size: 350px;
 }
 
