@@ -129,6 +129,40 @@
   },
   {
     "org": "quantum-computing-research",
+    "name": "quantum-chaos-framework",
+    "full_name": "Quantum-Computing-Research/quantum-chaos-framework",
+    "url": "https://github.com/Quantum-Computing-Research/quantum-chaos-framework",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2026-02-22T02:24:22Z",
+    "has_gitignore": true,
+    "has_readme": true,
+    "notebooks_ipynb": 0,
+    "files_py": 19,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 0,
+    "total_files": 24,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "69396f51295f741e7cd5435bb5fdbf4e50263557",
+        "has_gitignore": true,
+        "has_readme": true,
+        "notebooks_ipynb": 0,
+        "files_py": 19,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 0,
+        "total_files": 24
+      }
+    ]
+  },
+  {
+    "org": "quantum-computing-research",
     "name": "quantum-computing-research.github.io",
     "full_name": "Quantum-Computing-Research/quantum-computing-research.github.io",
     "url": "https://github.com/Quantum-Computing-Research/quantum-computing-research.github.io",
@@ -136,7 +170,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-26T03:15:48Z",
+    "pushed_at": "2026-02-26T21:19:18Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 0,
@@ -149,7 +183,7 @@
     "branches": [
       {
         "branch": "main",
-        "head_sha": "54b8dd78024d3ba093ede13dfac742737fc58dd1",
+        "head_sha": "5873143ae2d922888e3746c2f6db5c2466b30b87",
         "has_gitignore": true,
         "has_readme": true,
         "notebooks_ipynb": 0,
