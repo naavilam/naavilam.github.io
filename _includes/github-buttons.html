@@ -1,43 +1,47 @@
-{% assign repo = page.repo %}
-<div class="row">
+{%- assign repo = page.repo | default: "" -%}
+{%- if repo contains "github.com/" -%}{%- assign repo = repo | split:"github.com/" | last -%}{%- endif -%}
+{%- assign repo = repo | replace: ".git","" | strip -%}
+{%- unless repo contains "/" -%}{%- assign repo = site.github_default_org | append:"/" | append: repo -%}{%- endunless
+-%}
 
-    <div class="col-md-3">
-        <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}" target="_blank" rel="noopener">
-            <div class="card-body text-center">
-                <div style="font-size: 28px;"><i class="fab fa-github"></i></div>
-                <div class="text-muted mt-2">Open repo</div>
-            </div>
-        </a>
-    </div>
+{%- assign share_title = page.title | default: repo | uri_escape -%}
 
-    <div class="col-md-3">
-        <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}/stargazers" target="_blank"
-            rel="noopener">
-            <div class="card-body text-center">
-                <img alt="Stars" src="https://img.shields.io/github/stars/{{ repo }}?style=social">
-                <div class="text-muted mt-2">Stars</div>
-            </div>
-        </a>
-    </div>
+<div class="gh-badges" role="group" aria-label="GitHub actions">
+    <a class="gh-badge-btn" href="https://github.com/{{ repo }}" target="_blank" rel="noopener">
+        <img class="gh-badge-img" alt="Open repo" src="https://img.shields.io/badge/GitHub-Open-black?logo=github">
+    </a>
 
-    <div class="col-md-3">
-        <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}/fork" target="_blank"
-            rel="noopener">
-            <div class="card-body text-center">
-                <img alt="Forks" src="https://img.shields.io/github/forks/{{ repo }}?style=social">
-                <div class="text-muted mt-2">Fork</div>
-            </div>
-        </a>
-    </div>
+    <a class="gh-badge-btn" href="https://github.com/{{ repo }}/stargazers" target="_blank" rel="noopener">
+        <img class="gh-badge-img" alt="Stars" src="https://img.shields.io/github/stars/{{ repo }}?style=social">
+    </a>
 
-    <div class="col-md-3">
-        <button class="card mb-4 w-100" type="button"
-            onclick="navigator.clipboard.writeText('git clone https://github.com/{{ repo }}.git')">
-            <div class="card-body text-center">
-                <div style="font-size: 20px; font-weight: 600;">git clone</div>
-                <div class="text-muted mt-2">Copy command</div>
-            </div>
-        </button>
-    </div>
+    <a class="gh-badge-btn" href="https://github.com/{{ repo }}/fork" target="_blank" rel="noopener">
+        <img class="gh-badge-img" alt="Forks" src="https://img.shields.io/github/forks/{{ repo }}?style=social">
+    </a>
 
+    <button class="gh-badge-btn gh-badge-copy" type="button" data-copy="git clone https://github.com/{{ repo }}.git"
+        aria-label="Copy git clone command">
+        <img class="gh-badge-img" alt="Copy git clone"
+            src="https://img.shields.io/badge/git%20clone-copy-blue?logo=git">
+    </button>
 </div>
+
+<script>
+    // clique no badge "git clone" copia o comando
+    document.addEventListener("click", (e) => {
+        const btn = e.target.closest(".gh-badge-copy");
+        if (!btn) return;
+        const text = btn.getAttribute("data-copy") || "";
+        if (!text) return;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text);
+        } else {
+            const ta = document.createElement("textarea");
+            ta.value = text; document.body.appendChild(ta);
+            ta.select(); document.execCommand("copy");
+            document.body.removeChild(ta);
+        }
+        btn.classList.add("is-copied");
+        setTimeout(() => btn.classList.remove("is-copied"), 900);
+    });
+</script>

@@ -1627,3 +1627,34 @@ body {
 .blogcard-link:hover {
   text-decoration: none !important;
 }
+
+.gh-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gh-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 0;              /* remove “vazios” verticais */
+}
+
+.gh-badge-img {
+  height: 22px;                /* o “compacto” que você curtiu */
+  width: auto;
+  display: block;
+}
+
+/* feedback visual ao copiar */
+.gh-badge-copy.is-copied {
+  filter: brightness(0.92);
+  transform: translateY(1px);
+}
