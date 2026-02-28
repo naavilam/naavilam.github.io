@@ -2,12 +2,12 @@
 layout: post
 title:  "Literature Alert"
 description: "A lightweight Python script that retrieves newly published papers from arXiv and posts them to a Discord channel."
-date:   2020-10-26 20:01:21 -0400
+date:   2026-01-10
 type: card-img-top
 categories: latin text
 image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
 caption:
-last-updated: 2020-10-26 20:01:21 -0400
+last-updated: 2026-01-10
 categories: post ipsum
 tag: Automation
 author: Nara Avila

@@ -3,11 +3,11 @@ layout: post
 title:  "Molecular Symmetry"
 description: "Parse .xyz files and generate molecular symmetry reports."
 type: card-dated
-date:   2025-06-16 20:01:21 -0400
+date:   2025-06-16
 categories: Application
 image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
 caption:
-last-updated: 2020-10-26 20:01:21 -0400
+last-updated: 2020-10-16
 categories: post
 tag: Application
 author: Nara Avila

@@ -2,12 +2,12 @@
 layout: post
 title:  "Zotero Mirroring Plugin"
 description: "A Zotero plugin that mirrors the hierarchical library structure onto the filesystem."
-date:   2020-10-26 20:01:21 -0400
+date:   2026-02-02
 type: card-img-top
 categories: latin text
 image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
 caption:
-last-updated: 2020-10-26 20:01:21 -0400
+last-updated: 2026-02-02
 categories: post ipsum
 tag: Plugin
 author: Nara Avila

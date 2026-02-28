@@ -2,12 +2,12 @@
 layout: post
 title:  "Github Version Control"
 description: "Release & milestone workflow for GitHub repositories. Automate and manage releases, milestones, and development cycles using a simple and intuitive interface with the GitHub CLI."
-date:   2020-10-26 20:01:21 -0400
+date:   2025-12-12
 type: card-img-top
 categories: latin text
 image: blog-paris2.jpg # for local images, place in /assets/img/posts/
 caption:
-last-updated: 2020-10-26 20:01:21 -0400
+last-updated: 2025-12-12
 categories: post ipsum
 tag: Automation
 author: Nara Avila
