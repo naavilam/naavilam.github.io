@@ -1115,6 +1115,11 @@ body .gh-badges {
   align-items: center;
 }
 
+/* MAS dentro do blogcard principal → esquerda */
+.blogcard.principal .gh-badges {
+  justify-content: flex-start;
+}
+
 #page-content {
   flex: 1 0 auto;
   /* conteúdo estica */

@@ -22,7 +22,7 @@ last-updated: 2020-10-30 5:55 PM
       {% for post in ordered_posts %}
       {% assign target_url = post.link | default: post.url %}
 
-      <div class="blogcard {{post.card}} mb-4 mt-4 position-relative" style="width: 100%;">
+      <div class="blogcard {{post.card}} mb-4 mt-4 position-relative principal" style="width: 100%;">
         <h3>
           <a href="{{ target_url }}" class="nohighlight" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
             endif %}>
@@ -34,7 +34,6 @@ last-updated: 2020-10-30 5:55 PM
           {{ post.tag }}
         </span>
 
-        <small style="opacity:.5">{{ post.title }} — repo={{ post.repo }}</small>
         {% if post.repo %}
         {% include github-buttons.html item=post %}
         {% endif %}
@@ -73,20 +72,19 @@ last-updated: 2020-10-30 5:55 PM
   {% assign target_url = post.link | default: post.url %}
 
 
-    <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
-      <h3 class="nohighlight">{{ post.title }}</h3>
+  <div class="blogcard {{post.card}} mb-4 mt-4 principal" style="width: 100%;">
+    <h3 class="nohighlight">{{ post.title }}</h3>
 
-      <small style="opacity:.5">{{ post.title }} — repo={{ post.repo }}</small>
-      <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
-        {{ post.tag }}
-      </span>
-      {% if post.repo %}
-      {% include github-buttons.html item=post %}
-      {% endif %}
+    <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
+      {{ post.tag }}
+    </span>
+    {% if post.repo %}
+    {% include github-buttons.html item=post %}
+    {% endif %}
 
-      <p>{{ post.description }}</p>
-      <p><i>{{ post.lead }}</i></p>
-    </div>
+    <p>{{ post.description }}</p>
+    <p><i>{{ post.lead }}</i></p>
+  </div>
 
 
   {% endfor %}
