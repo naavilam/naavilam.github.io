@@ -12,7 +12,7 @@ categories: post
 tag: Game
 author: Nara Avila
 card: card-1
-repo: quantum-computing-research/batalha-naval-quantica
+repo: quantum-computing-research/Batalha-Naval-Quantica
 live_url: https://quantum-computing-research.github.io/batalha-naval-quantica
 ---
 
