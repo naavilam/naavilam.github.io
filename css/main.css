@@ -947,7 +947,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
   background-repeat: no-repeat;
   background-position-x: 800px;
   background-position-y: center;
-  background-size: 220px;
+  background-size: 180px;
   background-origin: content-box; 
 }
 
@@ -956,7 +956,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
   background-repeat: no-repeat;
   background-position-x: 800px;
   background-position-y: center;
-  background-size: 220px;
+  background-size: 300px;
   background-origin: content-box; 
 }
 
@@ -965,7 +965,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
   background-repeat: no-repeat;
   background-position-x: 800px;
   background-position-y: center;
-  background-size: 220px;
+  background-size: 160px;
   background-origin: content-box; 
 }
 
