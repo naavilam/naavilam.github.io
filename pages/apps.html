@@ -72,8 +72,6 @@ last-updated: 2020-10-30 5:55 PM
   {% for post in ordered_posts %}
   {% assign target_url = post.link | default: post.url %}
 
-  <a href="{{ target_url }}" class="blogcard-link" {% if post.link %}target="_blank" rel="noopener noreferrer" {% endif
-    %}>
 
     <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
       <h3 class="nohighlight">{{ post.title }}</h3>
@@ -90,7 +88,7 @@ last-updated: 2020-10-30 5:55 PM
       <p><i>{{ post.lead }}</i></p>
     </div>
 
-  </a>
+
   {% endfor %}
 
 </div>
