@@ -916,7 +916,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
 }
 
 /* ...mas DESATIVA para badges do GitHub */
-.blogcard .gh-badges img,
+.blogcard .gh-buttons img,
 .blogcard img.gh-badge-img {
   position: static !important;
   top: auto !important;
@@ -1109,15 +1109,15 @@ body {
   /* mata o margin-bottom antigo */
 }
 
-body .gh-badges {
+body .gh-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* MAS dentro do blogcard principal → esquerda */
-.blogcard.principal .gh-badges {
-  justify-content: flex-start;
+.body .gh-badges {
+  align-items: left;
 }
 
 #page-content {
@@ -1656,12 +1656,21 @@ body .gh-badges {
   text-decoration: none !important;
 }
 
-.gh-badges {
+.gh-buttons {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
   padding: 30px 0px 0px 0px;
+  margin: 0 auto;
+}
+
+.gh-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0px 0px 0px 0px;
   margin: 0 auto;
 }
 
