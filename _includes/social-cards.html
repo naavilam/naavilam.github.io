@@ -1,80 +1,43 @@
- </h3>
-   <div class="row">
-      <div class="col-md-3">
-         <div class="card mb-4">
-            <div class="social-card-header align-middle text-center bg-facebook">
-               <i class="fab fa-facebook-square"></i>
-            </div>
-            <div class="card-body text-center">
-               <div class="row">
-                  <div class="col border-right">
-                     <i class="far fa-thumbs-up text-facebook"></i>
-                     <span class="text-muted">Like</span>
-                  </div>
-                  <div class="col">
-                     <i class="fas fa-share-alt text-facebook"></i>
-                     <span class="text-muted">Share</span>
-                  </div>
-               </div>
-            </div>
+{% assign repo = page.repo | default: nil %}
+{% if repo %}
+<div class="row">
+   <div class="col-md-3">
+      <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}/stargazers" target="_blank"
+         rel="noopener">
+         <div class="card-body text-center">
+            <img alt="Stars" src="https://img.shields.io/github/stars/{{ repo }}?style=social">
+            <div class="text-muted mt-2">Star</div>
          </div>
-      </div>
-      <div class="col-md-3">
-         <div class="card mb-4">
-            <div class="social-card-header align-middle text-center bg-google-plus">
-               <i class="fab fa-google-plus-square"></i>
-            </div>
-            <div class="card-body text-center">
-               <div class="row">
-                  <div class="col border-right">
-                     <i class="fab fa-google-plus-g text-google-plus"></i>
-                     <span class="text-muted">Like</span>
-                  </div>
-                  <div class="col">
-                     <i class="fas fa-share-alt text-google-plus"></i>
-                     <span class="text-muted">Share</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="col-md-3">
-         <div class="card mb-4">
-            <div class="social-card-header align-middle text-center bg-twitter">
-               <i class="fab fa-twitter-square"></i>
-            </div>
-            <div class="card-body text-center">
-               <div class="row">
-                  <div class="col border-right">
-                     <i class="fab fa-twitter text-twitter"></i>
-                     <span class="text-muted">Tweet</span>
-                  </div>
-                  <div class="col">
-                     <i class="fas fa-share-alt text-twitter"></i>
-                     <span class="text-muted">Share</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="col-md-3">
-         <div class="card mb-4">
-            <div class="social-card-header align-middle text-center bg-pinterest">
-               <i class="fab fa-pinterest-square"></i>
-            </div>
-            <div class="card-body text-center">
-               <div class="row">
-                  <div class="col border-right">
-                     <i class="fab fa-pinterest-p text-pinterest"></i>
-                     <span class="text-muted">Pin</span>
-                  </div>
-                  <div class="col">
-                     <i class="fas fa-share-alt text-pinterest"></i>
-                     <span class="text-muted">Share</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      </a>
    </div>
-   <h3 class="mt-3 pb-3 mb-4 font-italic border-bottom">
+
+   <div class="col-md-3">
+      <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}/fork" target="_blank"
+         rel="noopener">
+         <div class="card-body text-center">
+            <img alt="Forks" src="https://img.shields.io/github/forks/{{ repo }}?style=social">
+            <div class="text-muted mt-2">Fork</div>
+         </div>
+      </a>
+   </div>
+
+   <div class="col-md-3">
+      <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}" target="_blank" rel="noopener">
+         <div class="card-body text-center">
+            <img alt="Repo" src="https://img.shields.io/badge/GitHub-Open%20Repo-black?logo=github">
+            <div class="text-muted mt-2">Open</div>
+         </div>
+      </a>
+   </div>
+
+   <div class="col-md-3">
+      <button class="card mb-4 w-100" type="button"
+         onclick="navigator.clipboard.writeText('git clone https://github.com/{{ repo }}.git')">
+         <div class="card-body text-center">
+            <img alt="Clone" src="https://img.shields.io/badge/git%20clone-copy-blue?logo=git">
+            <div class="text-muted mt-2">Copy clone</div>
+         </div>
+      </button>
+   </div>
+</div>
+{% endif %}
