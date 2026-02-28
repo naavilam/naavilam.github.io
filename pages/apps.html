@@ -60,7 +60,11 @@ last-updated: 2020-10-30 5:55 PM
 <!-- Blog Entries Column -->
 <div class="col-md-12">
 
-  {% for post in site.posts %}
+  {% assign apps = site.posts | where: "tag", "Application" %}
+  {% assign others = site.posts | where_exp: "post", "post.tag != 'Application'" %}
+  {% assign ordered_posts = apps | concat: others %}
+
+  {% for post in ordered_posts %}
   {% assign target_url = post.link | default: post.url %}
 
   <a href="{{ target_url }}" class="blogcard-link" {% if post.link %}target="_blank" rel="noopener noreferrer" {% endif
