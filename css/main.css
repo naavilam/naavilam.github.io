@@ -916,6 +916,15 @@ S - card-header Bootstrap 4CSS .heading-footer {
   max-height: 120px;
 }
 
+/* ...mas DESATIVA para badges do GitHub */
+.blogcard .gh-badges img,
+.blogcard img.gh-badge-img {
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  max-height: none !important;
+}
+
 .card-1 {
   background-image: url(https://raw.githubusercontent.com/Application-Vault/simetria-molecular/frontend/android-chrome-512x512.png);
   background-repeat: no-repeat;
