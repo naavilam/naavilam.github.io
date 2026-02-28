@@ -5,13 +5,13 @@ description: "A Zotero plugin that mirrors the hierarchical library structure on
 date:   2026-02-02
 type: card-img-top
 categories: latin text
-image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
+image: zotero-plugin.png # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2026-02-02
 categories: post ipsum
 tag: Plugin
 author: Nara Avila
-card: card-4
+card: card-5
 repo: automation-scripting/zotero-mirroring-plugin
 ---
 

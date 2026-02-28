@@ -925,7 +925,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
 }
 
 .card-1 {
-  background-image: url(https://raw.githubusercontent.com/Application-Vault/simetria-molecular/frontend/android-chrome-512x512.png);
+  background-image: url(https://raw.githubusercontent.com/naavilam/naavilam.github.io/main/assets/img/apps/batalha-naval-quantica.pgn);
   background-repeat: no-repeat;
   background-position-x: 785px;
   background-position-y: center;
@@ -934,7 +934,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
 }
 
 .card-2 {
-  background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
+  background-image: url(https://raw.githubusercontent.com/naavilam/naavilam.github.io/main/assets/img/apps/molecular-symmetry.png);
   background-repeat: no-repeat;
   background-position-x: 924px;
   background-position-y: center;
@@ -943,7 +943,7 @@ S - card-header Bootstrap 4CSS .heading-footer {
 }
 
 .card-3 {
-  background-image: url(https://raw.githubusercontent.com/naavilam/github-infra-templates/main/manager/manager_assets/quantum-computing-research/img/portfolio/batalha-naval-quantica.png);
+  background-image: url(https://raw.githubusercontent.com/naavilam/naavilam.github.io/main/assets/img/apps/github-version-control.png);
   background-repeat: no-repeat;
   background-position-x: 713px;
   background-position-y: center;
@@ -952,7 +952,16 @@ S - card-header Bootstrap 4CSS .heading-footer {
 }
 
 .card-4 {
-  background-image: url(https://cdn-1.webcatalog.io/catalog/zotero/zotero-social-preview.png?v=1714776631443);
+  background-image: url(https://raw.githubusercontent.com/naavilam/naavilam.github.io/main/assets/img/apps/literature-alert-bot.png);
+  background-repeat: no-repeat;
+  background-position-x: 690px;
+  background-position-y: center;
+  background-size: 400px;
+  background-origin: content-box; 
+}
+
+.card-5 {
+  background-image: url(https://raw.githubusercontent.com/naavilam/naavilam.github.io/main/assets/img/apps/zotero-plugin.png);
   background-repeat: no-repeat;
   background-position-x: 690px;
   background-position-y: center;

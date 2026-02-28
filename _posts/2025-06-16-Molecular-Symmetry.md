@@ -11,7 +11,7 @@ last-updated: 2020-10-16
 categories: post
 tag: Application
 author: Nara Avila
-card: card-1
+card: card-2
 repo: application-vault/simetria-molecular
 live_url: https://application-vault.github.io/simetria-molecular
 ---

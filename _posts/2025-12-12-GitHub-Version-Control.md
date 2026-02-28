@@ -11,7 +11,7 @@ last-updated: 2025-12-12
 categories: post ipsum
 tag: Automation
 author: Nara Avila
-card: card-2
+card: card-3
 repo: automation-scripting/github-version-control
 ---
 

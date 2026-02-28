@@ -5,13 +5,13 @@ description: "A lightweight Python script that retrieves newly published papers 
 date:   2026-01-10
 type: card-img-top
 categories: latin text
-image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
+image: literature-alert-bot.png # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2026-01-10
 categories: post ipsum
 tag: Automation
 author: Nara Avila
-card: card-2
+card: card-4
 repo: automation-scripting/literature-alert-bot
 ---
 
