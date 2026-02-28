@@ -23,6 +23,12 @@
         <img class="gh-badge-img" src="https://img.shields.io/github/v/release/{{ repo }}?style=social"
             alt="Latest release">
     </a>
+
+    {% if page.live_url %}
+    <a class="gh-badge-btn" href="{{ page.live_url }}" target="_blank" rel="noopener">
+        <img class="gh-badge-img" src="https://img.shields.io/badge/Live-Open%20App-2ea44f?style=social&logo=rocket">
+    </a>
+    {% endif %}
 </div>
 
 <script>
