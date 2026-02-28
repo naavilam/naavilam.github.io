@@ -1,6 +1,6 @@
 # Org Audit Report: high-energy
 
-Generated: **2026-02-27 05:01 UTC**
+Generated: **2026-02-28 04:37 UTC**
 
 - Repositories: **7**
 - With README (any branch): **6/7**
@@ -15,6 +15,6 @@ Generated: **2026-02-27 05:01 UTC**
 | [Bayesian-Inference-Research](https://github.com/High-Energy-Physics-Research/Bayesian-Inference-Research) | 2 | — | ✅ | 1 | 0 | 0 | 27 | 2026-02-04 |
 | [Gaussian-Process-Research](https://github.com/High-Energy-Physics-Research/Gaussian-Process-Research) | 2 | ✅ | ✅ | 17 | 0 | 0 | 71 | 2026-02-13 |
 | [gpytorch](https://github.com/High-Energy-Physics-Research/gpytorch) | 2 | ✅ | ✅ | 50 | 323 | 0 | 515 | 2026-02-10 |
-| [high-energy-physics-research.github.io](https://github.com/High-Energy-Physics-Research/high-energy-physics-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 64 | 2026-02-26 |
+| [high-energy-physics-research.github.io](https://github.com/High-Energy-Physics-Research/high-energy-physics-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 64 | 2026-02-27 |
 | [ROSE_framework](https://github.com/High-Energy-Physics-Research/ROSE_framework) | 1 | ✅ | — | 5 | 0 | 0 | 8 | 2025-02-11 |
 | [SummerSchool2023](https://github.com/High-Energy-Physics-Research/SummerSchool2023) | 2 | ✅ | — | 8 | 635 | 0 | 1503 | 2026-02-06 |
