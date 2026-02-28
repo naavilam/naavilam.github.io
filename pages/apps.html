@@ -14,8 +14,9 @@ last-updated: 2020-10-30 5:55 PM
   <div class="col-md-8">
     <div class="col-md-12">
 
-      {% assign apps = site.posts | where: "tag", "Application" %}
-      {% assign others = site.posts | where_exp: "post", "post.tag != 'Application'" %}
+      {% assign items = site.pages | where_exp: "p", "p.categories contains 'post'" %}
+      {% assign apps = items | where: "tag", "Application" %}
+      {% assign others = items | where_exp: "p", "p.tag != 'Application'" %}
       {% assign ordered_posts = apps | concat: others %}
 
       {% for post in ordered_posts %}
@@ -63,8 +64,9 @@ last-updated: 2020-10-30 5:55 PM
 <!-- Blog Entries Column -->
 <div class="col-md-12">
 
-  {% assign apps = site.posts | where: "tag", "Application" %}
-  {% assign others = site.posts | where_exp: "post", "post.tag != 'Application'" %}
+  {% assign items = site.pages | where_exp: "p", "p.categories contains 'post'" %}
+  {% assign apps = items | where: "tag", "Application" %}
+  {% assign others = items | where_exp: "p", "p.tag != 'Application'" %}
   {% assign ordered_posts = apps | concat: others %}
 
   {% for post in ordered_posts %}
