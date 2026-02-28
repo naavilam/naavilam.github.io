@@ -17,21 +17,26 @@ last-updated: 2020-10-30 5:55 PM
       {% for post in site.posts %}
       {% assign target_url = post.link | default: post.url %}
 
-      <a href="{{ target_url }}" class="blogcard-link" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
-        endif %}>
+      <div class="blogcard {{post.card}} mb-4 mt-4 position-relative" style="width: 100%;">
+        <h3>
+          <a href="{{ target_url }}" class="nohighlight" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
+            endif %}>
+            {{ post.title }}
+          </a>
+        </h3>
 
-        <div class="blogcard {{post.card}} mb-4 mt-4" style="width: 100%;">
-          <h3 class="nohighlight">{{ post.title }}</h3>
+        <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
+          {{ post.tag }}
+        </span>
 
-          <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
-            {{ post.tag }}
-          </span>
+        <p>{{ post.description }}</p>
+        <p><i>{{ post.lead }}</i></p>
 
-          <p>{{ post.description }}</p>
-          <p><i>{{ post.lead }}</i></p>
-        </div>
+        <!-- link invisível que “estica” e cobre o card -->
+        <a class="stretched-link" href="{{ target_url }}" {% if post.link %}target="_blank" rel="noopener noreferrer" {%
+          endif %} aria-label="Open {{ post.title }}"></a>
+      </div>
 
-      </a>
       {% endfor %}
 
     </div>
