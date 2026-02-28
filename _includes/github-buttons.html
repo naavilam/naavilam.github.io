@@ -19,11 +19,10 @@
         <img class="gh-badge-img" alt="Forks" src="https://img.shields.io/github/forks/{{ repo }}?style=social">
     </a>
 
-    <button class="gh-badge-btn gh-badge-copy" type="button" data-copy="git clone https://github.com/{{ repo }}.git"
-        aria-label="Copy git clone command">
-        <img class="gh-badge-img" alt="Copy git clone"
-            src="https://img.shields.io/badge/git%20clone-copy-blue?logo=git">
-    </button>
+    <a class="gh-badge-btn" href="https://github.com/{{ repo }}/releases" target="_blank">
+        <img class="gh-badge-img" src="https://img.shields.io/github/v/release/{{ repo }}?style=social"
+            alt="Latest release">
+    </a>
 </div>
 
 <script>
