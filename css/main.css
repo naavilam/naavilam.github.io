@@ -918,7 +918,8 @@ S - card-header Bootstrap 4CSS .heading-footer {
 /* ...mas DESATIVA para badges do GitHub */
 .blogcard .gh-buttons img,
 .blogcard img.gh-badge-img,
-.blogcard img.tag-badge img {
+.blogcard .tag-badge img,
+.blogcard img.tag-badge-img {
   position: static !important;
   top: auto !important;
   right: auto !important;
