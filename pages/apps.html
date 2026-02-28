@@ -14,7 +14,11 @@ last-updated: 2020-10-30 5:55 PM
   <div class="col-md-8">
     <div class="col-md-12">
 
-      {% for post in site.posts %}
+      {% assign apps = site.posts | where: "tag", "Application" %}
+      {% assign others = site.posts | where_exp: "post", "post.tag != 'Application'" %}
+      {% assign ordered_posts = apps | concat: others %}
+
+      {% for post in ordered_posts %}
       {% assign target_url = post.link | default: post.url %}
 
       <div class="blogcard {{post.card}} mb-4 mt-4 position-relative" style="width: 100%;">
