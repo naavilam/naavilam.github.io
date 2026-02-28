@@ -1100,6 +1100,12 @@ body {
   /* mata o margin-bottom antigo */
 }
 
+body .gh-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #page-content {
   flex: 1 0 auto;
   /* conteúdo estica */
