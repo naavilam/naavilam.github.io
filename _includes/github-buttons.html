@@ -15,10 +15,6 @@
         <img class="gh-badge-img" alt="Stars" src="https://img.shields.io/github/stars/{{ repo }}?style=social">
     </a>
 
-    <a class="gh-badge-btn" href="https://github.com/{{ repo }}/fork" target="_blank" rel="noopener">
-        <img class="gh-badge-img" alt="Forks" src="https://img.shields.io/github/forks/{{ repo }}?style=social">
-    </a>
-
     <a class="gh-badge-btn" href="https://github.com/{{ repo }}/releases" target="_blank">
         <img class="gh-badge-img" src="https://img.shields.io/github/v/release/{{ repo }}?style=social"
             alt="Latest release">
@@ -27,6 +23,10 @@
     {% if page.live_url %}
     <a class="gh-badge-btn" href="{{ page.live_url }}" target="_blank" rel="noopener">
         <img class="gh-badge-img" src="https://img.shields.io/badge/Live-Open%20App-2ea44f?style=social&logo=rocket">
+    </a>
+    {% else %}
+    <a class="gh-badge-btn" href="https://github.com/{{ page.repo }}/fork" target="_blank" rel="noopener">
+        <img class="gh-badge-img" src="https://img.shields.io/badge/Fork-Repository-6f42c1?style=social&logo=github">
     </a>
     {% endif %}
 </div>
