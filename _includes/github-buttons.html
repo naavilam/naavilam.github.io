@@ -1,10 +1,13 @@
-{%- assign repo = page.repo | default: "" -%}
+{% assign item = include.item | default: page %}
+
+{%- assign repo = item.repo | default: "" -%}
 {%- if repo contains "github.com/" -%}{%- assign repo = repo | split:"github.com/" | last -%}{%- endif -%}
 {%- assign repo = repo | replace: ".git","" | strip -%}
 {%- unless repo contains "/" -%}{%- assign repo = site.github_default_org | append:"/" | append: repo -%}{%- endunless
 -%}
+{% assign item = include.item | default: page %}
 
-{%- assign share_title = page.title | default: repo | uri_escape -%}
+{%- assign share_title = item.title | default: repo | uri_escape -%}
 
 <div class="gh-badges" role="group" aria-label="GitHub actions">
     <a class="gh-badge-btn" href="https://github.com/{{ repo }}" target="_blank" rel="noopener">
@@ -15,7 +18,7 @@
         <img class="gh-badge-img" alt="Stars" src="https://img.shields.io/github/stars/{{ repo }}?style=social">
     </a>
 
-    {% if page.live_url %}
+    {% if item.live_url %}
     <a class="gh-badge-btn" href="https://github.com/{{ repo }}/releases" target="_blank">
         <img class="gh-badge-img" src="https://img.shields.io/github/v/release/{{ repo }}?style=social"
             alt="Latest release">
@@ -25,17 +28,17 @@
     {% endif %}
 
 
-    {% if page.live_url %}
-    <a class="gh-badge-btn" href="{{ page.live_url }}" target="_blank" rel="noopener">
+    {% if item.live_url %}
+    <a class="gh-badge-btn" href="{{ item.live_url }}" target="_blank" rel="noopener">
         <img class="gh-badge-img" src="https://img.shields.io/badge/Live-Open%20App-2ea44f?style=social&logo=rocket">
     </a>
     {% else %}
-    <a class="gh-badge-btn" href="https://github.com/{{ page.repo }}/fork" target="_blank" rel="noopener">
-        <img class="gh-badge-img" src="https://img.shields.io/github/forks/{{ page.repo }}?style=social">
+    <a class="gh-badge-btn" href="https://github.com/{{ item.repo }}/fork" target="_blank" rel="noopener">
+        <img class="gh-badge-img" src="https://img.shields.io/github/forks/{{ item.repo }}?style=social">
     </a>
     {% endif %}
 
-    {% if page.live_url %}
+    {% if item.live_url %}
 
     {% else %}
     <a class="gh-badge-btn" href="https://github.com/{{ repo }}/releases" target="_blank">

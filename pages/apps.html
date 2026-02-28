@@ -30,8 +30,10 @@ last-updated: 2020-10-30 5:55 PM
         </h3>
 
         <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
-          {{ post.tag }} {% include github-buttons.html %}
+          {{ post.tag }}
         </span>
+
+        {% include github-buttons.html item=post %}
 
         <p>{{ post.description }}</p>
         <p><i>{{ post.lead }}</i></p>
@@ -68,8 +70,9 @@ last-updated: 2020-10-30 5:55 PM
       <h3 class="nohighlight">{{ post.title }}</h3>
 
       <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
-        {{ post.tag }} {% include github-buttons.html %}
+        {{ post.tag }}
       </span>
+      {% include github-buttons.html item=post %}
 
       <p>{{ post.description }}</p>
       <p><i>{{ post.lead }}</i></p>
