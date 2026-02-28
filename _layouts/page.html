@@ -10,7 +10,7 @@
     <div class="card border-0">
       <div class="card-body">
         <div class="card-text">
-          {{ content | markdownify }}
+          {{ content }}
         </div>
         {% if page.last-updated %}
         <p class="card-text"><small class="text-muted">This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M"
@@ -22,7 +22,7 @@
     <div class="card border-0">
       <div class="card-body">
         <div class="card-text">
-          {{ content | markdownify }}
+          {{ content }}
         </div>
         {% if page.last-updated %}
         <p class="card-text"><small class="text-muted">This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M"
