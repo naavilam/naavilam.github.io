@@ -1,0 +1,43 @@
+{% assign repo = page.repo %}
+<div class="row">
+
+    <div class="col-md-3">
+        <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}" target="_blank" rel="noopener">
+            <div class="card-body text-center">
+                <div style="font-size: 28px;"><i class="fab fa-github"></i></div>
+                <div class="text-muted mt-2">Open repo</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}/stargazers" target="_blank"
+            rel="noopener">
+            <div class="card-body text-center">
+                <img alt="Stars" src="https://img.shields.io/github/stars/{{ repo }}?style=social">
+                <div class="text-muted mt-2">Stars</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <a class="card mb-4 text-decoration-none" href="https://github.com/{{ repo }}/fork" target="_blank"
+            rel="noopener">
+            <div class="card-body text-center">
+                <img alt="Forks" src="https://img.shields.io/github/forks/{{ repo }}?style=social">
+                <div class="text-muted mt-2">Fork</div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-3">
+        <button class="card mb-4 w-100" type="button"
+            onclick="navigator.clipboard.writeText('git clone https://github.com/{{ repo }}.git')">
+            <div class="card-body text-center">
+                <div style="font-size: 20px; font-weight: 600;">git clone</div>
+                <div class="text-muted mt-2">Copy command</div>
+            </div>
+        </button>
+    </div>
+
+</div>

@@ -9,7 +9,11 @@ layout: page
       style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h5>
     <h6 class="card-subtitle text-center" style="font-size:{{ theme.post-author-size }};">Author: {{page.author}} |
       Published {{page.date}}</h6>
+    {% if page.repo %}
+    {% include github-buttons.html %}
+    {% else %}
     {% include social-cards.html %}
+    {% endif %}
   </div>
 </div>
 
