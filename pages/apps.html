@@ -35,7 +35,7 @@ last-updated: 2020-10-30 5:55 PM
         </span>
 
         {% if post.repo %}
-        {% include github-buttons.html item=post %}
+        {% include github-badges.html item=post %}
         {% endif %}
 
         <p>{{ post.description }}</p>
@@ -79,7 +79,7 @@ last-updated: 2020-10-30 5:55 PM
       {{ post.tag }}
     </span>
     {% if post.repo %}
-    {% include github-buttons.html item=post %}
+    {% include github-badges.html item=post %}
     {% endif %}
 
     <p>{{ post.description }}</p>
