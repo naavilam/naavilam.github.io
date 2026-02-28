@@ -80,9 +80,11 @@ last-updated: 2020-10-30 5:55 PM
       </a>
     </h3>
 
-    <span class="badge badge-primary" style="background-color: rgba(78, 34, 208, 0.1); color: #4e22d0;">
-      {{ post.tag }}
-    </span> {% include github-badges.html item=post %}
+    <div class="gh-badges tag-badge">
+      <img src="https://img.shields.io/badge/{{ post.tag | uri_escape }}-blue?style=social" alt="{{ post.tag }}">{%
+      include github-badges.html item=post %}
+    </div>
+
 
 
     <p>{{ post.description }}</p>
