@@ -5,7 +5,7 @@ description: "Challenge real quantum computers in Battleship."
 type: card-dated
 date:   2025-04-11
 categories: Dumabrton style
-image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
+image: batalha-naval-quantica.png # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2025-04-11
 categories: post

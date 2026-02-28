@@ -5,7 +5,7 @@ description: "Parse .xyz files and generate molecular symmetry reports."
 type: card-dated
 date:   2025-06-16
 categories: Application
-image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
+image: molecular-symmetry.png # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2020-10-16
 categories: post

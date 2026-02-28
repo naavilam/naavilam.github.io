@@ -5,7 +5,7 @@ description: "Release & milestone workflow for GitHub repositories. Automate and
 date:   2025-12-12
 type: card-img-top
 categories: latin text
-image: blog-paris2.jpg # for local images, place in /assets/img/posts/
+image: github-version-control.png # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2025-12-12
 categories: post ipsum
