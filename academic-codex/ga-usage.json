@@ -5,17 +5,17 @@
   "metrics_by_path": {
     "academic-codex.github.io": {
       "views": 1,
-      "sessions": 1,
+      "sessions": 2,
       "users": 1,
-      "avg_session_duration_sec": 818.267358,
+      "avg_session_duration_sec": 6.521676,
       "countries": {},
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 1,
+      "views": 0,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 1.330113,
+      "avg_session_duration_sec": 1146.474559,
       "countries": {},
       "sources": {}
     },
@@ -28,10 +28,10 @@
       "sources": {}
     },
     "topics-series-mathematics.github.io": {
-      "views": 27,
-      "sessions": 12,
-      "users": 2,
-      "avg_session_duration_sec": 350.07345258333334,
+      "views": 24,
+      "sessions": 9,
+      "users": 1,
+      "avg_session_duration_sec": 278.0117787777778,
       "countries": {},
       "sources": {}
     },
@@ -43,19 +43,19 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-physics.github.io": {
-      "views": 6,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 7.506024,
-      "countries": {},
-      "sources": {}
-    },
     "topics-series-business.github.io": {
       "views": 13,
       "sessions": 12,
       "users": 12,
       "avg_session_duration_sec": 2.921932,
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-physics.github.io": {
+      "views": 13,
+      "sessions": 5,
+      "users": 1,
+      "avg_session_duration_sec": 296.9874424,
       "countries": {},
       "sources": {}
     },
@@ -87,28 +87,26 @@
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "clicks": 43,
+      "clicks": 35,
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 149,
-        "US": 29,
+        "BR": 139,
+        "US": 27,
         "NL": 4,
         "DE": 2,
         "GB": 2,
         "AU": 1,
-        "CY": 1,
-        "NO": 1
+        "CY": 1
       },
       "sources": {
-        "(direct) / (none)": 50,
-        "github.com / referral": 30,
+        "(direct) / (none)": 44,
+        "github.com / referral": 27,
         "child_repo / navbar": 6,
-        "naavilam / coursework": 4,
+        "naavilam / coursework": 3,
         "academic-codex / portfolio": 2,
         "quantum-computing-research / portfolio": 2,
         "(not set)": 1,
-        "academic_profile / (not set)": 1,
         "bing / organic": 1,
         "correio1.if.usp.br / referral": 1,
         "course-codex / portfolio": 1,
@@ -123,12 +121,10 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 7
+        "BR": 1
       },
       "sources": {
-        "academic_profile / (not set)": 3,
-        "naavilam / coursework": 2,
-        "github.com / referral": 1
+        "naavilam / coursework": 1
       }
     },
     "/IF4302112-Fisica-Matematica-I/": {
@@ -146,48 +142,6 @@
       }
     },
     "/PGF5005-Mecanica-Classica/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/SEL0615-Circuitos-Eletronicos-II/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Digitais-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -243,38 +197,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/MIT-8.20--Introduction-to-Special-Relativity/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 6
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SEL0613-Circuitos-Eletronicos-II/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "JP": 28,
-        "US": 3,
-        "NL": 2,
-        "DE": 1,
-        "GB": 1,
-        "GR": 1,
-        "IL": 1
-      },
-      "sources": {
-        "(direct) / (none)": 27,
-        "google / organic": 10
-      }
-    },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/software.html": {
+    "/FCM0101-Fisica-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -283,8 +206,43 @@
         "BR": 1
       },
       "sources": {
-        "academic_profile / (not set)": 1,
+        "naavilam / coursework": 1
+      }
+    },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
         "github.com / referral": 1
+      }
+    },
+    "/MAC5722-Complexidade-Computacional/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 3
+      },
+      "sources": {
+        "academic-codex / portfolio": 1
+      }
+    },
+    "/MAC5722-Complexidade-Computacional/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "academic-codex / portfolio": 1
       }
     },
     "/quantum-monte-carlo/": {
@@ -299,7 +257,55 @@
         "(direct) / (none)": 1
       }
     },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/": {
+    "/Bayesian-Inference-Research/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "child_repo / navbar": 2
+      }
+    },
+    "/MAC5722-Complexidade-Computacional/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "academic-codex / portfolio": 1
+      }
+    },
+    "/SEL0616-Principios-de-Comunicacao/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
+      }
+    },
+    "/quantum-neural-state/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/IF4302204-Fisica-Matematica-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -307,110 +313,24 @@
       "countries": {
         "US": 5,
         "NL": 2,
-        "BR": 1,
-        "PL": 1
+        "DE": 1,
+        "FR": 1,
+        "SC": 1
       },
       "sources": {
-        "(direct) / (none)": 8,
-        "github.com / referral": 1
+        "(direct) / (none)": 10
       }
     },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/references.html": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SEL0613-Circuitos-Eletronicos-II/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
+        "AU": 4
       },
       "sources": {
         "(direct) / (none)": 1
-      }
-    },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/Bayesian-Inference-Research/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "child_repo / navbar": 2,
-        "(direct) / (none)": 1
-      }
-    },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "github.com / referral": 2,
-        "naavilam / coursework": 1
-      }
-    },
-    "/academic-codexx.github.io/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/EAP5054-Formacao-do-Cientista-Empreendedor-II/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/EAP5054-Formacao-do-Cientista-Empreendedor-II/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
       }
     },
     "/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning/": {
@@ -425,7 +345,7 @@
         "academic-codex / portfolio": 1
       }
     },
-    "/EAP5054-Formacao-do-Cientista-Empreendedor-II/software.html": {
+    "/SQM0405-Quimica-Geral-Experimental/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -434,22 +354,36 @@
         "BR": 1
       },
       "sources": {
+        "academic-codex / portfolio": 1,
         "github.com / referral": 1
       }
     },
-    "/SEL0612-Ondas-Eletromagneticas/studies.html": {
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 1
+        "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 1
+        "github.com / referral": 1
       }
     },
-    "/EAP5054-Formacao-do-Cientista-Empreendedor-II/": {
+    "/SEL0613-Circuitos-Eletronicos-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "JP": 20
+      },
+      "sources": {
+        "(direct) / (none)": 10,
+        "google / organic": 10
+      }
+    },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -486,16 +420,28 @@
         "github.com / referral": 1
       }
     },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/studies.html": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "AU": 1
       },
       "sources": {
-        "github.com / referral": 1
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0612-Ondas-Eletromagneticas/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
       }
     },
     "/PGF5001-Mecanica-Quantica-I/": {
@@ -504,59 +450,10 @@
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "academic-codex / portfolio": 1,
-        "academic_profile / (not set)": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 4
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MAC5722-Complexidade-Computacional/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "academic-codex / portfolio": 1
-      }
-    },
-    "/MAC5722-Complexidade-Computacional/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "academic-codex / portfolio": 1
-      }
-    },
-    "/SEL0616-Principios-de-Comunicacao/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
         "BR": 1
       },
       "sources": {
-        "naavilam / coursework": 1
+        "academic-codex / portfolio": 1
       }
     },
     "/SEL0612-Ondas-Eletromagneticas/": {
@@ -574,7 +471,7 @@
         "(direct) / (none)": 7
       }
     },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/index.html": {
+    "/IF4300214-Fisica-Experimental-IV/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -583,7 +480,20 @@
         "BR": 1
       },
       "sources": {
-        "github.com / referral": 1
+        "naavilam / coursework": 1
+      }
+    },
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com / referral": 2,
+        "naavilam / coursework": 1
       }
     },
     "/IF4302204-Fisica-Matematica-I/studies.html": {
@@ -598,144 +508,14 @@
         "(direct) / (none)": 1
       }
     },
-    "/IF4302204-Fisica-Matematica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 5,
-        "NL": 2,
-        "DE": 1,
-        "FR": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct) / (none)": 10
-      }
-    },
-    "/SQM0405-Quimica-Geral-Experimental/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "academic-codex / portfolio": 1,
-        "github.com / referral": 1
-      }
-    },
     "/Academic-Research-Journaling/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
+      "countries": {},
       "sources": {
-        "(direct) / (none)": 1,
         "github.com / referral": 1
-      }
-    },
-    "/IF4300214-Fisica-Experimental-IV/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1,
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "github.com / referral": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MCKZ-Metodos-Quantitativos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "academic_profile / (not set)": 1
-      }
-    },
-    "/MAC5722-Complexidade-Computacional/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "academic-codex / portfolio": 1
-      }
-    },
-    "/Gaussian-Process-Research/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/quantum-neural-state/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/FCM0101-Fisica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
       }
     }
   }
