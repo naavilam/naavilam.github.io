@@ -7,15 +7,7 @@
       "views": 0,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 1146.474559,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-mathematics.github.io": {
-      "views": 16,
-      "sessions": 6,
-      "users": 1,
-      "avg_session_duration_sec": 401.212043,
+      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -27,27 +19,11 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-physics.github.io": {
-      "views": 7,
+    "topics-series-mathematics.github.io": {
+      "views": 5,
       "sessions": 3,
-      "users": 1,
-      "avg_session_duration_sec": 488.7261383333334,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-computing-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 3.672184,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-materials-simulation-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 4.142852,
+      "users": 2,
+      "avg_session_duration_sec": 31.92887466666667,
       "countries": {},
       "sources": {}
     },
@@ -56,14 +32,6 @@
       "sessions": 3,
       "users": 3,
       "avg_session_duration_sec": 0.42005566666666666,
-      "countries": {},
-      "sources": {}
-    },
-    "course-codex.github.io": {
-      "views": 0,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -83,28 +51,51 @@
       "countries": {},
       "sources": {}
     },
+    "quantum-computing-research.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 7.33481,
+      "countries": {},
+      "sources": {}
+    },
+    "quantum-materials-simulation-research.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 7.100328,
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-physics.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 7.230146,
+      "countries": {},
+      "sources": {}
+    },
     "/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "clicks": 19,
+      "clicks": 3,
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 56,
-        "US": 9,
+        "BR": 22,
+        "US": 10,
         "AU": 1,
         "CY": 1
       },
       "sources": {
-        "(direct) / (none)": 15,
-        "github.com / referral": 10,
-        "child_repo / navbar": 6,
-        "naavilam / coursework": 2,
-        "quantum-computing-research / portfolio": 2,
+        "(direct) / (none)": 12,
+        "child_repo / navbar": 4,
+        "github.com / referral": 4,
         "bing / organic": 1,
         "correio1.if.usp.br / referral": 1,
-        "course-codex / portfolio": 1,
+        "naavilam / coursework": 1,
+        "quantum-computing-research / portfolio": 1,
         "quantum-materials-simulation-research / portfolio": 1
       }
     },
@@ -136,81 +127,16 @@
         "naavilam / coursework": 1
       }
     },
-    "/quantum-learning/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/variational-approximation/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/quantum-neural-state/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/quantum-monte-carlo/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
     "/SEL0613-Circuitos-Eletronicos-II/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "JP": 12
+        "JP": 8
       },
       "sources": {
-        "google / organic": 10,
-        "(direct) / (none)": 2
-      }
-    },
-    "/SEL0616-Principios-de-Comunicacao/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
+        "google / organic": 8
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
@@ -225,26 +151,16 @@
         "(direct) / (none)": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+    "/IF4302204-Fisica-Matematica-I/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "AU": 4
+        "US": 1
       },
       "sources": {
         "(direct) / (none)": 1
-      }
-    },
-    "/Academic-Research-Journaling/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {
-        "github.com / referral": 1
       }
     },
     "/FCM0101-Fisica-I/": {
@@ -257,6 +173,28 @@
       },
       "sources": {
         "naavilam / coursework": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AU": 4
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/Bayesian-Inference-Research/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {
+        "child_repo / navbar": 1
       }
     },
     "/IF4302204-Fisica-Matematica-I/": {
@@ -275,41 +213,7 @@
         "(direct) / (none)": 10
       }
     },
-    "/IF4302204-Fisica-Matematica-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/cern-root-student-course/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {
-        "course-codex / portfolio": 1
-      }
-    },
-    "/Bayesian-Inference-Research/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "child_repo / navbar": 2
-      }
-    },
-    "/IF4300214-Fisica-Experimental-IV/": {
+    "/SEL0616-Principios-de-Comunicacao/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
