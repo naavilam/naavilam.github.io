@@ -20,34 +20,10 @@
       "sources": {}
     },
     "topics-series-mathematics.github.io": {
-      "views": 5,
-      "sessions": 3,
-      "users": 2,
-      "avg_session_duration_sec": 31.92887466666667,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-economics.github.io": {
-      "views": 3,
-      "sessions": 3,
+      "views": 6,
+      "sessions": 4,
       "users": 3,
-      "avg_session_duration_sec": 0.42005566666666666,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-business.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-investments.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 0.0,
+      "avg_session_duration_sec": 23.946656,
       "countries": {},
       "sources": {}
     },
@@ -67,6 +43,30 @@
       "countries": {},
       "sources": {}
     },
+    "topics-series-business.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-economics.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-investments.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
     "topics-series-physics.github.io": {
       "views": 1,
       "sessions": 1,
@@ -79,21 +79,19 @@
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "clicks": 3,
+      "clicks": 2,
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 22,
-        "US": 10,
-        "AU": 1,
-        "CY": 1
+        "BR": 20,
+        "US": 8,
+        "AU": 1
       },
       "sources": {
-        "(direct) / (none)": 12,
+        "(direct) / (none)": 8,
         "child_repo / navbar": 4,
         "github.com / referral": 4,
-        "bing / organic": 1,
-        "correio1.if.usp.br / referral": 1,
+        "bing / organic": 2,
         "naavilam / coursework": 1,
         "quantum-computing-research / portfolio": 1,
         "quantum-materials-simulation-research / portfolio": 1
@@ -127,16 +125,32 @@
         "naavilam / coursework": 1
       }
     },
-    "/SEL0613-Circuitos-Eletronicos-II/": {
+    "/SEL0616-Principios-de-Comunicacao/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "JP": 8
+        "BR": 1
       },
       "sources": {
-        "google / organic": 8
+        "naavilam / coursework": 1
+      }
+    },
+    "/IF4302204-Fisica-Matematica-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 5,
+        "NL": 2,
+        "DE": 1,
+        "FR": 1,
+        "SC": 1
+      },
+      "sources": {
+        "(direct) / (none)": 10
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
@@ -146,18 +160,6 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "AU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/IF4302204-Fisica-Matematica-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
       },
       "sources": {
         "(direct) / (none)": 1
@@ -187,6 +189,30 @@
         "(direct) / (none)": 1
       }
     },
+    "/SEL0613-Circuitos-Eletronicos-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "JP": 4
+      },
+      "sources": {
+        "google / organic": 4
+      }
+    },
+    "/IF4302204-Fisica-Matematica-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/Bayesian-Inference-Research/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -195,34 +221,6 @@
       "countries": {},
       "sources": {
         "child_repo / navbar": 1
-      }
-    },
-    "/IF4302204-Fisica-Matematica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 5,
-        "NL": 2,
-        "DE": 1,
-        "FR": 1,
-        "SC": 1
-      },
-      "sources": {
-        "(direct) / (none)": 10
-      }
-    },
-    "/SEL0616-Principios-de-Comunicacao/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
       }
     }
   }
