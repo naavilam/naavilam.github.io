@@ -83,14 +83,14 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 20,
+        "BR": 18,
         "US": 8,
         "AU": 1
       },
       "sources": {
-        "(direct) / (none)": 8,
-        "child_repo / navbar": 4,
+        "(direct) / (none)": 7,
         "github.com / referral": 4,
+        "child_repo / navbar": 3,
         "bing / organic": 2,
         "naavilam / coursework": 1,
         "quantum-computing-research / portfolio": 1,
@@ -137,6 +137,18 @@
         "naavilam / coursework": 1
       }
     },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/IF4302204-Fisica-Matematica-I/": {
       "views": 0,
       "sessions": 0,
@@ -153,18 +165,6 @@
         "(direct) / (none)": 10
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
     "/FCM0101-Fisica-I/": {
       "views": 0,
       "sessions": 0,
@@ -175,30 +175,6 @@
       },
       "sources": {
         "naavilam / coursework": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 4
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0613-Circuitos-Eletronicos-II/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "JP": 4
-      },
-      "sources": {
-        "google / organic": 4
       }
     },
     "/IF4302204-Fisica-Matematica-I/studies.html": {
@@ -221,6 +197,18 @@
       "countries": {},
       "sources": {
         "child_repo / navbar": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AU": 4
+      },
+      "sources": {
+        "(direct) / (none)": 1
       }
     }
   }
