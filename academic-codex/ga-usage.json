@@ -3,27 +3,27 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
-    "high-energy-physics-research.github.io": {
-      "views": 0,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
     "academic-codex.github.io": {
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 4.689847,
+      "avg_session_duration_sec": 8.812573,
+      "countries": {},
+      "sources": {}
+    },
+    "high-energy-physics-research.github.io": {
+      "views": 6,
+      "sessions": 5,
+      "users": 4,
+      "avg_session_duration_sec": 35.9103806,
       "countries": {},
       "sources": {}
     },
     "topics-series-mathematics.github.io": {
-      "views": 6,
-      "sessions": 4,
+      "views": 5,
+      "sessions": 3,
       "users": 3,
-      "avg_session_duration_sec": 23.946656,
+      "avg_session_duration_sec": 12.168248666666665,
       "countries": {},
       "sources": {}
     },
@@ -79,36 +79,22 @@
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "clicks": 2,
+      "clicks": 1,
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 18,
+        "BR": 10,
         "US": 8,
         "AU": 1
       },
       "sources": {
         "(direct) / (none)": 7,
-        "github.com / referral": 4,
-        "child_repo / navbar": 3,
+        "github.com / referral": 3,
         "bing / organic": 2,
+        "child_repo / navbar": 1,
         "naavilam / coursework": 1,
         "quantum-computing-research / portfolio": 1,
         "quantum-materials-simulation-research / portfolio": 1
-      }
-    },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
       }
     },
     "/IF4302112-Fisica-Matematica-I/": {
@@ -118,18 +104,6 @@
       "clicks": 1,
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/SEL0616-Principios-de-Comunicacao/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
       "countries": {
         "BR": 1
       },
@@ -149,6 +123,18 @@
         "(direct) / (none)": 1
       }
     },
+    "/IF4302204-Fisica-Matematica-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/IF4302204-Fisica-Matematica-I/": {
       "views": 0,
       "sessions": 0,
@@ -163,40 +149,6 @@
       },
       "sources": {
         "(direct) / (none)": 10
-      }
-    },
-    "/FCM0101-Fisica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/IF4302204-Fisica-Matematica-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/Bayesian-Inference-Research/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {
-        "child_repo / navbar": 1
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
