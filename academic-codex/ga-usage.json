@@ -12,66 +12,18 @@
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 6,
-      "sessions": 5,
+      "views": 4,
+      "sessions": 4,
       "users": 4,
-      "avg_session_duration_sec": 35.9103806,
+      "avg_session_duration_sec": 8.119185,
       "countries": {},
       "sources": {}
     },
     "topics-series-mathematics.github.io": {
-      "views": 5,
-      "sessions": 3,
-      "users": 3,
-      "avg_session_duration_sec": 12.168248666666665,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-computing-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 7.33481,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-materials-simulation-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 7.100328,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-business.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
       "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-economics.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-investments.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-physics.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 7.230146,
       "countries": {},
       "sources": {}
     },
@@ -83,48 +35,16 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 10,
-        "US": 8,
-        "AU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 7,
-        "github.com / referral": 3,
-        "bing / organic": 2,
-        "child_repo / navbar": 1,
-        "naavilam / coursework": 1,
-        "quantum-computing-research / portfolio": 1,
-        "quantum-materials-simulation-research / portfolio": 1
-      }
-    },
-    "/IF4302112-Fisica-Matematica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/IF4302204-Fisica-Matematica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
         "US": 5,
-        "NL": 2,
-        "DE": 1,
-        "FR": 1,
-        "SC": 1
+        "AU": 1,
+        "BR": 1,
+        "CN": 1
       },
       "sources": {
-        "(direct) / (none)": 10
+        "(direct) / (none)": 4,
+        "bing / organic": 2,
+        "cn.bing.com / referral": 1,
+        "github.com / referral": 1
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
@@ -139,18 +59,6 @@
         "(direct) / (none)": 1
       }
     },
-    "/IF4302204-Fisica-Matematica-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -158,6 +66,18 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "AU": 4
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/IF4302204-Fisica-Matematica-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SC": 1
       },
       "sources": {
         "(direct) / (none)": 1
