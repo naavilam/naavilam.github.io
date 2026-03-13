@@ -12,10 +12,10 @@
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 4,
-      "sessions": 4,
-      "users": 4,
-      "avg_session_duration_sec": 8.119185,
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -27,24 +27,32 @@
       "countries": {},
       "sources": {}
     },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AU": 4
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
+      "avg_session_duration_sec": 0.0,
       "countries": {
         "US": 5,
         "AU": 1,
-        "BR": 1,
         "CN": 1
       },
       "sources": {
         "(direct) / (none)": 4,
         "bing / organic": 2,
-        "cn.bing.com / referral": 1,
-        "github.com / referral": 1
+        "cn.bing.com / referral": 1
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
@@ -54,18 +62,6 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "AU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 4
       },
       "sources": {
         "(direct) / (none)": 1
