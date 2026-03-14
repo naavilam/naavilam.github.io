@@ -27,6 +27,33 @@
       "countries": {},
       "sources": {}
     },
+    "course-codex.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 5,
+        "AU": 1,
+        "BG": 1,
+        "CN": 1
+      },
+      "sources": {
+        "(direct) / (none)": 4,
+        "bing / organic": 2,
+        "(not set)": 1,
+        "cn.bing.com / referral": 1,
+        "github.com / referral": 1
+      }
+    },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -39,20 +66,16 @@
         "(direct) / (none)": 1
       }
     },
-    "/": {
+    "/IF4302204-Fisica-Matematica-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 5,
-        "AU": 1,
-        "CN": 1
+        "SC": 1
       },
       "sources": {
-        "(direct) / (none)": 4,
-        "bing / organic": 2,
-        "cn.bing.com / referral": 1
+        "(direct) / (none)": 1
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
@@ -62,18 +85,6 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "AU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/IF4302204-Fisica-Matematica-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SC": 1
       },
       "sources": {
         "(direct) / (none)": 1
