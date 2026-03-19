@@ -35,6 +35,18 @@
       "countries": {},
       "sources": {}
     },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/": {
       "views": 0,
       "sessions": 0,
@@ -60,18 +72,6 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "AU": 4
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 1
       },
       "sources": {
         "(direct) / (none)": 1
