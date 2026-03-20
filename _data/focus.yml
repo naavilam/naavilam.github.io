@@ -8,7 +8,7 @@
 
 - title: Academic Work
   tag: Academic
-  description: Courses, notes, registries, publishing.
+  description: Courses, references, notes
   link: https://academic-codex.github.io
   image: /assets/img/focus/academic-codex.jpg
   weight: 2
@@ -16,7 +16,7 @@
 
 - title: Quantum Computing
   tag: Research
-  description: Algorithms, tooling, experiments.
+  description: Algorithms, error mitigation
   link: https://quantum-computing-research.github.io
   image: /assets/img/focus/quantum-computing-research.jpg
   weight: 3
