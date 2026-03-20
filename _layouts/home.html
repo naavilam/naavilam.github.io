@@ -217,8 +217,6 @@ layout: default
             </div>
 
             <!-- FILTER: só existe em Coursework -->
-            {% assign areas = site.data.courses | map: "area" | compact | uniq | sort %}
-
             <div class="d-flex align-items-center mb-3">
               <label for="courseAreaFilter" class="mb-0 mr-2" style="font-weight:600; opacity:.85;">
                 Filter:
@@ -226,9 +224,6 @@ layout: default
 
               <select id="courseAreaFilter" class="custom-select" style="max-width:320px;">
                 <option value="all" selected>All areas</option>
-                {% for a in areas %}
-                <option value="{{ a | escape }}">{{ a }}</option>
-                {% endfor %}
               </select>
             </div>
 
@@ -241,11 +236,9 @@ layout: default
               <a href="{{ courses.link }}?utm_source=naavilam&utm_medium=coursework" target="_blank" rel="noopener"
                 class="list-group-item list-group-item-action text-left course-item"
                 data-area="{{ courses.area | escape }}"
-                data-level="{{ courses.level | default: 'undergrad' | downcase | strip }}">
-                {{ courses.id }} {{ courses.Course }}
-                {% if courses.status and courses.status != "completed" %}*{% endif %}
-              </a>
-              {% endfor %}
+                data-level="{{ courses.level | default: 'undergraduate' | downcase | strip }}" {{ courses.id }} {{
+                courses.Course }} {% if courses.status and courses.status !="completed" %}*{% endif %} </a>
+                {% endfor %}
             </div>
           </div>
 
@@ -317,26 +310,79 @@ layout: default
 <script>
   document.addEventListener('DOMContentLoaded', function () {
 
-    function applyCourseFilters() {
+    function getSelectedLevel() {
       const levelInput = document.querySelector('input[name="courseLevel"]:checked');
-      const level = levelInput ? levelInput.value : 'all';
+      return levelInput ? levelInput.value : 'all';
+    }
 
+    function normalize(str) {
+      return (str || '').toString().trim().toLowerCase();
+    }
+
+    function updateAreaOptions() {
+      const level = getSelectedLevel();
+      const areaSel = document.getElementById('courseAreaFilter');
+      if (!areaSel) return;
+
+      const previousValue = areaSel.value || 'all';
+      const items = Array.from(document.querySelectorAll('.course-item'));
+
+      const areas = new Set();
+
+      items.forEach(el => {
+        const elLevel = normalize(el.dataset.level || 'undergraduate');
+        const elArea = (el.dataset.area || '').trim();
+
+        const matchesLevel = (level === 'all') || (elLevel === level);
+
+        if (matchesLevel && elArea) {
+          areas.add(elArea);
+        }
+      });
+
+      const sortedAreas = Array.from(areas).sort((a, b) => a.localeCompare(b));
+
+      areaSel.innerHTML = '';
+
+      const allOption = document.createElement('option');
+      allOption.value = 'all';
+      allOption.textContent = 'All areas';
+      areaSel.appendChild(allOption);
+
+      sortedAreas.forEach(area => {
+        const opt = document.createElement('option');
+        opt.value = area;
+        opt.textContent = area;
+        areaSel.appendChild(opt);
+      });
+
+      const stillExists = Array.from(areaSel.options).some(opt => opt.value === previousValue);
+      areaSel.value = stillExists ? previousValue : 'all';
+    }
+
+    function applyCourseFilters() {
+      const level = getSelectedLevel();
       const areaSel = document.getElementById('courseAreaFilter');
       const area = areaSel ? areaSel.value : 'all';
 
       document.querySelectorAll('.course-item').forEach(el => {
-        const elLevel = (el.dataset.level || 'undergrad').toLowerCase();
-        const elArea = (el.dataset.area || '').toLowerCase();
+        const elLevel = normalize(el.dataset.level || 'undergraduate');
+        const elArea = normalize(el.dataset.area || '');
 
         const okLevel = (level === 'all') || (elLevel === level);
-        const okArea = (area === 'all') || (elArea === area.toLowerCase());
+        const okArea = (area === 'all') || (elArea === normalize(area));
 
         el.style.display = (okLevel && okArea) ? '' : 'none';
       });
     }
 
+    function refreshCourseFilters() {
+      updateAreaOptions();
+      applyCourseFilters();
+    }
+
     document.querySelectorAll('input[name="courseLevel"]').forEach(radio => {
-      radio.addEventListener('change', applyCourseFilters);
+      radio.addEventListener('change', refreshCourseFilters);
     });
 
     const areaSel = document.getElementById('courseAreaFilter');
@@ -345,7 +391,7 @@ layout: default
     }
 
     sortCourseItems();
-    applyCourseFilters();
+    refreshCourseFilters();
   });
 </script>
 
