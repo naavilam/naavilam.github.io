@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Github Version Control"
-description: "Release & milestone workflow for GitHub repositories. Automate and manage releases, milestones, and development cycles using a simple and intuitive interface with the GitHub CLI."
+title:  "GitHub Release and Milestone CLI"
+description: "Release and milestone workflow for GitHub repositories. Automate and manage releases, milestones, and development cycles using a simple and intuitive interface with the GitHub CLI."
 date:   2025-12-12
 type: card-img-top
 categories: latin text
