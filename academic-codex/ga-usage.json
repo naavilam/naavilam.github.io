@@ -7,7 +7,7 @@
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 8.812573,
+      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -39,18 +39,6 @@
         "naavilam / coursework": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -72,14 +60,38 @@
         "US": 2,
         "AU": 1,
         "BG": 1,
-        "CN": 1
+        "CN": 1,
+        "DZ": 1
       },
       "sources": {
         "(direct) / (none)": 2,
-        "(not set)": 1,
-        "bing / organic": 1,
+        "bing / organic": 2,
         "cn.bing.com / referral": 1,
         "github.com / referral": 1
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "AU": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
       }
     }
   }
