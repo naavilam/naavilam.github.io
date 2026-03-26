@@ -1,19 +1,24 @@
 # Org Audit Report: quantum-computing
 
-Generated: **2026-03-25 05:07 UTC**
+Generated: **2026-03-26 05:19 UTC**
 
-- Repositories: **6**
-- With README (any branch): **6/6**
-- With .gitignore (any branch): **3/6**
-- Total notebooks (.ipynb) (sum over branches): **25**
+- Repositories: **11**
+- With README (any branch): **11/11**
+- With .gitignore (any branch): **6/11**
+- Total notebooks (.ipynb) (sum over branches): **386**
 
 ## Table (top 50)
 
 | Repo | branches | README | .gitignore | ipynb | py | tex | files | updated |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
 | [Batalha-Naval-Quantica](https://github.com/Quantum-Computing-Research/Batalha-Naval-Quantica) | 5 | ✅ | ✅ | 1 | 30 | 0 | 183 | 2026-03-02 |
-| [quantum-algorithms](https://github.com/Quantum-Computing-Research/quantum-algorithms) | 2 | ✅ | — | 8 | 0 | 0 | 42 | 2026-02-04 |
+| [computacao_quantica_qiskit](https://github.com/Quantum-Computing-Research/computacao_quantica_qiskit) | 1 | ✅ | — | 187 | 0 | 0 | 265 | 2024-09-12 |
+| [qc-ibm-quantum-challenge-2024](https://github.com/Quantum-Computing-Research/qc-ibm-quantum-challenge-2024) | 1 | ✅ | ✅ | 46 | 11 | 0 | 70 | 2024-07-31 |
+| [quantum-algorithms](https://github.com/Quantum-Computing-Research/quantum-algorithms) | 2 | ✅ | — | 12 | 4 | 2 | 75 | 2026-03-25 |
 | [quantum-chaos-framework](https://github.com/Quantum-Computing-Research/quantum-chaos-framework) | 1 | ✅ | ✅ | 0 | 19 | 0 | 24 | 2026-02-22 |
+| [Quantum-Computing-Collection-Of-Resources](https://github.com/Quantum-Computing-Research/Quantum-Computing-Collection-Of-Resources) | 1 | ✅ | — | 88 | 5 | 0 | 473 | 2023-02-10 |
+| [quantum-computing-examples-qiskit](https://github.com/Quantum-Computing-Research/quantum-computing-examples-qiskit) | 1 | ✅ | ✅ | 0 | 14 | 0 | 30 | 2025-03-14 |
 | [quantum-computing-research.github.io](https://github.com/Quantum-Computing-Research/quantum-computing-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 63 | 2026-02-27 |
-| [quantum-error-mitigation](https://github.com/Quantum-Computing-Research/quantum-error-mitigation) | 2 | ✅ | — | 4 | 0 | 0 | 35 | 2026-02-04 |
-| [quantum-learning](https://github.com/Quantum-Computing-Research/quantum-learning) | 2 | ✅ | — | 12 | 0 | 0 | 36 | 2026-02-04 |
+| [quantum-error-mitigation](https://github.com/Quantum-Computing-Research/quantum-error-mitigation) | 2 | ✅ | — | 16 | 0 | 0 | 50 | 2026-03-25 |
+| [quantum-learning](https://github.com/Quantum-Computing-Research/quantum-learning) | 2 | ✅ | — | 13 | 0 | 0 | 52 | 2026-03-25 |
+| [torchquantum](https://github.com/Quantum-Computing-Research/torchquantum) | 1 | ✅ | ✅ | 23 | 239 | 0 | 349 | 2025-10-28 |

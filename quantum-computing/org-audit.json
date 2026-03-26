@@ -83,6 +83,74 @@
   },
   {
     "org": "quantum-computing-research",
+    "name": "computacao_quantica_qiskit",
+    "full_name": "Quantum-Computing-Research/computacao_quantica_qiskit",
+    "url": "https://github.com/Quantum-Computing-Research/computacao_quantica_qiskit",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2024-09-12T13:26:39Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 187,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 0,
+    "total_files": 265,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "f971974349a367f81dc80311987d7425dfb153c4",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 187,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 0,
+        "total_files": 265
+      }
+    ]
+  },
+  {
+    "org": "quantum-computing-research",
+    "name": "qc-ibm-quantum-challenge-2024",
+    "full_name": "Quantum-Computing-Research/qc-ibm-quantum-challenge-2024",
+    "url": "https://github.com/Quantum-Computing-Research/qc-ibm-quantum-challenge-2024",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2024-07-31T15:30:31Z",
+    "has_gitignore": true,
+    "has_readme": true,
+    "notebooks_ipynb": 46,
+    "files_py": 11,
+    "files_tex": 0,
+    "files_md": 2,
+    "files_yml": 0,
+    "total_files": 70,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "9376374b9f4847d4e770120b25029dd18fb42942",
+        "has_gitignore": true,
+        "has_readme": true,
+        "notebooks_ipynb": 46,
+        "files_py": 11,
+        "files_tex": 0,
+        "files_md": 2,
+        "files_yml": 0,
+        "total_files": 70
+      }
+    ]
+  },
+  {
+    "org": "quantum-computing-research",
     "name": "quantum-algorithms",
     "full_name": "Quantum-Computing-Research/quantum-algorithms",
     "url": "https://github.com/Quantum-Computing-Research/quantum-algorithms",
@@ -90,20 +158,20 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-04T18:56:19Z",
+    "pushed_at": "2026-03-25T17:26:35Z",
     "has_gitignore": false,
     "has_readme": true,
-    "notebooks_ipynb": 8,
-    "files_py": 0,
-    "files_tex": 0,
+    "notebooks_ipynb": 12,
+    "files_py": 4,
+    "files_tex": 2,
     "files_md": 2,
     "files_yml": 2,
-    "total_files": 42,
+    "total_files": 75,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "90fcc56ffa28a4d08a05737bb1ae6d103bf6edce",
+        "head_sha": "9b426e3ff76701d66b8a0c86d83c0289aeef580d",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -111,19 +179,19 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 29
+        "total_files": 33
       },
       {
         "branch": "main",
-        "head_sha": "37d19b0e449b887505a3f9526eadb414996c2c48",
+        "head_sha": "9e077510412b4b5d15f5dc683f5a734369b163ec",
         "has_gitignore": false,
         "has_readme": true,
-        "notebooks_ipynb": 8,
-        "files_py": 0,
-        "files_tex": 0,
+        "notebooks_ipynb": 12,
+        "files_py": 4,
+        "files_tex": 2,
         "files_md": 2,
         "files_yml": 2,
-        "total_files": 13
+        "total_files": 42
       }
     ]
   },
@@ -158,6 +226,74 @@
         "files_md": 1,
         "files_yml": 0,
         "total_files": 24
+      }
+    ]
+  },
+  {
+    "org": "quantum-computing-research",
+    "name": "Quantum-Computing-Collection-Of-Resources",
+    "full_name": "Quantum-Computing-Research/Quantum-Computing-Collection-Of-Resources",
+    "url": "https://github.com/Quantum-Computing-Research/Quantum-Computing-Collection-Of-Resources",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2023-02-10T17:22:46Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 88,
+    "files_py": 5,
+    "files_tex": 0,
+    "files_md": 50,
+    "files_yml": 1,
+    "total_files": 473,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "bda748a26f3df2fe0e575942cf57cacd57692208",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 88,
+        "files_py": 5,
+        "files_tex": 0,
+        "files_md": 50,
+        "files_yml": 1,
+        "total_files": 473
+      }
+    ]
+  },
+  {
+    "org": "quantum-computing-research",
+    "name": "quantum-computing-examples-qiskit",
+    "full_name": "Quantum-Computing-Research/quantum-computing-examples-qiskit",
+    "url": "https://github.com/Quantum-Computing-Research/quantum-computing-examples-qiskit",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "master",
+    "pushed_at": "2025-03-14T19:57:12Z",
+    "has_gitignore": true,
+    "has_readme": true,
+    "notebooks_ipynb": 0,
+    "files_py": 14,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 1,
+    "total_files": 30,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "master",
+        "head_sha": "bbebe2e35db49cc11577315f7e8ed3ef468db976",
+        "has_gitignore": true,
+        "has_readme": true,
+        "notebooks_ipynb": 0,
+        "files_py": 14,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 1,
+        "total_files": 30
       }
     ]
   },
@@ -204,15 +340,15 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-04T18:55:31Z",
+    "pushed_at": "2026-03-25T16:52:34Z",
     "has_gitignore": false,
     "has_readme": true,
-    "notebooks_ipynb": 4,
+    "notebooks_ipynb": 16,
     "files_py": 0,
     "files_tex": 0,
-    "files_md": 2,
+    "files_md": 3,
     "files_yml": 2,
-    "total_files": 35,
+    "total_files": 50,
     "branches_count": 2,
     "branches": [
       {
@@ -229,15 +365,15 @@
       },
       {
         "branch": "main",
-        "head_sha": "7f64afe05ecb457814335e5da521c39465370387",
+        "head_sha": "1825c5db542e9be3162eb2dec44709f4049fc7a3",
         "has_gitignore": false,
         "has_readme": true,
-        "notebooks_ipynb": 4,
+        "notebooks_ipynb": 16,
         "files_py": 0,
         "files_tex": 0,
-        "files_md": 2,
+        "files_md": 3,
         "files_yml": 2,
-        "total_files": 15
+        "total_files": 30
       }
     ]
   },
@@ -250,20 +386,20 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-04T18:55:33Z",
+    "pushed_at": "2026-03-25T17:27:34Z",
     "has_gitignore": false,
     "has_readme": true,
-    "notebooks_ipynb": 12,
+    "notebooks_ipynb": 13,
     "files_py": 0,
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 2,
-    "total_files": 36,
+    "total_files": 52,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "a6b93e914ffdf9e1747db71b0b9cb78e0aa4c82e",
+        "head_sha": "564494ef1c3fdcbd7c6438cebb9ad1caae372b6b",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -271,19 +407,53 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 20
+        "total_files": 34
       },
       {
         "branch": "main",
-        "head_sha": "50ed372d5f537f44ea41fc2b295f8fc2e2311c65",
+        "head_sha": "964d179206f3dfdf3f581a0744595baeca8a054b",
         "has_gitignore": false,
         "has_readme": true,
-        "notebooks_ipynb": 12,
+        "notebooks_ipynb": 13,
         "files_py": 0,
         "files_tex": 0,
         "files_md": 1,
         "files_yml": 2,
-        "total_files": 16
+        "total_files": 18
+      }
+    ]
+  },
+  {
+    "org": "quantum-computing-research",
+    "name": "torchquantum",
+    "full_name": "Quantum-Computing-Research/torchquantum",
+    "url": "https://github.com/Quantum-Computing-Research/torchquantum",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2025-10-28T01:51:40Z",
+    "has_gitignore": true,
+    "has_readme": true,
+    "notebooks_ipynb": 23,
+    "files_py": 239,
+    "files_tex": 0,
+    "files_md": 19,
+    "files_yml": 16,
+    "total_files": 349,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "8aeb288ecf5752abe925f24a634c94ab2ff97ad2",
+        "has_gitignore": true,
+        "has_readme": true,
+        "notebooks_ipynb": 23,
+        "files_py": 239,
+        "files_tex": 0,
+        "files_md": 19,
+        "files_yml": 16,
+        "total_files": 349
       }
     ]
   }

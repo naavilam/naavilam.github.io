@@ -8,20 +8,20 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-26T03:19:53Z",
+    "pushed_at": "2026-03-25T17:17:39Z",
     "has_gitignore": false,
     "has_readme": true,
-    "notebooks_ipynb": 11,
-    "files_py": 0,
+    "notebooks_ipynb": 85,
+    "files_py": 49,
     "files_tex": 0,
-    "files_md": 1,
+    "files_md": 4,
     "files_yml": 2,
-    "total_files": 48,
+    "total_files": 271,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "407071d879791d57c906e6f9687036103ab038f9",
+        "head_sha": "f6b014a8acb9d605d43457c0ddd23313d2b6ac8f",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -29,19 +29,53 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 32
+        "total_files": 87
       },
       {
         "branch": "main",
-        "head_sha": "5dcc37891cfa7d0a14cf90594ecf675e639fb353",
+        "head_sha": "dd3c4ea2f84cf217c73f7abfeba811ea0409eeec",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 85,
+        "files_py": 49,
+        "files_tex": 0,
+        "files_md": 4,
+        "files_yml": 2,
+        "total_files": 184
+      }
+    ]
+  },
+  {
+    "org": "quantum-materials-simulation-research",
+    "name": "Quantum-Chemistry-and-Computing-for-the-Curious",
+    "full_name": "Quantum-Materials-Simulation-Research/Quantum-Chemistry-and-Computing-for-the-Curious",
+    "url": "https://github.com/Quantum-Materials-Simulation-Research/Quantum-Chemistry-and-Computing-for-the-Curious",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2026-03-02T16:50:03Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 11,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 0,
+    "total_files": 13,
+    "branches_count": 1,
+    "branches": [
+      {
+        "branch": "main",
+        "head_sha": "56d0fb48c512df2795087c23d9168b8212bba259",
         "has_gitignore": false,
         "has_readme": true,
         "notebooks_ipynb": 11,
         "files_py": 0,
         "files_tex": 0,
         "files_md": 1,
-        "files_yml": 2,
-        "total_files": 16
+        "files_yml": 0,
+        "total_files": 13
       }
     ]
   },
@@ -134,20 +168,20 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-26T03:19:32Z",
+    "pushed_at": "2026-03-25T17:28:46Z",
     "has_gitignore": false,
     "has_readme": true,
-    "notebooks_ipynb": 1,
+    "notebooks_ipynb": 8,
     "files_py": 45,
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 2,
-    "total_files": 79,
+    "total_files": 94,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "8f5a19e7f2bd1bfe03909957b98797973190fb74",
+        "head_sha": "537979ead981db1cf3d5fc16124e5da66593b1b7",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -155,19 +189,19 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 22
+        "total_files": 29
       },
       {
         "branch": "main",
-        "head_sha": "3d740407c4eb50d8d2e88637764c5846facf3f20",
+        "head_sha": "f16828cd42368181758927472b22c8c71ea206f5",
         "has_gitignore": false,
         "has_readme": true,
-        "notebooks_ipynb": 1,
+        "notebooks_ipynb": 8,
         "files_py": 45,
         "files_tex": 0,
         "files_md": 1,
         "files_yml": 2,
-        "total_files": 57
+        "total_files": 65
       }
     ]
   },
