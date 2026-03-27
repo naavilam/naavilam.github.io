@@ -15,7 +15,7 @@
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 14.527942,
+      "avg_session_duration_sec": 2.958991,
       "countries": {},
       "sources": {}
     },
@@ -43,17 +43,16 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
+        "BR": 2,
         "US": 2,
         "AU": 1,
         "BG": 1,
-        "BR": 1,
         "CN": 1,
         "DZ": 1
       },
       "sources": {
         "(direct) / (none)": 3,
         "bing / organic": 2,
-        "(not set)": 1,
         "cn.bing.com / referral": 1,
         "github.com / referral": 1
       }
@@ -69,17 +68,16 @@
         "BR": 1
       },
       "sources": {
-        "(not set)": 1,
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "AU": 4
+        "AU": 1
       },
       "sources": {
         "(direct) / (none)": 1
@@ -106,21 +104,8 @@
         "BR": 2
       },
       "sources": {
-        "(not set)": 2,
         "(direct) / (none)": 1,
         "quantum-computing-research / portfolio": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
       }
     },
     "/IF4300214-Fisica-Experimental-IV/": {
@@ -135,6 +120,18 @@
         "naavilam / coursework": 1
       }
     },
+    "/quantum-error-mitigation/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/quantum-error-mitigation/research.html": {
       "views": 0,
       "sessions": 0,
@@ -144,17 +141,16 @@
         "BR": 2
       },
       "sources": {
-        "(not set)": 1,
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/quantum-error-mitigation/": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "AU": 4
       },
       "sources": {
         "(direct) / (none)": 1

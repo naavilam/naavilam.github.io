@@ -93,6 +93,52 @@
   },
   {
     "org": "high-energy-physics-research",
+    "name": "cern-root-student-course",
+    "full_name": "High-Energy-Physics-Research/cern-root-student-course",
+    "url": "https://github.com/High-Energy-Physics-Research/cern-root-student-course",
+    "private": false,
+    "archived": false,
+    "fork": true,
+    "default_branch": "main",
+    "pushed_at": "2026-02-04T03:10:01Z",
+    "has_gitignore": true,
+    "has_readme": true,
+    "notebooks_ipynb": 32,
+    "files_py": 3,
+    "files_tex": 0,
+    "files_md": 7,
+    "files_yml": 4,
+    "total_files": 142,
+    "branches_count": 2,
+    "branches": [
+      {
+        "branch": "gh-pages",
+        "head_sha": "7a97baa3dc937dcc9fb631ed4ea457b282e0224c",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 53
+      },
+      {
+        "branch": "main",
+        "head_sha": "99e7683555716317cf263fed0af652ea63adc13e",
+        "has_gitignore": true,
+        "has_readme": true,
+        "notebooks_ipynb": 32,
+        "files_py": 3,
+        "files_tex": 0,
+        "files_md": 7,
+        "files_yml": 4,
+        "total_files": 89
+      }
+    ]
+  },
+  {
+    "org": "high-energy-physics-research",
     "name": "Gaussian-Process-Research",
     "full_name": "High-Energy-Physics-Research/Gaussian-Process-Research",
     "url": "https://github.com/High-Energy-Physics-Research/Gaussian-Process-Research",
