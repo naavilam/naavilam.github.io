@@ -71,16 +71,28 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "AU": 1
+        "AU": 4
       },
       "sources": {
         "(direct) / (none)": 1
+      }
+    },
+    "/IF4300214-Fisica-Experimental-IV/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
       }
     },
     "/quantum-error-mitigation/": {
@@ -108,30 +120,6 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/quantum-error-mitigation/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "quantum-computing-research / portfolio": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "AU": 4
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
       "views": 0,
       "sessions": 0,
@@ -144,16 +132,28 @@
         "naavilam / coursework": 1
       }
     },
-    "/IF4300214-Fisica-Experimental-IV/": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "AU": 1
       },
       "sources": {
-        "naavilam / coursework": 1
+        "(direct) / (none)": 1
+      }
+    },
+    "/quantum-error-mitigation/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "quantum-computing-research / portfolio": 1
       }
     }
   }
