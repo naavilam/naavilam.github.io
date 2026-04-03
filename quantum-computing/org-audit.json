@@ -488,7 +488,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-02-27T12:36:48Z",
+    "pushed_at": "2026-04-02T12:37:17Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 0,
@@ -496,12 +496,12 @@
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 7,
-    "total_files": 63,
+    "total_files": 62,
     "branches_count": 1,
     "branches": [
       {
         "branch": "main",
-        "head_sha": "dd194535cb4d0681d6e2891f434ccd837d7820af",
+        "head_sha": "554d4e445ed29931ee6cc7f31d9a1014c212237a",
         "has_gitignore": true,
         "has_readme": true,
         "notebooks_ipynb": 0,
@@ -509,7 +509,7 @@
         "files_tex": 0,
         "files_md": 1,
         "files_yml": 7,
-        "total_files": 63
+        "total_files": 62
       }
     ]
   },
