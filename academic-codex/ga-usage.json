@@ -3,19 +3,19 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
-    "academic-codex.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
     "quantum-computing-research.github.io": {
       "views": 1,
       "sessions": 1,
       "users": 1,
       "avg_session_duration_sec": 2.958991,
+      "countries": {},
+      "sources": {}
+    },
+    "academic-codex.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -38,10 +38,11 @@
         "BR": 2,
         "BG": 1,
         "CN": 1,
-        "DZ": 1
+        "DZ": 1,
+        "US": 1
       },
       "sources": {
-        "(direct) / (none)": 1,
+        "(direct) / (none)": 2,
         "bing / organic": 1,
         "cn.bing.com / referral": 1,
         "github.com / referral": 1
@@ -61,28 +62,16 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+    "/IF4300214-Fisica-Experimental-IV/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 1
+        "BR": 1
       },
       "sources": {
         "naavilam / coursework": 1
-      }
-    },
-    "/quantum-error-mitigation/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "quantum-computing-research / portfolio": 1
       }
     },
     "/quantum-error-mitigation/software.html": {
@@ -98,18 +87,6 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/IF4300214-Fisica-Experimental-IV/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
     "/quantum-error-mitigation/": {
       "views": 0,
       "sessions": 0,
@@ -120,6 +97,30 @@
       },
       "sources": {
         "(direct) / (none)": 1
+      }
+    },
+    "/quantum-error-mitigation/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "quantum-computing-research / portfolio": 1
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
       }
     }
   }
