@@ -27,6 +27,14 @@
       "countries": {},
       "sources": {}
     },
+    "high-energy-physics-research.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 13.942794,
+      "countries": {},
+      "sources": {}
+    },
     "/": {
       "views": 0,
       "sessions": 0,
@@ -35,14 +43,15 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
+        "US": 4,
         "BR": 2,
         "BG": 1,
         "CN": 1,
-        "DZ": 1,
-        "US": 1
+        "DZ": 1
       },
       "sources": {
-        "(direct) / (none)": 2,
+        "(direct) / (none)": 5,
+        "(not set)": 1,
         "bing / organic": 1,
         "cn.bing.com / referral": 1,
         "github.com / referral": 1
@@ -62,16 +71,16 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/IF4300214-Fisica-Experimental-IV/": {
+    "/quantum-error-mitigation/research.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "BR": 2
       },
       "sources": {
-        "naavilam / coursework": 1
+        "quantum-computing-research / portfolio": 1
       }
     },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
@@ -84,18 +93,6 @@
       },
       "sources": {
         "naavilam / coursework": 1
-      }
-    },
-    "/quantum-error-mitigation/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
       }
     },
     "/quantum-error-mitigation/software.html": {
@@ -111,16 +108,28 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/quantum-error-mitigation/research.html": {
+    "/IF4300214-Fisica-Experimental-IV/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "BR": 1
       },
       "sources": {
-        "quantum-computing-research / portfolio": 1
+        "naavilam / coursework": 1
+      }
+    },
+    "/quantum-error-mitigation/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
       }
     }
   }
