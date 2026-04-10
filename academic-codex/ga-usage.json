@@ -35,6 +35,14 @@
       "countries": {},
       "sources": {}
     },
+    "quantum-materials-simulation-research.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
     "/": {
       "views": 0,
       "sessions": 0,
@@ -43,15 +51,14 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "US": 4,
+        "US": 5,
         "BR": 2,
         "BG": 1,
         "CN": 1,
         "DZ": 1
       },
       "sources": {
-        "(direct) / (none)": 5,
-        "(not set)": 1,
+        "(direct) / (none)": 6,
         "bing / organic": 1,
         "cn.bing.com / referral": 1,
         "github.com / referral": 1
@@ -71,16 +78,17 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/quantum-error-mitigation/research.html": {
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "CN": 1
       },
       "sources": {
-        "quantum-computing-research / portfolio": 1
+        "(direct) / (none)": 1,
+        "(not set)": 1
       }
     },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
@@ -90,6 +98,30 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "US": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
+      }
+    },
+    "/quantum-error-mitigation/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/IF4300214-Fisica-Experimental-IV/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
       },
       "sources": {
         "naavilam / coursework": 1
@@ -108,28 +140,16 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/IF4300214-Fisica-Experimental-IV/": {
+    "/quantum-error-mitigation/research.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "BR": 2
       },
       "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/quantum-error-mitigation/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
+        "quantum-computing-research / portfolio": 1
       }
     }
   }
