@@ -3,14 +3,6 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
-    "quantum-computing-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 2.958991,
-      "countries": {},
-      "sources": {}
-    },
     "academic-codex.github.io": {
       "views": 1,
       "sessions": 1,
@@ -19,11 +11,11 @@
       "countries": {},
       "sources": {}
     },
-    "course-codex.github.io": {
+    "quantum-computing-research.github.io": {
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 6.955066,
+      "avg_session_duration_sec": 2.958991,
       "countries": {},
       "sources": {}
     },
@@ -51,15 +43,14 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "US": 5,
+        "US": 6,
         "BR": 2,
-        "BG": 1,
-        "DZ": 1
+        "DZ": 1,
+        "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 6,
-        "bing / organic": 1,
-        "github.com / referral": 1
+        "(direct) / (none)": 8,
+        "bing / organic": 1
       }
     },
     "/quantum-error-mitigation/index.html": {
@@ -89,18 +80,6 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/quantum-error-mitigation/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "quantum-computing-research / portfolio": 1
-      }
-    },
     "/IF4300214-Fisica-Experimental-IV/": {
       "views": 0,
       "sessions": 0,
@@ -123,6 +102,18 @@
       },
       "sources": {
         "naavilam / coursework": 1
+      }
+    },
+    "/quantum-error-mitigation/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "quantum-computing-research / portfolio": 1
       }
     },
     "/quantum-error-mitigation/": {
