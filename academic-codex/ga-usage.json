@@ -67,16 +67,17 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
+    "/quantum-error-mitigation/software.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "CN": 1
+        "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 1,
+        "quantum-computing-research / portfolio": 1
       }
     },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
@@ -91,7 +92,19 @@
         "naavilam / coursework": 1
       }
     },
-    "/quantum-error-mitigation/software.html": {
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "CN": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -100,20 +113,8 @@
         "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 1,
-        "quantum-computing-research / portfolio": 1
-      }
-    },
-    "/quantum-error-mitigation/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
+        "(not set)": 1,
+        "bing / organic": 1
       }
     },
     "/IF4300214-Fisica-Experimental-IV/": {
@@ -126,6 +127,31 @@
       },
       "sources": {
         "naavilam / coursework": 1
+      }
+    },
+    "/MAC5921-Deep-Learning/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(not set)": 1,
+        "bing / organic": 1
+      }
+    },
+    "/quantum-error-mitigation/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
       }
     },
     "/quantum-error-mitigation/research.html": {
