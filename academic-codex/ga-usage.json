@@ -67,7 +67,7 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/quantum-error-mitigation/software.html": {
+    "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -76,20 +76,19 @@
         "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 1,
-        "quantum-computing-research / portfolio": 1
+        "bing / organic": 1
       }
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+    "/quantum-error-mitigation/research.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 1
+        "BR": 2
       },
       "sources": {
-        "naavilam / coursework": 1
+        "quantum-computing-research / portfolio": 1
       }
     },
     "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
@@ -104,42 +103,16 @@
         "(direct) / (none)": 1
       }
     },
-    "/MAC5921-Deep-Learning/studies.html": {
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "(not set)": 1,
-        "bing / organic": 1
-      }
-    },
-    "/IF4300214-Fisica-Experimental-IV/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
+        "US": 1
       },
       "sources": {
         "naavilam / coursework": 1
-      }
-    },
-    "/MAC5921-Deep-Learning/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(not set)": 1,
-        "bing / organic": 1
       }
     },
     "/quantum-error-mitigation/": {
@@ -154,7 +127,19 @@
         "(direct) / (none)": 1
       }
     },
-    "/quantum-error-mitigation/research.html": {
+    "/MAC5921-Deep-Learning/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "bing / organic": 1
+      }
+    },
+    "/quantum-error-mitigation/software.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -163,7 +148,20 @@
         "BR": 2
       },
       "sources": {
+        "(direct) / (none)": 1,
         "quantum-computing-research / portfolio": 1
+      }
+    },
+    "/IF4300214-Fisica-Experimental-IV/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
       }
     }
   }
