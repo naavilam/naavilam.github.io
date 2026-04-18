@@ -1,6 +1,6 @@
 # Org Audit Report: quantum-computing
 
-Generated: **2026-04-17 05:40 UTC**
+Generated: **2026-04-18 05:21 UTC**
 
 - Repositories: **16**
 - With README (any branch): **16/16**
@@ -23,7 +23,7 @@ Generated: **2026-04-17 05:40 UTC**
 | [quantum-chaos-framework](https://github.com/Quantum-Computing-Research/quantum-chaos-framework) | 1 | ✅ | ✅ | 0 | 19 | 0 | 24 | 2026-02-22 |
 | [Quantum-Computing-Collection-Of-Resources](https://github.com/Quantum-Computing-Research/Quantum-Computing-Collection-Of-Resources) | 1 | ✅ | — | 88 | 5 | 0 | 473 | 2023-02-10 |
 | [quantum-computing-examples-qiskit](https://github.com/Quantum-Computing-Research/quantum-computing-examples-qiskit) | 1 | ✅ | ✅ | 0 | 14 | 0 | 30 | 2025-03-14 |
-| [quantum-computing-research.github.io](https://github.com/Quantum-Computing-Research/quantum-computing-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 62 | 2026-04-02 |
+| [quantum-computing-research.github.io](https://github.com/Quantum-Computing-Research/quantum-computing-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 62 | 2026-04-17 |
 | [quantum-error-mitigation](https://github.com/Quantum-Computing-Research/quantum-error-mitigation) | 2 | ✅ | — | 16 | 0 | 0 | 50 | 2026-03-25 |
 | [quantum-learning](https://github.com/Quantum-Computing-Research/quantum-learning) | 2 | ✅ | — | 13 | 0 | 0 | 52 | 2026-03-25 |
 | [torchquantum](https://github.com/Quantum-Computing-Research/torchquantum) | 1 | ✅ | ✅ | 23 | 239 | 0 | 349 | 2025-10-28 |

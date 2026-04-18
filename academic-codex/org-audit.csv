@@ -1,5 +1,5 @@
 org,name,full_name,url,private,archived,fork,default_branch,pushed_at,has_gitignore,has_readme,notebooks_ipynb,files_py,files_tex,files_md,files_yml,total_files,branches_count
-academic-codex,academic-codex.github.io,Academic-Codex/academic-codex.github.io,https://github.com/Academic-Codex/academic-codex.github.io,False,False,False,main,2026-04-02T12:37:24Z,True,True,0,0,0,1,7,242,1
+academic-codex,academic-codex.github.io,Academic-Codex/academic-codex.github.io,https://github.com/Academic-Codex/academic-codex.github.io,False,False,False,main,2026-04-17T14:17:59Z,True,True,0,0,0,1,7,242,1
 academic-codex,DPG5011-Formacao-do-Cientista-Empreendedor,Academic-Codex/DPG5011-Formacao-do-Cientista-Empreendedor,https://github.com/Academic-Codex/DPG5011-Formacao-do-Cientista-Empreendedor,False,False,False,main,2026-02-04T18:56:54Z,True,True,1,0,0,1,6,33,2
 academic-codex,EAP5054-Formacao-do-Cientista-Empreendedor-II,Academic-Codex/EAP5054-Formacao-do-Cientista-Empreendedor-II,https://github.com/Academic-Codex/EAP5054-Formacao-do-Cientista-Empreendedor-II,False,False,False,main,2026-02-04T18:56:50Z,False,True,1,0,0,1,6,33,2
 academic-codex,FCM0101-Fisica-I,Academic-Codex/FCM0101-Fisica-I,https://github.com/Academic-Codex/FCM0101-Fisica-I,False,False,False,main,2026-02-04T18:57:06Z,True,True,1,0,0,1,5,31,2

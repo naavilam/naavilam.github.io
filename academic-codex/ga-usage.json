@@ -20,10 +20,10 @@
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 13.942794,
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 13.908711,
       "countries": {},
       "sources": {}
     },
@@ -44,13 +44,14 @@
       "avg_engagement_time_sec": 0.0,
       "countries": {
         "US": 6,
-        "BR": 2,
+        "BR": 3,
         "DZ": 1,
         "SG": 1
       },
       "sources": {
         "(direct) / (none)": 8,
-        "bing / organic": 1
+        "bing / organic": 1,
+        "github.com / referral": 1
       }
     },
     "/quantum-error-mitigation/index.html": {
@@ -62,6 +63,43 @@
       "avg_engagement_time_sec": 0.0,
       "countries": {
         "BR": 1
+      },
+      "sources": {
+        "quantum-computing-research / portfolio": 1
+      }
+    },
+    "/quantum-error-mitigation/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "(direct) / (none)": 1,
+        "quantum-computing-research / portfolio": 1
+      }
+    },
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "CN": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/quantum-error-mitigation/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
       },
       "sources": {
         "quantum-computing-research / portfolio": 1
@@ -79,28 +117,28 @@
         "bing / organic": 1
       }
     },
-    "/quantum-error-mitigation/research.html": {
+    "/MAC5921-Deep-Learning/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "BR": 1
       },
       "sources": {
-        "quantum-computing-research / portfolio": 1
+        "bing / organic": 1
       }
     },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
+    "/IF4300214-Fisica-Experimental-IV/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "CN": 1
+        "BR": 1
       },
       "sources": {
-        "(direct) / (none)": 1
+        "naavilam / coursework": 1
       }
     },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
@@ -125,43 +163,6 @@
       },
       "sources": {
         "(direct) / (none)": 1
-      }
-    },
-    "/MAC5921-Deep-Learning/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "bing / organic": 1
-      }
-    },
-    "/quantum-error-mitigation/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "quantum-computing-research / portfolio": 1
-      }
-    },
-    "/IF4300214-Fisica-Experimental-IV/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
       }
     }
   }

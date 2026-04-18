@@ -139,6 +139,52 @@
   },
   {
     "org": "high-energy-physics-research",
+    "name": "experimental-correlation-uncertainty",
+    "full_name": "High-Energy-Physics-Research/experimental-correlation-uncertainty",
+    "url": "https://github.com/High-Energy-Physics-Research/experimental-correlation-uncertainty",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2026-04-17T14:46:19Z",
+    "has_gitignore": true,
+    "has_readme": true,
+    "notebooks_ipynb": 1,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 2,
+    "total_files": 46,
+    "branches_count": 2,
+    "branches": [
+      {
+        "branch": "gh-pages",
+        "head_sha": "742e418a771147d1c0af03e2fc7ca334ec318edd",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 22
+      },
+      {
+        "branch": "main",
+        "head_sha": "989d5a9efbae9d16504c992103ee23c75d18e368",
+        "has_gitignore": true,
+        "has_readme": true,
+        "notebooks_ipynb": 1,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 2,
+        "total_files": 24
+      }
+    ]
+  },
+  {
+    "org": "high-energy-physics-research",
     "name": "Gaussian-Process-Research",
     "full_name": "High-Energy-Physics-Research/Gaussian-Process-Research",
     "url": "https://github.com/High-Energy-Physics-Research/Gaussian-Process-Research",
@@ -238,7 +284,7 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-04-02T12:37:15Z",
+    "pushed_at": "2026-04-17T14:17:55Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 0,
@@ -246,12 +292,12 @@
     "files_tex": 0,
     "files_md": 1,
     "files_yml": 7,
-    "total_files": 64,
+    "total_files": 65,
     "branches_count": 1,
     "branches": [
       {
         "branch": "main",
-        "head_sha": "8940bc8a56578ee23f3b7692a07893a32d67d44b",
+        "head_sha": "4b29150add551b9a44509d3e9c2717532a75e72a",
         "has_gitignore": true,
         "has_readme": true,
         "notebooks_ipynb": 0,
@@ -259,7 +305,7 @@
         "files_tex": 0,
         "files_md": 1,
         "files_yml": 7,
-        "total_files": 64
+        "total_files": 65
       }
     ]
   },
