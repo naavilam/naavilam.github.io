@@ -68,6 +68,42 @@
         "quantum-computing-research / portfolio": 1
       }
     },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
+      }
+    },
+    "/quantum-error-mitigation/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/quantum-error-mitigation/research.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "quantum-computing-research / portfolio": 1
+      }
+    },
     "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
       "views": 0,
       "sessions": 0,
@@ -92,30 +128,6 @@
         "bing / organic": 1
       }
     },
-    "/MAC5921-Deep-Learning/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "bing / organic": 1
-      }
-    },
-    "/quantum-error-mitigation/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
     "/quantum-error-mitigation/software.html": {
       "views": 0,
       "sessions": 0,
@@ -129,19 +141,7 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/quantum-error-mitigation/research.html": {
+    "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -150,7 +150,7 @@
         "BR": 2
       },
       "sources": {
-        "quantum-computing-research / portfolio": 1
+        "bing / organic": 1
       }
     }
   }
