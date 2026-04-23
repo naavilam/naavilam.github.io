@@ -3,19 +3,19 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
-    "academic-codex.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
     "quantum-computing-research.github.io": {
       "views": 1,
       "sessions": 1,
       "users": 1,
       "avg_session_duration_sec": 2.958991,
+      "countries": {},
+      "sources": {}
+    },
+    "academic-codex.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 1.049,
       "countries": {},
       "sources": {}
     },
@@ -45,12 +45,10 @@
       "countries": {
         "US": 6,
         "BR": 3,
-        "DZ": 1,
         "SG": 1
       },
       "sources": {
         "(direct) / (none)": 8,
-        "bing / organic": 1,
         "github.com / referral": 1
       }
     },
@@ -68,41 +66,16 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/MAC5921-Deep-Learning/": {
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "CN": 1
       },
       "sources": {
-        "bing / organic": 1
-      }
-    },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/quantum-error-mitigation/software.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "quantum-computing-research / portfolio": 1
+        "(direct) / (none)": 1
       }
     },
     "/quantum-error-mitigation/": {
@@ -117,25 +90,13 @@
         "(direct) / (none)": 1
       }
     },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
+    "/MAC5921-Deep-Learning/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "CN": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MAC5921-Deep-Learning/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
+        "BR": 1
       },
       "sources": {
         "bing / organic": 1
@@ -151,6 +112,31 @@
       },
       "sources": {
         "quantum-computing-research / portfolio": 1
+      }
+    },
+    "/quantum-error-mitigation/software.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "(direct) / (none)": 1,
+        "quantum-computing-research / portfolio": 1
+      }
+    },
+    "/MAC5921-Deep-Learning/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "bing / organic": 1
       }
     }
   }
