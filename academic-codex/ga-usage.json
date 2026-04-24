@@ -66,28 +66,16 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
+    "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "CN": 1
+        "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/quantum-error-mitigation/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
+        "bing / organic": 1
       }
     },
     "/MAC5921-Deep-Learning/": {
@@ -102,16 +90,16 @@
         "bing / organic": 1
       }
     },
-    "/quantum-error-mitigation/research.html": {
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "CN": 1
       },
       "sources": {
-        "quantum-computing-research / portfolio": 1
+        "(direct) / (none)": 1
       }
     },
     "/quantum-error-mitigation/software.html": {
@@ -127,7 +115,19 @@
         "quantum-computing-research / portfolio": 1
       }
     },
-    "/MAC5921-Deep-Learning/studies.html": {
+    "/quantum-error-mitigation/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/quantum-error-mitigation/research.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -136,7 +136,7 @@
         "BR": 2
       },
       "sources": {
-        "bing / organic": 1
+        "quantum-computing-research / portfolio": 1
       }
     }
   }
