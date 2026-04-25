@@ -3,14 +3,6 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
-    "quantum-computing-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 2.958991,
-      "countries": {},
-      "sources": {}
-    },
     "academic-codex.github.io": {
       "views": 1,
       "sessions": 1,
@@ -27,6 +19,14 @@
       "countries": {},
       "sources": {}
     },
+    "quantum-computing-research.github.io": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 6.782999,
+      "countries": {},
+      "sources": {}
+    },
     "quantum-materials-simulation-research.github.io": {
       "views": 1,
       "sessions": 1,
@@ -39,43 +39,15 @@
       "views": 0,
       "sessions": 0,
       "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
+      "avg_session_duration_sec": 0.0,
       "countries": {
         "US": 6,
-        "BR": 3,
+        "BR": 1,
         "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 8,
+        "(direct) / (none)": 7,
         "github.com / referral": 1
-      }
-    },
-    "/quantum-error-mitigation/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "clicks": 1,
-      "engagement_rate": 0.0,
-      "avg_engagement_time_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "quantum-computing-research / portfolio": 1
-      }
-    },
-    "/MAC5921-Deep-Learning/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "bing / organic": 1
       }
     },
     "/MAC5921-Deep-Learning/": {
@@ -102,7 +74,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/quantum-error-mitigation/software.html": {
+    "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -111,32 +83,7 @@
         "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 1,
-        "quantum-computing-research / portfolio": 1
-      }
-    },
-    "/quantum-error-mitigation/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/quantum-error-mitigation/research.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "quantum-computing-research / portfolio": 1
+        "bing / organic": 1
       }
     }
   }
