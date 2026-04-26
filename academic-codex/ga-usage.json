@@ -12,10 +12,10 @@
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 13.908711,
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "avg_session_duration_sec": 51.53163433333333,
       "countries": {},
       "sources": {}
     },
@@ -35,18 +35,36 @@
       "countries": {},
       "sources": {}
     },
-    "/": {
+    "topics-series-investments.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 5.195221,
+      "countries": {},
+      "sources": {}
+    },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 6,
-        "BR": 1,
-        "SG": 1
+        "BR": 1
       },
       "sources": {
-        "(direct) / (none)": 7,
+        "(not set)": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
         "github.com / referral": 1
       }
     },
@@ -72,6 +90,48 @@
       },
       "sources": {
         "(direct) / (none)": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(not set)": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "(not set)": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 6,
+        "BR": 4,
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 9,
+        "(not set)": 2,
+        "github.com / referral": 2
       }
     },
     "/MAC5921-Deep-Learning/studies.html": {
