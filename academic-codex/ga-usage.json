@@ -43,17 +43,21 @@
       "countries": {},
       "sources": {}
     },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
+    "topics-series-mathematics.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
       "avg_session_duration_sec": 0.0,
-      "countries": {
-        "CN": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-physics.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
     },
     "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
@@ -67,13 +71,13 @@
         "bing / organic": 1
       }
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "BR": 1
       },
       "sources": {
         "github.com / referral": 1
@@ -91,6 +95,21 @@
         "bing / organic": 1
       }
     },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 8,
+        "BR": 4,
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 11,
+        "github.com / referral": 2
+      }
+    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
@@ -103,6 +122,30 @@
         "github.com / referral": 1
       }
     },
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "CN": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -110,33 +153,6 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "BR": 5
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 6,
-        "BR": 4,
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 9,
-        "github.com / referral": 2
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
       },
       "sources": {
         "github.com / referral": 1
