@@ -587,6 +587,27 @@
   },
   {
     "org": "academic-codex",
+    "name": "IF4302214-Fisica-Experimental-IV",
+    "full_name": "Academic-Codex/IF4302214-Fisica-Experimental-IV",
+    "url": "https://github.com/Academic-Codex/IF4302214-Fisica-Experimental-IV",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2026-04-30T15:02:23Z",
+    "has_gitignore": false,
+    "has_readme": false,
+    "notebooks_ipynb": 0,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 0,
+    "files_yml": 0,
+    "total_files": 0,
+    "branches_count": 0,
+    "branches": []
+  },
+  {
+    "org": "academic-codex",
     "name": "IF4302305-Mecanica-Classica-I",
     "full_name": "Academic-Codex/IF4302305-Mecanica-Classica-I",
     "url": "https://github.com/Academic-Codex/IF4302305-Mecanica-Classica-I",
@@ -720,6 +741,52 @@
         "files_md": 1,
         "files_yml": 6,
         "total_files": 13
+      }
+    ]
+  },
+  {
+    "org": "academic-codex",
+    "name": "IF4302313-Fisica-Experimental-V",
+    "full_name": "Academic-Codex/IF4302313-Fisica-Experimental-V",
+    "url": "https://github.com/Academic-Codex/IF4302313-Fisica-Experimental-V",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2026-04-30T14:02:51Z",
+    "has_gitignore": false,
+    "has_readme": true,
+    "notebooks_ipynb": 0,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 1,
+    "files_yml": 2,
+    "total_files": 5,
+    "branches_count": 2,
+    "branches": [
+      {
+        "branch": "gh-pages",
+        "head_sha": "710b34728b87d04e6e7ed6055d8583399fb8fad0",
+        "has_gitignore": false,
+        "has_readme": false,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 0,
+        "files_yml": 0,
+        "total_files": 1
+      },
+      {
+        "branch": "main",
+        "head_sha": "9920186ae460b0e179694c01029fafc1391d92ed",
+        "has_gitignore": false,
+        "has_readme": true,
+        "notebooks_ipynb": 0,
+        "files_py": 0,
+        "files_tex": 0,
+        "files_md": 1,
+        "files_yml": 2,
+        "total_files": 4
       }
     ]
   },

@@ -1,10 +1,10 @@
 # Org Audit Report: academic-codex
 
-Generated: **2026-04-30 06:14 UTC**
+Generated: **2026-05-01 06:24 UTC**
 
-- Repositories: **95**
-- With README (any branch): **95/95**
-- With .gitignore (any branch): **58/95**
+- Repositories: **97**
+- With README (any branch): **96/97**
+- With .gitignore (any branch): **58/97**
 - Total notebooks (.ipynb) (sum over branches): **408**
 
 ## Table (top 50)
@@ -24,9 +24,11 @@ Generated: **2026-04-30 06:14 UTC**
 | [IF4302204-Fisica-Matematica-I](https://github.com/Academic-Codex/IF4302204-Fisica-Matematica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-02-04 |
 | [IF4302211-Fisica-III](https://github.com/Academic-Codex/IF4302211-Fisica-III) | 2 | ✅ | ✅ | 0 | 0 | 0 | 33 | 2026-02-04 |
 | [IF4302212-Fisica-IV](https://github.com/Academic-Codex/IF4302212-Fisica-IV) | 2 | ✅ | ✅ | 1 | 0 | 0 | 33 | 2026-02-04 |
+| [IF4302214-Fisica-Experimental-IV](https://github.com/Academic-Codex/IF4302214-Fisica-Experimental-IV) | 0 | — | — | 0 | 0 | 0 | 0 | 2026-04-30 |
 | [IF4302305-Mecanica-Classica-I](https://github.com/Academic-Codex/IF4302305-Mecanica-Classica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-02-04 |
 | [IF4302306-Mecanica-Classica-II](https://github.com/Academic-Codex/IF4302306-Mecanica-Classica-II) | 2 | ✅ | ✅ | 23 | 0 | 0 | 79 | 2026-02-04 |
 | [IF4302307-Fisica-Matematica-II](https://github.com/Academic-Codex/IF4302307-Fisica-Matematica-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-02-04 |
+| [IF4302313-Fisica-Experimental-V](https://github.com/Academic-Codex/IF4302313-Fisica-Experimental-V) | 2 | ✅ | — | 0 | 0 | 0 | 5 | 2026-04-30 |
 | [IF4302403-Mecanica-Quantica-I](https://github.com/Academic-Codex/IF4302403-Mecanica-Quantica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-02-04 |
 | [IF4302404-Mecanica-Quantica-II](https://github.com/Academic-Codex/IF4302404-Mecanica-Quantica-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-02-04 |
 | [MAC5722-Complexidade-Computacional](https://github.com/Academic-Codex/MAC5722-Complexidade-Computacional) | 2 | ✅ | ✅ | 2 | 1 | 8 | 61 | 2026-02-04 |
@@ -59,5 +61,3 @@ Generated: **2026-04-30 06:14 UTC**
 | [SCE0610-Programacao-Orientada-a-Objetos](https://github.com/Academic-Codex/SCE0610-Programacao-Orientada-a-Objetos) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-02-04 |
 | [SCE0611-Engenharia-de-Software](https://github.com/Academic-Codex/SCE0611-Engenharia-de-Software) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-02-04 |
 | [SCE0613-Arquitetura-de-Computadores](https://github.com/Academic-Codex/SCE0613-Arquitetura-de-Computadores) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-02-04 |
-| [SCE0614-Inteligencia-Artificial](https://github.com/Academic-Codex/SCE0614-Inteligencia-Artificial) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-02-04 |
-| [SCE0615-Banco-de-Dados](https://github.com/Academic-Codex/SCE0615-Banco-de-Dados) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-02-04 |
