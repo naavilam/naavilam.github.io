@@ -118,6 +118,14 @@
   status: completed
   completed_on: ''
   link: https://academic-codex.github.io/IF4302307-Fisica-Matematica-II
+- Course: Experimental Physics V
+  id: IF4302313
+  level: undergraduate
+  School: IF/USP
+  area: Physics
+  status: completed
+  completed_on: ''
+  link: https://academic-codex.github.io/IF4302313-Fisica-Experimental-V
 - Course: Quantum Mechanics I
   id: IF4302403
   level: undergraduate
