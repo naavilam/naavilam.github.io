@@ -59,30 +59,6 @@
       "countries": {},
       "sources": {}
     },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "CN": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/MAC5921-Deep-Learning/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "bing / organic": 1
-      }
-    },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -122,6 +98,18 @@
         "github.com / referral": 2
       }
     },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -132,6 +120,18 @@
       },
       "sources": {
         "github.com / referral": 1
+      }
+    },
+    "/MAC5921-Deep-Learning/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "bing / organic": 1
       }
     },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
@@ -146,16 +146,16 @@
         "github.com / referral": 1
       }
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "CN": 1
       },
       "sources": {
-        "github.com / referral": 1
+        "(direct) / (none)": 1
       }
     }
   }
