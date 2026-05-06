@@ -59,7 +59,50 @@
       "countries": {},
       "sources": {}
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "clicks": 1,
+      "engagement_rate": 0.0,
+      "avg_engagement_time_sec": 0.0,
+      "countries": {
+        "HK": 3
+      },
+      "sources": {
+        "bing / organic": 1
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "clicks": 1,
+      "engagement_rate": 0.0,
+      "avg_engagement_time_sec": 0.0,
+      "countries": {
+        "HK": 1
+      },
+      "sources": {
+        "bing / organic": 1
+      }
+    },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2,
+        "HK": 2
+      },
+      "sources": {
+        "(not set)": 1,
+        "bing / organic": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -69,6 +112,30 @@
       },
       "sources": {
         "github.com / referral": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "CN": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
       }
     },
     "/MAC5921-Deep-Learning/studies.html": {
@@ -83,16 +150,17 @@
         "bing / organic": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "HK": 8
       },
       "sources": {
-        "github.com / referral": 1
+        "(not set)": 1,
+        "bing / organic": 1
       }
     },
     "/MAC5921-Deep-Learning/": {
@@ -122,40 +190,19 @@
         "github.com / referral": 2
       }
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "BR": 1,
+        "HK": 1
       },
       "sources": {
+        "(not set)": 1,
+        "bing / organic": 1,
         "github.com / referral": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 5
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "CN": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
       }
     }
   }
