@@ -8,20 +8,20 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-03-20T16:09:19Z",
+    "pushed_at": "2026-05-07T13:17:15Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 20,
     "files_py": 0,
-    "files_tex": 48,
+    "files_tex": 72,
     "files_md": 1,
     "files_yml": 3,
-    "total_files": 194,
+    "total_files": 252,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "85e227f14e5e5f40e2d122781785ed4c3373f07d",
+        "head_sha": "4fbb917865dff14638fbb1322d6843921a874878",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -29,19 +29,19 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 50
+        "total_files": 52
       },
       {
         "branch": "main",
-        "head_sha": "fdd5530fb8215ea2fb9fe0a9a4b3c2d78fa38e89",
+        "head_sha": "54b893df4883ba880f093589ff2db78d7cebebc2",
         "has_gitignore": true,
         "has_readme": true,
         "notebooks_ipynb": 20,
         "files_py": 0,
-        "files_tex": 48,
+        "files_tex": 72,
         "files_md": 1,
         "files_yml": 3,
-        "total_files": 144
+        "total_files": 200
       }
     ]
   },
