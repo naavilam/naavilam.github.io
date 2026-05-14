@@ -1,0 +1,32 @@
+---
+layout: page
+permalink: /focus.html
+title: Focus
+header-img:
+last-updated: 2020-10-30 5:55 PM
+---
+
+{% assign focus_items = site.data.focus %}
+
+<div class="focus-wall">
+    {% for item in focus_items %}
+    {% assign w = item.weight | default: 1 %}
+    {% assign ratio = item.ratio | default: "4/3" %}
+
+    <a class="focus-tile w-{{ w }}" href="{{ item.link | default: '#' }}" target="_blank" rel="noopener">
+        <div class="focus-media ratio-{{ ratio | replace: '/', '-' }}">
+            {% if item.image %}
+            <img src="{{ item.image | relative_url }}" alt="{{ item.title | escape }}" loading="lazy" />
+            {% else %}
+            <div class="focus-fallback"></div>
+            {% endif %}
+        </div>
+
+        <div class="focus-overlay">
+            {% if item.tag %}<div class="focus-tag">{{ item.tag }}</div>{% endif %}
+            <div class="focus-title">{{ item.title }}</div>
+            {% if item.description %}<div class="focus-desc">{{ item.description }}</div>{% endif %}
+        </div>
+    </a>
+    {% endfor %}
+</div>
