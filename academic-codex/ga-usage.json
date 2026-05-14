@@ -71,34 +71,18 @@
         "bing / organic": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 5
+        "BR": 2,
+        "HK": 2
       },
       "sources": {
+        "bing / organic": 1,
         "github.com / referral": 1
-      }
-    },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 8,
-        "SG": 2,
-        "US": 2,
-        "TW": 1
-      },
-      "sources": {
-        "(direct) / (none)": 6,
-        "bing / organic": 2,
-        "child_repo / navbar": 2,
-        "github.com / referral": 2
       }
     },
     "/MAC5921-Deep-Learning/": {
@@ -125,6 +109,36 @@
         "bing / organic": 1
       }
     },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 8,
+        "SG": 2,
+        "US": 2,
+        "TW": 1
+      },
+      "sources": {
+        "(direct) / (none)": 6,
+        "bing / organic": 2,
+        "child_repo / navbar": 2,
+        "github.com / referral": 2
+      }
+    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
@@ -139,13 +153,13 @@
         "github.com / referral": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "BR": 5
       },
       "sources": {
         "github.com / referral": 1
@@ -161,20 +175,6 @@
       },
       "sources": {
         "bing / organic": 1
-      }
-    },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2,
-        "HK": 2
-      },
-      "sources": {
-        "bing / organic": 1,
-        "github.com / referral": 1
       }
     }
   }

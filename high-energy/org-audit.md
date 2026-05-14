@@ -1,22 +1,23 @@
 # Org Audit Report: high-energy
 
-Generated: **2026-05-13 06:35 UTC**
+Generated: **2026-05-14 06:35 UTC**
 
-- Repositories: **10**
-- With README (any branch): **9/10**
-- With .gitignore (any branch): **8/10**
+- Repositories: **11**
+- With README (any branch): **9/11**
+- With .gitignore (any branch): **8/11**
 - Total notebooks (.ipynb) (sum over branches): **137**
 
 ## Table (top 50)
 
 | Repo | branches | README | .gitignore | ipynb | py | tex | files | updated |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| [Academic-Research-Journaling](https://github.com/High-Energy-Physics-Research/Academic-Research-Journaling) | 2 | ✅ | ✅ | 20 | 0 | 72 | 252 | 2026-05-08 |
+| [Academic-Research-Journaling](https://github.com/High-Energy-Physics-Research/Academic-Research-Journaling) | 2 | ✅ | ✅ | 20 | 0 | 84 | 276 | 2026-05-13 |
 | [Bayesian-Inference-Research](https://github.com/High-Energy-Physics-Research/Bayesian-Inference-Research) | 2 | — | ✅ | 1 | 0 | 0 | 27 | 2026-02-04 |
 | [cern-root-student-course](https://github.com/High-Energy-Physics-Research/cern-root-student-course) | 2 | ✅ | ✅ | 32 | 3 | 0 | 142 | 2026-02-04 |
 | [experimental-correlation-uncertainty](https://github.com/High-Energy-Physics-Research/experimental-correlation-uncertainty) | 2 | ✅ | ✅ | 1 | 0 | 0 | 46 | 2026-04-17 |
 | [Gaussian-Process-Research](https://github.com/High-Energy-Physics-Research/Gaussian-Process-Research) | 2 | ✅ | ✅ | 17 | 0 | 0 | 71 | 2026-02-13 |
 | [gpytorch](https://github.com/High-Energy-Physics-Research/gpytorch) | 2 | ✅ | ✅ | 50 | 323 | 0 | 515 | 2026-02-10 |
+| [heavy-ion-collision-simulation](https://github.com/High-Energy-Physics-Research/heavy-ion-collision-simulation) | 0 | — | — | 0 | 0 | 0 | 0 | 2026-05-13 |
 | [high-energy-physics-research.github.io](https://github.com/High-Energy-Physics-Research/high-energy-physics-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 65 | 2026-04-17 |
 | [ROSE_framework](https://github.com/High-Energy-Physics-Research/ROSE_framework) | 1 | ✅ | — | 5 | 0 | 0 | 8 | 2025-02-11 |
 | [SummerSchool2023](https://github.com/High-Energy-Physics-Research/SummerSchool2023) | 2 | ✅ | — | 8 | 635 | 0 | 1503 | 2026-02-06 |

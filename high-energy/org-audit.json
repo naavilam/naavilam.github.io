@@ -8,20 +8,20 @@
     "archived": false,
     "fork": false,
     "default_branch": "main",
-    "pushed_at": "2026-05-08T18:49:17Z",
+    "pushed_at": "2026-05-13T17:04:42Z",
     "has_gitignore": true,
     "has_readme": true,
     "notebooks_ipynb": 20,
     "files_py": 0,
-    "files_tex": 72,
+    "files_tex": 84,
     "files_md": 1,
     "files_yml": 3,
-    "total_files": 252,
+    "total_files": 276,
     "branches_count": 2,
     "branches": [
       {
         "branch": "gh-pages",
-        "head_sha": "e18f8508afa7dc19015e7f5055645ca7078c1068",
+        "head_sha": "737cec0699acdbaa497c4844d6fac827cb9a3f62",
         "has_gitignore": false,
         "has_readme": false,
         "notebooks_ipynb": 0,
@@ -29,19 +29,19 @@
         "files_tex": 0,
         "files_md": 0,
         "files_yml": 0,
-        "total_files": 52
+        "total_files": 53
       },
       {
         "branch": "main",
-        "head_sha": "2151bdbc2a97de90f8a720c7cff1e66754d10854",
+        "head_sha": "574b9913bfa8cbd39c7523f6d73b1ccce72759a9",
         "has_gitignore": true,
         "has_readme": true,
         "notebooks_ipynb": 20,
         "files_py": 0,
-        "files_tex": 72,
+        "files_tex": 84,
         "files_md": 1,
         "files_yml": 3,
-        "total_files": 200
+        "total_files": 223
       }
     ]
   },
@@ -274,6 +274,27 @@
         "total_files": 444
       }
     ]
+  },
+  {
+    "org": "high-energy-physics-research",
+    "name": "heavy-ion-collision-simulation",
+    "full_name": "High-Energy-Physics-Research/heavy-ion-collision-simulation",
+    "url": "https://github.com/High-Energy-Physics-Research/heavy-ion-collision-simulation",
+    "private": false,
+    "archived": false,
+    "fork": false,
+    "default_branch": "main",
+    "pushed_at": "2026-05-13T16:42:30Z",
+    "has_gitignore": false,
+    "has_readme": false,
+    "notebooks_ipynb": 0,
+    "files_py": 0,
+    "files_tex": 0,
+    "files_md": 0,
+    "files_yml": 0,
+    "total_files": 0,
+    "branches_count": 0,
+    "branches": []
   },
   {
     "org": "high-energy-physics-research",
