@@ -1,15 +1,15 @@
 ---
 layout: page
-permalink: /focus.html
-title: Focus
+permalink: /insights.html
+title: Insights
 header-img:
 last-updated: 2020-10-30 5:55 PM
 ---
 
-{% assign focus_items = site.data.focus %}
+{% assign insights_items = site.data.insights %}
 
 <div class="focus-wall">
-    {% for item in focus_items %}
+    {% for item in insights_items %}
     {% assign w = item.weight | default: 1 %}
     {% assign ratio = item.ratio | default: "4/3" %}
 
