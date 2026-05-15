@@ -2,7 +2,7 @@
   tag: Mathematics
   description: Rigorous proofs for key results in calculus, analysis, and linear algebra.
   link: https://rigorous-proof-series-mathematics.github.io
-  image: /assets/img/insights/rigorous-proof-series.jpeg
+  image: /assets/img/insights/rigorous-proof-series.png
   weight: 9
   ratio: w9
 
@@ -10,7 +10,7 @@
   tag: Physics
   description: Rigorous proofs for key results in physics, including statistical mechanics.
   link: https://rigorous-proof-series-physics.github.io
-  image: /assets/img/insights/rigorous-proof-series.jpeg
+  image: /assets/img/insights/rigorous-proof-series.png
   weight: 9
   ratio: w9
 
@@ -18,7 +18,7 @@
   tag: Computer Science
   description: Rigorous proofs for key results in computer science, including computational complexity.
   link: https://rigorous-proof-series-computer-science.github.io
-  image: /assets/img/insights/rigorous-proof-series.jpeg
+  image: /assets/img/insights/rigorous-proof-series.png
   weight: 9
   ratio: w9
 
@@ -26,6 +26,6 @@
   tag: Machine Learning
   description: Rigorous proofs for key results in machine learning.
   link: https://rigorous-proof-series-machine-learning.github.io
-  image: /assets/img/insights/rigorous-proof-series.jpeg
+  image: /assets/img/insights/rigorous-proof-series.png
   weight: 9
   ratio: w9
