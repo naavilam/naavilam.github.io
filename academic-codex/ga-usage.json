@@ -3,6 +3,30 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
+    "rigorous-proof-series-mathematics.github.io": {
+      "views": 30,
+      "sessions": 24,
+      "users": 20,
+      "avg_session_duration_sec": 192.58288516666667,
+      "countries": {},
+      "sources": {}
+    },
+    "rigorous-proof-series-computer-science.github.io": {
+      "views": 19,
+      "sessions": 15,
+      "users": 13,
+      "avg_session_duration_sec": 85.13978086666665,
+      "countries": {},
+      "sources": {}
+    },
+    "rigorous-proof-series-physics.github.io": {
+      "views": 16,
+      "sessions": 17,
+      "users": 15,
+      "avg_session_duration_sec": 116.731174,
+      "countries": {},
+      "sources": {}
+    },
     "academic-codex.github.io": {
       "views": 1,
       "sessions": 1,
@@ -43,6 +67,36 @@
       "countries": {},
       "sources": {}
     },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "clicks": 9,
+      "engagement_rate": 0.0,
+      "avg_engagement_time_sec": 0.0,
+      "countries": {
+        "BR": 28,
+        "US": 28,
+        "??": 8,
+        "RU": 3,
+        "CY": 2,
+        "SG": 2,
+        "CH": 1,
+        "CN": 1,
+        "DE": 1,
+        "IN": 1,
+        "NL": 1,
+        "SC": 1,
+        "TW": 1
+      },
+      "sources": {
+        "(direct) / (none)": 48,
+        "(not set)": 22,
+        "github.com / referral": 9,
+        "child_repo / navbar": 3,
+        "bing / organic": 2
+      }
+    },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
       "views": 0,
       "sessions": 0,
@@ -71,17 +125,15 @@
         "bing / organic": 1
       }
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2,
-        "HK": 2
+        "BR": 1
       },
       "sources": {
-        "bing / organic": 1,
         "github.com / referral": 1
       }
     },
@@ -97,46 +149,42 @@
         "bing / organic": 1
       }
     },
-    "/MAC5921-Deep-Learning/studies.html": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "bing / organic": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
+        "BR": 5
       },
       "sources": {
         "github.com / referral": 1
       }
     },
-    "/": {
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 8,
-        "SG": 2,
-        "US": 2,
-        "TW": 1
+        "BR": 2,
+        "HK": 2
       },
       "sources": {
-        "(direct) / (none)": 6,
-        "bing / organic": 2,
-        "child_repo / navbar": 2,
-        "github.com / referral": 2
+        "bing / organic": 1,
+        "github.com / referral": 1
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "HK": 8
+      },
+      "sources": {
+        "bing / organic": 1
       }
     },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
@@ -153,25 +201,13 @@
         "github.com / referral": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+    "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 5
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "HK": 8
+        "BR": 2
       },
       "sources": {
         "bing / organic": 1
