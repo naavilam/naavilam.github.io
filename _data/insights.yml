@@ -1,6 +1,6 @@
 - title: Rigorous Proof Series
   tag: Mathematics
-  description: Rigorous proofs for key results in calculus, analysis, and linear algebra.
+  description: Rigorous proofs for key results in mathematics, including calculus, algebra, and probability.
   link: https://rigorous-proof-series-mathematics.github.io
   image: /assets/img/insights/rigorous-proof-series.png
   weight: 9
@@ -8,7 +8,7 @@
 
 - title: Rigorous Proof Series
   tag: Physics
-  description: Rigorous proofs for key results in physics, including statistical mechanics.
+  description: Rigorous proofs for key results in physics, including quantum mechanics.
   link: https://rigorous-proof-series-physics.github.io
   image: /assets/img/insights/rigorous-proof-series.png
   weight: 9
