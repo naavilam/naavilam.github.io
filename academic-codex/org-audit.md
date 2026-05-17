@@ -1,6 +1,6 @@
 # Org Audit Report: academic-codex
 
-Generated: **2026-05-16 06:10 UTC**
+Generated: **2026-05-17 06:34 UTC**
 
 - Repositories: **97**
 - With README (any branch): **96/97**
@@ -11,53 +11,53 @@ Generated: **2026-05-16 06:10 UTC**
 
 | Repo | branches | README | .gitignore | ipynb | py | tex | files | updated |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| [academic-codex.github.io](https://github.com/Academic-Codex/academic-codex.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 243 | 2026-05-15 |
-| [DPG5011-Formacao-do-Cientista-Empreendedor](https://github.com/Academic-Codex/DPG5011-Formacao-do-Cientista-Empreendedor) | 2 | ✅ | ✅ | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [EAP5054-Formacao-do-Cientista-Empreendedor-II](https://github.com/Academic-Codex/EAP5054-Formacao-do-Cientista-Empreendedor-II) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [FCM0101-Fisica-I](https://github.com/Academic-Codex/FCM0101-Fisica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-15 |
-| [FCM0102-Fisica-II](https://github.com/Academic-Codex/FCM0102-Fisica-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-15 |
-| [FFI0180-Laboratorio-de-Fisica-Geral-I](https://github.com/Academic-Codex/FFI0180-Laboratorio-de-Fisica-Geral-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-15 |
-| [FFI0181-Laboratorio-de-Fisica-Geral-II](https://github.com/Academic-Codex/FFI0181-Laboratorio-de-Fisica-Geral-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-15 |
-| [IF4300214-Fisica-Experimental-IV](https://github.com/Academic-Codex/IF4300214-Fisica-Experimental-IV) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [IF4302111-Fisica-I](https://github.com/Academic-Codex/IF4302111-Fisica-I) | 2 | ✅ | — | 1 | 0 | 0 | 35 | 2026-05-15 |
-| [IF4302112-Fisica-II](https://github.com/Academic-Codex/IF4302112-Fisica-II) | 2 | ✅ | ✅ | 14 | 0 | 0 | 60 | 2026-05-15 |
-| [IF4302204-Fisica-Matematica-I](https://github.com/Academic-Codex/IF4302204-Fisica-Matematica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-05-15 |
-| [IF4302211-Fisica-III](https://github.com/Academic-Codex/IF4302211-Fisica-III) | 2 | ✅ | ✅ | 0 | 0 | 0 | 33 | 2026-05-15 |
-| [IF4302212-Fisica-IV](https://github.com/Academic-Codex/IF4302212-Fisica-IV) | 2 | ✅ | ✅ | 1 | 0 | 0 | 33 | 2026-05-15 |
+| [academic-codex.github.io](https://github.com/Academic-Codex/academic-codex.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 243 | 2026-05-17 |
+| [DPG5011-Formacao-do-Cientista-Empreendedor](https://github.com/Academic-Codex/DPG5011-Formacao-do-Cientista-Empreendedor) | 2 | ✅ | ✅ | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [EAP5054-Formacao-do-Cientista-Empreendedor-II](https://github.com/Academic-Codex/EAP5054-Formacao-do-Cientista-Empreendedor-II) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [FCM0101-Fisica-I](https://github.com/Academic-Codex/FCM0101-Fisica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-17 |
+| [FCM0102-Fisica-II](https://github.com/Academic-Codex/FCM0102-Fisica-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-17 |
+| [FFI0180-Laboratorio-de-Fisica-Geral-I](https://github.com/Academic-Codex/FFI0180-Laboratorio-de-Fisica-Geral-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-17 |
+| [FFI0181-Laboratorio-de-Fisica-Geral-II](https://github.com/Academic-Codex/FFI0181-Laboratorio-de-Fisica-Geral-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-17 |
+| [IF4300214-Fisica-Experimental-IV](https://github.com/Academic-Codex/IF4300214-Fisica-Experimental-IV) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [IF4302111-Fisica-I](https://github.com/Academic-Codex/IF4302111-Fisica-I) | 2 | ✅ | — | 1 | 0 | 0 | 35 | 2026-05-17 |
+| [IF4302112-Fisica-II](https://github.com/Academic-Codex/IF4302112-Fisica-II) | 2 | ✅ | ✅ | 14 | 0 | 0 | 60 | 2026-05-17 |
+| [IF4302204-Fisica-Matematica-I](https://github.com/Academic-Codex/IF4302204-Fisica-Matematica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-05-17 |
+| [IF4302211-Fisica-III](https://github.com/Academic-Codex/IF4302211-Fisica-III) | 2 | ✅ | ✅ | 0 | 0 | 0 | 33 | 2026-05-17 |
+| [IF4302212-Fisica-IV](https://github.com/Academic-Codex/IF4302212-Fisica-IV) | 2 | ✅ | ✅ | 1 | 0 | 0 | 33 | 2026-05-17 |
 | [IF4302214-Fisica-Experimental-IV](https://github.com/Academic-Codex/IF4302214-Fisica-Experimental-IV) | 0 | — | — | 0 | 0 | 0 | 0 | 2026-04-30 |
-| [IF4302305-Mecanica-Classica-I](https://github.com/Academic-Codex/IF4302305-Mecanica-Classica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-15 |
-| [IF4302306-Mecanica-Classica-II](https://github.com/Academic-Codex/IF4302306-Mecanica-Classica-II) | 2 | ✅ | ✅ | 23 | 0 | 0 | 79 | 2026-05-15 |
-| [IF4302307-Fisica-Matematica-II](https://github.com/Academic-Codex/IF4302307-Fisica-Matematica-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-15 |
+| [IF4302305-Mecanica-Classica-I](https://github.com/Academic-Codex/IF4302305-Mecanica-Classica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-17 |
+| [IF4302306-Mecanica-Classica-II](https://github.com/Academic-Codex/IF4302306-Mecanica-Classica-II) | 2 | ✅ | ✅ | 23 | 0 | 0 | 79 | 2026-05-17 |
+| [IF4302307-Fisica-Matematica-II](https://github.com/Academic-Codex/IF4302307-Fisica-Matematica-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-17 |
 | [IF4302313-Fisica-Experimental-V](https://github.com/Academic-Codex/IF4302313-Fisica-Experimental-V) | 2 | ✅ | — | 0 | 0 | 0 | 5 | 2026-04-30 |
-| [IF4302403-Mecanica-Quantica-I](https://github.com/Academic-Codex/IF4302403-Mecanica-Quantica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-15 |
-| [IF4302404-Mecanica-Quantica-II](https://github.com/Academic-Codex/IF4302404-Mecanica-Quantica-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-15 |
-| [MAC5722-Complexidade-Computacional](https://github.com/Academic-Codex/MAC5722-Complexidade-Computacional) | 2 | ✅ | ✅ | 2 | 1 | 8 | 61 | 2026-05-15 |
-| [MAC5921-Deep-Learning](https://github.com/Academic-Codex/MAC5921-Deep-Learning) | 2 | ✅ | ✅ | 16 | 4 | 3 | 148 | 2026-05-15 |
-| [MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning](https://github.com/Academic-Codex/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning) | 2 | ✅ | ✅ | 28 | 0 | 34 | 283 | 2026-05-15 |
-| [MAT5730-Algebra-Linear](https://github.com/Academic-Codex/MAT5730-Algebra-Linear) | 2 | ✅ | ✅ | 0 | 0 | 56 | 93 | 2026-05-15 |
-| [MCKZ-Metodos-Quantitativos](https://github.com/Academic-Codex/MCKZ-Metodos-Quantitativos) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-05-15 |
-| [PGF5001-Mecanica-Quantica-I](https://github.com/Academic-Codex/PGF5001-Mecanica-Quantica-I) | 2 | ✅ | ✅ | 24 | 0 | 2 | 87 | 2026-05-15 |
-| [PGF5002-Mecanica-Quantica-II](https://github.com/Academic-Codex/PGF5002-Mecanica-Quantica-II) | 2 | ✅ | ✅ | 0 | 0 | 0 | 34 | 2026-05-15 |
-| [PGF5003-Eletrodinamica](https://github.com/Academic-Codex/PGF5003-Eletrodinamica) | 2 | ✅ | ✅ | 24 | 1 | 3 | 88 | 2026-05-15 |
-| [PGF5005-Mecanica-Classica](https://github.com/Academic-Codex/PGF5005-Mecanica-Classica) | 2 | ✅ | ✅ | 42 | 0 | 2 | 348 | 2026-05-15 |
-| [PGF5006-Mecanica-Estatistica](https://github.com/Academic-Codex/PGF5006-Mecanica-Estatistica) | 2 | ✅ | ✅ | 28 | 0 | 0 | 89 | 2026-05-15 |
-| [PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I](https://github.com/Academic-Codex/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I) | 2 | ✅ | ✅ | 26 | 0 | 0 | 84 | 2026-05-15 |
-| [PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas](https://github.com/Academic-Codex/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas) | 2 | ✅ | ✅ | 1 | 0 | 8 | 140 | 2026-05-15 |
-| [PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada](https://github.com/Academic-Codex/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada) | 2 | ✅ | ✅ | 25 | 0 | 0 | 82 | 2026-05-15 |
-| [SAP0679-Humanidades-e-Ciencias-Sociais](https://github.com/Academic-Codex/SAP0679-Humanidades-e-Ciencias-Sociais) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-15 |
-| [SCC0635-Visao-Computacional-em-Robotica](https://github.com/Academic-Codex/SCC0635-Visao-Computacional-em-Robotica) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCC0650-Computacao-Grafica](https://github.com/Academic-Codex/SCC0650-Computacao-Grafica) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCC0661-Hipermidia-e-Multimidia](https://github.com/Academic-Codex/SCC0661-Hipermidia-e-Multimidia) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-15 |
-| [SCE0245-Algoritmos-Avancados](https://github.com/Academic-Codex/SCE0245-Algoritmos-Avancados) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCE0294-Laboratorio-de-Algoritmos-Avancados](https://github.com/Academic-Codex/SCE0294-Laboratorio-de-Algoritmos-Avancados) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-15 |
-| [SCE0601-Introducao-a-Ciencia-da-Computacao-I](https://github.com/Academic-Codex/SCE0601-Introducao-a-Ciencia-da-Computacao-I) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I](https://github.com/Academic-Codex/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-15 |
-| [SCE0602-Introducao-Ciencia-Da-Computacao-II](https://github.com/Academic-Codex/SCE0602-Introducao-Ciencia-Da-Computacao-II) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCE0603-Algoritmos-e-Estrutura-de-Dados-I](https://github.com/Academic-Codex/SCE0603-Algoritmos-e-Estrutura-de-Dados-I) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCE0605-Teoria-da-Computacao-e-Compiladores](https://github.com/Academic-Codex/SCE0605-Teoria-da-Computacao-e-Compiladores) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCE0606-Algoritmos-e-Estrutura-de-Dados-II](https://github.com/Academic-Codex/SCE0606-Algoritmos-e-Estrutura-de-Dados-II) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCE0607-Organizacao-de-Computadores-Digitais-I](https://github.com/Academic-Codex/SCE0607-Organizacao-de-Computadores-Digitais-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-05-15 |
-| [SCE0609-Sistemas-Operacionais-I](https://github.com/Academic-Codex/SCE0609-Sistemas-Operacionais-I) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCE0610-Programacao-Orientada-a-Objetos](https://github.com/Academic-Codex/SCE0610-Programacao-Orientada-a-Objetos) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
-| [SCE0611-Engenharia-de-Software](https://github.com/Academic-Codex/SCE0611-Engenharia-de-Software) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-15 |
-| [SCE0613-Arquitetura-de-Computadores](https://github.com/Academic-Codex/SCE0613-Arquitetura-de-Computadores) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-15 |
+| [IF4302403-Mecanica-Quantica-I](https://github.com/Academic-Codex/IF4302403-Mecanica-Quantica-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-17 |
+| [IF4302404-Mecanica-Quantica-II](https://github.com/Academic-Codex/IF4302404-Mecanica-Quantica-II) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-17 |
+| [MAC5722-Complexidade-Computacional](https://github.com/Academic-Codex/MAC5722-Complexidade-Computacional) | 2 | ✅ | ✅ | 2 | 1 | 8 | 61 | 2026-05-17 |
+| [MAC5921-Deep-Learning](https://github.com/Academic-Codex/MAC5921-Deep-Learning) | 2 | ✅ | ✅ | 16 | 4 | 3 | 148 | 2026-05-17 |
+| [MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning](https://github.com/Academic-Codex/MAE5911-Fundamentos-de-Estatistica-e-Machine-Learning) | 2 | ✅ | ✅ | 28 | 0 | 34 | 283 | 2026-05-17 |
+| [MAT5730-Algebra-Linear](https://github.com/Academic-Codex/MAT5730-Algebra-Linear) | 2 | ✅ | ✅ | 0 | 0 | 56 | 93 | 2026-05-17 |
+| [MCKZ-Metodos-Quantitativos](https://github.com/Academic-Codex/MCKZ-Metodos-Quantitativos) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-05-17 |
+| [PGF5001-Mecanica-Quantica-I](https://github.com/Academic-Codex/PGF5001-Mecanica-Quantica-I) | 2 | ✅ | ✅ | 24 | 0 | 2 | 87 | 2026-05-17 |
+| [PGF5002-Mecanica-Quantica-II](https://github.com/Academic-Codex/PGF5002-Mecanica-Quantica-II) | 2 | ✅ | ✅ | 0 | 0 | 0 | 34 | 2026-05-17 |
+| [PGF5003-Eletrodinamica](https://github.com/Academic-Codex/PGF5003-Eletrodinamica) | 2 | ✅ | ✅ | 24 | 1 | 3 | 88 | 2026-05-17 |
+| [PGF5005-Mecanica-Classica](https://github.com/Academic-Codex/PGF5005-Mecanica-Classica) | 2 | ✅ | ✅ | 42 | 0 | 2 | 348 | 2026-05-17 |
+| [PGF5006-Mecanica-Estatistica](https://github.com/Academic-Codex/PGF5006-Mecanica-Estatistica) | 2 | ✅ | ✅ | 28 | 0 | 0 | 89 | 2026-05-17 |
+| [PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I](https://github.com/Academic-Codex/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I) | 2 | ✅ | ✅ | 26 | 0 | 0 | 84 | 2026-05-17 |
+| [PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas](https://github.com/Academic-Codex/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas) | 2 | ✅ | ✅ | 1 | 0 | 8 | 140 | 2026-05-17 |
+| [PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada](https://github.com/Academic-Codex/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada) | 2 | ✅ | ✅ | 25 | 0 | 0 | 82 | 2026-05-17 |
+| [SAP0679-Humanidades-e-Ciencias-Sociais](https://github.com/Academic-Codex/SAP0679-Humanidades-e-Ciencias-Sociais) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-17 |
+| [SCC0635-Visao-Computacional-em-Robotica](https://github.com/Academic-Codex/SCC0635-Visao-Computacional-em-Robotica) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCC0650-Computacao-Grafica](https://github.com/Academic-Codex/SCC0650-Computacao-Grafica) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCC0661-Hipermidia-e-Multimidia](https://github.com/Academic-Codex/SCC0661-Hipermidia-e-Multimidia) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-17 |
+| [SCE0245-Algoritmos-Avancados](https://github.com/Academic-Codex/SCE0245-Algoritmos-Avancados) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCE0294-Laboratorio-de-Algoritmos-Avancados](https://github.com/Academic-Codex/SCE0294-Laboratorio-de-Algoritmos-Avancados) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-17 |
+| [SCE0601-Introducao-a-Ciencia-da-Computacao-I](https://github.com/Academic-Codex/SCE0601-Introducao-a-Ciencia-da-Computacao-I) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I](https://github.com/Academic-Codex/SCE0601-Laboratorio-de-Introducao-a-Ciencia-da-Computacao-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 31 | 2026-05-17 |
+| [SCE0602-Introducao-Ciencia-Da-Computacao-II](https://github.com/Academic-Codex/SCE0602-Introducao-Ciencia-Da-Computacao-II) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCE0603-Algoritmos-e-Estrutura-de-Dados-I](https://github.com/Academic-Codex/SCE0603-Algoritmos-e-Estrutura-de-Dados-I) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCE0605-Teoria-da-Computacao-e-Compiladores](https://github.com/Academic-Codex/SCE0605-Teoria-da-Computacao-e-Compiladores) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCE0606-Algoritmos-e-Estrutura-de-Dados-II](https://github.com/Academic-Codex/SCE0606-Algoritmos-e-Estrutura-de-Dados-II) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCE0607-Organizacao-de-Computadores-Digitais-I](https://github.com/Academic-Codex/SCE0607-Organizacao-de-Computadores-Digitais-I) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-05-17 |
+| [SCE0609-Sistemas-Operacionais-I](https://github.com/Academic-Codex/SCE0609-Sistemas-Operacionais-I) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCE0610-Programacao-Orientada-a-Objetos](https://github.com/Academic-Codex/SCE0610-Programacao-Orientada-a-Objetos) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
+| [SCE0611-Engenharia-de-Software](https://github.com/Academic-Codex/SCE0611-Engenharia-de-Software) | 2 | ✅ | ✅ | 1 | 0 | 0 | 35 | 2026-05-17 |
+| [SCE0613-Arquitetura-de-Computadores](https://github.com/Academic-Codex/SCE0613-Arquitetura-de-Computadores) | 2 | ✅ | — | 1 | 0 | 0 | 33 | 2026-05-17 |
