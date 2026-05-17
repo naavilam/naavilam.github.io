@@ -272,22 +272,45 @@ def render_references_html(refs: list[dict]) -> str:
         year = html.escape(str(r.get("year", "")).strip())
         note = html.escape(str(r.get("note", "")).strip())
         url = str(r.get("url", "")).strip()
+        image_url = str(r.get("image_url", "")).strip()
 
-        # monta linha “bonita” e mono
-        parts = [f"<strong>{title}</strong>"]
         meta = " — ".join([p for p in [author, year] if p])
+
+        cover_html = ""
+        if image_url:
+            safe_img = html.escape(image_url, quote=True)
+            cover_html = (
+                f"<div class='ref-cover-wrap'>"
+                f"<img class='ref-cover' src='{safe_img}' alt='Cover of {title}' loading='lazy'>"
+                f"</div>"
+            )
+
+        body = [f"<strong class='ref-title'>{title}</strong>"]
+
         if meta:
-            parts.append(f"<div class='ref-meta'>{meta}</div>")
+            body.append(f"<div class='ref-meta'>{meta}</div>")
+
         if note:
-            parts.append(f"<div class='ref-note'><em>{note}</em></div>")
+            body.append(f"<div class='ref-note'><em>{note}</em></div>")
 
         if url:
             safe_url = html.escape(url, quote=True)
-            parts.append(f"<div class='ref-link'><a href='{safe_url}' target='_blank' rel='noreferrer'>link</a></div>")
+            body.append(
+                f"<div class='ref-link'>"
+                f"<a href='{safe_url}' target='_blank' rel='noreferrer'>Open reference</a>"
+                f"</div>"
+            )
 
-        items.append("<li class='ref-item'>" + "\n".join(parts) + "</li>")
+        items.append(
+            "<li class='ref-item ref-card'>"
+            + cover_html
+            + "<div class='ref-body'>"
+            + "\n".join(body)
+            + "</div>"
+            + "</li>"
+        )
 
-    return "<ul class='ref-list'>\n" + "\n".join(items) + "\n</ul>"
+    return "<ul class='ref-list ref-grid'>\n" + "\n".join(items) + "\n</ul>"
     
 def main():
     ap = argparse.ArgumentParser(
