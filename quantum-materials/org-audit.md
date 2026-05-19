@@ -1,6 +1,6 @@
 # Org Audit Report: quantum-materials
 
-Generated: **2026-05-18 07:09 UTC**
+Generated: **2026-05-19 06:59 UTC**
 
 - Repositories: **6**
 - With README (any branch): **6/6**
@@ -11,9 +11,9 @@ Generated: **2026-05-18 07:09 UTC**
 
 | Repo | branches | README | .gitignore | ipynb | py | tex | files | updated |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| [quantum-chemistry](https://github.com/Quantum-Materials-Simulation-Research/quantum-chemistry) | 2 | ✅ | — | 85 | 49 | 0 | 271 | 2026-03-25 |
+| [quantum-chemistry](https://github.com/Quantum-Materials-Simulation-Research/quantum-chemistry) | 2 | ✅ | — | 85 | 49 | 0 | 290 | 2026-05-18 |
 | [Quantum-Chemistry-and-Computing-for-the-Curious](https://github.com/Quantum-Materials-Simulation-Research/Quantum-Chemistry-and-Computing-for-the-Curious) | 1 | ✅ | — | 11 | 0 | 0 | 13 | 2026-03-02 |
-| [quantum-materials-simulation-research.github.io](https://github.com/Quantum-Materials-Simulation-Research/quantum-materials-simulation-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 63 | 2026-05-17 |
-| [quantum-monte-carlo](https://github.com/Quantum-Materials-Simulation-Research/quantum-monte-carlo) | 2 | ✅ | — | 17 | 0 | 0 | 62 | 2026-05-17 |
-| [quantum-neural-state](https://github.com/Quantum-Materials-Simulation-Research/quantum-neural-state) | 2 | ✅ | — | 8 | 45 | 0 | 94 | 2026-05-17 |
-| [variational-approximation](https://github.com/Quantum-Materials-Simulation-Research/variational-approximation) | 2 | ✅ | — | 0 | 0 | 0 | 25 | 2026-05-17 |
+| [quantum-materials-simulation-research.github.io](https://github.com/Quantum-Materials-Simulation-Research/quantum-materials-simulation-research.github.io) | 1 | ✅ | ✅ | 0 | 0 | 0 | 63 | 2026-05-19 |
+| [quantum-monte-carlo](https://github.com/Quantum-Materials-Simulation-Research/quantum-monte-carlo) | 2 | ✅ | — | 17 | 0 | 0 | 62 | 2026-05-18 |
+| [quantum-neural-state](https://github.com/Quantum-Materials-Simulation-Research/quantum-neural-state) | 2 | ✅ | — | 8 | 45 | 0 | 94 | 2026-05-18 |
+| [variational-approximation](https://github.com/Quantum-Materials-Simulation-Research/variational-approximation) | 2 | ✅ | — | 0 | 0 | 0 | 25 | 2026-05-18 |

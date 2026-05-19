@@ -4,26 +4,26 @@
   "range_days": 30,
   "metrics_by_path": {
     "rigorous-proof-series-mathematics.github.io": {
-      "views": 42,
-      "sessions": 30,
-      "users": 23,
-      "avg_session_duration_sec": 275.4354186333333,
+      "views": 45,
+      "sessions": 32,
+      "users": 24,
+      "avg_session_duration_sec": 258.74446115625,
       "countries": {},
       "sources": {}
     },
     "rigorous-proof-series-physics.github.io": {
-      "views": 26,
-      "sessions": 26,
-      "users": 21,
-      "avg_session_duration_sec": 74.86848065384615,
+      "views": 30,
+      "sessions": 30,
+      "users": 23,
+      "avg_session_duration_sec": 65.54112203333334,
       "countries": {},
       "sources": {}
     },
     "rigorous-proof-series-computer-science.github.io": {
-      "views": 24,
-      "sessions": 18,
-      "users": 15,
-      "avg_session_duration_sec": 38.98922405555555,
+      "views": 25,
+      "sessions": 19,
+      "users": 16,
+      "avg_session_duration_sec": 36.93715963157894,
       "countries": {},
       "sources": {}
     },
@@ -75,25 +75,25 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 41,
-        "US": 34,
+        "BR": 45,
+        "US": 35,
         "(not set)": 8,
+        "DE": 5,
         "RU": 5,
-        "DE": 4,
+        "SC": 3,
         "CY": 2,
-        "SC": 2,
+        "NL": 2,
         "SG": 2,
         "CA": 1,
         "CH": 1,
         "CN": 1,
         "IN": 1,
-        "NL": 1,
         "TW": 1
       },
       "sources": {
-        "(direct) / (none)": 61,
-        "github.com / referral": 17,
-        "child_repo / navbar": 4,
+        "(direct) / (none)": 65,
+        "github.com / referral": 18,
+        "child_repo / navbar": 6,
         "(not set)": 2,
         "bing / organic": 2
       }
@@ -140,6 +140,30 @@
         "github.com / referral": 1
       }
     },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
@@ -154,18 +178,6 @@
         "github.com / referral": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -176,18 +188,6 @@
       },
       "sources": {
         "bing / organic": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 5
-      },
-      "sources": {
-        "github.com / referral": 1
       }
     }
   }
