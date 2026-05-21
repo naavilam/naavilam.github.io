@@ -1,11 +1,11 @@
 # Org Audit Report: high-energy
 
-Generated: **2026-05-20 07:00 UTC**
+Generated: **2026-05-21 07:04 UTC**
 
 - Repositories: **11**
 - With README (any branch): **9/11**
 - With .gitignore (any branch): **8/11**
-- Total notebooks (.ipynb) (sum over branches): **137**
+- Total notebooks (.ipynb) (sum over branches): **144**
 
 ## Table (top 50)
 
@@ -14,7 +14,7 @@ Generated: **2026-05-20 07:00 UTC**
 | [Academic-Research-Journaling](https://github.com/High-Energy-Physics-Research/Academic-Research-Journaling) | 2 | ✅ | ✅ | 20 | 0 | 84 | 277 | 2026-05-18 |
 | [Bayesian-Inference-Research](https://github.com/High-Energy-Physics-Research/Bayesian-Inference-Research) | 2 | — | ✅ | 1 | 0 | 0 | 27 | 2026-05-18 |
 | [cern-root-student-course](https://github.com/High-Energy-Physics-Research/cern-root-student-course) | 2 | ✅ | ✅ | 32 | 3 | 0 | 142 | 2026-02-04 |
-| [experimental-correlation-uncertainty](https://github.com/High-Energy-Physics-Research/experimental-correlation-uncertainty) | 2 | ✅ | ✅ | 1 | 0 | 0 | 46 | 2026-05-18 |
+| [experimental-correlation-uncertainty](https://github.com/High-Energy-Physics-Research/experimental-correlation-uncertainty) | 2 | ✅ | ✅ | 8 | 1 | 0 | 62 | 2026-05-20 |
 | [Gaussian-Process-Research](https://github.com/High-Energy-Physics-Research/Gaussian-Process-Research) | 2 | ✅ | ✅ | 17 | 0 | 0 | 71 | 2026-05-18 |
 | [gpytorch](https://github.com/High-Energy-Physics-Research/gpytorch) | 2 | ✅ | ✅ | 50 | 323 | 0 | 515 | 2026-05-18 |
 | [heavy-ion-collision-simulation](https://github.com/High-Energy-Physics-Research/heavy-ion-collision-simulation) | 0 | — | — | 0 | 0 | 0 | 0 | 2026-05-13 |
