@@ -4,26 +4,26 @@
   "range_days": 30,
   "metrics_by_path": {
     "rigorous-proof-series-mathematics.github.io": {
-      "views": 46,
-      "sessions": 33,
-      "users": 24,
-      "avg_session_duration_sec": 250.9037199090909,
+      "views": 49,
+      "sessions": 36,
+      "users": 26,
+      "avg_session_duration_sec": 230.38804616666664,
       "countries": {},
       "sources": {}
     },
     "rigorous-proof-series-physics.github.io": {
-      "views": 31,
-      "sessions": 31,
-      "users": 23,
-      "avg_session_duration_sec": 63.475415258064515,
+      "views": 35,
+      "sessions": 35,
+      "users": 25,
+      "avg_session_duration_sec": 56.221082085714286,
       "countries": {},
       "sources": {}
     },
     "rigorous-proof-series-computer-science.github.io": {
-      "views": 25,
-      "sessions": 19,
-      "users": 16,
-      "avg_session_duration_sec": 36.93715963157894,
+      "views": 27,
+      "sessions": 21,
+      "users": 17,
+      "avg_session_duration_sec": 33.419334904761904,
       "countries": {},
       "sources": {}
     },
@@ -91,8 +91,8 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 47,
-        "US": 37,
+        "BR": 53,
+        "US": 39,
         "(not set)": 8,
         "DE": 5,
         "RU": 5,
@@ -100,6 +100,7 @@
         "CY": 2,
         "NL": 2,
         "SG": 2,
+        "AT": 1,
         "CA": 1,
         "CH": 1,
         "CN": 1,
@@ -107,11 +108,11 @@
         "TW": 1
       },
       "sources": {
-        "(direct) / (none)": 67,
+        "(direct) / (none)": 72,
         "github.com / referral": 18,
-        "child_repo / navbar": 8,
-        "bing / organic": 2,
-        "(not set)": 1
+        "child_repo / navbar": 11,
+        "(not set)": 7,
+        "bing / organic": 2
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
@@ -142,15 +143,17 @@
         "bing / organic": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "BR": 2,
+        "HK": 2
       },
       "sources": {
+        "bing / organic": 1,
         "github.com / referral": 1
       }
     },
@@ -168,20 +171,6 @@
         "github.com / referral": 1
       }
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2,
-        "HK": 2
-      },
-      "sources": {
-        "bing / organic": 1,
-        "github.com / referral": 1
-      }
-    },
     "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -189,6 +178,18 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "BR": 5
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
       },
       "sources": {
         "github.com / referral": 1
