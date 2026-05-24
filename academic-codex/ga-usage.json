@@ -157,6 +157,18 @@
         "github.com / referral": 1
       }
     },
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 5
+      },
+      "sources": {
+        "github.com / referral": 1
+      }
+    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -193,18 +205,6 @@
       },
       "sources": {
         "bing / organic": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 5
-      },
-      "sources": {
-        "github.com / referral": 1
       }
     }
   }
