@@ -36,10 +36,10 @@
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 5,
-      "sessions": 4,
-      "users": 2,
-      "avg_session_duration_sec": 37.5031945,
+      "views": 4,
+      "sessions": 3,
+      "users": 1,
+      "avg_session_duration_sec": 7.745099,
       "countries": {},
       "sources": {}
     },
@@ -56,14 +56,6 @@
       "sessions": 1,
       "users": 1,
       "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-investments.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 5.195221,
       "countries": {},
       "sources": {}
     },
@@ -91,7 +83,7 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 54,
+        "BR": 51,
         "US": 39,
         "(not set)": 8,
         "DE": 5,
@@ -108,8 +100,8 @@
         "TW": 1
       },
       "sources": {
-        "(direct) / (none)": 72,
-        "github.com / referral": 18,
+        "(direct) / (none)": 70,
+        "github.com / referral": 17,
         "child_repo / navbar": 12,
         "bing / organic": 2,
         "(not set)": 1
@@ -143,16 +135,16 @@
         "bing / organic": 1
       }
     },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/": {
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "HK": 1
       },
       "sources": {
-        "github.com / referral": 1
+        "bing / organic": 1
       }
     },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
@@ -161,38 +153,10 @@
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2,
         "HK": 2
       },
       "sources": {
-        "bing / organic": 1,
-        "github.com / referral": 1
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 5
-      },
-      "sources": {
-        "github.com / referral": 1
-      }
-    },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1,
-        "HK": 1
-      },
-      "sources": {
-        "bing / organic": 1,
-        "github.com / referral": 1
+        "bing / organic": 1
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
