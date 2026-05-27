@@ -12,10 +12,10 @@
       "sources": {}
     },
     "rigorous-proof-series-physics.github.io": {
-      "views": 35,
-      "sessions": 35,
-      "users": 25,
-      "avg_session_duration_sec": 57.19543842857143,
+      "views": 37,
+      "sessions": 37,
+      "users": 27,
+      "avg_session_duration_sec": 54.10379310810811,
       "countries": {},
       "sources": {}
     },
@@ -83,7 +83,7 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 51,
+        "BR": 53,
         "US": 39,
         "(not set)": 8,
         "DE": 5,
@@ -100,7 +100,7 @@
         "TW": 1
       },
       "sources": {
-        "(direct) / (none)": 70,
+        "(direct) / (none)": 72,
         "github.com / referral": 17,
         "child_repo / navbar": 12,
         "bing / organic": 2,
@@ -135,13 +135,13 @@
         "bing / organic": 1
       }
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "HK": 1
+        "HK": 8
       },
       "sources": {
         "bing / organic": 1
@@ -159,13 +159,13 @@
         "bing / organic": 1
       }
     },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "HK": 8
+        "HK": 1
       },
       "sources": {
         "bing / organic": 1
