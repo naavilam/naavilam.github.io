@@ -59,6 +59,14 @@
       "countries": {},
       "sources": {}
     },
+    "topics-series-investments.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
     "topics-series-mathematics.github.io": {
       "views": 1,
       "sessions": 1,
@@ -84,7 +92,7 @@
       "avg_engagement_time_sec": 0.0,
       "countries": {
         "BR": 53,
-        "US": 39,
+        "US": 40,
         "(not set)": 8,
         "DE": 5,
         "RU": 5,
@@ -100,7 +108,7 @@
         "TW": 1
       },
       "sources": {
-        "(direct) / (none)": 72,
+        "(direct) / (none)": 73,
         "github.com / referral": 17,
         "child_repo / navbar": 12,
         "bing / organic": 2,
