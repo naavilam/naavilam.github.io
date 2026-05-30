@@ -23,7 +23,7 @@
       "views": 29,
       "sessions": 23,
       "users": 19,
-      "avg_session_duration_sec": 31.160376130434784,
+      "avg_session_duration_sec": 31.74798804347826,
       "countries": {},
       "sources": {}
     },
@@ -36,10 +36,10 @@
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 4,
-      "sessions": 3,
-      "users": 1,
-      "avg_session_duration_sec": 7.745099,
+      "views": 7,
+      "sessions": 6,
+      "users": 4,
+      "avg_session_duration_sec": 4.741776,
       "countries": {},
       "sources": {}
     },
@@ -51,6 +51,14 @@
       "countries": {},
       "sources": {}
     },
+    "quantum-computing-research.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
     "topics-series-business.github.io": {
       "views": 1,
       "sessions": 1,
@@ -59,23 +67,15 @@
       "countries": {},
       "sources": {}
     },
+    "topics-series-economics.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
     "topics-series-investments.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-mathematics.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-physics.github.io": {
       "views": 1,
       "sessions": 1,
       "users": 1,
@@ -92,9 +92,9 @@
       "avg_engagement_time_sec": 0.0,
       "countries": {
         "BR": 54,
-        "US": 42,
+        "US": 44,
         "(not set)": 8,
-        "DE": 5,
+        "DE": 6,
         "RU": 5,
         "SC": 3,
         "CY": 2,
@@ -109,10 +109,10 @@
         "TW": 1
       },
       "sources": {
-        "(direct) / (none)": 76,
+        "(direct) / (none)": 79,
         "github.com / referral": 17,
         "child_repo / navbar": 13,
-        "(not set)": 3,
+        "(not set)": 4,
         "bing / organic": 2
       }
     },
@@ -144,18 +144,6 @@
         "bing / organic": 1
       }
     },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "HK": 8
-      },
-      "sources": {
-        "bing / organic": 1
-      }
-    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
@@ -163,6 +151,18 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "HK": 1
+      },
+      "sources": {
+        "bing / organic": 1
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "HK": 8
       },
       "sources": {
         "bing / organic": 1
