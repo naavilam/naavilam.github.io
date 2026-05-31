@@ -4,10 +4,10 @@
   "range_days": 30,
   "metrics_by_path": {
     "rigorous-proof-series-mathematics.github.io": {
-      "views": 51,
-      "sessions": 37,
+      "views": 52,
+      "sessions": 38,
       "users": 27,
-      "avg_session_duration_sec": 230.18711467567564,
+      "avg_session_duration_sec": 224.6989934736842,
       "countries": {},
       "sources": {}
     },
@@ -39,7 +39,15 @@
       "views": 7,
       "sessions": 6,
       "users": 4,
-      "avg_session_duration_sec": 4.741776,
+      "avg_session_duration_sec": 6.187496166666667,
+      "countries": {},
+      "sources": {}
+    },
+    "quantum-computing-research.github.io": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 3.9047875,
       "countries": {},
       "sources": {}
     },
@@ -48,14 +56,6 @@
       "sessions": 1,
       "users": 1,
       "avg_session_duration_sec": 13.111368,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-computing-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -91,29 +91,29 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 54,
+        "BR": 55,
         "US": 44,
         "(not set)": 8,
-        "DE": 6,
+        "DE": 7,
         "RU": 5,
         "SC": 3,
         "CY": 2,
         "NL": 2,
-        "SG": 2,
         "AT": 1,
         "CA": 1,
         "CH": 1,
         "CN": 1,
         "IM": 1,
         "IN": 1,
+        "SG": 1,
         "TW": 1
       },
       "sources": {
-        "(direct) / (none)": 79,
+        "(direct) / (none)": 80,
         "github.com / referral": 17,
         "child_repo / navbar": 13,
-        "(not set)": 4,
-        "bing / organic": 2
+        "bing / organic": 2,
+        "(not set)": 1
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
