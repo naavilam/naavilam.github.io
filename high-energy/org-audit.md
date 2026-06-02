@@ -1,6 +1,6 @@
 # Org Audit Report: high-energy
 
-Generated: **2026-06-01 08:48 UTC**
+Generated: **2026-06-02 08:13 UTC**
 
 - Repositories: **11**
 - With README (any branch): **9/11**
@@ -11,7 +11,7 @@ Generated: **2026-06-01 08:48 UTC**
 
 | Repo | branches | README | .gitignore | ipynb | py | tex | files | updated |
 |---|---:|---:|---:|---:|---:|---:|---:|---|
-| [Academic-Research-Journaling](https://github.com/High-Energy-Physics-Research/Academic-Research-Journaling) | 2 | ✅ | ✅ | 20 | 0 | 96 | 304 | 2026-05-28 |
+| [Academic-Research-Journaling](https://github.com/High-Energy-Physics-Research/Academic-Research-Journaling) | 2 | ✅ | ✅ | 20 | 0 | 96 | 304 | 2026-06-01 |
 | [Bayesian-Inference-Research](https://github.com/High-Energy-Physics-Research/Bayesian-Inference-Research) | 2 | — | ✅ | 2 | 0 | 0 | 29 | 2026-05-28 |
 | [cern-root-student-course](https://github.com/High-Energy-Physics-Research/cern-root-student-course) | 2 | ✅ | ✅ | 32 | 3 | 0 | 142 | 2026-02-04 |
 | [experimental-correlation-uncertainty](https://github.com/High-Energy-Physics-Research/experimental-correlation-uncertainty) | 2 | ✅ | ✅ | 4 | 1 | 0 | 57 | 2026-05-28 |
