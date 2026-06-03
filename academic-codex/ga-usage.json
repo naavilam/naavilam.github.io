@@ -114,7 +114,7 @@
         "github.com / referral": 17,
         "child_repo / navbar": 13,
         "bing / organic": 4,
-        "(not set)": 2
+        "(not set)": 1
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
@@ -157,18 +157,6 @@
         "bing / organic": 1
       }
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "HK": 2
-      },
-      "sources": {
-        "bing / organic": 1
-      }
-    },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
@@ -176,6 +164,18 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "HK": 1
+      },
+      "sources": {
+        "bing / organic": 1
+      }
+    },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "HK": 2
       },
       "sources": {
         "bing / organic": 1
