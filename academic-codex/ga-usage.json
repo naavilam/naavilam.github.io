@@ -43,6 +43,14 @@
       "countries": {},
       "sources": {}
     },
+    "quantum-materials-simulation-research.github.io": {
+      "views": 4,
+      "sessions": 4,
+      "users": 4,
+      "avg_session_duration_sec": 0.82153025,
+      "countries": {},
+      "sources": {}
+    },
     "quantum-computing-research.github.io": {
       "views": 2,
       "sessions": 2,
@@ -92,7 +100,7 @@
       "avg_engagement_time_sec": 0.0,
       "countries": {
         "BR": 55,
-        "US": 44,
+        "US": 48,
         "(not set)": 8,
         "DE": 7,
         "RU": 5,
@@ -110,11 +118,11 @@
         "TW": 1
       },
       "sources": {
-        "(direct) / (none)": 80,
+        "(direct) / (none)": 84,
         "github.com / referral": 17,
         "child_repo / navbar": 13,
         "bing / organic": 4,
-        "(not set)": 1
+        "(not set)": 3
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
