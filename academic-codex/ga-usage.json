@@ -27,27 +27,27 @@
       "countries": {},
       "sources": {}
     },
-    "high-energy-physics-research.github.io": {
-      "views": 7,
-      "sessions": 6,
-      "users": 4,
-      "avg_session_duration_sec": 6.187496166666667,
+    "quantum-materials-simulation-research.github.io": {
+      "views": 10,
+      "sessions": 10,
+      "users": 10,
+      "avg_session_duration_sec": 1.2778459999999998,
       "countries": {},
       "sources": {}
     },
-    "quantum-materials-simulation-research.github.io": {
-      "views": 7,
-      "sessions": 7,
-      "users": 7,
-      "avg_session_duration_sec": 1.2588067142857144,
+    "high-energy-physics-research.github.io": {
+      "views": 6,
+      "sessions": 5,
+      "users": 4,
+      "avg_session_duration_sec": 6.4611906,
       "countries": {},
       "sources": {}
     },
     "academic-codex.github.io": {
-      "views": 3,
-      "sessions": 5,
-      "users": 4,
-      "avg_session_duration_sec": 6.611168999999999,
+      "views": 2,
+      "sessions": 4,
+      "users": 3,
+      "avg_session_duration_sec": 0.69437525,
       "countries": {},
       "sources": {}
     },
@@ -99,8 +99,8 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "BR": 55,
-        "US": 51,
+        "BR": 54,
+        "US": 54,
         "(not set)": 8,
         "DE": 7,
         "RU": 5,
@@ -114,15 +114,14 @@
         "IM": 1,
         "IN": 1,
         "JP": 1,
-        "SG": 1,
-        "TW": 1
+        "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 87,
+        "(direct) / (none)": 89,
         "github.com / referral": 17,
         "child_repo / navbar": 13,
-        "bing / organic": 5,
-        "(not set)": 2
+        "bing / organic": 4,
+        "(not set)": 3
       }
     }
   }
