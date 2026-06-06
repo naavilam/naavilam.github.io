@@ -1,14 +1,14 @@
 - School: University of São Paulo
   Icon: /assets/img/USP.png
   Degrees:
-    - degree: "Master’s degree"
+    - degree: "Master's degree"
       field: "Nuclear Physics"
       name: "Physics Institute"
       unit: "(IF/USP)"
       start_date: "01/2025"
       end_date: "in progress"
 
-    - degree: "Bachelor’s degree"
+    - degree: "Bachelor's degree"
       field: "Computer Engineering"
       name: "São Carlos School of Engineering"
       unit: "(EESC/USP)"
