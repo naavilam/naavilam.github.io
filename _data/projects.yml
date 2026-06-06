@@ -1,11 +1,10 @@
-
 - name: Heavy Ion Collision
   id: project1
   date: present
   group: JETSCAPE
   group_link: https://jetscape.org
   description: >
-   This project aims to investigate relativistic heavy-ion collisions at the Large Hadron Collider using a model–to-data comparison approach. The work focuses on training statistical emulators to reproduce the output of computationally intensive theoretical models, avoiding the need to run full dynamical simulations. These emulators are then used to study correlations between experimental observables and physical parameters—such as shear and bulk viscosity, rapidity, transverse momentum spectra, among others—allowing an assessment of how different observables constrain the underlying collision dynamics.
+   This project aims to investigate relativistic heavy-ion collisions at the Large Hadron Collider using a model-to-data comparison approach. The work focuses on training statistical emulators to reproduce the output of computationally intensive theoretical models, avoiding the need to run full dynamical simulations. These emulators are then used to study correlations between experimental observables and physical parameters—such as shear and bulk viscosity, rapidity, and transverse momentum spectra—allowing an assessment of how different observables constrain the underlying collision dynamics.
   link: https://high-energy-physics-research.github.io
   image:  assets/img/projetos/projeto3.png
   tech: 
@@ -28,13 +27,13 @@
   link: https://quantum-materials-simulation-research.github.io
   image:  assets/img/projetos/projeto2.png
   tech: 
-    - Quiskit Nature
-    - Pennylane
+    - Qiskit Nature
+    - PennyLane
     - Born–Oppenheimer approximation
     - Fermionic Hamiltonians
     - Jordan–Wigner transformation
     - UCCSD ansatz
-    - Restricted Boltzmann Machine ansatz
+    - Restricted Boltzmann Machines (RBM)
     - Variational Methods
     - Ground state energy
 
@@ -44,7 +43,7 @@
   group: SAMPA USP
   group_link: https://portal.if.usp.br/sampa/pt-br/node/323
   description: >
-    In this work, I studied quantum information encoding mechanisms, the construction of gate-based quantum circuits, and their implementation using Google Cirq, Amazon Braket, IBM Qiskit and CERN Qibo SDKs. I analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time, noise, and decoherence parameters. I implemented algorithms such as the Deutsch algorithm and Grover’s quantum search, and carried out introductory studies in quantum machine learning using quantum support vector machines (QSVM). To address noise in NISQ devices, I explored quantum error mitigation techniques, including zero-noise extrapolation (ZNE) and Clifford-based regression methods.
+    In this work, I studied quantum information encoding mechanisms, the construction of gate-based quantum circuits, and their implementation using Google Cirq, Amazon Braket, IBM Qiskit, and CERN Qibo SDKs. I analyzed the execution of quantum operations and algorithms across different quantum hardware platforms—such as superconducting, trapped-ion, photonic, and neutral-atom systems—examining execution time, noise, and decoherence parameters. I implemented algorithms such as the Deutsch algorithm and Grover’s quantum search, and carried out introductory studies in quantum machine learning using quantum support vector machines (QSVM). To address noise in NISQ devices, I explored quantum error mitigation techniques, including zero-noise extrapolation (ZNE) and Clifford-based regression methods.
   link: https://quantum-computing-research.github.io
   image:  assets/img/projetos/projeto1.jpeg
   tech: 
@@ -57,9 +56,9 @@
     - Deutsch's Algorithm
     - Quantum Support Vector Machines (QSVM)
     - Quantum gates
-    - Neural Atom
+    - Neutral Atoms
     - Superconducting
     - Photonic
-    - Ions Trapped
+    - Trapped Ions
     - Clifford Data Regression (CDR)
     - Zero-Noise Extrapolation (ZNE)
