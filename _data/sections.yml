@@ -1,16 +1,13 @@
 - name: Publications
   id: publications
-  description:   This section will gather my peer-reviewed publications and preprints as they become available, 
-    documenting my ongoing academic research and collaborations. It will be updated as results are published.
+  description:   This section will gather my peer-reviewed publications and preprints as they become available, documenting my academic research and collaborations.
 
   url: publications.html
   first: true
   
 - name: Coursework
   id: courses
-  description: Coursework from my undergraduate and graduate studies, demonstrating my formal training in physics, mathematics, engineering, entrepreneurship, statistics, and machine learning. Each course links to lecture notes, references, and related materials. Courses marked with an asterisk (*) are planned or currently in progress.
-  content: 
-  first: false
+  description: This section features coursework from my undergraduate and graduate studies, demonstrating my formal training in physics, mathematics, engineering, statistics, machine learning, and entrepreneurship. Each course links to lecture notes, references, and related materials. Courses marked with an asterisk (*) are planned or currently in progress.  first: false
 
 - name: Talks & Presentations
   id: teachings
@@ -21,7 +18,7 @@
 
 - name: Research
   id: projects
-  description: This section presents the academic research projects I have developed to date. These projects were carried out within an academic context, combining theoretical analysis, computational methods, and practical experimentation.
+  description: This section presents my academic research projects to date. These projects combine theoretical analysis, computational methods, and practical experimentation.
   content: 
   url: projects.html
   first: false
