@@ -28,10 +28,10 @@
       "sources": {}
     },
     "quantum-materials-simulation-research.github.io": {
-      "views": 10,
-      "sessions": 10,
-      "users": 10,
-      "avg_session_duration_sec": 1.2778459999999998,
+      "views": 11,
+      "sessions": 11,
+      "users": 11,
+      "avg_session_duration_sec": 1.2423235454545454,
       "countries": {},
       "sources": {}
     },
@@ -44,10 +44,10 @@
       "sources": {}
     },
     "academic-codex.github.io": {
-      "views": 2,
-      "sessions": 4,
+      "views": 3,
+      "sessions": 5,
       "users": 3,
-      "avg_session_duration_sec": 0.69437525,
+      "avg_session_duration_sec": 0.5555002,
       "countries": {},
       "sources": {}
     },
@@ -99,28 +99,28 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
+        "US": 55,
         "BR": 54,
-        "US": 54,
         "(not set)": 8,
         "DE": 7,
         "RU": 5,
         "SC": 3,
+        "CN": 2,
         "CY": 2,
         "NL": 2,
         "AT": 1,
         "CA": 1,
         "CH": 1,
-        "CN": 1,
         "IM": 1,
         "IN": 1,
         "JP": 1,
         "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 89,
+        "(direct) / (none)": 90,
         "github.com / referral": 17,
         "child_repo / navbar": 13,
-        "bing / organic": 4,
+        "bing / organic": 5,
         "(not set)": 3
       }
     }
