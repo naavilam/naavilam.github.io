@@ -11,8 +11,7 @@
   Link: https://rioinnovationweek.com.br
   Thumb: assets/img/eventos/evento4.png
   description: >
-    I took part in Rio Innovation Week 2024 on the AI & Metaworld stage, in the panel “Demystifying Quantum Computing: Practical Applications and Possible Futures.” We discussed what quantum computing can do today, where it is realistically headed, and how to connect cutting-edge research to real-world problems.
-
+    I took part in Rio Innovation Week 2024 on the AI & Metaworld stage, joining the panel “Demystifying Quantum Computing: Practical Applications and Possible Futures.” We discussed what quantum computing can do today, where it is realistically headed, and how to connect cutting-edge research to real-world industry problems.
 - School: The Developer Conference
   Degree: 
   Program: TDC Business
@@ -26,7 +25,8 @@
   Link: https://thedevconf.com/tdc/2022/business/
   Thumb: assets/img/eventos/evento2.png
   description: >
-    At The Developer Conference (TDC Business), I presented “Adjust Your Programming Paradigm to a Quantum Mindset,” a talk aimed at software developers curious about quantum computing. I explored how quantum concepts such as superposition, measurement, and probabilistic outcomes require a fundamentally different way of thinking about algorithms and program structure. The session focused on building intuition rather than code, helping developers understand how quantum computing reshapes the mental models behind programming.
+    At The Developer Conference (TDC Business), I presented “Adjust Your Programming Paradigm to a Quantum Mindset,” a talk aimed at software developers curious about quantum computing. I explored how core quantum concepts like superposition, measurement, and probabilistic outcomes require a fundamentally different way of thinking about algorithms and program structure. The session focused on building intuition rather than code, helping developers understand how quantum computing reshapes the mental models behind programming.
+
 - School: Open Co
   Degree: 
   Program: Tech Day
@@ -39,7 +39,7 @@
   Link: http://www.open-co.com
   Thumb: assets/img/eventos/evento3.jpeg
   description: >
-    Follow-up talk at Open Co Tech Day presenting the practical implementation of a quantum search algorithm, building on previous discussions of quantum computing fundamentals, and including a time computational complexity analysis.
+    Follow-up talk at Open Co Tech Day demonstrating the practical implementation of a quantum search algorithm, expanding on fundamental concepts and introducing computational time complexity analysis.
 
 - School: Open Co
   Degree: 
@@ -53,4 +53,4 @@
   Link: http://www.open-co.com
   Thumb: assets/img/eventos/evento1.jpeg
   description: >
-    Invited talk at Open Co Tech Day introducing quantum computing concepts, recent developments, and practical entry points for industry engagement.
+    Invited talk at Open Co Tech Day introducing quantum computing concepts, recent physical hardware developments, and practical entry points for industry engagement.
