@@ -1,7 +1,6 @@
 - name: Publications
   id: publications
-  description:   This section will gather my peer-reviewed publications and preprints as they become available, documenting my academic research and collaborations.
-
+  description:   This section will gather my peer-reviewed publications and preprints as they become available, documenting my ongoing academic research and collaborations. It will be updated as the results are published.
   url: publications.html
   first: true
   
