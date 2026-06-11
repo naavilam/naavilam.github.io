@@ -28,10 +28,10 @@
       "sources": {}
     },
     "quantum-materials-simulation-research.github.io": {
-      "views": 17,
-      "sessions": 17,
-      "users": 17,
-      "avg_session_duration_sec": 2.123500058823529,
+      "views": 18,
+      "sessions": 18,
+      "users": 18,
+      "avg_session_duration_sec": 2.112897,
       "countries": {},
       "sources": {}
     },
@@ -99,7 +99,7 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "US": 60,
+        "US": 61,
         "BR": 51,
         "(not set)": 8,
         "DE": 8,
@@ -118,14 +118,14 @@
         "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 98,
+        "(direct) / (none)": 99,
         "github.com / referral": 17,
         "child_repo / navbar": 11,
         "bing / organic": 4,
         "(not set)": 2
       }
     },
-    "/SEL0602-Circuitos-Eletricos/index.html": {
+    "/PGF5002-Mecanica-Quantica-II/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -137,18 +137,6 @@
         "(direct) / (none)": 2
       }
     },
-    "/FFI0181-Laboratorio-de-Fisica-Geral-II/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
     "/SME0320-Estatistica-I/references.html": {
       "views": 0,
       "sessions": 0,
@@ -158,10 +146,11 @@
         "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 1,
+        "(not set)": 1
       }
     },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/studies.html": {
+    "/SME0601-Calculo-Numerico-II/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -173,19 +162,19 @@
         "(direct) / (none)": 1
       }
     },
-    "/PGF5006-Mecanica-Estatistica/index.html": {
+    "/IF4302211-Fisica-III/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "SG": 1
+        "SG": 2
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 2
       }
     },
-    "/MAT5730-Algebra-Linear/references.html": {
+    "/MAT5730-Algebra-Linear/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -194,10 +183,23 @@
         "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 1,
+        "(not set)": 1
       }
     },
     "/SEL0607-Fundamentos-de-Semicondutores/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/PGF5002-Mecanica-Quantica-II/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -221,6 +223,18 @@
         "(direct) / (none)": 1
       }
     },
+    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 2
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
     "/IF4302212-Fisica-IV/index.html": {
       "views": 0,
       "sessions": 0,
@@ -233,28 +247,40 @@
         "(direct) / (none)": 1
       }
     },
-    "/IF4302211-Fisica-III/index.html": {
+    "/MAT5730-Algebra-Linear/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "SG": 1
+        "SG": 2
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 2
       }
     },
-    "/PGF5002-Mecanica-Quantica-II/studies.html": {
+    "/PGF5006-Mecanica-Estatistica/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "SG": 1
+        "SG": 2
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 2
+      }
+    },
+    "/MAC5722-Complexidade-Computacional/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 2
+      },
+      "sources": {
+        "(direct) / (none)": 2
       }
     },
     "/SCE0245-Algoritmos-Avancados/index.html": {
@@ -269,6 +295,19 @@
         "(direct) / (none)": 1
       }
     },
+    "/FFI0181-Laboratorio-de-Fisica-Geral-II/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1,
+        "(not set)": 1
+      }
+    },
     "/PGF5005-Mecanica-Classica/references.html": {
       "views": 0,
       "sessions": 0,
@@ -281,19 +320,20 @@
         "(direct) / (none)": 1
       }
     },
-    "/MAT5730-Algebra-Linear/studies.html": {
+    "/SEL0602-Circuitos-Eletricos/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "SG": 1
+        "SG": 3
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 3,
+        "(not set)": 1
       }
     },
-    "/MAC5722-Complexidade-Computacional/references.html": {
+    "/SAP0679-Humanidades-e-Ciencias-Sociais/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -311,37 +351,13 @@
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "SG": 1
+        "SG": 2
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 2
       }
     },
-    "/SME0601-Calculo-Numerico-II/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/PGF5002-Mecanica-Quantica-II/index.html": {
+    "/DPG5011-Formacao-do-Cientista-Empreendedor/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
