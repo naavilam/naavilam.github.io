@@ -7,7 +7,7 @@
     "private": false,
     "archived": false,
     "fork": false,
-    "default_branch": "main",
+    "default_branch": "frontend",
     "pushed_at": "2026-05-28T20:33:34Z",
     "has_gitignore": true,
     "has_readme": true,
