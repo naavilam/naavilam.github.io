@@ -12,18 +12,18 @@
       "sources": {}
     },
     "rigorous-proof-series-physics.github.io": {
-      "views": 12,
-      "sessions": 12,
-      "users": 7,
-      "avg_session_duration_sec": 6.405179583333333,
+      "views": 8,
+      "sessions": 8,
+      "users": 5,
+      "avg_session_duration_sec": 8.27603475,
       "countries": {},
       "sources": {}
     },
     "rigorous-proof-series-mathematics.github.io": {
-      "views": 10,
-      "sessions": 8,
-      "users": 5,
-      "avg_session_duration_sec": 34.437399125,
+      "views": 7,
+      "sessions": 6,
+      "users": 4,
+      "avg_session_duration_sec": 43.12316583333333,
       "countries": {},
       "sources": {}
     },
@@ -36,10 +36,10 @@
       "sources": {}
     },
     "rigorous-proof-series-computer-science.github.io": {
-      "views": 5,
-      "sessions": 5,
-      "users": 5,
-      "avg_session_duration_sec": 5.6795384,
+      "views": 4,
+      "sessions": 4,
+      "users": 4,
+      "avg_session_duration_sec": 7.099423,
       "countries": {},
       "sources": {}
     },
@@ -99,135 +99,24 @@
       "engagement_rate": 0.0,
       "avg_engagement_time_sec": 0.0,
       "countries": {
-        "US": 30,
-        "BR": 17,
-        "DE": 4,
+        "US": 29,
+        "BR": 13,
+        "DE": 3,
         "AT": 1,
         "CA": 1,
         "CN": 1,
         "IM": 1,
         "JP": 1,
-        "NL": 1,
         "PT": 1,
-        "SC": 1,
         "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 46,
-        "child_repo / navbar": 9,
-        "bing / organic": 4,
-        "github.com / referral": 1
+        "(direct) / (none)": 42,
+        "child_repo / navbar": 7,
+        "bing / organic": 4
       }
     },
-    "/MAC5722-Complexidade-Computacional/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 4
-      },
-      "sources": {
-        "(direct) / (none)": 4
-      }
-    },
-    "/PGF5006-Mecanica-Estatistica/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/SMA0111-Funcoes-de-Variaveis-Complexas/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/PGF5002-Mecanica-Quantica-II/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/SCE0620-Analise-e-Projeto-Orientado-a-Objeto/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/FFI0181-Laboratorio-de-Fisica-Geral-II/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/IF4302212-Fisica-IV/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 2
-      },
-      "sources": {
-        "(direct) / (none)": 2
-      }
-    },
-    "/SCE0607-Organizacao-de-Computadores-Digitais-I/references.html": {
+    "/DPG5011-Formacao-do-Cientista-Empreendedor/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -251,20 +140,7 @@
         "(direct) / (none)": 3
       }
     },
-    "/SEL0619-Comunicacao-Digital/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "(not set)": 1
-      }
-    },
-    "/IF4302307-Fisica-Matematica-II/references.html": {
+    "/SCE0607-Organizacao-de-Computadores-Digitais-I/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -276,7 +152,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/PGF5005-Mecanica-Classica/references.html": {
+    "/FFI0181-Laboratorio-de-Fisica-Geral-II/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -288,7 +164,43 @@
         "(direct) / (none)": 3
       }
     },
-    "/SCE0601-Introducao-a-Ciencia-da-Computacao-I/references.html": {
+    "/SCE0614-Inteligencia-Artificial/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SCE0620-Analise-e-Projeto-Orientado-a-Objeto/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/PGF5002-Mecanica-Quantica-II/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/SCE0610-Programacao-Orientada-a-Objetos/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -312,115 +224,6 @@
         "(direct) / (none)": 1
       }
     },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/IF4302211-Fisica-III/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/PGF5002-Mecanica-Quantica-II/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/MAT5730-Algebra-Linear/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/SCE0245-Algoritmos-Avancados/index.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/FCM0102-Fisica-II/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "(direct) / (none)": 3
-      }
-    },
-    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SCE0610-Programacao-Orientada-a-Objetos/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1,
-        "(not set)": 1
-      }
-    },
     "/SAP0679-Humanidades-e-Ciencias-Sociais/index.html": {
       "views": 0,
       "sessions": 0,
@@ -431,18 +234,6 @@
       },
       "sources": {
         "(direct) / (none)": 3
-      }
-    },
-    "/SSC0643-Avaliacao-de-Desempenho/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
       }
     },
     "/SEL0602-Circuitos-Eletricos/index.html": {
@@ -457,7 +248,7 @@
         "(direct) / (none)": 4
       }
     },
-    "/SCE0616-Sistemas-Computacionais-Distribuidos/references.html": {
+    "/IF4302307-Fisica-Matematica-II/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -469,7 +260,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/MCKZ-Metodos-Quantitativos/references.html": {
+    "/SCE0616-Sistemas-Computacionais-Distribuidos/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -493,19 +284,115 @@
         "(direct) / (none)": 1
       }
     },
-    "/SEL0607-Fundamentos-de-Semicondutores/index.html": {
+    "/PGF5005-Mecanica-Classica/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "SG": 4
+        "SG": 3
       },
       "sources": {
-        "(direct) / (none)": 4
+        "(direct) / (none)": 3
       }
     },
-    "/SCE0614-Inteligencia-Artificial/references.html": {
+    "/SME0320-Estatistica-I/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/PGF5002-Mecanica-Quantica-II/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/SCE0294-Laboratorio-de-Algoritmos-Avancados/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/PGF5006-Mecanica-Estatistica/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/FCM0102-Fisica-II/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/SEL0616-Principios-de-Comunicacao/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/SSC0643-Avaliacao-de-Desempenho/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -529,31 +416,7 @@
         "(direct) / (none)": 3
       }
     },
-    "/SAP0679-Humanidades-e-Ciencias-Sociais/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0616-Principios-de-Comunicacao/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SME0320-Estatistica-I/references.html": {
+    "/IF4302211-Fisica-III/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -565,16 +428,16 @@
         "(direct) / (none)": 3
       }
     },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/references.html": {
+    "/SCE0245-Algoritmos-Avancados/index.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "SG": 1
+        "SG": 3
       },
       "sources": {
-        "(direct) / (none)": 1
+        "(direct) / (none)": 3
       }
     },
     "/SME0601-Calculo-Numerico-II/index.html": {
@@ -589,7 +452,7 @@
         "(direct) / (none)": 3
       }
     },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/references.html": {
+    "/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -599,6 +462,138 @@
       },
       "sources": {
         "(direct) / (none)": 1
+      }
+    },
+    "/SCE0601-Introducao-a-Ciencia-da-Computacao-I/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MAC5722-Complexidade-Computacional/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 4
+      },
+      "sources": {
+        "(direct) / (none)": 4
+      }
+    },
+    "/DPG5011-Formacao-do-Cientista-Empreendedor/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
+      }
+    },
+    "/MCKZ-Metodos-Quantitativos/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0619-Comunicacao-Digital/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0607-Fundamentos-de-Semicondutores/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 4
+      },
+      "sources": {
+        "(direct) / (none)": 4
+      }
+    },
+    "/SMA0111-Funcoes-de-Variaveis-Complexas/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SAP0679-Humanidades-e-Ciencias-Sociais/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/IF4302212-Fisica-IV/index.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 2
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/MAT5730-Algebra-Linear/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "(direct) / (none)": 3
       }
     }
   }
