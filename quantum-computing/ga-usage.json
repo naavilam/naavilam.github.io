@@ -11,43 +11,7 @@
       "countries": {},
       "sources": {}
     },
-    "/quantum-neural-state/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
     "/quantum-neural-state/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/variational-approximation/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 2
-      },
-      "sources": {
-        "(direct) / (none)": 2
-      }
-    },
-    "/quantum-chemistry/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -83,6 +47,30 @@
         "(direct) / (none)": 1
       }
     },
+    "/quantum-chemistry/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/quantum-monte-carlo/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/variational-approximation/index.html": {
       "views": 0,
       "sessions": 0,
@@ -95,7 +83,21 @@
         "(direct) / (none)": 1
       }
     },
-    "/quantum-chemistry/": {
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 7,
+        "PT": 1,
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 9
+      }
+    },
+    "/quantum-chemistry/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -119,7 +121,19 @@
         "(direct) / (none)": 1
       }
     },
-    "/quantum-monte-carlo/references.html": {
+    "/variational-approximation/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 2
+      },
+      "sources": {
+        "(direct) / (none)": 2
+      }
+    },
+    "/quantum-chemistry/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -131,21 +145,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 10,
-        "PT": 1,
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 12
-      }
-    },
-    "/quantum-monte-carlo/": {
+    "/variational-approximation/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -181,19 +181,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/quantum-chemistry/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/variational-approximation/": {
+    "/quantum-neural-state/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -206,6 +194,18 @@
       }
     },
     "/variational-approximation/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/quantum-monte-carlo/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
