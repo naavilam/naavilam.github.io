@@ -7,7 +7,7 @@
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 0.0,
+      "avg_session_duration_sec": 13.41946,
       "countries": {},
       "sources": {}
     },
@@ -20,8 +20,7 @@
         "US": 1
       },
       "sources": {
-        "(direct) / (none)": 1,
-        "(not set)": 1
+        "(direct) / (none)": 1
       }
     }
   }
