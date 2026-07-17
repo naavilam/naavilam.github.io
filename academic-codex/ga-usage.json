@@ -99,6 +99,18 @@
       "countries": {},
       "sources": {}
     },
+    "/PGF5006-Mecanica-Estatistica/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/": {
       "views": 0,
       "sessions": 0,
@@ -121,31 +133,19 @@
         "cn.bing.com / referral": 1
       }
     },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
+    "/PGF5003-Eletrodinamica/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "SG": 1
+        "BR": 1
       },
       "sources": {
-        "bing / organic": 1
+        "PGF5003-Eletrodinamica / readme": 1
       }
     },
-    "/SEL0366-Comunicacoes-Opticas/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0609-Circuitos-Eletronicos-I/references.html": {
+    "/IF4302404-Mecanica-Quantica-II/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -157,19 +157,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/SAP0679-Humanidades-e-Ciencias-Sociais/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0621-Projeto-de-Circuitos-Integrados-Digitais-I/references.html": {
+    "/IF4302112-Fisica-II/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -193,7 +181,19 @@
         "naavilam / coursework": 1
       }
     },
-    "/SHS0416-Sistema-de-Gestao-Ambiental/references.html": {
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "bing / organic": 1
+      }
+    },
+    "/SEL0609-Circuitos-Eletronicos-I/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -205,127 +205,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/SCE0606-Algoritmos-e-Estrutura-de-Dados-II/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SEL0619-Comunicacao-Digital/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/IF4302404-Mecanica-Quantica-II/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/DPG5011-Formacao-do-Cientista-Empreendedor/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SCE0610-Programacao-Orientada-a-Objetos/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/PGF5006-Mecanica-Estatistica/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/PGF5003-Eletrodinamica/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "PGF5003-Eletrodinamica / readme": 1
-      }
-    },
-    "/IF4302112-Fisica-II/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SSC0643-Avaliacao-de-Desempenho/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/PGF5003-Eletrodinamica/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "PGF5003-Eletrodinamica / readme": 1
-      }
-    },
-    "/SET0623-Mecanica-dos-Solidos/references.html": {
+    "/SEL0366-Comunicacoes-Opticas/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -349,6 +229,42 @@
         "(direct) / (none)": 1
       }
     },
+    "/SHS0416-Sistema-de-Gestao-Ambiental/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SET0623-Mecanica-dos-Solidos/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/PGF5003-Eletrodinamica/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "PGF5003-Eletrodinamica / readme": 1
+      }
+    },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -359,30 +275,6 @@
       },
       "sources": {
         "bing / organic": 1
-      }
-    },
-    "/SCE0616-Sistemas-Computacionais-Distribuidos/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SCE0614-Inteligencia-Artificial/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
       }
     }
   }
