@@ -3,14 +3,6 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
-    "quantum-computing-research.github.io": {
-      "views": 13,
-      "sessions": 13,
-      "users": 13,
-      "avg_session_duration_sec": 2.871682153846154,
-      "countries": {},
-      "sources": {}
-    },
     "academic-codex.github.io": {
       "views": 1,
       "sessions": 1,
@@ -27,6 +19,14 @@
       "countries": {},
       "sources": {}
     },
+    "quantum-computing-research.github.io": {
+      "views": 7,
+      "sessions": 7,
+      "users": 7,
+      "avg_session_duration_sec": 4.527266142857143,
+      "countries": {},
+      "sources": {}
+    },
     "topics-series-mathematics.github.io": {
       "views": 7,
       "sessions": 7,
@@ -36,26 +36,18 @@
       "sources": {}
     },
     "rigorous-proof-series-mathematics.github.io": {
-      "views": 4,
-      "sessions": 5,
-      "users": 4,
-      "avg_session_duration_sec": 21.69183,
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "avg_session_duration_sec": 0.4869856666666667,
       "countries": {},
       "sources": {}
     },
     "rigorous-proof-series-physics.github.io": {
-      "views": 4,
-      "sessions": 4,
-      "users": 4,
-      "avg_session_duration_sec": 11.68523325,
-      "countries": {},
-      "sources": {}
-    },
-    "rigorous-proof-series-computer-science.github.io": {
       "views": 3,
       "sessions": 3,
       "users": 3,
-      "avg_session_duration_sec": 0.6567846666666667,
+      "avg_session_duration_sec": 15.580311,
       "countries": {},
       "sources": {}
     },
@@ -67,27 +59,11 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-business.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-economics.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-investments.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
+    "rigorous-proof-series-computer-science.github.io": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 0.985177,
       "countries": {},
       "sources": {}
     },
@@ -99,19 +75,7 @@
       "countries": {},
       "sources": {}
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
-    "/SEL0366-Comunicacoes-Opticas/references.html": {
+    "/IF4302112-Fisica-II/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -121,54 +85,6 @@
       },
       "sources": {
         "(direct) / (none)": 1
-      }
-    },
-    "/IF4302404-Mecanica-Quantica-II/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/PGF5003-Eletrodinamica/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "PGF5003-Eletrodinamica / readme": 1
-      }
-    },
-    "/PGF5003-Eletrodinamica/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "PGF5003-Eletrodinamica / readme": 1
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "bing / organic": 1
       }
     },
     "/SHS0416-Sistema-de-Gestao-Ambiental/references.html": {
@@ -189,59 +105,23 @@
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 31,
-        "SG": 8,
-        "BR": 7,
+        "US": 25,
+        "BR": 6,
         "CN": 3,
+        "SG": 3,
         "CA": 1,
         "HK": 1,
         "MX": 1,
         "VN": 1
       },
       "sources": {
-        "(direct) / (none)": 48,
+        "(direct) / (none)": 35,
         "child_repo / navbar": 3,
         "bing / organic": 1,
         "cn.bing.com / referral": 1
       }
     },
-    "/SEL0609-Circuitos-Eletronicos-I/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/FFI0180-Laboratorio-de-Fisica-Geral-I/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/PGF5006-Mecanica-Estatistica/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/IF4302112-Fisica-II/references.html": {
+    "/SET0623-Mecanica-dos-Solidos/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -265,7 +145,103 @@
         "bing / organic": 1
       }
     },
-    "/SET0623-Mecanica-dos-Solidos/references.html": {
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "bing / organic": 1
+      }
+    },
+    "/FFI0180-Laboratorio-de-Fisica-Geral-I/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0609-Circuitos-Eletronicos-I/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/IF4302404-Mecanica-Quantica-II/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
+      }
+    },
+    "/PGF5003-Eletrodinamica/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "PGF5003-Eletrodinamica / readme": 1
+      }
+    },
+    "/PGF5003-Eletrodinamica/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "PGF5003-Eletrodinamica / readme": 1
+      }
+    },
+    "/PGF5006-Mecanica-Estatistica/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/SEL0366-Comunicacoes-Opticas/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
