@@ -35,14 +35,6 @@
       "countries": {},
       "sources": {}
     },
-    "rigorous-proof-series-physics.github.io": {
-      "views": 3,
-      "sessions": 3,
-      "users": 3,
-      "avg_session_duration_sec": 15.580311,
-      "countries": {},
-      "sources": {}
-    },
     "quantum-materials-simulation-research.github.io": {
       "views": 2,
       "sessions": 2,
@@ -67,6 +59,14 @@
       "countries": {},
       "sources": {}
     },
+    "rigorous-proof-series-physics.github.io": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 20.8669495,
+      "countries": {},
+      "sources": {}
+    },
     "topics-series-economics.github.io": {
       "views": 2,
       "sessions": 1,
@@ -83,18 +83,6 @@
       "countries": {},
       "sources": {}
     },
-    "/PGF5003-Eletrodinamica/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "PGF5003-Eletrodinamica / readme": 1
-      }
-    },
     "/PGF5003-Eletrodinamica/": {
       "views": 0,
       "sessions": 0,
@@ -105,18 +93,6 @@
       },
       "sources": {
         "PGF5003-Eletrodinamica / readme": 1
-      }
-    },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
@@ -131,27 +107,6 @@
         "bing / organic": 1
       }
     },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 25,
-        "BR": 6,
-        "CN": 3,
-        "HK": 1,
-        "MX": 1,
-        "SG": 1,
-        "VN": 1
-      },
-      "sources": {
-        "(direct) / (none)": 31,
-        "child_repo / navbar": 3,
-        "bing / organic": 1,
-        "cn.bing.com / referral": 1
-      }
-    },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -162,6 +117,51 @@
       },
       "sources": {
         "bing / organic": 1
+      }
+    },
+    "/PGF5003-Eletrodinamica/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "PGF5003-Eletrodinamica / readme": 1
+      }
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 24,
+        "BR": 6,
+        "CN": 3,
+        "HK": 1,
+        "MX": 1,
+        "SG": 1,
+        "VN": 1
+      },
+      "sources": {
+        "(direct) / (none)": 30,
+        "child_repo / navbar": 3,
+        "bing / organic": 1,
+        "cn.bing.com / referral": 1
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 1
+      },
+      "sources": {
+        "naavilam / coursework": 1
       }
     }
   }
