@@ -20,10 +20,10 @@
       "sources": {}
     },
     "topics-series-mathematics.github.io": {
-      "views": 7,
-      "sessions": 7,
-      "users": 7,
-      "avg_session_duration_sec": 0.6577482857142857,
+      "views": 6,
+      "sessions": 6,
+      "users": 6,
+      "avg_session_duration_sec": 0.7673181666666666,
       "countries": {},
       "sources": {}
     },
@@ -67,6 +67,14 @@
       "countries": {},
       "sources": {}
     },
+    "topics-series-business.github.io": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
     "topics-series-economics.github.io": {
       "views": 2,
       "sessions": 1,
@@ -89,7 +97,7 @@
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 24,
+        "US": 25,
         "BR": 6,
         "CN": 3,
         "HK": 1,
@@ -100,20 +108,8 @@
       "sources": {
         "(direct) / (none)": 30,
         "child_repo / navbar": 3,
-        "bing / organic": 1,
+        "bing / organic": 2,
         "cn.bing.com / referral": 1
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "bing / organic": 1
       }
     },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
@@ -138,6 +134,18 @@
       },
       "sources": {
         "naavilam / coursework": 1
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 3
+      },
+      "sources": {
+        "bing / organic": 1
       }
     }
   }
