@@ -12,10 +12,10 @@
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 7,
+      "views": 6,
       "sessions": 6,
-      "users": 3,
-      "avg_session_duration_sec": 26.1539185,
+      "users": 4,
+      "avg_session_duration_sec": 10.277308333333332,
       "countries": {},
       "sources": {}
     },
@@ -28,26 +28,26 @@
       "sources": {}
     },
     "quantum-computing-research.github.io": {
-      "views": 4,
-      "sessions": 4,
-      "users": 4,
-      "avg_session_duration_sec": 6.847729,
+      "views": 5,
+      "sessions": 5,
+      "users": 5,
+      "avg_session_duration_sec": 5.4781832,
       "countries": {},
       "sources": {}
     },
     "quantum-materials-simulation-research.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
       "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
-    "rigorous-proof-series-computer-science.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 0.985177,
+    "topics-series-business.github.io": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -67,19 +67,19 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-business.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
     "topics-series-economics.github.io": {
       "views": 2,
       "sessions": 1,
       "users": 1,
       "avg_session_duration_sec": 0.025058,
+      "countries": {},
+      "sources": {}
+    },
+    "rigorous-proof-series-computer-science.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 1.970354,
       "countries": {},
       "sources": {}
     },
@@ -90,39 +90,6 @@
       "avg_session_duration_sec": 1.148953,
       "countries": {},
       "sources": {}
-    },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 25,
-        "BR": 6,
-        "CN": 3,
-        "HK": 1,
-        "MX": 1,
-        "SG": 1,
-        "VN": 1
-      },
-      "sources": {
-        "(direct) / (none)": 30,
-        "child_repo / navbar": 3,
-        "bing / organic": 2,
-        "cn.bing.com / referral": 1
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "bing / organic": 1
-      }
     },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
       "views": 0,
@@ -136,6 +103,27 @@
         "naavilam / coursework": 1
       }
     },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 28,
+        "BR": 3,
+        "CN": 3,
+        "HK": 1,
+        "MX": 1,
+        "SG": 1,
+        "VN": 1
+      },
+      "sources": {
+        "(direct) / (none)": 31,
+        "child_repo / navbar": 3,
+        "bing / organic": 2,
+        "cn.bing.com / referral": 1
+      }
+    },
     "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -143,6 +131,18 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "SG": 3
+      },
+      "sources": {
+        "bing / organic": 1
+      }
+    },
+    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "SG": 1
       },
       "sources": {
         "bing / organic": 1
