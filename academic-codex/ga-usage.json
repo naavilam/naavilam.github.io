@@ -7,7 +7,7 @@
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 19.549623,
+      "avg_session_duration_sec": 282.282566,
       "countries": {},
       "sources": {}
     },
@@ -19,19 +19,19 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-mathematics.github.io": {
-      "views": 6,
-      "sessions": 6,
-      "users": 6,
-      "avg_session_duration_sec": 0.7673181666666666,
-      "countries": {},
-      "sources": {}
-    },
     "quantum-computing-research.github.io": {
       "views": 5,
       "sessions": 5,
       "users": 5,
       "avg_session_duration_sec": 5.4781832,
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-mathematics.github.io": {
+      "views": 5,
+      "sessions": 5,
+      "users": 5,
+      "avg_session_duration_sec": 0.9207818,
       "countries": {},
       "sources": {}
     },
@@ -91,25 +91,13 @@
       "countries": {},
       "sources": {}
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 1
-      },
-      "sources": {
-        "naavilam / coursework": 1
-      }
-    },
     "/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 28,
+        "US": 27,
         "BR": 3,
         "CN": 3,
         "HK": 1,
@@ -118,7 +106,7 @@
         "VN": 1
       },
       "sources": {
-        "(direct) / (none)": 31,
+        "(direct) / (none)": 30,
         "child_repo / navbar": 3,
         "bing / organic": 2,
         "cn.bing.com / referral": 1
