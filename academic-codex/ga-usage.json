@@ -11,14 +11,6 @@
       "countries": {},
       "sources": {}
     },
-    "academic-codex.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 282.282566,
-      "countries": {},
-      "sources": {}
-    },
     "quantum-computing-research.github.io": {
       "views": 5,
       "sessions": 5,
@@ -32,6 +24,14 @@
       "sessions": 5,
       "users": 5,
       "avg_session_duration_sec": 0.9207818,
+      "countries": {},
+      "sources": {}
+    },
+    "academic-codex.github.io": {
+      "views": 4,
+      "sessions": 4,
+      "users": 4,
+      "avg_session_duration_sec": 18.875391,
       "countries": {},
       "sources": {}
     },
@@ -91,25 +91,13 @@
       "countries": {},
       "sources": {}
     },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 1
-      },
-      "sources": {
-        "bing / organic": 1
-      }
-    },
     "/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 25,
+        "US": 24,
         "BR": 3,
         "CN": 3,
         "HK": 1,
@@ -120,20 +108,8 @@
       "sources": {
         "(direct) / (none)": 28,
         "child_repo / navbar": 3,
-        "bing / organic": 2,
+        "bing / organic": 1,
         "cn.bing.com / referral": 1
-      }
-    },
-    "/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "SG": 3
-      },
-      "sources": {
-        "bing / organic": 1
       }
     }
   }
