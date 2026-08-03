@@ -3,27 +3,19 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
-    "high-energy-physics-research.github.io": {
-      "views": 6,
-      "sessions": 6,
-      "users": 4,
-      "avg_session_duration_sec": 10.277308333333332,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-computing-research.github.io": {
-      "views": 5,
-      "sessions": 5,
-      "users": 5,
-      "avg_session_duration_sec": 5.4781832,
-      "countries": {},
-      "sources": {}
-    },
     "topics-series-mathematics.github.io": {
+      "views": 7,
+      "sessions": 6,
+      "users": 6,
+      "avg_session_duration_sec": 0.7673181666666666,
+      "countries": {},
+      "sources": {}
+    },
+    "high-energy-physics-research.github.io": {
       "views": 5,
       "sessions": 5,
-      "users": 5,
-      "avg_session_duration_sec": 0.9207818,
+      "users": 4,
+      "avg_session_duration_sec": 9.164283600000001,
       "countries": {},
       "sources": {}
     },
@@ -32,6 +24,14 @@
       "sessions": 4,
       "users": 4,
       "avg_session_duration_sec": 18.875391,
+      "countries": {},
+      "sources": {}
+    },
+    "quantum-computing-research.github.io": {
+      "views": 4,
+      "sessions": 4,
+      "users": 4,
+      "avg_session_duration_sec": 6.847729,
       "countries": {},
       "sources": {}
     },
@@ -75,19 +75,19 @@
       "countries": {},
       "sources": {}
     },
+    "topics-series-physics.github.io": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 0.5744765,
+      "countries": {},
+      "sources": {}
+    },
     "rigorous-proof-series-computer-science.github.io": {
       "views": 1,
       "sessions": 1,
       "users": 1,
       "avg_session_duration_sec": 1.970354,
-      "countries": {},
-      "sources": {}
-    },
-    "topics-series-physics.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 1.148953,
       "countries": {},
       "sources": {}
     },
@@ -97,17 +97,17 @@
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 24,
-        "BR": 3,
+        "US": 26,
         "CN": 3,
+        "BR": 2,
         "HK": 1,
         "MX": 1,
         "SG": 1,
         "VN": 1
       },
       "sources": {
-        "(direct) / (none)": 28,
-        "child_repo / navbar": 3,
+        "(direct) / (none)": 29,
+        "child_repo / navbar": 2,
         "bing / organic": 1,
         "cn.bing.com / referral": 1
       }
