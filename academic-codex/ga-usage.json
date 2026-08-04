@@ -4,7 +4,7 @@
   "range_days": 30,
   "metrics_by_path": {
     "topics-series-mathematics.github.io": {
-      "views": 7,
+      "views": 6,
       "sessions": 6,
       "users": 6,
       "avg_session_duration_sec": 0.7673181666666666,
@@ -97,7 +97,7 @@
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 26,
+        "US": 25,
         "CN": 3,
         "BR": 2,
         "HK": 1,
