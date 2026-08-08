@@ -11,19 +11,19 @@
       "countries": {},
       "sources": {}
     },
-    "high-energy-physics-research.github.io": {
-      "views": 5,
-      "sessions": 5,
-      "users": 4,
-      "avg_session_duration_sec": 9.164283600000001,
-      "countries": {},
-      "sources": {}
-    },
     "academic-codex.github.io": {
       "views": 4,
       "sessions": 4,
       "users": 4,
       "avg_session_duration_sec": 18.875391,
+      "countries": {},
+      "sources": {}
+    },
+    "high-energy-physics-research.github.io": {
+      "views": 4,
+      "sessions": 4,
+      "users": 4,
+      "avg_session_duration_sec": 3.52616375,
       "countries": {},
       "sources": {}
     },
@@ -99,7 +99,7 @@
       "countries": {
         "US": 25,
         "CN": 3,
-        "BR": 2,
+        "BR": 1,
         "HK": 1,
         "MX": 1,
         "SG": 1,
@@ -107,8 +107,8 @@
       },
       "sources": {
         "(direct) / (none)": 29,
-        "child_repo / navbar": 2,
         "bing / organic": 1,
+        "child_repo / navbar": 1,
         "cn.bing.com / referral": 1
       }
     }
