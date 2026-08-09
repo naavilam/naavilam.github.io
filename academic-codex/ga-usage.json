@@ -4,10 +4,10 @@
   "range_days": 30,
   "metrics_by_path": {
     "topics-series-mathematics.github.io": {
-      "views": 6,
-      "sessions": 6,
-      "users": 6,
-      "avg_session_duration_sec": 0.7673181666666666,
+      "views": 5,
+      "sessions": 5,
+      "users": 5,
+      "avg_session_duration_sec": 0.9207818,
       "countries": {},
       "sources": {}
     },
@@ -102,11 +102,10 @@
         "BR": 1,
         "HK": 1,
         "MX": 1,
-        "SG": 1,
-        "VN": 1
+        "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 29,
+        "(direct) / (none)": 28,
         "bing / organic": 1,
         "child_repo / navbar": 1,
         "cn.bing.com / referral": 1
