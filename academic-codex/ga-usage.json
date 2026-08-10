@@ -3,22 +3,6 @@
   "property_id": "513675128",
   "range_days": 30,
   "metrics_by_path": {
-    "topics-series-mathematics.github.io": {
-      "views": 5,
-      "sessions": 5,
-      "users": 5,
-      "avg_session_duration_sec": 0.9207818,
-      "countries": {},
-      "sources": {}
-    },
-    "academic-codex.github.io": {
-      "views": 4,
-      "sessions": 4,
-      "users": 4,
-      "avg_session_duration_sec": 18.875391,
-      "countries": {},
-      "sources": {}
-    },
     "high-energy-physics-research.github.io": {
       "views": 4,
       "sessions": 4,
@@ -27,11 +11,27 @@
       "countries": {},
       "sources": {}
     },
-    "quantum-computing-research.github.io": {
+    "topics-series-mathematics.github.io": {
       "views": 4,
       "sessions": 4,
       "users": 4,
-      "avg_session_duration_sec": 6.847729,
+      "avg_session_duration_sec": 1.15097725,
+      "countries": {},
+      "sources": {}
+    },
+    "academic-codex.github.io": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "avg_session_duration_sec": 25.167188,
+      "countries": {},
+      "sources": {}
+    },
+    "quantum-computing-research.github.io": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "avg_session_duration_sec": 9.130305333333334,
       "countries": {},
       "sources": {}
     },
@@ -98,17 +98,15 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "US": 25,
-        "CN": 3,
         "BR": 1,
+        "CN": 1,
         "HK": 1,
-        "MX": 1,
         "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 28,
+        "(direct) / (none)": 26,
         "bing / organic": 1,
-        "child_repo / navbar": 1,
-        "cn.bing.com / referral": 1
+        "child_repo / navbar": 1
       }
     }
   }
