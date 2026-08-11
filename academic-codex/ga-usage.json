@@ -59,14 +59,6 @@
       "countries": {},
       "sources": {}
     },
-    "rigorous-proof-series-physics.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 20.8669495,
-      "countries": {},
-      "sources": {}
-    },
     "topics-series-economics.github.io": {
       "views": 2,
       "sessions": 1,
@@ -91,20 +83,28 @@
       "countries": {},
       "sources": {}
     },
+    "rigorous-proof-series-physics.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 40.618773,
+      "countries": {},
+      "sources": {}
+    },
     "/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "US": 25,
+        "US": 24,
         "BR": 1,
         "CN": 1,
         "HK": 1,
         "SG": 1
       },
       "sources": {
-        "(direct) / (none)": 26,
+        "(direct) / (none)": 25,
         "bing / organic": 1,
         "child_repo / navbar": 1
       }
