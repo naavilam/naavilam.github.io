@@ -19,43 +19,19 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-mathematics.github.io": {
-      "views": 3,
-      "sessions": 3,
-      "users": 3,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "high-energy-physics-research.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-computing-research.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 13.695458,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-materials-simulation-research.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
     "topics-series-economics.github.io": {
       "views": 2,
       "sessions": 1,
       "users": 1,
       "avg_session_duration_sec": 0.025058,
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-mathematics.github.io": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -67,68 +43,31 @@
       "countries": {},
       "sources": {}
     },
-    "rigorous-proof-series-physics.github.io": {
+    "high-energy-physics-research.github.io": {
       "views": 1,
       "sessions": 1,
       "users": 1,
-      "avg_session_duration_sec": 40.618773,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
+    "quantum-computing-research.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
+    "quantum-materials-simulation-research.github.io": {
+      "views": 1,
+      "sessions": 1,
+      "users": 1,
+      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 17,
-        "BR": 1,
-        "HK": 1,
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 17,
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1,
-        "bing / organic": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -152,6 +91,46 @@
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
+    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/SSC0144-Redes-de-Alto-Desempenho/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 11,
+        "BR": 1,
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 10,
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1,
+        "bing / organic": 1
+      }
+    },
     "/SSC0144-Redes-de-Alto-Desempenho/": {
       "views": 0,
       "sessions": 0,
@@ -159,6 +138,18 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "BR": 1
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 3
       },
       "sources": {
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
