@@ -67,13 +67,13 @@
       "countries": {},
       "sources": {}
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/studies.html": {
+    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 3
+        "BR": 1
       },
       "sources": {
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
@@ -103,37 +103,13 @@
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
+        "BR": 3
       },
       "sources": {
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
@@ -155,6 +131,18 @@
         "bing / organic": 1
       }
     },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
     "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/references.html": {
       "views": 0,
       "sessions": 0,
@@ -162,6 +150,18 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "BR": 2
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
       },
       "sources": {
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
