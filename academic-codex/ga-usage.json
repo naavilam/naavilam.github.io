@@ -28,10 +28,10 @@
       "sources": {}
     },
     "high-energy-physics-research.github.io": {
-      "views": 1,
-      "sessions": 1,
-      "users": 1,
-      "avg_session_duration_sec": 0.0,
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 2.201945,
       "countries": {},
       "sources": {}
     },
@@ -59,19 +59,7 @@
       "countries": {},
       "sources": {}
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/references.html": {
+    "/SSC0144-Redes-de-Alto-Desempenho/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -90,25 +78,14 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "US": 9,
-        "BR": 1,
+        "BR": 2,
         "SG": 1
       },
       "sources": {
         "(direct) / (none)": 9,
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1,
-        "bing / organic": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+        "bing / organic": 1,
+        "github.com / referral": 1
       }
     },
     "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
@@ -123,13 +100,13 @@
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
-    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "BR": 2
       },
       "sources": {
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
@@ -147,13 +124,37 @@
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/references.html": {
+    "/SSC0144-Redes-de-Alto-Desempenho/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
         "BR": 2
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
       },
       "sources": {
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
