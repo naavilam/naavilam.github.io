@@ -1,11 +1,11 @@
 # Org Audit Report: academic-codex
 
-Generated: **2026-08-24 03:40 UTC**
+Generated: **2026-08-25 03:36 UTC**
 
 - Repositories: **97**
 - With README (any branch): **96/97**
 - With .gitignore (any branch): **58/97**
-- Total notebooks (.ipynb) (sum over branches): **408**
+- Total notebooks (.ipynb) (sum over branches): **412**
 
 ## Table (top 50)
 
@@ -38,7 +38,7 @@ Generated: **2026-08-24 03:40 UTC**
 | [MCKZ-Metodos-Quantitativos](https://github.com/Academic-Codex/MCKZ-Metodos-Quantitativos) | 2 | ✅ | ✅ | 1 | 0 | 0 | 34 | 2026-05-28 |
 | [PGF5001-Mecanica-Quantica-I](https://github.com/Academic-Codex/PGF5001-Mecanica-Quantica-I) | 2 | ✅ | ✅ | 24 | 0 | 2 | 87 | 2026-05-28 |
 | [PGF5002-Mecanica-Quantica-II](https://github.com/Academic-Codex/PGF5002-Mecanica-Quantica-II) | 2 | ✅ | ✅ | 0 | 0 | 0 | 34 | 2026-05-28 |
-| [PGF5003-Eletrodinamica](https://github.com/Academic-Codex/PGF5003-Eletrodinamica) | 2 | ✅ | ✅ | 24 | 1 | 3 | 88 | 2026-05-28 |
+| [PGF5003-Eletrodinamica](https://github.com/Academic-Codex/PGF5003-Eletrodinamica) | 2 | ✅ | ✅ | 28 | 1 | 3 | 99 | 2026-08-24 |
 | [PGF5005-Mecanica-Classica](https://github.com/Academic-Codex/PGF5005-Mecanica-Classica) | 2 | ✅ | ✅ | 42 | 0 | 2 | 348 | 2026-05-28 |
 | [PGF5006-Mecanica-Estatistica](https://github.com/Academic-Codex/PGF5006-Mecanica-Estatistica) | 2 | ✅ | ✅ | 28 | 0 | 0 | 89 | 2026-05-28 |
 | [PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I](https://github.com/Academic-Codex/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I) | 2 | ✅ | ✅ | 26 | 0 | 0 | 84 | 2026-05-28 |

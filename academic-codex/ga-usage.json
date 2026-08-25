@@ -19,19 +19,19 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-mathematics.github.io": {
-      "views": 3,
-      "sessions": 3,
-      "users": 3,
-      "avg_session_duration_sec": 0.368542,
-      "countries": {},
-      "sources": {}
-    },
     "high-energy-physics-research.github.io": {
       "views": 2,
       "sessions": 2,
       "users": 2,
       "avg_session_duration_sec": 2.201945,
+      "countries": {},
+      "sources": {}
+    },
+    "topics-series-mathematics.github.io": {
+      "views": 2,
+      "sessions": 2,
+      "users": 2,
+      "avg_session_duration_sec": 0.552813,
       "countries": {},
       "sources": {}
     },
@@ -67,7 +67,7 @@
       "countries": {},
       "sources": {}
     },
-    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
+    "/SSC0144-Redes-de-Alto-Desempenho/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -98,11 +98,10 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "US": 10,
-        "BR": 2,
-        "SG": 1
+        "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 10,
+        "(direct) / (none)": 9,
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1,
         "bing / organic": 1,
         "github.com / referral": 1
@@ -115,6 +114,18 @@
       "avg_session_duration_sec": 0.0,
       "countries": {
         "BR": 2
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
       },
       "sources": {
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
@@ -133,18 +144,6 @@
       }
     },
     "/SSC0144-Redes-de-Alto-Desempenho/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
