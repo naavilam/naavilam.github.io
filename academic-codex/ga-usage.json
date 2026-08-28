@@ -19,14 +19,6 @@
       "countries": {},
       "sources": {}
     },
-    "topics-series-business.github.io": {
-      "views": 3,
-      "sessions": 3,
-      "users": 3,
-      "avg_session_duration_sec": 0.0,
-      "countries": {},
-      "sources": {}
-    },
     "topics-series-mathematics.github.io": {
       "views": 3,
       "sessions": 3,
@@ -81,7 +73,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+    "/PGF5003-Eletrodinamica/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -90,24 +82,7 @@
         "BR": 2
       },
       "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 10,
-        "BR": 4,
-        "CN": 1
-      },
-      "sources": {
-        "(direct) / (none)": 11,
-        "github.com / referral": 2,
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1,
-        "bing / organic": 1
+        "(direct) / (none)": 1
       }
     },
     "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
@@ -122,13 +97,13 @@
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/references.html": {
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "BR": 3
       },
       "sources": {
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
@@ -146,7 +121,7 @@
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
-    "/PGF5003-Eletrodinamica/studies.html": {
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -155,7 +130,47 @@
         "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 1
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/references.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 7,
+        "BR": 4,
+        "CN": 1
+      },
+      "sources": {
+        "(direct) / (none)": 9,
+        "github.com / referral": 2,
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
     "/PGF5003-Eletrodinamica/": {
@@ -170,31 +185,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 3
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
     "/SSC0144-Redes-de-Alto-Desempenho/references.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
