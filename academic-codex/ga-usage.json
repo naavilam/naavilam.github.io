@@ -15,7 +15,7 @@
       "views": 3,
       "sessions": 3,
       "users": 1,
-      "avg_session_duration_sec": 1.4679633333333333,
+      "avg_session_duration_sec": 4.5765183333333335,
       "countries": {},
       "sources": {}
     },
@@ -57,7 +57,86 @@
         "(direct) / (none)": 1
       }
     },
-    "/SSC0144-Redes-de-Alto-Desempenho/references.html": {
+    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/MAC5921-Deep-Learning/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(not set)": 1,
+        "MAC5921-Deep-Learning / readme": 1
+      }
+    },
+    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+      }
+    },
+    "/PGF5003-Eletrodinamica/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 5,
+        "US": 5,
+        "CN": 2
+      },
+      "sources": {
+        "(direct) / (none)": 7,
+        "github.com / referral": 3,
+        "(not set)": 1,
+        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1,
+        "cn.bing.com / referral": 1
+      }
+    },
+    "/SSC0144-Redes-de-Alto-Desempenho/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -78,23 +157,6 @@
         "BR": 3
       },
       "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 5,
-        "US": 5,
-        "CN": 1
-      },
-      "sources": {
-        "(direct) / (none)": 7,
-        "github.com / referral": 3,
-        "(not set)": 1,
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
@@ -122,7 +184,7 @@
         "(direct) / (none)": 1
       }
     },
-    "/SSC0144-Redes-de-Alto-Desempenho/": {
+    "/SSC0144-Redes-de-Alto-Desempenho/references.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -134,7 +196,7 @@
         "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
       }
     },
-    "/PGF5003-Eletrodinamica/": {
+    "/MAC5921-Deep-Learning/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
@@ -143,43 +205,8 @@
         "BR": 1
       },
       "sources": {
-        "(direct) / (none)": 1
-      }
-    },
-    "/SSC0144-Redes-de-Alto-Desempenho/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/SEL0618-Projeto-de-Circuitos-Integrados-Analogicos/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
-      }
-    },
-    "/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 1
-      },
-      "sources": {
-        "SEL0618-Projeto-de-Circuitos-Integrados-Analogicos / readme": 1
+        "(not set)": 1,
+        "MAC5921-Deep-Learning / readme": 1
       }
     }
   }
