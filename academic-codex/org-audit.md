@@ -1,11 +1,11 @@
 # Org Audit Report: academic-codex
 
-Generated: **2026-09-10 03:35 UTC**
+Generated: **2026-09-11 03:34 UTC**
 
 - Repositories: **97**
 - With README (any branch): **96/97**
 - With .gitignore (any branch): **58/97**
-- Total notebooks (.ipynb) (sum over branches): **412**
+- Total notebooks (.ipynb) (sum over branches): **414**
 
 ## Table (top 50)
 
@@ -40,7 +40,7 @@ Generated: **2026-09-10 03:35 UTC**
 | [PGF5002-Mecanica-Quantica-II](https://github.com/Academic-Codex/PGF5002-Mecanica-Quantica-II) | 2 | ✅ | ✅ | 0 | 0 | 0 | 34 | 2026-05-28 |
 | [PGF5003-Eletrodinamica](https://github.com/Academic-Codex/PGF5003-Eletrodinamica) | 2 | ✅ | ✅ | 28 | 1 | 3 | 99 | 2026-08-24 |
 | [PGF5005-Mecanica-Classica](https://github.com/Academic-Codex/PGF5005-Mecanica-Classica) | 2 | ✅ | ✅ | 42 | 0 | 2 | 348 | 2026-05-28 |
-| [PGF5006-Mecanica-Estatistica](https://github.com/Academic-Codex/PGF5006-Mecanica-Estatistica) | 2 | ✅ | ✅ | 28 | 0 | 0 | 89 | 2026-05-28 |
+| [PGF5006-Mecanica-Estatistica](https://github.com/Academic-Codex/PGF5006-Mecanica-Estatistica) | 2 | ✅ | ✅ | 30 | 0 | 0 | 94 | 2026-09-10 |
 | [PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I](https://github.com/Academic-Codex/PGF5107-Introducao-a-Teoria-Quantica-de-Campos-I) | 2 | ✅ | ✅ | 26 | 0 | 0 | 84 | 2026-05-28 |
 | [PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas](https://github.com/Academic-Codex/PGF5261-Teoria-de-Grupos-Aplicada-a-Solidos-e-Moleculas) | 2 | ✅ | ✅ | 1 | 0 | 8 | 140 | 2026-05-28 |
 | [PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada](https://github.com/Academic-Codex/PGF5295-Teoria-de-Muitos-Corpos-e-Materia-Condensada) | 2 | ✅ | ✅ | 25 | 0 | 0 | 82 | 2026-05-28 |

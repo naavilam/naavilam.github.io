@@ -1,10 +1,10 @@
 # Org Audit Report: quantum-computing
 
-Generated: **2026-09-10 03:37 UTC**
+Generated: **2026-09-11 03:35 UTC**
 
 - Repositories: **16**
 - With README (any branch): **16/16**
-- With .gitignore (any branch): **9/16**
+- With .gitignore (any branch): **10/16**
 - Total notebooks (.ipynb) (sum over branches): **749**
 
 ## Table (top 50)
@@ -19,7 +19,7 @@ Generated: **2026-09-10 03:37 UTC**
 | [qc-qiskit](https://github.com/Quantum-Computing-Research/qc-qiskit) | 1 | ✅ | — | 142 | 0 | 0 | 219 | 2025-12-17 |
 | [qc-torchquantum](https://github.com/Quantum-Computing-Research/qc-torchquantum) | 1 | ✅ | ✅ | 21 | 238 | 0 | 341 | 2025-12-17 |
 | [qibo](https://github.com/Quantum-Computing-Research/qibo) | 1 | ✅ | — | 5 | 212 | 0 | 402 | 2026-03-26 |
-| [quantum-algorithms](https://github.com/Quantum-Computing-Research/quantum-algorithms) | 2 | ✅ | — | 12 | 4 | 2 | 75 | 2026-05-28 |
+| [quantum-algorithms](https://github.com/Quantum-Computing-Research/quantum-algorithms) | 2 | ✅ | ✅ | 12 | 4 | 2 | 76 | 2026-09-11 |
 | [quantum-chaos-framework](https://github.com/Quantum-Computing-Research/quantum-chaos-framework) | 1 | ✅ | ✅ | 0 | 19 | 0 | 24 | 2026-02-22 |
 | [Quantum-Computing-Collection-Of-Resources](https://github.com/Quantum-Computing-Research/Quantum-Computing-Collection-Of-Resources) | 1 | ✅ | — | 88 | 5 | 0 | 473 | 2023-02-10 |
 | [quantum-computing-examples-qiskit](https://github.com/Quantum-Computing-Research/quantum-computing-examples-qiskit) | 1 | ✅ | ✅ | 0 | 14 | 0 | 30 | 2025-03-14 |
