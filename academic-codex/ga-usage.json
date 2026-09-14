@@ -89,16 +89,16 @@
         "(direct) / (none)": 1
       }
     },
-    "/PGF5003-Eletrodinamica/": {
+    "/MAC5921-Deep-Learning/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "BR": 2
       },
       "sources": {
-        "(direct) / (none)": 1
+        "MAC5921-Deep-Learning / readme": 1
       }
     },
     "/": {
@@ -131,18 +131,6 @@
         "(direct) / (none)": 1
       }
     },
-    "/MAC5921-Deep-Learning/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "MAC5921-Deep-Learning / readme": 1
-      }
-    },
     "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
       "sessions": 0,
@@ -153,6 +141,18 @@
       },
       "sources": {
         "MAC5921-Deep-Learning / readme": 1
+      }
+    },
+    "/PGF5003-Eletrodinamica/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 1
+      },
+      "sources": {
+        "(direct) / (none)": 1
       }
     }
   }
