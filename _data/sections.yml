@@ -6,7 +6,8 @@
   
 - name: Coursework
   id: courses
-  description: This section features coursework from my undergraduate and graduate studies, demonstrating my formal training in physics, mathematics, engineering, statistics, machine learning, and entrepreneurship. Each course links to lecture notes, references, and related materials. Courses marked with an asterisk (*) are planned or currently in progress.  first: false
+  description: This section features coursework from my undergraduate and graduate studies, demonstrating my formal training in physics, mathematics, engineering, statistics, machine learning, and entrepreneurship. Each course links to lecture notes, references, and related materials. Courses marked with an asterisk (*) are planned or currently in progress.  
+  first: false
 
 - name: Talks & Presentations
   id: teachings
