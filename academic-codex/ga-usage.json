@@ -19,15 +19,15 @@
       "countries": {},
       "sources": {}
     },
-    "quantum-computing-research.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
+    "rigorous-proof-series-mathematics.github.io": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
       "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
-    "rigorous-proof-series-mathematics.github.io": {
+    "quantum-computing-research.github.io": {
       "views": 2,
       "sessions": 2,
       "users": 2,
@@ -39,7 +39,7 @@
       "views": 2,
       "sessions": 2,
       "users": 2,
-      "avg_session_duration_sec": 0.552813,
+      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -89,34 +89,16 @@
         "(direct) / (none)": 1
       }
     },
-    "/MAC5921-Deep-Learning/": {
+    "/MAC5921-Deep-Learning/studies.html": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 2
+        "BR": 1
       },
       "sources": {
         "MAC5921-Deep-Learning / readme": 1
-      }
-    },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 10,
-        "BR": 5,
-        "CN": 3,
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 13,
-        "github.com / referral": 3,
-        "academic-codex / portfolio": 1,
-        "cn.bing.com / referral": 1
       }
     },
     "/PGF5003-Eletrodinamica/studies.html": {
@@ -131,16 +113,23 @@
         "(direct) / (none)": 1
       }
     },
-    "/MAC5921-Deep-Learning/studies.html": {
+    "/": {
       "views": 0,
       "sessions": 0,
       "users": 0,
       "avg_session_duration_sec": 0.0,
       "countries": {
-        "BR": 1
+        "US": 9,
+        "BR": 6,
+        "CN": 4,
+        "SG": 1
       },
       "sources": {
-        "MAC5921-Deep-Learning / readme": 1
+        "(direct) / (none)": 14,
+        "github.com / referral": 3,
+        "(not set)": 1,
+        "academic-codex / portfolio": 1,
+        "cn.bing.com / referral": 1
       }
     },
     "/PGF5003-Eletrodinamica/": {
@@ -153,6 +142,18 @@
       },
       "sources": {
         "(direct) / (none)": 1
+      }
+    },
+    "/MAC5921-Deep-Learning/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "MAC5921-Deep-Learning / readme": 1
       }
     }
   }
