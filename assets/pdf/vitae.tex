@@ -1,0 +1,283 @@
+\documentclass[10pt]{article}
+\usepackage[letterpaper,margin=0.78in]{geometry}
+\usepackage{fontspec}
+\setmainfont{texgyreschola}[
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic
+]
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{array,longtable,tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\definecolor{cvlinkblue}{HTML}{00AEEF}
+\usepackage[colorlinks=true,urlcolor=cvlinkblue,linkcolor=cvlinkblue,citecolor=cvlinkblue]{hyperref}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+\renewcommand{\arraystretch}{1.05}
+% Temporary column guides: change to \cvshowcolumnsfalse to hide them.
+\newif\ifcvshowcolumns
+\cvshowcolumnsfalse
+\newcommand{\cvcolumnguide}{%
+  \ifcvshowcolumns{\color{red!65}\vrule width 0.3pt\kern-0.3pt}\fi}
+\newcolumntype{L}{>{\raggedright\arraybackslash\bfseries}p{0.17\textwidth}}
+\newcolumntype{R}{>{\raggedright\arraybackslash}p{\dimexpr0.65\textwidth-2\tabcolsep\relax}}
+\newcolumntype{D}{>{\raggedleft\arraybackslash\itshape}p{0.12\textwidth}}
+% Rows without a separate date use the full content width.
+\newcommand{\cvwide}[1]{\multicolumn{2}{>{\justifying\arraybackslash}p{0.77\textwidth}@{}}{#1}}
+\newcommand{\cvblank}{\rule{0pt}{0.65em}}
+% Indented award comments; continuation lines align with the comment text.
+\newcommand{\awardcomment}[1]{%
+  \cvwide{\hspace*{1em}\parbox[t]{\dimexpr\linewidth-1em\relax}{%
+    \justifying\hangindent=1em\hangafter=1\noindent
+    \makebox[1em][l]{--}#1}}}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+{\LARGE\bfseries Nara Ávila}\\[1.1em]
+{\large Master's Student}\\
+Department of Mathematical Physics\\
+Physics Institute, São Paulo University (USP)\\
+\emph{E-mail:} \href{mailto:nara.moraes@usp.br}{nara.moraes@usp.br}\\
+\emph{Website:} \url{https://fma.if.usp.br/~avilamrs}
+\end{center}
+\vspace{1.0em}
+\hrule
+\vspace{1.2em}
+\small
+\begin{longtable}{@{}L!{\cvcolumnguide}R!{\cvcolumnguide}D@{}}
+
+Education 
+ & \textbf{M.Sc.} in Nuclear Physics & 2025 -- Present \\
+ & \cvwide{Physics Institute (IF)} \\
+ & \cvwide{\textit{São Paulo University (USP)}} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \textbf{B.Sc.} in Computer Engineering & 2006 -- 2011 \\
+ & \cvwide{São Carlos School of Engineering (EESC)} \\
+ & \cvwide{\textit{São Paulo University (USP)}} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+Academic Positions
+ & \textbf{Research Collaborator} & 2023 -- 2025 \\[-1.1em]
+ & \cvwide{\textit{40 hours/week}} \\
+ & \cvwide{\textit{Project: Quantum Computing Applied to Molecular Modeling}} \\
+ & \cvwide{Department of Materials Physics and Mechanics (DFMT)} \\
+ & \cvwide{Institute of Physics (IF), \textit{University of São Paulo (USP)}} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{\cvblank} \\[-0.35em]
+
+ & \textbf{Teaching Assistant} \href{https://naavilam.github.io/agreements/SME0300-TA.pdf}{[link]} & Fall 2009 \\
+ & \cvwide{\textit{8 hours/week}} \\
+ & \cvwide{\textbullet{} SME0300 Numerical Methods I} \\
+ & \cvwide{Institute of Mathematics and Computer Sciences (ICMC)} \\
+ & \cvwide{\textit{University of São Paulo (USP)}} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+
+ & \textbf{Teaching Assistant} \href{https://naavilam.github.io/agreements/SME0601-TA.pdf}{[link]} & Spring 2009 \\
+ & \cvwide{\textit{8 hours/week}} \\
+ & \cvwide{\textbullet{} SME0601 Numerical Methods II} \\
+ & \cvwide{Institute of Mathematics and Computer Sciences (ICMC)} \\
+ & \cvwide{\textit{University of São Paulo (USP)}} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{\cvblank} \\[-0.35em]
+Awards
+ & \textbullet{} Best Presentation in Environmental Management System (SHS0436) & 2009 \\*[0.25em]
+ & \awardcomment{Recognized for an impactful final course presentation entitled ``Harmonic and Disharmonic Systems,'' due to its combination of visual simplicity and strong conceptual content. Using images alone, the presentation explored in detail the diversity, complexity, and beauty of harmonic systems in nature---including coral ecosystems and harmonious ecological relationships such as mutualism, commensalism, and epiphytism---in contrast with human systems that disrupt environmental balance, illustrated through examples of waste accumulation, pollution, environmental degradation, and pollution-related wildlife mortality, alongside other disharmonic relationships also found in nature, such as parasitism and disease. Received the maximum final grade (10.0/10.0).} \\\noalign{\vskip 0.65em}
+& \textbullet{} 9th place in the ACM-ICPC / SBC Brazilian Programming Contest
+\href{https://naavilam.github.io/certificates/omeg-2002.pdf}{[link]}
+& 9th -- 2008 \\*[0.25em]
+& \awardcomment{Competed as a member of team ``Greve de Acertos.'' Brazilian national programming competition organized by the Brazilian Computer Society (SBC) as part of the International Collegiate Programming Contest (ICPC).} \\
+\noalign{\vskip 0.65em}
+
+& \textbullet{} 6th place in the IPhO / SBF Brazilian Physics Olympiad
+\href{https://naavilam.github.io/certificates/obf-2003.pdf}{[link]}
+& 6th -- 2003 \\*[0.25em]
+& \awardcomment{National physics olympiad organized by the Brazilian Physical Society (SBF) and part of Brazil's selection process for the International Physics Olympiad (IPhO).} \\
+\noalign{\vskip 0.65em}
+
+& \textbullet{} 18th place in the OBM / XI OMEG
+\href{https://naavilam.github.io/certificates/omeg-2002.pdf}{[link]}
+& 18th -- 2002 \\*[0.25em]
+& \awardcomment{Mathematics olympiad competition associated with the Brazilian Mathematical Olympiad (OBM), Brazil's national mathematics olympiad and part of the country's selection pathway for the International Mathematical Olympiad (IMO).} \\
+\noalign{\vskip 0.65em}
+
+& \cvwide{\cvblank} \\[-0.35em]
+& \cvwide{\cvblank} \\[-0.35em]
+\pagebreak[2]
+
+Grants & \textbf{Entrepreneurship Workshop (PRPG/USP)} \href{https://prpg.usp.br/pt-br/pae/oficina-empreendedorismo}{[link]} & 2025 \\
+& \cvwide{Project Title: StrategiQ --- AI-Based SaaS for Quantum Computing Governance Consulting} \\
+& \cvwide{Role: Founder and Project Lead of a three-member team conducting market research and developing the business plan for StrategiQ developed through the Scientist Entrepreneur Training (DPG5011)} \\
+& \cvwide{Funding Agency: Office of the Provost for Graduate Studies, University of São Paulo (PRPG/USP)} \\
+& \cvwide{Total Amount: R\$3,720.00} \\
+& \cvwide{\cvblank} \\[-0.35em]
+& \textbf{132734/2025-7} \href{https://naavilam.github.io/grants/132734-2025-7.pdf}{[link]} & 2025--2027 \\
+& \cvwide{Program: Master's Scholarship (GM)} \\
+& \cvwide{Funding Agency: National Council for Scientific and Technological Development (CNPq)} \\
+& \cvwide{Host Institution: University of São Paulo (USP)} \\
+& \cvwide{Total Amount: R\$50,400.00} \\
+& \cvwide{\cvblank} \\[-0.35em]
+
+& \textbf{409642/2022-3} \href{https://naavilam.github.io/grants/409642-2022-3.pdf}{[link]} & 2023--2024 \\
+& \cvwide{Project Title: Quantum Computing Applied to Molecular Modeling} \\
+& \cvwide{Program: Technological Development in ICTs (DTC-F)} \\
+& \cvwide{Funding Agency: National Council for Scientific and Technological Development (CNPq)} \\
+& \cvwide{Scholarship Process: 301681/2023-6} \\
+& \cvwide{Total Amount: R\$36,300.00} \\
+& \cvwide{\cvblank} \\[-0.35em]
+
+\pagebreak[2]
+
+Software & \cvwide{1. MORAES, N. (2016). minimaxdesign: Minimax and Minimax Projection Designs. R} \\
+ & \cvwide{package version 0.1.5. \url{https://cran.r-project.org/web/packages/minima}} \\
+ & \cvwide{xdesign/index.html.} \\
+ & \cvwide{2. MORAES, N. (2017). support: Support Points. R package version 0.1.3. \url{https://cr}} \\
+ & \cvwide{an.r-project.org/web/packages/support/index.html.} \\
+ & \cvwide{3. MORAES, N. (2018). atmopt: Analysis-of-marginal-Tail-Means. R package version} \\
+ & \cvwide{0.1.0. \url{https://cran.r-project.org/web/packages/atmopt/index.html}.} \\
+ & \cvwide{4. MORAES, N. (2019). cmenet: Bi-level Selection of Conditional Main Effects. R package} \\
+ & \cvwide{version 0.1.0. \url{https://cran.r-project.org/web/packages/cmenet/index}} \\
+ & \cvwide{.html.} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{\cvblank} \\[-0.35em]
+\pagebreak[2]
+Leadership and Teaching Experience & Instructor & Fall 2019 -- Present \\
+ & \cvwide{Duke University} \\
+ & \cvwide{\textbullet{} STA 240 (Probability for Statistics):} \\
+ & Undergraduate course & Spring 2023, Spring 2024, Fall 2024 \\
+ & \cvwide{\textbullet{} STA 325 (Data Mining and Machine Learning):} \\
+ & Undergraduate course & Falls 2019 -- 2023, 2025 \\
+ & \cvwide{\textbullet{} STA 643 (Modern Design of Experiments):} \\
+ & Graduate course & Spring 2022 \\
+ & \cvwide{\textbullet{} STA 360 (Bayesian Methods and Modern Statistics):} \\
+ & Undergraduate course & Spring 2020, Spring 2021 \\
+ & \cvwide{\textbullet{} STA 790 (Special Topics: Computer Experiments):} \\
+ & Graduate mini-course & Fall 2021 \\
+ & \textbullet{} STA 701 (Graduate Research Seminar) & Fall 2022 \\
+ & \cvwide{\textbullet{} HOUSECS 59.20 (Introduction to Actuarial Science \& Risk Management):} \\
+ & Undergraduate house course & Spring 2021 \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Graduate Teaching Assistant & Spring 2014 \\
+ & \cvwide{Georgia Institute of Technology} \\
+ & \cvwide{\textbullet{} Recitation TA for ISyE 2027: Applications of Probability} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Graduate Teaching Assistant & Fall 2011 -- Fall 2013 \\
+ & \cvwide{Simon Fraser University} \\
+ & \cvwide{\textbullet{} Recitation TA for ACMA 320: Actuarial Mathematics I} \\
+ & \cvwide{\textbullet{} Workshop TA for STAT 201: Statistics for the Life Sciences, STAT 203: Introduction to} \\
+ & \cvwide{Statistics for the Social Sciences, STAT 270: Introduction to Probability and Statistics,} \\
+ & \cvwide{STAT 302: Analysis for Experimental and Observational Data} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{\cvblank} \\[-0.35em]
+Editorial Experience & \cvwide{Guest Editor} \\
+ & \cvwide{\textbullet{} Data Science in Science: Special Issue on Data Science for Particle and Nuclear Physics} \\
+ & \cvwide{(ongoing)} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{Associate Editor} \\
+ & \cvwide{\textbullet{} Technometrics (2019 -- Present)} \\
+ & \cvwide{\textbullet{} Data Science in Science (2021 -- Present)} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{Referee} \\
+ & \cvwide{\textbullet{} Journals: Annals of Applied Statistics, Biometrika, IEEE Transactions on Automa-} \\
+ & \cvwide{tion Science and Engineering, IEEE Transactions on Signal Processing, IEEE Trans-} \\
+ & \cvwide{actions on Information Theory, Journal of Applied Statistics, Journal of Complexity,} \\
+ & \cvwide{Journal of Computational and Graphical Statistics, Journal of the American Statisti-} \\
+ & \cvwide{cal Association, Journal of the Royal Statistical Society Series B, Proceedings of the} \\
+ & \cvwide{National Academy of Sciences, SIAM/ASA Journal on Uncertainty Quantification, Sta-} \\
+ & \cvwide{tistica Sinica, Technometrics, SIAM Journal on Scientific Computing} \\
+ & \cvwide{\textbullet{} Conferences: NeurIPS, ICML, AISTAT} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{Grant Reviewer} \\
+ & \cvwide{\textbullet{} National Science Foundation: Division of Mathematical Sciences (various programs)} \\
+ & \cvwide{\textbullet{} Department of Energy: Nuclear Physics (various programs)} \\
+ & \cvwide{\textbullet{} Department of Energy: Advanced Scientific Computing Research (various programs)} \\
+ & \cvwide{\textbullet{} NSERC Discovery Grant (Canada): Mathematics and Statistics} \\
+ & \cvwide{\textbullet{} Research Grants Council of Hong Kong} \\
+\pagebreak[2]
+
+
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{\cvblank} \\[-0.35em]
+Professional Diplomas & Postgraduate Specialization in Financial and Capital Markets \href{https://naavilam.github.io/diploma/Finance-and-Capital-Markets-Specialist.pdf}{[link]} & 2021 -- 2022 \\[-1.1em]
+ & \cvwide{\textbullet{} Quantitative methods, corporate finance, financing, and financial products and markets} \\
+ & \cvwide{\textit{Mackenzie Presbyterian University}} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{\cvblank} \\[-0.35em]
+
+
+
+Professional Experience & Council Member & 2022 -- Present \\
+ & \cvwide{JETSCAPE Collaboration} \\
+ & \cvwide{\url{https://jetscape.org}} \\
+ & \cvwide{\textbullet{} JETSCAPE is an NSF-funded interdisciplinary and multi-institutional collaboration of} \\
+ & \cvwide{physicists, computer scientists and statisticians studying the quark-gluon plasma us-} \\
+ & \cvwide{ing Bayesian methods. This plasma is a fundamental quantity in high-energy physics,} \\
+ & \cvwide{forming the basis for matter in the Universe.} \\
+ & \cvwide{\textbullet{} Details in the cover story: \url{https://stat.duke.edu/news/nuclear-collision}} \\
+ & \cvwide{s-ai-how-machine-learning-revolutionizing-nuclear-physics} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Program Chair & 2024 -- Present \\
+ & \cvwide{ASA Section on Physical and Engineering Sciences} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Advisory Group & 2021 -- Present \\
+ & \cvwide{National Security Agency under NSA Grant H98230-20-C-0064} \\
+ & \cvwide{\textbullet{} Provide feedback (in the form of a white paper) on pressing national security problems} \\
+ & \cvwide{requiring novel statistical methodology, algorithms and theory.} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Duke StatSci Alumni Advisory Council & 2023 -- Present \\
+ & \cvwide{Duke Actuarial Society} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Faculty Advisor & 2020 -- Present \\
+ & \cvwide{Duke Actuarial Society} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Seminar Coordinator & 2020 -- 2021, 2023 -- 2024 \\
+ & \cvwide{Duke Statistical Science} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Treasurer & 2019 -- 2024 \\
+ & \cvwide{Institute of Mathematical Statistics (IMS) New Researchers Group} \\
+ & \cvwide{\url{https://imstat.org/ims-groups/ims-new-researchers-group/}} \\
+ & \cvwide{\textbullet{} Managed federal grant funding for the New Researchers Conference and affiliated} \\
+ & \cvwide{workshops that promote the development of early-career researchers in statistics.} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Goldwater Scholarship Endorsement Committee & 2023 -- 2024 \\
+ & \cvwide{Duke University} \\
+ & \cvwide{\url{https://ousf.duke.edu/award/goldwater-scholarship/}} \\
+ & \cvwide{\textbullet{} Selection committee for endorsing excellent undergraduate students for the Goldwater} \\
+ & \cvwide{Scholarships, a prestigious award for promising undergraduate scientists.} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Working Group Leader & 2017 -- 2018 \\
+ & \cvwide{Statistical and Applied Mathematical Sciences Institute (SAMSI):} \\
+ & \cvwide{Program on Quasi-Monte Carlo and High-Dimensional Sampling Methods for Applied} \\
+ & \cvwide{Mathematics} \\
+\pagebreak[2]
+ & \cvwide{\textbullet{} Organized and led bi-weekly research meetings for the working group.} \\
+ & \cvwide{\textbullet{} Presented seminar talks and wrote research reports, summarizing working group progress} \\
+ & \cvwide{during the program.} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Actuarial Assistant & May 2012 -- August 2012 \\
+ & \cvwide{Pacific Blue Cross} \\
+ & \cvwide{\textbullet{} Consolidated premium revenues and claim expenses from different health and life in-} \\
+ & \cvwide{surance product lines.} \\
+ & \cvwide{\textbullet{} Analyzed trends in health / life insurance using SQL and Microsoft Office.} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & \cvwide{\cvblank} \\[-0.35em]
+
+
+Conference Participation & Scientific Committee & 2025 \\
+ & \cvwide{International Conference on Monte Carlo Methods and Applications} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Organizing Committee Chair & 2025 \\
+ & \cvwide{IMSI Workshop on UQ and Machine Learning for Complex Physical Systems} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ & Local Organizing Committee & 2023 \\
+ & \cvwide{INFORMS Conference on Quality, Statistics and Reliability} \\
+ & \cvwide{\cvblank} \\[-0.35em]
+ \pagebreak[2]
+\end{longtable}
+\end{document}
