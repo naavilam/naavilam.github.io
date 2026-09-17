@@ -19,19 +19,19 @@
       "countries": {},
       "sources": {}
     },
+    "quantum-computing-research.github.io": {
+      "views": 3,
+      "sessions": 3,
+      "users": 3,
+      "avg_session_duration_sec": 0.0,
+      "countries": {},
+      "sources": {}
+    },
     "rigorous-proof-series-mathematics.github.io": {
       "views": 3,
       "sessions": 3,
       "users": 3,
       "avg_session_duration_sec": 2.8090616666666666,
-      "countries": {},
-      "sources": {}
-    },
-    "quantum-computing-research.github.io": {
-      "views": 2,
-      "sessions": 2,
-      "users": 2,
-      "avg_session_duration_sec": 0.0,
       "countries": {},
       "sources": {}
     },
@@ -89,6 +89,18 @@
         "(direct) / (none)": 1
       }
     },
+    "/PGF5003-Eletrodinamica/studies.html": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "BR": 2
+      },
+      "sources": {
+        "(direct) / (none)": 1
+      }
+    },
     "/PGF5003-Eletrodinamica/": {
       "views": 0,
       "sessions": 0,
@@ -99,6 +111,24 @@
       },
       "sources": {
         "(direct) / (none)": 1
+      }
+    },
+    "/": {
+      "views": 0,
+      "sessions": 0,
+      "users": 0,
+      "avg_session_duration_sec": 0.0,
+      "countries": {
+        "US": 10,
+        "BR": 6,
+        "CN": 4,
+        "SG": 1
+      },
+      "sources": {
+        "(direct) / (none)": 15,
+        "github.com / referral": 3,
+        "academic-codex / portfolio": 1,
+        "cn.bing.com / referral": 1
       }
     },
     "/MAC5921-Deep-Learning/": {
@@ -123,36 +153,6 @@
       },
       "sources": {
         "MAC5921-Deep-Learning / readme": 1
-      }
-    },
-    "/": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "US": 9,
-        "BR": 6,
-        "CN": 4,
-        "SG": 1
-      },
-      "sources": {
-        "(direct) / (none)": 14,
-        "github.com / referral": 3,
-        "academic-codex / portfolio": 1,
-        "cn.bing.com / referral": 1
-      }
-    },
-    "/PGF5003-Eletrodinamica/studies.html": {
-      "views": 0,
-      "sessions": 0,
-      "users": 0,
-      "avg_session_duration_sec": 0.0,
-      "countries": {
-        "BR": 2
-      },
-      "sources": {
-        "(direct) / (none)": 1
       }
     }
   }
