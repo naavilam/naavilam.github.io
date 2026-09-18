@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  18 SEP 2026 13:06
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  15 SEP 2026 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**vitae
-(./vitae.tex
+**cv_1228_reconstructed
+(./cv_1228_reconstructed.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -301,8 +301,8 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip73
-) (./vitae.aux)
-\openout1 = `vitae.aux'.
+) (./cv_1228_reconstructed.aux)
+\openout1 = `cv_1228_reconstructed.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
 LaTeX Font Info:    ... okay on input line 41.
@@ -434,9 +434,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package hyperref Info: Link coloring ON on input line 41.
-(./vitae.out) (./vitae.out)
+(./cv_1228_reconstructed.out) (./cv_1228_reconstructed.out)
 \@outlinefile=\write3
-\openout3 = `vitae.out'.
+\openout3 = `cv_1228_reconstructed.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 49.
@@ -473,21 +473,21 @@ ignored: Infinite glue shrinkage found in box being split [1
 
 ]
 ignored: Infinite glue shrinkage found in box being split [2]
-ignored: Infinite glue shrinkage found in box being split [3] [4] (./vitae.aux)
+ignored: Infinite glue shrinkage found in box being split [3] [4] (./cv_1228_reconstructed.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-Package rerunfilecheck Info: File `vitae.out' has not changed.
+Package rerunfilecheck Info: File `cv_1228_reconstructed.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  13539 strings out of 468168
- 266519 string characters out of 5432816
- 857184 words of memory out of 5000000
+ 266823 string characters out of 5432816
+ 857248 words of memory out of 5000000
  42142 multiletter control sequences out of 15000+600000
  630056 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,8n,93p,998b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,8n,93p,1014b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on vitae.pdf (4 pages).
+Output written on cv_1228_reconstructed.pdf (4 pages).
