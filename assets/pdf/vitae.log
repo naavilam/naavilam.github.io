@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  21 SEP 2026 14:52
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  21 SEP 2026 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,27 +521,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 108.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 108.
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 149--149
-[]|| []| 
+Underfull \hbox (badness 1057) in paragraph at lines 83--83
+[]|\TU/texgyreschola(0)/b/n/9 Computer Architecture: \TU/texgyreschola(0)/m/n/9
+ Study of computer systems from digital organization to
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 112.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 112.
 
 Overfull \hbox (15.0pt too wide) in paragraph at lines 153--153
 []|| []| 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 159--159
+Overfull \hbox (15.0pt too wide) in paragraph at lines 157--157
 []|| []| 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 165--165
+Overfull \hbox (15.0pt too wide) in paragraph at lines 163--163
+[]|| []| 
+ []
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 169--169
 []|| []| 
  []
 
@@ -551,9 +556,7 @@ ignored: Infinite glue shrinkage found in box being split [1
 ]
 ignored: Infinite glue shrinkage found in box being split [2]
 ignored: Infinite glue shrinkage fo
-und in box being split [3]
-ignored: Infinite glue shrinkage found in box being split [4] 
-[5] (./vitae.aux)
+und in box being split [3] [4] (./vitae.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -564,10 +567,10 @@ Package rerunfilecheck Info: File `vitae.out' has not changed.
 Here is how much of TeX's memory you used:
  13608 strings out of 468168
  267732 string characters out of 5432816
- 859797 words of memory out of 5000000
+ 857797 words of memory out of 5000000
  42207 multiletter control sequences out of 15000+600000
  630056 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,8n,93p,1002b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on vitae.pdf (5 pages).
+Output written on vitae.pdf (4 pages).
