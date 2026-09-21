@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  21 SEP 2026 14:39
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  21 SEP 2026 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -522,26 +522,26 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 105.
+(Font)              <9> on input line 108.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 105.
+(Font)              <6> on input line 108.
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 146--146
+Overfull \hbox (15.0pt too wide) in paragraph at lines 149--149
 []|| []| 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 150--150
+Overfull \hbox (15.0pt too wide) in paragraph at lines 153--153
 []|| []| 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 156--156
+Overfull \hbox (15.0pt too wide) in paragraph at lines 159--159
 []|| []| 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 162--162
+Overfull \hbox (15.0pt too wide) in paragraph at lines 165--165
 []|| []| 
  []
 
