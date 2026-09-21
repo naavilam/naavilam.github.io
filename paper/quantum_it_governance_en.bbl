@@ -1,0 +1,681 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{bcg2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e2cfbd2f2461bae7dcbc515d263e44a}{%
+           family={{Boston Consulting Group}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{fullhash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{fullhashraw}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{bibnamehash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{authorbibnamehash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{authornamehash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{authorfullhash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{authorfullhashraw}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Next Decade of Quantum Advantage}
+      \field{type}{techreport}
+      \field{year}{2024}
+    \endentry
+    \entry{hoffmann2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7cc5402027f465a09d37ffb7134fe0ed}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Christian\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2ef11ffcc887362029dc7be38e642f1}{%
+           family={Flöther},
+           familyi={F\bibinitperiod},
+           given={Florian\bibnamedelima F.},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{fullhash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{fullhashraw}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{bibnamehash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{authorbibnamehash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{authornamehash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{authorfullhash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{authorfullhashraw}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{e4}
+      \field{journaltitle}{Research Directions: Quantum Technologies}
+      \field{title}{Why business adoption of quantum and {AI} technology must be ethical}
+      \field{volume}{2}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+    \endentry
+    \entry{isaca2012b}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc2032cdfad6e690ac5a9b0982ef0dae}{%
+           family={{ISACA}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rolling Meadows, IL}%
+      }
+      \strng{namehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{bibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorbibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authornamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{COBIT} 5 Enabling Processes}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{isaca2012c}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc2032cdfad6e690ac5a9b0982ef0dae}{%
+           family={{ISACA}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rolling Meadows, IL}%
+      }
+      \strng{namehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{bibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorbibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authornamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{COBIT} 5 Implementation}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{isaca2012a}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc2032cdfad6e690ac5a9b0982ef0dae}{%
+           family={{ISACA}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rolling Meadows, IL}%
+      }
+      \strng{namehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{bibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorbibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authornamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \field{extraname}{3}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{COBIT} 5: A Business Framework for the Governance and Management of Enterprise {IT}}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{kop2024}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8927fed2dc496072e90dfbf216e604ae}{%
+           family={Kop},
+           familyi={K\bibinitperiod},
+           given={Mauritz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{fullhash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{fullhashraw}{8c7e12df0951a8da39876158c05b102d}
+      \strng{bibnamehash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{authorbibnamehash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{authornamehash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{authorfullhash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{authorfullhashraw}{8c7e12df0951a8da39876158c05b102d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{UC Law SF Science and Technology Law Journal}
+      \field{number}{1}
+      \field{title}{Towards responsible quantum technology: safeguarding, engaging and advancing quantum {R\&D}}
+      \field{volume}{15}
+      \field{year}{2024}
+      \field{pages}{63\bibrangedash 114}
+      \range{pages}{52}
+    \endentry
+    \entry{mckinsey2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=96eaa81a81a29c441708d1ec4be5a27b}{%
+           family={{McKinsey \& Company}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{fullhash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{fullhashraw}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{bibnamehash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{authorbibnamehash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{authornamehash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{authorfullhash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{authorfullhashraw}{96eaa81a81a29c441708d1ec4be5a27b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Technology Monitor}
+      \field{type}{techreport}
+      \field{year}{2024}
+    \endentry
+    \entry{perrier2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=999735a34130f005c8dbdaeffb58c751}{%
+           family={Perrier},
+           familyi={P\bibinitperiod},
+           given={Elija},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{fullhash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{fullhashraw}{999735a34130f005c8dbdaeffb58c751}
+      \strng{bibnamehash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{authorbibnamehash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{authornamehash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{authorfullhash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{authorfullhashraw}{999735a34130f005c8dbdaeffb58c751}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Preprint, arXiv:2102.00759}
+      \field{title}{Ethical quantum computing: a roadmap}
+      \field{year}{2022}
+    \endentry
+    \entry{preskill2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fbe61da8813855105d0c727fa93b4b4d}{%
+           family={Preskill},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{fullhash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{fullhashraw}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{bibnamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorbibnamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authornamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorfullhash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorfullhashraw}{fbe61da8813855105d0c727fa93b4b4d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantum}
+      \field{title}{Quantum computing in the {NISQ} era and beyond}
+      \field{volume}{2}
+      \field{year}{2018}
+      \field{pages}{79}
+      \range{pages}{1}
+    \endentry
+    \entry{softex2022}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=473631831166eee4efc428204ce6fe0d}{%
+           family={{SOFTEX}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brasília}%
+      }
+      \strng{namehash}{473631831166eee4efc428204ce6fe0d}
+      \strng{fullhash}{473631831166eee4efc428204ce6fe0d}
+      \strng{fullhashraw}{473631831166eee4efc428204ce6fe0d}
+      \strng{bibnamehash}{473631831166eee4efc428204ce6fe0d}
+      \strng{authorbibnamehash}{473631831166eee4efc428204ce6fe0d}
+      \strng{authornamehash}{473631831166eee4efc428204ce6fe0d}
+      \strng{authorfullhash}{473631831166eee4efc428204ce6fe0d}
+      \strng{authorfullhashraw}{473631831166eee4efc428204ce6fe0d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{MPS.BR} -- Implementation Guide: Reference Model}
+      \field{type}{techreport}
+      \field{year}{2022}
+    \endentry
+    \entry{sei2010}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7b05eea3eed1bdfd7078f865bcff24d2}{%
+           family={{Software Engineering Institute}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Pittsburgh, PA}%
+      }
+      \strng{namehash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{fullhash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{fullhashraw}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{bibnamehash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{authorbibnamehash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{authornamehash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{authorfullhash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{authorfullhashraw}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{CMMI} for Development -- Version 1.3}
+      \field{type}{techreport}
+      \field{year}{2010}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{bcg2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e2cfbd2f2461bae7dcbc515d263e44a}{%
+           family={{Boston Consulting Group}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{fullhash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{fullhashraw}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{bibnamehash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{authorbibnamehash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{authornamehash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{authorfullhash}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \strng{authorfullhashraw}{3e2cfbd2f2461bae7dcbc515d263e44a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Next Decade of Quantum Advantage}
+      \field{type}{techreport}
+      \field{year}{2024}
+    \endentry
+    \entry{hoffmann2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7cc5402027f465a09d37ffb7134fe0ed}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Christian\bibnamedelima H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2ef11ffcc887362029dc7be38e642f1}{%
+           family={Flöther},
+           familyi={F\bibinitperiod},
+           given={Florian\bibnamedelima F.},
+           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{fullhash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{fullhashraw}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{bibnamehash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{authorbibnamehash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{authornamehash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{authorfullhash}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \strng{authorfullhashraw}{68e88bec2a81bb5af479b5f2ebc80d8c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{e4}
+      \field{journaltitle}{Research Directions: Quantum Technologies}
+      \field{title}{Why business adoption of quantum and {AI} technology must be ethical}
+      \field{volume}{2}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+    \endentry
+    \entry{isaca2012b}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc2032cdfad6e690ac5a9b0982ef0dae}{%
+           family={{ISACA}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rolling Meadows, IL}%
+      }
+      \strng{namehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{bibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorbibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authornamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \field{extraname}{1}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{COBIT} 5 Enabling Processes}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{isaca2012c}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc2032cdfad6e690ac5a9b0982ef0dae}{%
+           family={{ISACA}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rolling Meadows, IL}%
+      }
+      \strng{namehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{bibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorbibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authornamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \field{extraname}{2}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{COBIT} 5 Implementation}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{isaca2012a}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc2032cdfad6e690ac5a9b0982ef0dae}{%
+           family={{ISACA}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rolling Meadows, IL}%
+      }
+      \strng{namehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{fullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{bibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorbibnamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authornamehash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhash}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \strng{authorfullhashraw}{cc2032cdfad6e690ac5a9b0982ef0dae}
+      \field{extraname}{3}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{COBIT} 5: A Business Framework for the Governance and Management of Enterprise {IT}}
+      \field{type}{techreport}
+      \field{year}{2012}
+    \endentry
+    \entry{kop2024}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8927fed2dc496072e90dfbf216e604ae}{%
+           family={Kop},
+           familyi={K\bibinitperiod},
+           given={Mauritz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{fullhash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{fullhashraw}{8c7e12df0951a8da39876158c05b102d}
+      \strng{bibnamehash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{authorbibnamehash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{authornamehash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{authorfullhash}{8c7e12df0951a8da39876158c05b102d}
+      \strng{authorfullhashraw}{8c7e12df0951a8da39876158c05b102d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{UC Law SF Science and Technology Law Journal}
+      \field{number}{1}
+      \field{title}{Towards responsible quantum technology: safeguarding, engaging and advancing quantum {R\&D}}
+      \field{volume}{15}
+      \field{year}{2024}
+      \field{pages}{63\bibrangedash 114}
+      \range{pages}{52}
+    \endentry
+    \entry{mckinsey2024}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=96eaa81a81a29c441708d1ec4be5a27b}{%
+           family={{McKinsey \& Company}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{fullhash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{fullhashraw}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{bibnamehash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{authorbibnamehash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{authornamehash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{authorfullhash}{96eaa81a81a29c441708d1ec4be5a27b}
+      \strng{authorfullhashraw}{96eaa81a81a29c441708d1ec4be5a27b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Quantum Technology Monitor}
+      \field{type}{techreport}
+      \field{year}{2024}
+    \endentry
+    \entry{perrier2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=999735a34130f005c8dbdaeffb58c751}{%
+           family={Perrier},
+           familyi={P\bibinitperiod},
+           given={Elija},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{fullhash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{fullhashraw}{999735a34130f005c8dbdaeffb58c751}
+      \strng{bibnamehash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{authorbibnamehash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{authornamehash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{authorfullhash}{999735a34130f005c8dbdaeffb58c751}
+      \strng{authorfullhashraw}{999735a34130f005c8dbdaeffb58c751}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Preprint, arXiv:2102.00759}
+      \field{title}{Ethical quantum computing: a roadmap}
+      \field{year}{2022}
+    \endentry
+    \entry{preskill2018}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fbe61da8813855105d0c727fa93b4b4d}{%
+           family={Preskill},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{fullhash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{fullhashraw}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{bibnamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorbibnamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authornamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorfullhash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorfullhashraw}{fbe61da8813855105d0c727fa93b4b4d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantum}
+      \field{title}{Quantum computing in the {NISQ} era and beyond}
+      \field{volume}{2}
+      \field{year}{2018}
+      \field{pages}{79}
+      \range{pages}{1}
+    \endentry
+    \entry{softex2022}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=473631831166eee4efc428204ce6fe0d}{%
+           family={{SOFTEX}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Brasília}%
+      }
+      \strng{namehash}{473631831166eee4efc428204ce6fe0d}
+      \strng{fullhash}{473631831166eee4efc428204ce6fe0d}
+      \strng{fullhashraw}{473631831166eee4efc428204ce6fe0d}
+      \strng{bibnamehash}{473631831166eee4efc428204ce6fe0d}
+      \strng{authorbibnamehash}{473631831166eee4efc428204ce6fe0d}
+      \strng{authornamehash}{473631831166eee4efc428204ce6fe0d}
+      \strng{authorfullhash}{473631831166eee4efc428204ce6fe0d}
+      \strng{authorfullhashraw}{473631831166eee4efc428204ce6fe0d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{MPS.BR} -- Implementation Guide: Reference Model}
+      \field{type}{techreport}
+      \field{year}{2022}
+    \endentry
+    \entry{sei2010}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7b05eea3eed1bdfd7078f865bcff24d2}{%
+           family={{Software Engineering Institute}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Pittsburgh, PA}%
+      }
+      \strng{namehash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{fullhash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{fullhashraw}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{bibnamehash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{authorbibnamehash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{authornamehash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{authorfullhash}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \strng{authorfullhashraw}{7b05eea3eed1bdfd7078f865bcff24d2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{CMMI} for Development -- Version 1.3}
+      \field{type}{techreport}
+      \field{year}{2010}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
