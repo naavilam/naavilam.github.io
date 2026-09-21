@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  21 SEP 2026 12:10
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  21 SEP 2026 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,22 +521,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-Overfull \hbox (15.0pt too wide) in paragraph at lines 94--94
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 105.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 105.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 146--146
 []|| []| 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 98--98
+Overfull \hbox (15.0pt too wide) in paragraph at lines 150--150
 []|| []| 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 104--104
+Overfull \hbox (15.0pt too wide) in paragraph at lines 156--156
 []|| []| 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 110--110
+Overfull \hbox (15.0pt too wide) in paragraph at lines 162--162
 []|| []| 
  []
 
@@ -546,7 +551,9 @@ ignored: Infinite glue shrinkage found in box being split [1
 ]
 ignored: Infinite glue shrinkage found in box being split [2]
 ignored: Infinite glue shrinkage fo
-und in box being split [3] [4] (./vitae.aux)
+und in box being split [3]
+ignored: Infinite glue shrinkage found in box being split [4] 
+[5] (./vitae.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -555,12 +562,12 @@ Package rerunfilecheck Info: File `vitae.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13583 strings out of 468168
- 267279 string characters out of 5432816
- 848797 words of memory out of 5000000
- 42189 multiletter control sequences out of 15000+600000
- 628225 words of font info for 59 fonts, out of 8000000 for 9000
+ 13608 strings out of 468168
+ 267732 string characters out of 5432816
+ 859797 words of memory out of 5000000
+ 42207 multiletter control sequences out of 15000+600000
+ 630056 words of font info for 66 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,8n,93p,1002b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on vitae.pdf (4 pages).
+Output written on vitae.pdf (5 pages).
