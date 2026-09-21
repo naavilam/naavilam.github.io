@@ -1,4 +1,11 @@
-<div id="sticky-footer" class="navbar navbar-default">
+<footer id="sticky-footer" class="navbar navbar-default">
+  {% unless page.url == '/' or page.url == '/index.html' %}
+  <nav class="container py-3" aria-label="Home navigation">
+    <a href="{{ '/' | relative_url }}" class="btn btn-outline-secondary">
+      <span aria-hidden="true">&larr;</span> Back to home
+    </a>
+  </nav>
+  {% endunless %}
   <div class="container">
 
     <p class="navbar-text pull-left"> <a href="https://github.com/naavilam" rel="noopener">© 2026 Nara Ávila Moraes</a>
@@ -7,7 +14,7 @@
       {% include social-footer.html %}
     </p>
   </div>
-</div>
+</footer>
 
 <script>
   $(function () {
