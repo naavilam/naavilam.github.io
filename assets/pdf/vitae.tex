@@ -34,6 +34,9 @@
 \newcolumntype{D}{>{\raggedleft\arraybackslash\itshape}p{0.12\textwidth}}
 % Rows without a separate date use the full content width.
 \newcommand{\cvwide}[1]{\multicolumn{2}{>{\justifying\arraybackslash}p{0.77\textwidth}@{}}{#1}}
+% Institution or venue, followed by the location when provided.
+% Place this row immediately after the entry title and before its description.
+\newcommand{\cvlocation}[1]{\cvwide{\noindent\textit{#1}}}
 \newcommand{\cvblank}{\rule{0pt}{0.65em}}
 % Indented award comments; continuation lines align with the comment text.
 \newcommand{\awardcomment}[1]{%
@@ -58,93 +61,48 @@ Physics Institute, University of São Paulo (USP)\\
 \begin{longtable}{@{}L!{\cvcolumnguide}R!{\cvcolumnguide}D@{}}
 
 Education 
- & \textbf{M.Sc.} in Nuclear Physics \href{https://fma.if.usp.br/~avilamrs}{[link]} & 2025 -- Present \\
- & \cvwide{Physics Institute (IF)} \\
- & \cvwide{\textit{University of São Paulo (USP)}} \\
+ & \textbf{M.Sc.} in Nuclear Physics \href{https://fma.if.usp.br/~avilamrs}{[link]} & 2025 -- Present \\*
+ & \cvlocation{Physics Institute (IF), University of São Paulo (USP)} \\
  & \cvwide{\cvblank} \\[-0.35em]
 & \textbf{B.Sc.} in Computer Engineering
   \href{https://naavilam.github.io/diploma/Computer-Engineer-Bachelor.pdf}{[link]}
-  & 2006 -- 2011 \\
-& \cvwide{São Carlos School of Engineering (EESC)} \\
-& \cvwide{\textit{University of São Paulo (USP)}} \\
+  & 2006 -- 2011 \\*
+& \cvlocation{São Carlos School of Engineering (EESC), University of São Paulo (USP)} \\*
 
 & \cvwide{The interdisciplinary curriculum encompassed four major areas of
 computer engineering:} \\
 
 & \cvwide{\textbf{Computer Science \& Software Engineering:}
-Training in algorithms and data structures, theory of computation, compilers,
-object-oriented programming, and distributed systems, complemented by
-mathematical programming and linear optimization. Software engineering covered
-requirements elicitation and specification, use-case analysis, UML models,
-operation contracts, the Unified Process, GRASP responsibility assignment,
-GoF design patterns, and MVC architecture. Software quality included inspections,
-structural testing based on control and data flow, and mutation testing, with
-supporting material on Java bytecode analysis using JaBUTi. Database studies
-addressed entity--relationship modeling, relational schema design, functional
-dependencies, normalization, relational algebra, and SQL. Performance evaluation
-combined experimental design, workload characterization, benchmarking,
-statistical analysis and confidence intervals with analytical and simulation
-models, including queueing networks and Petri nets. Multimedia coursework
-connected digital media representation with XML schemas and XSLT transformations
-for desktop and mobile presentation.} \\
+Algorithms and data structures, compilers, object-oriented and distributed
+programming, software engineering, UML, design patterns, MVC, software testing,
+relational databases and SQL, linear optimization, and performance evaluation.} \\
 
 & \cvwide{\textbf{Computer Architecture:}
-Study of digital logic, hardware description, microprocessors, and parallel
-computer organization, connecting circuit-level implementation with instruction
-execution and system performance. Topics included RISC and CISC instruction
-sets, addressing modes, pipelined execution, structural, data, and control
-hazards, forwarding, stalls, and branch handling. Superscalar and vector
-processing were examined alongside Flynn's taxonomy, SIMD and MIMD systems,
-and shared- and distributed-memory architectures. Hardware design used VHDL
-and programmable logic concepts. Digital integrated-circuit laboratory work
-included synthesis of a UART design with LeonardoSpectrum and AMS
-$0.35\,\mu\mathrm{m}$ standard-cell libraries, technology mapping, critical-path
-analysis, and area--speed optimization. The design flow extended to Verilog
-netlist export, schematic and layout generation in the Mentor environment,
-routing, and design-rule checking, linking behavioral descriptions to physical
-circuit implementation.} \\
+Digital logic, microprocessors, pipelined RISC/CISC architectures, parallel
+computing, SIMD/MIMD systems, and shared- and distributed-memory organization.
+Hardware design included VHDL, Verilog, programmable logic, and ASIC synthesis
+and layout using LeonardoSpectrum and Mentor tools.} \\
 
 & \cvwide{\textbf{Physics \& Electronics:}
-Foundation in classical and quantum mechanics, electromagnetism, and
-experimental physics, integrated with circuit analysis, semiconductor devices,
-and analog and digital electronics. Device studies covered electronic states
-in crystals, intrinsic and doped semiconductors, p--n junctions and depletion
-regions, bipolar transistors and the Ebers--Moll model, MOS capacitors, and
-MOSFET current--voltage characteristics. Microelectronics connected CMOS
-inverter layout and process integration with silicon crystal growth, wafer
-preparation, photolithography, oxidation, wet and plasma etching, chemical vapor
-deposition, diffusion, ion implantation, and metallization. Signal processing
-addressed discrete-time signals and systems, sampling and quantization,
-the Z-transform, the discrete Fourier transform, and digital-filter design.
-Control studies connected dynamic-system models and feedback with digital
-implementation, analog-to-digital and digital-to-analog conversion, and
-microprocessor-based control of continuous physical processes.} \\
+Classical and quantum mechanics, electromagnetism, circuit analysis,
+semiconductor devices, analog and digital electronics, CMOS microelectronics,
+digital signal processing, Fourier and Z transforms, digital filters, and
+microprocessor-based control systems.} \\
 
 & \cvwide{\textbf{Communications \& Networks:}
-Study of communication systems from electromagnetic propagation and signal
-representation to network protocols and multimedia delivery. Communication
-theory covered Fourier analysis, power spectral density, amplitude and angular
-modulation, noise, sampling, quantization, and bandwidth constraints. Antennas
-and optical communications connected radiation and transmission-line concepts
-with Maxwell's equations, wave propagation, and dielectric interfaces.
-Computer networking addressed layered architectures, data-link protocols,
-IP addressing and routing, ICMP, and TCP/UDP transport. Advanced topics included
-ATM service classes, SONET/SDH, cluster and storage interconnects, and quality
-of service through packet classification, scheduling, traffic policing,
-IntServ, and DiffServ. Practical material included Java video streaming with
-RTSP session control and RTP packetization over UDP, IEEE 802.11 frame analysis
-with Wireshark, and Android exercises involving Bluetooth discovery, Wi-Fi
-configuration, and network-traffic statistics.} \\
+Communication theory, modulation, antennas, optical communications, TCP/IP,
+routing, TCP/UDP, wireless networks, and quality of service. Practical work
+included Java video streaming with RTSP/RTP, IEEE 802.11 analysis with Wireshark,
+and Android networking with Bluetooth and Wi-Fi.} \\
 
 & \cvwide{\cvblank} \\[-0.35em]
 \multirow{2}{\hsize}{Academic Positions}
 & \textbf{Research Collaborator}
   \href{https://naavilam.github.io/reports/RCGI-Report.pdf}{[link]}
-  & 2023 -- 2025 \\
+  & 2023 -- 2025 \\*
+& \cvlocation{Department of Materials Physics and Mechanics (DFMT), Institute of Physics (IF), University of São Paulo (USP)} \\*
 & \cvwide{\textit{40 hours/week}} \\
 & \cvwide{\textit{Project: Quantum Computing Applied to Molecular Modeling}} \\
-& \cvwide{Department of Materials Physics and Mechanics (DFMT)} \\
-& \cvwide{Institute of Physics (IF), \textit{University of São Paulo (USP)}} \\
 
 & \cvwide{\textbf{Research Context:}
 Investigation of quantum computing methods for first-principles molecular
@@ -176,18 +134,16 @@ mitigation using zero-noise extrapolation (ZNE) and Clifford data regression
 
 & \cvwide{\cvblank} \\[-0.35em]
 
- & \textbf{Teaching Assistant} \href{https://naavilam.github.io/agreements/SME0300-TA.pdf}{[link]} & Fall 2009 \\
+ & \textbf{Teaching Assistant} \href{https://naavilam.github.io/agreements/SME0300-TA.pdf}{[link]} & Fall 2009 \\*
+ & \cvlocation{Institute of Mathematics and Computer Sciences (ICMC), University of São Paulo (USP)} \\*
  & \cvwide{\textit{8 hours/week}} \\
  & \cvwide{\textbullet{} SME0300 Numerical Methods I} \\
- & \cvwide{Institute of Mathematics and Computer Sciences (ICMC)} \\
- & \cvwide{\textit{University of São Paulo (USP)}} \\
  & \cvwide{\cvblank} \\[-0.35em]
 
- & \textbf{Teaching Assistant} \href{https://naavilam.github.io/agreements/SME0601-TA.pdf}{[link]} & Spring 2009 \\
+ & \textbf{Teaching Assistant} \href{https://naavilam.github.io/agreements/SME0601-TA.pdf}{[link]} & Spring 2009 \\*
+ & \cvlocation{Institute of Mathematics and Computer Sciences (ICMC), University of São Paulo (USP)} \\*
  & \cvwide{\textit{8 hours/week}} \\
  & \cvwide{\textbullet{} SME0601 Numerical Methods II} \\
- & \cvwide{Institute of Mathematics and Computer Sciences (ICMC)} \\
- & \cvwide{\textit{University of São Paulo (USP)}} \\
  & \cvwide{\cvblank} \\[-0.35em]
  & \cvwide{\cvblank} \\[-0.35em]
 \multirow{2}{\hsize}{Academic Awards}
@@ -197,8 +153,9 @@ mitigation using zero-noise extrapolation (ZNE) and Clifford data regression
 First Phase
 \href{https://maratona.sbc.org.br/hist/2007/primeira-fase/}{[link]}
 & Sep 2007 \\*[0.25em]
-& \awardcomment{Competed as a member of team ``Greve de Acertos?'' at the
-Campinas site of the first phase of the Brazilian Programming Contest
+& \cvlocation{Campinas} \\*
+& \awardcomment{Competed as a member of team ``Greve de Acertos?'' in the
+first phase of the Brazilian Programming Contest
 (Maratona de Programação), the Brazilian regional competition of the
 ACM International Collegiate Programming Contest (ICPC).} \\
 \noalign{\vskip 0.65em}
@@ -232,10 +189,10 @@ Grants & \textcolor{gray!60}{\textbf{AWS Cloud Credit for Research}}
 & \cvwide{Funding Agency: Office of the Provost for Graduate Studies, University of São Paulo (PRPG/USP)} \\
 & \cvwide{Total Amount: R\$3,720.00} \\
 & \cvwide{\cvblank} \\[-0.35em]
-& \textbf{132734/2025-7} \href{https://naavilam.github.io/grants/132734-2025-7.pdf}{[link]} & 2025--2027 \\
+& \textbf{132734/2025-7} \href{https://naavilam.github.io/grants/132734-2025-7.pdf}{[link]} & 2025--2027 \\*
+& \cvlocation{University of São Paulo (USP)} \\*
 & \cvwide{Program: Master's Scholarship (GM)} \\
 & \cvwide{Funding Agency: National Council for Scientific and Technological Development (CNPq)} \\
-& \cvwide{Host Institution: University of São Paulo (USP)} \\
 & \cvwide{Total Amount: R\$50,400.00} \\
 & \cvwide{\cvblank} \\[-0.35em]
 
@@ -279,8 +236,9 @@ Software
 & \cvwide{\cvblank} \\[-0.35em]
 & \cvwide{\cvblank} \\[-0.35em]
 \pagebreak[2]
-\multirow{2}{\hsize}{Leadership Experience} & Founder \& Team Lead \href{https://quantumera.ai/strategiq/index.html}{[link]} & Fall 2025 \\
- & \cvwide{DPG5011 -- Entrepreneurship, University of São Paulo (USP)} \\
+\multirow{2}{\hsize}{Leadership Experience} & Founder \& Team Lead \href{https://quantumera.ai/strategiq/index.html}{[link]} & Fall 2025 \\*
+ & \cvlocation{University of São Paulo (USP)} \\*
+ & \cvwide{DPG5011 -- Entrepreneurship} \\
  & \cvwide{\textbullet{} Founded and led a six-member interdisciplinary team in the development of an} \\
  & \cvwide{innovative startup focused on quantum computing.} \\
  & \cvwide{\textbullet{} Led the team through the development of the startup concept, including problem} \\
@@ -288,8 +246,9 @@ Software
  & \cvwide{industry-oriented solutions.} \\
  & \cvwide{\cvblank} \\[-0.35em]
 
- & Founder \& Team Lead \href{https://quantumera.ai/strategiq/index.html}{[link]} & Spring 2025 \\
-  & \cvwide{EAP5054 -- Entrepreneurship, University of São Paulo (USP)} \\
+ & Founder \& Team Lead \href{https://quantumera.ai/strategiq/index.html}{[link]} & Spring 2025 \\*
+  & \cvlocation{University of São Paulo (USP)} \\*
+ & \cvwide{EAP5054 -- Entrepreneurship} \\
  & \cvwide{\textbullet{} Founded and led a three-member interdisciplinary team in the development of an} \\
  & \cvwide{innovative startup focused on quantum computing.} \\
  & \cvwide{\textbullet{} Led the team through the development of the startup concept, including problem} \\
@@ -297,8 +256,8 @@ Software
  & \cvwide{industry-oriented solutions.} \\
  & \cvwide{\cvblank} \\[-0.35em]
 
- & Undergraduate Research Mentor & 2025 \\
- & \cvwide{Institute of Physics, University of São Paulo (IFUSP)} \\
+ & Undergraduate Research Mentor & 2025 \\*
+ & \cvlocation{Institute of Physics, University of São Paulo (IFUSP)} \\*
  & \cvwide{\textbullet{} Mentored a group of five undergraduate students in scientific initiation} \\
  & \cvwide{projects in quantum computing, providing guidance throughout their research activities.} \\
  & \cvwide{\textbullet{} Supervised the development of individual research projects presented by the} \\
@@ -312,28 +271,29 @@ Software
 Hackathon and Workshop}
 \href{https://www.rioquantumhack.com.br/en}{[link]}
 & \textcolor{gray}{Nov--Dec 2026} \\*[0.25em]
-& \awardcomment{\textcolor{gray}{Application submitted for the Quantum Computing and
-Sustainability Hackathon at the Brazilian Center for Research in Physics
-(CBPF), Rio de Janeiro. Application under review.}} \\
-\noalign{\vskip 0.65em}
+& \cvlocation{\textcolor{gray}{Brazilian Center for Research in Physics (CBPF) -- Rio de Janeiro}} \\*
+& \awardcomment{\textcolor{gray}{Application accepted; participation in the Quantum
+Computing and Sustainability Hackathon confirmed.}} \\
+\noalign{\vskip 1.25em}
 
-& Harvard Business School -- MBA Program \href{https://www.hbs.edu/mba}{[link]}
+& Application to MBA Program \href{https://www.hbs.edu/mba}{[link]}
 & Jan 2023 \\*[0.25em]
+& \cvlocation{Harvard Business School (HBS)} \\*
 & \awardcomment{Submitted application for admission to the MBA Program.} \\
 \noalign{\vskip 0.65em}
  & \cvwide{\cvblank} \\[-0.35em]
  & \cvwide{\cvblank} \\[-0.35em]
 
 
-\multirow{2}{\hsize}{Professional Diplomas} & Postgraduate Specialization in Financial and Capital Markets \href{https://naavilam.github.io/diploma/Finance-and-Capital-Markets-Specialist.pdf}{[link]} & 2021 -- 2022 \\
+\multirow{2}{\hsize}{Professional Diplomas} & Postgraduate Specialization in Financial and Capital Markets \href{https://naavilam.github.io/diploma/Finance-and-Capital-Markets-Specialist.pdf}{[link]} & 2021 -- 2022 \\*
+ & \cvlocation{Mackenzie Presbyterian University} \\*
  & \cvwide{\textbullet{} Quantitative methods, corporate finance, financing, and financial products and markets} \\
- & \cvwide{\textit{Mackenzie Presbyterian University}} \\
  & \cvwide{\cvblank} \\[-0.35em]
  & \cvwide{\cvblank} \\[-0.35em]
 
 
-\multirow{2}{\hsize}{Professional Experience} & Software Engineering Specialist & 2020 -- 2022 \\
- & \cvwide{Open Co \href{https://open-co.com}{[link]}} \\
+\multirow{2}{\hsize}{Professional Experience} & Software Engineering Specialist & 2020 -- 2022 \\*
+ & \cvlocation{Open Co \href{https://open-co.com}{[link]}} \\*
  & \cvwide{\textbullet{} Developed and optimized backend services for a digital banking platform,} \\
  & \cvwide{including the first installment payment solution via PIX.} \\
  & \cvwide{\textbullet{} Proposed and prototyped the migration of a credit-analysis workload from} \\
@@ -341,8 +301,8 @@ Sustainability Hackathon at the Brazilian Center for Research in Physics
  & \cvwide{approximately 90\%.} \\
  & \cvwide{\cvblank} \\[-0.35em]
 
- & Senior Software Engineer & 2019 -- 2021 \\
- & \cvwide{TIDEXA \href{https://www.youtube.com/user/tidexa}{[link]}} \\
+ & Senior Software Engineer & 2019 -- 2021 \\*
+ & \cvlocation{TIDEXA \href{https://www.youtube.com/user/tidexa}{[link]}} \\*
  & \cvwide{\textbullet{} Contributed to the migration of a payroll system from Oracle Forms/PL--SQL} \\
  & \cvwide{to a Java-based platform.} \\
  & \cvwide{\textbullet{} Led technical decisions and development activities within the engineering team.} \\
@@ -355,16 +315,16 @@ Sustainability Hackathon at the Brazilian Center for Research in Physics
  & \cvwide{Administration, and Business Administration.} \\
  & \cvwide{\cvblank} \\[-0.35em]
 
- & Mid-Level Software Engineer & 2014 -- 2016 \\
- & \cvwide{Itautec -- Grupo ITAUSA \href{https://pt.wikipedia.org/wiki/Itautec}{[link]}} \\
+ & Mid-Level Software Engineer & 2014 -- 2016 \\*
+ & \cvlocation{Itautec -- Grupo ITAUSA \href{https://pt.wikipedia.org/wiki/Itautec}{[link]}} \\*
  & \cvwide{\textbullet{} Redesigned a business-critical software application using software design} \\
  & \cvwide{patterns and engineering best practices, improving usability, reliability, and} \\
  & \cvwide{maintainability. The application was deployed across more than 5,000 branches of a major} \\
  & \cvwide{Brazilian bank.} \\
  & \cvwide{\cvblank} \\[-0.35em]
 
- & Junior Software Engineer & 2012 -- 2014 \\
- & \cvwide{Itautec -- Grupo ITAUSA} \\
+ & Junior Software Engineer & 2012 -- 2014 \\*
+ & \cvlocation{Itautec -- Grupo ITAUSA} \\*
   & \cvwide{\textbullet{} Developed and maintained software applications for retail industry.} \\
 
  & \cvwide{\cvblank} \\[-0.35em]
@@ -374,42 +334,50 @@ Sustainability Hackathon at the Brazilian Center for Research in Physics
 \multirow{2}{\hsize}{Talks \& Presentations}
 & \cvwide{\textbf{Conference Presentations}} \\[0.3em]
 
-& \cvwide{1. ``The Effect of Correlated Experimental Uncertainties on Bayesian Inference of} \\
-& \cvwide{\hspace{1.5em}Quark--Gluon Plasma Properties.'' Poster presentation at the PHENOEXP} \\
-& \cvwide{\hspace{1.5em}Workshop, August 2026. \href{https://fma.if.usp.br/~avilamrs/index.html\#phenoexp}{[link]}.} \\[0.4em]
+& \cvwide{1. ``The Effect of Correlated Experimental Uncertainties on Bayesian Inference of Quark--Gluon Plasma Properties.'' \href{https://fma.if.usp.br/~avilamrs/index.html\#phenoexp}{[link]}} \\*
+& \cvlocation{PHENOEXP Workshop} \\*
+& \cvwide{Poster presentation, August 2026.} \\[0.4em]
 
-& \cvwide{2. ``Study of the Effect of Correlated Experimental Uncertainty on Bayesian} \\
-& \cvwide{\hspace{1.5em}Inference of Quark--Gluon Plasma Properties.'' Oral presentation at the XXXIII} \\
-& \cvwide{\hspace{1.5em}Reunião de Trabalho sobre Interações Hadrônicas (RETINHA XXXIII),} \\
-& \cvwide{\hspace{1.5em}June 2026. \href{https://fma.if.usp.br/~avilamrs/index.html\#retinha-xxxiii}{[link]}.} \\[0.4em]
+& \cvwide{2. ``Study of the Effect of Correlated Experimental Uncertainty on Bayesian Inference of Quark--Gluon Plasma Properties.'' \href{https://fma.if.usp.br/~avilamrs/index.html\#retinha-xxxiii}{[link]}} \\*
+& \cvlocation{XXXIII Reunião de Trabalho sobre Interações Hadrônicas (RETINHA XXXIII)} \\*
+& \cvwide{Oral presentation, June 2026.} \\[0.4em]
 
-& \cvwide{3. ``Risk Management and IT Governance in the Adoption of Quantum Computing:} \\
-& \cvwide{\hspace{1.5em}A COBIT 5-Based Conceptual Model.'' Oral presentation at the 5th Congress on} \\
-& \cvwide{\hspace{1.5em}Risk Management and ERM, FEA--USP, December 2025.} \\
-& \cvwide{\hspace{1.5em}\href{https://naavilam.github.io/paper/quantum_it_governance_en.pdf}{[link]}.} \\[0.4em]
+& \cvwide{3. ``Risk Management and IT Governance in the Adoption of Quantum Computing: A COBIT 5-Based Conceptual Model.'' \href{https://naavilam.github.io/paper/quantum_it_governance_en.pdf}{[link]}} \\*
+& \cvlocation{5th Congress on Risk Management and ERM -- FEA--USP} \\*
+& \cvwide{Oral presentation, December 2025.} \\[0.4em]
 
-& \cvwide{4. ``Exploring the Potential of Quantum Computing in Materials Science.''} \\
-& \cvwide{\hspace{1.5em}Oral presentation (co-author), Autumn Meeting of the Brazilian Physical} \\
-& \cvwide{\hspace{1.5em}Society, May 2025. \href{https://naavilam.github.io/certificates/20250518_EOSBF.pdf}{[link]}.} \\[0.4em]
+& \cvwide{4. ``Exploring the Potential of Quantum Computing in Materials Science.'' \href{https://naavilam.github.io/certificates/20250518_EOSBF.pdf}{[link]}} \\*
+& \cvlocation{Autumn Meeting of the Brazilian Physical Society} \\*
+& \cvwide{Oral presentation (co-author), May 2025.} \\[0.4em]
 & \cvwide{\cvblank} \\[-0.35em]
 & \cvwide{\textbf{Industry \& Professional Talks}} \\[0.3em]
 
-& \cvwide{1. ``Unveiling Quantum Computing: Practical Applications and Future Possibilities.'' Talk at Rio Innovation Week -- AI and Meta World, 2024. \href{https://naavilam.github.io/assets/img/eventos/evento4.png}{[link]}.} \\[0.4em]
+& \cvwide{1. ``Unveiling Quantum Computing: Practical Applications and Future Possibilities.'' \href{https://naavilam.github.io/assets/img/eventos/evento4.png}{[link]}} \\*
+& \cvlocation{Rio Innovation Week -- AI and Meta World} \\*
+& \cvwide{Talk, 2024.} \\[0.4em]
 
-& \cvwide{2. ``Quantum Computing. Hands On: Grover Search Algorithm.'' Talk at Open Co, Tech Day, 2022. \textit{[Internal material]}} \\[0.4em]
+& \cvwide{2. ``Quantum Computing. Hands On: Grover Search Algorithm.''} \\*
+& \cvlocation{Open Co -- Tech Day} \\*
+& \cvwide{Talk, 2022. \textit{[Internal material]}} \\[0.4em]
 
-& \cvwide{3. ``Shift Your Programming Paradigm to a Quantum Mindset.'' Talk at The Developer's Conference (TDC Business), 2022. \href{https://naavilam.github.io/presentations/20220822_TDC_Business.pdf}{[link]}.} \\[0.4em]
+& \cvwide{3. ``Shift Your Programming Paradigm to a Quantum Mindset.'' \href{https://naavilam.github.io/presentations/20220822_TDC_Business.pdf}{[link]}} \\*
+& \cvlocation{The Developer's Conference (TDC Business)} \\*
+& \cvwide{Talk, 2022.} \\[0.4em]
 
-& \cvwide{4. ``Fundamentals of Quantum Computing.'' Talk at Open Co, Tech Day, 2021. \textit{[Internal material]}} \\[0.4em]
+& \cvwide{4. ``Fundamentals of Quantum Computing.''} \\*
+& \cvlocation{Open Co -- Tech Day} \\*
+& \cvwide{Talk, 2021. \textit{[Internal material]}} \\[0.4em]
 
-& \cvwide{5. ``Technical Software Documentation.'' Seminar at ITAUTEC, 2014. \textit{[Internal material]}} \\
- & \cvwide{\cvblank} \\[-0.35em]
+& \cvwide{5. ``Technical Software Documentation.''} \\*
+& \cvlocation{ITAUTEC} \\*
+& \cvwide{Seminar, 2014. \textit{[Internal material]}} \\[0.4em]
+& \cvwide{\cvblank} \\[-0.35em]
 & \cvwide{\cvblank} \\[-0.35em]
 
 \multirow{2}{\hsize}{Early Education Highlights}
 
-& School Environmental Research Project -- Municipal Waste Management & 1999 \\
-& \cvwide{Colégio Galáxia -- Goiânia, Goiás, Brazil} \\
+& School Environmental Research Project -- Municipal Waste Management & 1999 \\*
+& \cvlocation{Colégio Galáxia -- Goiânia, Goiás, Brazil} \\*
 & \cvwide{\textbullet{} Conducted a school research project on municipal solid waste management, including} \\
 & \cvwide{an interview with Pedro Wilson Guimarães, then Federal Deputy for the State of Goiás.} \\
 & \cvwide{\textbullet{} Investigated waste-management challenges and technologies, including landfill} \\
@@ -419,8 +387,8 @@ Sustainability Hackathon at the Brazilian Center for Research in Physics
 & \cvwide{\cvblank} \\[-0.35em]
 & \cvwide{\cvblank} \\[-0.35em]
 
-& School Environmental Field Visit -- Goiânia Municipal Landfill \href{https://aterrogoiania.comurg.com.br}{[link]} & 1998 \\
-& \cvwide{Escola do Parque \href{https://www.escolaparquegoiania.com.br}{[link]} -- Goiânia, Goiás, Brazil} \\
+& School Environmental Field Visit -- Goiânia Municipal Landfill \href{https://aterrogoiania.comurg.com.br}{[link]} & 1998 \\*
+& \cvlocation{Escola do Parque \href{https://www.escolaparquegoiania.com.br}{[link]} -- Goiânia, Goiás, Brazil} \\*
 & \cvwide{\textbullet{} Participated in a field visit to the Goiânia Municipal Landfill, observing} \\
 & \cvwide{municipal solid waste disposal operations and environmental-control systems.} \\
 & \cvwide{\textbullet{} Visited the landfill-gas collection and flaring system, where biogas was captured} \\
@@ -429,8 +397,8 @@ Sustainability Hackathon at the Brazilian Center for Research in Physics
 & \cvwide{the treated water was discharged back into the local river system.} \\
 & \cvwide{\cvblank} \\[-0.35em]
 
-& ``Aprender a Pensar'' -- High Abilities/Gifted Education Extension Program & 1996 \\
-& \cvwide{Pontifical Catholic University of Goiás (PUC Goiás) -- Goiânia, Goiás, Brazil} \\
+& ``Aprender a Pensar'' -- High Abilities/Gifted Education Extension Program & 1996 \\*
+& \cvlocation{Pontifical Catholic University of Goiás (PUC Goiás) -- Goiânia, Goiás, Brazil} \\*
 & \cvwide{\textbullet{} Selected for participation in a university extension program for children identified} \\
 & \cvwide{with high abilities/giftedness through psychometric assessment of non-verbal abstract} \\
 & \cvwide{reasoning, including visual pattern recognition and inductive reasoning tasks.} \\
@@ -439,8 +407,8 @@ Sustainability Hackathon at the Brazilian Center for Research in Physics
 & \cvwide{\cvblank} \\[-0.35em]
 & \cvwide{\cvblank} \\[-0.35em]
 
-& Logosophical Education -- First Grade & 1995 \\
-& \cvwide{Colégio Logosófico González Pecotche -- Goiânia, Goiás, Brazil} \\
+& Logosophical Education -- First Grade & 1995 \\*
+& \cvlocation{Colégio Logosófico González Pecotche -- Goiânia, Goiás, Brazil} \\*
 & \cvwide{\textbullet{} Completed first grade at a school whose educational approach was grounded in} \\
 & \cvwide{Logosophy, a system of thought developed by Carlos Bernardo González Pecotche that} \\
 & \cvwide{emphasizes conscious self-knowledge and the development of individual capacities.} \\
@@ -453,19 +421,21 @@ Certificates
 & \textcolor{gray!60}{\textbf{HSK 3} -- Chinese Proficiency Exam Scheduled}
 \href{https://institutoconfucio.com.br/exame-de-proficiencia/}{[link]}
 & \textcolor{gray!60}{18 Oct 2026} \\*
-& \cvwide{\textcolor{gray!60}{Instituto Confúcio / São Paulo, SP}} \\
+& \cvlocation{\textcolor{gray!60}{Instituto Confúcio -- São Paulo, SP}} \\
 & \cvwide{\cvblank} \\[-0.35em]
 & \cvwide{\cvblank} \\[-0.35em]
 
-\multirow{2}{\hsize}{Extracurricular Activities} & 1st Place -- Brazil Interstate Taekwon-Do ITF Competition \href{http://www.fbt.org.br/resultados_det.asp?id=54}{[link]} & Aug 2023 \\
+\multirow{2}{\hsize}{Extracurricular Activities} & 1st Place -- Brazil Interstate Taekwon-Do ITF Competition \href{http://www.fbt.org.br/resultados_det.asp?id=54}{[link]} & Aug 2023 \\*
+ & \cvlocation{Búzios, Rio de Janeiro, Brazil} \\*
  & \cvwide{\textbullet{} Two Gold medals: Sparring and Patterns (Tul).} \\
- & \cvwide{\textbullet{} Buzios. Rio de Janeiro, Brazil.} \\
  & \cvwide{\cvblank} \\[-0.35em]
 
-  & 1st Place -- Children's Drawing Contest \href{https://thy-catalogue.art/galerie}{[Art Portifolio]} & Oct 2000 \\
- & \cvwide{Claro -- Telecommunications Company, Brazil} \\
+  & 1st Place -- Children's Drawing Contest \href{https://thy-catalogue.art/galerie}{[Art Portifolio]} & Oct 2000 \\*
+ & \cvlocation{Claro (telecommunications company) -- Brazil} \\*
  & \cvwide{\textbullet{} First-place award in a Children's Day drawing competition organized by} \\
  & \cvwide{Claro for employees' children.} \\
 
 \end{longtable}
+\vfill
+{\footnotesize\itshape\textsuperscript{\tiny *} Information shown in gray refers to future or pending items.\par}
 \end{document}
