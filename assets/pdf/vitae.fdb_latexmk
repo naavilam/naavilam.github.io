@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1790822995.83984 "vitae.xdv" "vitae.pdf" "vitae" 1790822996.07909 0
-  "vitae.xdv" 1790822995.81555 163732 5599991ea57528706d2b1d3240059fba "xelatex"
+["xdvipdfmx"] 1790823153.14767 "vitae.xdv" "vitae.pdf" "vitae" 1790823153.39517 0
+  "vitae.xdv" 1790823153.12311 172088 3b1e612ae4f6a4d2dfacd7322bf37a48 "xelatex"
   (generated)
   "vitae.pdf"
   (rewritten before read)
-["xelatex"] 1790822995.39273 "vitae.tex" "vitae.xdv" "vitae" 1790822996.07858 0
+["xelatex"] 1790823152.70575 "vitae.tex" "vitae.xdv" "vitae" 1790823153.39463 0
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2026/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -70,9 +70,9 @@
   "/usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf" 1770478701 43630 e9fa012910491fe5ae08a72c3c2997a7 ""
   "/usr/local/texlive/2026/texmf-var/web2c/xetex/xelatex.fmt" 1778078964 5948571 409b9e091d6656e22d6167f41e74e4d5 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "vitae.aux" 1790822995.81509 234 353010dc7bb378d40008bd06bad136a4 "xelatex"
-  "vitae.out" 1790822995.75344 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "vitae.tex" 1790822992.15615 25158 e9028088d89fc58734bb055660de53fd ""
+  "vitae.aux" 1790823153.12262 234 353010dc7bb378d40008bd06bad136a4 "xelatex"
+  "vitae.out" 1790823153.05936 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "vitae.tex" 1790823149.23284 26012 14640a629faa1e77545a2e732adda571 ""
   (generated)
   "vitae.aux"
   "vitae.log"

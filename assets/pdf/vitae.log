@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  30 SEP 2026 23:49
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.5.6)  30 SEP 2026 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -522,11 +522,11 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 112.
+(Font)              <9> on input line 124.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 112.
+(Font)              <6> on input line 124.
 
-Underfull \hbox (badness 1609) in paragraph at lines 276--276
+Underfull \hbox (badness 1609) in paragraph at lines 288--288
 [][]\TU/texgyreschola(0)/m/n/9 Application accepted; participation in the Quant
 um Computing and Sustainability
  []
@@ -542,7 +542,7 @@ ignored: Infinite glue shrinkage found in box being split [4]
 ignored: I
 nfinite glue shrinkage found in box being split [5]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 440.
+(Font)              <8> on input line 452.
  [6] (./vitae.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -554,10 +554,10 @@ Package rerunfilecheck Info: File `vitae.out' has not changed.
 Here is how much of TeX's memory you used:
  13633 strings out of 468168
  268451 string characters out of 5432816
- 869809 words of memory out of 5000000
+ 872809 words of memory out of 5000000
  42225 multiletter control sequences out of 15000+600000
  631000 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,8n,93p,1002b,468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on vitae.xdv (6 pages, 163732 bytes).
+Output written on vitae.xdv (6 pages, 172088 bytes).
