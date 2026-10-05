@@ -1,5 +1,7 @@
 # Software guide illustrations
 
+GitHub Version Control now uses six native HTML terminal illustrations. **No `gitvc01.png`–`gitvc06.png` files are required.** Their fictional session is stored in `_data/release-examples.json` and rendered by `_includes/release-terminal.html`. Minor and major release examples show conceptual state transitions, explicitly labeled as such.
+
 Save your PNG screenshots in the folders below. The pages show a styled placeholder until each file exists; on the next Jekyll build the actual image appears automatically. No post editing is required. All image URLs use `relative_url` for deployment under a base path.
 
 Use readable screenshots, ideally 1400–1800 px wide. Crop unnecessary browser chrome, keep text legible, and omit credentials and webhook URLs. PNG filenames are case-sensitive. Figures link to their full-size image.
@@ -17,12 +19,6 @@ Use readable screenshots, ideally 1400–1800 px wide. Crop unnecessary browser 
 | `quantum-battleship/` | `qubat03.png` | Player board, opponent board and coordinate attack field |
 | `quantum-battleship/` | `qubat04.png` | End-of-game overlay showing the battle outcome |
 | `quantum-battleship/` | `qubat05.png` | Analytics page with hardware, shots and charts |
-| `github-version-control/` | `gitvc01.png` | Zsh setup and GitHub repository context |
-| `github-version-control/` | `gitvc02.png` | Feature issues added to the active GitHub Project |
-| `github-version-control/` | `gitvc03.png` | Terminal task overview and GitHub Project board |
-| `github-version-control/` | `gitvc04.png` | Patch tag and linked issue delivery comment |
-| `github-version-control/` | `gitvc05.png` | Minor GitHub Release and next development line |
-| `github-version-control/` | `gitvc06.png` | Major release and closed project |
 | `literature-alerts/` | `lital01.png` | Topic YAML with arXiv query and destination variable |
 | `literature-alerts/` | `lital02.png` | Discord webhook and corresponding GitHub Actions secret |
 | `literature-alerts/` | `lital03.png` | Scheduled workflow and manual run inputs |

@@ -1,0 +1,130 @@
+{
+  "gitvc01": {
+    "title": "01 / Inspect the development line",
+    "caption": "Start inside the fictional atlas-tools repository. One task is already waiting in the active development line.",
+    "lines": [
+      [
+        "command",
+        "todo"
+      ],
+      [
+        "output",
+        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [TODO] #1  Correct the path alias function"
+      ]
+    ]
+  },
+  "gitvc02": {
+    "title": "02 / Create a fix and a feature",
+    "caption": "rel fix creates a fix issue; rel init creates a feature issue. The issue numbers continue the same fictional session.",
+    "lines": [
+      [
+        "command",
+        "rel fix \"Handle missing export folders\""
+      ],
+      [
+        "output",
+        "Open dev line found: v0.0.x (#19)\nCreating items (kind=fix):\n  • created: #2 (FIX) Handle missing export folders"
+      ],
+      [
+        "command",
+        "rel init \"Add a project summary command\""
+      ],
+      [
+        "output",
+        "Open dev line found: v0.0.x (#19)\nCreating items (kind=feature):\n  • created: #3 Add a project summary command"
+      ]
+    ]
+  },
+  "gitvc03": {
+    "title": "03 / Review the queue",
+    "caption": "The overview groups feature tasks and fixes. Use rel init for new feature tasks; rel task is not a supported command.",
+    "lines": [
+      [
+        "command",
+        "todo"
+      ],
+      [
+        "output",
+        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [TODO] #1  Correct the path alias function\n- [TODO] #3  Add a project summary command\n- [FIX]  #2  Handle missing export folders"
+      ]
+    ]
+  },
+  "gitvc04": {
+    "title": "04 / Tag a completed issue",
+    "caption": "Issue #1 becomes Done after its patch tag is created. The feature and the fix remain in the development line.",
+    "lines": [
+      [
+        "command",
+        "rel p 1"
+      ],
+      [
+        "output",
+        "[info] example-lab/atlas-tools\n[info] Tag to create: v0.0 -> v0.0.1\n[info] Tag created: v0.0.1 (at main)\n[info] project item #1 marked as Done."
+      ],
+      [
+        "command",
+        "todo"
+      ],
+      [
+        "output",
+        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [done] #1  Correct the path alias function\n- [TODO] #3  Add a project summary command\n- [FIX]  #2  Handle missing export folders"
+      ]
+    ]
+  },
+  "gitvc05": {
+    "title": "05 / Publish a minor delivery",
+    "caption": "Illustrative state transition, not a literal command log: complete the feature, publish v0.1 and carry the unfinished fix into v0.1.x.",
+    "lines": [
+      [
+        "command",
+        "rel done 3"
+      ],
+      [
+        "command",
+        "rel m"
+      ]
+    ],
+    "states": [
+      [
+        "Published release",
+        "v0.1"
+      ],
+      [
+        "Closed project",
+        "v0.1 (released) · #1 and #3 Done"
+      ],
+      [
+        "Next development line",
+        "v0.1.x · #2 remains pending"
+      ]
+    ]
+  },
+  "gitvc06": {
+    "title": "06 / Publish a major delivery",
+    "caption": "Illustrative state transition, not a literal command log: reconcile the remaining fix before publishing the major version. The major command marks all current project items Done.",
+    "lines": [
+      [
+        "command",
+        "rel done 2"
+      ],
+      [
+        "command",
+        "rel M"
+      ]
+    ],
+    "states": [
+      [
+        "Published release",
+        "v1.0.0"
+      ],
+      [
+        "Closed project",
+        "v1.0 (released) · all current items Done"
+      ],
+      [
+        "Next line, if opened",
+        "v1.0.x"
+      ]
+    ]
+  }
+}

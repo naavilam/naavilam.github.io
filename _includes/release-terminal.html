@@ -1,0 +1,11 @@
+{% assign example = site.data.release-examples[include.example] %}
+<figure class="release-example">
+  <div class="release-terminal">
+    <div class="terminal-titlebar"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>{{ example.title | escape }}</span><span class="terminal-demo">Fictional example</span></div>
+    <div class="terminal-transcript" tabindex="0" role="region" aria-label="{{ example.title | escape }} terminal example">
+      {% for line in example.lines %}{% if line[0] == 'command' %}<pre class="terminal-command"><code><span class="terminal-arrow" aria-hidden="true">➜</span> <span class="terminal-repo">atlas-tools</span> <span class="terminal-git">git:(</span><span class="terminal-main">main</span><span class="terminal-git">)</span> <span class="terminal-percent">%</span> {{ line[1] | escape }}</code></pre>{% else %}<pre class="terminal-output"><code>{{ line[1] | escape | replace: '[TODO]', '<span class="terminal-todo">[TODO]</span>' | replace: '[FIX]', '<span class="terminal-fix">[FIX]</span>' | replace: '[done]', '<span class="terminal-done">[done]</span>' }}</code></pre>{% endif %}{% endfor %}
+    </div>
+  </div>
+  {% if example.states %}<dl class="release-state-grid">{% for state in example.states %}<div><dt>{{ state[0] | escape }}</dt><dd>{{ state[1] | escape }}</dd></div>{% endfor %}</dl>{% endif %}
+  <figcaption>{{ example.caption | escape }}</figcaption>
+</figure>
