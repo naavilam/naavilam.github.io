@@ -17,7 +17,7 @@ categories: [software]
 <link rel="stylesheet" href="{{ '/assets/css/software-guides.css' | relative_url }}">
 <div class="software-guide guide-zotero">
 <header class="guide-hero"><span class="eyebrow">The library companion</span><h2>Let your library become a folder tree</h2><p class="lead">FS Mirror is a Zotero plugin that mirrors the collection hierarchy onto the filesystem and maintains linked PDF attachments. It connects the way you organize references in Zotero with the way you navigate files on disk. Install the packaged extension, choose a mirror root and use the collection context menu to reconcile an existing library tree.</p></header>
-<nav class="guide-nav" aria-label="Guide sections"><a href="#download">Download</a><a href="#install">Install</a><a href="#configure">Configure</a><a href="#sanitize">Sanitize</a><a href="#features">Features</a></nav>
+<nav class="guide-nav" aria-label="Guide sections"><a href="{{ page.url | relative_url }}#download">Download</a><a href="{{ page.url | relative_url }}#install">Install</a><a href="{{ page.url | relative_url }}#configure">Configure</a><a href="{{ page.url | relative_url }}#sanitize">Sanitize</a><a href="{{ page.url | relative_url }}#features">Features</a></nav>
 <div class="guide-grid">
 <div class="guide-card"><h4>Library</h4><p>Organize references into Zotero collections.</p></div>
 <div class="guide-card"><h4>Filesystem</h4><p>Mirror that hierarchy into folders and linked attachments.</p></div>

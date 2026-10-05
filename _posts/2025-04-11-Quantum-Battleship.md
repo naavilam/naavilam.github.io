@@ -18,7 +18,7 @@ categories: [software]
 <link rel="stylesheet" href="{{ '/assets/css/software-guides.css' | relative_url }}">
 <div class="software-guide guide-qubat">
 <header class="guide-hero"><span class="eyebrow">Mission briefing</span><h2>A battle with a quantum twist</h2><p class="lead">Quantum Battleship combines a familiar strategy game with an experiment in random number generation. Configure your opponent, enter your player name and attack by coordinates while the computer responds. A completed battle provides a starting point for exploring how the selected quantum service produces random choices and for examining the available statistical charts.</p></header>
-<nav class="guide-nav" aria-label="Guide sections"><a href="#backend">Backend</a><a href="#player">Player</a><a href="#turn">Play</a><a href="#finish">Finish</a><a href="#statistics">Statistics</a></nav>
+<nav class="guide-nav" aria-label="Guide sections"><a href="{{ page.url | relative_url }}#backend">Backend</a><a href="{{ page.url | relative_url }}#player">Player</a><a href="{{ page.url | relative_url }}#turn">Play</a><a href="{{ page.url | relative_url }}#finish">Finish</a><a href="{{ page.url | relative_url }}#statistics">Statistics</a></nav>
 <div class="guide-grid">
 <div class="guide-card"><h4>Mission</h4><p>Play a complete battle against the computer.</p></div>
 <div class="guide-card"><h4>Experiment</h4><p>Observe the random choices used by the opponent.</p></div>
