@@ -1,0 +1,7 @@
+{% assign excerpt = site.data.literature-examples[include.example] %}
+<figure class="source-excerpt">
+  <div class="source-excerpt-header"><span class="source-language">{{ excerpt.language | escape }}</span><strong>{{ excerpt.title | escape }}</strong><span class="source-origin">Actual project source</span></div>
+  <div class="source-file"><a href="{{ excerpt.url | escape }}">{{ excerpt.file | escape }}</a><span>Lines {{ excerpt.first_line }}–{{ excerpt.last_line }}</span></div>
+  <pre tabindex="0" aria-label="{{ excerpt.file | escape }} code excerpt"><code>{{ excerpt.code | escape }}</code></pre>
+  <figcaption>{{ excerpt.caption | escape }}</figcaption>
+</figure>

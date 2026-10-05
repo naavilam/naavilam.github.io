@@ -1,0 +1,52 @@
+{
+  "lital01": {
+    "file": "topics/hep.yml",
+    "first_line": 1,
+    "last_line": 10,
+    "language": "YAML",
+    "title": "Define the research stream",
+    "caption": "Real topic entries for experimental high-energy physics and phenomenology. Each query is paired with a named webhook environment variable.",
+    "code": "topics:\n  - id: hep-ex\n    title: \"High Energy Physics - Experiment\"\n    webhook_env: \"DISCORD_WEBHOOK_URL_HEP_EX\"\n    arxiv_url: \"https://export.arxiv.org/api/query?search_query=cat:hep-ex&sortBy=submittedDate&sortOrder=descending&max_results=100\"\n\n  - id: hep-ph\n    title: \"High Energy Physics - Phenomenology\"\n    webhook_env: \"DISCORD_WEBHOOK_URL_HEP_PH\"\n    arxiv_url: \"https://export.arxiv.org/api/query?search_query=cat:hep-ph&sortBy=submittedDate&sortOrder=descending&max_results=100\"",
+    "url": "https://github.com/automation-scripting/literature-alert-bot/blob/main/topics/hep.yml#L1"
+  },
+  "lital02": {
+    "file": ".github/workflows/check-new-papers.yml",
+    "first_line": 36,
+    "last_line": 53,
+    "language": "YAML",
+    "title": "Bind the delivery destination",
+    "caption": "The actual HEP workflow step exposes repository secrets as environment variables and passes topics/hep.yml to the runner. These are secret references, not webhook values.",
+    "code": "      - name: Run HEP topics via runner\n        env:\n          TIME_FRAME: ${{ github.event.inputs.time_frame || '1' }}\n          ONLY_TOPIC: ${{ github.event.inputs.only_topic || 'all' }}\n\n          DISCORD_WEBHOOK_URL_BARYOGENESIS: ${{ secrets.DISCORD_HEP_EARLY_UNIVERSE_BARYOGENESIS_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_QGP_ML: ${{ secrets.DISCORD_HEP_QGP_ML_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_QGP_NN: ${{ secrets.DISCORD_HEP_QGP_NEURAL_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_QGP_BAYESIAN: ${{ secrets.DISCORD_HEP_QGP_BAYESIAN_INFERENCE_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_QGP_DKL: ${{ secrets.DISCORD_HEP_QGP_DEEP_KERNEL_LEARNING_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_NUCL_EX: ${{ secrets.DISCORD_HEP_NUCLEAR_EXPERIMENT_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_NUCL_TH: ${{ secrets.DISCORD_HEP_NUCLEAR_THEORY_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_HEP_LAT: ${{ secrets.DISCORD_HEP_LATTICE_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_HEP_TH: ${{ secrets.DISCORD_HEP_THEORY_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_HEP_PH: ${{ secrets.DISCORD_HEP_PHENOMENOLOGY_WEBHOOK }}\n          DISCORD_WEBHOOK_URL_HEP_EX: ${{ secrets.DISCORD_HEP_EXPERIMENT_WEBHOOK }}\n\n        run: python runner.py topics/hep.yml",
+    "url": "https://github.com/automation-scripting/literature-alert-bot/blob/main/.github/workflows/check-new-papers.yml#L36"
+  },
+  "lital03": {
+    "file": ".github/workflows/check-new-papers.yml",
+    "first_line": 3,
+    "last_line": 17,
+    "language": "YAML",
+    "title": "Set the automation clock",
+    "caption": "The project runs daily at 08:00 UTC, or 05:00 São Paulo time, and exposes topic and time-window inputs for manual runs.",
+    "code": "on:\n  schedule:\n    - cron: \"0 8 * * *\"   # daily at 08:00 UTC = 05:00 BRT (UTC-3)\n  workflow_dispatch:\n    inputs:\n      only_topic:\n        description: \"Run only this topic id (default: all)\"\n        required: false\n        default: \"all\"\n        type: string\n      time_frame:\n        description: \"Days back (default: 1) or 'all'\"\n        required: false\n        default: \"1\"\n        type: string",
+    "url": "https://github.com/automation-scripting/literature-alert-bot/blob/main/.github/workflows/check-new-papers.yml#L3"
+  },
+  "lital04": {
+    "file": "runner.py",
+    "first_line": 38,
+    "last_line": 50,
+    "language": "Python",
+    "title": "Read the runner defaults",
+    "caption": "These defaults are read from environment variables at startup. Set an override in the workflow step’s env block to change a value.",
+    "code": "TIME_FRAME_RAW = os.getenv(\"TIME_FRAME\", \"1\").strip().lower()   # \"1\", \"7\", \"30\", \"360\", \"all\"\nONLY_TOPIC = os.getenv(\"ONLY_TOPIC\", \"all\").strip()             # \"all\" or a topic id  # >>> CHANGED\nMODE = os.getenv(\"MODE\", \"auto\").strip().lower()               # \"auto\" | \"per_paper\" | \"summary\"\nREQUEST_TIMEOUT = int(os.getenv(\"REQUEST_TIMEOUT\", \"20\"))\n\nPOST_DELAY_SECONDS = float(os.getenv(\"POST_DELAY_SECONDS\", \"0.4\"))\nMAX_RETRIES_429 = int(os.getenv(\"MAX_RETRIES_429\", \"8\"))\nDISCORD_CHUNK_LIMIT = int(os.getenv(\"DISCORD_CHUNK_LIMIT\", \"1800\"))\n\nMAX_POSTS_PER_TOPIC = int(os.getenv(\"MAX_POSTS_PER_TOPIC\", \"0\"))  # 0 = no cap after time filter\n\n# Safety: if too many papers, force summary (prevents floods / 429)  # >>> CHANGED\nSUMMARY_THRESHOLD = int(os.getenv(\"SUMMARY_THRESHOLD\", \"50\"))",
+    "url": "https://github.com/automation-scripting/literature-alert-bot/blob/main/runner.py#L38"
+  },
+  "lital05": {
+    "file": "runner.py",
+    "first_line": 290,
+    "last_line": 296,
+    "language": "Python",
+    "title": "Understand the execution summary",
+    "caption": "The actual summary code prints fetched articles, papers that pass the date filter, successful posts and failures. In summary mode, posted counts refer to message chunks, not individual papers.",
+    "code": "    # --- SUMMARY ---\n    print(\"---\")\n    print(f\"Total results on arXiv   : {total_available}\")\n    print(f\"Total fetched from arXiv : {total_fetched}\")\n    print(f\"Passed time filter       : {len(papers)}\")\n    print(f\"Successfully posted      : {posted_ok}\")\n    print(f\"Failed to post           : {posted_fail}\")",
+    "url": "https://github.com/automation-scripting/literature-alert-bot/blob/main/runner.py#L290"
+  }
+}
