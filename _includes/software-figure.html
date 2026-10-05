@@ -1,0 +1,10 @@
+{% assign figure_path = '/assets/img/guides/' | append: include.folder | append: '/' | append: include.file %}
+{% assign figure_asset = site.static_files | where: 'path', figure_path | first %}
+<figure class="guide-figure">
+  {% if figure_asset %}
+  <a href="{{ figure_path | relative_url }}"><img src="{{ figure_path | relative_url }}" alt="{{ include.alt | escape }}" loading="lazy" decoding="async"></a>
+  {% else %}
+  <div class="figure-placeholder" role="img" aria-label="Illustration pending: {{ include.alt | escape }}"><span>Illustration coming soon</span><strong>{{ include.alt | escape }}</strong></div>
+  {% endif %}
+  <figcaption>{{ include.caption | escape }}</figcaption>
+</figure>
