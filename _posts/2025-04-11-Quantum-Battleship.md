@@ -31,7 +31,7 @@ categories: [software]
 	<a href="{{ page.url | relative_url }}#statistics">Analysis</a>
 	<a href="{{ page.url | relative_url }}#architecture">Architecture</a>
 </nav>
-<p>The screenshots below show the Portuguese interface. English and Chinese are available through the language selector. The gameplay, completed record and charts use a local demonstration with synthetic data, not a live hardware execution.</p>
+<p>The screenshots below show the English interface. Portuguese and Chinese are also available through the language selector. The gameplay, completed record and charts use a local demonstration with synthetic data, not a live hardware execution.</p>
 
 <section id="idea">
 	<h3>Why put quantum randomness inside a game?</h3>
