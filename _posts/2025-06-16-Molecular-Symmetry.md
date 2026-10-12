@@ -10,8 +10,8 @@ last-updated: 2026-10-11
 tag: Application
 author: Nara Avila
 card: card-2
-repo: application-vault/simetria-molecular
-live_url: https://application-vault.github.io/simetria-molecular
+repo: quantum-materials-simulation-research/simetria-molecular
+live_url: https://quantum-materials-simulation-research.github.io/simetria-molecular
 categories: [software]
 ---
 
