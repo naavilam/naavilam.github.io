@@ -24,7 +24,7 @@
 
 - title: Quantum Materials Simulation
   tag: Research
-  description: Materials modeling, electronic structure, ML.
+  description: Materials modeling, electronic structure, ground state energy approximation
   link: https://quantum-materials-simulation-research.github.io
   image: /assets/img/focus/quantum-materials-simulation-research.jpg
   weight: 4
