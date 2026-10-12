@@ -1,7 +1,7 @@
 {
   "gitvc01": {
-    "title": "01 / Inspect the development line",
-    "caption": "Start inside the fictional atlas-tools repository. One task is already waiting in the active development line.",
+    "title": "01 / Begin without a development line",
+    "caption": "The fictional repository exists on GitHub, but no linked development Project is open. todo only inspects the current state.",
     "lines": [
       [
         "command",
@@ -9,13 +9,35 @@
       ],
       [
         "output",
-        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [TODO] #1  Correct the path alias function"
+        "No open dev line project (vX.Y.x) found for example-lab/atlas-tools."
+      ]
+    ]
+  },
+  "gitvc-first": {
+    "title": "02 / Create the first task",
+    "caption": "rel init creates and links the initial v0.0.x Project, then adds the first feature issue. “Open dev line found” is the command’s message even when it just created that line.",
+    "lines": [
+      [
+        "command",
+        "rel init \"Create the command-line entry point\""
+      ],
+      [
+        "output",
+        "Open dev line found: v0.0.x (#19)\nCreating items (kind=feature):\n  • created: #1 Create the command-line entry point"
+      ],
+      [
+        "command",
+        "todo"
+      ],
+      [
+        "output",
+        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [TODO] #1  Create the command-line entry point"
       ]
     ]
   },
   "gitvc02": {
-    "title": "02 / Create a fix and a feature",
-    "caption": "rel fix creates a fix issue; rel init creates a feature issue. The issue numbers continue the same fictional session.",
+    "title": "03 / Grow the backlog",
+    "caption": "One repository, one development line: add a fix and another feature. Issue numbers #1, #2 and #3 remain consistent throughout this guide.",
     "lines": [
       [
         "command",
@@ -36,8 +58,8 @@
     ]
   },
   "gitvc03": {
-    "title": "03 / Review the queue",
-    "caption": "The overview groups feature tasks and fixes. Use rel init for new feature tasks; rel task is not a supported command.",
+    "title": "04 / Review the pending work",
+    "caption": "todo lists the Project items. rel todo <issue> changes a status; it is not the listing command.",
     "lines": [
       [
         "command",
@@ -45,13 +67,13 @@
       ],
       [
         "output",
-        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [TODO] #1  Correct the path alias function\n- [TODO] #3  Add a project summary command\n- [FIX]  #2  Handle missing export folders"
+        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [TODO] #1  Create the command-line entry point\n- [TODO] #3  Add a project summary command\n- [FIX]  #2  Handle missing export folders"
       ]
     ]
   },
   "gitvc04": {
-    "title": "04 / Tag a completed issue",
-    "caption": "Issue #1 becomes Done after its patch tag is created. The feature and the fix remain in the development line.",
+    "title": "05 / Deliver the first task",
+    "caption": "After committing and pushing the implementation, rel p 1 creates a patch tag and marks #1 Done. The other two issues stay pending.",
     "lines": [
       [
         "command",
@@ -67,45 +89,57 @@
       ],
       [
         "output",
-        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [done] #1  Correct the path alias function\n- [TODO] #3  Add a project summary command\n- [FIX]  #2  Handle missing export folders"
+        "Open dev line (Project): v0.0.x (#19)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [done] #1  Create the command-line entry point\n- [TODO] #3  Add a project summary command\n- [FIX]  #2  Handle missing export folders"
       ]
     ]
   },
   "gitvc05": {
-    "title": "05 / Publish a minor delivery",
-    "caption": "Illustrative state transition, not a literal command log: complete the feature, publish v0.1 and carry the unfinished fix into v0.1.x.",
+    "title": "06 / Publish the minor release",
+    "caption": "Condensed successful-path illustration. After publishing v0.1, verify that both unfinished issues are present in the next development line.",
     "lines": [
       [
         "command",
-        "rel done 3"
+        "rel m"
+      ],
+      [
+        "output",
+        "[info] example-lab/atlas-tools\n[info] Tag to create: v0.0.1 -> v0.1\n[info] Release created: v0.1\n…\nProject closed: v0.1 (released) (#19)"
       ],
       [
         "command",
-        "rel m"
+        "todo"
+      ],
+      [
+        "output",
+        "Open dev line (Project): v0.1.x (#20)\n   Patch: rel p #<issue>   | Minor: rel m   | Major: rel M\n\n- [TODO] #3  Add a project summary command\n- [FIX]  #2  Handle missing export folders"
       ]
     ],
     "states": [
       [
-        "Published release",
+        "Published",
         "v0.1"
       ],
       [
-        "Closed project",
-        "v0.1 (released) · #1 and #3 Done"
+        "Completed history",
+        "v0.1 (released) · #1 Done"
       ],
       [
-        "Next development line",
-        "v0.1.x · #2 remains pending"
+        "Remaining work",
+        "v0.1.x · #2 and #3 pending"
       ]
     ]
   },
   "gitvc06": {
-    "title": "06 / Publish a major delivery",
-    "caption": "Illustrative state transition, not a literal command log: reconcile the remaining fix before publishing the major version. The major command marks all current project items Done.",
+    "title": "07 / Prepare a major version",
+    "caption": "Once #2 and #3 have actually been implemented and pushed, mark them Done and publish the major version. State cards summarize the result; they are not execution output.",
     "lines": [
       [
         "command",
         "rel done 2"
+      ],
+      [
+        "command",
+        "rel done 3"
       ],
       [
         "command",
@@ -114,16 +148,30 @@
     ],
     "states": [
       [
-        "Published release",
+        "Published",
         "v1.0.0"
       ],
       [
-        "Closed project",
-        "v1.0 (released) · all current items Done"
+        "Closed Project",
+        "v1.0 (released) · current items Done"
       ],
       [
-        "Next line, if opened",
-        "v1.0.x"
+        "Optional next line",
+        "v1.0.x · created if you confirm the prompt"
+      ]
+    ]
+  },
+  "gitvc-help": {
+    "title": "Reference / The supported commands",
+    "caption": "rel task is unsupported. The help output names rel init as the command for new feature tasks.",
+    "lines": [
+      [
+        "command",
+        "rel task"
+      ],
+      [
+        "output",
+        "Usage:\n  rel init Item A -- Item B -- Item C\n  rel fix Item A -- Item B -- Item C\n  rel p <issue>        (patch release)\n  rel m                (minor release)\n  rel M                (major release)\n  rel todo <issue>     (set Status=Todo)\n  rel progress <issue> (set Status=In Progress)\n  rel done <issue>     (set Status=Done)"
       ]
     ]
   }

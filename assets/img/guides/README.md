@@ -2,7 +2,7 @@
 
 Literature Alerts now uses five actual source excerpts, copied from the local project on 2026-10-05. **No `lital01.png`–`lital05.png` files are required.** The excerpts and original line references are in `_data/literature-examples.json`, rendered through `_includes/source-excerpt.html`. Update that data file when the upstream configuration changes.
 
-GitHub Version Control now uses six native HTML terminal illustrations. **No `gitvc01.png`–`gitvc06.png` files are required.** Their fictional session is stored in `_data/release-examples.json` and rendered by `_includes/release-terminal.html`. Minor and major release examples show conceptual state transitions, explicitly labeled as such.
+GitHub Version Control now uses native HTML terminal illustrations for a continuous seven-step walkthrough. **No `gitvc01.png`–`gitvc06.png` files are required.** Their fictional session is stored in `_data/release-examples.json` and rendered by `_includes/release-terminal.html`. The walkthrough starts without an open Project and follows the same issue numbers through task creation, patch, minor and major delivery. Abbreviated output and state summaries are labeled.
 
 Save your PNG screenshots in the folders below. The pages show a styled placeholder until each file exists; on the next Jekyll build the actual image appears automatically. No post editing is required. All image URLs use `relative_url` for deployment under a base path.
 

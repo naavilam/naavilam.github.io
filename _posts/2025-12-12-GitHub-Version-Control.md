@@ -16,48 +16,64 @@ categories: [software]
 
 <link rel="stylesheet" href="{{ '/assets/css/software-guides.css' | relative_url }}">
 <div class="software-guide guide-gitvc">
-<header class="guide-hero"><span class="eyebrow">The delivery workshop</span><h2>Give every delivery a history</h2><p class="lead">GitHub Version Control is a Zsh workflow for planning work in GitHub Projects and recording deliveries with Git tags and GitHub Releases. Its rel commands connect issues, development lines and published versions so you can see what is evolving and what has shipped. Git still records your code changes; this module organizes the planning and release cycle around them.</p></header>
-<nav class="guide-nav" aria-label="Guide sections"><a href="{{ page.url | relative_url }}#setup">Initialize</a><a href="{{ page.url | relative_url }}#tasks">Tasks</a><a href="{{ page.url | relative_url }}#pending">Pending work</a><a href="{{ page.url | relative_url }}#milestone">Patch / milestone</a><a href="{{ page.url | relative_url }}#minor">Minor</a><a href="{{ page.url | relative_url }}#major">Major</a></nav>
-<aside class="guide-callout"><strong>Follow one example project.</strong> The terminal illustrations use the fictional <code>example-lab/atlas-tools</code> repository. Commands and status layouts follow the demonstrated workflow; the minor and major panels summarize state changes rather than reproduce execution logs.</aside>
-<ol class="guide-flow"><li>Open a development line</li><li>Create and track tasks</li><li>Tag a completed fix</li><li>Publish a release</li></ol>
+<header class="guide-hero"><span class="eyebrow">The delivery workshop</span><h2>From an empty backlog to a published version</h2><p class="lead">GitHub Version Control is a Zsh module that connects GitHub issues, versioned Projects and release history. Start in a repository with no open development line, create the first task and grow the backlog. Deliver an issue with a patch tag, publish a minor release and prepare the next major version. Git records the code; this workflow connects that code to the work planned and shipped.</p></header>
+<nav class="guide-nav" aria-label="Release workflow steps"><a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#setup">1 · Inspect →</a><a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#first-task">2 · First task →</a><a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#tasks">3 · Backlog →</a><a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#pending">4 · Review →</a><a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#milestone">5 · Patch →</a><a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#minor">6 · Minor →</a><a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#major">7 · Major →</a></nav>
+<aside class="guide-callout"><strong>One continuous example.</strong> Follow the fictional <code>example-lab/atlas-tools</code> repository on <code>main</code>. The module is already loaded, the repository is connected to GitHub, and your account can manage its issues, Projects and releases. The transcript illustrations follow the supplied sessions; abbreviated output and conceptual state summaries are labeled.</aside>
+<section id="setup">
+<div class="step-heading"><span class="step-number">01</span><h3>Inspect the repository before creating anything</h3></div>
+<p>Run <code>todo</code> inside the target repository. A message saying no open development line was found means there is no linked open Project named <code>vX.Y.x</code>. It does not create a Project or modify the repository.</p>
+{% include release-terminal.html example="gitvc01" %}
+<a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#first-task">Create the first task →</a>
+</section>
+<section id="first-task">
+<div class="step-heading"><span class="step-number">02</span><h3>Let the first task open the development line</h3></div>
+<p>Use <code>rel init</code> with an actionable task title. With no existing development line or version tags, the module creates and links <code>v0.0.x</code>, creates issue #1 and adds it to the Project. Run <code>todo</code> again to verify the result. Project number #19 is an example; GitHub assigns the actual number.</p>
+{% include release-terminal.html example="gitvc-first" %}
+<a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#tasks">Add a fix and a feature →</a>
+</section>
+<section id="tasks">
+<div class="step-heading"><span class="step-number">03</span><h3>Build a backlog around the same Project</h3></div>
+<p>Use <code>rel fix</code> to register a fix and <code>rel init</code> to register another feature. Both commands reuse the open development line. For multiple tasks in one call, separate titles with <code>--</code>, for example <code>rel init "Add search" -- "Document the API"</code>.</p>
+{% include release-terminal.html example="gitvc02" %}
+<a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#pending">Review pending work →</a>
+</section>
+<section id="pending">
+<div class="step-heading"><span class="step-number">04</span><h3>Read the queue before choosing a delivery</h3></div>
+<p>The standalone <code>todo</code> lists the development line and its items. Here #1 and #3 are feature tasks, while #2 is labeled FIX. Use <code>rel progress 1</code> to mark work in progress, <code>rel todo 1</code> to reset its status or <code>rel done 1</code> to mark it complete. Those commands update planning status; they do not commit or publish code.</p>
+{% include release-terminal.html example="gitvc03" %}
+<a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#milestone">Deliver issue #1 →</a>
+</section>
+<section id="milestone">
+<div class="step-heading"><span class="step-number">05</span><h3>Attach a patch tag to the first completed task</h3></div>
+<p>Implement issue #1, commit it and push the intended code to the default branch. Then run <code>rel p 1</code>. The command creates the next patch tag at the remote default branch HEAD, attempts to mark the Project item Done and comments on the issue with the tag. It creates a tag rather than a GitHub Release. The development “milestone” in this module is the versioned Project.</p>
+{% include release-terminal.html example="gitvc04" %}
+<a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#minor">Publish the minor version →</a>
+</section>
+<section id="minor">
+<div class="step-heading"><span class="step-number">06</span><h3>Publish what shipped and carry the backlog forward</h3></div>
+<p>Run <code>rel m</code> to publish <code>v0.1</code> with notes from the current Project. Completed issue #1 stays in the released Project. The command moves unfinished #2 and #3 to <code>v0.1.x</code> and closes the old Project. Run <code>todo</code> afterward to review the remaining work in the next development line.</p>
+{% include release-terminal.html example="gitvc05" %}
+<a class="btn btn-outline-secondary" href="{{ page.url | relative_url }}#major">Prepare the major version →</a>
+</section>
+<section id="major">
+<div class="step-heading"><span class="step-number">07</span><h3>Finish the remaining work before a major release</h3></div>
+<p>Implement and push issues #2 and #3, then mark them Done. Use uppercase <code>rel M</code> to publish <code>v1.0.0</code>, rename and close the current Project, and mark all its items Done. The module asks whether to open <code>v1.0.x</code>; that next line is optional. Reconcile unfinished work before this command because it marks every current item Done.</p>
+{% include release-terminal.html example="gitvc06" %}
 
-<section id="setup"><div class="step-heading"><span class="step-number">01</span><h3>Connect a repository to the workflow</h3></div><p>Use a Zsh shell with <code>git</code>, the GitHub CLI (<code>gh</code>) and <code>jq</code> installed. Authenticate with an account that can manage the repository and its Projects. Clone the module, load its functions, then enter the local checkout of the GitHub project you want to manage.</p>{% include release-terminal.html example="gitvc01" %}</section>
-<pre><code>gh auth login
+</section>
+<details><summary>Command reference: why rel task shows help</summary>{% include release-terminal.html example="gitvc-help" %}</details>
+<details><summary>Before this walkthrough: load the module in Zsh</summary><p>Install Git, GitHub CLI and jq, authenticate with repository and Project permissions, and load the functions from a local checkout of the module. Replace the final path with your own target repository. This setup block loads functions; it does not create tasks or releases.</p>
+<div class="release-setup-code"><pre><code>gh auth login
 gh auth refresh -s project
 git clone https://github.com/automation-scripting/github-version-control.git &quot;$HOME/github-version-control&quot;
 
 source &quot;$HOME/github-version-control/rel/rel-lib.zsh&quot;
 source &quot;$HOME/github-version-control/rel/rel-release.zsh&quot;
-source &quot;$HOME/github-version-control/rel/rel-set-item-status.zsh&quot;
 source &quot;$HOME/github-version-control/prj/prj-init.zsh&quot;
 source &quot;$HOME/github-version-control/prj/prj-todo.zsh&quot;
 source &quot;$HOME/github-version-control/prj/prj-set-item-status.zsh&quot;
 source &quot;$HOME/github-version-control/rel/rel.zsh&quot;
 
-cd /path/to/your/github-project
-gh repo view
-rel init &quot;Prepare the first development cycle&quot;</code></pre>
-
-<section id="tasks"><div class="step-heading"><span class="step-number">02</span><h3>Write the work as actionable tasks</h3></div><p><code>rel init</code> creates feature issues and adds them to the active development line. Separate task titles with <code>--</code>. Use <code>rel fix</code> for fixes. The workflow reuses a linked open Project named <code>vX.Y.x</code>, or initializes a development line when needed.</p>{% include release-terminal.html example="gitvc02" %}</section>
-<pre><code>rel init &quot;Add search&quot; -- &quot;Document the API&quot;
-rel fix &quot;Correct the export filename&quot;
-rel progress 12
-rel done 12</code></pre>
-
-<section id="pending"><div class="step-heading"><span class="step-number">03</span><h3>See what remains to be done</h3></div><p>Run the standalone <code>todo</code> function to display the active development line and its task statuses. Open the linked GitHub Project to inspect the board. To put a particular issue back into Todo, use <code>rel todo 12</code>; this changes its status rather than listing tasks.</p>{% include release-terminal.html example="gitvc03" %}</section>
-<pre><code>todo
-rel todo 12</code></pre>
-
-<section id="milestone"><div class="step-heading"><span class="step-number">04</span><h3>Record a completed issue with a patch tag</h3></div><p>In this module, a development “milestone” is represented by a GitHub Project, while an issue delivery is recorded with <code>rel p</code>. Commit and push the intended changes to the default branch before tagging. The command creates the next patch tag, tries to mark the issue Done and comments on the issue with the tag. It does not create a GitHub Release.</p>{% include release-terminal.html example="gitvc04" %}</section>
-<pre><code>rel p 12</code></pre>
-
-<section id="minor"><div class="step-heading"><span class="step-number">05</span><h3>Publish the next minor release</h3></div><p>Review the completed work, push the intended code and run <code>rel m</code>. The command builds release notes from the Project, publishes a short tag such as <code>v0.1</code>, renames the current Project to the released version and closes it. If unfinished work remains, it moves the backlog to the next development line.</p>{% include release-terminal.html example="gitvc05" %}</section>
-<pre><code>rel m</code></pre>
-
-<section id="major"><div class="step-heading"><span class="step-number">06</span><h3>Open a new major chapter</h3></div><p>Review the scope of the transition and run <code>rel M</code> with an uppercase M. The command publishes a tag such as <code>v1.0.0</code>, renames and closes the current Project, marks all its items Done and may open the next maintenance line.</p>{% include release-terminal.html example="gitvc06" %}</section>
-<pre><code>rel M</code></pre>
-<aside class="guide-callout"><strong>Before a major release:</strong> reconcile unfinished tasks first. The current implementation marks every item Done, so this command changes the planning state as well as publishing the release. Release tags target the remote default branch HEAD.</aside>
-<div class="table-scroll"><table class="guide-table"><thead><tr><th scope="col">Action</th><th scope="col">Command</th><th scope="col">Result</th></tr></thead><tbody><tr><td>Feature tasks</td><td><code>rel init "Task"</code></td><td>Issues in an active Project</td></tr><tr><td>List work</td><td><code>todo</code></td><td>Terminal status overview</td></tr><tr><td>Issue delivery</td><td><code>rel p 12</code></td><td>Patch tag; issue traceability</td></tr><tr><td>Minor release</td><td><code>rel m</code></td><td>GitHub Release; backlog transition</td></tr><tr><td>Major release</td><td><code>rel M</code></td><td>GitHub Release; all current items marked Done</td></tr></tbody></table>
-</div>
-<footer class="guide-footer">Source documentation: <a href="https://github.com/automation-scripting/github-version-control">README and module source</a>. Interface labels may appear in Portuguese; this guide provides their English meaning.</footer>
+cd /path/to/your/github-project</code></pre></div></details>
+<footer class="guide-footer">Source: <a href="https://github.com/automation-scripting/github-version-control">GitHub Version Control</a>. Commands were checked against the local module and the supplied terminal sessions on October 5, 2026. Examples do not execute commands or change repositories.</footer>
 </div>
