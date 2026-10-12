@@ -43,7 +43,12 @@ categories: [software]
 <section id="backend">
 	<div class="step-heading"><span class="step-number">01</span><h3>Configure the battle</h3></div>
 	<p>Select a computer from the hardware carousel, then choose a <strong>4 × 4, 8 × 8 or 16 × 16</strong> board and the number of ships. The fleet options depend on board size. Use <strong>PT</strong>, <strong>EN</strong> or <strong>ZH</strong> in the header to change the interface language.</p>
-	<p>The difficulty control enables classical assistance for the opponent. Watch the quantum circuit and classical chip during play to distinguish their activity. The AWS Braket price field is an <strong>estimate for the selected hardware</strong>, not a bill for playing with cached or synthetic data.</p>
+	<p>The AWS Braket price field is an <strong>estimate for the selected hardware</strong>, not a bill for playing with cached or synthetic data.</p>
+	<aside class="guide-callout">
+		<strong>Want a harder opponent? Enable classical assistance.</strong>
+		<p>Before starting, use the CPU-chip difficulty button to enable hard mode (Plus). In normal mode, the opponent uses quantum-source coordinates without the classical follow-up search. In hard mode, a hit activates a classical computer that targets neighboring cells to finish locating and sinking that ship.</p>
+		<p>As more hits reveal a horizontal or vertical alignment, the search follows that direction. Once the targeted ship is sunk, the classical helper switches off and quantum-source attacks resume until another hit activates it. This makes the match harder by turning a chance discovery into a focused search, rather than leaving every next attack to the quantum-source sequence.</p>
+	</aside>
 	{% include software-figure.html folder="quantum-battleship" file="qubat01.png" alt="Quantum Battleship hardware carousel, board size, fleet and estimated price controls" caption="Select the hardware association and configure the board, fleet and difficulty before starting." %}
 </section>
 
@@ -57,6 +62,7 @@ categories: [software]
 <section id="turn">
 	<div class="step-heading"><span class="step-number">03</span><h3>Attack by coordinates</h3></div>
 	<p>The player board shows your fleet and the computer's attacks. The opponent board records your attempts, while the fleet panels track ship status. The turn highlight identifies which side is acting.</p>
+	<p>With hard mode enabled, watch the <strong>classical chip panel</strong> as well as the quantum circuit: it identifies when the opponent is using the follow-up search. Both kinds of attack count toward the battle result, but classical search attacks are excluded from the quantum-randomness charts so that strategy is not mistaken for random sampling.</p>
 	<p>When it is your turn, enter a coordinate such as <code>A3</code> and choose <strong>Attack</strong>. The letter identifies the row and the number the column. Wait for the result and the opponent's response; the game determines when you may attack again. Continue until one fleet is sunk, or use <strong>End match</strong> to leave the session.</p>
 	{% include software-figure.html folder="quantum-battleship" file="qubat03.png" alt="Demonstration game with circuit, player turn highlight, coordinate input and two boards" caption="Synthetic demonstration: the circuit, turn indicator and boards connect each move to its source and result." %}
 </section>
