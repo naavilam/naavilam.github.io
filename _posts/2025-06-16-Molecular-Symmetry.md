@@ -31,14 +31,14 @@ categories: [software]
 	<a href="{{ page.url | relative_url }}#report">Report</a>
 	<a href="{{ page.url | relative_url }}#custom">Custom XYZ</a>
 </nav>
-<p>The screenshots use the English interface and water as a worked example. Choose <strong>PT</strong>, <strong>EN</strong> or <strong>ZH</strong> in the header to change the interface language. The preference is saved in your browser; molecular identifiers, coordinates and backend-generated TeX/PDF content remain unchanged.</p>
-<p>The images use locally supplied water coordinates. The report screenshot contains an illustrative TeX example to demonstrate the interface, not a live backend analysis result.</p>
+<p>The screenshots use the English interface and <strong>Fe(III) tetrathiolate</strong>, a 97-atom coordination complex, as the main example. Choose <strong>PT</strong>, <strong>EN</strong> or <strong>ZH</strong> in the header to change the interface language. The preference is saved in your browser; molecular identifiers, coordinates and backend-generated TeX/PDF content remain unchanged.</p>
+<p>The molecular geometry comes from the project's <code>feiii_tetrathiolate.xyz</code> file and is loaded locally for these screenshots. The report screenshot contains an illustrative TeX example to demonstrate the interface, not a live backend analysis result.</p>
 
 <section id="idea">
 	<h3>From molecular shape to symmetry operations</h3>
 	<p>Developed in the context of the graduate course <strong>PGF5261, Group Theory Applied to Solids and Molecules</strong>, the project brings visual exploration and algebraic analysis into the same workspace. Its purpose is to make the connection between a molecular geometry and its symmetry group easier to investigate, discuss and document.</p>
 	<p>A symmetry operation leaves the structure indistinguishable from its original arrangement: equivalent atoms may exchange positions, but the molecular geometry is preserved. Rotations and reflections provide familiar examples. The report relates these operations to atom permutations and tables describing how operations combine.</p>
-	<p>Idealized water is a useful starting point: its bent geometry has a twofold rotation axis and two mirror planes, conventionally described by the point group <strong>C<sub>2v</sub></strong>. Use the 3D model to reason about that geometry, then compare your expectations with the report for the coordinates you actually supplied.</p>
+	<p>The Fe(III) tetrathiolate example makes that investigation tangible: locate the central iron atom, its four sulfur donors and the surrounding organic ligands. Compare the full ligand arrangement, not just the coordination center, before proposing a symmetry operation. A point-group assignment must be checked against the supplied coordinates rather than inferred from the compound's name.</p>
 	<aside class="guide-callout"><strong>A geometry-based investigation, not a quantum-chemistry calculation.</strong> The current controls visualize XYZ structures and request symmetry analyses. The viewport mentions orbitals and molecular electrostatic potential (MEP), but does not offer those calculations. Editing coordinates updates the geometry; it does not optimize the molecule's energy or relax its structure.</aside>
 </section>
 
@@ -46,14 +46,14 @@ categories: [software]
 	<div class="step-heading"><span class="step-number">01</span><h3>Choose a molecular system</h3></div>
 	<p>Open the application and use <strong>Choose a molecule</strong> to select a structure from the available catalog. The <strong>Input / Coordinates</strong> field fills with its XYZ data, and the molecular viewer updates automatically. The catalog is loaded from the backend, so its contents depend on the deployed service.</p>
 	<p>The workspace separates three tasks: selecting or entering the molecule, inspecting its geometry and choosing an analysis. Start with a familiar structure and check the atom count and coordinates before interpreting its symmetry.</p>
-	{% include software-figure.html folder="molecular-symmetry" file="molsym01.png" alt="English Molecular Symmetry workspace with molecule selection, XYZ coordinates and a water model" caption="Load a molecular structure and inspect the XYZ coordinates alongside its 3D view." %}
+	{% include software-figure.html folder="molecular-symmetry" file="molsym01.png" alt="English Molecular Symmetry workspace with Fe III tetrathiolate selected and its 97-atom XYZ structure" caption="Fe(III) tetrathiolate: inspect the original 97-atom geometry alongside its XYZ coordinates." %}
 </section>
 
 <section id="viewer">
 	<div class="step-heading"><span class="step-number">02</span><h3>Explore the geometry in 3D</h3></div>
 	<p>Choose <strong>Graphics</strong> to access the display controls. Rotate and zoom the model to inspect its arrangement from different angles. Try locating equivalent atoms, a possible rotation axis or a mirror plane before requesting the algebraic analysis.</p>
 	<p>Turn off <strong>Automatic rotation</strong> to hold an orientation while inspecting it or taking a screenshot. <strong>Reset view</strong> refits the model and stops automatic rotation. These actions change the presentation, not the XYZ coordinates submitted for analysis.</p>
-	{% include software-figure.html folder="molecular-symmetry" file="molsym02.png" alt="Water displayed as an interactive Ball and Stick model in the English 3D viewer" caption="Inspect the geometry from different angles; changing the camera does not modify the coordinates." %}
+	{% include software-figure.html folder="molecular-symmetry" file="molsym02.png" alt="Fe III tetrathiolate displayed as a Ball and Stick model with an oblique view of its metal center and ligands" caption="An oblique Ball & Stick view reveals the metal center and surrounding ligands without changing the geometry." %}
 </section>
 
 <section id="appearance">
@@ -64,7 +64,7 @@ categories: [software]
 		<li><strong>Display:</strong> show or hide hydrogens, enable atom labels, toggle automatic rotation and change the viewer background.</li>
 	</ul>
 	<p>The header's theme button changes the application theme. <strong>Dark background</strong> is a separate control for the molecular viewport. Hiding hydrogen atoms changes only what is displayed; it does not remove them from the input used by the backend.</p>
-	{% include software-figure.html folder="molecular-symmetry" file="molsym03.png" alt="English representation, palette and display controls with labeled atoms on a water model" caption="Tune the representation and labels while keeping the underlying molecular geometry unchanged." %}
+	{% include software-figure.html folder="molecular-symmetry" file="molsym03.png" alt="English display controls and Fe III tetrathiolate in vibrant element colors with hydrogens hidden" caption="Hide hydrogens and use element colors to make the iron, sulfur donors and ligand framework easier to inspect." %}
 </section>
 
 <section id="analysis">
@@ -89,14 +89,14 @@ categories: [software]
 	<div class="step-heading"><span class="step-number">05</span><h3>Reuse the TeX result or generate a PDF</h3></div>
 	<p>The backend returns the report as TeX source in <strong>Result (.tex)</strong>. Choose <strong>Copy</strong> to place that source on the clipboard or <strong>Generate PDF</strong> to request its compilation. The PDF opens in another tab, where the browser provides save and print actions. Allow pop-ups if the report tab is blocked.</p>
 	<p>The interface language does not rewrite the report. Its scientific notation, text and formatting come from the backend. If analysis or compilation fails, read the displayed error and check your input; preserve any available TeX so it can be inspected or compiled separately.</p>
-	{% include software-figure.html folder="molecular-symmetry" file="molsym05.png" alt="English report panel displaying illustrative water TeX source with Copy and Generate PDF buttons" caption="Illustrative TeX example, not a live analysis result: Copy reuses the source and Generate PDF requests compilation." %}
+	{% include software-figure.html folder="molecular-symmetry" file="molsym05.png" alt="English report panel displaying illustrative Fe III tetrathiolate TeX source with Copy and Generate PDF buttons" caption="Illustrative TeX example, not a live analysis result: Copy reuses the source and Generate PDF requests compilation." %}
 </section>
 
 <section id="custom">
 	<div class="step-heading"><span class="step-number">06</span><h3>Paste your own XYZ structure</h3></div>
 	<p>Select <strong>Other (specify)</strong> to unlock the coordinate field. Open your <code>.xyz</code> file in a text editor and paste its <strong>complete contents</strong>, not its filename or path. The first line is the number of atoms, the second is a comment, and the remaining lines contain an element symbol followed by three Cartesian coordinates.</p>
 	<p>Keep the comment line even when it is blank, use decimal points in the numeric fields and check that the declared atom count matches the coordinate rows. The viewer updates as you edit. Inspect the structure before submitting it through the same Symmetry workflow.</p>
-	{% include software-figure.html folder="molecular-symmetry" file="molsym06.png" alt="Other specify selected with editable water XYZ coordinates and an updated 3D model" caption="Custom XYZ input uses the same viewer and report workflow as a catalog structure." %}
+	{% include software-figure.html folder="molecular-symmetry" file="molsym06.png" alt="Other specify selected with the complete Fe III tetrathiolate XYZ file in the editable coordinate field" caption="The same 97-atom complex can be entered as custom XYZ, using the same viewer and report workflow." %}
 	<details>
 		<summary>A minimal XYZ example: water</summary>
 		<p>This symmetric example uses coordinates in angstroms. The two hydrogens lie at equal distances from oxygen.</p>
