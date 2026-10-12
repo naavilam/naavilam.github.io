@@ -64,7 +64,7 @@ categories: [software]
 		<li><strong>Display:</strong> show or hide hydrogens, enable atom labels, toggle automatic rotation and change the viewer background.</li>
 	</ul>
 	<p>The header's theme button changes the application theme. <strong>Dark background</strong> is a separate control for the molecular viewport. Hiding hydrogen atoms changes only what is displayed; it does not remove them from the input used by the backend.</p>
-	{% include software-figure.html folder="molecular-symmetry" file="molsym03.png" alt="English display controls and Fe III tetrathiolate in vibrant element colors with hydrogens hidden" caption="Hide hydrogens and use element colors to make the iron, sulfur donors and ligand framework easier to inspect." %}
+	{% include software-figure.html folder="molecular-symmetry" file="molsym03.png" alt="English display controls and Fe III tetrathiolate in default element colors with hydrogens hidden" caption="Hide hydrogens and use element colors to make the iron, sulfur donors and ligand framework easier to inspect." %}
 </section>
 
 <section id="analysis">
