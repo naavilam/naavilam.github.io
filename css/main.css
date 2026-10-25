@@ -971,6 +971,15 @@ S - card-header Bootstrap 4CSS .heading-footer {
   background-origin: content-box; 
 }
 
+.card-6 {
+  background-image: url(https://raw.githubusercontent.com/naavilam/naavilam.github.io/main/assets/img/apps/zotero-webdav-server.png);
+  background-repeat: no-repeat;
+  background-position-x: min(825px, calc(100% + 198px));
+  background-position-y: center;
+  background-size: 157px;
+  background-origin: content-box; 
+}
+
 @media(max-width: 990px) {
   .blogcard {
     margin: 20px;
