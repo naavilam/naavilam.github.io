@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Zotero WebDAV Server"
-description: "Serverless WebDAV server on AWS and Cloudflare for storing and syncing up to 100 GB of Zotero attachments across computers and mobile devices for ~$0.60/month."
+description: "A self-hosted serverless alternative to Zotero Cloud ($10/month), storing and syncing up to 100 GB of Zotero attachments across computers and mobile devices on AWS + Cloudflare for ~$0.60/month."
 date:   2026-10-25
 type: card-img-top
 image: zotero-webdav-server.png # for local images, place in /assets/img/posts/
@@ -19,7 +19,7 @@ categories: [software]
 <header class="guide-hero">
 	<span class="eyebrow">Serverless attachment synchronization</span>
 	<h2>Sync your Zotero library across desktop and mobile for ~$0.60/month</h2>
-	<p class="lead">Zotero WebDAV Server is a serverless infrastructure built with Terraform, Cloudflare Workers and AWS (API Gateway, Lambda in Go and private S3). Operating on a virtually free compute tier, it synchronizes and stores up to 100 GB of PDF attachments and library archives across computers and mobile devices for around $0.60 USD per month — with zero idle server costs.</p>
+	<p class="lead">We are building a self-hosted serverless storage service analogous to <strong>Zotero Cloud / Zotero Storage</strong> (which costs around <strong>$10/month</strong> on the unlimited tier) — for roughly <strong>$0.60 USD/month</strong>. Built with Terraform, Cloudflare Workers and AWS (API Gateway, Lambda in Go and private S3) on a practically free compute tier, Zotero WebDAV Server stores and synchronizes up to 100 GB of PDF attachments and library archives across computers and mobile devices with zero idle server costs.</p>
 </header>
 <nav class="guide-nav" aria-label="Guide sections">
 	<a href="{{ page.url | relative_url }}#architecture">Architecture &amp; Cost</a>
@@ -29,10 +29,17 @@ categories: [software]
 	<a href="{{ page.url | relative_url }}#zotero">Zotero Setup</a>
 </nav>
 
+<figure class="guide-figure">
+	<a href="{{ '/assets/img/apps/zotero-webdav-server.png' | relative_url }}">
+		<img src="{{ '/assets/img/apps/zotero-webdav-server.png' | relative_url }}" alt="Zotero File Syncing preferences configured to use WebDAV with https://webdav.zotero.workers.dev/zotero/" loading="lazy" decoding="async">
+	</a>
+	<figcaption>Where to find it in Zotero (<strong>Settings → Sync → File Syncing</strong>): switch attachment syncing from Zotero Storage to <strong>WebDAV</strong> and point it to your Cloudflare Worker endpoint (<code>https://webdav.zotero.workers.dev/zotero/</code>).</figcaption>
+</figure>
+
 <div class="guide-grid">
 	<div class="guide-card">
-		<h4>~$0.60 / month for 100 GB</h4>
-		<p>Cloudflare Workers, API Gateway and AWS Lambda run within practically free usage tiers; you primarily pay low-cost S3 storage and transfer for up to 100 GB of synced attachments.</p>
+		<h4>~$0.60/mo vs. $10/mo</h4>
+		<p>Replaces a $10/month Zotero Cloud subscription for large libraries. Cloudflare Workers, API Gateway and Lambda run inside practically free tiers; you only pay low-cost S3 storage (~$0.60/month for 100 GB).</p>
 	</div>
 	<div class="guide-card">
 		<h4>Desktop &amp; Mobile Sync</h4>
